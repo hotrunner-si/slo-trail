@@ -1,0 +1,2 @@
+<script setup lang="ts">import { trailRoutes } from '~/data/routes'; useSiteSeo('Trase','Kurirane trail trase slovenskih tekačev z višinskimi profili in ključnimi podatki.')</script>
+<template><div class="page shell"><header class="page-header"><p class="eyebrow">Kurirane poti</p><h1>Trase z razlogom.</h1><p>Ne še en GPX repozitorij, temveč izbor poti, h katerim se slovenski tekači vedno vračajo.</p></header><div class="route-directory"><RouteCard v-for="(route,index) in trailRoutes" :key="route.id" :route="route" :index="index"/></div></div></template>

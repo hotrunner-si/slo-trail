@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://trail-slovenija.netlify.app/sitemap.xml

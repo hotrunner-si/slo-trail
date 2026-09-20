@@ -1,0 +1,2 @@
+<script setup lang="ts">import { runners } from '~/data/runners'; useSiteSeo('Tekači','Demo profili ljudi, ki oblikujejo slovensko trail skupnost.')</script>
+<template><div class="page shell"><header class="page-header"><p class="eyebrow">Skupnost</p><h1>Ljudje, ki<br>tečejo dlje.</h1><p>Profili, najljubše trase in zgodbe slovenskih trail tekačev. Vsi trenutni profili so fiktivni demo vnosi.</p></header><div class="runner-grid runner-directory"><RunnerCard v-for="(runner,index) in runners" :key="runner.id" :runner="runner" :index="index"/></div></div></template>

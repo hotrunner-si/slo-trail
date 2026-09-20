@@ -1,0 +1,2 @@
+<script setup lang="ts">defineProps<{error:{statusCode:number;statusMessage?:string}}>(); const handle=()=>clearError({redirect:'/'})</script>
+<template><div class="error-page shell"><p class="eyebrow">Napaka {{ error.statusCode }}</p><h1>Pot se tukaj konča.</h1><p>{{ error.statusMessage || 'Strani ni bilo mogoče najti.' }}</p><button class="button primary" @click="handle">Nazaj na začetek</button></div></template>
