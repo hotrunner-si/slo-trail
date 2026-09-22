@@ -1,5 +1,5 @@
 <script setup lang="ts">
-withDefaults(defineProps<{ variant?: number; label?: string; dark?: boolean }>(), { variant: 1, label: 'Predogled trase', dark: false })
+withDefaults(defineProps<{ variant?: number; label?: string; dark?: boolean }>(), { variant: 1, label: 'Predogled ture', dark: false })
 const paths = [
   'M18 118 C50 90 60 32 105 44 S162 132 206 93 S262 40 308 61 S350 103 382 30',
   'M15 98 C48 28 92 122 132 72 S208 18 240 83 S322 132 384 48',

@@ -8,9 +8,9 @@ export const effortKm = (distance: RaceDistance) =>
 export const effortCategory = (distance: RaceDistance): EffortCategory => {
   const effort = effortKm(distance)
   if (effort < 20) return 'short'
-  if (effort < 45) return '20K'
-  if (effort < 90) return '50K'
-  if (effort < 130) return '100K'
+  if (effort < 50) return '20K'
+  if (effort < 100) return '50K'
+  if (effort < 160) return '100K'
   return '100M'
 }
 

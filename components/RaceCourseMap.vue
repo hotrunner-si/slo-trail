@@ -3,15 +3,15 @@ import type { Race, RaceDistance } from '~/types'
 import { effortCategory, effortKm, effortLabel } from '~/utils/raceCategories'
 
 const props = defineProps<{ race: Race }>()
-const selectedId = ref('all')
-const detail = ref<1 | 2 | 3>(2)
-type GpxJson = { route?: [number, number][]; bounds?: { north:number; south:number; east:number; west:number } }
+const selectedId = ref(props.race.distances.length === 1 ? (props.race.distances[0].id || `${props.race.slug}-0`) : 'all')
+type GpxJson = { route?: [number, number][]; profile?: number[]; detailedProfile?: { distanceKm:number; elevation:number }[]; distanceKm?:number; bounds?: { north:number; south:number; east:number; west:number } }
 const gpxData = ref<Record<string, GpxJson>>({})
+const hoverProgress = ref<number|null>(null)
 
 onMounted(async () => {
   const entries = props.race.distances.map(async (distance, index) => {
     if (!distance.gpx?.file) return
-    try { gpxData.value[routeId(distance, index)] = await $fetch<GpxJson>(distance.gpx.file) } catch { /* GPX preview remains available */ }
+    try { gpxData.value[routeId(distance, index)] = await $fetch<GpxJson>(distance.gpx.file.replace(/\.json$/, '.detail.json')) } catch { /* GPX preview remains available */ }
   })
   await Promise.all(entries)
 })
@@ -35,7 +35,7 @@ function routePoints(distance: RaceDistance, index: number) {
     const latSpan = Math.max(maxLat - minLat, .001); const lngSpan = Math.max(maxLng - minLng, .001)
     return source.map(point => `${(70 + ((point[1] - minLng) / lngSpan) * 660).toFixed(1)},${(410 - ((point[0] - minLat) / latSpan) * 350).toFixed(1)}`).join(' ')
   }
-  const pointCount = detail.value === 1 ? 14 : detail.value === 2 ? 28 : 52
+  const pointCount = 28
   const seed = [...`${props.race.slug}-${distance.name}-${distance.km}`].reduce((sum, character) => sum + character.charCodeAt(0), 0)
   const radius = 78 + Math.min(125, distance.km * 1.35) + index * 7
   const centerX = 390 + ((seed % 11) - 5) * 5
@@ -65,14 +65,10 @@ function selectRoute(distance: RaceDistance, index: number) {
   <div class="course-map-shell">
     <header class="course-map-header">
       <div><span class="eyebrow">Interaktivni prototip</span><strong>{{ selectedDistance?.name || 'Vse trase dogodka' }}</strong></div>
-      <div class="map-detail-control" aria-label="Podrobnost trase">
-        <span>Podrobnost</span>
-        <button v-for="level in ([1,2,3] as const)" :key="level" :class="{ active: detail === level }" @click="detail = level">{{ level }}</button>
-      </div>
     </header>
 
     <div class="course-map-layout">
-      <LeafletRaceMap :race="race" :selected-id="selectedId" @select="selectedId = $event" />
+      <LeafletRaceMap :race="race" :selected-id="selectedId" :hover-progress="hoverProgress" @select="selectedId = $event; hoverProgress = null" @hover="hoverProgress = $event" />
       <div class="course-map-stage course-map-stage-legacy" aria-hidden="true">
         <svg viewBox="0 0 800 480" role="img" :aria-label="`Predogled vseh tras dogodka ${race.name}`">
           <g class="course-map-contours" aria-hidden="true">
@@ -101,13 +97,13 @@ function selectRoute(distance: RaceDistance, index: number) {
       </div>
 
       <aside class="course-map-routes-list" aria-label="Trase dogodka">
-        <button :class="{ active:selectedId === 'all' }" @click="selectedId = 'all'"><i class="all-routes-dot"/><span><strong>Vse trase</strong><small>{{ race.distances.length }} na enem zemljevidu</small></span></button>
+        <button v-if="race.distances.length > 1" :class="{ active:selectedId === 'all' }" @click="selectedId = 'all'"><i class="all-routes-dot"/><span><strong>Vse trase</strong><small>{{ race.distances.length }} na enem zemljevidu</small></span></button>
         <button v-for="(distance,index) in race.distances" :key="routeId(distance,index)" :class="[`effort-${effortCategory(distance).toLowerCase()}`, { active:selectedId === routeId(distance,index) }]" @click="selectRoute(distance,index)">
           <i/><span><strong>{{ distance.name || distance.label }}</strong><small>{{ distance.km || '—' }} km · {{ distance.elevation || '—' }} m+ · {{ effortLabel(distance) }}</small></span><em>{{ effortKm(distance).toLocaleString('sl-SI') }}</em>
         </button>
       </aside>
     </div>
 
-    <div v-if="selectedDistance" class="course-map-profile"><RaceElevationMini :distance="selectedDistance" :race-id="race.id"/><span class="mono">IZBRANA TRASA · PROFIL SE BO POVEZAL Z ZEMLJEVIDOM</span></div>
+    <div v-if="selectedDistance" class="course-map-profile"><RaceElevationProfile :distance="selectedDistance" :data="gpxData[selectedId]" :hover-progress="hoverProgress" @hover="hoverProgress = $event"/><span class="mono">PREMAKNI KAZALEC PO PROFILU ALI TRASI</span></div>
   </div>
 </template>

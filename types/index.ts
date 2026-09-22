@@ -7,6 +7,8 @@ export interface GpxPreviewData {
   file?: string
   profile?: number[]
   route?: [number, number][]
+  overviewRoute?: [number, number][]
+  detailedProfile?: { distanceKm: number; elevation: number }[]
   highestPoint?: number
   elevationLoss?: number
 }
@@ -25,6 +27,8 @@ export interface Race {
   coordinates?: { lat: number; lng: number }; mapPosition?: { x: number; y: number }
   sourceUrl?: string; sourcePage?: string; sourceName?: string; logo?: string
   verifiedAt?: string; isByUtmb?: boolean; collections?: string[]
+  entrants?: { runnerSlug: string; distanceId: string }[]
+  liveUrl?: string
 }
 export interface RaceCompareItem { race: Race; distance: RaceDistance; index: number }
 export interface Runner {
@@ -35,6 +39,7 @@ export interface TrailRoute {
   id: string; slug: string; name: string; region: string; distance: number; elevationGain: number
   elevationLoss: number; highPoint: number; estimatedTime: string; difficulty: 'Zmerna' | 'Zahtevna' | 'Zelo zahtevna'
   recommendedBy: string; runnerSlug: string; description: string; quote: string; image?: string
+  gpx?: GpxPreviewData
 }
 export interface Article {
   id: string; slug: string; title: string; description: string; category: string; publishedAt: string

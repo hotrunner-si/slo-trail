@@ -1,62 +1,13 @@
 <script setup lang="ts">
-import type { Race, RaceDistance } from '~/types'
+import type { Race } from '~/types'
 import { effortColor } from '~/utils/raceCategories'
-import 'leaflet/dist/leaflet.css'
-const props = defineProps<{ races: Race[]; activeId?: string }>()
-const emit = defineEmits<{ activate: [id: string] }>()
-const mapEl = ref<HTMLElement | null>(null)
-type GpxJson = { route?: [number, number][] }
-const gpxData = ref<Record<string, GpxJson>>({})
-let L: typeof import('leaflet') | null = null
-let map: import('leaflet').Map | null = null
-let bounds: import('leaflet').LatLngBounds | null = null
-let layers: import('leaflet').Polyline[] = []
-function draw() {
-  if (!map || !L) return
-  layers.forEach(layer => layer.remove()); layers=[]; bounds=null
-  props.races.forEach(race => race.distances.forEach((distance,index) => {
-    const route = gpxData.value[`${race.id}:${distance.id || index}`]?.route
-    if (!route?.length) return
-    const layer = L.polyline(route as L.LatLngExpression[], { color:effortColor(distance), weight:props.activeId===race.id?4:2.5, opacity:props.activeId && props.activeId!==race.id ? .28 : .74, lineCap:'round', lineJoin:'round' }).addTo(map!)
-    layer.bindTooltip(`${race.name} · ${distance.name || distance.label}`, { sticky:true })
-    layer.on('mouseenter', () => emit('activate', race.id)); layer.on('click', () => emit('activate', race.id))
-    layers.push(layer); bounds = bounds ? bounds.extend(layer.getBounds()) : layer.getBounds()
-  }))
-  if (bounds?.isValid()) map.fitBounds(bounds, { padding:[24,24], maxZoom:8 })
-}
-function reset() {
-  if (!map) return
-  map.invalidateSize()
-  if (bounds?.isValid()) map.fitBounds(bounds, { padding:[24,24], maxZoom:8 })
-  else map.setView([46.2,14.8],8)
-}
-async function loadRoutes() {
-  await Promise.all(props.races.flatMap(race => race.distances.map(async (distance,index) => {
-    const key = `${race.id}:${distance.id || index}`
-    if (!distance.gpx?.file || gpxData.value[key]) return
-    try { gpxData.value[key] = await $fetch<GpxJson>(distance.gpx.file) } catch {}
-  })))
-  draw()
-}
-watch(() => props.activeId, draw)
-watch(() => props.races.map(race => race.id).join(','), loadRoutes)
-onMounted(async () => {
-  if (!mapEl.value) return
-  L = await import('leaflet')
-  map = L.map(mapEl.value, { zoomControl:false, scrollWheelZoom:true, dragging:true, touchZoom:true, doubleClickZoom:true }).setView([46.2,14.8],8)
-  L.control.zoom({position:'topright'}).addTo(map)
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    maxZoom: 19,
-    subdomains: 'abcd',
-    attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
-  }).addTo(map)
-  await loadRoutes(); setTimeout(() => map?.invalidateSize(),100)
-})
-onBeforeUnmount(() => { map?.remove(); map=null })
+import 'mapbox-gl/dist/mapbox-gl.css'
+const props=defineProps<{races:Race[];activeId?:string}>();const emit=defineEmits<{activate:[id:string]}>();const config=useRuntimeConfig();const mapEl=ref<HTMLElement|null>(null);const error=ref('');type Gpx={route?:[number,number][];overviewRoute?:[number,number][]};const data=ref<Record<string,Gpx>>({});let mb:typeof import('mapbox-gl')|null=null;let map:import('mapbox-gl').Map|null=null
+const key=(r:Race,i:number)=>`${r.id}:${r.distances[i].id||i}`;const lid=(r:Race,i:number)=>`all-${r.id}-${r.distances[i].id||i}`
+function update(){if(!map)return;props.races.forEach(r=>r.distances.forEach((_,i)=>{const id=lid(r,i);if(!map!.getLayer(id))return;const active=!props.activeId||props.activeId===r.id;map!.setPaintProperty(id,'line-width',active?4.5:2.5);map!.setPaintProperty(id,'line-opacity',active?.9:.18)}));const active=props.races.find(r=>r.id===props.activeId);active?.distances.forEach((_,i)=>{const id=lid(active,i);if(map!.getLayer(`${id}-halo`))map!.moveLayer(`${id}-halo`);if(map!.getLayer(id))map!.moveLayer(id)})}
+function draw(){if(!map||!mb||!map.isStyleLoaded())return;const b=new mb.LngLatBounds();props.races.forEach(r=>r.distances.forEach((d,i)=>{const gpx=data.value[key(r,i)],route=gpx?.overviewRoute||gpx?.route;if(!route?.length)return;const id=lid(r,i),c=route.map(([lat,lng])=>[lng,lat] as [number,number]);c.forEach(p=>b.extend(p));if(!map!.getSource(id))map!.addSource(id,{type:'geojson',data:{type:'Feature',properties:{},geometry:{type:'LineString',coordinates:c}}});if(!map!.getLayer(`${id}-halo`))map!.addLayer({id:`${id}-halo`,type:'line',source:id,paint:{'line-color':'#fff','line-width':5,'line-opacity':.75}});if(!map!.getLayer(id)){map!.addLayer({id,type:'line',source:id,layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':effortColor(d),'line-width':2.5,'line-opacity':.82}});map!.on('mouseenter',id,()=>emit('activate',r.id));map!.on('click',id,()=>emit('activate',r.id))}}));update();if(!b.isEmpty())map.fitBounds(b,{padding:28,maxZoom:8,duration:0})}
+async function load(){await Promise.all(props.races.flatMap(r=>r.distances.map(async(d,i)=>{const k=key(r,i);if(!d.gpx?.file||data.value[k])return;try{data.value[k]=await $fetch<Gpx>(d.gpx.file)}catch{}})));draw()}
+function reset(){if(!map||!mb)return;const b=new mb.LngLatBounds();props.races.flatMap(r=>r.distances.map((_,i)=>data.value[key(r,i)]?.route||[])).flat().forEach(([lat,lng])=>b.extend([lng,lat]));if(!b.isEmpty())map.fitBounds(b,{padding:28,maxZoom:8});else map.flyTo({center:[14.8,46.2],zoom:7})}
+watch(()=>props.activeId,update);watch(()=>props.races.map(r=>r.id).join(','),load);onMounted(async()=>{if(!mapEl.value)return;if(!config.public.mapboxToken){error.value='Dodaj NUXT_PUBLIC_MAPBOX_TOKEN v datoteko .env.';return}mb=await import('mapbox-gl');mb.default.accessToken=String(config.public.mapboxToken);await load();map=new mb.default.Map({container:mapEl.value,style:String(config.public.mapboxStyle),center:[14.8,46.2],zoom:7});map.addControl(new mb.default.NavigationControl({showCompass:false}),'top-right');map.on('load',draw);map.on('error',e=>{if(e.error)error.value='Zemljevida ni bilo mogoče naložiti.'})});onBeforeUnmount(()=>map?.remove())
 </script>
-<template>
-  <div class="leaflet-map-shell combined-leaflet-map">
-    <div ref="mapEl" class="leaflet-map" role="application" aria-label="Kartografski zemljevid slovenskih trail tekem" />
-    <div class="leaflet-map-toolbar"><span class="mono">GPX TRAS · SLOVENIJA</span><button type="button" @click="reset">Ponastavi pogled</button></div>
-  </div>
-</template>
+<template><div class="leaflet-map-shell combined-leaflet-map mapbox-map-shell"><div ref="mapEl" class="leaflet-map mapbox-map" role="application" aria-label="Kartografski zemljevid slovenskih trail tekem"/><p v-if="error" class="mapbox-map-error">{{ error }}</p><div class="leaflet-map-toolbar"><span class="mono">GPX TRAS · SLOVENIJA</span><button type="button" @click="reset">Ponastavi pogled</button></div></div></template>

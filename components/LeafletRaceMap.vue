@@ -1,78 +1,19 @@
 <script setup lang="ts">
 import type { Race, RaceDistance } from '~/types'
 import { effortColor } from '~/utils/raceCategories'
-import 'leaflet/dist/leaflet.css'
-
-const props = defineProps<{ race: Race; selectedId?: string }>()
-const emit = defineEmits<{ select: [id: string] }>()
-const mapEl = ref<HTMLElement | null>(null)
-const loaded = ref(0)
-type GpxJson = { route?: [number, number][] }
-const gpxData = ref<Record<string, GpxJson>>({})
-let L: typeof import('leaflet') | null = null
-let map: import('leaflet').Map | null = null
-let layers: import('leaflet').Polyline[] = []
-let bounds: import('leaflet').LatLngBounds | null = null
-
-const routeId = (distance: RaceDistance, index: number) => distance.id || `${props.race.slug}-${index}`
-
-function refreshLayers() {
-  if (!map || !L) return
-  layers.forEach(layer => layer.remove())
-  layers = []
-  bounds = null
-  props.race.distances.forEach((distance, index) => {
-    const route = gpxData.value[routeId(distance, index)]?.route
-    if (!route?.length) return
-    const points = route.map(([lat, lng]) => [lat, lng] as [number, number])
-    const selectedId = props.selectedId || 'all'
-    const layer = L.polyline(points, { color: effortColor(distance), weight: selectedId === 'all' ? 4 : selectedId === routeId(distance, index) ? 6 : 2, opacity: selectedId === 'all' || selectedId === routeId(distance, index) ? 0.92 : 0.25, lineCap: 'round', lineJoin: 'round' }).addTo(map!)
-    layer.bindTooltip(`${distance.name || distance.label} · ${distance.km || '—'} km`, { sticky: true })
-    layer.on('click', () => emit('select', selectedId === routeId(distance, index) ? 'all' : routeId(distance, index)))
-    layers.push(layer)
-    bounds = bounds ? bounds.extend(layer.getBounds()) : layer.getBounds()
-  })
-  if (bounds?.isValid() && map.getZoom() < 8) map.fitBounds(bounds, { padding: [28, 28] })
-}
-
-function fitMap() {
-  if (!map) return
-  map.invalidateSize()
-  if (bounds?.isValid()) map.fitBounds(bounds, { padding: [28, 28], maxZoom: 14 })
-  else map.setView([46.2, 14.8], 8)
-}
-
-onMounted(async () => {
-  if (!mapEl.value) return
-  L = await import('leaflet')
-  map = L.map(mapEl.value, { zoomControl: false, attributionControl: true, scrollWheelZoom: true, doubleClickZoom: true, dragging: true, touchZoom: true, boxZoom: true, keyboard: true }).setView([46.2, 14.8], 8)
-  L.control.zoom({ position: 'topright' }).addTo(map)
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    maxZoom: 19,
-    subdomains: 'abcd',
-    attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
-  }).addTo(map)
-  await Promise.all(props.race.distances.map(async (distance, index) => {
-    if (!distance.gpx?.file) return
-    try { gpxData.value[routeId(distance, index)] = await $fetch<GpxJson>(distance.gpx.file); loaded.value++ } catch { /* no GPX yet */ }
-  }))
-  refreshLayers()
-  setTimeout(() => map?.invalidateSize(), 100)
-})
-
-watch(() => props.selectedId, refreshLayers)
-
-onBeforeUnmount(() => { map?.remove(); map = null })
+import 'mapbox-gl/dist/mapbox-gl.css'
+const props = defineProps<{ race: Race; selectedId?: string; hoverProgress?: number | null }>()
+const emit = defineEmits<{ select: [id: string]; hover: [progress: number | null] }>()
+const config = useRuntimeConfig(); const mapEl = ref<HTMLElement | null>(null); const loaded = ref(0); const mapError = ref('')
+type GpxJson = { route?: [number, number][] }; const data = ref<Record<string, GpxJson>>({})
+let mb: typeof import('mapbox-gl') | null = null; let map: import('mapbox-gl').Map | null = null
+const rid = (d: RaceDistance, i:number) => d.id || `${props.race.slug}-${i}`
+const sid = (d: RaceDistance, i:number) => `race-${rid(d,i)}`
+function update() { if (!map) return; props.race.distances.forEach((d,i)=>{ const id=sid(d,i); if(!map!.getLayer(id))return; const active=props.selectedId==='all'||!props.selectedId||props.selectedId===rid(d,i); map!.setPaintProperty(id,'line-width',active?(props.selectedId===rid(d,i)?6:4):2); map!.setPaintProperty(id,'line-opacity',active?.96:.16) }); const index=props.race.distances.findIndex((d,i)=>rid(d,i)===props.selectedId);if(index>=0){const id=sid(props.race.distances[index],index);if(map.getLayer(`${id}-halo`))map.moveLayer(`${id}-halo`);if(map.getLayer(id))map.moveLayer(id);if(map.getLayer('route-hover-point'))map.moveLayer('route-hover-point')} }
+function updateHover(){if(!map)return;const index=props.race.distances.findIndex((d,i)=>rid(d,i)===props.selectedId),route=index>=0?data.value[rid(props.race.distances[index],index)]?.route:null;const source=map.getSource('route-hover') as import('mapbox-gl').GeoJSONSource|undefined;if(!source)return;const progress=props.hoverProgress;if(!route?.length||progress==null){source.setData({type:'FeatureCollection',features:[]});return}const point=route[Math.round(Math.max(0,Math.min(1,progress))*(route.length-1))];source.setData({type:'Point',coordinates:[point[1],point[0]]})}
+function draw() { if(!map||!mb||!map.isStyleLoaded())return; const bounds=new mb.LngLatBounds(); props.race.distances.forEach((d,i)=>{ const route=data.value[rid(d,i)]?.route; if(!route?.length)return; const id=sid(d,i), coords=route.map(([lat,lng])=>[lng,lat] as [number,number]); coords.forEach(p=>bounds.extend(p)); if(!map!.getSource(id))map!.addSource(id,{type:'geojson',data:{type:'Feature',properties:{},geometry:{type:'LineString',coordinates:coords}}}); if(!map!.getLayer(`${id}-halo`))map!.addLayer({id:`${id}-halo`,type:'line',source:id,paint:{'line-color':'#fff','line-width':8,'line-opacity':.82}}); if(!map!.getLayer(id)){map!.addLayer({id,type:'line',source:id,layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':effortColor(d),'line-width':4,'line-opacity':.96}});map!.on('click',id,()=>emit('select',props.selectedId===rid(d,i)?'all':rid(d,i)));map!.on('mousemove',id,e=>{if(props.selectedId!==rid(d,i))return;let best=0,score=Infinity;route.forEach(([lat,lng],n)=>{const s=(lat-e.lngLat.lat)**2+(lng-e.lngLat.lng)**2;if(s<score){score=s;best=n}});emit('hover',best/(route.length-1))});map!.on('mouseleave',id,()=>emit('hover',null))} });if(!map.getSource('route-hover'))map.addSource('route-hover',{type:'geojson',data:{type:'FeatureCollection',features:[]}});if(!map.getLayer('route-hover-point'))map.addLayer({id:'route-hover-point',type:'circle',source:'route-hover',paint:{'circle-radius':7,'circle-color':'#fff','circle-stroke-width':3,'circle-stroke-color':'#171816'}}); update();updateHover(); if(!bounds.isEmpty())map.fitBounds(bounds,{padding:36,maxZoom:14,duration:0}) }
+function fit(){if(!map||!mb)return;const b=new mb.LngLatBounds();Object.values(data.value).flatMap(x=>x.route||[]).forEach(([lat,lng])=>b.extend([lng,lat]));if(!b.isEmpty())map.fitBounds(b,{padding:36,maxZoom:14});else map.flyTo({center:[14.8,46.2],zoom:8})}
+onMounted(async()=>{if(!mapEl.value)return;if(!config.public.mapboxToken){mapError.value='Dodaj NUXT_PUBLIC_MAPBOX_TOKEN v datoteko .env.';return}mb=await import('mapbox-gl');mb.default.accessToken=String(config.public.mapboxToken);await Promise.all(props.race.distances.map(async(d,i)=>{if(!d.gpx?.file)return;try{data.value[rid(d,i)]=await $fetch<GpxJson>(d.gpx.file.replace(/\.json$/,'.detail.json'));loaded.value++}catch{}}));map=new mb.default.Map({container:mapEl.value,style:String(config.public.mapboxStyle),center:[14.8,46.2],zoom:8});map.addControl(new mb.default.NavigationControl({showCompass:false}),'top-right');map.on('load',draw);map.on('error',e=>{if(e.error)mapError.value='Zemljevida ni bilo mogoče naložiti.'})})
+watch(()=>props.selectedId,()=>{update();updateHover()});watch(()=>props.hoverProgress,updateHover);onBeforeUnmount(()=>map?.remove())
 </script>
-
-<template>
-  <div class="leaflet-map-shell">
-    <div ref="mapEl" class="leaflet-map" role="application" :aria-label="`Kartografski zemljevid tras dogodka ${race.name}`" />
-    <div class="leaflet-map-toolbar">
-      <span class="mono">{{ loaded ? `${loaded}/${race.distances.length} GPX TRAS` : 'GPX NI NALOŽEN' }}</span>
-      <button type="button" @click="emit('select', 'all'); fitMap()">Vse trase</button>
-      <button type="button" @click="fitMap">Ponastavi pogled</button>
-    </div>
-    <p class="leaflet-map-note">Povleci zemljevid za premik. Uporabi kolešček ali gumba +/− za približanje.</p>
-  </div>
-</template>
+<template><div class="leaflet-map-shell mapbox-map-shell"><div ref="mapEl" class="leaflet-map mapbox-map" role="application" :aria-label="`Kartografski zemljevid tras dogodka ${race.name}`"/><p v-if="mapError" class="mapbox-map-error">{{ mapError }}</p><div class="leaflet-map-toolbar"><span class="mono">{{ loaded ? `${loaded}/${race.distances.length} GPX TRAS` : 'GPX NI NALOŽEN' }}</span><button v-if="race.distances.length > 1" type="button" @click="emit('select','all');fit()">Vse trase</button><button type="button" @click="fit">Ponastavi pogled</button></div><p class="leaflet-map-note">Povleci zemljevid za premik. Uporabi kolešček ali gumba +/− za približanje.</p></div></template>

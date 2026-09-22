@@ -4,7 +4,17 @@ import { effortCategory, effortKm, effortLabel } from '~/utils/raceCategories'
 
 const props = defineProps<{ distance: RaceDistance; raceId: string }>()
 const category = computed(() => effortCategory(props.distance))
+type Gpx={profile?:number[]};const gpx=ref<Gpx|null>(null)
+let loadVersion=0
+onMounted(()=>watch(()=>props.distance.gpx?.file,async file=>{
+  const version=++loadVersion
+  gpx.value=null
+  if(props.distance.gpx?.profile||!file)return
+  try{const loaded=await $fetch<Gpx>(file);if(version===loadVersion)gpx.value=loaded}catch{/* use the generated fallback profile */}
+},{immediate:true}))
 const points = computed(() => {
+  const source=props.distance.gpx?.profile||gpx.value?.profile
+  if(source?.length){const min=Math.min(...source),max=Math.max(...source),span=Math.max(1,max-min);return source.map((elevation,index)=>`${((index/(source.length-1))*180).toFixed(2)},${(66-((elevation-min)/span)*56).toFixed(2)}`).join(' ')}
   const seed = [...`${props.raceId}-${props.distance.km}-${props.distance.elevation}`].reduce((sum, char) => sum + char.charCodeAt(0), 0)
   const count = 12
   const heights = Array.from({ length: count }, (_, index) => {

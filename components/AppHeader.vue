@@ -4,7 +4,7 @@ const route = useRoute()
 watch(() => route.fullPath, () => { open.value = false })
 const nav = [
   { label: 'Domov', to: '/' }, { label: 'Tekme', to: '/races' }, { label: 'Tekači', to: '/runners' },
-  { label: 'Trase', to: '/routes' }, { label: 'Journal', to: '/journal' }
+  { label: 'Ture', to: '/routes' }, { label: 'Dogajanje', to: '/journal' }
 ]
 </script>
 
