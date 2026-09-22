@@ -104,6 +104,11 @@ function selectRoute(distance: RaceDistance, index: number) {
       </aside>
     </div>
 
-    <div v-if="selectedDistance" class="course-map-profile"><RaceElevationProfile :distance="selectedDistance" :data="gpxData[selectedId]" :hover-progress="hoverProgress" @hover="hoverProgress = $event"/><span class="mono">PREMAKNI KAZALEC PO PROFILU ALI TRASI</span></div>
+    <div v-if="selectedDistance" class="course-map-profile">
+      <RaceElevationProfile :distance="selectedDistance" :data="gpxData[selectedId]" :hover-progress="hoverProgress" @hover="hoverProgress = $event"/>
+      <a v-if="selectedDistance.gpx?.rawFile" :href="selectedDistance.gpx.rawFile" :download="selectedDistance.gpx.rawFile.split('/').at(-1)" :class="['gpx-download', `effort-${effortCategory(selectedDistance).toLowerCase()}`]" :aria-label="`Prenesi GPX za traso ${selectedDistance.name || selectedDistance.label}`">
+        <span aria-hidden="true">↓</span> Prenesi GPX
+      </a>
+    </div>
   </div>
 </template>

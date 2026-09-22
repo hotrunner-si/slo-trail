@@ -7,7 +7,8 @@
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "gpx:import": "node scripts/import-gpx.mjs"
+    "gpx:import": "node scripts/import-gpx.mjs",
+    "gpx:import-all": "node scripts/import-gpx.mjs --all"
   },
   "dependencies": {
     "@nuxtjs/sitemap": "^7.4.7",

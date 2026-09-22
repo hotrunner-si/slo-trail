@@ -1,30 +1,16 @@
-# Neobdelane GPX datoteke
+# GPX trase
 
-V to mapo samo odloži originalne `.gpx` datoteke. Za zdaj jih ne zaganjaj skozi noben pretvornik.
-
-Uporabi strukturo:
-
-```text
-public/gpx/
-  slug-tekme/
-    id-trase.gpx
-```
-
-Primer:
+Izvorne datoteke so v mapi posamezne tekme. Ime sledi vzorcu
+`slug-tekme-id-trase-razdalja.gpx`, na primer:
 
 ```text
-public/gpx/julian-alps-trail-run-by-utmb/funny-10k.gpx
-public/gpx/julian-alps-trail-run-by-utmb/sky-trail-50k.gpx
-public/gpx/julian-alps-trail-run-by-utmb/lake-bled-80k.gpx
+public/gpx/hg-trail-idrija/hg-trail-idrija-berkmandlc-27km.gpx
 ```
 
-`slug-tekme` in `id-trase` sta že zapisana v `data/races.ts`. Ime datoteke naj se natančno ujema z `distance.id`.
+Razdalja v imenu je uradna razdalja trase iz `data/races.ts`. Kadar je ta
+neznana, se uporabi dolžina iz GPX datoteke. Če ID trase že vsebuje isto
+razdaljo, se ponovljeni del iz imena izpusti.
 
-Datoteke ostanejo neobdelane. Kasneje bomo skupaj določili končni proces, ki bo iz vsake GPX trase izdelal:
-
-- izvorno geometrijo,
-- tri stopnje podrobnosti za različne povečave,
-- višinski profil,
-- meje, središče, start in cilj,
-- D+, D− in najvišjo točko,
-- GeoJSON za skupni in podrobni zemljevid.
+Po dodajanju novih GPX datotek zaženi `npm run gpx:import-all`. Uvoz ustvari
+lahke predoglede in podrobne podatke `.json`, posodobi `data/gpxManifest.ts`
+ter poveže izvorne datoteke z gumbi za prenos na straneh tekem.

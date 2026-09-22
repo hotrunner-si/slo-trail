@@ -14,6 +14,12 @@ const dateLabel = computed(() => hasDate.value && race.value?.dateStatus !== 'es
 const entrants = computed(() => (race.value?.entrants || []).map(entry => ({ runner:runners.find(item=>item.slug===entry.runnerSlug), distance:race.value?.distances.find(item=>item.id===entry.distanceId) })).filter(item=>item.runner&&item.distance))
 const resultsArticle = computed(() => articles.find(article => article.category === 'Rezultati' && article.relatedRace === race.value?.slug))
 const raceHasPassed = computed(() => hasDate.value && new Date(`${race.value!.date}T23:59:59`) < new Date())
+const showIndexes = computed(() => race.value?.distances.some(distance => distance.itra != null || distance.utmbIndexCategory != null) || false)
+function startDay(startDate?: string) {
+  if (!startDate) return '—'
+  const date = new Date(`${startDate}T12:00:00`)
+  return Number.isNaN(date.getTime()) ? '—' : date.toLocaleDateString('sl-SI', { weekday: 'short', day: 'numeric', month: 'short' })
+}
 </script>
 
 <template>
@@ -34,15 +40,31 @@ const raceHasPassed = computed(() => hasDate.value && new Date(`${race.value!.da
       <RaceCourseMap :race="race" />
     </section>
 
-    <section class="detail-section shell">
+    <section class="detail-section shell race-distances-section">
       <SectionHead eyebrow="Izberi izziv" title="Razdalje" />
-      <div class="distance-grid">
-        <article v-for="distance in race.distances" :key="distance.id || distance.label">
-          <strong>{{ distance.name || distance.label }}</strong>
-          <span class="mono">{{ distance.km ? `${distance.km} KM` : 'Dolžina ni objavljena' }}</span>
-          <span class="mono">{{ distance.elevation ? `${distance.elevation.toLocaleString('sl-SI')} M+` : 'Višinci niso objavljeni' }}</span>
-        </article>
+      <div class="race-distances-wrap">
+        <table class="race-distances-table" :class="{ 'with-indexes': showIndexes }">
+          <thead><tr>
+            <th scope="col">Trasa</th><th scope="col">Dolžina</th><th scope="col">Vzpon</th>
+            <th scope="col">Dan štarta</th><th scope="col">Ura</th>
+            <th v-if="showIndexes" scope="col">ITRA</th><th v-if="showIndexes" scope="col">UTMB</th>
+            <th scope="col">Višinski profil</th>
+          </tr></thead>
+          <tbody>
+            <tr v-for="distance in race.distances" :key="distance.id || distance.label">
+              <th scope="row"><strong>{{ distance.name || distance.label }}</strong></th>
+              <td class="mono">{{ distance.km ? `${distance.km.toLocaleString('sl-SI')} km` : '—' }}</td>
+              <td class="mono">{{ distance.elevation ? `${distance.elevation.toLocaleString('sl-SI')} m+` : '—' }}</td>
+              <td>{{ startDay(distance.startDate || (race.dateStatus === 'confirmed' && !race.dateEnd ? race.date : undefined)) }}</td>
+              <td class="mono">{{ distance.startTime || '—' }}</td>
+              <td v-if="showIndexes" class="mono">{{ distance.itra != null ? `ITRA ${distance.itra}` : '—' }}</td>
+              <td v-if="showIndexes"><span v-if="distance.utmbIndexCategory" :class="['utmb-estimate', `effort-${distance.utmbIndexCategory.toLowerCase()}`]">{{ distance.utmbIndexCategory }}</span><span v-else>—</span></td>
+              <td class="distance-profile-cell"><RaceElevationMini :distance="distance" :race-id="race.id" /></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+      <p v-if="showIndexes" class="race-index-note">UTMB kategorije so ocena iz razdalje in višinskih metrov (KM-effort); uradna kategorija se lahko razlikuje. ITRA bo dodana po preverjanju.</p>
     </section>
 
     <section class="detail-section shell info-grid">

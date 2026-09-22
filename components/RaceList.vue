@@ -3,7 +3,7 @@ import type { Race } from '~/types'
 const props = withDefaults(defineProps<{ races: Race[]; showProfile?: boolean; showCompare?: boolean; density?: 'comfortable' | 'compact'; activeId?: string; comparedKeys?: string[] }>(), { showProfile: false, showCompare: false, density: 'comfortable', activeId: '', comparedKeys: () => [] })
 const emit = defineEmits<{ activate:[id:string]; compare:[race:Race,index:number] }>()
 const selected = ref<Record<string, number>>({})
-const selectedIndex = (race: Race) => selected.value[race.id] ?? (race.id.charCodeAt(race.id.length - 1) % race.distances.length)
+const selectedIndex = (race: Race) => selected.value[race.id] ?? race.distances.reduce((longest, distance, index) => distance.km > race.distances[longest].km ? index : longest, 0)
 const setDistance = (race: Race, index: number) => { selected.value[race.id] = index }
 const hasDate = (race: Race) => Boolean(race.date && !Number.isNaN(new Date(race.date).getTime()))
 const dateLabel = (race: Race) => !hasDate(race) || race.dateStatus === 'estimated' ? '—' : race.dateEnd

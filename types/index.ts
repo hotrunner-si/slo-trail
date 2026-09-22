@@ -15,6 +15,8 @@ export interface GpxPreviewData {
 
 export interface RaceDistance {
   id?: string; label: string; name?: string; km: number; elevation: number
+  startDate?: string; startTime?: string; itra?: number
+  utmbIndexCategory?: '20K' | '50K' | '100K' | '100M'
   technicality?: Technicality; gpx?: GpxPreviewData
 }
 export interface RaceResult { category: 'Moški' | 'Ženske'; winner: string; time: string }
