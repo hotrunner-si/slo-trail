@@ -7,7 +7,20 @@ const route = useRoute()
 const race = computed(() => getRace(route.params.slug as string))
 if (!race.value) throw createError({ statusCode: 404, statusMessage: 'Tekma ni najdena' })
 
-useSiteSeo(() => race.value?.name, () => race.value?.summary)
+useSiteSeo(
+  () => race.value?.name,
+  () => {
+    const event = race.value
+    if (!event) return undefined
+    const place = event.location && event.location !== '-' ? ` v kraju ${event.location}` : ' v Sloveniji'
+    const date = event.dateStatus === 'confirmed' && !Number.isNaN(Date.parse(event.date))
+      ? ` Datum: ${new Date(`${event.date}T12:00:00`).toLocaleDateString('sl-SI')}.`
+      : ' Datum še ni objavljen.'
+    const distances = event.distances.map(distance => distance.label).join(', ')
+    return `${event.name}: trail tek${place}.${date} Razdalje: ${distances}.`
+  },
+  { image: () => race.value?.logo || '/images/kv01.jpg', imageAlt: () => race.value ? `Trail tek ${race.value.name}` : undefined }
+)
 const related = computed(() => articles.filter(article => article.relatedRace === race.value?.slug))
 const hasDate = computed(() => Boolean(race.value?.date && !Number.isNaN(new Date(race.value.date).getTime())))
 const dateLabel = computed(() => hasDate.value && race.value?.dateStatus !== 'estimated' ? new Date(race.value!.date).toLocaleDateString('sl-SI', { day: 'numeric', month: 'long', year: 'numeric' }) : '—')

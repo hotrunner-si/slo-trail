@@ -2,7 +2,7 @@
 import type { Race } from '~/types'
 const props = defineProps<{ races: Race[] }>()
 const weekdays=['Pon','Tor','Sre','Čet','Pet','Sob','Ned']
-const validDate=(race:Race)=>Boolean(race.date&&!Number.isNaN(new Date(`${race.date}T12:00:00`).getTime()))
+const validDate=(race:Race)=>Boolean(race.dateStatus !== 'estimated' && race.date && !Number.isNaN(new Date(`${race.date}T12:00:00`).getTime()))
 const calendars=computed(()=>{
   const months=new Map<string,{year:number;month:number;races:Race[]}>()
   for(const race of props.races.filter(validDate)){const date=new Date(`${race.date}T12:00:00`),key=`${date.getFullYear()}-${date.getMonth()}`;if(!months.has(key))months.set(key,{year:date.getFullYear(),month:date.getMonth(),races:[]});months.get(key)!.races.push(race)}

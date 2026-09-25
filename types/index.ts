@@ -36,6 +36,7 @@ export interface RaceCompareItem { race: Race; distance: RaceDistance; index: nu
 export interface Runner {
   id: string; slug: string; name: string; location: string; favouriteDistance: string
   bio: string; quote: string; image: string; favouriteRouteSlugs: string[]
+  utmbIndex?: number; utmb20k?: number; utmb50k?: number; utmb100k?: number; bestUtmbScore?: number; finishedRaces?: number
 }
 export interface TrailRoute {
   id: string; slug: string; name: string; region: string; distance: number; elevationGain: number
@@ -44,6 +45,6 @@ export interface TrailRoute {
   gpx?: GpxPreviewData
 }
 export interface Article {
-  id: string; slug: string; title: string; description: string; category: string; publishedAt: string
+  id: string; slug: string; title: string; subtitle: string; description: string; category: string; publishedAt: string
   image: string; body: string[]; relatedRace?: string; relatedRunner?: string; relatedRoute?: string
 }

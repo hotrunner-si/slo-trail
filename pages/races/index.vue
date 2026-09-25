@@ -3,7 +3,7 @@ import { races } from '~/data/races'
 import type { Race, RaceCompareItem, RaceDistance, RaceType, Technicality } from '~/types'
 import { effortCategory } from '~/utils/raceCategories'
 
-useSiteSeo('Tekme', 'Raziskovalnik trail in gorskotekaških tekem z zemljevidom, koledarjem, višinskimi profili in primerjavo tras.')
+useSiteSeo('Trail in gorskotekaške tekme', 'Poišči trail in gorskotekaške tekme v Sloveniji. Preglej datume, kraje, razdalje, višinske profile in GPX trase.')
 definePageMeta({ keepalive: true })
 
 type ViewMode = 'list' | 'map' | 'calendar'
@@ -24,7 +24,7 @@ const popularRaceSlugs = new Set([
 ])
 const collections = [
   { id: 'vse', label: 'Vse tekme', description: `${races.length} slovenskih dogodkov` },
-  { id: 'priljubljene', label: 'Najbolj priljubljene', description: 'Izbor največjih dogodkov' },
+  { id: 'priljubljene', label: 'Najbolj priljubljene', description: 'Izbrane tekme' },
   { id: 'ponavljajoce', label: 'Krožne preizkušnje', description: 'Časovni in ponavljajoči formati' }
 ]
 const filtered = computed(() => races.filter(race => {

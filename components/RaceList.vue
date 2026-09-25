@@ -13,13 +13,15 @@ const statusClass = (race: Race) => race.registrationStatus.toLowerCase().replac
 const groups = computed(() => {
   const result = new Map<string,{ label:string; races:Race[] }>()
   for (const race of props.races) {
-    const date=hasDate(race)?new Date(`${race.date}T12:00:00`):null
+    const date=hasDate(race) && race.dateStatus !== 'estimated' ? new Date(`${race.date}T12:00:00`) : null
     const key=date?`${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}`:'undated'
     const label=date?date.toLocaleDateString('sl-SI',{month:'long',year:'numeric'}):'Datum še ni objavljen'
     if(!result.has(key))result.set(key,{label,races:[]})
     result.get(key)!.races.push(race)
   }
-  return [...result.values()]
+  return [...result.entries()]
+    .sort(([a], [b]) => a === b ? 0 : a === 'undated' ? 1 : b === 'undated' ? -1 : a.localeCompare(b))
+    .map(([, group]) => ({ ...group, races: [...group.races].sort((a, b) => a.date.localeCompare(b.date)) }))
 })
 </script>
 <template>
