@@ -1,6 +1,61 @@
 <script setup lang="ts">
-import { getTrailRoute } from '~/data/routes'; import { getRunner } from '~/data/runners'
-const pageRoute=useRoute(); const trail=computed(()=>getTrailRoute(pageRoute.params.slug as string)); if(!trail.value) throw createError({statusCode:404,statusMessage:'Tura ni najdena'}); const recommender=computed(()=>trail.value?getRunner(trail.value.runnerSlug):undefined)
-useSiteSeo(()=>trail.value?.name,()=>trail.value?.description,{ noindex: true })
+import { getTrailRoute } from '~/data/routes'
+import { getRunner } from '~/data/runners'
+const pageRoute = useRoute()
+const trail = computed(() => getTrailRoute(pageRoute.params.slug as string))
+if (!trail.value) throw createError({ statusCode: 404, statusMessage: 'Tura ni najdena' })
+const recommender = computed(() => (trail.value ? getRunner(trail.value.runnerSlug) : undefined))
+useSiteSeo(
+  () => trail.value?.name,
+  () => trail.value?.description,
+  { noindex: true },
+)
 </script>
-<template><div v-if="trail" class="detail-page"><header class="route-detail-hero shell"><div><p class="eyebrow">{{ trail.region }} · demonstracijski prikaz</p><h1>{{ trail.name }}</h1><p>{{ trail.description }}</p><button class="button disabled" disabled>Prenesi GPX · kmalu</button></div><RouteVisual :variant="2" dark :label="trail.name"/></header><div class="shell"><StatStrip :items="[{value:`${trail.distance.toLocaleString('sl-SI')} KM`,label:'Razdalja'},{value:`${trail.elevationGain.toLocaleString('sl-SI')} M+`,label:'Vzpon'},{value:`${trail.elevationLoss.toLocaleString('sl-SI')} M−`,label:'Spust'},{value:`${trail.highPoint.toLocaleString('sl-SI')} M`,label:'Najvišja točka'},{value:trail.estimatedTime,label:'Čas'},{value:trail.difficulty.toUpperCase(),label:'Težavnost'}]"/></div><section class="detail-section shell route-map-large"><RouteVisual :variant="1" :label="trail.name"/><ElevationProfile/></section><section class="detail-section shell route-story"><div><p class="eyebrow">O trasi</p><h2>Linija, ki ostane.</h2></div><div><p>{{ trail.description }}</p><p>Prikaz trase in opis sta demonstracijska vsebina.</p></div></section><section class="detail-section shell"><SectionHead eyebrow="S poti" title="Vizualni zapis"/><div class="photo-pair"><img src="/images/verbier03.jpg" alt="Gorska pokrajina ob trail trasi" loading="lazy"><img src="/images/kv01.jpg" alt="Trail tekač v gorskem okolju" loading="lazy"></div></section></div></template>
+<template>
+  <div v-if="trail" class="detail-page">
+    <header class="route-detail-hero shell">
+      <div>
+        <p class="eyebrow">{{ trail.region }} · demonstracijski prikaz</p>
+        <h1>{{ trail.name }}</h1>
+        <p>{{ trail.description }}</p>
+        <button class="button disabled" disabled>Prenesi GPX · kmalu</button>
+      </div>
+      <RouteVisual :variant="2" dark :label="trail.name" />
+    </header>
+    <div class="shell">
+      <StatStrip
+        :items="[
+          { value: `${trail.distance.toLocaleString('sl-SI')} KM`, label: 'Razdalja' },
+          { value: `${trail.elevationGain.toLocaleString('sl-SI')} M+`, label: 'Vzpon' },
+          { value: `${trail.elevationLoss.toLocaleString('sl-SI')} M−`, label: 'Spust' },
+          { value: `${trail.highPoint.toLocaleString('sl-SI')} M`, label: 'Najvišja točka' },
+          { value: trail.estimatedTime, label: 'Čas' },
+          { value: trail.difficulty.toUpperCase(), label: 'Težavnost' },
+        ]"
+      />
+    </div>
+    <section class="detail-section shell route-map-large">
+      <RouteVisual :variant="1" :label="trail.name" /><ElevationProfile />
+    </section>
+    <section class="detail-section shell route-story">
+      <div>
+        <p class="eyebrow">O trasi</p>
+        <h2>Linija, ki ostane.</h2>
+      </div>
+      <div>
+        <p>{{ trail.description }}</p>
+        <p>Prikaz trase in opis sta demonstracijska vsebina.</p>
+      </div>
+    </section>
+    <section class="detail-section shell">
+      <SectionHead eyebrow="S poti" title="Vizualni zapis" />
+      <div class="photo-pair">
+        <img src="/images/verbier03.jpg" alt="Gorska pokrajina ob trail trasi" loading="lazy" /><img
+          src="/images/kv01.jpg"
+          alt="Trail tekač v gorskem okolju"
+          loading="lazy"
+        />
+      </div>
+    </section>
+  </div>
+</template>

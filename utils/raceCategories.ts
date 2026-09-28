@@ -21,10 +21,11 @@ export const effortLabel = (distance: EffortDistance) => {
   return category === 'short' ? '<20' : category
 }
 
-export const effortColor = (distance: EffortDistance) => ({
-  short: '#89939b',
-  '20K': '#d6b529',
-  '50K': '#d8792c',
-  '100K': '#3e8d68',
-  '100M': '#ba4b4f'
-})[effortCategory(distance)]
+export const effortColor = (distance: EffortDistance) =>
+  ({
+    short: '#89939b',
+    '20K': '#d6b529',
+    '50K': '#d8792c',
+    '100K': '#3e8d68',
+    '100M': '#ba4b4f',
+  })[effortCategory(distance)]
