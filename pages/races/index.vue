@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { races } from '~/data/races'
-import type { Race, RaceCompareItem, RaceDistance, RaceType, Technicality } from '~/types'
+import type { Race, RaceCompareItem, RaceDistance } from '~/types'
 import { effortCategory } from '~/utils/raceCategories'
+import { formatSlovenianCount, slovenianCountForms } from '~/utils/slovenianCount'
 
 useSiteSeo(
   'Trail in gorskotekaške tekme',
@@ -13,11 +14,8 @@ type ViewMode = 'list' | 'map' | 'calendar'
 const query = ref(''),
   month = ref('Vsi meseci'),
   distance = ref('Vse razdalje'),
-  region = ref('Vse regije'),
   status = ref('Vsi statusi')
-const raceType = ref<'Vsi tipi' | RaceType>('Vsi tipi'),
-  effort = ref('Vsi razredi'),
-  technicality = ref<'Vsa zahtevnost' | Technicality>('Vsa zahtevnost')
+const effort = ref('Vsi razredi')
 const collection = ref('vse'),
   view = ref<ViewMode>('map'),
   density = ref<'comfortable' | 'compact'>('comfortable')
@@ -42,7 +40,7 @@ const popularRaceSlugs = new Set([
   'kocevsko-outdoor-festival',
 ])
 const collections = [
-  { id: 'vse', label: 'Vse tekme', description: `${races.length} slovenskih dogodkov` },
+  { id: 'vse', label: 'Vse tekme', description: `${formatSlovenianCount(races.length, slovenianCountForms.event)} v Sloveniji` },
   { id: 'priljubljene', label: 'Najbolj priljubljene', description: 'Izbrane tekme' },
   {
     id: 'ponavljajoce',
@@ -51,18 +49,28 @@ const collections = [
   },
 ]
 const filtersOpen = ref(false)
+const openFilter = ref<string | null>(null)
+const filterOptions = {
+  month: months,
+  distance: ['Vse razdalje', 'Do 30 km', '30–60 km', 'Nad 60 km'],
+  effort: ['Vsi razredi', 'short', '20K', '50K', '100K', '100M'],
+  status: ['Vsi statusi', 'Odprte', 'Kmalu', 'Zaprte', 'Ni podatka'],
+}
+const selectFilter = (key: 'month' | 'distance' | 'effort' | 'status', value: string) => {
+  if (key === 'month') month.value = value
+  else if (key === 'distance') distance.value = value
+  else if (key === 'effort') effort.value = value
+  else status.value = value
+  openFilter.value = null
+}
+const selectedFilter = (key: 'month' | 'distance' | 'effort' | 'status') =>
+  key === 'month' ? month.value : key === 'distance' ? distance.value : key === 'effort' ? effort.value : status.value
 useUrlControls({
   query: { value: query },
   month: { value: month, options: months },
   distance: { value: distance, options: ['Vse razdalje', 'Do 30 km', '30–60 km', 'Nad 60 km'] },
-  region: { value: region, options: ['Vse regije', ...new Set(races.map((r) => r.region))] },
   status: { value: status, options: ['Vsi statusi', 'Odprte', 'Kmalu', 'Zaprte', 'Ni podatka'] },
-  raceType: { value: raceType, options: ['Vsi tipi', 'Trail', 'Gorski tek', 'Vertikal'] },
   effort: { value: effort, options: ['Vsi razredi', 'short', '20K', '50K', '100K', '100M'] },
-  technicality: {
-    value: technicality,
-    options: ['Vsa zahtevnost', 'Tekoča', 'Srednja', 'Tehnična'],
-  },
   collection: { value: collection, options: collections.map((item) => item.id) },
   view: { value: view, options: ['list', 'map', 'calendar'] },
   density: { value: density, options: ['comfortable', 'compact'] },
@@ -84,9 +92,7 @@ const filtered = computed(() =>
     return (
       (!query.value || haystack.includes(query.value.toLowerCase())) &&
       (month.value === 'Vsi meseci' || monthName === month.value.toLowerCase()) &&
-      (region.value === 'Vse regije' || race.region === region.value) &&
       (status.value === 'Vsi statusi' || race.registrationStatus === status.value) &&
-      (raceType.value === 'Vsi tipi' || race.raceType === raceType.value) &&
       (distance.value === 'Vse razdalje' ||
         race.distances.some((d) =>
           distance.value === 'Do 30 km'
@@ -97,8 +103,6 @@ const filtered = computed(() =>
         )) &&
       (effort.value === 'Vsi razredi' ||
         race.distances.some((d) => effortCategory(d) === effort.value)) &&
-      (technicality.value === 'Vsa zahtevnost' ||
-        race.distances.some((d) => d.technicality === technicality.value)) &&
       collectionMatch
     )
   }),
@@ -118,11 +122,8 @@ function resetFilters() {
   query.value = ''
   month.value = 'Vsi meseci'
   distance.value = 'Vse razdalje'
-  region.value = 'Vse regije'
   status.value = 'Vsi statusi'
-  raceType.value = 'Vsi tipi'
   effort.value = 'Vsi razredi'
-  technicality.value = 'Vsa zahtevnost'
   collection.value = 'vse'
 }
 </script>
@@ -158,59 +159,22 @@ function resetFilters() {
         @toggle="filtersOpen = ($event.target as HTMLDetailsElement).open"
       >
         <summary>
-          Filtri <span class="mono">{{ filtered.length }} REZULTATOV</span>
+          Filtri <span class="mono">{{ formatSlovenianCount(filtered.length, slovenianCountForms.result).toLocaleUpperCase('sl-SI') }}</span>
         </summary>
-        <div class="filters filters-seven">
-          <label
-            >Mesec<select v-model="month">
-              <option v-for="item in months" :key="item">{{ item }}</option>
-            </select></label
-          ><label
-            >Razdalja<select v-model="distance">
-              <option>Vse razdalje</option>
-              <option>Do 30 km</option>
-              <option>30–60 km</option>
-              <option>Nad 60 km</option>
-            </select></label
-          ><label
-            >Regija<select v-model="region">
-              <option>Vse regije</option>
-              <option v-for="item in [...new Set(races.map((r) => r.region))]" :key="item">
-                {{ item }}
-              </option>
-            </select></label
-          ><label
-            >Tip<select v-model="raceType">
-              <option>Vsi tipi</option>
-              <option>Trail</option>
-              <option>Gorski tek</option>
-              <option>Vertikal</option>
-            </select></label
-          ><label
-            >Effort<select v-model="effort">
-              <option>Vsi razredi</option>
-              <option>short</option>
-              <option>20K</option>
-              <option>50K</option>
-              <option>100K</option>
-              <option>100M</option>
-            </select></label
-          ><label
-            >Tehničnost<select v-model="technicality">
-              <option>Vsa zahtevnost</option>
-              <option>Tekoča</option>
-              <option>Srednja</option>
-              <option>Tehnična</option>
-            </select></label
-          ><label
-            >Prijave<select v-model="status">
-              <option>Vsi statusi</option>
-              <option>Odprte</option>
-              <option>Kmalu</option>
-              <option>Zaprte</option>
-              <option>Ni podatka</option>
-            </select></label
-          >
+        <div class="filters filters-four">
+          <div v-for="(label, key) in { month: 'Mesec', distance: 'Razdalja', effort: 'Effort', status: 'Prijave' }" :key="key" class="filter-field">
+            <span class="filter-label">{{ label }}</span>
+            <div class="filter-select" :class="{ open: openFilter === key }">
+              <button type="button" class="filter-select-trigger" :aria-expanded="openFilter === key" @click="openFilter = openFilter === key ? null : key">
+                <span>{{ selectedFilter(key) }}</span><i aria-hidden="true"></i>
+              </button>
+              <div v-if="openFilter === key" class="filter-select-menu" role="listbox" :aria-label="label">
+                <button v-for="option in filterOptions[key]" :key="option" type="button" role="option" :aria-selected="selectedFilter(key) === option" :class="{ selected: selectedFilter(key) === option }" @click="selectFilter(key, option)">
+                  {{ option }}<span v-if="selectedFilter(key) === option" aria-hidden="true">✓</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="filter-actions"><button @click="resetFilters">Ponastavi filtre</button></div>
       </details>
@@ -287,7 +251,7 @@ function resetFilters() {
           </div>
           <div>
             <dt>Dogodkov</dt>
-            <dd>{{ races.length }}</dd>
+            <dd>{{ formatSlovenianCount(races.length, slovenianCountForms.event) }}</dd>
           </div>
         </dl>
       </div>

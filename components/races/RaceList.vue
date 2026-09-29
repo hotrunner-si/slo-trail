@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Race } from '~/types'
+import { formatSlovenianCount, slovenianCountForms } from '~/utils/slovenianCount'
 const props = withDefaults(
   defineProps<{
     races: Race[]
@@ -18,6 +19,12 @@ const props = withDefaults(
   },
 )
 const emit = defineEmits<{ activate: [id: string]; compare: [race: Race, index: number] }>()
+const navigateToRace = (race: Race) => navigateTo(`/races/${race.slug}`)
+const onRowKeydown = (event: KeyboardEvent, race: Race) => {
+  if (event.target !== event.currentTarget || (event.key !== 'Enter' && event.key !== ' ')) return
+  event.preventDefault()
+  void navigateToRace(race)
+}
 const selected = ref<Record<string, number>>({})
 const selectedIndex = (race: Race) =>
   selected.value[race.id] ??
@@ -65,9 +72,7 @@ const groups = computed(() => {
     <section v-for="group in groups" :key="group.label" class="race-list-month">
       <header>
         <h2>{{ group.label }}</h2>
-        <span class="mono"
-          >{{ group.races.length }} {{ group.races.length === 1 ? 'DOGODEK' : 'DOGODKOV' }}</span
-        >
+        <span class="mono">{{ formatSlovenianCount(group.races.length, slovenianCountForms.event).toLocaleUpperCase('sl-SI') }}</span>
       </header>
       <div
         :class="[
@@ -80,6 +85,11 @@ const groups = computed(() => {
           v-for="race in group.races"
           :key="race.id"
           :class="['event-row', { highlighted: activeId === race.id }]"
+          role="link"
+          tabindex="0"
+          :aria-label="`Odpri tekmo ${race.name}`"
+          @click="navigateToRace(race)"
+          @keydown="onRowKeydown($event, race)"
           @mouseenter="emit('activate', race.id)"
           @focusin="emit('activate', race.id)"
         >
@@ -98,6 +108,7 @@ const groups = computed(() => {
               :key="distance.label"
               :class="{ active: selectedIndex(race) === index }"
               :aria-pressed="selectedIndex(race) === index"
+              @click.stop
               @click="setDistance(race, index)"
             >
               {{ distance.label }}
@@ -117,6 +128,7 @@ const groups = computed(() => {
             class="compare-button"
             :class="{ active: comparedKeys.includes(`${race.id}:${selectedIndex(race)}`) }"
             :aria-label="`Primerjaj ${race.name}, ${race.distances[selectedIndex(race)].label}`"
+            @click.stop
             @click="emit('compare', race, selectedIndex(race))"
           >
             {{ comparedKeys.includes(`${race.id}:${selectedIndex(race)}`) ? '✓' : '+' }}

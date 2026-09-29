@@ -5,6 +5,7 @@ const lifetime = useComponentLifetime()
 import type { GpxData } from '~/types/gpx'
 import type { Race, RaceDistance } from '~/types'
 import { effortColor } from '~/utils/raceCategories'
+import { slovenianCountForm, slovenianCountForms } from '~/utils/slovenianCount'
 import 'mapbox-gl/dist/mapbox-gl.css'
 const props = defineProps<{ race: Race; selectedId?: string; hoverProgress?: number | null }>()
 const emit = defineEmits<{ select: [id: string]; hover: [progress: number | null] }>()
@@ -133,6 +134,7 @@ function showAll() {
   fit()
 }
 onMounted(async () => {
+  await nextTick()
   if (!mapEl.value) return
   if (!config.public.mapboxToken) {
     mapError.value = 'Zemljevid trenutno ni na voljo.'
@@ -184,7 +186,7 @@ onBeforeUnmount(() => map?.remove())
     <p v-if="mapError" class="mapbox-map-error">{{ mapError }}</p>
     <div class="leaflet-map-toolbar">
       <span class="mono">{{
-        loaded ? `${loaded}/${race.distances.length} GPX TRAS` : 'GPX NI NALOŽEN'
+        loaded ? `${loaded}/${race.distances.length} GPX ${slovenianCountForm(race.distances.length, slovenianCountForms.route).toLocaleUpperCase('sl-SI')}` : 'GPX NI NALOŽEN'
       }}</span
       ><button v-if="race.distances.length > 1" type="button" @click="showAll">Vse trase</button
       ><button type="button" @click="fit">Ponastavi pogled</button>

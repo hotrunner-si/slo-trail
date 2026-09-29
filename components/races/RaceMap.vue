@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Race } from '~/types'
+import { formatSlovenianCount, slovenianCountForms } from '~/utils/slovenianCount'
 const props = defineProps<{ races: Race[]; activeId?: string; visible?: boolean }>()
 const emit = defineEmits<{ activate: [id: string] }>()
 const mapRef = ref<{ focusRace: (id: string) => void; resize: () => void } | null>(null)
@@ -54,7 +55,7 @@ const dateLabel = (race: Race) =>
         @focus="focusFromList(race.id)"
         ><time>{{ dateLabel(race) }}</time
         ><strong>{{ race.name }}</strong
-        ><span>{{ race.location }} · {{ race.distances.length }} tras</span></NuxtLink
+        ><span>{{ race.location }} · {{ formatSlovenianCount(race.distances.length, slovenianCountForms.route) }}</span></NuxtLink
       >
     </div>
   </div>

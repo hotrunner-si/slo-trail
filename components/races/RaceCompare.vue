@@ -8,7 +8,7 @@ const emit = defineEmits<{ remove: [index: number]; clear: [] }>()
   <aside v-if="items.length" class="compare-tray" aria-label="Primerjava tras">
     <header>
       <div>
-        <span class="mono">PRIMERJAVA</span><strong>{{ items.length }}/4 trase</strong>
+        <span class="mono">PRIMERJAVA</span><strong>{{ items.length }}/4 {{ items.length === 1 ? 'trasa' : 'trase' }}</strong>
       </div>
       <button @click="emit('clear')">Počisti</button>
     </header>

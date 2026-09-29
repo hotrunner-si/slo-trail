@@ -2041,9 +2041,97 @@ h2 {
 .filter-actions {
   display: flex;
   align-items: center;
-  padding: 12px 16px;
-  border-top: 1px solid var(--line);
+  padding: 0 16px 12px;
   font-size: 0.75rem;
+}
+.filter-field {
+  position: relative;
+  min-width: 0;
+  padding: 12px 16px 14px;
+  border-right: 1px solid var(--line);
+}
+.filter-field:last-child {
+  border-right: 0;
+}
+.filter-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  text-transform: uppercase;
+  font: 0.65rem var(--mono);
+}
+.filter-select {
+  position: relative;
+}
+.filter-select-trigger {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid var(--line);
+  padding: 10px 12px;
+  background: var(--paper);
+  color: var(--ink);
+  text-align: left;
+  font: 0.9rem var(--sans);
+  cursor: pointer;
+  transition: border-color 150ms ease, background 150ms ease;
+}
+.filter-select-trigger:hover,
+.filter-select.open .filter-select-trigger {
+  border-color: var(--ink);
+  background: color-mix(in srgb, var(--paper) 90%, var(--line));
+}
+.filter-select-trigger i {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 150ms ease;
+}
+.filter-select.open .filter-select-trigger i {
+  transform: translateY(2px) rotate(225deg);
+}
+.filter-select-menu {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 6px);
+  right: 0;
+  left: 0;
+  max-height: min(280px, 50vh);
+  overflow-y: auto;
+  border: 1px solid var(--ink);
+  padding: 4px;
+  background: var(--paper);
+  box-shadow: 0 12px 28px rgb(0 0 0 / 12%);
+}
+.filter-select-menu button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 0;
+  padding: 9px 10px;
+  background: transparent;
+  color: var(--ink);
+  text-align: left;
+  font: 0.85rem var(--sans);
+  cursor: pointer;
+}
+.filter-select-menu button:hover,
+.filter-select-menu button.selected {
+  background: var(--ink);
+  color: var(--paper);
+}
+.filter-select-menu button span {
+  color: var(--accent);
+}
+.filter-select-menu button.selected span {
+  color: inherit;
 }
 .filter-actions button {
   border: 0;
@@ -2453,6 +2541,28 @@ h2 {
   }
   .compare-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 720px) {
+  .filters-four {
+    grid-template-columns: 1fr 1fr;
+  }
+  .filters-four .filter-field:nth-child(2n) {
+    border-right: 0;
+  }
+  .filters-four .filter-field:nth-child(n + 3) {
+    border-top: 1px solid var(--line);
+  }
+}
+@media (max-width: 420px) {
+  .filters-four {
+    grid-template-columns: 1fr;
+  }
+  .filters-four .filter-field {
+    border-right: 0;
+  }
+  .filters-four .filter-field + .filter-field {
+    border-top: 1px solid var(--line);
   }
 }
 @media (max-width: 900px) {

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Race } from '~/types'
+import { formatSlovenianCount, slovenianCountForms } from '~/utils/slovenianCount'
 const props = defineProps<{ races: Race[] }>()
 const weekdays = ['Pon', 'Tor', 'Sre', 'Čet', 'Pet', 'Sob', 'Ned']
 const validDate = (race: Race) =>
@@ -51,10 +52,7 @@ const undated = computed(() => props.races.filter((race) => !validDate(race)))
     >
       <header>
         <h2>{{ calendar.label }}</h2>
-        <span class="mono"
-          >{{ calendar.races.length }}
-          {{ calendar.races.length === 1 ? 'DOGODEK' : 'DOGODKOV' }}</span
-        >
+        <span class="mono">{{ formatSlovenianCount(calendar.races.length, slovenianCountForms.event).toLocaleUpperCase('sl-SI') }}</span>
       </header>
       <div class="calendar-weekdays" aria-hidden="true">
         <span v-for="day in weekdays" :key="day">{{ day }}</span>

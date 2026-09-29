@@ -3,6 +3,7 @@ import { formatDate } from '~/utils/formatDate'
 import { geographicRoutePoints } from '~/utils/gpx'
 import { runnerTours } from '~/data/runnerTours'
 import { effortColor, effortLabel } from '~/utils/raceCategories'
+import { formatSlovenianCount, slovenianCountForms } from '~/utils/slovenianCount'
 
 useSiteSeo('Ture tekačev', 'Resnične GPX ture tekačev, razvrščene od najnovejše do najstarejše.')
 const view = ref<'list' | 'cards' | 'map'>('cards')
@@ -45,7 +46,7 @@ function selectTour(id: string) {
           Zemljevid
         </button>
       </div>
-      <span class="mono runner-tours-count">{{ runnerTours.length }} TUR · NAJNOVEJŠE NAJPREJ</span>
+      <span class="mono runner-tours-count">{{ formatSlovenianCount(runnerTours.length, slovenianCountForms.tour).toLocaleUpperCase('sl-SI') }} · NAJNOVEJŠE NAJPREJ</span>
     </div>
     <div v-if="!runnerTours.length" class="empty-state">
       <h2>Tur še ni.</h2>

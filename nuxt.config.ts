@@ -1,3 +1,18 @@
+if (process.env.NETLIFY === 'true') {
+  const mapboxToken = process.env.NUXT_PUBLIC_MAPBOX_TOKEN || ''
+  console.info('[Mapbox build configuration]', {
+    context: process.env.CONTEXT || 'unknown',
+    tokenPresent: Boolean(mapboxToken),
+    publicTokenFormat: mapboxToken.startsWith('pk.'),
+    customStylePresent: Boolean(process.env.NUXT_PUBLIC_MAPBOX_STYLE),
+  })
+  if (!mapboxToken) {
+    throw new Error(
+      'NUXT_PUBLIC_MAPBOX_TOKEN is missing in this Netlify build context. Set it for this project and deploy context, then rebuild.',
+    )
+  }
+}
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },

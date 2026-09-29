@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { formatSlovenianCount, slovenianCountForms } from '~/utils/slovenianCount'
 const lifetime = useComponentLifetime()
 import type { RunnerTour } from '~/data/runnerTours'
 import { effortColor } from '~/utils/raceCategories'
@@ -91,6 +92,7 @@ watch(
   },
 )
 onMounted(async () => {
+  await nextTick()
   if (!mapEl.value) return
   if (!config.public.mapboxToken) {
     error.value = 'Zemljevid trenutno ni na voljo.'
@@ -129,7 +131,7 @@ defineExpose({ focusTour: (id: string) => fitTours(id), fitAll: () => fitTours()
     />
     <p v-if="error" class="mapbox-map-error">{{ error }}</p>
     <div class="leaflet-map-toolbar">
-      <span class="mono">{{ tours.length }} GPX TUR</span
+      <span class="mono">{{ formatSlovenianCount(tours.length, slovenianCountForms.tour).toLocaleUpperCase('sl-SI') }} GPX</span
       ><button type="button" @click="fitTours()">Vse ture</button>
     </div>
   </div>
