@@ -3,6 +3,7 @@ import { getArticle } from '~/data/articles'
 import { getRace } from '~/data/races'
 import { getRunner } from '~/data/runners'
 import { getTrailRoute } from '~/data/routes'
+import { formatDate } from '~/utils/formatDate'
 const pageRoute = useRoute()
 const article = computed(() => getArticle(pageRoute.params.slug as string))
 if (!article.value) throw createError({ statusCode: 404, statusMessage: 'Članek ni najden' })
@@ -39,7 +40,7 @@ const related = computed(() => {
   <article v-if="article" class="story-page">
     <header class="story-header shell">
       <p class="eyebrow">
-        {{ article.category }} · {{ new Date(article.publishedAt).toLocaleDateString('sl-SI') }}
+        {{ article.category }} · {{ formatDate(article.publishedAt) }}
       </p>
       <h1>{{ article.title }}</h1>
       <p>{{ article.subtitle }}</p>

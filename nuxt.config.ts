@@ -24,6 +24,7 @@ export default defineNuxtConfig({
       mapboxStyle:
         process.env.NUXT_PUBLIC_MAPBOX_STYLE ||
         'mapbox://styles/geo-mont/cmubd65wo00cp01qsa01fdsfn',
+      runnerMapboxStyle: process.env.NUXT_PUBLIC_RUNNER_MAPBOX_STYLE || '',
     },
   },
   modules: ['@nuxtjs/sitemap'],

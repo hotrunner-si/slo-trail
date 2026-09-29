@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Race } from '~/types'
 import { formatSlovenianCount, slovenianCountForms } from '~/utils/slovenianCount'
+import { formatDate, parseIsoDate } from '~/utils/formatDate'
 const props = withDefaults(
   defineProps<{
     races: Race[]
@@ -35,24 +36,24 @@ const selectedIndex = (race: Race) =>
 const setDistance = (race: Race, index: number) => {
   selected.value[race.id] = index
 }
-const hasDate = (race: Race) => Boolean(race.date && !Number.isNaN(new Date(race.date).getTime()))
+const hasDate = (race: Race) => Boolean(parseIsoDate(race.date))
 const dateLabel = (race: Race) =>
   !hasDate(race) || race.dateStatus === 'estimated'
     ? '—'
     : race.dateEnd
-      ? `${new Date(race.date).toLocaleDateString('sl-SI', { day: '2-digit' })}–${new Date(race.dateEnd).toLocaleDateString('sl-SI', { day: '2-digit' })}`
-      : new Date(race.date).toLocaleDateString('sl-SI', { day: '2-digit' })
+      ? `${formatDate(race.date, { day: '2-digit' })}–${formatDate(race.dateEnd, { day: '2-digit' })}`
+      : formatDate(race.date, { day: '2-digit' })
 const statusClass = (race: Race) => race.registrationStatus.toLowerCase().replaceAll(' ', '-')
 const groups = computed(() => {
   const result = new Map<string, { label: string; races: Race[] }>()
   for (const race of props.races) {
     const date =
-      hasDate(race) && race.dateStatus !== 'estimated' ? new Date(`${race.date}T12:00:00`) : null
+      hasDate(race) && race.dateStatus !== 'estimated' ? parseIsoDate(race.date) : null
     const key = date
-      ? `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`
+      ? `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, '0')}`
       : 'undated'
     const label = date
-      ? date.toLocaleDateString('sl-SI', { month: 'long', year: 'numeric' })
+      ? formatDate(race.date, { month: 'long', year: 'numeric' })
       : 'Datum še ni objavljen'
     if (!result.has(key)) result.set(key, { label, races: [] })
     result.get(key)!.races.push(race)

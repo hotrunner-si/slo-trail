@@ -10,9 +10,19 @@ const props = defineProps<{
   hoverProgress?: number | null
 }>()
 const emit = defineEmits<{ hover: [progress: number | null] }>()
-const width = 900,
-  height = 250,
-  pad = { left: 58, right: 18, top: 18, bottom: 34 }
+const width = ref(900)
+const height = 250
+const profileContainer = ref<HTMLElement | null>(null)
+let resizeObserver: ResizeObserver | undefined
+onMounted(() => {
+  if (!profileContainer.value) return
+  resizeObserver = new ResizeObserver(([entry]) => {
+    if (entry) width.value = Math.max(1, Math.round(entry.contentRect.width))
+  })
+  resizeObserver.observe(profileContainer.value)
+})
+onBeforeUnmount(() => resizeObserver?.disconnect())
+const pad = { left: 58, right: 18, top: 18, bottom: 34 }
 const profile = computed<ProfilePoint[]>(() =>
   props.data?.detailedProfile?.length
     ? props.data.detailedProfile.filter(
@@ -28,29 +38,48 @@ const profile = computed<ProfilePoint[]>(() =>
 const actualMin = computed(() =>
   profile.value.length ? Math.min(...profile.value.map((p) => p.elevation)) : 0,
 )
-const maxElevation = computed(() =>
+const actualMax = computed(() =>
   profile.value.length ? Math.max(...profile.value.map((p) => p.elevation)) : 1,
 )
-const elevationSpan = computed(() => Math.max(1, maxElevation.value - actualMin.value))
+const elevationSteps = [
+  ...new Set([10, 30, 50, 150].flatMap((base) => [1, 2, 3, 4, 5, 10, 20].map((n) => base * n))),
+].sort((a, b) => a - b)
+const elevationInterval = computed(() => {
+  const span = Math.max(1, actualMax.value - actualMin.value)
+  return elevationSteps.find((step) => span / step <= 4) || elevationSteps.at(-1)!
+})
+const scaleMin = computed(() => {
+  const interval = elevationInterval.value
+  const rounded = Math.floor(actualMin.value / interval) * interval
+  const padded = rounded === actualMin.value && actualMin.value !== 0 ? rounded - interval : rounded
+  return actualMin.value >= 0 ? Math.max(0, padded) : padded
+})
+const scaleMax = computed(() => {
+  const interval = elevationInterval.value
+  const rounded = Math.ceil(actualMax.value / interval) * interval
+  return rounded === actualMax.value ? rounded + interval : rounded
+})
+const elevationSpan = computed(() => Math.max(1, scaleMax.value - scaleMin.value))
 const maxDistance = computed(() => profile.value.at(-1)?.distanceKm || props.distance.km || 1)
-const x = (km: number) => pad.left + (km / maxDistance.value) * (width - pad.left - pad.right)
+const x = (km: number) =>
+  pad.left + (km / maxDistance.value) * (width.value - pad.left - pad.right)
 const y = (ele: number) =>
-  pad.top + ((maxElevation.value - ele) / elevationSpan.value) * (height - pad.top - pad.bottom)
+  pad.top + ((scaleMax.value - ele) / elevationSpan.value) * (height - pad.top - pad.bottom)
 const line = computed(() =>
   profile.value.map((p) => `${x(p.distanceKm).toFixed(1)},${y(p.elevation).toFixed(1)}`).join(' '),
 )
 const area = computed(
   () =>
-    `${pad.left},${height - pad.bottom} ${line.value} ${width - pad.right},${height - pad.bottom}`,
+    `${pad.left},${height - pad.bottom} ${line.value} ${width.value - pad.right},${height - pad.bottom}`,
 )
 const horizontal = computed(() =>
-  Array.from({ length: 4 }, (_, i) => {
-    const ratio = i / 3
-    return {
-      y: pad.top + ratio * (height - pad.top - pad.bottom),
-      label: Math.round(maxElevation.value - ratio * elevationSpan.value),
-    }
-  }),
+  Array.from(
+    { length: Math.floor(elevationSpan.value / elevationInterval.value) + 1 },
+    (_, i) => {
+      const elevation = scaleMin.value + i * elevationInterval.value
+      return { y: y(elevation), label: elevation }
+    },
+  ),
 )
 const vertical = computed(() => {
   const interval = Math.min(40, maxDistance.value / 4)
@@ -66,8 +95,8 @@ const hoverPoint = computed(() => {
 })
 function move(event: MouseEvent) {
   const rect = (event.currentTarget as SVGElement).getBoundingClientRect()
-  const px = ((event.clientX - rect.left) / rect.width) * width
-  emit('hover', Math.max(0, Math.min(1, (px - pad.left) / (width - pad.left - pad.right))))
+  const px = ((event.clientX - rect.left) / rect.width) * width.value
+  emit('hover', Math.max(0, Math.min(1, (px - pad.left) / (width.value - pad.left - pad.right))))
 }
 </script>
 
@@ -76,6 +105,7 @@ function move(event: MouseEvent) {
     <p v-if="!profile.length" class="profile-unavailable">Profil ni na voljo</p>
     <svg
       v-else
+      ref="profileContainer"
       :viewBox="`0 0 ${width} ${height}`"
       preserveAspectRatio="none"
       role="img"
@@ -104,12 +134,12 @@ function move(event: MouseEvent) {
           :y1="pad.top"
           :y2="height - pad.bottom"
         />
-        <circle :cx="x(hoverPoint.distanceKm)" :cy="y(hoverPoint.elevation)" r="6" />
+        <circle :cx="x(hoverPoint.distanceKm)" :cy="y(hoverPoint.elevation)" r="4" />
         <text
           :x="Math.min(width - 105, x(hoverPoint.distanceKm) + 10)"
           :y="Math.max(18, y(hoverPoint.elevation) - 10)"
         >
-          {{ hoverPoint.distanceKm.toFixed(1) }} km · {{ hoverPoint.elevation }} m
+          {{ hoverPoint.distanceKm.toFixed(1) }} km · {{ Math.round(hoverPoint.elevation) }} m
         </text>
       </g>
     </svg>

@@ -10,6 +10,7 @@
     "gpx:import": "node scripts/import-gpx.mjs",
     "gpx:import-all": "node scripts/import-gpx.mjs --all",
     "gpx:import-runners": "node scripts/import-gpx.mjs --runners",
+    "gpx:maps": "node scripts/generate-runner-tour-maps.mjs",
     "format": "prettier --write ."
   },
   "dependencies": {

@@ -47,7 +47,7 @@ export interface Race {
   dateEnd?: string
   dateStatus?: 'confirmed' | 'estimated'
   featured?: boolean
-  summary: string
+  summary?: string
   distances: RaceDistance[]
   registrationStatus: RegistrationStatus
   results?: RaceResult[]

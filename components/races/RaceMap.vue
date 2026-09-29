@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Race } from '~/types'
 import { formatSlovenianCount, slovenianCountForms } from '~/utils/slovenianCount'
+import { formatDate, parseIsoDate } from '~/utils/formatDate'
 const props = defineProps<{ races: Race[]; activeId?: string; visible?: boolean }>()
 const emit = defineEmits<{ activate: [id: string] }>()
 const mapRef = ref<{ focusRace: (id: string) => void; resize: () => void } | null>(null)
@@ -31,8 +32,8 @@ watch(
   },
 )
 const dateLabel = (race: Race) =>
-  race.date && race.dateStatus !== 'estimated' && !Number.isNaN(new Date(race.date).getTime())
-    ? new Date(race.date).toLocaleDateString('sl-SI', { day: '2-digit', month: 'short' })
+  race.date && race.dateStatus !== 'estimated' && parseIsoDate(race.date)
+    ? formatDate(race.date, { day: '2-digit', month: 'short' })
     : '—'
 </script>
 <template>

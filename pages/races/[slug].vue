@@ -2,6 +2,7 @@
 import { getRace, races } from '~/data/races'
 import { articles } from '~/data/articles'
 import { runners } from '~/data/runners'
+import { formatDate, parseIsoDate, todayIsoDate } from '~/utils/formatDate'
 
 const route = useRoute()
 const race = computed(() => getRace(route.params.slug as string))
@@ -15,8 +16,8 @@ useSiteSeo(
     const place =
       event.location && event.location !== '-' ? ` v kraju ${event.location}` : ' v Sloveniji'
     const date =
-      event.dateStatus === 'confirmed' && !Number.isNaN(Date.parse(event.date))
-        ? ` Datum: ${new Date(`${event.date}T12:00:00`).toLocaleDateString('sl-SI')}.`
+      event.dateStatus === 'confirmed' && parseIsoDate(event.date)
+        ? ` Datum: ${formatDate(event.date)}.`
         : ' Datum še ni objavljen.'
     const distances = event.distances.map((distance) => distance.label).join(', ')
     return `${event.name}: trail tek${place}.${date} Razdalje: ${distances}.`
@@ -30,15 +31,11 @@ const related = computed(() =>
   articles.filter((article) => article.relatedRace === race.value?.slug),
 )
 const hasDate = computed(() =>
-  Boolean(race.value?.date && !Number.isNaN(new Date(race.value.date).getTime())),
+  Boolean(parseIsoDate(race.value?.date)),
 )
 const dateLabel = computed(() =>
   hasDate.value && race.value?.dateStatus !== 'estimated'
-    ? new Date(race.value!.date).toLocaleDateString('sl-SI', {
-        day: 'numeric',
-        month: 'long',
-        year: 'numeric',
-      })
+    ? formatDate(race.value!.date)
     : '—',
 )
 const entrants = computed(() =>
@@ -55,7 +52,10 @@ const resultsArticle = computed(() =>
   ),
 )
 const raceHasPassed = computed(
-  () => hasDate.value && new Date(`${race.value!.date}T23:59:59`) < new Date(),
+  () => hasDate.value && race.value!.date < todayIsoDate(),
+)
+const preparedGpxCount = computed(
+  () => race.value?.distances.filter((distance) => distance.gpx).length || 0,
 )
 const showIndexes = computed(
   () =>
@@ -65,10 +65,7 @@ const showIndexes = computed(
 )
 function startDay(startDate?: string) {
   if (!startDate) return '—'
-  const date = new Date(`${startDate}T12:00:00`)
-  return Number.isNaN(date.getTime())
-    ? '—'
-    : date.toLocaleDateString('sl-SI', { weekday: 'short', day: 'numeric', month: 'short' })
+  return formatDate(startDate, { weekday: 'short', day: 'numeric', month: 'short' })
 }
 </script>
 
@@ -78,7 +75,11 @@ function startDay(startDate?: string) {
       <div>
         <p class="eyebrow">{{ dateLabel }} · {{ race.location }}</p>
         <h1>{{ race.name }}</h1>
-        <p>{{ race.summary }}</p>
+        <p v-if="race.summary">{{ race.summary }}</p>
+        <p class="race-data-meta">
+          Podatki preverjeni: {{ formatDate(race.verifiedAt) }} · GPX:
+          {{ preparedGpxCount }}/{{ race.distances.length }}
+        </p>
         <a
           v-if="race.sourceUrl"
           class="button secondary"

@@ -3,6 +3,7 @@ import { races } from '~/data/races'
 import type { Race, RaceCompareItem, RaceDistance } from '~/types'
 import { effortCategory } from '~/utils/raceCategories'
 import { formatSlovenianCount, slovenianCountForms } from '~/utils/slovenianCount'
+import { formatDate, parseIsoDate } from '~/utils/formatDate'
 
 useSiteSeo(
   'Trail in gorskotekaške tekme',
@@ -21,12 +22,12 @@ const collection = ref('vse'),
   density = ref<'comfortable' | 'compact'>('comfortable')
 const activeId = ref(races[0]?.id || ''),
   compareItems = ref<RaceCompareItem[]>([])
-const datedRaces = races.filter((r) => r.date && !Number.isNaN(new Date(r.date).getTime()))
+const datedRaces = races.filter((race) => parseIsoDate(race.date))
 const months = [
   'Vsi meseci',
   ...new Set(
     datedRaces
-      .map((r) => new Date(r.date).toLocaleDateString('sl-SI', { month: 'long' }))
+      .map((race) => formatDate(race.date, { month: 'long' }))
       .map((v) => v.charAt(0).toUpperCase() + v.slice(1)),
   ),
 ]
@@ -82,7 +83,7 @@ const filtered = computed(() =>
     const haystack =
       `${race.name} ${race.location} ${race.region} ${race.country} ${race.distances.map((d) => d.name || d.label).join(' ')}`.toLowerCase()
     const monthName = race.date
-      ? new Date(race.date).toLocaleDateString('sl-SI', { month: 'long' })
+      ? formatDate(race.date, { month: 'long' })
       : ''
     const collectionMatch =
       collection.value === 'vse' ||
@@ -235,8 +236,8 @@ function resetFilters() {
       </div>
       <div>
         <p>
-          Pri vsaki tekmi bomo prikazali datum zadnjega preverjanja, uradni vir in stanje GPX
-          datoteke. Tako bo jasno, kateri podatki so potrjeni in kateri še čakajo na osvežitev.
+          Podatki o tekmah so bili preverjeni {{ formatDate(races[0]?.verifiedAt) }}. Pri vsaki tekmi
+          sta navedena vir in število pripravljenih GPX tras.
         </p>
         <dl>
           <div>
@@ -244,9 +245,14 @@ function resetFilters() {
             <dd>{{ races.filter((r) => r.verifiedAt).length }}/{{ races.length }}</dd>
           </div>
           <div>
-            <dt>GPX pripravljen</dt>
+            <dt>Pripravljenih GPX datotek</dt>
             <dd>
-              {{ races.filter((r) => r.distances.some((d) => d.gpx)).length }}/{{ races.length }}
+              {{
+                races.reduce(
+                  (total, race) => total + race.distances.filter((distance) => distance.gpx).length,
+                  0,
+                )
+              }}
             </dd>
           </div>
           <div>

@@ -74,13 +74,19 @@ useHead({
             href="https://utmb.world/runner/2586047.nejc.ursic"
             target="_blank"
             rel="noopener noreferrer"
-            >Odpri UTMB profil ↗</a
+            >UTMB ↗</a
           ><a
             class="button secondary"
             href="https://www.strava.com/athletes/65016800"
             target="_blank"
             rel="noopener noreferrer"
-            >Odpri STRAVA profil ↗</a
+            >STRAVA ↗</a
+          ><a
+            class="button secondary"
+            href="https://nejc-ursic.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Spletna stran ↗</a
           >
         </div>
       </div>

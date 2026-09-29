@@ -70,7 +70,6 @@ function draw() {
       map.on('click', id, () => emit('activate', tour.key))
       map.on('mouseenter', id, () => {
         map!.getCanvas().style.cursor = 'pointer'
-        emit('activate', tour.key)
       })
       map.on('mouseleave', id, () => {
         map!.getCanvas().style.cursor = ''

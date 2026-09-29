@@ -3,6 +3,7 @@ import { races } from '~/data/races'
 import { runners } from '~/data/runners'
 import { trailRoutes } from '~/data/routes'
 import { articles } from '~/data/articles'
+import { formatDate, parseIsoDate, todayIsoDate } from '~/utils/formatDate'
 useSiteSeo(
   undefined,
   'Trail Slovenija: slovenske trail in gorskotekaške tekme, tekači, GPX ture in zgodbe s poti.',
@@ -23,8 +24,6 @@ useHead({
     },
   ],
 })
-const email = ref('')
-const message = ref('')
 const latestArticle = computed(
   () => [...articles].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))[0],
 )
@@ -35,23 +34,18 @@ const latestResults = computed(
       .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))[0],
 )
 const upcomingRaces = computed(() => {
-  const today = new Date()
-  today.setHours(0, 0, 0, 0)
+  const today = todayIsoDate()
   const future = races
     .filter(
       (race) =>
         race.date &&
-        !Number.isNaN(new Date(`${race.date}T12:00:00`).getTime()) &&
-        new Date(`${race.date}T12:00:00`) >= today,
+        parseIsoDate(race.date) &&
+        race.date >= today,
     )
     .sort((a, b) => a.date.localeCompare(b.date))
   const months = [...new Set(future.map((race) => race.date.slice(0, 7)))].slice(0, 2)
   return future.filter((race) => months.includes(race.date.slice(0, 7)))
 })
-function subscribe() {
-  message.value = 'Newsletter prijave bodo kmalu na voljo.'
-  email.value = ''
-}
 </script>
 
 <template>
@@ -118,7 +112,7 @@ function subscribe() {
           :to="`/journal/${latestResults.slug}`"
           class="home-results-card"
           ><span class="mono">{{
-            new Date(latestResults.publishedAt).toLocaleDateString('sl-SI')
+            formatDate(latestResults.publishedAt)
           }}</span>
           <div>
             <h3>{{ latestResults.title }}</h3>
@@ -181,25 +175,21 @@ function subscribe() {
       <div>
         <p class="eyebrow">Tedensko</p>
         <h2>Trail Novice</h2>
-        <p class="newsletter-lead">Novice in zgodbe iz slovenskega traila.</p>
+        <p class="newsletter-lead">Novice in zgodbe slovenskega traila.</p>
       </div>
       <div>
         <ul>
           <li>rezultati prejšnjega tedna</li>
-          <li>tekme naslednjega vikenda</li>
+          <li>prihajajoče tekme</li>
           <li>trase in tekači</li>
         </ul>
-        <form @submit.prevent="subscribe">
-          <label for="email" class="sr-only">E-poštni naslov</label
-          ><input
-            id="email"
-            v-model="email"
-            type="email"
-            required
-            placeholder="tvoj@email.si"
-          /><button class="button primary" type="submit">Prijavi me ↗</button>
-        </form>
-        <p v-if="message" class="form-message" role="status">{{ message }}</p>
+        <a
+          class="button primary"
+          href="https://forms.gle/WAtJ6zRW8ZCnLQNk8"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Prijavi se preko obrazca ↗</a
+        >
       </div>
     </section>
   </div>

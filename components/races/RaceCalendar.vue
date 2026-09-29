@@ -1,21 +1,21 @@
 <script setup lang="ts">
 import type { Race } from '~/types'
 import { formatSlovenianCount, slovenianCountForms } from '~/utils/slovenianCount'
+import { formatDate, parseIsoDate } from '~/utils/formatDate'
 const props = defineProps<{ races: Race[] }>()
 const weekdays = ['Pon', 'Tor', 'Sre', 'Čet', 'Pet', 'Sob', 'Ned']
 const validDate = (race: Race) =>
   Boolean(
     race.dateStatus !== 'estimated' &&
-    race.date &&
-    !Number.isNaN(new Date(`${race.date}T12:00:00`).getTime()),
+    parseIsoDate(race.date),
   )
 const calendars = computed(() => {
   const months = new Map<string, { year: number; month: number; races: Race[] }>()
   for (const race of props.races.filter(validDate)) {
-    const date = new Date(`${race.date}T12:00:00`),
-      key = `${date.getFullYear()}-${date.getMonth()}`
+    const date = parseIsoDate(race.date)!,
+      key = `${date.getUTCFullYear()}-${date.getUTCMonth()}`
     if (!months.has(key))
-      months.set(key, { year: date.getFullYear(), month: date.getMonth(), races: [] })
+      months.set(key, { year: date.getUTCFullYear(), month: date.getUTCMonth(), races: [] })
     months.get(key)!.races.push(race)
   }
   return [...months.values()]
@@ -30,14 +30,14 @@ const calendars = computed(() => {
       while (cells.length % 7) cells.push(null)
       const byDay = new Map<number, Race[]>()
       for (const race of item.races) {
-        const day = new Date(`${race.date}T12:00:00`).getDate()
+        const day = parseIsoDate(race.date)!.getUTCDate()
         byDay.set(day, [...(byDay.get(day) || []), race])
       }
       return {
         ...item,
         cells,
         byDay,
-        label: first.toLocaleDateString('sl-SI', { month: 'long', year: 'numeric' }),
+        label: formatDate(`${item.year}-${String(item.month + 1).padStart(2, '0')}-01`, { month: 'long', year: 'numeric' }),
       }
     })
 })

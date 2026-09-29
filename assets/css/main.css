@@ -781,9 +781,14 @@ p {
   font-size: clamp(4rem, 8vw, 8rem);
   margin-bottom: 28px;
 }
-.race-hero > div:first-child > p:last-child,
+.race-hero > div:first-child > p,
 .route-detail-hero > div:first-child > p {
   max-width: 570px;
+}
+.race-hero .race-data-meta {
+  color: var(--muted);
+  font-size: 0.72rem;
+  margin-top: 16px;
 }
 .race-hero .route-visual,
 .route-detail-hero .route-visual {
@@ -3416,10 +3421,8 @@ h2 {
   vector-effect: non-scaling-stroke;
 }
 .profile-hover circle {
-  fill: var(--paper);
-  stroke: var(--profile-color);
-  stroke-width: 3;
-  vector-effect: non-scaling-stroke;
+  fill: #111;
+  stroke: none;
 }
 .profile-hover text {
   fill: var(--ink);
@@ -3660,6 +3663,14 @@ h2 {
   grid-template-columns: 46px minmax(190px, 1fr) 180px 115px minmax(150px, 220px) 26px;
   gap: 20px;
   align-items: center;
+  min-height: 112px;
+}
+.runner-gpx-toggle {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: 46px minmax(190px, 1fr) 180px 115px minmax(150px, 220px) 26px;
+  gap: 20px;
+  align-items: center;
   width: 100%;
   min-height: 112px;
   padding: 18px 0;
@@ -3668,9 +3679,92 @@ h2 {
   text-align: left;
   cursor: pointer;
 }
-.runner-gpx-row:hover,
-.runner-gpx-row:focus-visible {
+.runner-gpx-toggle:hover,
+.runner-gpx-toggle:focus-visible {
   background: var(--paper-2);
+}
+.runner-gpx-row.is-expanded {
+  grid-template-columns: 46px minmax(190px, 1fr) minmax(260px, 1.2fr) 26px;
+  gap: 20px;
+}
+.runner-gpx-row.is-expanded .runner-gpx-toggle {
+  grid-column: 1 / 3;
+  grid-template-columns: 46px minmax(0, 1fr) 26px;
+  min-height: 128px;
+}
+.runner-gpx-selected-profile {
+  grid-column: 3 / 5;
+  grid-row: 1;
+  width: 100%;
+}
+.runner-gpx-profile-status {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+.runner-gpx-interactive-profile {
+  min-width: 0;
+}
+.runner-gpx-profile-chart {
+  position: relative;
+  width: 100%;
+  height: 88px;
+}
+.runner-gpx-profile-chart svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  cursor: crosshair;
+  touch-action: pan-y;
+}
+.runner-gpx-interactive-profile svg polygon {
+  fill: color-mix(in srgb, var(--route-color) 17%, transparent);
+}
+.runner-gpx-interactive-profile svg polyline {
+  fill: none;
+  stroke: var(--route-color);
+  stroke-width: 1.7;
+  vector-effect: non-scaling-stroke;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.runner-gpx-interactive-profile svg line {
+  stroke: var(--route-color);
+  stroke-width: 1;
+  stroke-dasharray: 2 2;
+  vector-effect: non-scaling-stroke;
+}
+.runner-gpx-profile-dot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #111;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.runner-gpx-profile-reading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+.runner-gpx-profile-reading span {
+  display: grid;
+  gap: 2px;
+}
+.runner-gpx-profile-reading small {
+  font-size: 0.55rem;
+  letter-spacing: 0.06em;
+}
+.runner-gpx-profile-reading strong {
+  color: var(--ink);
+  font-weight: 700;
 }
 .runner-gpx-number {
   color: var(--route-color);
@@ -3755,6 +3849,15 @@ h2 {
   margin: 0;
   background: #e9eee9;
 }
+.runner-gpx-map-loading,
+.runner-gpx-map-error-message {
+  display: grid;
+  min-height: 300px;
+  place-items: center;
+  margin: 0;
+  color: var(--muted);
+  background: #e9eee9;
+}
 .runner-gpx-detail {
   display: flex;
   justify-content: space-between;
@@ -3767,17 +3870,26 @@ h2 {
   font-weight: 700;
   border-bottom: 1px solid currentColor;
 }
+.runner-gpx-detail strong {
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
 .runner-gpx-note {
   margin: 13px 0 0;
   font-size: 0.7rem;
 }
-.runner-gpx-map .leaflet-control-attribution {
-  font-size: 10px;
-}
 @media (max-width: 1050px) {
-  .runner-gpx-row {
+  .runner-gpx-toggle {
     grid-template-columns: 36px minmax(180px, 1fr) 135px 70px minmax(130px, 190px) 22px;
     gap: 12px;
+  }
+  .runner-gpx-row.is-expanded {
+    grid-template-columns: 36px minmax(180px, 1fr) minmax(220px, 1.2fr) 22px;
+    gap: 12px;
+  }
+  .runner-gpx-row.is-expanded .runner-gpx-toggle {
+    grid-template-columns: 36px minmax(0, 1fr) 22px;
   }
   .runner-gpx-expanded {
     padding-left: 48px;
@@ -3790,30 +3902,50 @@ h2 {
   .runner-gpx-section .section-head > p {
     margin-top: 15px;
   }
-  .runner-gpx-row {
+  .runner-gpx-toggle {
     grid-template-columns: 32px minmax(0, 1fr) 70px 22px;
     gap: 10px;
     min-height: 0;
+    padding: 14px 0;
   }
-  .runner-gpx-name {
+  .runner-gpx-toggle .runner-gpx-name {
     grid-column: 2;
   }
-  .runner-gpx-stats {
+  .runner-gpx-toggle .runner-gpx-stats {
     grid-column: 2;
     grid-row: 2;
   }
-  .runner-gpx-effort {
+  .runner-gpx-toggle .runner-gpx-effort {
     grid-column: 3;
     grid-row: 1/3;
   }
-  .runner-gpx-profile {
+  .runner-gpx-toggle .runner-gpx-profile {
     grid-column: 2/4;
     grid-row: 3;
     height: 44px;
   }
-  .runner-gpx-chevron {
+  .runner-gpx-toggle .runner-gpx-chevron {
     grid-column: 4;
     grid-row: 1/3;
+  }
+  .runner-gpx-row.is-expanded {
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 0 10px;
+  }
+  .runner-gpx-row.is-expanded .runner-gpx-toggle {
+    grid-column: 1 / -1;
+    grid-template-columns: 32px minmax(0, 1fr) 22px;
+  }
+  .runner-gpx-row.is-expanded .runner-gpx-toggle .runner-gpx-chevron {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .runner-gpx-row.is-expanded .runner-gpx-selected-profile {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .runner-gpx-profile-chart {
+    height: 72px;
   }
   .runner-gpx-expanded {
     padding-left: 0;
@@ -3870,50 +4002,38 @@ h2 {
   border: 1px solid var(--line);
   background: var(--paper);
 }
+.runner-tour-card-main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: inherit;
+  text-decoration: none;
+}
 .runner-tour-card-map {
   position: relative;
-  display: grid;
-  place-items: center;
   height: 230px;
   overflow: hidden;
-  background: radial-gradient(circle at 20% 20%, #ecf0e8, #dce6df 64%, #d4ded7);
+  background: #dce6df;
 }
 .runner-tour-card-map:before {
   content: '';
   position: absolute;
-  inset: -50%;
-  background: repeating-radial-gradient(
-    ellipse at 50% 50%,
-    transparent 0 18px,
-    rgba(102, 126, 113, 0.13) 19px 20px,
-    transparent 21px 35px
-  );
-  transform: rotate(-20deg);
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(18, 28, 25, 0.3), transparent 34%, transparent 65%, rgba(18, 28, 25, 0.24));
 }
-.runner-tour-card-map svg {
+.runner-tour-card-map-image {
   position: relative;
-  width: 72%;
-  height: 83%;
-  overflow: visible;
-}
-.runner-tour-card-halo,
-.runner-tour-card-trace {
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-.runner-tour-card-halo {
-  stroke: #fff;
-  stroke-width: 3.5;
-}
-.runner-tour-card-trace {
-  stroke: var(--tour-color);
-  stroke-width: 1.7;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .runner-tour-card-index,
 .runner-tour-card-category {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   font-size: 0.65rem;
   letter-spacing: 0.08em;
 }
@@ -3964,6 +4084,12 @@ h2 {
   margin-top: 15px;
   border-bottom: 1px solid var(--line);
 }
+.runner-tour-card-runner {
+  margin-top: 18px;
+  color: var(--tour-color);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
 .runner-tour-card-profile polygon,
 .runner-tour-list-row svg polygon {
   fill: color-mix(in srgb, var(--tour-color) 17%, transparent);
@@ -3977,9 +4103,9 @@ h2 {
 }
 .runner-tour-card-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 12px;
-  margin-top: 22px;
+  margin: 22px 16px 12px 0;
   padding-top: 16px;
   border-top: 1px solid var(--line);
   font-size: 0.72rem;

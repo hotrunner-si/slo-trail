@@ -12,8 +12,8 @@ const visible = computed(() =>
   <div class="page shell">
     <header class="page-header journal-head">
       <p class="eyebrow">Članki</p>
-      <h1>Zgodbe za<br />dolgo pot.</h1>
-      <p>Tekme, poti in ljudje slovenskega traila.</p>
+      <h1>Zgodbe <br />slovenskega traila.</h1>
+      <p>Preberite aktualne novice slovenskega traila, preverite rezultate naših tekačev, pripravite se na naslednjo tekmo z analizo trase in preverite, kaj načrtujejo naši tekači.</p>
     </header>
     <div class="category-nav" aria-label="Kategorije člankov">
       <button

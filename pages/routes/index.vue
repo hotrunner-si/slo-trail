@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { formatDate } from '~/utils/formatDate'
-import { geographicRoutePoints } from '~/utils/gpx'
 import { runnerTours } from '~/data/runnerTours'
+import type { RunnerTour } from '~/data/runnerTours'
 import { effortColor, effortLabel } from '~/utils/raceCategories'
 import { formatSlovenianCount, slovenianCountForms } from '~/utils/slovenianCount'
 
@@ -19,20 +19,43 @@ const color = (tour: { distanceKm: number; elevationGain: number }) =>
   effortColor({ km: tour.distanceKm, elevation: tour.elevationGain })
 const label = (tour: { distanceKm: number; elevationGain: number }) =>
   effortLabel({ km: tour.distanceKm, elevation: tour.elevationGain })
-const routePoints = geographicRoutePoints
+const lastMapSelection = ref<string | null>(null)
+const tourMapImage = (tour: RunnerTour) =>
+  `/images/tour-maps/${tour.runnerSlug}-${tour.id}.png`
+
+const runnerTourLink = (tour: RunnerTour) => ({
+  path: `/runners/${tour.runnerSlug}`,
+  query: { gpx: tour.id },
+  hash: '#runner-gpx-title',
+})
 
 function selectTour(id: string) {
   activeId.value = id
   mapRef.value?.focusTour(id)
 }
+
+function selectMapTour(id: string) {
+  if (lastMapSelection.value === id) {
+    const tour = runnerTours.find((item) => item.key === id)
+    if (tour) void navigateTo(runnerTourLink(tour))
+    lastMapSelection.value = null
+    return
+  }
+  lastMapSelection.value = id
+  selectTour(id)
+}
+
+watch(view, () => {
+  lastMapSelection.value = null
+})
 </script>
 
 <template>
   <div class="page runner-tours-page shell">
     <header class="page-header runner-tours-header">
       <p class="eyebrow">Tekači · GPX ture</p>
-      <h1>Ture s poti.</h1>
-      <p>Prave sledi tekačev, zbrane po datumu. Najnovejše so na vrhu.</p>
+      <h1>Naj ture</h1>
+      <p>Tukaj so zbrani podvigi naših tekačev.</p>
     </header>
     <div class="runner-tours-toolbar">
       <div class="route-view-switch view-switch" aria-label="Način prikaza tur">
@@ -59,21 +82,18 @@ function selectTour(id: string) {
         class="runner-tour-card"
         :style="{ '--tour-color': color(tour) }"
       >
+        <NuxtLink class="runner-tour-card-main" :to="runnerTourLink(tour)">
         <div class="runner-tour-card-map" aria-hidden="true">
+          <img
+            class="runner-tour-card-map-image"
+            :src="tourMapImage(tour)"
+            alt=""
+            loading="lazy"
+          />
           <span class="runner-tour-card-index mono"
             >{{ String(index + 1).padStart(2, '0') }} /
             {{ String(runnerTours.length).padStart(2, '0') }}</span
           >
-          <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-            <polyline
-              class="runner-tour-card-halo"
-              :points="routePoints(tour.preview.overviewRoute as [number, number][])"
-            />
-            <polyline
-              class="runner-tour-card-trace"
-              :points="routePoints(tour.preview.overviewRoute as [number, number][])"
-            />
-          </svg>
           <span class="runner-tour-card-category mono">{{ label(tour) }}</span>
         </div>
         <div class="runner-tour-card-body">
@@ -89,21 +109,21 @@ function selectTour(id: string) {
             :profile="tour.preview.profile"
             :label="`Višinski profil ture ${tour.title}`"
           />
-          <div class="runner-tour-card-footer">
-            <NuxtLink :to="`/runners/${tour.runnerSlug}#runner-gpx-title`"
-              >{{ tour.runnerName }} ↗</NuxtLink
-            ><a :href="`/gpx/runners/${tour.runnerSlug}/${tour.preview.source}`" download
-              >Prenesi GPX ↓</a
-            >
-          </div>
+          <span class="runner-tour-card-runner">{{ tour.runnerName }} · Odpri turo ↗</span>
+        </div>
+        </NuxtLink>
+        <div class="runner-tour-card-footer">
+          <a :href="`/gpx/runners/${tour.runnerSlug}/${tour.preview.source}`" download>Prenesi GPX ↓</a>
         </div>
       </article>
     </div>
     <div v-else-if="view === 'list'" class="runner-tour-list">
-      <article
+      <NuxtLink
         v-for="tour in runnerTours"
         :key="tour.key"
+        :to="runnerTourLink(tour)"
         class="runner-tour-list-row"
+        :aria-label="`Odpri turo ${tour.title} na strani tekača ${tour.runnerName}`"
         :style="{ '--tour-color': color(tour) }"
       >
         <time class="mono" :datetime="tour.dateIso">{{ formatDate(tour.dateIso) }}</time>
@@ -118,12 +138,8 @@ function selectTour(id: string) {
           :profile="tour.preview.profile"
           :label="`Višinski profil ture ${tour.title}`"
         />
-        <NuxtLink
-          :to="`/runners/${tour.runnerSlug}#runner-gpx-title`"
-          :aria-label="`Odpri profil tekača ${tour.runnerName}`"
-          >↗</NuxtLink
-        >
-      </article>
+        <span aria-hidden="true">↗</span>
+      </NuxtLink>
     </div>
     <div
       v-show="view === 'map' && runnerTours.length"
@@ -134,7 +150,7 @@ function selectTour(id: string) {
         :tours="runnerTours"
         :active-id="activeId"
         :visible="view === 'map'"
-        @activate="activeId = $event"
+        @activate="selectMapTour"
       />
       <aside class="map-side-list runner-tour-map-list" aria-label="Ture na zemljevidu">
         <button
@@ -143,7 +159,7 @@ function selectTour(id: string) {
           type="button"
           :class="{ active: activeId === tour.key }"
           :style="{ '--tour-color': color(tour) }"
-          @click="selectTour(tour.key)"
+          @click="selectMapTour(tour.key)"
         >
           <time :datetime="tour.dateIso">{{ formatDate(tour.dateIso) }}</time
           ><strong>{{ tour.title }}</strong

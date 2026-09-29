@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Article } from '~/types'
+import { formatDate } from '~/utils/formatDate'
 defineProps<{ article: Article; featured?: boolean }>()
 </script>
 <template>
@@ -9,7 +10,7 @@ defineProps<{ article: Article; featured?: boolean }>()
     </div>
     <div>
       <p class="eyebrow">
-        {{ article.category }} · {{ new Date(article.publishedAt).toLocaleDateString('sl-SI') }}
+        {{ article.category }} · {{ formatDate(article.publishedAt) }}
       </p>
       <h3>{{ article.title }}</h3>
       <p>{{ article.subtitle }}</p>

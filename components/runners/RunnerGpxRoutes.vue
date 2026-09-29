@@ -2,16 +2,69 @@
 import { formatDate } from '~/utils/formatDate'
 import { runnerGpxRoutes } from '~/data/runnerGpxRoutes'
 import { effortColor, effortKm, effortLabel } from '~/utils/raceCategories'
+import type { GpxData } from '~/types/gpx'
 
 const props = defineProps<{ runnerSlug: string }>()
 const routes = computed(() => runnerGpxRoutes[props.runnerSlug] || [])
-const openId = ref<string | null>(null)
+const pageRoute = useRoute()
+const router = useRouter()
+const requestedRouteId = computed(() => {
+  const id = typeof pageRoute.query.gpx === 'string' ? pageRoute.query.gpx : null
+  return routes.value.some((route) => route.id === id) ? id : null
+})
+const openId = ref<string | null>(requestedRouteId.value)
+const expandedData = shallowRef<GpxData | null>(null)
+const expandedError = ref(false)
+const activeDistanceKm = ref(0)
+const loadGpx = useGpxData()
+let loadSequence = 0
 const number = (value: number) =>
   new Intl.NumberFormat('sl-SI', { maximumFractionDigits: 1 }).format(value)
 const effort = (route: { distanceKm: number; elevationGain: number }) => ({
   km: route.distanceKm,
   elevation: route.elevationGain,
 })
+
+watch(
+  requestedRouteId,
+  async (id) => {
+    openId.value = id
+    if (!id || !import.meta.client) return
+    await nextTick()
+    document.getElementById(`runner-map-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  },
+  { immediate: true },
+)
+
+watch(
+  requestedRouteId,
+  async (id) => {
+    const sequence = ++loadSequence
+    expandedData.value = null
+    expandedError.value = false
+    activeDistanceKm.value = 0
+    if (!id || !import.meta.client) return
+    try {
+      const data = await loadGpx<GpxData>(`/gpx/runners/${props.runnerSlug}/${id}.detail.json`)
+      if (sequence === loadSequence && openId.value === id) expandedData.value = data
+    } catch {
+      if (sequence === loadSequence) expandedError.value = true
+    }
+  },
+  { immediate: true },
+)
+
+function toggleRoute(id: string) {
+  const nextId = openId.value === id ? null : id
+  openId.value = nextId
+  expandedData.value = null
+  expandedError.value = false
+  activeDistanceKm.value = 0
+  const query = { ...pageRoute.query }
+  if (nextId) query.gpx = nextId
+  else delete query.gpx
+  void router.replace({ path: pageRoute.path, query, hash: pageRoute.hash })
+}
 </script>
 
 <template>
@@ -34,50 +87,71 @@ const effort = (route: { distanceKm: number; elevationGain: number }) => ({
         class="runner-gpx-item"
         :style="{ '--route-color': effortColor(effort(route)) }"
       >
-        <button
-          class="runner-gpx-row"
-          type="button"
-          :aria-expanded="openId === route.id"
-          :aria-controls="`runner-map-${route.id}`"
-          @click="openId = openId === route.id ? null : route.id"
-        >
-          <span class="runner-gpx-number mono">{{ String(index + 1).padStart(2, '0') }}</span>
-          <span class="runner-gpx-name"
-            ><strong>{{ route.title }}</strong
-            ><small>{{ formatDate(route.dateIso) }} · {{ route.location }}</small></span
+        <div class="runner-gpx-row" :class="{ 'is-expanded': openId === route.id }">
+          <button
+            class="runner-gpx-toggle"
+            type="button"
+            :aria-expanded="openId === route.id"
+            :aria-controls="`runner-map-${route.id}`"
+            @click="toggleRoute(route.id)"
           >
-          <span class="runner-gpx-stats mono"
-            >{{ number(route.distanceKm) }} km <em>↗ {{ number(route.elevationGain) }} m</em></span
-          >
-          <span class="runner-gpx-effort mono"
-            >{{ effortLabel(effort(route)) }}
-            <small>{{ number(effortKm(effort(route))) }} km-effort</small></span
-          >
-          <GpxMiniProfile
-            class="runner-gpx-profile"
-            :profile="route.preview.profile"
-            :height="38"
+            <span class="runner-gpx-number mono">{{ String(index + 1).padStart(2, '0') }}</span>
+            <span class="runner-gpx-name"
+              ><strong>{{ route.title }}</strong
+              ><small>{{ formatDate(route.dateIso) }} · {{ route.location }}</small></span
+            >
+            <span v-if="openId !== route.id" class="runner-gpx-stats mono"
+              >{{ number(route.distanceKm) }} km <em>↗ {{ number(route.elevationGain) }} m</em></span
+            >
+            <span v-if="openId !== route.id" class="runner-gpx-effort mono"
+              >{{ effortLabel(effort(route)) }}
+              <small>{{ number(effortKm(effort(route))) }} km-effort</small></span
+            >
+            <GpxMiniProfile
+              v-if="openId !== route.id"
+              class="runner-gpx-profile"
+              :profile="route.preview.profile"
+              :height="38"
+              :label="`Višinski profil ture ${route.title}`"
+            />
+            <span class="runner-gpx-chevron" aria-hidden="true">{{
+              openId === route.id ? '−' : '+'
+            }}</span>
+          </button>
+          <RunnerGpxProfile
+            v-if="openId === route.id && expandedData?.detailedProfile?.length"
+            class="runner-gpx-selected-profile"
+            :profile="expandedData.detailedProfile"
+            :active-distance-km="activeDistanceKm"
+            :color="effortColor(effort(route))"
             :label="`Višinski profil ture ${route.title}`"
+            @distance-change="activeDistanceKm = $event"
           />
-          <span class="runner-gpx-chevron" aria-hidden="true">{{
-            openId === route.id ? '−' : '+'
-          }}</span>
-        </button>
+          <p v-else-if="openId === route.id" class="runner-gpx-selected-profile runner-gpx-profile-status">
+            {{ expandedError ? 'Višinskega profila ni mogoče naložiti.' : expandedData ? 'Višinski profil ni na voljo.' : 'Nalaganje višinskega profila …' }}
+          </p>
+        </div>
         <div v-if="openId === route.id" :id="`runner-map-${route.id}`" class="runner-gpx-expanded">
           <p class="runner-gpx-description">{{ route.description }}</p>
           <RunnerGpxMap
-            :file="`/gpx/runners/${runnerSlug}/${route.id}.detail.json`"
+            v-if="expandedData"
+            :data="expandedData"
+            :active-distance-km="activeDistanceKm"
             :color="effortColor(effort(route))"
             :title="route.title"
+            @distance-change="activeDistanceKm = $event"
           />
+          <p v-else-if="expandedError" class="runner-gpx-map-error-message">
+            Podatkov zemljevida ni mogoče naložiti.
+          </p>
+          <p v-else class="runner-gpx-map-loading">Nalaganje zemljevida …</p>
           <div class="runner-gpx-detail">
-            <span class="mono"
-              >{{ number(route.distanceKm) }} km · {{ number(route.elevationGain) }} m vzpona ·
-              najvišja točka:
-              {{
-                route.preview.highestPoint == null ? '—' : `${number(route.preview.highestPoint)} m`
-              }}</span
-            ><a :href="`/gpx/runners/${runnerSlug}/${route.preview.source}`" download
+            <span class="mono">
+              <strong>{{ number(route.distanceKm) }} km</strong> ·
+              <strong>{{ number(route.elevationGain) }} m</strong> vzpona · najvišja točka:
+              <strong>{{ route.preview.highestPoint == null ? '—' : `${number(route.preview.highestPoint)} m` }}</strong>
+            </span>
+            <a :href="`/gpx/runners/${runnerSlug}/${route.preview.source}`" download
               >Prenesi GPX ↓</a
             >
           </div>
