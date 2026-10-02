@@ -55,7 +55,7 @@ const related = computed(() => {
           href="https://utmb.world/runner/2586047.nejc.ursic"
           target="_blank"
           rel="noopener noreferrer"
-          >UTMB profil Nejca Uršiča ↗</a
+          >UTMB profil Nejca Uršiča <IconArrowUpRight /></a
         >
       </div>
     </div>
@@ -64,7 +64,7 @@ const related = computed(() => {
       <NuxtLink v-for="item in related" :key="item.to" :to="item.to"
         ><span>{{ item.label }}</span
         ><strong>{{ item.name }}</strong
-        ><em>↗</em></NuxtLink
+        ><em><IconArrowUpRight /></em></NuxtLink
       >
     </section>
   </article>

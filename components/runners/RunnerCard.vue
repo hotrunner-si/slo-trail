@@ -13,6 +13,6 @@ defineProps<{ runner: Runner; index?: number }>()
     <p class="eyebrow">{{ runner.location }} · {{ runner.favouriteDistance }}</p>
     <h3>{{ runner.name }}</h3>
     <p>{{ runner.bio }}</p>
-    <span class="text-link">Profil tekača ↗</span>
+    <span class="text-link">Profil tekača <IconArrowUpRight /></span>
   </NuxtLink>
 </template>

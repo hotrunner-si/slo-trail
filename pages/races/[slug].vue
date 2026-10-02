@@ -86,7 +86,7 @@ function startDay(startDate?: string) {
           :href="race.sourceUrl"
           target="_blank"
           rel="noopener noreferrer"
-          >Uradna spletna stran ↗</a
+          >Uradna spletna stran <IconArrowUpRight /></a
         >
       </div>
       <RouteVisual :variant="1" dark :label="`Trasa ${race.name}`" />
@@ -188,13 +188,13 @@ function startDay(startDate?: string) {
           class="button primary"
           target="_blank"
           rel="noopener noreferrer"
-          >Odpri spremljanje ↗</a
+          >Odpri spremljanje <IconArrowUpRight /></a
         ><span v-else class="mono">Povezava bo objavljena pred startom</span
         ><NuxtLink
           v-if="raceHasPassed && resultsArticle"
           :to="`/journal/${resultsArticle.slug}`"
           class="race-results-link"
-          >Preberi končni pregled rezultatov ↗</NuxtLink
+          >Preberi končni pregled rezultatov <IconArrowUpRight /></NuxtLink
         >
       </div>
     </section>
@@ -213,7 +213,7 @@ function startDay(startDate?: string) {
         >{{
           races[(races.findIndex((item) => item.slug === race.slug) + 1) % races.length].name
         }}
-        ↗</NuxtLink
+        <IconArrowUpRight /></NuxtLink
       >
     </section>
   </div>

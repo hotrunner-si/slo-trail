@@ -33,7 +33,7 @@ const nav = [
       </button>
       <nav id="main-nav" :class="['main-nav', { open }]" aria-label="Glavna navigacija">
         <NuxtLink v-for="item in nav" :key="item.to" :to="item.to">{{ item.label }}</NuxtLink>
-        <NuxtLink to="/#newsletter" class="newsletter-link">Newsletter <span>↗</span></NuxtLink>
+        <NuxtLink to="/#newsletter" class="newsletter-link">Newsletter <span><IconArrowUpRight /></span></NuxtLink>
       </nav>
     </div>
   </header>

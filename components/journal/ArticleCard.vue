@@ -14,7 +14,7 @@ defineProps<{ article: Article; featured?: boolean }>()
       </p>
       <h3>{{ article.title }}</h3>
       <p>{{ article.subtitle }}</p>
-      <span class="text-link">Preberi članek ↗</span>
+      <span class="text-link">Preberi članek <IconArrowUpRight /></span>
     </div>
   </NuxtLink>
 </template>

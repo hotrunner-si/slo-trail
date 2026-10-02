@@ -123,7 +123,10 @@ function reset() {
   map?.easeTo({ center: initialCenter, zoom: initialZoom, duration: 500 })
 }
 function focusRace(id: string) {
-  if (!map || !mb) return
+  if (!map || !mb) {
+    pendingFocusId = id
+    return
+  }
   const race = props.races.find((r) => r.id === id)
   if (!race) return
   const bounds = new mb.LngLatBounds()
@@ -195,7 +198,10 @@ onBeforeUnmount(() => {
     />
     <p v-if="error" class="mapbox-map-error">{{ error }}</p>
     <div class="leaflet-map-toolbar">
-      <span class="mono">{{ loaded }}/{{ total }} GPX {{ slovenianCountForm(total, slovenianCountForms.route).toLocaleUpperCase('sl-SI') }} · SLOVENIJA</span
+      <span class="mono"
+        >{{ loaded }}/{{ total }} GPX
+        {{ slovenianCountForm(total, slovenianCountForms.route).toLocaleUpperCase('sl-SI') }} ·
+        SLOVENIJA</span
       ><button type="button" @click="reset">Ponastavi pogled</button>
     </div>
   </div>

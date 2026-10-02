@@ -7,14 +7,12 @@ const props = withDefaults(
     races: Race[]
     showProfile?: boolean
     showCompare?: boolean
-    density?: 'comfortable' | 'compact'
     activeId?: string
     comparedKeys?: string[]
   }>(),
   {
     showProfile: false,
     showCompare: false,
-    density: 'comfortable',
     activeId: '',
     comparedKeys: () => [],
   },
@@ -47,8 +45,7 @@ const statusClass = (race: Race) => race.registrationStatus.toLowerCase().replac
 const groups = computed(() => {
   const result = new Map<string, { label: string; races: Race[] }>()
   for (const race of props.races) {
-    const date =
-      hasDate(race) && race.dateStatus !== 'estimated' ? parseIsoDate(race.date) : null
+    const date = hasDate(race) && race.dateStatus !== 'estimated' ? parseIsoDate(race.date) : null
     const key = date
       ? `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, '0')}`
       : 'undated'
@@ -73,15 +70,13 @@ const groups = computed(() => {
     <section v-for="group in groups" :key="group.label" class="race-list-month">
       <header>
         <h2>{{ group.label }}</h2>
-        <span class="mono">{{ formatSlovenianCount(group.races.length, slovenianCountForms.event).toLocaleUpperCase('sl-SI') }}</span>
+        <span class="mono">{{
+          formatSlovenianCount(group.races.length, slovenianCountForms.event).toLocaleUpperCase(
+            'sl-SI',
+          )
+        }}</span>
       </header>
-      <div
-        :class="[
-          'event-list',
-          `density-${density}`,
-          { 'with-profiles': showProfile, 'with-compare': showCompare },
-        ]"
-      >
+      <div :class="['event-list', { 'with-profiles': showProfile, 'with-compare': showCompare }]">
         <article
           v-for="race in group.races"
           :key="race.id"

@@ -5,8 +5,8 @@ const handle = () => clearError({ redirect: '/' })
 <template>
   <div class="error-page shell">
     <p class="eyebrow">Napaka {{ error.statusCode }}</p>
-    <h1>Pot se tukaj konča.</h1>
-    <p>{{ error.statusMessage || 'Strani ni bilo mogoče najti.' }}</p>
+    <h1>{{ error.statusCode === 404 ? '404 - Trail se tukaj konča :/' : 'Pot se tukaj konča.' }}</h1>
+    <p v-if="error.statusCode !== 404">{{ error.statusMessage || 'Strani ni bilo mogoče najti.' }}</p>
     <button class="button primary" @click="handle">Nazaj na začetek</button>
   </div>
 </template>

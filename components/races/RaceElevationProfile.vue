@@ -41,28 +41,24 @@ const actualMin = computed(() =>
 const actualMax = computed(() =>
   profile.value.length ? Math.max(...profile.value.map((p) => p.elevation)) : 1,
 )
-const elevationSteps = [
-  ...new Set([10, 30, 50, 150].flatMap((base) => [1, 2, 3, 4, 5, 10, 20].map((n) => base * n))),
-].sort((a, b) => a - b)
-const elevationInterval = computed(() => {
-  const span = Math.max(1, actualMax.value - actualMin.value)
-  return elevationSteps.find((step) => span / step <= 4) || elevationSteps.at(-1)!
+const elevationScale = computed(() => {
+  const range = Math.max(0, actualMax.value - actualMin.value)
+  const rounding = range > 300 ? 50 : 10
+  const margin = Math.max(rounding / 2, range * 0.08)
+  const roundedMin = Math.floor((actualMin.value - margin) / rounding) * rounding
+  const min = actualMin.value >= 0 ? Math.max(0, roundedMin) : roundedMin
+  const interval = Math.max(
+    rounding,
+    Math.ceil((actualMax.value + margin - min) / (3 * rounding)) * rounding,
+  )
+  return { min, max: min + 3 * interval, interval }
 })
-const scaleMin = computed(() => {
-  const interval = elevationInterval.value
-  const rounded = Math.floor(actualMin.value / interval) * interval
-  const padded = rounded === actualMin.value && actualMin.value !== 0 ? rounded - interval : rounded
-  return actualMin.value >= 0 ? Math.max(0, padded) : padded
-})
-const scaleMax = computed(() => {
-  const interval = elevationInterval.value
-  const rounded = Math.ceil(actualMax.value / interval) * interval
-  return rounded === actualMax.value ? rounded + interval : rounded
-})
+const elevationInterval = computed(() => elevationScale.value.interval)
+const scaleMin = computed(() => elevationScale.value.min)
+const scaleMax = computed(() => elevationScale.value.max)
 const elevationSpan = computed(() => Math.max(1, scaleMax.value - scaleMin.value))
 const maxDistance = computed(() => profile.value.at(-1)?.distanceKm || props.distance.km || 1)
-const x = (km: number) =>
-  pad.left + (km / maxDistance.value) * (width.value - pad.left - pad.right)
+const x = (km: number) => pad.left + (km / maxDistance.value) * (width.value - pad.left - pad.right)
 const y = (ele: number) =>
   pad.top + ((scaleMax.value - ele) / elevationSpan.value) * (height - pad.top - pad.bottom)
 const line = computed(() =>
@@ -73,13 +69,10 @@ const area = computed(
     `${pad.left},${height - pad.bottom} ${line.value} ${width.value - pad.right},${height - pad.bottom}`,
 )
 const horizontal = computed(() =>
-  Array.from(
-    { length: Math.floor(elevationSpan.value / elevationInterval.value) + 1 },
-    (_, i) => {
-      const elevation = scaleMin.value + i * elevationInterval.value
-      return { y: y(elevation), label: elevation }
-    },
-  ),
+  Array.from({ length: 4 }, (_, i) => {
+    const elevation = scaleMin.value + i * elevationInterval.value
+    return { y: y(elevation), label: elevation }
+  }),
 )
 const vertical = computed(() => {
   const interval = Math.min(40, maxDistance.value / 4)
@@ -93,10 +86,27 @@ const hoverPoint = computed(() => {
     Math.round(Math.max(0, Math.min(1, props.hoverProgress)) * (profile.value.length - 1))
   ]
 })
-function move(event: MouseEvent) {
+function move(event: PointerEvent) {
+  if (
+    event.pointerType !== 'mouse' &&
+    !(event.currentTarget as SVGElement).hasPointerCapture(event.pointerId)
+  )
+    return
   const rect = (event.currentTarget as SVGElement).getBoundingClientRect()
   const px = ((event.clientX - rect.left) / rect.width) * width.value
   emit('hover', Math.max(0, Math.min(1, (px - pad.left) / (width.value - pad.left - pad.right))))
+}
+function startTouch(event: PointerEvent) {
+  if (event.pointerType === 'mouse') return
+  const svg = event.currentTarget as SVGElement
+  svg.setPointerCapture(event.pointerId)
+  move(event)
+}
+function stopTouch(event: PointerEvent) {
+  if (event.pointerType === 'mouse') return
+  const svg = event.currentTarget as SVGElement
+  if (svg.hasPointerCapture(event.pointerId)) svg.releasePointerCapture(event.pointerId)
+  emit('hover', null)
 }
 </script>
 
@@ -110,12 +120,25 @@ function move(event: MouseEvent) {
       preserveAspectRatio="none"
       role="img"
       :aria-label="`Višinski profil trase ${distance.name || distance.label}`"
-      @mousemove="move"
-      @mouseleave="emit('hover', null)"
+      @pointerdown="startTouch"
+      @pointermove="move"
+      @pointerup="stopTouch"
+      @pointercancel="stopTouch"
+      @pointerleave="
+        (event) => {
+          if (event.pointerType === 'mouse') emit('hover', null)
+        }
+      "
     >
       <g class="profile-grid">
-        <g v-for="tick in horizontal" :key="tick.y">
-          <line :x1="pad.left" :x2="width - pad.right" :y1="tick.y" :y2="tick.y" />
+        <g v-for="(tick, index) in horizontal" :key="tick.y">
+          <line
+            :class="{ 'profile-grid-baseline': index === 0 }"
+            :x1="pad.left"
+            :x2="width - pad.right"
+            :y1="tick.y"
+            :y2="tick.y"
+          />
           <text x="4" :y="tick.y + 4">{{ tick.label }} m</text>
         </g>
         <g v-for="km in vertical" :key="km">

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { races } from '~/data/races'
 import { runners } from '~/data/runners'
-import { trailRoutes } from '~/data/routes'
+import { runnerTours } from '~/data/runnerTours'
 import { articles } from '~/data/articles'
 import { formatDate, parseIsoDate, todayIsoDate } from '~/utils/formatDate'
 useSiteSeo(
@@ -33,6 +33,7 @@ const latestResults = computed(
       .filter((article) => article.category === 'Rezultati')
       .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))[0],
 )
+const featuredTour = runnerTours.find((tour) => tour.id === 'verbier-trail')!
 const upcomingRaces = computed(() => {
   const today = todayIsoDate()
   const future = races
@@ -49,7 +50,7 @@ const upcomingRaces = computed(() => {
 </script>
 
 <template>
-  <div>
+  <div class="home-page">
     <section class="hero shell">
       <div class="hero-copy">
         <h1>Trail tek<br /><span>Slovenija.</span></h1>
@@ -64,8 +65,8 @@ const upcomingRaces = computed(() => {
           Prostor za spremljanje slovenskega trail teka — pregled tekem, doživetja tekačev, UTMB lestvice, GPX datoteke.
         </p>
         <div class="button-row">
-          <NuxtLink to="/races" class="button primary">Poglej tekme <span>↗</span></NuxtLink
-          ><NuxtLink to="/runners" class="button secondary">Poišči tekača <span>↗</span></NuxtLink>
+          <NuxtLink to="/races" class="button primary">Poglej tekme <span><IconArrowUpRight /></span></NuxtLink
+          ><NuxtLink to="/runners" class="button secondary">Poišči tekača <span><IconArrowUpRight /></span></NuxtLink>
         </div>
       </div>
       <div class="hero-visual">
@@ -79,7 +80,7 @@ const upcomingRaces = computed(() => {
       </div>
     </section>
 
-    <section class="section shell">
+    <section class="section shell home-upcoming-races">
       <SectionHead
         eyebrow="Koledar"
         title="Naslednje tekme"
@@ -94,7 +95,7 @@ const upcomingRaces = computed(() => {
         <h2>{{ latestArticle.title }}</h2>
         <p>{{ latestArticle.subtitle }}</p>
         <NuxtLink :to="`/journal/${latestArticle.slug}`" class="button primary"
-          >Preberi objavo ↗</NuxtLink
+          >Preberi objavo <IconArrowUpRight /></NuxtLink
         >
       </div>
       <img :src="latestArticle.image" :alt="latestArticle.title" loading="lazy" />
@@ -118,7 +119,7 @@ const upcomingRaces = computed(() => {
             <h3>{{ latestResults.title }}</h3>
             <p>{{ latestResults.description }}</p>
           </div>
-          <em>↗</em></NuxtLink
+          <em><IconArrowUpRight /></em></NuxtLink
         >
         <p v-else class="home-results-empty">Pregled rezultatov bo objavljen tukaj.</p>
       </div>
@@ -144,28 +145,44 @@ const upcomingRaces = computed(() => {
     <section class="section route-week">
       <div class="shell route-week-grid">
         <div class="route-photo">
-          <img src="/images/kv01.jpg" alt="Trail tekač na gorski turi" loading="lazy" /><RouteVisual
-            :variant="3"
-            dark
+          <img
+            src="/images/tour-maps/nejc-ursic-verbier-trail.png"
+            :alt="`Zemljevid trase ${featuredTour.title}`"
+            loading="lazy"
           />
+          <div class="route-photo-caption">
+            <span class="eyebrow">{{ formatDate(featuredTour.dateIso) }} · {{ featuredTour.location }}</span>
+            <strong>{{ featuredTour.runnerName }}</strong>
+          </div>
         </div>
         <div class="route-week-copy">
-          <p class="eyebrow">Tura tedna · kurirano</p>
-          <h2>{{ trailRoutes[0].name }}</h2>
-          <p>{{ trailRoutes[0].description }}</p>
+          <p class="eyebrow">Tura tedna · tekačeva GPX sled</p>
+          <h2>{{ featuredTour.title }}</h2>
+          <p>{{ featuredTour.description }}</p>
           <StatStrip
             :items="[
-              { value: `${trailRoutes[0].distance.toLocaleString('sl-SI')} KM`, label: 'Razdalja' },
+              { value: `${featuredTour.distanceKm.toLocaleString('sl-SI')} KM`, label: 'Razdalja' },
               {
-                value: `${trailRoutes[0].elevationGain.toLocaleString('sl-SI')} M+`,
+                value: `${featuredTour.elevationGain.toLocaleString('sl-SI')} M+`,
                 label: 'Vzpon',
               },
-              { value: trailRoutes[0].difficulty.toUpperCase(), label: 'Težavnost' },
+              {
+                value: `${featuredTour.preview.highestPoint?.toLocaleString('sl-SI') ?? '—'} M`,
+                label: 'Najvišja točka',
+              },
             ]"
-          /><ElevationProfile /><NuxtLink
-            :to="`/routes/${trailRoutes[0].slug}`"
+          /><GpxMiniProfile
+            class="route-week-profile"
+            :profile="featuredTour.preview.profile"
+            :label="`Višinski profil ture ${featuredTour.title}`"
+          /><NuxtLink
+            :to="{
+              path: `/runners/${featuredTour.runnerSlug}`,
+              query: { gpx: featuredTour.id },
+              hash: `#runner-gpx-toggle-${featuredTour.id}`,
+            }"
             class="button primary"
-            >Razišči turo ↗</NuxtLink
+            >Poglej turo <IconArrowUpRight /></NuxtLink
           >
         </div>
       </div>
@@ -188,7 +205,7 @@ const upcomingRaces = computed(() => {
           href="https://forms.gle/WAtJ6zRW8ZCnLQNk8"
           target="_blank"
           rel="noopener noreferrer"
-          >Prijavi se preko obrazca ↗</a
+          >Prijavi se preko obrazca <IconArrowUpRight /></a
         >
       </div>
     </section>

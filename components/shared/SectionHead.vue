@@ -7,6 +7,6 @@ defineProps<{ eyebrow?: string; title: string; linkLabel?: string; to?: string }
       <p v-if="eyebrow" class="eyebrow">{{ eyebrow }}</p>
       <h2>{{ title }}</h2>
     </div>
-    <NuxtLink v-if="to" :to="to" class="text-link">{{ linkLabel }} <span>↗</span></NuxtLink>
+    <NuxtLink v-if="to" :to="to" class="text-link">{{ linkLabel }} <span><IconArrowUpRight /></span></NuxtLink>
   </div>
 </template>

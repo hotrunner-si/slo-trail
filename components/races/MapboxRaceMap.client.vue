@@ -16,6 +16,7 @@ const mapError = ref('')
 const data = ref<Record<string, GpxData>>({})
 let mb: typeof import('mapbox-gl') | null = null
 let map: import('mapbox-gl').Map | null = null
+let mobileMedia: MediaQueryList | null = null
 const rid = (d: RaceDistance, i: number) => d.id || `${props.race.slug}-${i}`
 const sid = (d: RaceDistance, i: number) => `race-${rid(d, i)}`
 function update() {
@@ -24,14 +25,22 @@ function update() {
     const id = sid(d, i)
     if (!map!.getLayer(id)) return
     const active = props.selectedId === 'all' || !props.selectedId || props.selectedId === rid(d, i)
-    map!.setPaintProperty(id, 'line-width', active ? (props.selectedId === rid(d, i) ? 6 : 4) : 2)
+    const selected = props.selectedId === rid(d, i)
+    map!.setPaintProperty(
+      id,
+      'line-width',
+      active ? (selected ? (mobileMedia?.matches ? 4 : 6) : 4) : 2,
+    )
     map!.setPaintProperty(id, 'line-opacity', active ? 0.96 : 0.16)
+    if (map!.getLayer(`${id}-halo`))
+      map!.setPaintProperty(`${id}-halo`, 'line-width', selected && mobileMedia?.matches ? 6 : 8)
   })
   const index = props.race.distances.findIndex((d, i) => rid(d, i) === props.selectedId)
   if (index >= 0) {
     const id = sid(props.race.distances[index], index)
     if (map.getLayer(`${id}-halo`)) map.moveLayer(`${id}-halo`)
     if (map.getLayer(id)) map.moveLayer(id)
+    if (map.getLayer(`${id}-hit`)) map.moveLayer(`${id}-hit`)
     if (map.getLayer('route-hover-point')) map.moveLayer('route-hover-point')
   }
 }
@@ -82,8 +91,20 @@ function draw() {
         layout: { 'line-cap': 'round', 'line-join': 'round' },
         paint: { 'line-color': effortColor(d), 'line-width': 4, 'line-opacity': 0.96 },
       })
-      map!.on('click', id, () => emit('select', props.selectedId === rid(d, i) ? 'all' : rid(d, i)))
-      map!.on('mousemove', id, (e) => {
+      map!.addLayer({
+        id: `${id}-hit`,
+        type: 'line',
+        source: id,
+        layout: { 'line-cap': 'round', 'line-join': 'round' },
+        paint: { 'line-color': '#fff', 'line-width': 24, 'line-opacity': 0.001 },
+      })
+      map!.on('click', `${id}-hit`, () =>
+        emit('select', props.selectedId === rid(d, i) ? 'all' : rid(d, i)),
+      )
+      map!.on('mouseenter', `${id}-hit`, () => {
+        map!.getCanvas().style.cursor = 'pointer'
+      })
+      map!.on('mousemove', `${id}-hit`, (e) => {
         if (props.selectedId !== rid(d, i)) return
         let best = 0,
           score = Infinity
@@ -96,7 +117,10 @@ function draw() {
         })
         emit('hover', best / (route.length - 1))
       })
-      map!.on('mouseleave', id, () => emit('hover', null))
+      map!.on('mouseleave', `${id}-hit`, () => {
+        map!.getCanvas().style.cursor = ''
+        emit('hover', null)
+      })
     }
   })
   if (!map.getSource('route-hover'))
@@ -136,6 +160,8 @@ function showAll() {
 onMounted(async () => {
   await nextTick()
   if (!mapEl.value) return
+  mobileMedia = window.matchMedia('(max-width: 620px)')
+  mobileMedia.addEventListener('change', update)
   if (!config.public.mapboxToken) {
     mapError.value = 'Zemljevid trenutno ni na voljo.'
     return
@@ -173,7 +199,10 @@ watch(
   },
 )
 watch(() => props.hoverProgress, updateHover)
-onBeforeUnmount(() => map?.remove())
+onBeforeUnmount(() => {
+  mobileMedia?.removeEventListener('change', update)
+  map?.remove()
+})
 </script>
 <template>
   <div class="leaflet-map-shell mapbox-map-shell">
@@ -186,7 +215,9 @@ onBeforeUnmount(() => map?.remove())
     <p v-if="mapError" class="mapbox-map-error">{{ mapError }}</p>
     <div class="leaflet-map-toolbar">
       <span class="mono">{{
-        loaded ? `${loaded}/${race.distances.length} GPX ${slovenianCountForm(race.distances.length, slovenianCountForms.route).toLocaleUpperCase('sl-SI')}` : 'GPX NI NALOŽEN'
+        loaded
+          ? `${loaded}/${race.distances.length} GPX ${slovenianCountForm(race.distances.length, slovenianCountForms.route).toLocaleUpperCase('sl-SI')}`
+          : 'GPX NI NALOŽEN'
       }}</span
       ><button v-if="race.distances.length > 1" type="button" @click="showAll">Vse trase</button
       ><button type="button" @click="fit">Ponastavi pogled</button>

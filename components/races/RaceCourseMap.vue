@@ -35,6 +35,21 @@ const selectedDistance = computed(() => {
   )
   return index >= 0 ? props.race.distances[index] : null
 })
+const highestPoint = computed(() => {
+  const previewHeight = selectedDistance.value?.gpx?.highestPoint
+  if (previewHeight != null) return previewHeight
+
+  const data = gpxData.value[selectedId.value]
+  const detailedSamples = data?.detailedProfile
+    ?.map((point) => point.elevation)
+    .filter((elevation): elevation is number => elevation != null && Number.isFinite(elevation))
+  const samples = detailedSamples?.length
+    ? detailedSamples
+    : (data?.profile ?? selectedDistance.value?.gpx?.profile ?? [])
+  return samples.length
+    ? samples.reduce((highest, elevation) => Math.max(highest, elevation))
+    : null
+})
 
 function selectRoute(distance: RaceDistance, index: number) {
   const id = routeId(distance, index)
@@ -50,22 +65,16 @@ function selectFromMap(id: string) {
   <div class="course-map-shell">
     <header class="course-map-header">
       <div>
-        <span class="eyebrow">Interaktivni prototip</span
+        <span class="eyebrow">Interaktivni prikaz tras</span
         ><strong>{{ selectedDistance?.name || 'Vse trase dogodka' }}</strong>
       </div>
     </header>
 
     <div class="course-map-layout">
-      <MapboxRaceMap
-        :race="race"
-        :selected-id="selectedId"
-        :hover-progress="hoverProgress"
-        @select="selectFromMap"
-        @hover="hoverProgress = $event"
-      />
       <aside class="course-map-routes-list" aria-label="Trase dogodka">
         <button
           v-if="race.distances.length > 1"
+          class="all-routes"
           :class="{ active: selectedId === 'all' }"
           @click="selectedId = 'all'"
         >
@@ -92,6 +101,13 @@ function selectFromMap(id: string) {
           ><em>{{ effortKm(distance).toLocaleString('sl-SI') }}</em>
         </button>
       </aside>
+      <MapboxRaceMap
+        :race="race"
+        :selected-id="selectedId"
+        :hover-progress="hoverProgress"
+        @select="selectFromMap"
+        @hover="hoverProgress = $event"
+      />
     </div>
 
     <div v-if="selectedDistance" class="course-map-profile">
@@ -101,15 +117,35 @@ function selectFromMap(id: string) {
         :hover-progress="hoverProgress"
         @hover="hoverProgress = $event"
       />
-      <a
-        v-if="selectedDistance.gpx?.rawFile"
-        :href="selectedDistance.gpx.rawFile"
-        :download="selectedDistance.gpx.rawFile.split('/').at(-1)"
-        :class="['gpx-download', `effort-${effortCategory(selectedDistance).toLowerCase()}`]"
-        :aria-label="`Prenesi GPX za traso ${selectedDistance.name || selectedDistance.label}`"
-      >
-        <span aria-hidden="true">↓</span> Prenesi GPX
-      </a>
+      <div class="course-map-profile-details">
+        <dl class="course-map-profile-stats">
+          <div>
+            <dt>Dolžina</dt>
+            <dd>{{ selectedDistance.km.toLocaleString('sl-SI') }} km</dd>
+          </div>
+          <div>
+            <dt>Vzpon</dt>
+            <dd>{{ selectedDistance.elevation.toLocaleString('sl-SI') }} m</dd>
+          </div>
+          <div>
+            <dt>Najvišja točka</dt>
+            <dd>
+              {{
+                highestPoint != null ? `${Math.round(highestPoint).toLocaleString('sl-SI')} m` : '—'
+              }}
+            </dd>
+          </div>
+        </dl>
+        <a
+          v-if="selectedDistance.gpx?.rawFile"
+          :href="selectedDistance.gpx.rawFile"
+          :download="selectedDistance.gpx.rawFile.split('/').at(-1)"
+          :class="['gpx-download', `effort-${effortCategory(selectedDistance).toLowerCase()}`]"
+          :aria-label="`Prenesi GPX za traso ${selectedDistance.name || selectedDistance.label}`"
+        >
+          <span aria-hidden="true">↓</span> Prenesi GPX
+        </a>
+      </div>
     </div>
   </div>
 </template>

@@ -18,8 +18,7 @@ const query = ref(''),
   status = ref('Vsi statusi')
 const effort = ref('Vsi razredi')
 const collection = ref('vse'),
-  view = ref<ViewMode>('map'),
-  density = ref<'comfortable' | 'compact'>('comfortable')
+  view = ref<ViewMode>('map')
 const activeId = ref(races[0]?.id || ''),
   compareItems = ref<RaceCompareItem[]>([])
 const datedRaces = races.filter((race) => parseIsoDate(race.date))
@@ -41,7 +40,11 @@ const popularRaceSlugs = new Set([
   'kocevsko-outdoor-festival',
 ])
 const collections = [
-  { id: 'vse', label: 'Vse tekme', description: `${formatSlovenianCount(races.length, slovenianCountForms.event)} v Sloveniji` },
+  {
+    id: 'vse',
+    label: 'Vse tekme',
+    description: `${formatSlovenianCount(races.length, slovenianCountForms.event)} v Sloveniji`,
+  },
   { id: 'priljubljene', label: 'Najbolj priljubljene', description: 'Izbrane tekme' },
   {
     id: 'ponavljajoce',
@@ -65,7 +68,13 @@ const selectFilter = (key: 'month' | 'distance' | 'effort' | 'status', value: st
   openFilter.value = null
 }
 const selectedFilter = (key: 'month' | 'distance' | 'effort' | 'status') =>
-  key === 'month' ? month.value : key === 'distance' ? distance.value : key === 'effort' ? effort.value : status.value
+  key === 'month'
+    ? month.value
+    : key === 'distance'
+      ? distance.value
+      : key === 'effort'
+        ? effort.value
+        : status.value
 useUrlControls({
   query: { value: query },
   month: { value: month, options: months },
@@ -74,7 +83,6 @@ useUrlControls({
   effort: { value: effort, options: ['Vsi razredi', 'short', '20K', '50K', '100K', '100M'] },
   collection: { value: collection, options: collections.map((item) => item.id) },
   view: { value: view, options: ['list', 'map', 'calendar'] },
-  density: { value: density, options: ['comfortable', 'compact'] },
   activeId: { value: activeId, options: races.map((race) => race.id) },
   filtersOpen: { value: filtersOpen },
 })
@@ -82,9 +90,7 @@ const filtered = computed(() =>
   races.filter((race) => {
     const haystack =
       `${race.name} ${race.location} ${race.region} ${race.country} ${race.distances.map((d) => d.name || d.label).join(' ')}`.toLowerCase()
-    const monthName = race.date
-      ? formatDate(race.date, { month: 'long' })
-      : ''
+    const monthName = race.date ? formatDate(race.date, { month: 'long' }) : ''
     const collectionMatch =
       collection.value === 'vse' ||
       (collection.value === 'priljubljene' && popularRaceSlugs.has(race.slug)) ||
@@ -160,18 +166,52 @@ function resetFilters() {
         @toggle="filtersOpen = ($event.target as HTMLDetailsElement).open"
       >
         <summary>
-          Filtri <span class="mono">{{ formatSlovenianCount(filtered.length, slovenianCountForms.result).toLocaleUpperCase('sl-SI') }}</span>
+          Filtri
+          <span class="mono">{{
+            formatSlovenianCount(filtered.length, slovenianCountForms.result).toLocaleUpperCase(
+              'sl-SI',
+            )
+          }}</span>
         </summary>
         <div class="filters filters-four">
-          <div v-for="(label, key) in { month: 'Mesec', distance: 'Razdalja', effort: 'Effort', status: 'Prijave' }" :key="key" class="filter-field">
+          <div
+            v-for="(label, key) in {
+              month: 'Mesec',
+              distance: 'Razdalja',
+              effort: 'Effort',
+              status: 'Prijave',
+            }"
+            :key="key"
+            class="filter-field"
+          >
             <span class="filter-label">{{ label }}</span>
             <div class="filter-select" :class="{ open: openFilter === key }">
-              <button type="button" class="filter-select-trigger" :aria-expanded="openFilter === key" @click="openFilter = openFilter === key ? null : key">
-                <span>{{ selectedFilter(key) }}</span><i aria-hidden="true"></i>
+              <button
+                type="button"
+                class="filter-select-trigger"
+                :aria-expanded="openFilter === key"
+                @click="openFilter = openFilter === key ? null : key"
+              >
+                <span>{{ selectedFilter(key) }}</span
+                ><i aria-hidden="true"></i>
               </button>
-              <div v-if="openFilter === key" class="filter-select-menu" role="listbox" :aria-label="label">
-                <button v-for="option in filterOptions[key]" :key="option" type="button" role="option" :aria-selected="selectedFilter(key) === option" :class="{ selected: selectedFilter(key) === option }" @click="selectFilter(key, option)">
-                  {{ option }}<span v-if="selectedFilter(key) === option" aria-hidden="true">✓</span>
+              <div
+                v-if="openFilter === key"
+                class="filter-select-menu"
+                role="listbox"
+                :aria-label="label"
+              >
+                <button
+                  v-for="option in filterOptions[key]"
+                  :key="option"
+                  type="button"
+                  role="option"
+                  :aria-selected="selectedFilter(key) === option"
+                  :class="{ selected: selectedFilter(key) === option }"
+                  @click="selectFilter(key, option)"
+                >
+                  {{ option
+                  }}<span v-if="selectedFilter(key) === option" aria-hidden="true">✓</span>
                 </button>
               </div>
             </div>
@@ -193,13 +233,6 @@ function resetFilters() {
             ><span class="effort-50k">50K</span><span class="effort-100k">100K</span
             ><span class="effort-100m">100M</span><em>KM-EFFORT</em>
           </div>
-          <button
-            v-if="view === 'list'"
-            class="density-toggle"
-            @click="density = density === 'compact' ? 'comfortable' : 'compact'"
-          >
-            {{ density === 'compact' ? 'Razširjeno' : 'Strnjeno' }}
-          </button>
         </div>
       </div>
       <template v-if="filtered.length">
@@ -208,7 +241,6 @@ function resetFilters() {
           :races="filtered"
           show-profile
           show-compare
-          :density="density"
           :active-id="activeId"
           :compared-keys="comparedKeys"
           @activate="activeId = $event"
@@ -236,8 +268,8 @@ function resetFilters() {
       </div>
       <div>
         <p>
-          Podatki o tekmah so bili preverjeni {{ formatDate(races[0]?.verifiedAt) }}. Pri vsaki tekmi
-          sta navedena vir in število pripravljenih GPX tras.
+          Podatki o tekmah so bili preverjeni 1. oktobra 2026. Pri vsaki tekmi sta navedena vir in
+          število pripravljenih GPX tras.
         </p>
         <dl>
           <div>
