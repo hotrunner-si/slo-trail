@@ -2,11 +2,13 @@
 import { getRace, races } from '~/data/races'
 import { articles } from '~/data/articles'
 import { runners } from '~/data/runners'
+import raceHeroPhotos from '~/data/raceHeroPhotos.json'
 import { formatDate, parseIsoDate, todayIsoDate } from '~/utils/formatDate'
 
 const route = useRoute()
 const race = computed(() => getRace(route.params.slug as string))
 if (!race.value) throw createError({ statusCode: 404, statusMessage: 'Tekma ni najdena' })
+const heroPhoto = computed(() => raceHeroPhotos[race.value!.slug as keyof typeof raceHeroPhotos])
 
 useSiteSeo(
   () => race.value?.name,
@@ -23,20 +25,16 @@ useSiteSeo(
     return `${event.name}: trail tek${place}.${date} Razdalje: ${distances}.`
   },
   {
-    image: () => race.value?.logo || '/images/kv01.jpg',
-    imageAlt: () => (race.value ? `Trail tek ${race.value.name}` : undefined),
+    image: () => heroPhoto.value?.src || race.value?.logo || '/images/kv01.jpg',
+    imageAlt: () => heroPhoto.value?.alt,
   },
 )
 const related = computed(() =>
   articles.filter((article) => article.relatedRace === race.value?.slug),
 )
-const hasDate = computed(() =>
-  Boolean(parseIsoDate(race.value?.date)),
-)
+const hasDate = computed(() => Boolean(parseIsoDate(race.value?.date)))
 const dateLabel = computed(() =>
-  hasDate.value && race.value?.dateStatus !== 'estimated'
-    ? formatDate(race.value!.date)
-    : '—',
+  hasDate.value && race.value?.dateStatus !== 'estimated' ? formatDate(race.value!.date) : '—',
 )
 const entrants = computed(() =>
   (race.value?.entrants || [])
@@ -51,9 +49,7 @@ const resultsArticle = computed(() =>
     (article) => article.category === 'Rezultati' && article.relatedRace === race.value?.slug,
   ),
 )
-const raceHasPassed = computed(
-  () => hasDate.value && race.value!.date < todayIsoDate(),
-)
+const raceHasPassed = computed(() => hasDate.value && race.value!.date < todayIsoDate())
 const preparedGpxCount = computed(
   () => race.value?.distances.filter((distance) => distance.gpx).length || 0,
 )
@@ -77,19 +73,30 @@ function startDay(startDate?: string) {
         <h1>{{ race.name }}</h1>
         <p v-if="race.summary">{{ race.summary }}</p>
         <p class="race-data-meta">
-          Podatki preverjeni: {{ formatDate(race.verifiedAt) }} · GPX:
-          {{ preparedGpxCount }}/{{ race.distances.length }}
+          Podatki preverjeni: {{ formatDate(race.verifiedAt) }} · GPX: {{ preparedGpxCount }}/{{
+            race.distances.length
+          }}
         </p>
         <a
           v-if="race.sourceUrl"
-          class="button secondary"
+          class="button secondary race-source-link"
           :href="race.sourceUrl"
           target="_blank"
           rel="noopener noreferrer"
-          >Uradna spletna stran <IconArrowUpRight /></a
-        >
+          ><img v-if="race.logo" :src="race.logo" alt="" class="race-source-logo" />Uradna spletna
+          stran <IconArrowUpRight
+        /></a>
       </div>
-      <RouteVisual :variant="1" dark :label="`Trasa ${race.name}`" />
+      <figure v-if="heroPhoto" class="race-hero-photo">
+        <img :src="heroPhoto.src" :alt="heroPhoto.alt" width="960" height="640" fetchpriority="high" />
+        <figcaption>
+          Fotografija območja ·
+          <a :href="heroPhoto.source" target="_blank" rel="noopener noreferrer">{{ heroPhoto.author }}</a>
+          ·
+          <a :href="heroPhoto.licenseUrl" target="_blank" rel="noopener noreferrer">{{ heroPhoto.license }}</a>
+          · pomanjšana
+        </figcaption>
+      </figure>
     </header>
 
     <section class="race-entrants shell">
@@ -194,8 +201,8 @@ function startDay(startDate?: string) {
           v-if="raceHasPassed && resultsArticle"
           :to="`/journal/${resultsArticle.slug}`"
           class="race-results-link"
-          >Preberi končni pregled rezultatov <IconArrowUpRight /></NuxtLink
-        >
+          >Preberi končni pregled rezultatov <IconArrowUpRight
+        /></NuxtLink>
       </div>
     </section>
 
@@ -210,11 +217,9 @@ function startDay(startDate?: string) {
       <p class="eyebrow">Naslednja tekma</p>
       <NuxtLink
         :to="`/races/${races[(races.findIndex((item) => item.slug === race.slug) + 1) % races.length].slug}`"
-        >{{
-          races[(races.findIndex((item) => item.slug === race.slug) + 1) % races.length].name
-        }}
-        <IconArrowUpRight /></NuxtLink
-      >
+        >{{ races[(races.findIndex((item) => item.slug === race.slug) + 1) % races.length].name }}
+        <IconArrowUpRight
+      /></NuxtLink>
     </section>
   </div>
 </template>

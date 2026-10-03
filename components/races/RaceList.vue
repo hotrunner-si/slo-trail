@@ -111,7 +111,9 @@ const groups = computed(() => {
             </button>
           </div>
           <div class="event-gain mono">
-            {{ race.distances[selectedIndex(race)].elevation.toLocaleString('sl-SI') }} M+
+            <span class="event-gain-label">Vzpon</span>
+            <IconArrowUpRight />
+            {{ race.distances[selectedIndex(race)].elevation.toLocaleString('sl-SI') }} m
           </div>
           <span :class="['status', statusClass(race)]">{{ race.registrationStatus }}</span>
           <RaceElevationMini

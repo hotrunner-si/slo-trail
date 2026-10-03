@@ -11,6 +11,7 @@ const selectedId = ref(
 )
 const gpxData = ref<Record<string, GpxData>>({})
 const hoverProgress = ref<number | null>(null)
+const routesList = ref<HTMLElement | null>(null)
 
 onMounted(async () => {
   const entries = props.race.distances.map(async (distance, index) => {
@@ -55,9 +56,38 @@ function selectRoute(distance: RaceDistance, index: number) {
   const id = routeId(distance, index)
   selectedId.value = selectedId.value === id ? 'all' : id
 }
-function selectFromMap(id: string) {
+async function selectFromMap(id: string) {
   selectedId.value = id
   hoverProgress.value = null
+  await nextTick()
+
+  const list = routesList.value
+  const button = Array.from(
+    list?.querySelectorAll<HTMLButtonElement>('[data-route-id]') || [],
+  ).find((item) => item.dataset.routeId === id)
+  if (!list || !button) return
+
+  const listRect = list.getBoundingClientRect()
+  const buttonRect = button.getBoundingClientRect()
+  if (list.scrollWidth > list.clientWidth + 1) {
+    list.scrollTo({
+      left:
+        list.scrollLeft +
+        buttonRect.left -
+        listRect.left -
+        (list.clientWidth - buttonRect.width) / 2,
+      behavior: 'smooth',
+    })
+  } else if (list.scrollHeight > list.clientHeight + 1) {
+    list.scrollTo({
+      top:
+        list.scrollTop +
+        buttonRect.top -
+        listRect.top -
+        (list.clientHeight - buttonRect.height) / 2,
+      behavior: 'smooth',
+    })
+  }
 }
 </script>
 
@@ -71,10 +101,11 @@ function selectFromMap(id: string) {
     </header>
 
     <div class="course-map-layout">
-      <aside class="course-map-routes-list" aria-label="Trase dogodka">
+      <aside ref="routesList" class="course-map-routes-list" aria-label="Trase dogodka">
         <button
           v-if="race.distances.length > 1"
           class="all-routes"
+          data-route-id="all"
           :class="{ active: selectedId === 'all' }"
           @click="selectedId = 'all'"
         >
@@ -86,6 +117,7 @@ function selectFromMap(id: string) {
         <button
           v-for="(distance, index) in race.distances"
           :key="routeId(distance, index)"
+          :data-route-id="routeId(distance, index)"
           :class="[
             `effort-${effortCategory(distance).toLowerCase()}`,
             { active: selectedId === routeId(distance, index) },

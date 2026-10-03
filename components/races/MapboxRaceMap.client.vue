@@ -222,8 +222,5 @@ onBeforeUnmount(() => {
       ><button v-if="race.distances.length > 1" type="button" @click="showAll">Vse trase</button
       ><button type="button" @click="fit">Ponastavi pogled</button>
     </div>
-    <p class="leaflet-map-note">
-      Povleci zemljevid za premik. Uporabi kolešček ali gumba +/− za približanje.
-    </p>
   </div>
 </template>
