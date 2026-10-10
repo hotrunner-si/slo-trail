@@ -117,6 +117,13 @@ export interface Article {
   publishedAt: string
   image: string
   body: string[]
+  results?: {
+    heading: string
+    rows: { place: number; name: string; time: string }[]
+  }[]
+  quotes?: { attribution: string; text: string }[]
+  editorialNote?: string
+  sources?: { label: string; url: string }[]
   relatedRace?: string
   relatedRunner?: string
   relatedRoute?: string

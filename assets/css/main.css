@@ -1180,6 +1180,93 @@ p {
   line-height: 0.7;
   padding: 12px 12px 0 0;
 }
+.article-editorial-note {
+  margin: 42px 0;
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.42);
+}
+.article-editorial-note strong {
+  display: block;
+  font: 700 0.72rem var(--sans);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.story-body .article-editorial-note p {
+  margin: 8px 0 0;
+  font: 1rem/1.6 var(--sans);
+}
+.article-results,
+.article-quotes,
+.article-sources {
+  margin-top: 64px;
+}
+.story-body .article-results h2,
+.story-body .article-quotes h2,
+.story-body .article-sources h2 {
+  margin: 0 0 22px;
+  font: 500 clamp(2rem, 4vw, 3.2rem)/1.08 var(--serif);
+}
+.article-results-scroll {
+  overflow-x: auto;
+}
+.article-results table {
+  width: 100%;
+  border-collapse: collapse;
+  font: 0.95rem/1.4 var(--sans);
+  text-align: left;
+}
+.article-results th,
+.article-results td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--line);
+}
+.article-results th:first-child,
+.article-results td:first-child {
+  width: 72px;
+  color: var(--muted);
+}
+.article-results th:last-child,
+.article-results td:last-child {
+  width: 100px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.article-results th {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.article-quotes blockquote {
+  margin: 0;
+  padding: 24px 0 28px;
+  border-top: 1px solid var(--line);
+}
+.story-body .article-quotes blockquote p {
+  margin: 0 0 16px;
+  font: 1.2rem/1.65 var(--serif);
+}
+.article-quotes cite {
+  font: normal 700 0.72rem var(--sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.article-sources ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.article-sources li {
+  border-top: 1px solid var(--line);
+}
+.article-sources a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+  font: 0.95rem var(--sans);
+}
 .related-entities {
   padding-bottom: 110px;
 }

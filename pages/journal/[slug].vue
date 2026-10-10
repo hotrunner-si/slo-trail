@@ -50,6 +50,42 @@ const related = computed(() => {
       <aside></aside>
       <div class="story-body">
         <p v-for="paragraph in article.body" :key="paragraph">{{ paragraph }}</p>
+        <aside v-if="article.editorialNote" class="article-editorial-note">
+          <strong>Uredniška opomba</strong>
+          <p>{{ article.editorialNote }}</p>
+        </aside>
+        <section v-for="result in article.results" :key="result.heading" class="article-results">
+          <h2>{{ result.heading }}</h2>
+          <div class="article-results-scroll">
+            <table>
+              <thead>
+                <tr><th>Mesto</th><th>Tekač/-ica</th><th>Čas</th></tr>
+              </thead>
+              <tbody>
+                <tr v-for="row in result.rows" :key="`${result.heading}-${row.place}`">
+                  <td>{{ row.place }}.</td><td>{{ row.name }}</td><td>{{ row.time }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section v-if="article.quotes?.length" class="article-quotes">
+          <h2>Izjave tekačev</h2>
+          <blockquote v-for="quote in article.quotes" :key="quote.attribution">
+            <p>»{{ quote.text }}«</p>
+            <cite>{{ quote.attribution }}</cite>
+          </blockquote>
+        </section>
+        <section v-if="article.sources?.length" class="article-sources">
+          <h2>Viri</h2>
+          <ul>
+            <li v-for="source in article.sources" :key="source.url">
+              <a :href="source.url" target="_blank" rel="noopener noreferrer">
+                {{ source.label }} <IconArrowUpRight />
+              </a>
+            </li>
+          </ul>
+        </section>
         <a
           v-if="article.relatedRunner === 'nejc-ursic'"
           href="https://utmb.world/runner/2586047.nejc.ursic"
