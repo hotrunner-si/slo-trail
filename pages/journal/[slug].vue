@@ -46,8 +46,15 @@ const related = computed(() => {
       <p>{{ article.subtitle }}</p>
     </header>
     <div class="story-image"><img :src="article.image" :alt="article.title" /></div>
-    <div class="story-layout shell">
-      <aside></aside>
+    <div class="story-layout shell" :class="{ 'story-layout-with-media': article.sideImages?.length }">
+      <aside v-if="article.sideImages?.length" class="story-media-column" aria-label="Fotografije s tekme">
+        <figure v-for="photo in article.sideImages" :key="photo.src">
+          <img :src="photo.src" :alt="photo.alt" loading="lazy" />
+          <figcaption>
+            <a :href="photo.sourceUrl" target="_blank" rel="noopener noreferrer">{{ photo.caption }}</a>
+          </figcaption>
+        </figure>
+      </aside>
       <div class="story-body">
         <p v-for="paragraph in article.body" :key="paragraph">{{ paragraph }}</p>
         <aside v-if="article.editorialNote" class="article-editorial-note">
@@ -72,8 +79,13 @@ const related = computed(() => {
         <section v-if="article.quotes?.length" class="article-quotes">
           <h2>Izjave tekačev</h2>
           <blockquote v-for="quote in article.quotes" :key="quote.attribution">
-            <p>»{{ quote.text }}«</p>
-            <cite>{{ quote.attribution }}</cite>
+            <p style="white-space: pre-line">»{{ quote.text }}«</p>
+            <cite>
+              <NuxtLink v-if="quote.runnerSlug" :to="`/runners/${quote.runnerSlug}`">
+                {{ quote.attribution }}
+              </NuxtLink>
+              <template v-else>{{ quote.attribution }}</template>
+            </cite>
           </blockquote>
         </section>
         <section v-if="article.sources?.length" class="article-sources">

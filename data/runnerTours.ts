@@ -11,6 +11,6 @@ export const runnerTours = Object.entries(runnerGpxRoutes)
       runnerName: runner?.name || runnerSlug,
     }))
   })
-  .sort((a, b) => b.dateIso.localeCompare(a.dateIso))
+  .sort((a, b) => (b.dateIso || '').localeCompare(a.dateIso || ''))
 
 export type RunnerTour = (typeof runnerTours)[number]

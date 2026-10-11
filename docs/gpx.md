@@ -1,6 +1,6 @@
 # GPX podatki
 
-Izvorne datoteke so v `public/gpx/<dogodek>/` oziroma
+Izvorne datoteke so v `public/gpx/races/<dogodek>/` oziroma
 `public/gpx/runners/<tekac>/`. Uvoz jih ne spreminja.
 
 Za vsako traso uvoz ustvari štiri samostojne izhode:
@@ -26,7 +26,7 @@ Za obstoječe prikaze ostajata dva združena izhoda:
 Podrobni prikaz na 75 m ni polna izvorna različica; ta je vedno v datotekah
 `.route.full.json` in `.profile.full.json`.
 
-Predogledi tekem so v `public/gpx`. Predogledi tekačev so samo v
+Predogledi tekem so v `public/gpx/races`. Predogledi tekačev so samo v
 `data/gpx/<tekac>`, od koder jih uvozijo strani. Oboji nastanejo z istim
 uvoznikom, zato jih ne urejamo ročno.
 
@@ -34,7 +34,7 @@ uvoznikom, zato jih ne urejamo ročno.
 
 ### Tek na Šmarno goro
 
-V `public/gpx/tek-na-smarno-goro/` dodaj:
+V `public/gpx/races/tek-na-smarno-goro/` dodaj:
 
 - `rekord-smarne-gore.gpx` — Rekord Šmarne gore, 1,8 km / 360 m vzpona.
 - `tek-na-smarno-goro.gpx` — Tek na Šmarno goro, 10 km / 705 m vzpona.

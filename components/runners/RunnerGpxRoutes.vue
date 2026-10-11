@@ -96,7 +96,7 @@ async function toggleRoute(id: string, event: MouseEvent) {
     <div class="section-head">
       <div>
         <p class="eyebrow">GPX · tekačeve ture</p>
-        <h2 id="runner-gpx-title">Sledi s poti</h2>
+        <h2 id="runner-gpx-title">Naj doživetja</h2>
       </div>
       <p>Ture in njihove GPX sledi. Odpri vrstico za opis in zemljevid.</p>
     </div>
@@ -125,10 +125,14 @@ async function toggleRoute(id: string, event: MouseEvent) {
                   openId === route.id ? '−' : '+'
                 }}</span>
               </span>
-              <small>{{ formatDate(route.dateIso) }} · {{ route.location }}</small>
+              <small
+                >{{ route.dateIso ? `${formatDate(route.dateIso)} · ` : ''
+                }}{{ route.location }}</small
+              >
             </span>
             <span v-if="openId !== route.id" class="runner-gpx-stats mono"
-              >{{ number(route.distanceKm) }} km <em><IconArrowUpRight /> {{ number(route.elevationGain) }} m</em></span
+              >{{ number(route.distanceKm) }} km
+              <em><IconArrowUpRight /> {{ number(route.elevationGain) }} m</em></span
             >
             <span v-if="openId !== route.id" class="runner-gpx-effort mono"
               >{{ effortLabel(effort(route)) }}
@@ -152,8 +156,17 @@ async function toggleRoute(id: string, event: MouseEvent) {
             :label="`Višinski profil ture ${route.title}`"
             @distance-change="activeDistanceKm = $event"
           />
-          <p v-else-if="openId === route.id" class="runner-gpx-selected-profile runner-gpx-profile-status">
-            {{ expandedError ? 'Višinskega profila ni mogoče naložiti.' : expandedData ? 'Višinski profil ni na voljo.' : 'Nalaganje višinskega profila …' }}
+          <p
+            v-else-if="openId === route.id"
+            class="runner-gpx-selected-profile runner-gpx-profile-status"
+          >
+            {{
+              expandedError
+                ? 'Višinskega profila ni mogoče naložiti.'
+                : expandedData
+                  ? 'Višinski profil ni na voljo.'
+                  : 'Nalaganje višinskega profila …'
+            }}
           </p>
         </div>
         <div v-if="openId === route.id" :id="`runner-map-${route.id}`" class="runner-gpx-expanded">
@@ -171,9 +184,20 @@ async function toggleRoute(id: string, event: MouseEvent) {
           <p v-else class="runner-gpx-map-loading">Nalaganje zemljevida …</p>
           <div class="runner-gpx-detail">
             <div class="mono runner-gpx-detail-stats">
-              <span>Razdalja <strong>{{ number(route.distanceKm) }} km</strong></span>
-              <span>Vzpon <strong>{{ number(route.elevationGain) }} m</strong></span>
-              <span>Najvišja točka <strong>{{ route.preview.highestPoint == null ? '—' : `${number(route.preview.highestPoint)} m` }}</strong></span>
+              <span
+                >Razdalja <strong>{{ number(route.distanceKm) }} km</strong></span
+              >
+              <span
+                >Vzpon <strong>{{ number(route.elevationGain) }} m</strong></span
+              >
+              <span
+                >Najvišja točka
+                <strong>{{
+                  route.preview.highestPoint == null
+                    ? '—'
+                    : `${number(route.preview.highestPoint)} m`
+                }}</strong></span
+              >
             </div>
             <a
               class="button secondary runner-gpx-download"

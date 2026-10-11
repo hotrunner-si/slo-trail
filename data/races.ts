@@ -1121,12 +1121,12 @@ for (const race of races)
       if (!distance.utmbIndexCategory && category !== 'short') distance.utmbIndexCategory = category
     }
   }
-// GPX previews are generated from every source file in public/gpx by gpx:import-all.
+// GPX previews are generated from every source file in public/gpx/races by gpx:import-all.
 // Keep the race catalog independent from a manually maintained list of generated JSON files.
 for (const race of races)
   for (const distance of race.distances) {
     const rawFile = distance.id && gpxManifest[race.slug]?.[distance.id]
-    if (rawFile) distance.gpx = { file: `/gpx/${race.slug}/${distance.id}.json`, rawFile }
+    if (rawFile) distance.gpx = { file: `/gpx/races/${race.slug}/${distance.id}.json`, rawFile }
   }
 races.sort((a, b) => {
   const aUndated = a.dateStatus === 'estimated' || !a.date || Number.isNaN(Date.parse(a.date))

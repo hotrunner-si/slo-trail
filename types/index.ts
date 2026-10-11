@@ -77,17 +77,15 @@ export interface Runner {
   slug: string
   name: string
   location: string
-  favouriteDistance: string
+  club?: string
+  favouriteDistance?: string
   bio: string
+  longDescription: string
   quote: string
   image: string
   favouriteRouteSlugs: string[]
   utmbIndex?: number
-  utmb20k?: number
-  utmb50k?: number
-  utmb100k?: number
-  bestUtmbScore?: number
-  finishedRaces?: number
+  utmbUrl?: string
 }
 export interface TrailRoute {
   id: string
@@ -116,12 +114,13 @@ export interface Article {
   category: string
   publishedAt: string
   image: string
+  sideImages?: { src: string; alt: string; sourceUrl: string; caption: string }[]
   body: string[]
   results?: {
     heading: string
     rows: { place: number; name: string; time: string }[]
   }[]
-  quotes?: { attribution: string; text: string }[]
+  quotes?: { attribution: string; text: string; runnerSlug?: string }[]
   editorialNote?: string
   sources?: { label: string; url: string }[]
   relatedRace?: string

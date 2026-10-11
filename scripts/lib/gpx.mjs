@@ -109,7 +109,9 @@ export async function importPreview(inputPath, event, id, metadata = {}) {
     bounds,
   }
   const preview = { ...common, overviewRoute: coordinates(overview), profile: simpleProfile }
-  const dir = join(process.cwd(), 'public', 'gpx', event)
+  const dir = event.startsWith('runners/')
+    ? join(process.cwd(), 'public', 'gpx', event)
+    : join(process.cwd(), 'public', 'gpx', 'races', event)
   const previewDir = event.startsWith('runners/')
     ? join(process.cwd(), 'data', 'gpx', event.slice(8))
     : dir

@@ -163,14 +163,15 @@ if (input === '--all') {
           ? [join(dir, entry.name)]
           : [],
     )
-  const roots = await readdir(join(process.cwd(), 'public', 'gpx'), { withFileTypes: true })
+  const raceRoot = join(process.cwd(), 'public', 'gpx', 'races')
+  const roots = await readdir(raceRoot, { withFileTypes: true })
   let imported = 0,
     unmatched = []
   const rawFiles = {}
   for (const root of roots.filter((entry) => entry.isDirectory())) {
     const race = races.get(root.name)
     if (!race) continue
-    for (const path of await files(join(process.cwd(), 'public', 'gpx', root.name))) {
+    for (const path of await files(join(raceRoot, root.name))) {
       const filename = basename(path),
         normalized = slugify(basename(path, extname(path)))
       const systematic = [...race.distances.values()].filter(({ id, km }) => {
@@ -193,7 +194,7 @@ if (input === '--all') {
         continue
       }
       await importPreview(path, root.name, selectedId, distance)
-      ;(rawFiles[root.name] ||= {})[selectedId] = `/gpx/${root.name}/${filename}`
+      ;(rawFiles[root.name] ||= {})[selectedId] = `/gpx/races/${root.name}/${filename}`
       imported++
     }
   }

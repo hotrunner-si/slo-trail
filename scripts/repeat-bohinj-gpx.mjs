@@ -1,7 +1,7 @@
 import { readFile, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
-const dir = join(process.cwd(), 'public/gpx/zimski-trail-tek-bohinj')
+const dir = join(process.cwd(), 'public/gpx/races/zimski-trail-tek-bohinj')
 const source = 'zimski-trail-tek-bohinj-kratka-trasa-1-krog-6km.gpx'
 const xml = await readFile(join(dir, source), 'utf8')
 const points = [...xml.matchAll(/<trkpt\b[^>]*>[\s\S]*?<\/trkpt>/g)].map((match) =>

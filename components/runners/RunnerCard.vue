@@ -10,7 +10,10 @@ defineProps<{ runner: Runner; index?: number }>()
         >0{{ (index ?? 0) + 1 }}</span
       >
     </div>
-    <p class="eyebrow">{{ runner.location }} · {{ runner.favouriteDistance }}</p>
+    <p class="eyebrow">
+      {{ runner.location
+      }}<template v-if="runner.favouriteDistance"> · {{ runner.favouriteDistance }}</template>
+    </p>
     <h3>{{ runner.name }}</h3>
     <p>{{ runner.bio }}</p>
     <span class="text-link">Profil tekača <IconArrowUpRight /></span>

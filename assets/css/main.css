@@ -999,6 +999,11 @@ p {
   font-size: 1.1rem;
   max-width: 600px;
 }
+.runner-description {
+  max-width: 600px;
+  margin: 22px 0 0;
+  line-height: 1.6;
+}
 .runner-facts {
   border-top: 1px solid var(--line);
   margin: 35px 0;
@@ -1143,7 +1148,7 @@ p {
   padding: 100px 10vw 70px;
 }
 .story-header h1 {
-  font-size: clamp(4rem, 8vw, 8rem);
+  font-size: clamp(2.8rem, 5.5vw, 5.5rem);
   max-width: 1100px;
   margin: 0 auto 28px;
 }
@@ -1167,18 +1172,36 @@ p {
 .story-layout aside {
   font-size: 0.75rem;
 }
+.story-layout-with-media {
+  grid-template-columns: minmax(180px, 0.35fr) minmax(0, 0.65fr);
+}
+.story-media-column figure {
+  margin: 0 0 28px;
+}
+.story-media-column img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.story-media-column figcaption {
+  margin-top: 8px;
+  color: var(--muted, #666);
+  font: 0.78rem/1.45 var(--sans);
+}
+.story-media-column figcaption a {
+  color: inherit;
+  text-decoration: none;
+}
+.story-media-column figcaption a:hover {
+  text-decoration: underline;
+}
 .story-body {
   max-width: 740px;
 }
 .story-body p {
   font: 1.45rem/1.7 var(--serif);
   color: var(--ink);
-}
-.story-body p:first-child:first-letter {
-  float: left;
-  font-size: 5.7rem;
-  line-height: 0.7;
-  padding: 12px 12px 0 0;
 }
 .article-editorial-note {
   margin: 42px 0;
@@ -1232,6 +1255,9 @@ p {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
+.article-results tbody td:nth-child(2) {
+  color: var(--accent);
+}
 .article-results th {
   font-size: 0.7rem;
   letter-spacing: 0.1em;
@@ -1250,6 +1276,33 @@ p {
   font: normal 700 0.72rem var(--sans);
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  color: var(--accent);
+}
+.article-quotes cite a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  text-underline-offset: 3px;
+  transition:
+    color 180ms ease,
+    transform 180ms ease,
+    text-decoration-color 180ms ease;
+}
+.article-quotes cite a:hover,
+.article-quotes cite a:focus-visible {
+  color: var(--ink);
+  text-decoration-color: currentColor;
+  transform: translateY(-1px);
+}
+.article-quotes cite a:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .article-quotes cite a {
+    transition: none;
+  }
 }
 .article-sources ul {
   margin: 0;
@@ -1602,7 +1655,7 @@ p {
     padding: 70px 0 50px;
   }
   .story-header h1 {
-    font-size: clamp(3.5rem, 16vw, 6rem);
+    font-size: clamp(2.6rem, 10vw, 4.2rem);
   }
   .story-image {
     height: 480px;
@@ -1610,6 +1663,18 @@ p {
   .story-layout {
     grid-template-columns: 1fr;
     padding-block: 60px;
+  }
+  .story-layout-with-media {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .story-media-column {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+  .story-media-column figure {
+    margin: 0;
   }
   .story-layout aside {
     border-bottom: 1px solid var(--line);
@@ -1932,9 +1997,6 @@ h2 {
 .category-nav button:hover {
   background: var(--accent);
   border-color: var(--accent);
-}
-.story-body p:first-child:first-letter {
-  color: var(--accent);
 }
 @media (max-width: 1000px) {
   .hero {
@@ -4502,6 +4564,10 @@ h2 {
     margin-bottom: 0;
     font-size: 0.9rem;
     line-height: 1.45;
+  }
+  .runner-description {
+    margin-top: 14px;
+    font-size: 0.9rem;
   }
   .runner-facts {
     margin: 18px 0 0;

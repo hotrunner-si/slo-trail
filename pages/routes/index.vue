@@ -21,8 +21,7 @@ const label = (tour: { distanceKm: number; elevationGain: number }) =>
   effortLabel({ km: tour.distanceKm, elevation: tour.elevationGain })
 const lastMapSelection = ref<string | null>(null)
 const mapTourList = ref<HTMLElement | null>(null)
-const tourMapImage = (tour: RunnerTour) =>
-  `/images/tour-maps/${tour.runnerSlug}-${tour.id}.png`
+const tourMapImage = (tour: RunnerTour) => `/images/tour-maps/${tour.runnerSlug}-${tour.id}.png`
 
 const runnerTourLink = (tour: RunnerTour) => ({
   path: `/runners/${tour.runnerSlug}`,
@@ -53,7 +52,12 @@ watch(view, () => {
 watch(
   [view, activeId],
   async ([currentView]) => {
-    if (!import.meta.client || currentView !== 'map' || window.matchMedia('(min-width: 701px)').matches) return
+    if (
+      !import.meta.client ||
+      currentView !== 'map' ||
+      window.matchMedia('(min-width: 701px)').matches
+    )
+      return
     await nextTick()
     requestAnimationFrame(() => {
       const list = mapTourList.value
@@ -87,7 +91,14 @@ watch(
           Zemljevid
         </button>
       </div>
-      <span class="mono runner-tours-count">{{ formatSlovenianCount(runnerTours.length, slovenianCountForms.tour).toLocaleUpperCase('sl-SI') }} · NAJNOVEJŠE NAJPREJ</span>
+      <span class="mono runner-tours-count"
+        >{{
+          formatSlovenianCount(runnerTours.length, slovenianCountForms.tour).toLocaleUpperCase(
+            'sl-SI',
+          )
+        }}
+        · NAJNOVEJŠE NAJPREJ</span
+      >
     </div>
     <div v-if="!runnerTours.length" class="empty-state">
       <h2>Tur še ni.</h2>
@@ -101,37 +112,43 @@ watch(
         :style="{ '--tour-color': color(tour) }"
       >
         <NuxtLink class="runner-tour-card-main" :to="runnerTourLink(tour)">
-        <div class="runner-tour-card-map" aria-hidden="true">
-          <img
-            class="runner-tour-card-map-image"
-            :src="tourMapImage(tour)"
-            alt=""
-            loading="lazy"
-          />
-          <span class="runner-tour-card-index mono"
-            >{{ String(index + 1).padStart(2, '0') }} /
-            {{ String(runnerTours.length).padStart(2, '0') }}</span
-          >
-          <span class="runner-tour-card-category mono">{{ label(tour) }}</span>
-        </div>
-        <div class="runner-tour-card-body">
-          <p class="eyebrow">{{ formatDate(tour.dateIso) }} · {{ tour.location }}</p>
-          <h2>{{ tour.title }}</h2>
-          <p class="runner-tour-card-description">{{ tour.description }}</p>
-          <div class="runner-tour-card-stats mono">
-            <strong>{{ number(tour.distanceKm) }} km</strong
-            ><strong><IconArrowUpRight /> {{ number(tour.elevationGain) }} m</strong>
+          <div class="runner-tour-card-map" aria-hidden="true">
+            <img
+              class="runner-tour-card-map-image"
+              :src="tourMapImage(tour)"
+              alt=""
+              loading="lazy"
+            />
+            <span class="runner-tour-card-index mono"
+              >{{ String(index + 1).padStart(2, '0') }} /
+              {{ String(runnerTours.length).padStart(2, '0') }}</span
+            >
+            <span class="runner-tour-card-category mono">{{ label(tour) }}</span>
           </div>
-          <GpxMiniProfile
-            class="runner-tour-card-profile"
-            :profile="tour.preview.profile"
-            :label="`Višinski profil ture ${tour.title}`"
-          />
-          <span class="runner-tour-card-runner">{{ tour.runnerName }} · Odpri turo <IconArrowUpRight /></span>
-        </div>
+          <div class="runner-tour-card-body">
+            <p class="eyebrow">
+              {{ tour.dateIso ? `${formatDate(tour.dateIso)} · ` : '' }}{{ tour.location }}
+            </p>
+            <h2>{{ tour.title }}</h2>
+            <p class="runner-tour-card-description">{{ tour.description }}</p>
+            <div class="runner-tour-card-stats mono">
+              <strong>{{ number(tour.distanceKm) }} km</strong
+              ><strong><IconArrowUpRight /> {{ number(tour.elevationGain) }} m</strong>
+            </div>
+            <GpxMiniProfile
+              class="runner-tour-card-profile"
+              :profile="tour.preview.profile"
+              :label="`Višinski profil ture ${tour.title}`"
+            />
+            <span class="runner-tour-card-runner"
+              >{{ tour.runnerName }} · Odpri turo <IconArrowUpRight
+            /></span>
+          </div>
         </NuxtLink>
         <div class="runner-tour-card-footer">
-          <a :href="`/gpx/runners/${tour.runnerSlug}/${tour.preview.source}`" download>Prenesi GPX ↓</a>
+          <a :href="`/gpx/runners/${tour.runnerSlug}/${tour.preview.source}`" download
+            >Prenesi GPX ↓</a
+          >
         </div>
       </article>
     </div>
@@ -144,13 +161,17 @@ watch(
         :aria-label="`Odpri turo ${tour.title} na strani tekača ${tour.runnerName}`"
         :style="{ '--tour-color': color(tour) }"
       >
-        <time class="mono" :datetime="tour.dateIso">{{ formatDate(tour.dateIso) }}</time>
+        <time v-if="tour.dateIso" class="mono" :datetime="tour.dateIso">{{
+          formatDate(tour.dateIso)
+        }}</time>
+        <span v-else class="mono">—</span>
         <div>
           <h2>{{ tour.title }}</h2>
           <p>{{ tour.runnerName }} · {{ tour.location }}</p>
         </div>
         <span class="mono"
-          >{{ number(tour.distanceKm) }} km <IconArrowUpRight /> {{ number(tour.elevationGain) }} m</span
+          >{{ number(tour.distanceKm) }} km <IconArrowUpRight />
+          {{ number(tour.elevationGain) }} m</span
         >
         <GpxMiniProfile
           :profile="tour.preview.profile"
@@ -180,10 +201,13 @@ watch(
             :style="{ '--tour-color': color(tour) }"
             @click="selectMapTour(tour.key)"
           >
-            <time :datetime="tour.dateIso">{{ formatDate(tour.dateIso) }}</time
+            <time v-if="tour.dateIso" :datetime="tour.dateIso">{{ formatDate(tour.dateIso) }}</time
             ><strong>{{ tour.title }}</strong
             ><span>{{ tour.runnerName }} · {{ tour.location }}</span
-            ><small>{{ number(tour.distanceKm) }} km · <IconArrowUpRight /> {{ number(tour.elevationGain) }} m</small>
+            ><small
+              >{{ number(tour.distanceKm) }} km · <IconArrowUpRight />
+              {{ number(tour.elevationGain) }} m</small
+            >
           </button>
         </div>
       </aside>

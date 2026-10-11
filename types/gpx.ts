@@ -21,7 +21,7 @@ export interface GpxPreview extends Omit<GpxData, 'overviewRoute'> {
 export interface RunnerGpxRoute {
   id: string
   title: string
-  dateIso: string
+  dateIso?: string
   location: string
   description: string
   distanceKm: number
