@@ -141,7 +141,7 @@ watch(
               :label="`Višinski profil ture ${tour.title}`"
             />
             <span class="runner-tour-card-runner"
-              >{{ tour.runnerName }} · Odpri turo <IconArrowUpRight
+              >{{ tour.runnerName }} <IconArrowUpRight
             /></span>
           </div>
         </NuxtLink>

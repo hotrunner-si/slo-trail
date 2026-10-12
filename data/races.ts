@@ -1078,7 +1078,8 @@ const schedule: Record<
     dateEnd: '2027-09-19',
     dateStatus: 'estimated',
   },
-  ponikva4trail: { date: '2026-10-10', dateStatus: 'confirmed' },
+  // 2026-10-10: https://ponikva4trail.si/razpis/
+  ponikva4trail: { date: '2027-10-09', dateStatus: 'estimated' },
   'caven-run': { date: '2026-10-24', dateStatus: 'confirmed' },
   // 2026-12-05: https://velenjetrail.si/trase/
   'velenje-trail': { date: '2027-12-04', dateStatus: 'estimated' },

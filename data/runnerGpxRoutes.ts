@@ -79,7 +79,7 @@ export const runnerGpxRoutes: Record<string, RunnerGpxRoute[]> = {
     {
       id: 'jatr-25km-2026',
       title: 'Julian Alps Trail Run 25 km',
-      dateIso: '2026-09-21',
+      dateIso: '2026-09-20',
       location: 'Julijske Alpe',
       description: 'GPX sled trase Julian Alps Trail Run 2026.',
       distanceKm: klaraJatr.distanceKm,

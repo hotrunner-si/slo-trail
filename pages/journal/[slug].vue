@@ -39,19 +39,26 @@ const related = computed(() => {
 <template>
   <article v-if="article" class="story-page">
     <header class="story-header shell">
-      <p class="eyebrow">
-        {{ article.category }} · {{ formatDate(article.publishedAt) }}
-      </p>
+      <p class="eyebrow">{{ article.category }} · {{ formatDate(article.publishedAt) }}</p>
       <h1>{{ article.title }}</h1>
       <p>{{ article.subtitle }}</p>
     </header>
     <div class="story-image"><img :src="article.image" :alt="article.title" /></div>
-    <div class="story-layout shell" :class="{ 'story-layout-with-media': article.sideImages?.length }">
-      <aside v-if="article.sideImages?.length" class="story-media-column" aria-label="Fotografije s tekme">
+    <div
+      class="story-layout shell"
+      :class="{ 'story-layout-with-media': article.sideImages?.length }"
+    >
+      <aside
+        v-if="article.sideImages?.length"
+        class="story-media-column"
+        aria-label="Fotografije s tekme"
+      >
         <figure v-for="photo in article.sideImages" :key="photo.src">
           <img :src="photo.src" :alt="photo.alt" loading="lazy" />
           <figcaption>
-            <a :href="photo.sourceUrl" target="_blank" rel="noopener noreferrer">{{ photo.caption }}</a>
+            <a :href="photo.sourceUrl" target="_blank" rel="noopener noreferrer">{{
+              photo.caption
+            }}</a>
           </figcaption>
         </figure>
       </aside>
@@ -66,11 +73,21 @@ const related = computed(() => {
           <div class="article-results-scroll">
             <table>
               <thead>
-                <tr><th>Mesto</th><th>Tekač/-ica</th><th>Čas</th></tr>
+                <tr>
+                  <th>Mesto</th>
+                  <th>{{ result.participantLabel }}</th>
+                  <th class="article-result-time">Čas</th>
+                  <th v-if="result.showUtmbScore" class="article-result-score">UTMB score</th>
+                </tr>
               </thead>
               <tbody>
                 <tr v-for="row in result.rows" :key="`${result.heading}-${row.place}`">
-                  <td>{{ row.place }}.</td><td>{{ row.name }}</td><td>{{ row.time }}</td>
+                  <td>{{ row.place }}.</td>
+                  <td>{{ row.name }}</td>
+                  <td class="article-result-time">{{ row.time }}</td>
+                  <td v-if="result.showUtmbScore" class="article-result-score">
+                    {{ row.utmbScore ?? '—' }}
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -103,8 +120,8 @@ const related = computed(() => {
           href="https://utmb.world/runner/2586047.nejc.ursic"
           target="_blank"
           rel="noopener noreferrer"
-          >UTMB profil Nejca Uršiča <IconArrowUpRight /></a
-        >
+          >UTMB profil Nejca Uršiča <IconArrowUpRight
+        /></a>
       </div>
     </div>
     <section v-if="related.length" class="related-entities shell">
@@ -112,8 +129,8 @@ const related = computed(() => {
       <NuxtLink v-for="item in related" :key="item.to" :to="item.to"
         ><span>{{ item.label }}</span
         ><strong>{{ item.name }}</strong
-        ><em><IconArrowUpRight /></em></NuxtLink
-      >
+        ><em><IconArrowUpRight /></em
+      ></NuxtLink>
     </section>
   </article>
 </template>

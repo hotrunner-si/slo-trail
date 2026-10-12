@@ -739,6 +739,10 @@ p {
 .footer-note {
   text-align: right;
 }
+.footer-note a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .page {
   padding-bottom: 130px;
 }
@@ -1249,8 +1253,8 @@ p {
   width: 72px;
   color: var(--muted);
 }
-.article-results th:last-child,
-.article-results td:last-child {
+.article-results .article-result-time,
+.article-results .article-result-score {
   width: 100px;
   text-align: right;
   font-variant-numeric: tabular-nums;
@@ -1695,6 +1699,60 @@ p {
   }
   .route-card .route-visual {
     min-height: 230px;
+  }
+}
+@media (max-width: 620px) {
+  .story-page {
+    display: flex;
+    flex-direction: column;
+  }
+  .story-page .story-image {
+    order: -1;
+    height: clamp(230px, 62vw, 350px);
+  }
+  .story-page .story-header {
+    padding: 34px 0 40px;
+  }
+  .story-page .story-header h1 {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+    margin-bottom: 18px;
+  }
+  .story-page .story-header > p:last-child {
+    font-size: 1.08rem;
+    line-height: 1.45;
+  }
+  .story-page .story-layout {
+    gap: 0;
+    padding-top: 12px;
+  }
+  .story-page .story-body {
+    display: contents;
+  }
+  .story-page .story-body > p {
+    font-size: 0.875rem;
+    line-height: 1.7;
+  }
+  .story-page .story-body .article-quotes blockquote p {
+    font-size: 0.84rem;
+    line-height: 1.65;
+  }
+  .story-page .story-body .article-editorial-note p {
+    font-size: 0.75rem;
+  }
+  .story-page .article-results table {
+    font-size: 0.75rem;
+  }
+  .story-page .article-sources a {
+    font-size: 0.75rem;
+  }
+  .story-page .story-media-column {
+    order: 1;
+    grid-template-columns: 1fr;
+    margin-top: 48px;
+  }
+  .story-page .story-body > .article-sources,
+  .story-page .story-body > a {
+    order: 2;
   }
 }
 @media (max-width: 420px) {
@@ -2314,7 +2372,9 @@ h2 {
   text-align: left;
   font: 0.9rem var(--sans);
   cursor: pointer;
-  transition: border-color 150ms ease, background 150ms ease;
+  transition:
+    border-color 150ms ease,
+    background 150ms ease;
 }
 .filter-select-trigger:hover,
 .filter-select.open .filter-select-trigger {
@@ -4690,7 +4750,13 @@ h2 {
   z-index: 1;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(180deg, rgba(18, 28, 25, 0.3), transparent 34%, transparent 65%, rgba(18, 28, 25, 0.24));
+  background: linear-gradient(
+    180deg,
+    rgba(18, 28, 25, 0.3),
+    transparent 34%,
+    transparent 65%,
+    rgba(18, 28, 25, 0.24)
+  );
 }
 .runner-tour-card-map-image {
   position: relative;

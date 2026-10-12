@@ -118,7 +118,9 @@ export interface Article {
   body: string[]
   results?: {
     heading: string
-    rows: { place: number; name: string; time: string }[]
+    participantLabel: 'Tekač' | 'Tekačica'
+    showUtmbScore?: boolean
+    rows: { place: number; name: string; time: string; utmbScore?: number | null }[]
   }[]
   quotes?: { attribution: string; text: string; runnerSlug?: string }[]
   editorialNote?: string

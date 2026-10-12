@@ -12,7 +12,13 @@ const appConfig = useAppConfig()
         <NuxtLink to="/races">Tekme</NuxtLink><NuxtLink to="/runners">Tekači</NuxtLink
         ><NuxtLink to="/routes">Ture</NuxtLink><NuxtLink to="/journal">Journal</NuxtLink>
       </div>
-      <p class="footer-note">Demo vsebina · {{ new Date().getFullYear() }}</p>
+      <p class="footer-note">
+        Avtor:
+        <a href="https://nejc-ursic.netlify.app" target="_blank" rel="noopener noreferrer"
+          >Nejc Uršič</a
+        >
+        · {{ new Date().getFullYear() }}
+      </p>
     </div>
   </footer>
 </template>
