@@ -1262,6 +1262,15 @@ p {
 .article-results tbody td:nth-child(2) {
   color: var(--accent);
 }
+.article-result-runner-link {
+  color: inherit;
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+.article-result-runner-link:hover,
+.article-result-runner-link:focus-visible {
+  text-decoration: underline;
+}
 .article-results th {
   font-size: 0.7rem;
   letter-spacing: 0.1em;
@@ -3230,12 +3239,26 @@ h2 {
 }
 .home-results-card {
   display: grid;
-  grid-template-columns: 140px 1fr auto;
+  grid-template-columns: 140px minmax(0, 1fr) auto;
   gap: 30px;
-  align-items: center;
+  align-items: start;
   padding: 28px;
-  border: 1px solid #454641;
-  color: var(--paper);
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+.home-results-content {
+  display: grid;
+  grid-column: 2;
+  gap: 28px;
+}
+.home-results-article {
+  color: inherit;
+  text-decoration: none;
+}
+.home-results-lists {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 72px;
 }
 .home-results-card h3 {
   margin: 0 0 6px;
@@ -3244,9 +3267,48 @@ h2 {
 .home-results-card p,
 .home-results-empty {
   margin: 0;
-  color: #9b9c95;
+  color: var(--muted);
 }
-.home-results-card em {
+.home-results-read {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  color: var(--accent);
+  font-size: 0.82rem;
+}
+.home-result-list {
+  min-width: 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.home-result-list h4 {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.home-result-list ol {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.home-result-list li {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: baseline;
+  font-size: 0.95rem;
+}
+.home-result-place {
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.home-results-arrow {
   color: var(--accent);
   font-size: 1.5rem;
 }
@@ -3411,6 +3473,12 @@ h2 {
 @media (max-width: 620px) {
   .home-results-card {
     grid-template-columns: 1fr auto;
+  }
+  .home-results-content {
+    grid-column: 1 / -1;
+  }
+  .home-results-lists {
+    grid-template-columns: 1fr;
   }
   .home-results-card > span {
     grid-column: 1/-1;

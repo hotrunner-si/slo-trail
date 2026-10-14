@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { races } from '~/data/races'
 import { runners } from '~/data/runners'
-import { runnerTours } from '~/data/runnerTours'
+import { getWeeklyRunnerTour } from '~/data/runnerTours'
 import { articles } from '~/data/articles'
 import { formatDate, parseIsoDate, todayIsoDate } from '~/utils/formatDate'
 useSiteSeo(
@@ -33,16 +33,27 @@ const latestResults = computed(
       .filter((article) => article.category === 'Rezultati')
       .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))[0],
 )
-const featuredTour = runnerTours.find((tour) => tour.id === 'verbier-trail')!
+const latestResultLists = computed(() =>
+  (latestResults.value?.results ?? []).map((result) => ({
+    ...result,
+    rows: result.rows.slice(0, 3),
+  })),
+)
+const featuredTourDate = useState('home-featured-tour-date', () => todayIsoDate())
+const featuredTour = computed(() => getWeeklyRunnerTour(featuredTourDate.value))
+let featuredTourTimer: ReturnType<typeof setInterval> | undefined
+
+onMounted(() => {
+  featuredTourDate.value = todayIsoDate()
+  featuredTourTimer = window.setInterval(() => {
+    featuredTourDate.value = todayIsoDate()
+  }, 60_000)
+})
+onUnmounted(() => window.clearInterval(featuredTourTimer))
 const upcomingRaces = computed(() => {
   const today = todayIsoDate()
   const future = races
-    .filter(
-      (race) =>
-        race.date &&
-        parseIsoDate(race.date) &&
-        race.date >= today,
-    )
+    .filter((race) => race.date && parseIsoDate(race.date) && race.date >= today)
     .sort((a, b) => a.date.localeCompare(b.date))
   const months = [...new Set(future.map((race) => race.date.slice(0, 7)))].slice(0, 2)
   return future.filter((race) => months.includes(race.date.slice(0, 7)))
@@ -58,15 +69,21 @@ const upcomingRaces = computed(() => {
           <NuxtLink to="/runners">Tekači.</NuxtLink>
           <NuxtLink to="/races">Tekme.</NuxtLink>
           <NuxtLink to="/routes">Ture.</NuxtLink>
-          <NuxtLink :to="{ path: '/journal', query: { category: 'Rezultati' } }">Rezultati.</NuxtLink>
+          <NuxtLink :to="{ path: '/journal', query: { category: 'Rezultati' } }"
+            >Rezultati.</NuxtLink
+          >
           <NuxtLink :to="{ path: '/journal', query: { category: 'Vse' } }">Zgodbe.</NuxtLink>
         </nav>
         <p class="hero-text">
-          Prostor za spremljanje slovenskega trail teka — pregled tekem, doživetja tekačev, UTMB lestvice, GPX datoteke.
+          Prostor za spremljanje slovenskega trail teka — pregled tekem, doživetja tekačev, UTMB
+          lestvice, GPX datoteke.
         </p>
         <div class="button-row">
-          <NuxtLink to="/races" class="button primary">Poglej tekme <span><IconArrowUpRight /></span></NuxtLink
-          ><NuxtLink to="/runners" class="button secondary">Poišči tekača <span><IconArrowUpRight /></span></NuxtLink>
+          <NuxtLink to="/races" class="button primary"
+            >Poglej tekme <span><IconArrowUpRight /></span></NuxtLink
+          ><NuxtLink to="/runners" class="button secondary"
+            >Poišči tekača <span><IconArrowUpRight /></span
+          ></NuxtLink>
         </div>
       </div>
       <div class="hero-visual">
@@ -95,8 +112,8 @@ const upcomingRaces = computed(() => {
         <h2>{{ latestArticle.title }}</h2>
         <p>{{ latestArticle.subtitle }}</p>
         <NuxtLink :to="`/journal/${latestArticle.slug}`" class="button primary"
-          >Preberi objavo <IconArrowUpRight /></NuxtLink
-        >
+          >Preberi objavo <IconArrowUpRight
+        /></NuxtLink>
       </div>
       <img :src="latestArticle.image" :alt="latestArticle.title" loading="lazy" />
     </section>
@@ -104,23 +121,44 @@ const upcomingRaces = computed(() => {
     <section class="section ink-section">
       <div class="shell">
         <SectionHead
-          eyebrow="Rezultati zadnjega vikenda"
+          eyebrow="Sveži rezultati"
           title="Časi in uvrstitve"
           link-label="Vsi rezultati"
-          to="/journal"
-        /><NuxtLink
-          v-if="latestResults"
-          :to="`/journal/${latestResults.slug}`"
-          class="home-results-card"
-          ><span class="mono">{{
-            formatDate(latestResults.publishedAt)
-          }}</span>
-          <div>
-            <h3>{{ latestResults.title }}</h3>
-            <p>{{ latestResults.description }}</p>
+          to="/journal?category=Rezultati"
+        />
+        <div v-if="latestResults" class="home-results-card">
+          <span class="mono">{{ formatDate(latestResults.publishedAt) }}</span>
+          <div class="home-results-content">
+            <NuxtLink :to="`/journal/${latestResults.slug}`" class="home-results-article">
+              <h3>{{ latestResults.title }}</h3>
+              <p>{{ latestResults.description }}</p>
+              <span class="home-results-read">Preberi članek <IconArrowUpRight /></span>
+            </NuxtLink>
+            <div class="home-results-lists">
+              <section
+                v-for="result in latestResultLists"
+                :key="result.heading"
+                class="home-result-list"
+              >
+                <h4>{{ result.heading }}</h4>
+                <ol>
+                  <li v-for="row in result.rows" :key="row.place">
+                    <span class="home-result-place">{{ row.place }}.</span>
+                    <span>{{ row.name }}</span>
+                    <span class="mono">{{ row.time }}</span>
+                  </li>
+                </ol>
+              </section>
+            </div>
           </div>
-          <em><IconArrowUpRight /></em></NuxtLink
-        >
+          <NuxtLink
+            :to="`/journal/${latestResults.slug}`"
+            class="home-results-arrow"
+            :aria-label="`Odpri članek: ${latestResults.title}`"
+          >
+            <IconArrowUpRight />
+          </NuxtLink>
+        </div>
         <p v-else class="home-results-empty">Pregled rezultatov bo objavljen tukaj.</p>
       </div>
     </section>
@@ -142,21 +180,23 @@ const upcomingRaces = computed(() => {
       </div>
     </section>
 
-    <section class="section route-week">
+    <section v-if="featuredTour" class="section route-week">
       <div class="shell route-week-grid">
         <div class="route-photo">
           <img
-            src="/images/tour-maps/nejc-ursic-verbier-trail.png"
+            :src="`/images/tour-maps/${featuredTour.runnerSlug}-${featuredTour.id}-portrait.png`"
             :alt="`Zemljevid trase ${featuredTour.title}`"
             loading="lazy"
           />
           <div class="route-photo-caption">
-            <span class="eyebrow">{{ formatDate(featuredTour.dateIso) }} · {{ featuredTour.location }}</span>
+            <span class="eyebrow"
+              >{{ formatDate(featuredTour.dateIso) }} · {{ featuredTour.location }}</span
+            >
             <strong>{{ featuredTour.runnerName }}</strong>
           </div>
         </div>
         <div class="route-week-copy">
-          <p class="eyebrow">Tura tedna · tekačeva GPX sled</p>
+          <p class="eyebrow">Tura tedna · tekačeva GPX pot</p>
           <h2>{{ featuredTour.title }}</h2>
           <p>{{ featuredTour.description }}</p>
           <StatStrip
@@ -182,8 +222,8 @@ const upcomingRaces = computed(() => {
               hash: `#runner-gpx-toggle-${featuredTour.id}`,
             }"
             class="button primary"
-            >Poglej turo <IconArrowUpRight /></NuxtLink
-          >
+            >Poglej turo <IconArrowUpRight
+          /></NuxtLink>
         </div>
       </div>
     </section>
@@ -196,8 +236,8 @@ const upcomingRaces = computed(() => {
       </div>
       <div>
         <ul>
-          <li>rezultati prejšnjega tedna</li>
-          <li>prihajajoče tekme</li>
+          <li>rezultati</li>
+          <li>pregled tekem</li>
           <li>trase in tekači</li>
         </ul>
         <a
@@ -205,8 +245,8 @@ const upcomingRaces = computed(() => {
           href="https://forms.gle/WAtJ6zRW8ZCnLQNk8"
           target="_blank"
           rel="noopener noreferrer"
-          >Prijavi se preko obrazca <IconArrowUpRight /></a
-        >
+          >Prijavi se preko obrazca <IconArrowUpRight
+        /></a>
       </div>
     </section>
   </div>

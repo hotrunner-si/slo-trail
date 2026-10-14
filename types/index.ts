@@ -86,6 +86,7 @@ export interface Runner {
   favouriteRouteSlugs: string[]
   utmbIndex?: number
   utmbUrl?: string
+  stravaUrl?: string
 }
 export interface TrailRoute {
   id: string

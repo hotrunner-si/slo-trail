@@ -2,7 +2,7 @@ import type { Article } from '~/types'
 
 export const articles: Article[] = [
   {
-    id: 'a5',
+    id: 'a1',
     slug: 'julian-alps-trail-run-2026-rezultati',
     title: 'Klara Velepec zmagala na 25 km, Tomaž Oblak deseti na 50 km',
     subtitle:
@@ -11,13 +11,25 @@ export const articles: Article[] = [
       'Rezultati Julian Alps Trail Run by UTMB 2026: najboljših deset žensk na 25 km in moških na 50 km ter izjava Klare Velepec.',
     category: 'Rezultati',
     publishedAt: '2026-09-25',
-    image: '/images/race-heroes/julian-alps-trail-run-by-utmb.jpg',
+    image: '/images/julian-alps-2026/julian-alps-sunset.webp',
     sideImages: [
       {
-        src: '/images/race-heroes/triglav-trail-run.jpg',
+        src: '/images/runners/klara-velepec/klara-jatr-cilj.jpg',
         alt: 'Pogled na Mojstrano in okoliške vrhove Julijskih Alp ob sončnem zahodu',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mojstrana_sunset.jpg',
-        caption: 'Mojstrana · foto: Dreamy Pixel (CC BY 4.0)',
+        sourceUrl: '',
+        caption: 'Klara kot prva ženska na 25 km',
+      },
+      {
+        src: '/images/runners/klara-velepec/klara-jatr-top3.jpg',
+        alt: 'Pogled na Mojstrano in okoliške vrhove Julijskih Alp ob sončnem zahodu',
+        sourceUrl: '',
+        caption: 'Prve tri ženske v cilju',
+      },
+      {
+        src: '/images/julian-alps-2026/greben-golica.jpg',
+        alt: 'Pogled na Mojstrano in okoliške vrhove Julijskih Alp ob sončnem zahodu',
+        sourceUrl: '',
+        caption: 'Golica in Julijci v ozadju',
       },
     ],
     body: [
@@ -97,9 +109,9 @@ export const articles: Article[] = [
     relatedRunner: 'klara-velepec',
   },
   {
-    id: 'a4',
+    id: 'a2',
     slug: 'rekord-smarne-gore-2026-rezultati',
-    title: 'Moia in Velepec najhitrejša na jubilejnem Rekordu Šmarne gore',
+    title: 'Moia in Velepec najhitrejša na jubilejnem 30. Rekordu Šmarne gore',
     subtitle:
       'Tiziano Moia je zmagal med moškimi, Klara Velepec pa med ženskami in izboljšala osebni rekord proge.',
     description:

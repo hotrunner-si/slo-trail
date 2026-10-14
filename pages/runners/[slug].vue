@@ -25,14 +25,7 @@ useHead({
           image: runner.value?.image
             ? `https://trail-slovenija.netlify.app${runner.value.image}`
             : undefined,
-          sameAs: runner.value?.utmbUrl
-            ? [
-                runner.value.utmbUrl,
-                ...(runner.value.slug === 'nejc-ursic'
-                  ? ['https://www.strava.com/athletes/65016800']
-                  : []),
-              ]
-            : undefined,
+          sameAs: [runner.value?.utmbUrl, runner.value?.stravaUrl].filter(Boolean),
         }),
     },
   ],
@@ -53,7 +46,7 @@ useHead({
         <p class="runner-description">{{ runner.longDescription }}</p>
         <dl v-if="runner.utmbIndex !== undefined" class="runner-facts">
           <div>
-            <dt>UTMB General Index</dt>
+            <dt>UTMB Index</dt>
             <dd>{{ runner.utmbIndex }}</dd>
           </div>
         </dl>
@@ -65,9 +58,9 @@ useHead({
             rel="noopener noreferrer"
             >UTMB <span aria-hidden="true"><IconArrowUpRight /></span></a
           ><a
-            v-if="runner.slug === 'nejc-ursic'"
+            v-if="runner.stravaUrl"
             class="button secondary"
-            href="https://www.strava.com/athletes/65016800"
+            :href="runner.stravaUrl"
             target="_blank"
             rel="noopener noreferrer"
             >Strava <span aria-hidden="true"><IconArrowUpRight /></span></a

@@ -1010,8 +1010,8 @@ const schedule: Record<
   'trail-po-kraskih-klancih': { date: '2027-03-07', dateStatus: 'confirmed' },
   '8-ur-sv-ane': { date: '2027-03-06', dateStatus: 'estimated' },
   'kras-trail': { date: '2027-03-27', dateStatus: 'confirmed' },
-  // 2025-04-05: https://www.kinmet.si/zaplana-trail/
-  'zaplana-trail': { date: '2027-04-03', dateStatus: 'estimated' },
+  // 2027-04-03: https://www.kinmet.si/zaplana-trail/
+  'zaplana-trail': { date: '2027-04-03', dateStatus: 'confirmed' },
   // 2026-04-11: https://k6trail.eu/
   'savinjski-k6-trail': { date: '2027-04-10', dateStatus: 'estimated' },
   'hrastnik-trail': { date: '2027-04-17', dateStatus: 'confirmed' },
@@ -1035,13 +1035,13 @@ const schedule: Record<
   },
   // 2026-06-04: https://prijavim.se/calendar/checkings/6501/roznik-trail-2026
   'roznik-trail': { date: '2027-06-03', dateStatus: 'estimated' },
-  // 2026-06-06: https://hgtrail-idrija.si/razpis-hg-trail-2026/
-  'hg-trail-idrija': { date: '2027-06-05', dateStatus: 'estimated' },
+  // 2027-06-05: https://hgtrail-idrija.si/
+  'hg-trail-idrija': { date: '2027-06-05', dateStatus: 'confirmed' },
   'sneznik-trails': { date: '2027-06-12', dateStatus: 'confirmed' },
   // 2026-06-13: https://smarjeskitek.si/
   'smarjeski-tek': { date: '2027-06-12', dateStatus: 'estimated' },
-  // Tekme 2026-06-13 (prevzem številk dan prej): https://trailmaribor.eu/program/
-  'trail-maribor': { date: '2027-06-12', dateStatus: 'estimated' },
+  // 2027-06-12: https://trailmaribor.eu/
+  'trail-maribor': { date: '2027-06-12', dateStatus: 'confirmed' },
   'podbrdo-trail-running-festival': {
     date: '2027-06-18',
     dateEnd: '2027-06-20',
@@ -1086,7 +1086,8 @@ const schedule: Record<
   'obala-ultra-trail': { date: '2026-11-06', dateEnd: '2026-11-08', dateStatus: 'confirmed' },
   go4trail: { date: '2026-11-07', dateStatus: 'confirmed' },
   'lahinja-trail': { date: '2026-11-07', dateStatus: 'confirmed' },
-  '7-ur-slivnice': { date: '2027-02-20', dateStatus: 'estimated' },
+  // 2027-02-20: https://prijavim.se/calendar/checkings/6639/7-ur-slivnice-2027/
+  '7-ur-slivnice': { date: '2027-02-20', dateStatus: 'confirmed' },
   'knap-trail': { date: '2027-01-09', dateStatus: 'confirmed' },
   'pol-sihta-na-farbanco': { date: '2027-01-23', dateStatus: 'estimated' },
   // Zimski trail 2026-03-07: https://tsf.bohinj.si/program/

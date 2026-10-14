@@ -46,6 +46,61 @@ function encodePolyline(points) {
     .join('')
 }
 
+// Ramer-Douglas-Peucker retains bends from the full GPX rather than sampling
+// every nth point, which can cut across switchbacks.
+function simplifyRoute(points, tolerance) {
+  const projected = points.map(([latitude, longitude]) => [
+    longitude,
+    Math.log(Math.tan(Math.PI / 4 + (latitude * Math.PI) / 360)) * (180 / Math.PI),
+  ])
+  const keep = new Uint8Array(points.length)
+  keep[0] = keep[points.length - 1] = 1
+  const stack = [[0, points.length - 1]]
+  const toleranceSquared = tolerance * tolerance
+  while (stack.length) {
+    const [start, end] = stack.pop()
+    const [ax, ay] = projected[start]
+    const [bx, by] = projected[end]
+    const lengthSquared = (bx - ax) ** 2 + (by - ay) ** 2
+    let greatest = 0
+    let selected = -1
+    for (let index = start + 1; index < end; index++) {
+      const [px, py] = projected[index]
+      const fraction = lengthSquared
+        ? Math.max(0, Math.min(1, ((px - ax) * (bx - ax) + (py - ay) * (by - ay)) / lengthSquared))
+        : 0
+      const distanceSquared =
+        (px - ax - fraction * (bx - ax)) ** 2 + (py - ay - fraction * (by - ay)) ** 2
+      if (distanceSquared > greatest) {
+        greatest = distanceSquared
+        selected = index
+      }
+    }
+    if (selected !== -1 && greatest > toleranceSquared) {
+      keep[selected] = 1
+      stack.push([start, selected], [selected, end])
+    }
+  }
+  return points.filter((_, index) => keep[index])
+}
+
+function encodeDetailedRoute(points) {
+  const maxEncodedLength = 6500
+  const encoded = (tolerance) => encodePolyline(simplifyRoute(points, tolerance))
+  const fits = (route) => encodeURIComponent(route).length <= maxEncodedLength
+  const complete = encoded(0)
+  if (fits(complete)) return complete
+  let lower = 0
+  let upper = 0.00001
+  while (!fits(encoded(upper))) upper *= 2
+  for (let attempt = 0; attempt < 14; attempt++) {
+    const middle = (lower + upper) / 2
+    if (fits(encoded(middle))) upper = middle
+    else lower = middle
+  }
+  return encoded(upper)
+}
+
 // The Julian Alps route is classified from the published race data used by the
 // card, which is slightly lower than the raw GPX preview measurements.
 const categoryOverrides = new Map([['nejc-ursic/julian-alps-trail-run', '20K']])
@@ -63,6 +118,10 @@ function effortColor(distanceKm, elevationGain, routeKey) {
 
 const dataRoot = join(projectRoot, 'data', 'gpx')
 const outputRoot = join(projectRoot, 'public', 'images', 'tour-maps')
+const mapVariants = [
+  { suffix: '', size: '900x540', padding: 50 },
+  { suffix: '-portrait', size: '700x900', padding: '100,85,180,85' },
+]
 await mkdir(outputRoot, { recursive: true })
 const runners = await readdir(dataRoot, { withFileTypes: true })
 const onlyRoute = process.argv.slice(2).find((argument) => !argument.startsWith('--'))
@@ -79,27 +138,41 @@ for (const runner of runners.filter((entry) => entry.isDirectory())) {
     const distanceId = preview.distanceId || file.replace(/\.json$/, '')
     const routeKey = `${runner.name}/${distanceId}`
     if (onlyRoute && routeKey !== onlyRoute) continue
-    const outputPath = join(outputRoot, `${runner.name}-${distanceId}.png`)
-    if (missingOnly && existsSync(outputPath)) continue
+    const missingVariants = mapVariants.filter(
+      ({ suffix }) => !existsSync(join(outputRoot, `${runner.name}-${distanceId}${suffix}.png`)),
+    )
+    if (missingOnly && !missingVariants.length) continue
+
+    const fullRoute = JSON.parse(
+      await readFile(
+        join(projectRoot, 'public', 'gpx', 'runners', runner.name, `${distanceId}.route.full.json`),
+        'utf8',
+      ),
+    ).route
+    if (!Array.isArray(fullRoute) || fullRoute.length < 2)
+      throw new Error(`Full GPX route is missing for ${routeKey}.`)
     const color = effortColor(preview.distanceKm, preview.elevationGain, routeKey)
-    const overlay = `path-6+${color}-1(${encodePolyline(preview.overviewRoute)})`
-    const imageUrl = `https://api.mapbox.com/styles/v1/${stylePath}/static/${encodeURIComponent(overlay)}/auto/900x540?padding=48&access_token=${encodeURIComponent(token)}`
-    if (imageUrl.length > 8192)
-      throw new Error(`Static map URL is too long for ${runner.name}/${distanceId}.`)
+    const overlay = `path-6+${color}-1(${encodeDetailedRoute(fullRoute)})`
+    for (const { suffix, size, padding } of mapVariants) {
+      const outputPath = join(outputRoot, `${runner.name}-${distanceId}${suffix}.png`)
+      if (missingOnly && existsSync(outputPath)) continue
+      const imageUrl = `https://api.mapbox.com/styles/v1/${stylePath}/static/${encodeURIComponent(overlay)}/auto/${size}?padding=${padding}&access_token=${encodeURIComponent(token)}`
+      if (imageUrl.length > 8192) throw new Error(`Static map URL is too long for ${routeKey}.`)
 
-    const response = await fetch(imageUrl)
-    if (!response.ok)
-      throw new Error(
-        `Mapbox image generation failed for ${runner.name}/${distanceId} (HTTP ${response.status}).`,
-      )
-    const image = Buffer.from(await response.arrayBuffer())
-    if (!response.headers.get('content-type')?.startsWith('image/')) {
-      throw new Error(`Mapbox returned a non-image response for ${runner.name}/${distanceId}.`)
+      const response = await fetch(imageUrl)
+      if (!response.ok)
+        throw new Error(
+          `Mapbox image generation failed for ${routeKey}${suffix} (HTTP ${response.status}).`,
+        )
+      const image = Buffer.from(await response.arrayBuffer())
+      if (!response.headers.get('content-type')?.startsWith('image/')) {
+        throw new Error(`Mapbox returned a non-image response for ${routeKey}${suffix}.`)
+      }
+
+      await writeFile(outputPath, image)
+      generated += 1
+      console.info(`Generated map image for ${routeKey}${suffix}.`)
     }
-
-    await writeFile(outputPath, image)
-    generated += 1
-    console.info(`Generated map image for ${runner.name}/${distanceId}.`)
   }
 }
 

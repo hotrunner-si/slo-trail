@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import { getArticle } from '~/data/articles'
 import { getRace } from '~/data/races'
-import { getRunner } from '~/data/runners'
+import { getRunner, runners } from '~/data/runners'
 import { getTrailRoute } from '~/data/routes'
 import { formatDate } from '~/utils/formatDate'
 const pageRoute = useRoute()
 const article = computed(() => getArticle(pageRoute.params.slug as string))
+const runnerProfilePaths = new Map(
+  runners.map((runner) => [runner.name, `/runners/${runner.slug}`]),
+)
 if (!article.value) throw createError({ statusCode: 404, statusMessage: 'Članek ni najden' })
 useSiteSeo(
   () => article.value?.title,
@@ -83,7 +86,15 @@ const related = computed(() => {
               <tbody>
                 <tr v-for="row in result.rows" :key="`${result.heading}-${row.place}`">
                   <td>{{ row.place }}.</td>
-                  <td>{{ row.name }}</td>
+                  <td>
+                    <NuxtLink
+                      v-if="runnerProfilePaths.has(row.name)"
+                      class="article-result-runner-link"
+                      :to="runnerProfilePaths.get(row.name)!"
+                      >{{ row.name }}</NuxtLink
+                    >
+                    <template v-else>{{ row.name }}</template>
+                  </td>
                   <td class="article-result-time">{{ row.time }}</td>
                   <td v-if="result.showUtmbScore" class="article-result-score">
                     {{ row.utmbScore ?? '—' }}

@@ -5,7 +5,9 @@ const categories = ['Vse', 'Tekme', 'Rezultati', 'Trase', 'Ljudje', 'Trening', '
 const active = ref('Vse')
 useUrlControls({ category: { value: active, options: categories } })
 const visible = computed(() =>
-  active.value === 'Vse' ? articles : articles.filter((a) => a.category === active.value),
+  [...articles]
+    .filter((article) => active.value === 'Vse' || article.category === active.value)
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt)),
 )
 </script>
 <template>
@@ -13,7 +15,10 @@ const visible = computed(() =>
     <header class="page-header journal-head">
       <p class="eyebrow">Članki</p>
       <h1>Zgodbe <br />slovenskega traila.</h1>
-      <p>Preberite aktualne novice slovenskega traila, preverite rezultate naših tekačev, pripravite se na naslednjo tekmo z analizo trase in preverite, kaj načrtujejo naši tekači.</p>
+      <p>
+        Preberite aktualne novice slovenskega traila, preverite rezultate naših tekačev, pripravite
+        se na naslednjo tekmo z analizo trase in preverite, kaj načrtujejo naši tekači.
+      </p>
     </header>
     <div class="category-nav" aria-label="Kategorije člankov">
       <button
