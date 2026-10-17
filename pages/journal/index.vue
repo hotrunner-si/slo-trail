@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { articles } from '~/data/articles'
 useSiteSeo('Članki', 'Članki o tekmah, trasah in ljudeh slovenskega traila.', { noindex: true })
-const categories = ['Vse', 'Tekme', 'Rezultati', 'Trase', 'Ljudje', 'Trening', 'Oprema']
+const categories = ['Vse', 'Tekme', 'Rezultati', 'Ture', 'Ljudje', 'Trening', 'Oprema']
 const active = ref('Vse')
 useUrlControls({ category: { value: active, options: categories } })
 const visible = computed(() =>
