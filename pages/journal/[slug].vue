@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { getArticle } from '~/data/articles'
-import { getRace } from '~/data/races'
-import { getRunner, runners } from '~/data/runners'
-import { getTrailRoute } from '~/data/routes'
 import { formatDate } from '~/utils/formatDate'
+const { getArticle, getRace, getRunner, runners, getTrailRoute } = await useSiteContent()
+const asset = useContentAsset()
 const pageRoute = useRoute()
 const article = computed(() => getArticle(pageRoute.params.slug as string))
 const runnerProfilePaths = new Map(
@@ -46,7 +44,7 @@ const related = computed(() => {
       <h1>{{ article.title }}</h1>
       <p>{{ article.subtitle }}</p>
     </header>
-    <div class="story-image"><img :src="article.image" :alt="article.title" /></div>
+    <div class="story-image"><img :src="asset(article.image)" :alt="article.title" /></div>
     <div
       class="story-layout shell"
       :class="{ 'story-layout-with-media': article.sideImages?.length }"
@@ -57,7 +55,7 @@ const related = computed(() => {
         aria-label="Fotografije s tekme"
       >
         <figure v-for="photo in article.sideImages" :key="photo.src">
-          <img :src="photo.src" :alt="photo.alt" loading="lazy" />
+          <img :src="asset(photo.src)" :alt="photo.alt" loading="lazy" />
           <figcaption>
             <a :href="photo.sourceUrl" target="_blank" rel="noopener noreferrer">{{
               photo.caption

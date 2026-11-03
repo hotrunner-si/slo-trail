@@ -1,0 +1,61 @@
+{
+  "site": {
+    "name": "Trail Slovenija",
+    "shortName": "TS",
+    "description": "Tekme, trase, tekači, rezultati in zgodbe slovenskega trail teka.",
+    "homeDescription": "Trail Slovenija: slovenske trail in gorskotekaške tekme, tekači, GPX ture in zgodbe s poti.",
+    "footerDescription": "Osrednja točka slovenskega trail teka — v nastajanju.",
+    "authorName": "Nejc Uršič",
+    "authorUrl": "https://nejc-ursic.netlify.app",
+    "navigationCta": { "label": "Možgan", "to": "/mozgan" },
+    "navigation": [
+      { "label": "Domov", "to": "/" },
+      { "label": "Tekme", "to": "/races" },
+      { "label": "Tekači", "to": "/runners" },
+      { "label": "Ture", "to": "/routes" },
+      { "label": "Dogajanje", "to": "/journal" }
+    ]
+  },
+  "home": {
+    "title": ["Trail tek", "Slovenija."],
+    "intro": "Prostor za spremljanje slovenskega trail teka — pregled tekem, doživetja tekačev, UTMB lestvice, GPX datoteke.",
+    "heroImage": "/images/verbier03.jpg",
+    "heroAlt": "Gorska pokrajina kot vizual slovenskega trail portala",
+    "photoLabel": "Fotografija tedna",
+    "photoTitle": "Alpska linija",
+    "newsletterTitle": "Trail Novice",
+    "newsletterDescription": "Novice in zgodbe slovenskega traila.",
+    "newsletterTopics": ["rezultati", "pregled tekem", "trase in tekači"],
+    "newsletterUrl": "https://forms.gle/WAtJ6zRW8ZCnLQNk8"
+  },
+  "races": {
+    "title": "Trail in gorskotekaške tekme",
+    "description": "Poišči trail in gorskotekaške tekme v Sloveniji. Preglej datume, kraje, razdalje, višinske profile in GPX trase.",
+    "sourceTitle": "Vsaka trasa ima vir.",
+    "sourceDescription": "Podatki o tekmah so bili preverjeni 1. oktobra 2026. Pri vsaki tekmi sta navedena vir in število pripravljenih GPX tras.",
+    "popularSlugs": [
+      "julian-alps-trail-run-by-utmb",
+      "obala-ultra-trail",
+      "ultra-trail-vipava-valley",
+      "soca-outdoor-festival",
+      "k24-ultra-trail",
+      "kocevsko-outdoor-festival"
+    ]
+  },
+  "runners": {
+    "title": "Slovenski Trailaši",
+    "description": "Tekači in njihovi javni dosežki v trail teku."
+  },
+  "routes": {
+    "title": "Naj ture",
+    "intro": "Tukaj so zbrani podvigi naših tekačev.",
+    "description": "Resnične GPX ture tekačev, razvrščene od najnovejše do najstarejše."
+  },
+  "journal": {
+    "title": ["Zgodbe", "slovenskega traila."],
+    "intro": "Preberite aktualne novice slovenskega traila, preverite rezultate naših tekačev, pripravite se na naslednjo tekmo z analizo trase in preverite, kaj načrtujejo naši tekači.",
+    "description": "Članki o tekmah, trasah in ljudeh slovenskega traila.",
+    "categories": ["Vse", "Tekme", "Rezultati", "Ture", "Ljudje", "Trening", "Oprema"]
+  },
+  "assets": { "ready": false, "bucket": "site-assets" }
+}

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const open = ref(false)
+const { siteContent } = await useSiteContent()
 const route = useRoute()
 watch(
   () => route.fullPath,
@@ -7,20 +8,15 @@ watch(
     open.value = false
   },
 )
-const nav = [
-  { label: 'Domov', to: '/' },
-  { label: 'Tekme', to: '/races' },
-  { label: 'Tekači', to: '/runners' },
-  { label: 'Ture', to: '/routes' },
-  { label: 'Dogajanje', to: '/journal' },
-]
+const nav = siteContent.site.navigation
 </script>
 
 <template>
   <header class="site-header">
     <div class="shell header-inner">
       <NuxtLink to="/" class="wordmark" aria-label="Trail Slovenija, domov">
-        <span class="wordmark-mark">TS</span><span>Trail Slovenija</span>
+        <span class="wordmark-mark">{{ siteContent.site.shortName }}</span
+        ><span>{{ siteContent.site.name }}</span>
       </NuxtLink>
       <button
         class="menu-button"
@@ -33,8 +29,19 @@ const nav = [
       </button>
       <nav id="main-nav" :class="['main-nav', { open }]" aria-label="Glavna navigacija">
         <NuxtLink v-for="item in nav" :key="item.to" :to="item.to">{{ item.label }}</NuxtLink>
-        <NuxtLink to="/#newsletter" class="newsletter-link">Newsletter <span><IconArrowUpRight /></span></NuxtLink>
+        <NuxtLink :to="siteContent.site.navigationCta.to" class="newsletter-link brain-nav-link"
+          >{{ siteContent.site.navigationCta.label }} <span><IconArrowUpRight /></span
+        ></NuxtLink>
       </nav>
     </div>
   </header>
 </template>
+
+<style scoped>
+.brain-nav-link.router-link-active {
+  color: #266358;
+}
+.brain-nav-link.router-link-active:after {
+  display: none;
+}
+</style>

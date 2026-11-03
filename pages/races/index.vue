@@ -1,14 +1,11 @@
 <script setup lang="ts">
-import { races } from '~/data/races'
 import type { Race, RaceCompareItem, RaceDistance } from '~/types'
 import { effortCategory } from '~/utils/raceCategories'
 import { formatSlovenianCount, slovenianCountForms } from '~/utils/slovenianCount'
 import { formatDate, parseIsoDate } from '~/utils/formatDate'
+const { races, siteContent } = await useSiteContent()
 
-useSiteSeo(
-  'Trail in gorskotekaške tekme',
-  'Poišči trail in gorskotekaške tekme v Sloveniji. Preglej datume, kraje, razdalje, višinske profile in GPX trase.',
-)
+useSiteSeo(siteContent.races.title, siteContent.races.description)
 definePageMeta({ keepalive: true })
 
 type ViewMode = 'list' | 'map' | 'calendar'
@@ -30,15 +27,7 @@ const months = [
       .map((v) => v.charAt(0).toUpperCase() + v.slice(1)),
   ),
 ]
-// Uredniški seznam priljubljenih tekem: za spremembo samo dodaj ali odstrani slug.
-const popularRaceSlugs = new Set([
-  'julian-alps-trail-run-by-utmb',
-  'obala-ultra-trail',
-  'ultra-trail-vipava-valley',
-  'soca-outdoor-festival',
-  'k24-ultra-trail',
-  'kocevsko-outdoor-festival',
-])
+const popularRaceSlugs = new Set(siteContent.races.popularSlugs)
 const collections = [
   {
     id: 'vse',
@@ -264,12 +253,11 @@ function resetFilters() {
     <section class="data-promise shell">
       <div>
         <p class="eyebrow">Zakaj zaupati podatkom</p>
-        <h2>Vsaka trasa ima vir.</h2>
+        <h2>{{ siteContent.races.sourceTitle }}</h2>
       </div>
       <div>
         <p>
-          Podatki o tekmah so bili preverjeni 1. oktobra 2026. Pri vsaki tekmi sta navedena vir in
-          število pripravljenih GPX tras.
+          {{ siteContent.races.sourceDescription }}
         </p>
         <dl>
           <div>

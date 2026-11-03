@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { formatDate } from '~/utils/formatDate'
-import { runnerGpxRoutes } from '~/data/runnerGpxRoutes'
 import { effortColor, effortKm, effortLabel } from '~/utils/raceCategories'
 import type { GpxData } from '~/types/gpx'
+const { runnerGpxRoutes } = await useSiteContent()
+const asset = useContentAsset()
 
 const props = defineProps<{ runnerSlug: string }>()
 const routes = computed(() => runnerGpxRoutes[props.runnerSlug] || [])
@@ -21,11 +22,11 @@ const gpxSection = ref<HTMLElement | null>(null)
 const loadGpx = useGpxData()
 let loadSequence = 0
 let scrollSequence = 0
-const number = (value: number) =>
-  new Intl.NumberFormat('sl-SI', { maximumFractionDigits: 1 }).format(value)
-const effort = (route: { distanceKm: number; elevationGain: number }) => ({
+const number = (value: number | null) =>
+  value == null ? '—' : new Intl.NumberFormat('sl-SI', { maximumFractionDigits: 1 }).format(value)
+const effort = (route: { distanceKm: number; elevationGain: number | null }) => ({
   km: route.distanceKm,
-  elevation: route.elevationGain,
+  elevation: route.elevationGain ?? 0,
 })
 
 watch(
@@ -45,7 +46,10 @@ watch(
     activeDistanceKm.value = 0
     if (!id || !import.meta.client) return
     try {
-      const data = await loadGpx<GpxData>(`/gpx/runners/${props.runnerSlug}/${id}.detail.json`)
+      const selected = routes.value.find((r) => r.id === id)
+      const data = await loadGpx<GpxData>(
+        selected?.detailUrl || `/gpx/runners/${props.runnerSlug}/${id}.detail.json`,
+      )
       if (sequence === loadSequence && openId.value === id) expandedData.value = data
     } catch {
       if (sequence === loadSequence) expandedError.value = true
@@ -134,7 +138,9 @@ async function toggleRoute(id: string, event: MouseEvent) {
               >{{ number(route.distanceKm) }} km
               <em><IconArrowUpRight /> {{ number(route.elevationGain) }} m</em></span
             >
-            <span v-if="openId !== route.id" class="runner-gpx-effort mono"
+            <span
+              v-if="openId !== route.id && route.elevationGain != null"
+              class="runner-gpx-effort mono"
               >{{ effortLabel(effort(route)) }}
               <small>{{ number(effortKm(effort(route))) }} km-effort</small></span
             >
@@ -201,7 +207,9 @@ async function toggleRoute(id: string, event: MouseEvent) {
             </div>
             <a
               class="button secondary runner-gpx-download"
-              :href="`/gpx/runners/${runnerSlug}/${route.preview.source}`"
+              :href="
+                asset(route.downloadUrl || `/gpx/runners/${runnerSlug}/${route.preview.source}`)
+              "
               download
               >Prenesi GPX ↓</a
             >

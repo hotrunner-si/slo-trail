@@ -3,6 +3,7 @@ const requestCaches = new WeakMap<object, Map<string, Promise<unknown>>>()
 /** Share static GPX requests within one Nuxt app without serializing large tracks. */
 export function useGpxData() {
   const app = useNuxtApp()
+  const asset = useContentAsset()
   let cache = requestCaches.get(app)
   if (!cache) {
     cache = new Map()
@@ -11,7 +12,7 @@ export function useGpxData() {
   return function loadGpx<T>(file: string): Promise<T> {
     let request = cache!.get(file)
     if (!request) {
-      request = $fetch(file).catch((error) => {
+      request = $fetch(asset(file)).catch((error) => {
         cache!.delete(file)
         throw error
       })

@@ -14,13 +14,14 @@ const width = ref(900)
 const height = 250
 const profileContainer = ref<HTMLElement | null>(null)
 let resizeObserver: ResizeObserver | undefined
-onMounted(() => {
-  if (!profileContainer.value) return
+watch(profileContainer, (element) => {
+  resizeObserver?.disconnect()
+  if (!element) return
   resizeObserver = new ResizeObserver(([entry]) => {
-    if (entry) width.value = Math.max(1, Math.round(entry.contentRect.width))
+    if (entry?.contentRect.width) width.value = Math.max(1, Math.round(entry.contentRect.width))
   })
-  resizeObserver.observe(profileContainer.value)
-})
+  resizeObserver.observe(element)
+}, { flush: 'post' })
 onBeforeUnmount(() => resizeObserver?.disconnect())
 const pad = { left: 58, right: 18, top: 18, bottom: 34 }
 const profile = computed<ProfilePoint[]>(() =>
@@ -78,7 +79,7 @@ const vertical = computed(() => {
   const interval = Math.min(40, maxDistance.value / 4)
   return Array.from({ length: Math.ceil(maxDistance.value / interval) }, (_, i) =>
     Math.min(maxDistance.value, (i + 1) * interval),
-  ).filter((v, i, a) => i === 0 || v > a[i - 1])
+  ).filter((v, i, a) => i === 0 || v > a[i - 1]!)
 })
 const hoverPoint = computed(() => {
   if (props.hoverProgress == null || !profile.value.length) return null

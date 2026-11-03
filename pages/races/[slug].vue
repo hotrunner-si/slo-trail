@@ -1,12 +1,15 @@
 <script setup lang="ts">
-import { getRace, races } from '~/data/races'
-import { articles } from '~/data/articles'
-import { runners } from '~/data/runners'
-import raceHeroPhotos from '~/data/raceHeroPhotos.json'
 import { formatDate, parseIsoDate, todayIsoDate } from '~/utils/formatDate'
+const { getRace, races, articles, runners, raceHeroPhotos } = await useSiteContent()
+const asset = useContentAsset()
 
 const route = useRoute()
 const race = computed(() => getRace(route.params.slug as string))
+const nextRace=computed(()=>{
+  const current=race.value
+  if(!current || !races.length)return undefined
+  return races[(races.findIndex(item=>item.slug===current.slug)+1)%races.length]
+})
 if (!race.value) throw createError({ statusCode: 404, statusMessage: 'Tekma ni najdena' })
 const heroPhoto = computed(() => raceHeroPhotos[race.value!.slug as keyof typeof raceHeroPhotos])
 
@@ -83,17 +86,27 @@ function startDay(startDate?: string) {
           :href="race.sourceUrl"
           target="_blank"
           rel="noopener noreferrer"
-          ><img v-if="race.logo" :src="race.logo" alt="" class="race-source-logo" />Uradna spletna
-          stran <IconArrowUpRight
+          ><img v-if="race.logo" :src="asset(race.logo)" alt="" class="race-source-logo" />Uradna
+          spletna stran <IconArrowUpRight
         /></a>
       </div>
       <figure v-if="heroPhoto" class="race-hero-photo">
-        <img :src="heroPhoto.src" :alt="heroPhoto.alt" width="960" height="640" fetchpriority="high" />
+        <img
+          :src="asset(heroPhoto.src)"
+          :alt="heroPhoto.alt"
+          width="960"
+          height="640"
+          fetchpriority="high"
+        />
         <figcaption>
           Fotografija območja ·
-          <a :href="heroPhoto.source" target="_blank" rel="noopener noreferrer">{{ heroPhoto.author }}</a>
+          <a :href="heroPhoto.source" target="_blank" rel="noopener noreferrer">{{
+            heroPhoto.author
+          }}</a>
           ·
-          <a :href="heroPhoto.licenseUrl" target="_blank" rel="noopener noreferrer">{{ heroPhoto.license }}</a>
+          <a :href="heroPhoto.licenseUrl" target="_blank" rel="noopener noreferrer">{{
+            heroPhoto.license
+          }}</a>
           · pomanjšana
         </figcaption>
       </figure>
@@ -213,11 +226,11 @@ function startDay(startDate?: string) {
       </div>
     </section>
 
-    <section class="detail-section shell next-link">
+    <section v-if="nextRace" class="detail-section shell next-link">
       <p class="eyebrow">Naslednja tekma</p>
       <NuxtLink
-        :to="`/races/${races[(races.findIndex((item) => item.slug === race.slug) + 1) % races.length].slug}`"
-        >{{ races[(races.findIndex((item) => item.slug === race.slug) + 1) % races.length].name }}
+        :to="`/races/${nextRace.slug}`"
+        >{{ nextRace.name }}
         <IconArrowUpRight
       /></NuxtLink>
     </section>

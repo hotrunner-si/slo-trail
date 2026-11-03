@@ -28,7 +28,8 @@ const selected = ref<Record<string, number>>({})
 const selectedIndex = (race: Race) =>
   selected.value[race.id] ??
   race.distances.reduce(
-    (longest, distance, index) => (distance.km > race.distances[longest].km ? index : longest),
+    (longest, distance, index) =>
+      distance.km > (race.distances[longest]?.km ?? -Infinity) ? index : longest,
     0,
   )
 const setDistance = (race: Race, index: number) => {
@@ -45,7 +46,7 @@ const statusClass = (race: Race) => race.registrationStatus.toLowerCase().replac
 const groups = computed(() => {
   const result = new Map<string, { label: string; races: Race[] }>()
   for (const race of props.races) {
-    const date = hasDate(race) && race.dateStatus !== 'estimated' ? parseIsoDate(race.date) : null
+    const date = parseIsoDate(race.date)
     const key = date
       ? `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, '0')}`
       : 'undated'
@@ -89,7 +90,7 @@ const groups = computed(() => {
           @mouseenter="emit('activate', race.id)"
           @focusin="emit('activate', race.id)"
         >
-          <time :datetime="race.date || undefined"
+          <time :datetime="race.dateStatus !== 'estimated' && hasDate(race) ? race.date : undefined"
             ><span>{{ dateLabel(race) }}</span></time
           >
           <div class="event-main">
@@ -113,19 +114,19 @@ const groups = computed(() => {
           <div class="event-gain mono">
             <span class="event-gain-label">Vzpon</span>
             <IconArrowUpRight />
-            {{ race.distances[selectedIndex(race)].elevation.toLocaleString('sl-SI') }} m
+            {{ race.distances[selectedIndex(race)]?.elevation.toLocaleString('sl-SI') ?? '—' }} m
           </div>
           <span :class="['status', statusClass(race)]">{{ race.registrationStatus }}</span>
           <RaceElevationMini
-            v-if="showProfile"
-            :distance="race.distances[selectedIndex(race)]"
+            v-if="showProfile && race.distances[selectedIndex(race)]"
+            :distance="race.distances[selectedIndex(race)]!"
             :race-id="race.id"
           />
           <button
-            v-if="showCompare"
+            v-if="showCompare && race.distances[selectedIndex(race)]"
             class="compare-button"
             :class="{ active: comparedKeys.includes(`${race.id}:${selectedIndex(race)}`) }"
-            :aria-label="`Primerjaj ${race.name}, ${race.distances[selectedIndex(race)].label}`"
+            :aria-label="`Primerjaj ${race.name}, ${race.distances[selectedIndex(race)]?.label}`"
             @click.stop
             @click="emit('compare', race, selectedIndex(race))"
           >

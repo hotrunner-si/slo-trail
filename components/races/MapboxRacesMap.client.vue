@@ -16,9 +16,11 @@ let mb: typeof import('mapbox-gl') | null = null
 let map: import('mapbox-gl').Map | null = null
 const initialCenter: [number, number] = [14.8, 46.0]
 const initialZoom = 7.7
-const key = (r: Race, i: number) => `${r.id}:${r.distances[i].id || i}`
-const lid = (r: Race, i: number) => `all-${r.id}-${r.distances[i].id || i}`
+const key = (r: Race, i: number) => `${r.id}:${r.distances[i]?.id || i}`
+const lid = (r: Race, i: number) => `all-${r.id}-${r.distances[i]?.id || i}`
 const routeOwners = new Map<string, string>()
+let drawQueued = false
+let loadQueued = false
 function update() {
   if (!map) return
   const visible = new Set(props.races.map((r) => r.id))
@@ -43,7 +45,19 @@ function update() {
   })
 }
 function draw() {
-  if (!map || !map.isStyleLoaded()) return
+  if (!map || !lifetime.active) return
+  // Adding a source temporarily makes isStyleLoaded() false. Keep the latest
+  // routes queued until Mapbox finishes it instead of losing that draw.
+  if (!map.isStyleLoaded()) {
+    if (!drawQueued) {
+      drawQueued = true
+      map.once('idle', () => {
+        drawQueued = false
+        draw()
+      })
+    }
+    return
+  }
   props.races.forEach((r) =>
     r.distances.forEach((d, i) => {
       const gpx = data.value[key(r, i)],
@@ -91,7 +105,17 @@ const total = ref(0)
 let generation = 0
 let pendingFocusId = ''
 async function load() {
-  if (!map?.isStyleLoaded()) return
+  if (!map || !lifetime.active) return
+  if (!map.isStyleLoaded()) {
+    if (!loadQueued) {
+      loadQueued = true
+      map.once('idle', () => {
+        loadQueued = false
+        void load()
+      })
+    }
+    return
+  }
   const current = ++generation
   const entries = props.races
     .flatMap((r) => r.distances.map((d, i) => ({ r, d, i })))
@@ -103,7 +127,9 @@ async function load() {
   let next = 0
   async function worker() {
     while (next < pending.length && current === generation) {
-      const { r, d, i } = pending[next++]
+      const entry = pending[next++]
+      if (!entry) break
+      const { r, d, i } = entry
       try {
         const fetched = await loadGpx<GpxData>(d.gpx!.file!)
         if (current !== generation || !lifetime.active) return
@@ -147,10 +173,9 @@ watch(() => props.activeId, update)
 watch(
   () => props.races.map((r) => r.id).join(','),
   () => {
-    if (map?.isStyleLoaded()) {
-      draw()
-      load()
-    }
+    if (!map) return
+    draw()
+    load()
   },
 )
 onMounted(async () => {

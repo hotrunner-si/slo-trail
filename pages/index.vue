@@ -1,14 +1,11 @@
 <script setup lang="ts">
-import { races } from '~/data/races'
-import { runners } from '~/data/runners'
-import { getWeeklyRunnerTour } from '~/data/runnerTours'
-import { articles } from '~/data/articles'
 import { formatDate, parseIsoDate, todayIsoDate } from '~/utils/formatDate'
-useSiteSeo(
-  undefined,
-  'Trail Slovenija: slovenske trail in gorskotekaške tekme, tekači, GPX ture in zgodbe s poti.',
-  { image: '/images/kv01.jpg', imageAlt: 'Trail tek v slovenskih gorah' },
-)
+const { races, runners, articles, getWeeklyRunnerTour, siteContent } = await useSiteContent()
+const asset = useContentAsset()
+useSiteSeo(undefined, siteContent.site.homeDescription, {
+  image: '/images/kv01.jpg',
+  imageAlt: 'Trail tek v slovenskih gorah',
+})
 useHead({
   script: [
     {
@@ -41,7 +38,7 @@ const latestResultLists = computed(() =>
 )
 const featuredTourDate = useState('home-featured-tour-date', () => todayIsoDate())
 const featuredTour = computed(() => getWeeklyRunnerTour(featuredTourDate.value))
-let featuredTourTimer: ReturnType<typeof setInterval> | undefined
+let featuredTourTimer: number | undefined
 
 onMounted(() => {
   featuredTourDate.value = todayIsoDate()
@@ -64,7 +61,9 @@ const upcomingRaces = computed(() => {
   <div class="home-page">
     <section class="hero shell">
       <div class="hero-copy">
-        <h1>Trail tek<br /><span>Slovenija.</span></h1>
+        <h1>
+          {{ siteContent.home.title[0] }}<br /><span>{{ siteContent.home.title[1] }}</span>
+        </h1>
         <nav class="hero-lead" aria-label="Razišči Trail Slovenija">
           <NuxtLink to="/runners">Tekači.</NuxtLink>
           <NuxtLink to="/races">Tekme.</NuxtLink>
@@ -75,8 +74,7 @@ const upcomingRaces = computed(() => {
           <NuxtLink :to="{ path: '/journal', query: { category: 'Vse' } }">Zgodbe.</NuxtLink>
         </nav>
         <p class="hero-text">
-          Prostor za spremljanje slovenskega trail teka — pregled tekem, doživetja tekačev, UTMB
-          lestvice, GPX datoteke.
+          {{ siteContent.home.intro }}
         </p>
         <div class="button-row">
           <NuxtLink to="/races" class="button primary"
@@ -87,12 +85,10 @@ const upcomingRaces = computed(() => {
         </div>
       </div>
       <div class="hero-visual">
-        <img
-          src="/images/verbier03.jpg"
-          alt="Gorska pokrajina kot vizual slovenskega trail portala"
-        />
+        <img :src="asset(siteContent.home.heroImage)" :alt="siteContent.home.heroAlt" />
         <div class="hero-photo-note">
-          <span>Fotografija tedna</span><strong>Alpska linija</strong>
+          <span>{{ siteContent.home.photoLabel }}</span
+          ><strong>{{ siteContent.home.photoTitle }}</strong>
         </div>
       </div>
     </section>
@@ -115,7 +111,7 @@ const upcomingRaces = computed(() => {
           >Preberi objavo <IconArrowUpRight
         /></NuxtLink>
       </div>
-      <img :src="latestArticle.image" :alt="latestArticle.title" loading="lazy" />
+      <img :src="asset(latestArticle.image)" :alt="latestArticle.title" loading="lazy" />
     </section>
 
     <section class="section ink-section">
@@ -184,7 +180,12 @@ const upcomingRaces = computed(() => {
       <div class="shell route-week-grid">
         <div class="route-photo">
           <img
-            :src="`/images/tour-maps/${featuredTour.runnerSlug}-${featuredTour.id}-portrait.png`"
+            :src="
+              asset(
+                featuredTour.portraitMapImage ||
+                  `/images/tour-maps/${featuredTour.runnerSlug}-${featuredTour.id}-portrait.png`,
+              )
+            "
             :alt="`Zemljevid trase ${featuredTour.title}`"
             loading="lazy"
           />
@@ -203,7 +204,10 @@ const upcomingRaces = computed(() => {
             :items="[
               { value: `${featuredTour.distanceKm.toLocaleString('sl-SI')} KM`, label: 'Razdalja' },
               {
-                value: `${featuredTour.elevationGain.toLocaleString('sl-SI')} M+`,
+                value:
+                  featuredTour.elevationGain == null
+                    ? 'Ni podatka'
+                    : `${featuredTour.elevationGain.toLocaleString('sl-SI')} M+`,
                 label: 'Vzpon',
               },
               {
@@ -231,18 +235,16 @@ const upcomingRaces = computed(() => {
     <section id="newsletter" class="section shell newsletter">
       <div>
         <p class="eyebrow">Tedensko</p>
-        <h2>Trail Novice</h2>
-        <p class="newsletter-lead">Novice in zgodbe slovenskega traila.</p>
+        <h2>{{ siteContent.home.newsletterTitle }}</h2>
+        <p class="newsletter-lead">{{ siteContent.home.newsletterDescription }}</p>
       </div>
       <div>
         <ul>
-          <li>rezultati</li>
-          <li>pregled tekem</li>
-          <li>trase in tekači</li>
+          <li v-for="topic in siteContent.home.newsletterTopics" :key="topic">{{ topic }}</li>
         </ul>
         <a
           class="button primary"
-          href="https://forms.gle/WAtJ6zRW8ZCnLQNk8"
+          :href="siteContent.home.newsletterUrl"
           target="_blank"
           rel="noopener noreferrer"
           >Prijavi se preko obrazca <IconArrowUpRight

@@ -1,14 +1,12 @@
 <script setup lang="ts">
 import type { Runner } from '~/types'
+const asset = useContentAsset()
 defineProps<{ runner: Runner; index?: number }>()
 </script>
 <template>
   <NuxtLink :to="`/runners/${runner.slug}`" class="runner-card">
     <div class="runner-image-wrap">
-      <img :src="runner.image" :alt="`Fotografija profila ${runner.name}`" loading="lazy" /><span
-        class="runner-index"
-        >0{{ (index ?? 0) + 1 }}</span
-      >
+      <RunnerPortrait :image="runner.image" :name="runner.name"/><span class="runner-index">0{{ (index ?? 0) + 1 }}</span>
     </div>
     <p class="eyebrow">
       {{ runner.location

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { formatSlovenianCount, slovenianCountForms } from '~/utils/slovenianCount'
 const lifetime = useComponentLifetime()
-import type { RunnerTour } from '~/data/runnerTours'
+import type { RunnerTour } from '~/types/content'
 import { effortColor } from '~/utils/raceCategories'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
@@ -45,7 +45,14 @@ function draw() {
         data: {
           type: 'Feature',
           properties: {},
-          geometry: { type: 'LineString', coordinates: coordinates(tour) },
+          geometry: {
+            type: 'MultiLineString',
+            coordinates: (tour.preview.segmentStarts?.length ? tour.preview.segmentStarts : [0])
+              .map((start, index, starts) =>
+                coordinates(tour).slice(start, starts[index + 1] ?? coordinates(tour).length),
+              )
+              .filter((line) => line.length > 1),
+          },
         },
       })
     if (!map.getLayer(`${id}-halo`))
@@ -63,7 +70,7 @@ function draw() {
         source: id,
         layout: { 'line-cap': 'round', 'line-join': 'round' },
         paint: {
-          'line-color': effortColor({ km: tour.distanceKm, elevation: tour.elevationGain }),
+          'line-color': effortColor({ km: tour.distanceKm, elevation: tour.elevationGain ?? 0 }),
           'line-width': 3,
         },
       })
@@ -130,7 +137,11 @@ defineExpose({ focusTour: (id: string) => fitTours(id), fitAll: () => fitTours()
     />
     <p v-if="error" class="mapbox-map-error">{{ error }}</p>
     <div class="leaflet-map-toolbar">
-      <span class="mono">{{ formatSlovenianCount(tours.length, slovenianCountForms.tour).toLocaleUpperCase('sl-SI') }} GPX</span
+      <span class="mono"
+        >{{
+          formatSlovenianCount(tours.length, slovenianCountForms.tour).toLocaleUpperCase('sl-SI')
+        }}
+        GPX</span
       ><button type="button" @click="fitTours()">Vse ture</button>
     </div>
   </div>

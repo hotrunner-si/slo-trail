@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { getTrailRoute } from '~/data/routes'
-import { getRunner } from '~/data/runners'
+const { getTrailRoute, getRunner } = await useSiteContent()
+const asset = useContentAsset()
 const pageRoute = useRoute()
 const trail = computed(() => getTrailRoute(pageRoute.params.slug as string))
 if (!trail.value) throw createError({ statusCode: 404, statusMessage: 'Tura ni najdena' })
@@ -50,11 +50,11 @@ useSiteSeo(
     <section class="detail-section shell">
       <SectionHead eyebrow="S poti" title="Vizualni zapis" />
       <div class="photo-pair">
-        <img src="/images/verbier03.jpg" alt="Gorska pokrajina ob trail trasi" loading="lazy" /><img
-          src="/images/kv01.jpg"
-          alt="Trail tekač v gorskem okolju"
+        <img
+          :src="asset('/images/verbier03.jpg')"
+          alt="Gorska pokrajina ob trail trasi"
           loading="lazy"
-        />
+        /><img :src="asset('/images/kv01.jpg')" alt="Trail tekač v gorskem okolju" loading="lazy" />
       </div>
     </section>
   </div>

@@ -1,0 +1,56 @@
+{
+  "navigation": [
+    { "to": "/mozgan", "label": "Pregled", "symbol": "◫" },
+    { "to": "/mozgan/analitika", "label": "Analitika", "symbol": "▥" },
+    { "to": "/mozgan/baza", "label": "Baza podatkov", "symbol": "▤" }
+  ],
+  "preview": "Statična zasnova",
+  "overview": {
+    "title": "Pregled",
+    "description": "Pogovor z Možganom, prispevanje znanja in vpogled v slovenski trail tek.",
+    "assistantTitle": "Pogovor z Možganom",
+    "assistantScope": "Viri + analitika + razmišljanje",
+    "welcome": "Kaj te zanima o trail teku?",
+    "welcomeDetail": "Tu bo Možgan povezal vire in analitične prikaze, primerjal informacije ter ti pomagal oblikovati odgovor.",
+    "placeholder": "Vprašaj o tekmah, trasah ali svojih ciljih …",
+    "suggestions": ["Pomagaj mi izbrati prvi ultra", "Primerjaj dve trasi"],
+    "questionTitle": "Dopolnimo znanje",
+    "questionContext": "Primer vprašanja po opravljeni turi",
+    "question": "Kako zahteven je bil spust v mokrih razmerah?",
+    "questionOptions": ["Nezahteven", "Srednje zahteven", "Zelo zahteven", "Nimam te izkušnje"],
+    "questionNote": "Vprašanje je ponazoritev. Odgovorov še ne zbiramo.",
+    "visualsTitle": "Trail tek v podatkih",
+    "visualsNote": "Prikazi iz obstoječe zbirke",
+    "tableTitle": "Izbor tekem iz zbirke"
+  },
+  "analytics": {
+    "title": "Analitika",
+    "description": "Skupno mesto za grafikone, primerjave in analitične prikaze slovenskega trail teka.",
+    "intro": "Knjižnica prikazov",
+    "note": "Dejanski podatki iz zbirke. Interaktivni filtri in podrobnejše analize sledijo.",
+    "calendarTitle": "Objavljeni termini",
+    "calendarNote": "Število dogodkov po mesecih; samo datumi, označeni kot potrjeni.",
+    "coverageTitle": "Sledljivost podatkov",
+    "coverageNote": "Prisotnost povezav in datumov preverjanja; to ni ocena točnosti vsebine.",
+    "comingNext": "Naslednji prikazi: zemljevid tekem, primerjava odsekov in pregled izkušenj skupnosti."
+  },
+  "database": {
+    "title": "Baza podatkov",
+    "description": "Pregled izvornih zapisov, virov in neobdelanih informacij v zbirki Trail Slovenija.",
+    "finderTitle": "Poišči vir v bazi",
+    "finderScope": "Samo iskanje virov",
+    "finderNote": "Ta pomočnik bo poiskal izvorne zapise, objave in dokumente. Za razlago in povezovanje informacij uporabi Možgan v Pregledu.",
+    "placeholder": "Npr. poišči razpis tekme ali izvor podatka o trasi …",
+    "tableTitle": "Pregled zapisov",
+    "tableNote": "Izbor iz vseh vrst vsebine. Filtri in odpiranje posameznih zapisov sledijo.",
+    "rawTitle": "Izvorni zapis",
+    "rawNote": "Vzorčni prikaz dejanskega zapisa v zbirki; brez urejanja.",
+    "types": ["Tekme", "Razdalje", "Tekači", "Ture", "Članki", "Navedbe virov"]
+  },
+  "charts": {
+    "scatterTitle": "Razdalja × vzpon",
+    "scatterNote": "Vsaka točka je ena razdalja tekme.",
+    "bucketsTitle": "Kakšne razdalje imamo?",
+    "bucketsNote": "Število razdalj v posameznem razponu."
+  }
+}

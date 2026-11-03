@@ -1,5 +1,9 @@
 # Struktura projekta
 
+Vsebinske zbirke se berejo iz Supabase prek `useSiteContent`, datoteke pa iz
+Storage prek `useContentAsset`. Podrobnosti tabel, ključev in urejanja so v
+[supabase.md](supabase.md). Lokalni `data/` ostaja posnetek pred selitvijo.
+
 Komponente so razvrščene po področjih:
 
 - `layout`: skupna glava in noga strani.

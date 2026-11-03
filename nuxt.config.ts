@@ -1,3 +1,4 @@
+import process from 'node:process'
 if (process.env.NETLIFY === 'true') {
   const mapboxToken = process.env.NUXT_PUBLIC_MAPBOX_TOKEN || ''
   console.info('[Mapbox build configuration]', {
@@ -17,9 +18,21 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
   css: ['~/assets/css/main.css'],
+  vite: {
+    optimizeDeps: {
+      include: ['mapbox-gl'],
+    },
+  },
   components: [{ path: '~/components', pathPrefix: false }],
   runtimeConfig: {
+    supabaseSecretKey: '',
+    openaiApiKey: '',
+    brainAiModel: '',
+    brainEmbeddingModel: '',
+    brainAiZeroRetention: false,
     public: {
+      supabaseUrl: process.env.NUXT_PUBLIC_SUPABASE_URL || '',
+      supabasePublishableKey: process.env.NUXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || '',
       mapboxToken: process.env.NUXT_PUBLIC_MAPBOX_TOKEN || '',
       mapboxStyle:
         process.env.NUXT_PUBLIC_MAPBOX_STYLE ||
@@ -30,6 +43,9 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/sitemap'],
   sitemap: {
     exclude: [
+      '/runners/nov',
+      '/mozgan',
+      '/mozgan/**',
       '/journal',
       '/journal/**',
       '/routes/velika-planina-loop',
@@ -50,14 +66,21 @@ export default defineNuxtConfig({
   },
   // Render URL-dependent controls on the server, including the first page load.
   routeRules: {
+    '/': { prerender: false },
+    '/mozgan': { prerender: false },
+    '/mozgan/**': { prerender: false },
     '/races': { prerender: false },
+    '/races/**': { prerender: false },
+    '/runners': { prerender: false },
+    '/runners/**': { prerender: false },
     '/routes': { prerender: false },
+    '/routes/**': { prerender: false },
     '/journal': { prerender: false },
+    '/journal/**': { prerender: false },
   },
   nitro: {
     prerender: {
-      crawlLinks: true,
-      routes: ['/races', '/runners', '/routes', '/journal'],
+      crawlLinks: false,
     },
   },
 })

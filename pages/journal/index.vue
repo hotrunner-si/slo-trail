@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { articles } from '~/data/articles'
-useSiteSeo('Članki', 'Članki o tekmah, trasah in ljudeh slovenskega traila.', { noindex: true })
-const categories = ['Vse', 'Tekme', 'Rezultati', 'Ture', 'Ljudje', 'Trening', 'Oprema']
+const { articles, siteContent } = await useSiteContent()
+useSiteSeo('Članki', siteContent.journal.description, { noindex: true })
+const categories = siteContent.journal.categories
 const active = ref('Vse')
 useUrlControls({ category: { value: active, options: categories } })
 const visible = computed(() =>
@@ -14,10 +14,9 @@ const visible = computed(() =>
   <div class="page shell">
     <header class="page-header journal-head">
       <p class="eyebrow">Članki</p>
-      <h1>Zgodbe <br />slovenskega traila.</h1>
+      <h1>{{ siteContent.journal.title[0] }} <br />{{ siteContent.journal.title[1] }}</h1>
       <p>
-        Preberite aktualne novice slovenskega traila, preverite rezultate naših tekačev, pripravite
-        se na naslednjo tekmo z analizo trase in preverite, kaj načrtujejo naši tekači.
+        {{ siteContent.journal.intro }}
       </p>
     </header>
     <div class="category-nav" aria-label="Kategorije člankov">

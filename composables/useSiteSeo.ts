@@ -14,6 +14,7 @@ export function useSiteSeo(
   options: SiteSeoOptions = {},
 ) {
   const appConfig = useAppConfig()
+  const asset = useContentAsset()
   const route = useRoute()
   const pageTitle = computed(() => toValue(title)?.trim() || '')
   const pageDescription = computed(() => toValue(description)?.trim() || appConfig.site.description)
@@ -21,7 +22,7 @@ export function useSiteSeo(
     () => `${siteOrigin}${route.path === '/' ? '/' : route.path.replace(/\/+$/, '')}`,
   )
   const image = computed(() =>
-    new URL(toValue(options.image) || '/images/kv01.jpg', siteOrigin).toString(),
+    new URL(asset(toValue(options.image) || '/images/kv01.jpg'), siteOrigin).toString(),
   )
   const imageAlt = computed(
     () => toValue(options.imageAlt) || pageTitle.value || appConfig.site.name,

@@ -1,0 +1,30 @@
+{
+  "workspace": "Raziskovalni prostor",
+  "overview": "Pregled znanja",
+  "preview": "Statični predogled",
+  "sidebarLabel": "Orodja",
+  "sidebarLinks": [
+    { "id": "pregled", "label": "Pregled", "symbol": "◫" },
+    { "id": "vprasaj", "label": "AI iskanje", "symbol": "✳" },
+    { "id": "razisci", "label": "Podatki", "symbol": "▥" },
+    { "id": "prispevaj", "label": "Ankete", "symbol": "☷" }
+  ],
+  "stats": ["Tekme", "Razdalje", "Ture", "Tekači"],
+  "searchTitle": "Vprašaj Možgan",
+  "searchHint": "Poišči povezave med tekmami, trasami in izkušnjami.",
+  "searchFooter": "Odgovor + viri + mnenja skupnosti",
+  "searchExamplesLabel": "Začni z vprašanjem",
+  "chartTitle": "Razdalje in vzponi",
+  "chartLabel": "Podatki iz zbirke",
+  "chartNote": "Vsaka točka predstavlja eno razdaljo tekme.",
+  "recordsTitle": "Viri znanja",
+  "recordsHint": "Viri, navedeni ob člankih",
+  "connectionsTitle": "Povezave",
+  "connectionsLabel": "Zasnova povezovanja",
+  "surveyTitle": "Prispevaj izkušnjo",
+  "surveyHint": "Po opravljeni turi · primer vprašanja",
+  "surveyQuestion": "Kako zahteven je bil spust?",
+  "surveyFooter": "Zbiranje odgovorov še ni omogočeno.",
+  "bottomNote": "Iskanje in ankete so v pripravi. Števila in graf temeljijo na obstoječi zbirki.",
+  "sidebarNote": "Slovenija najprej.\nPotem širimo obzorje."
+}

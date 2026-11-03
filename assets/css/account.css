@@ -1,0 +1,339 @@
+.brain-app .brain-account-screen {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+.brain-admin-account .brain-sidebar {
+  background: #513b22;
+}
+.brain-admin-account .brain-nav a.selected {
+  background: #78562b;
+  color: #fff0ba;
+}
+.brain-admin-account .brain-panel {
+  background: #fffdf5;
+  border-color: #e8d5a9;
+}
+.brain-admin-account .account-avatar {
+  background: #f2d28b;
+  color: #624119;
+  border-color: #fffdf5;
+}
+.brain-admin-account .account-eyebrow,
+.brain-admin-account .account-muted {
+  color: #8b6c3d;
+}
+.brain-admin-account .account-identity h2 {
+  color: #5d3e1c;
+}
+.brain-admin-account .brain-account-state {
+  color: #7b4c14;
+  background: #ffe4a3;
+}
+.brain-admin-account .account-tabs {
+  border-color: #e6cf9f;
+}
+.brain-admin-account .account-tabs button[aria-pressed='true'] {
+  color: #80501d;
+  border-bottom-color: #c28b2c;
+}
+.brain-admin-account button {
+  background: #f0cd83;
+  color: #634519;
+  border-color: #dfbd70;
+}
+.brain-admin-account button.account-text-button {
+  background: transparent;
+  color: #8a571d;
+}
+.brain-admin-account .account-runner-card {
+  background: #f7e8c7;
+  border-color: #e6cf9f;
+}
+.account-admin-panel {
+  margin-bottom: 28px;
+}
+.account-admin-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.account-admin-cards a {
+  display: grid;
+  gap: 10px;
+  padding: 22px;
+  border: 1px solid #dfc58c;
+  border-radius: 5px;
+  background: #ffedbf;
+  color: #64431b;
+  transition: background 0.15s;
+}
+.account-admin-cards a:hover {
+  background: #ffe5a4;
+}
+.account-admin-cards strong {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 14px;
+}
+.account-admin-cards a > span {
+  font-size: 11px;
+  line-height: 1.7;
+}
+.account-admin-cards small {
+  font-size: 10px;
+  color: #8b6c3d;
+  line-height: 1.6;
+}
+@media (max-width: 800px) {
+  .account-admin-cards {
+    grid-template-columns: 1fr;
+  }
+}
+.account-hero {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 30px 0;
+}
+.account-avatar {
+  width: 96px;
+  height: 96px;
+  flex: 0 0 96px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #dfe9d0;
+  color: #234d3d;
+  font-size: 30px;
+  font-weight: 600;
+  border: 4px solid #fff;
+}
+.account-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.account-identity {
+  min-width: 0;
+  flex: 1;
+}
+.account-eyebrow {
+  display: block;
+  color: #71826a;
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.brain-app .account-identity h2 {
+  font-size: clamp(24px, 3vw, 36px);
+  line-height: 1.15;
+  margin: 0 0 8px;
+  overflow-wrap: anywhere;
+}
+.brain-app .account-identity p {
+  margin: 0 0 12px;
+  overflow-wrap: anywhere;
+}
+.account-role {
+  font-size: 10px;
+  margin-left: 10px;
+  color: #52634c;
+}
+.account-hero-actions,
+.account-form-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.brain-app button.account-quiet {
+  background: transparent;
+  border: 1px solid #cad4c3;
+  color: #3e5536;
+}
+.account-tabs {
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid #d1dac8;
+  margin-bottom: 26px;
+}
+.brain-app .account-tabs button {
+  border: 0;
+  border-radius: 0;
+  padding: 12px 2px;
+  color: #738269;
+  background: transparent;
+  border-bottom: 2px solid transparent;
+  font-size: 12px;
+}
+.brain-app .account-tabs button[aria-pressed='true'] {
+  color: #234d3d;
+  border-bottom-color: #266358;
+}
+.account-overview-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 20px;
+}
+.account-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.brain-app .account-section-heading h3 {
+  margin: 0;
+}
+.brain-app button.account-text-button {
+  padding: 0;
+  background: transparent;
+  color: #266358;
+  text-align: left;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.account-facts {
+  margin: 0;
+}
+.account-facts > div {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid #edf0e7;
+}
+.account-facts > div:last-child {
+  border-bottom: 0;
+}
+.account-facts dt {
+  color: #7a8772;
+  font-size: 11px;
+}
+.account-facts dd {
+  margin: 0;
+  color: #2f4628;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.brain-app .account-runner-card {
+  background: #e5ecdc;
+  border-color: #dae3ce;
+}
+.account-profile-link {
+  display: block;
+  margin: 22px 0 14px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #266358;
+}
+.account-file-overview {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+.account-file-item {
+  display: flex;
+  gap: 12px;
+  padding: 15px;
+  border: 1px solid #e0e6d7;
+  border-radius: 4px;
+  min-width: 0;
+  align-items: center;
+}
+.account-file-symbol {
+  font-size: 25px;
+  color: #7e9870;
+}
+.account-file-item > div {
+  min-width: 0;
+}
+.account-file-item small {
+  display: block;
+  font-size: 9px;
+  color: #7a8772;
+  margin-bottom: 5px;
+}
+.account-file-item a,
+.account-file-item div > span {
+  display: block;
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+.brain-app .account-muted {
+  color: #7a8772;
+  font-size: 11px;
+  line-height: 1.8;
+}
+.account-settings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+.brain-app .account-settings-grid .brain-auth-panel {
+  max-width: none;
+}
+.account-edit-panel {
+  max-width: 680px;
+}
+.account-edit-panel .brain-form {
+  gap: 16px;
+}
+.account-form-actions {
+  margin-top: 12px;
+}
+@media (max-width: 900px) {
+  .account-file-overview {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 650px) {
+  .brain-app .brain-nav {
+    flex: 1 1 100%;
+    min-width: 0;
+    flex-wrap: wrap;
+  }
+  .account-hero {
+    gap: 16px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
+  .account-avatar {
+    width: 72px;
+    height: 72px;
+    flex-basis: 72px;
+    font-size: 24px;
+  }
+  .account-hero-actions {
+    width: 100%;
+  }
+  .account-overview-grid,
+  .account-settings-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .account-tabs {
+    gap: 22px;
+  }
+  .account-file-overview {
+    grid-template-columns: 1fr;
+  }
+  .account-facts > div {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
+.account-upload-preview {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.private-gpx-preview { min-width: 0; }

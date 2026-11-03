@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { formatDate } from '~/utils/formatDate'
-import { runnerTours } from '~/data/runnerTours'
-import type { RunnerTour } from '~/data/runnerTours'
+import type { RunnerTour } from '~/types/content'
 import { effortColor, effortLabel } from '~/utils/raceCategories'
 import { formatSlovenianCount, slovenianCountForms } from '~/utils/slovenianCount'
+const { runnerTours, siteContent } = await useSiteContent()
+const asset = useContentAsset()
 
-useSiteSeo('Ture tekačev', 'Resnične GPX ture tekačev, razvrščene od najnovejše do najstarejše.')
+useSiteSeo('Ture tekačev', siteContent.routes.description)
 const view = ref<'list' | 'cards' | 'map'>('cards')
 const activeId = ref(runnerTours[0]?.key || '')
 useUrlControls({
@@ -13,15 +14,18 @@ useUrlControls({
   activeId: { value: activeId, options: runnerTours.map((tour) => tour.key) },
 })
 const mapRef = ref<{ focusTour: (id: string) => void; fitAll: () => void } | null>(null)
-const number = (value: number) =>
-  new Intl.NumberFormat('sl-SI', { maximumFractionDigits: 1 }).format(value)
-const color = (tour: { distanceKm: number; elevationGain: number }) =>
-  effortColor({ km: tour.distanceKm, elevation: tour.elevationGain })
-const label = (tour: { distanceKm: number; elevationGain: number }) =>
-  effortLabel({ km: tour.distanceKm, elevation: tour.elevationGain })
+const number = (value: number | null) =>
+  value == null ? '—' : new Intl.NumberFormat('sl-SI', { maximumFractionDigits: 1 }).format(value)
+const color = (tour: { distanceKm: number; elevationGain: number | null }) =>
+  effortColor({ km: tour.distanceKm, elevation: tour.elevationGain ?? 0 })
+const label = (tour: { distanceKm: number; elevationGain: number | null }) =>
+  tour.elevationGain == null
+    ? 'Vzpon ni znan'
+    : effortLabel({ km: tour.distanceKm, elevation: tour.elevationGain })
 const lastMapSelection = ref<string | null>(null)
 const mapTourList = ref<HTMLElement | null>(null)
-const tourMapImage = (tour: RunnerTour) => `/images/tour-maps/${tour.runnerSlug}-${tour.id}.png`
+const tourMapImage = (tour: RunnerTour) =>
+  asset(tour.mapImage || `/images/tour-maps/${tour.runnerSlug}-${tour.id}.png`)
 
 const runnerTourLink = (tour: RunnerTour) => ({
   path: `/runners/${tour.runnerSlug}`,
@@ -76,8 +80,8 @@ watch(
   <div class="page runner-tours-page shell">
     <header class="page-header runner-tours-header">
       <p class="eyebrow">Tekači · GPX ture</p>
-      <h1>Naj ture</h1>
-      <p>Tukaj so zbrani podvigi naših tekačev.</p>
+      <h1>{{ siteContent.routes.title }}</h1>
+      <p>{{ siteContent.routes.intro }}</p>
     </header>
     <div class="runner-tours-toolbar">
       <div class="route-view-switch view-switch" aria-label="Način prikaza tur">
@@ -140,13 +144,15 @@ watch(
               :profile="tour.preview.profile"
               :label="`Višinski profil ture ${tour.title}`"
             />
-            <span class="runner-tour-card-runner"
-              >{{ tour.runnerName }} <IconArrowUpRight
-            /></span>
+            <span class="runner-tour-card-runner">{{ tour.runnerName }} <IconArrowUpRight /></span>
           </div>
         </NuxtLink>
         <div class="runner-tour-card-footer">
-          <a :href="`/gpx/runners/${tour.runnerSlug}/${tour.preview.source}`" download
+          <a
+            :href="
+              asset(tour.downloadUrl || `/gpx/runners/${tour.runnerSlug}/${tour.preview.source}`)
+            "
+            download
             >Prenesi GPX ↓</a
           >
         </div>

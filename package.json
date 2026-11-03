@@ -11,19 +11,33 @@
     "gpx:import-all": "node scripts/import-gpx.mjs --all",
     "gpx:import-runners": "node scripts/import-gpx.mjs --runners",
     "gpx:maps": "node scripts/generate-runner-tour-maps.mjs",
+    "content:export": "node scripts/export-content.mjs",
+    "content:upload-assets": "node scripts/upload-content-assets.mjs",
+    "content:verify": "node scripts/verify-content.mjs",
+    "test:brain": "node --test tests/brain-safety.test.mjs",
+    "typecheck": "nuxt typecheck",
     "format": "prettier --write ."
   },
   "dependencies": {
     "@nuxtjs/sitemap": "^7.4.7",
+    "@supabase/ssr": "0.12.7",
+    "@supabase/supabase-js": "2.118.0",
     "@types/leaflet": "^1.9.22",
+    "fast-xml-parser": "5.11.2",
     "leaflet": "^1.9.4",
     "mapbox-gl": "^3.31.0",
+    "nodemailer": "10.3.1",
     "nuxt": "^4.0.0",
+    "sharp": "0.35.5",
     "vue": "^3.5.0",
-    "vue-router": "^4.5.0"
+    "vue-router": "5.4.0",
+    "zod": "4.6.7"
   },
   "devDependencies": {
+    "@types/node": "26.6.6",
+    "@types/nodemailer": "8.0.2",
     "prettier": "^3.9.9",
-    "typescript": "^5.8.0"
+    "typescript": "^5.8.0",
+    "vue-tsc": "3.3.14"
   }
 }

@@ -4,8 +4,7 @@ import { formatSlovenianCount, slovenianCountForms } from '~/utils/slovenianCoun
 import { formatDate, parseIsoDate, todayIsoDate } from '~/utils/formatDate'
 const props = defineProps<{ races: Race[] }>()
 const weekdays = ['Pon', 'Tor', 'Sre', 'Čet', 'Pet', 'Sob', 'Ned']
-const validDate = (race: Race) =>
-  Boolean(race.dateStatus !== 'estimated' && parseIsoDate(race.date))
+const validDate = (race: Race) => Boolean(parseIsoDate(race.date))
 const calendars = computed(() => {
   const months = new Map<string, { year: number; month: number; races: Race[] }>()
   for (const race of props.races.filter(validDate)) {
@@ -21,12 +20,13 @@ const calendars = computed(() => {
       const first = new Date(item.year, item.month, 1),
         days = new Date(item.year, item.month + 1, 0).getDate(),
         offset = (first.getDay() + 6) % 7,
-        cells = Array.from<number | null>({ length: offset + days }, (_, index) =>
+        cells = Array.from({ length: offset + days }, (_, index): number | null =>
           index < offset ? null : index - offset + 1,
         )
       while (cells.length % 7) cells.push(null)
       const byDay = new Map<number, Race[]>()
       for (const race of item.races) {
+        if (race.dateStatus === 'estimated') continue
         const day = parseIsoDate(race.date)!.getUTCDate()
         byDay.set(day, [...(byDay.get(day) || []), race])
       }
@@ -34,6 +34,7 @@ const calendars = computed(() => {
         ...item,
         cells,
         byDay,
+        estimated: item.races.filter((race) => race.dateStatus === 'estimated'),
         label: formatDate(`${item.year}-${String(item.month + 1).padStart(2, '0')}-01`, {
           month: 'long',
           year: 'numeric',
@@ -150,6 +151,16 @@ const racesForActiveDay = (calendar: {
               {{ formatSlovenianCount(race.distances.length, slovenianCountForms.route) }}</span
             >
           </NuxtLink>
+        </div>
+      </div>
+      <div v-if="calendar.estimated.length" class="calendar-estimated">
+        <h3>Predvidoma v tem mesecu · datum še ni potrjen</h3>
+        <div>
+          <NuxtLink
+            v-for="race in calendar.estimated"
+            :key="race.id"
+            :to="`/races/${race.slug}`"
+          >{{ race.name }}</NuxtLink>
         </div>
       </div>
     </section>

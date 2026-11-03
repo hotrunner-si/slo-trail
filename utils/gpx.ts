@@ -1,12 +1,15 @@
 export const gpxDetailFile = (file: string) => file.replace(/\.json$/, '.detail.json')
 
 export function geographicRoutePoints(route: number[][]) {
-  if (!route.length) return ''
+  const points = route.filter(
+    (p): p is [number, number] => p.length >= 2 && Number.isFinite(p[0]) && Number.isFinite(p[1]),
+  )
+  if (!points.length) return ''
   let south = Infinity,
     north = -Infinity,
     west = Infinity,
     east = -Infinity
-  for (const [lat, lng] of route) {
+  for (const [lat, lng] of points) {
     south = Math.min(south, lat)
     north = Math.max(north, lat)
     west = Math.min(west, lng)
@@ -18,7 +21,7 @@ export function geographicRoutePoints(route: number[][]) {
   const scale = Math.min(78 / lngSpan, 78 / latSpan)
   const left = (100 - lngSpan * scale) / 2,
     top = (100 - latSpan * scale) / 2
-  return route
+  return points
     .map(
       ([lat, lng]) =>
         `${(left + (lng - west) * longitudeScale * scale).toFixed(2)},${(100 - top - (lat - south) * scale).toFixed(2)}`,

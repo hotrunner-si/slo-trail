@@ -1,0 +1,75 @@
+{
+  "title": "Možgan",
+  "description": "Razišči povezano znanje o trail teku. Prostor za AI iskanje, izkušnje skupnosti in vizualizacije podatkov.",
+  "eyebrow": "Trail Slovenija / Prostor za raziskovanje",
+  "headline": ["Več povezav.", "Boljši vpogled."],
+  "intro": "Tekme, poti in izkušnje imajo več smisla, ko jih povežemo. Spoznaj Možgan — prostor, kjer bomo skupaj gradili znanje o trail teku.",
+  "previewLabel": "Prvi pogled · v pripravi",
+  "previewNote": "To je predstavitev prihodnjih možnosti. AI iskanje, odgovarjanje na ankete in interaktivni prikazi še niso omogočeni.",
+  "sections": [
+    { "id": "vprasaj", "label": "Vprašaj Možgan" },
+    { "id": "razisci", "label": "Razišči podatke" },
+    { "id": "prispevaj", "label": "Prispevaj izkušnjo" }
+  ],
+  "searchTitle": "Vsaka dobra pot se začne z vprašanjem.",
+  "searchIntro": "Opiši, kaj te zanima. Možgan bo poiskal povezane informacije ter sestavil odgovor z viri in izkušnjami skupnosti.",
+  "searchPlaceholder": "Katera tekma bi bila primerna za moj prvi ultra?",
+  "searchExamples": [
+    "Tekme do 30 km z manj tehničnimi spusti",
+    "Kako se razlikujeta UTVV in K24?",
+    "Kaj tekači pravijo o trasi po dežju?"
+  ],
+  "graphCaption": "Kako se znanje povezuje · ponazoritev",
+  "graphCenter": "Znanje",
+  "graphNodes": ["Tekme", "Trase", "Tekači", "Izkušnje", "Viri"],
+  "collectionTitle": "Znanje že dobiva obliko.",
+  "collectionIntro": "To so vsebine, ki so trenutno v zbirki Trail Slovenija. Naslednji korak je povezovanje podatkov in dodajanje izkušenj skupnosti.",
+  "collectionLabels": ["tekem", "razdalj", "tur tekačev", "profilov tekačev"],
+  "insightsTitle": "Poglej podatke z druge perspektive.",
+  "insightsIntro": "Primerjaj razdalje in višince, raziskuj koledar ter odkrij povezave med trasami in izkušnjami tekačev.",
+  "chartTitle": "Razdalja × vzpon",
+  "chartNote": "Ponazoritev prihodnje primerjave tras. Točke niso podatki resničnih tekem.",
+  "chartXAxis": "Razdalja (km)",
+  "chartYAxis": "Vzpon (m)",
+  "insightCards": [
+    {
+      "number": "01",
+      "title": "Primerjava tras",
+      "text": "Razdalja pove le del zgodbe. Dodaj vzpon, teren in izkušnje tekačev."
+    },
+    {
+      "number": "02",
+      "title": "Sezona na dlani",
+      "text": "Kje in kdaj se teče? Odkrij razporeditev tekem skozi leto in po regijah."
+    },
+    {
+      "number": "03",
+      "title": "Glas skupnosti",
+      "text": "Poglej, pri katerih ocenah se tekači strinjajo in kje se izkušnje razlikujejo."
+    }
+  ],
+  "surveyTitle": "Tvoja izkušnja je del odgovora.",
+  "surveyIntro": "Si pretekel traso, ki jo nekdo šele spoznava? S kratkimi odgovori nam boš pomagal dopolnjevati podatke in preverjati informacije.",
+  "surveyTags": ["Vprašanja zate", "Kratke ankete", "Preverjanje informacij"],
+  "surveyQuestion": "Kako tehnično zahteven je bil spust?",
+  "surveyContext": "Primer vprašanja za tekača po opravljeni turi.",
+  "surveyOptions": ["Nezahteven", "Srednje zahteven", "Zelo zahteven", "Nimam neposredne izkušnje"],
+  "communityClaim": "»Spust je zelo tehničen.«",
+  "communityCounts": ["8 se strinja", "1 se ne strinja"],
+  "communityNote": "Izmišljen primer prikaza odgovorov skupnosti. Resničnih odgovorov še ne zbiramo.",
+  "trustTitle": "Odgovor, ki pokaže, na čem temelji.",
+  "trustItems": [
+    {
+      "title": "Sledljivi viri",
+      "text": "Ob informacijah bodo povezave do izvornih objav in datum preverjanja."
+    },
+    {
+      "title": "Jasne okoliščine",
+      "text": "Ista trasa je lahko drugačna v dežju ali v drugi izvedbi. Kontekst ostane ob podatku."
+    },
+    {
+      "title": "Vidna nesoglasja",
+      "text": "Različnih izkušenj ne bomo skrili za eno oceno. Vidno bo, koliko ljudi se strinja in koliko ne."
+    }
+  ]
+}

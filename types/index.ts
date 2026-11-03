@@ -87,6 +87,7 @@ export interface Runner {
   utmbIndex?: number
   utmbUrl?: string
   stravaUrl?: string
+  websiteUrl?: string
 }
 export interface TrailRoute {
   id: string

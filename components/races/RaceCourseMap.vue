@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import { gpxDetailFile } from '~/utils/gpx'
 const loadGpx = useGpxData()
+const asset = useContentAsset()
 import type { GpxData } from '~/types/gpx'
 import type { Race, RaceDistance } from '~/types'
 import { effortCategory, effortKm, effortLabel } from '~/utils/raceCategories'
 
 const props = defineProps<{ race: Race }>()
 const selectedId = ref(
-  props.race.distances.length === 1 ? props.race.distances[0].id || `${props.race.slug}-0` : 'all',
+  props.race.distances.length === 1 ? props.race.distances[0]?.id || `${props.race.slug}-0` : 'all',
 )
 const gpxData = ref<Record<string, GpxData>>({})
 const hoverProgress = ref<number | null>(null)
@@ -170,7 +171,7 @@ async function selectFromMap(id: string) {
         </dl>
         <a
           v-if="selectedDistance.gpx?.rawFile"
-          :href="selectedDistance.gpx.rawFile"
+          :href="asset(selectedDistance.gpx.rawFile)"
           :download="selectedDistance.gpx.rawFile.split('/').at(-1)"
           :class="['gpx-download', `effort-${effortCategory(selectedDistance).toLowerCase()}`]"
           :aria-label="`Prenesi GPX za traso ${selectedDistance.name || selectedDistance.label}`"

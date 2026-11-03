@@ -2710,6 +2710,26 @@ h2 {
   border-top: 1px solid var(--ink);
   padding-top: 24px;
 }
+.calendar-estimated {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.calendar-estimated h3 {
+  margin: 0 0 10px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.calendar-estimated > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.calendar-estimated a {
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  font-size: 0.8rem;
+}
 .calendar-undated > div {
   display: flex;
   flex-wrap: wrap;

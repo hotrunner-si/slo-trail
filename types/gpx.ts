@@ -4,6 +4,7 @@ export interface GpxProfilePoint {
   elevation: number | null
 }
 export interface GpxData {
+  segmentStarts?: number[]
   route?: GpxCoordinate[]
   overviewRoute?: GpxCoordinate[]
   profile?: number[]
@@ -19,12 +20,16 @@ export interface GpxPreview extends Omit<GpxData, 'overviewRoute'> {
 }
 
 export interface RunnerGpxRoute {
+  detailUrl?: string
+  downloadUrl?: string
+  mapImage?: string
+  portraitMapImage?: string
   id: string
   title: string
   dateIso?: string
   location: string
   description: string
   distanceKm: number
-  elevationGain: number
+  elevationGain: number | null
   preview: GpxPreview
 }

@@ -24,7 +24,8 @@ function nearestIndexForDistance(distanceKm: number) {
     if (
       Math.abs(profile[index]!.distanceKm - distanceKm) <
       Math.abs(profile[nearestIndex]!.distanceKm - distanceKm)
-    ) nearestIndex = index
+    )
+      nearestIndex = index
   }
   return nearestIndex
 }
@@ -32,8 +33,7 @@ function nearestIndexForDistance(distanceKm: number) {
 function updateMarker(distanceKm: number) {
   if (!map || !route.length) return
   const source = map.getSource('runner-gpx-active-point') as
-    | import('mapbox-gl').GeoJSONSource
-    | undefined
+    import('mapbox-gl').GeoJSONSource | undefined
   const point = route[nearestIndexForDistance(distanceKm)]
   if (!source || !point) return
   source.setData({
@@ -49,8 +49,7 @@ function selectNearest(lng: number, lat: number) {
   for (let index = 1; index < route.length; index++) {
     const [latitude, longitude] = route[index]!
     const [nearestLatitude, nearestLongitude] = route[nearestIndex]!
-    const currentDistance =
-      (latitude - lat) ** 2 + ((longitude - lng) * longitudeScale) ** 2
+    const currentDistance = (latitude - lat) ** 2 + ((longitude - lng) * longitudeScale) ** 2
     const nearestDistance =
       (nearestLatitude - lat) ** 2 + ((nearestLongitude - lng) * longitudeScale) ** 2
     if (currentDistance < nearestDistance) nearestIndex = index
@@ -66,17 +65,23 @@ function drawRoute(data: GpxData) {
   if (!map || !map.isStyleLoaded()) return
   route = data.route || []
   profile = data.detailedProfile || []
-  if (!route.length || route.length !== profile.length) {
+  if (!route.length || (profile.length > 0 && route.length !== profile.length)) {
     error.value = 'Manjkajo usklajene točke trase in profila.'
     return
   }
   error.value = ''
 
-  const coordinates = route.map(([latitude, longitude]) => [longitude, latitude] as [number, number])
+  const coordinates = route.map(
+    ([latitude, longitude]) => [longitude, latitude] as [number, number],
+  )
+  const starts = data.segmentStarts?.length ? data.segmentStarts : [0]
+  const lines = starts
+    .map((start, i) => coordinates.slice(start, starts[i + 1] ?? coordinates.length))
+    .filter((line) => line.length > 1)
   const routeFeature = {
     type: 'Feature' as const,
     properties: {},
-    geometry: { type: 'LineString' as const, coordinates },
+    geometry: { type: 'MultiLineString' as const, coordinates: lines },
   }
   const bounds = coordinates.reduce(
     (current, coordinate) => current.extend(coordinate),
@@ -99,12 +104,11 @@ function drawRoute(data: GpxData) {
       id: 'runner-gpx-route-line',
       type: 'line',
       source: 'runner-gpx-route',
+      layout: { 'line-cap': 'round', 'line-join': 'round' },
       paint: {
         'line-color': props.color,
         'line-width': 5,
         'line-opacity': 0.95,
-        'line-cap': 'round',
-        'line-join': 'round',
       },
     })
     map.addSource('runner-gpx-endpoints', {
@@ -131,7 +135,11 @@ function drawRoute(data: GpxData) {
     })
     map.addSource('runner-gpx-active-point', {
       type: 'geojson',
-      data: { type: 'Feature', properties: {}, geometry: { type: 'Point', coordinates: coordinates[0]! } },
+      data: {
+        type: 'Feature',
+        properties: {},
+        geometry: { type: 'Point', coordinates: coordinates[0]! },
+      },
     })
     map.addLayer({
       id: 'runner-gpx-active-circle',
@@ -192,17 +200,29 @@ onMounted(async () => {
   }
 })
 
-watch(() => props.data, (data) => {
-  if (map?.isStyleLoaded()) drawRoute(data)
-})
+watch(
+  () => props.data,
+  (data) => {
+    if (map?.isStyleLoaded()) drawRoute(data)
+  },
+)
 watch(() => props.activeDistanceKm, updateMarker)
-watch(() => props.color, (color) => {
-  if (!map?.getLayer('runner-gpx-route-line')) return
-  map.setPaintProperty('runner-gpx-route-line', 'line-color', color)
-  map.setPaintProperty('runner-gpx-endpoint-circles', 'circle-stroke-color', color)
-  map.setPaintProperty('runner-gpx-endpoint-circles', 'circle-color', ['match', ['get', 'kind'], 'start', '#fff', color])
-  map.setPaintProperty('runner-gpx-active-circle', 'circle-color', color)
-})
+watch(
+  () => props.color,
+  (color) => {
+    if (!map?.getLayer('runner-gpx-route-line')) return
+    map.setPaintProperty('runner-gpx-route-line', 'line-color', color)
+    map.setPaintProperty('runner-gpx-endpoint-circles', 'circle-stroke-color', color)
+    map.setPaintProperty('runner-gpx-endpoint-circles', 'circle-color', [
+      'match',
+      ['get', 'kind'],
+      'start',
+      '#fff',
+      color,
+    ])
+    map.setPaintProperty('runner-gpx-active-circle', 'circle-color', color)
+  },
+)
 
 onBeforeUnmount(() => map?.remove())
 </script>

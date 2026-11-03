@@ -36,8 +36,9 @@ function update() {
       map!.setPaintProperty(`${id}-halo`, 'line-width', selected && mobileMedia?.matches ? 6 : 8)
   })
   const index = props.race.distances.findIndex((d, i) => rid(d, i) === props.selectedId)
-  if (index >= 0) {
-    const id = sid(props.race.distances[index], index)
+  const selectedDistance = props.race.distances[index]
+  if (selectedDistance) {
+    const id = sid(selectedDistance, index)
     if (map.getLayer(`${id}-halo`)) map.moveLayer(`${id}-halo`)
     if (map.getLayer(id)) map.moveLayer(id)
     if (map.getLayer(`${id}-hit`)) map.moveLayer(`${id}-hit`)
@@ -46,8 +47,9 @@ function update() {
 }
 function updateHover() {
   if (!map) return
-  const index = props.race.distances.findIndex((d, i) => rid(d, i) === props.selectedId),
-    route = index >= 0 ? data.value[rid(props.race.distances[index], index)]?.route : null
+  const index = props.race.distances.findIndex((d, i) => rid(d, i) === props.selectedId)
+  const selectedDistance = props.race.distances[index]
+  const route = selectedDistance ? data.value[rid(selectedDistance, index)]?.route : null
   const source = map.getSource('route-hover') as import('mapbox-gl').GeoJSONSource | undefined
   if (!source) return
   const progress = props.hoverProgress
@@ -56,6 +58,7 @@ function updateHover() {
     return
   }
   const point = route[Math.round(Math.max(0, Math.min(1, progress)) * (route.length - 1))]
+  if (!point) return
   source.setData({ type: 'Point', coordinates: [point[1], point[0]] })
 }
 function draw() {
