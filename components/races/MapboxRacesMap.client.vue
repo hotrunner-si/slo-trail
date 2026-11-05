@@ -4,13 +4,13 @@ const lifetime = useComponentLifetime()
 import type { GpxData } from '~/types/gpx'
 import type { Race } from '~/types'
 import { effortColor } from '~/utils/raceCategories'
-import { slovenianCountForm, slovenianCountForms } from '~/utils/slovenianCount'
 import 'mapbox-gl/dist/mapbox-gl.css'
 const props = defineProps<{ races: Race[]; activeId?: string }>()
 const emit = defineEmits<{ activate: [id: string]; 'route-hover': [id: string] }>()
 const config = useRuntimeConfig()
 const mapEl = ref<HTMLElement | null>(null)
 const error = ref('')
+const gesturesLocked = ref(true)
 const data = ref<Record<string, GpxData>>({})
 let mb: typeof import('mapbox-gl') | null = null
 let map: import('mapbox-gl').Map | null = null
@@ -148,6 +148,10 @@ async function load() {
 function reset() {
   map?.easeTo({ center: initialCenter, zoom: initialZoom, duration: 500 })
 }
+function toggleGestures() {
+  gesturesLocked.value = !gesturesLocked.value
+  map?.setCooperativeGestures(gesturesLocked.value)
+}
 function focusRace(id: string) {
   if (!map || !mb) {
     pendingFocusId = id
@@ -191,6 +195,7 @@ onMounted(async () => {
   if (!lifetime.active || !mapEl.value) return
   map = new mb.default.Map({
     container: mapEl.value,
+    cooperativeGestures: true,
     style: String(config.public.mapboxStyle),
     center: initialCenter,
     zoom: initialZoom,
@@ -222,12 +227,9 @@ onBeforeUnmount(() => {
       aria-label="Kartografski zemljevid slovenskih trail tekem"
     />
     <p v-if="error" class="mapbox-map-error">{{ error }}</p>
+    <MapGestureControls :locked="gesturesLocked" @reset="reset" @toggle="toggleGestures" />
     <div class="leaflet-map-toolbar">
-      <span class="mono"
-        >{{ loaded }}/{{ total }} GPX
-        {{ slovenianCountForm(total, slovenianCountForms.route).toLocaleUpperCase('sl-SI') }} ·
-        SLOVENIJA</span
-      ><button type="button" @click="reset">Ponastavi pogled</button>
+      <span class="mono">{{ loaded }}/{{ total }} GPX</span>
     </div>
   </div>
 </template>

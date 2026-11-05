@@ -1,19 +1,17 @@
 <script setup lang="ts">
 import '~/assets/css/brain.css'
-const { siteContent } = await useSiteContent()
 const route = useRoute()
-const workspace = siteContent.mozgan.workspace
-const { session, signedIn, admin, saving } = await useBrainSession()
-const current = computed(
-  () =>
-    workspace.navigation.find((item) => item.to === route.path.replace(/\/$/, '')) || {
-      label: route.path.startsWith('/mozgan/skrbnik')
-        ? 'Odobritve'
-        : route.path.startsWith('/mozgan/racun')
-          ? 'Račun'
-          : 'Možgan',
-    },
-)
+const isOverview = computed(() => route.path.replace(/\/$/, '') === '/mozgan')
+const { signedIn, admin, saving } = await useBrainSession()
+const currentLabel = computed(() => {
+  const path = route.path.replace(/\/$/, '')
+  if (path === '/mozgan') return 'Chat'
+  if (path.startsWith('/mozgan/analitika')) return 'Analitika'
+  if (path.startsWith('/mozgan/baza')) return 'Baza znanja'
+  if (path.startsWith('/profil')) return 'Račun'
+  if (path.startsWith('/mozgan/skrbnik')) return 'Skrbništvo'
+  return 'Možgan'
+})
 </script>
 
 <template>
@@ -21,48 +19,23 @@ const current = computed(
     class="brain-app"
     :class="{
       'brain-admin-mode': admin,
-      'brain-admin-account': admin && route.path === '/mozgan/racun',
+      'brain-admin-account': admin && route.path === '/profil',
+      'brain-overview-mode': isOverview,
     }"
   >
-    <aside class="brain-sidebar" aria-label="Navigacija Možgana">
-      <div class="brain-brand">
-        <span aria-hidden="true">✳</span>
-        <div><strong>Možgan</strong><small>Trail Slovenija</small></div>
-      </div>
-      <nav class="brain-nav">
-        <NuxtLink
-          v-for="item in workspace.navigation"
-          :key="item.to"
-          :to="item.to"
-          :class="{ selected: route.path.replace(/\/$/, '') === item.to }"
-          :aria-current="route.path.replace(/\/$/, '') === item.to ? 'page' : undefined"
-          ><span aria-hidden="true">{{ item.symbol }}</span
-          >{{ item.label }}</NuxtLink
-        >
-        <NuxtLink to="/mozgan/racun" :class="{ selected: route.path === '/mozgan/racun' }"
-          ><span aria-hidden="true">◎</span>Račun
-          <small v-if="signedIn" class="brain-account-state">Prijavljen</small></NuxtLink
-        >
-        <NuxtLink v-if="admin" to="/mozgan/skrbnik"><span>✓</span>Skrbništvo</NuxtLink>
-      </nav>
-      <div class="brain-sidebar-foot">
-        <span class="live-dot" />Slovenija <span>SI</span>
-        <p>Baza znanja o trail teku</p>
-        <small class="workspace-preview-label">Prva različica · povezano znanje</small>
-      </div>
-    </aside>
     <div class="dashboard-workspace">
-      <div class="brain-session-bar">
-        <NuxtLink to="/mozgan/racun">{{
+      <div v-if="!isOverview" class="brain-session-bar">
+        <NuxtLink to="/profil">{{
           signedIn ? 'Prijavljen' : 'Prijava / ustvari račun'
         }}</NuxtLink>
+        <NuxtLink v-if="admin" to="/mozgan/skrbnik">Skrbništvo</NuxtLink>
         <label v-if="signedIn"
-          ><input v-model="saving" type="checkbox" /> Shrani povzetek in znanje</label
+          ><input v-model="saving" type="checkbox" /> Shrani prispevke iz obrazca</label
         >
         <span v-else>Obiski prispevajo samo k osnovni statistiki zanimanja.</span>
         <span v-if="signedIn && !saving">Brez shranjevanja vsebine</span>
       </div>
-      <h1 class="sr-only">{{ current.label }}</h1>
+      <h1 class="sr-only">{{ currentLabel }}</h1>
       <div class="brain-screen"><NuxtPage /></div>
     </div>
   </div>

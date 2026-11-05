@@ -135,10 +135,10 @@ export const gpxManifest: Record<string, Record<string, string>> = {
   "soca-outdoor-festival": {
     "adidas-terrex-15km": "/gpx/races/soca-outdoor-festival/soca-outdoor-festival-adidas-terrex-15km-14.6km.gpx",
     "continental-10km": "/gpx/races/soca-outdoor-festival/soca-outdoor-festival-continental-10km-11.7km.gpx",
-    "ford-35km": "/gpx/races/soca-outdoor-festival/soca-outdoor-festival-ford-35km-32.1km.gpx",
+    "ford-30km": "/gpx/races/soca-outdoor-festival/SOF27_30KM.gpx",
     "hempika-5km": "/gpx/races/soca-outdoor-festival/soca-outdoor-festival-hempika-5km-5.3km.gpx",
-    "i-feel-slovenia-50km": "/gpx/races/soca-outdoor-festival/soca-outdoor-festival-i-feel-slovenia-50km-52.1km.gpx",
-    "la-primafit-25km": "/gpx/races/soca-outdoor-festival/soca-outdoor-festival-la-primafit-25km-27.7km.gpx",
+    "i-feel-slovenia-40km": "/gpx/races/soca-outdoor-festival/SOF26_40KM.gpx",
+    "la-primafit-20km": "/gpx/races/soca-outdoor-festival/SOF27_20KM.gpx",
     "vertikal": "/gpx/races/soca-outdoor-festival/soca-outdoor-festival-vertikal-2km.gpx"
   },
   "trail-po-kraskih-klancih": {

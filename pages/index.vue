@@ -86,10 +86,7 @@ const upcomingRaces = computed(() => {
       </div>
       <div class="hero-visual">
         <img :src="asset(siteContent.home.heroImage)" :alt="siteContent.home.heroAlt" />
-        <div class="hero-photo-note">
-          <span>{{ siteContent.home.photoLabel }}</span
-          ><strong>{{ siteContent.home.photoTitle }}</strong>
-        </div>
+        <span class="hero-photo-note">Trail Verbier St-Bernard</span>
       </div>
     </section>
 

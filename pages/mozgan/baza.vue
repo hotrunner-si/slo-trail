@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({ middleware: 'brain-account' })
-useSiteSeo('Baza podatkov · Možgan', 'Povezani viri in izvorni podatki', { noindex: true })
+useSiteSeo('Baza znanja · Možgan', 'Povezani viri in izvorni podatki', { noindex: true })
 const query = ref(''),
   kind = ref(''),
   origin = ref(''),

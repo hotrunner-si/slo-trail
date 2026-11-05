@@ -36,7 +36,7 @@ export default defineEventHandler(async (event): Promise<BrainSession> => {
       : null,
     recovery: !!user && brainHasRecovery(event, user.id),
     account,
-    aiAvailable: Boolean(config.openaiApiKey && config.brainAiModel && config.brainAiZeroRetention),
+    aiAvailable: Boolean(config.geminiApiKey),
     semanticAvailable: Boolean(
       config.openaiApiKey && config.brainEmbeddingModel && config.brainAiZeroRetention,
     ),

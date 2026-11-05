@@ -40,7 +40,7 @@ try {
     '/journal',
     '/mozgan',
     '/mozgan/analitika',
-    '/mozgan/racun',
+    '/profil',
     ...content.races.map((r) => `/races/${r.slug}`),
     ...content.runners.map((r) => `/runners/${r.slug}`),
     ...content.trailRoutes.map((r) => `/routes/${r.slug}`),

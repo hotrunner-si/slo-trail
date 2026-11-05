@@ -5,7 +5,6 @@ const lifetime = useComponentLifetime()
 import type { GpxData } from '~/types/gpx'
 import type { Race, RaceDistance } from '~/types'
 import { effortColor } from '~/utils/raceCategories'
-import { slovenianCountForm, slovenianCountForms } from '~/utils/slovenianCount'
 import 'mapbox-gl/dist/mapbox-gl.css'
 const props = defineProps<{ race: Race; selectedId?: string; hoverProgress?: number | null }>()
 const emit = defineEmits<{ select: [id: string]; hover: [progress: number | null] }>()
@@ -13,6 +12,7 @@ const config = useRuntimeConfig()
 const mapEl = ref<HTMLElement | null>(null)
 const loaded = ref(0)
 const mapError = ref('')
+const gesturesLocked = ref(true)
 const data = ref<Record<string, GpxData>>({})
 let mb: typeof import('mapbox-gl') | null = null
 let map: import('mapbox-gl').Map | null = null
@@ -156,9 +156,9 @@ function fit() {
   if (!b.isEmpty()) map.fitBounds(b, { padding: 36, maxZoom: 14 })
   else map.flyTo({ center: [14.8, 46.2], zoom: 8 })
 }
-function showAll() {
-  emit('select', 'all')
-  fit()
+function toggleGestures() {
+  gesturesLocked.value = !gesturesLocked.value
+  map?.setCooperativeGestures(gesturesLocked.value)
 }
 onMounted(async () => {
   await nextTick()
@@ -184,6 +184,7 @@ onMounted(async () => {
   if (!lifetime.active || !mapEl.value) return
   map = new mb.default.Map({
     container: mapEl.value,
+    cooperativeGestures: true,
     style: String(config.public.mapboxStyle),
     center: [14.8, 46.2],
     zoom: 8,
@@ -216,14 +217,7 @@ onBeforeUnmount(() => {
       :aria-label="`Kartografski zemljevid tras dogodka ${race.name}`"
     />
     <p v-if="mapError" class="mapbox-map-error">{{ mapError }}</p>
-    <div class="leaflet-map-toolbar">
-      <span class="mono">{{
-        loaded
-          ? `${loaded}/${race.distances.length} GPX ${slovenianCountForm(race.distances.length, slovenianCountForms.route).toLocaleUpperCase('sl-SI')}`
-          : 'GPX NI NALOŽEN'
-      }}</span
-      ><button v-if="race.distances.length > 1" type="button" @click="showAll">Vse trase</button
-      ><button type="button" @click="fit">Ponastavi pogled</button>
-    </div>
+    <MapGestureControls :locked="gesturesLocked" @reset="fit" @toggle="toggleGestures" />
+    <div class="race-map-gpx-status mono" role="status">{{ loaded ? `${loaded}/${race.distances.length} GPX` : 'GPX ni naložen' }}</div>
   </div>
 </template>

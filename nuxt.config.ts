@@ -27,6 +27,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     supabaseSecretKey: '',
     openaiApiKey: '',
+    geminiApiKey: '',
+    geminiModel: '',
     brainAiModel: '',
     brainEmbeddingModel: '',
     brainAiZeroRetention: false,

@@ -128,7 +128,7 @@ function points(id: string) {
       </p>
     </header>
     <nav class="admin-review-tabs" aria-label="Skrbniški pregledi">
-      <NuxtLink to="/mozgan/racun">← Moj račun</NuxtLink>
+      <NuxtLink to="/profil">← Moj račun</NuxtLink>
       <NuxtLink
         to="/mozgan/skrbnik?tab=reviews"
         :aria-current="tab === 'reviews' ? 'page' : undefined"

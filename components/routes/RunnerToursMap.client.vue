@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { formatSlovenianCount, slovenianCountForms } from '~/utils/slovenianCount'
 const lifetime = useComponentLifetime()
 import type { RunnerTour } from '~/types/content'
 import { effortColor } from '~/utils/raceCategories'
@@ -10,6 +9,7 @@ const emit = defineEmits<{ activate: [id: string] }>()
 const config = useRuntimeConfig()
 const mapEl = ref<HTMLElement | null>(null)
 const error = ref('')
+const gesturesLocked = ref(true)
 let map: import('mapbox-gl').Map | null = null
 let mb: typeof import('mapbox-gl') | null = null
 const layerId = (id: string) => `runner-tour-${id}`
@@ -34,6 +34,10 @@ function fitTours(selectedId?: string) {
   selected.flatMap(coordinates).forEach((point) => bounds.extend(point))
   if (!bounds.isEmpty())
     map.fitBounds(bounds, { padding: 60, maxZoom: selectedId ? 12 : 8, duration: 450 })
+}
+function toggleGestures() {
+  gesturesLocked.value = !gesturesLocked.value
+  map?.setCooperativeGestures(gesturesLocked.value)
 }
 function draw() {
   if (!map?.isStyleLoaded()) return
@@ -110,6 +114,7 @@ onMounted(async () => {
     mb.default.accessToken = String(config.public.mapboxToken)
     map = new mb.default.Map({
       container: mapEl.value,
+      cooperativeGestures: true,
       style: String(config.public.mapboxStyle),
       center: [12, 46],
       zoom: 5.5,
@@ -136,13 +141,9 @@ defineExpose({ focusTour: (id: string) => fitTours(id), fitAll: () => fitTours()
       aria-label="Skupni zemljevid GPX tur tekačev"
     />
     <p v-if="error" class="mapbox-map-error">{{ error }}</p>
+    <MapGestureControls :locked="gesturesLocked" @reset="fitTours()" @toggle="toggleGestures" />
     <div class="leaflet-map-toolbar">
-      <span class="mono"
-        >{{
-          formatSlovenianCount(tours.length, slovenianCountForms.tour).toLocaleUpperCase('sl-SI')
-        }}
-        GPX</span
-      ><button type="button" @click="fitTours()">Vse ture</button>
+      <span class="mono">{{ tours.length }} GPX</span>
     </div>
   </div>
 </template>

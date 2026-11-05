@@ -31,7 +31,7 @@ async function save() {
 </script>
 <template>
   <div class="page shell runner-create-page">
-    <NuxtLink to="/mozgan/racun">← Moj račun</NuxtLink>
+    <NuxtLink to="/profil">← Moj račun</NuxtLink>
     <header class="page-header">
       <p class="eyebrow">Tekaška skupnost</p>
       <h1>{{ profile ? 'Tvoj predlog profila' : 'Ustvari profil tekača' }}</h1>

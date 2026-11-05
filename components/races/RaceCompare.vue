@@ -31,7 +31,7 @@ const emit = defineEmits<{ remove: [index: number]; clear: [] }>()
           </div>
           <div>
             <dt>Vzpon</dt>
-            <dd>{{ item.distance.elevation.toLocaleString('sl-SI') }} m+</dd>
+            <dd>{{ item.distance.elevation ? `${item.distance.elevation.toLocaleString('sl-SI')} m+` : '—' }}</dd>
           </div>
           <div>
             <dt>Effort</dt>

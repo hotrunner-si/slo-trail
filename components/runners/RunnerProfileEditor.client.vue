@@ -58,7 +58,7 @@ async function save() {
       <h2>Uredi svoj tekaški profil</h2>
       <p>Ti podatki bodo javno vidni na tekaškem profilu. Zasebnih datotek tu ne objavljamo.</p>
       <p>
-        <NuxtLink to="/mozgan/racun?view=edit"
+        <NuxtLink to="/profil?view=edit"
           >Sliko in objave GPX upravljaj v svojem računu ↗</NuxtLink
         >
       </p>

@@ -79,7 +79,7 @@ async function next() {
       <span class="muted-chip">{{ question?.claim_id ? 'Preverjanje' : 'Vrzel v zbirki' }}</span>
     </header>
     <p v-if="!signedIn">
-      Za oddajo izkušnje in preverjanje znanja se <NuxtLink to="/mozgan/racun">prijavi</NuxtLink>.
+      Za oddajo izkušnje in preverjanje znanja se <NuxtLink to="/profil">prijavi</NuxtLink>.
       Obiskov ne štejemo kot neodvisne potrditve.
     </p>
     <p v-else-if="loadError" role="alert">Vprašanja trenutno ni mogoče naložiti. Osveži stran.</p>

@@ -42,7 +42,7 @@ useSiteSeo(copy.analytics.title, copy.analytics.description, { noindex: true })
       {{ knowledge.claims }} skupnostnih ugotovitev. {{ knowledge.note }}
     </p>
     <p v-else class="brain-notice">
-      <NuxtLink to="/mozgan/racun">Prijavi se</NuxtLink> za dodatne prikaze koledarja, pokritosti in
+      <NuxtLink to="/profil">Prijavi se</NuxtLink> za dodatne prikaze koledarja, pokritosti in
       rasti znanja.
     </p>
   </div>

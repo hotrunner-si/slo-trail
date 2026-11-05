@@ -38,7 +38,7 @@ projektu **slo-trail**, `favatadzmmqsdocrstti`; prvotna selitev ni bila ponovlje
   naslova običajnega računa je ohranjen njegov UUID, geslo in vsi povezani
   podatki. Povezavo s tekačem je izrecno odredil lastnik projekta, ne algoritem
   po ujemanju imena. Admin nima te tekaške povezave.
-- Skrbniški račun ima na `/mozgan/racun` rumeno-oranžno temo in zaščitene
+- Skrbniški račun ima na `/profil` rumeno-oranžno temo in zaščitene
   povzetke čakajočih zahtev. `/mozgan/skrbnik?tab=reviews` vsebuje nove profile,
   ločeno objavo odobrenih profilov in zahtevke za povezavo. `?tab=editorial`
   odpre vire in moderacijo, `?tab=routes` pa zasebne predloge tras.
@@ -46,7 +46,7 @@ projektu **slo-trail**, `favatadzmmqsdocrstti`; prvotna selitev ni bila ponovlje
   Vloga izvira samo iz `brain_admins`, ne iz naslova ali imena v uporabniških
   metapodatkih. Začetno geslo ni shranjeno v repozitoriju; zamenja se v računu.
 
-- Račun `/mozgan/racun`: pregled podatkov, zasebne datoteke in zadnjih pet
+- Račun `/profil`: pregled podatkov, zasebne datoteke in zadnjih pet
   povzetkov; Uredi odpre `?view=edit`, Nastavitve pa `?view=settings`.
   Nastavitve vsebujejo geslo, e-pošto (zahteva trenutno geslo) in zasebnost.
 - Račun ne ureja tekaških podatkov. Nov profil se predlaga na `/runners/nov`
@@ -85,9 +85,9 @@ Datumov, indeksov in rezultatov ta izvedba ni ponovno preverila.
 ## 1. Prijava z geslom (posodobitev 2. 11. 2026)
 
 1. Odpri [Auth → URL Configuration](https://supabase.com/dashboard/project/favatadzmmqsdocrstti/auth/url-configuration).
-2. Dodaj dovoljeni Redirect URL `http://127.0.0.1:3012/mozgan/racun`.
+2. Dodaj dovoljeni Redirect URL `http://127.0.0.1:3012/profil`.
    Če uporabljaš drugo ime ali vrata, dodaj natanko tisto različico, npr.
-   `http://localhost:3000/mozgan/racun`. Pred objavo dodaj tudi ustrezni URL domene.
+   `http://localhost:3000/profil`. Pred objavo dodaj tudi ustrezni URL domene.
 3. Site URL naj kaže na glavno okolje, ki ga dejansko nameravaš uporabljati.
 4. V Auth → Sign In / Providers → Email omogoči prijavo po e-pošti in **izklopi Confirm email**.
    Aplikacija pred registracijo preveri `mailer_autoconfirm` in ob vključeni
@@ -100,7 +100,7 @@ Datumov, indeksov in rezultatov ta izvedba ni ponovno preverila.
    povezavo odpri v istem brskalniku, kjer je bila zahtevana.
 5. Za običajno uporabo nastavi svoj SMTP in potrjenega pošiljatelja v Auth → Email / SMTP.
    Privzeti Supabase pošiljatelj ima omejitve in ni dokaz dostavljivosti.
-6. Zaženi `npm run dev -- --host 127.0.0.1 --port 3012`, odpri `/mozgan/racun`,
+6. Zaženi `npm run dev -- --host 127.0.0.1 --port 3012`, odpri `/profil`,
    izberi Ustvari račun, vnesi ime računa, naslov in dvakrat geslo.
    Ob izklopljeni potrditvi se račun prijavi takoj. Preveri še odjavo in prijavo z geslom.
 7. Preveri Pozabljeno geslo: odpri novo povezavo v istem brskalniku, nastavi

@@ -74,8 +74,10 @@ watch(
   },
 )
 const dateLabel = (race: Race) =>
-  race.date && race.dateStatus !== 'estimated' && parseIsoDate(race.date)
-    ? formatDate(race.date, { day: '2-digit', month: 'short' })
+  parseIsoDate(race.date)
+    ? race.dateStatus === 'estimated'
+      ? `≈ ${formatDate(race.date, { month: 'short', year: '2-digit' })}`
+      : formatDate(race.date, { day: '2-digit', month: 'short' })
     : '—'
 </script>
 <template>

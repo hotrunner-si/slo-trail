@@ -3,13 +3,6 @@
   margin: 0 auto;
   padding-bottom: 32px;
 }
-.brain-admin-account .brain-sidebar {
-  background: #513b22;
-}
-.brain-admin-account .brain-nav a.selected {
-  background: #78562b;
-  color: #fff0ba;
-}
 .brain-admin-account .brain-panel {
   background: #fffdf5;
   border-color: #e8d5a9;
@@ -25,10 +18,6 @@
 }
 .brain-admin-account .account-identity h2 {
   color: #5d3e1c;
-}
-.brain-admin-account .brain-account-state {
-  color: #7b4c14;
-  background: #ffe4a3;
 }
 .brain-admin-account .account-tabs {
   border-color: #e6cf9f;
@@ -293,11 +282,6 @@
   }
 }
 @media (max-width: 650px) {
-  .brain-app .brain-nav {
-    flex: 1 1 100%;
-    min-width: 0;
-    flex-wrap: wrap;
-  }
   .account-hero {
     gap: 16px;
     padding: 20px 0;
@@ -336,4 +320,6 @@
   object-fit: contain;
   border-radius: 8px;
 }
-.private-gpx-preview { min-width: 0; }
+.private-gpx-preview {
+  min-width: 0;
+}

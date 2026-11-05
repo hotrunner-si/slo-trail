@@ -13,10 +13,23 @@ const emit = defineEmits<{ 'distance-change': [distanceKm: number] }>()
 const config = useRuntimeConfig()
 const mapEl = ref<HTMLElement | null>(null)
 const error = ref('')
+const gesturesLocked = ref(true)
 let mb: typeof import('mapbox-gl') | null = null
 let map: import('mapbox-gl').Map | null = null
 let route: [number, number][] = []
 let profile: NonNullable<GpxData['detailedProfile']> = []
+
+function toggleGestures() {
+  gesturesLocked.value = !gesturesLocked.value
+  map?.setCooperativeGestures(gesturesLocked.value)
+}
+
+function fitRoute() {
+  if (!map || !mb || !route.length) return
+  const bounds = new mb.LngLatBounds()
+  route.forEach(([lat, lng]) => bounds.extend([lng, lat]))
+  map.fitBounds(bounds, { padding: 28, maxZoom: 15 })
+}
 
 function nearestIndexForDistance(distanceKm: number) {
   let nearestIndex = 0
@@ -184,6 +197,7 @@ onMounted(async () => {
     mb.default.accessToken = token
     map = new mb.default.Map({
       container: mapEl.value,
+      cooperativeGestures: true,
       style: String(config.public.runnerMapboxStyle || config.public.mapboxStyle),
       center: props.data.route?.length
         ? [props.data.route[0]![1], props.data.route[0]![0]]
@@ -236,5 +250,6 @@ onBeforeUnmount(() => map?.remove())
       :aria-label="`Zemljevid ture ${title}`"
     />
     <p v-if="error" class="runner-gpx-map-error">{{ error }}</p>
+    <MapGestureControls :locked="gesturesLocked" @reset="fitRoute" @toggle="toggleGestures" />
   </div>
 </template>

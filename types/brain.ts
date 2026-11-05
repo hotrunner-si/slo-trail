@@ -136,7 +136,13 @@ export interface BrainQuestion {
   year: number | null
   conditions: string | null
 }
+export interface BrainChatPrompt {
+  id: number
+  prompt: string
+}
 export interface BrainChatResult {
+  mode?: 'database' | 'general' | 'web' | 'missing'
+  searchSuggestionsHtml?: string | null
   answer: string
   clarification: string | null
   summary: string | null

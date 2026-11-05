@@ -94,13 +94,6 @@ async function selectFromMap(id: string) {
 
 <template>
   <div class="course-map-shell">
-    <header class="course-map-header">
-      <div>
-        <span class="eyebrow">Interaktivni prikaz tras</span
-        ><strong>{{ selectedDistance?.name || 'Vse trase dogodka' }}</strong>
-      </div>
-    </header>
-
     <div class="course-map-layout">
       <aside ref="routesList" class="course-map-routes-list" aria-label="Trase dogodka">
         <button

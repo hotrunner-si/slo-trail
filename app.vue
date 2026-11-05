@@ -13,9 +13,10 @@ updateAppConfig({
 </script>
 
 <template>
-  <div>
+  <div :class="{ 'public-site': !pageRoute.path.startsWith('/mozgan') }">
     <AppHeader />
     <main><NuxtPage /></main>
     <AppFooter v-if="pageRoute.path !== '/mozgan' && !pageRoute.path.startsWith('/mozgan/')" />
+    <MobilePublicNav v-if="!pageRoute.path.startsWith('/mozgan')" />
   </div>
 </template>

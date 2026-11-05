@@ -88,7 +88,12 @@ export const articles: Article[] = [
       },
       {
         attribution: 'Tomaž Oblak — izmišljena demo-izjava',
-        text: 'Na daljši trasi sem si želel predvsem enakomerno razporediti moči. Zadovoljen sem, da sem prišel v cilj med najboljšo deseterico. Takšna tekma mi da veliko izkušenj in motivacije za naslednje izzive.',
+        text: [
+          'To je bila letos nekako glavna tekma sezone, na katero so treningi kljub manjšim vmesnim poškodbam potekali gladko.',
+          'Na štartu sem držal svoj tempo do Valvasorja, čeprav sem bil v nekoliko previsoki coni srčnega utripa, ki se je kasneje stabilizirala. Vedel sem, da bom imel na koncu več moči, če začnem pametno. Tudi strme klance sem prehodil, kar sicer ni v moji navadi.',
+          'Proti Golici sem že začel loviti tekmovalce pred seboj. Pri spustu z Golice sem dvakrat kar dobro padel, pri čemer sem si odrgnil tudi dlan, vendar zaradi tega nisem izgubil preveč časa. Proti Dovjemu sem pridobil približno dve mesti, največjo krizo pa doživel na kolesarski poti proti Gozdu Martuljku.',
+          'Na zadnji okrepčevalnici sem predvsem zaradi podpore dobil nov zagon. Proti Srednjemu Vrhu sem ujel še enega tekmovalca, nato pa odlično tekel vse do Kranjske Gore. Če bi bila proga še kakšen kilometer daljša, bi morda ujel še koga.',
+        ].join('\n\n'),
       },
     ],
     sources: [

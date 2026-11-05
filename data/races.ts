@@ -449,19 +449,19 @@ export const races: Race[] = [
         elevation: 360,
       },
       {
-        id: 'la-primafit-25km',
-        label: '27.7K',
-        name: 'La Primafit 25km',
-        km: 27.7,
-        elevation: 830,
+        id: 'la-primafit-20km',
+        label: '20K',
+        name: 'Laprimafit 20 km',
+        km: 22.0,
+        elevation: 500,
       },
-      { id: 'ford-35km', label: '32.1K', name: 'Ford 35km', km: 32.1, elevation: 1260 },
+      { id: 'ford-30km', label: '30K', name: 'Ford 30 km', km: 30.0, elevation: 870 },
       {
-        id: 'i-feel-slovenia-50km',
-        label: '52.1K',
-        name: 'I Feel Slovenia 50km',
-        km: 52.1,
-        elevation: 2100,
+        id: 'i-feel-slovenia-40km',
+        label: '40K',
+        name: 'I Feel Slovenia 40 km',
+        km: 41.0,
+        elevation: 1550,
       },
       { id: 'vertikal', label: '2K', name: 'Vertikal', km: 2, elevation: 200 },
     ],
@@ -1047,11 +1047,11 @@ const schedule: Record<
     dateEnd: '2027-06-20',
     dateStatus: 'confirmed',
   },
-  // 2026-06-26–2026-06-28: https://soca-outdoor.com/
+  // 2027 date confirmed by the event organizer.
   'soca-outdoor-festival': {
     date: '2027-06-25',
     dateEnd: '2027-06-27',
-    dateStatus: 'estimated',
+    dateStatus: 'confirmed',
   },
   // 2026-07-04: https://visitnovomesto.si/en/event/gas-na-gace-2026/
   'gas-na-gace': { date: '2027-07-03', dateStatus: 'estimated' },
@@ -1072,15 +1072,16 @@ const schedule: Record<
   'trail-ljubljana': { date: '2027-09-10', dateEnd: '2027-09-12', dateStatus: 'confirmed' },
   // 2026-09-18: https://visit-prlekija.eu/dogodki-in-zabava/10-lotmerski-trail-tek
   'lotmerski-trail-tek': { date: '2027-09-17', dateStatus: 'estimated' },
-  // 2026-09-18–2026-09-20: https://julianalps.utmb.world/
+  // 2027-09-17–2027-09-19: https://julianalps.utmb.world/en
   'julian-alps-trail-run-by-utmb': {
     date: '2027-09-17',
     dateEnd: '2027-09-19',
-    dateStatus: 'estimated',
+    dateStatus: 'confirmed',
   },
   // 2026-10-10: https://ponikva4trail.si/razpis/
   ponikva4trail: { date: '2027-10-09', dateStatus: 'estimated' },
-  'caven-run': { date: '2026-10-24', dateStatus: 'confirmed' },
+  // Organizator je dogodek prestavil z 24. 10. na 21. 11.: https://www.caven.run/sl/
+  'caven-run': { date: '2026-11-21', dateStatus: 'confirmed' },
   // 2026-12-05: https://velenjetrail.si/trase/
   'velenje-trail': { date: '2027-12-04', dateStatus: 'estimated' },
   'obala-ultra-trail': { date: '2026-11-06', dateEnd: '2026-11-08', dateStatus: 'confirmed' },
@@ -1131,10 +1132,12 @@ for (const race of races)
     if (rawFile) distance.gpx = { file: `/gpx/races/${race.slug}/${distance.id}.json`, rawFile }
   }
 races.sort((a, b) => {
-  const aUndated = a.dateStatus === 'estimated' || !a.date || Number.isNaN(Date.parse(a.date))
-  const bUndated = b.dateStatus === 'estimated' || !b.date || Number.isNaN(Date.parse(b.date))
+  const aUndated = !/^\d{4}-\d{2}-\d{2}$/.test(a.date)
+  const bUndated = !/^\d{4}-\d{2}-\d{2}$/.test(b.date)
   if (aUndated !== bUndated) return aUndated ? 1 : -1
-  return aUndated ? a.name.localeCompare(b.name, 'sl') : a.date.localeCompare(b.date)
+  return aUndated
+    ? a.name.localeCompare(b.name, 'sl')
+    : a.date.localeCompare(b.date) || a.name.localeCompare(b.name, 'sl')
 })
 
 export const getRace = (slug: string) => races.find((race) => race.slug === slug)
