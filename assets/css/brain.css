@@ -1,7 +1,3 @@
-.brain-app.brain-admin-mode .dashboard-workspace {
-  background: #f7f3e9;
-}
-
 /* The overview is a dedicated conversation surface; other workspace pages keep their layout. */
 .brain-app.brain-overview-mode {
   height: calc(100dvh - var(--brain-header-height));
@@ -1153,12 +1149,31 @@
   }
 }
 
-/* Align every Možgan screen with the same content edges as the site header. */
+/* Keep backgrounds and chat scrolling full width; constrain only page content. */
+.brain-app {
+  background: #fcfcfa;
+}
 .brain-app .dashboard-workspace {
-  width: var(--shell);
+  width: 100%;
   max-width: 100%;
   margin-inline: auto;
   padding-inline: 0;
+}
+.brain-app:not(.brain-overview-mode) {
+  height: auto;
+  min-height: calc(100dvh - var(--brain-header-height));
+}
+.brain-app:not(.brain-overview-mode) .dashboard-workspace {
+  display: flex;
+  flex-direction: column;
+}
+.brain-app:not(.brain-overview-mode) .brain-session-bar,
+.brain-app:not(.brain-overview-mode) .brain-screen {
+  width: var(--shell);
+  margin-inline: auto;
+}
+.brain-app:not(.brain-overview-mode) .brain-screen {
+  overflow: visible;
 }
 .brain-app .brain-screen,
 .brain-app .brain-screen > * {

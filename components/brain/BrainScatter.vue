@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { formatSlovenianCount, slovenianCountForms } from '~/utils/slovenianCount'
 import {
   effortBandPolygon,
   trailCategories,
@@ -103,41 +104,11 @@ function key(event: KeyboardEvent) {
         <h2>{{ title || 'Slovenske trase' }}</h2>
         <p class="scatter-subtitle">Razdalja, vzpon in značaj vsake trase.</p>
       </div>
-      <span class="data-chip">{{ visible.length }} / {{ valid.length }} tras</span>
+      <span class="data-chip"
+        >{{ visible.length }} /
+        {{ formatSlovenianCount(valid.length, slovenianCountForms.route) }}</span
+      >
     </header>
-    <div class="scatter-tools">
-      <div class="scatter-zoom-buttons">
-        <button
-          type="button"
-          aria-label="Oddalji graf"
-          :disabled="zoom <= 1"
-          @click="setZoom(zoom / 1.3)"
-        >
-          −</button
-        ><output aria-live="polite">{{ number(zoom) }}×</output
-        ><button
-          type="button"
-          aria-label="Približaj graf"
-          :disabled="zoom >= 16"
-          @click="setZoom(zoom * 1.3)"
-        >
-          +</button
-        ><button type="button" class="scatter-reset" :disabled="zoom <= 1" @click="setZoom(1)">
-          Vse trase
-        </button>
-      </div>
-      <label class="scatter-range"
-        >Približanje
-        <input
-          type="range"
-          min="1"
-          max="16"
-          step="0.1"
-          :value="zoom"
-          aria-label="Približanje obeh osi grafa"
-          @input="setZoom(Number(($event.target as HTMLInputElement).value))"
-      /></label>
-    </div>
     <svg
       viewBox="0 0 700 390"
       role="group"
@@ -191,7 +162,7 @@ function key(event: KeyboardEvent) {
           v-for="point in visible"
           :key="point.key"
           :href="point.raceSlug ? `/races/${point.raceSlug}` : undefined"
-          :aria-label="`${point.raceName}, ${point.label}, ${number(point.km)} kilometrov, ${number(point.elevation)} metrov vzpona`"
+          :aria-label="`${point.raceName}, ${point.label}, ${number(point.km)} km, ${number(point.elevation)} m vzpona`"
           @mouseenter="selected = point"
           @focusin="selected = point"
         >
@@ -236,32 +207,11 @@ function key(event: KeyboardEvent) {
         <text x="664" y="379" text-anchor="end">RAZDALJA / km</text>
       </g>
     </svg>
-    <div class="scatter-selection" aria-live="polite">
-      <template v-if="selected"
-        ><strong>{{ selected.raceName }}</strong
-        ><span
-          >{{ selected.label }} · {{ number(selected.km) }} km · {{ number(selected.elevation) }} m+
-          · {{ trailCategory(selected).label }}</span
-        ></template
-      ><template v-else
-        ><strong>{{ visible.length ? 'Razišči trase' : 'V tem približanju ni tras' }}</strong
-        ><span>{{
-          visible.length
-            ? 'Premakni se na točko za podatke; klik odpre tekmo.'
-            : 'Oddalji graf ali izberi »Vse trase«.'
-        }}</span></template
-      >
-    </div>
     <div class="trail-legend">
       <span v-for="category in trailCategories" :key="category.id"
         ><i :style="{ background: category.color }" />{{ category.label }}</span
       >
     </div>
-    <p class="chart-note">
-      Ctrl + drsenje ali ščip z dvema prstoma približa obe osi. Navadno drsenje premika stran.
-      Pasovi: km-effort = km + vzpon/100.
-      {{ note }}
-    </p>
     <p v-if="!valid.length" class="empty-panel">Za prikaz še ni podatkov o razdalji in vzponu.</p>
   </section>
 </template>
@@ -272,52 +222,6 @@ function key(event: KeyboardEvent) {
 .scatter-subtitle {
   font-size: 11px;
   margin: 5px 0 0;
-}
-.scatter-tools {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 16px;
-}
-.scatter-zoom-buttons {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-}
-.scatter-zoom-buttons button {
-  background: #eef3e8;
-  color: #315736;
-  border: 1px solid #cfdcc5;
-  padding: 5px 11px;
-  font-size: 14px;
-  min-width: 32px;
-  min-height: 32px;
-}
-.scatter-zoom-buttons button:disabled {
-  opacity: 0.4;
-}
-.scatter-zoom-buttons .scatter-reset {
-  font-size: 11px;
-  margin-left: 4px;
-}
-.scatter-zoom-buttons output {
-  font-size: 11px;
-  min-width: 38px;
-  text-align: center;
-  font-variant-numeric: tabular-nums;
-}
-.scatter-range {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  font-size: 10px;
-  color: #6a7e65;
-}
-.scatter-range input {
-  width: 100px;
-  accent-color: #315736;
 }
 .trail-scatter > svg {
   width: 100%;
@@ -355,19 +259,6 @@ function key(event: KeyboardEvent) {
   stroke: #244035;
   stroke-width: 1.5;
 }
-.scatter-selection {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  min-height: 42px;
-  font-size: 11px;
-  border-left: 3px solid #bdd39c;
-  padding: 4px 10px;
-}
-.scatter-selection span {
-  color: #74816e;
-  font-size: 10px;
-}
 .trail-legend {
   display: flex;
   flex-wrap: wrap;
@@ -386,15 +277,6 @@ function key(event: KeyboardEvent) {
   border-radius: 50%;
 }
 @media (max-width: 700px) {
-  .scatter-tools {
-    gap: 8px;
-  }
-  .scatter-range {
-    width: 100%;
-  }
-  .scatter-range input {
-    flex: 1;
-  }
   .scatter-axis text {
     font-size: 18px;
   }

@@ -4,8 +4,8 @@ const route = useRoute()
 const isBrain = computed(() => route.path === '/mozgan' || route.path.startsWith('/mozgan/'))
 const brainNav = [
   { label: 'Chat', to: '/mozgan' },
-  { label: 'Analitika', to: '/mozgan/analitika' },
   { label: 'Baza znanja', to: '/mozgan/baza' },
+  { label: 'Analitika', to: '/mozgan/analitika' },
   { label: 'Moj profil', to: '/profil' },
 ]
 const nav = computed(() => (isBrain.value ? brainNav : siteContent.site.navigation))
@@ -28,7 +28,10 @@ const isCurrentBrainPage = (path: string) => route.path.replace(/\/$/, '') === p
           v-for="item in nav"
           :key="item.to"
           :to="item.to"
-          :class="{ 'brain-link-current': isBrain && isCurrentBrainPage(item.to) }"
+          :class="{
+            'brain-link-current': isBrain && isCurrentBrainPage(item.to),
+            'brain-profile-link': isBrain && item.to === '/profil',
+          }"
           :aria-current="isBrain && isCurrentBrainPage(item.to) ? 'page' : undefined"
           >{{ item.label }}</NuxtLink
         >
@@ -71,6 +74,10 @@ const isCurrentBrainPage = (path: string) => route.path.replace(/\/$/, '') === p
 .brain-header .main-nav a:after {
   right: 100%;
 }
+.brain-header .main-nav a.brain-profile-link {
+  border-left: 1px solid var(--line);
+  padding-left: 20px;
+}
 .brain-header .main-nav a:hover:after,
 .brain-header .main-nav a.brain-link-current:after {
   right: 0;
@@ -95,6 +102,9 @@ const isCurrentBrainPage = (path: string) => route.path.replace(/\/$/, '') === p
   .brain-header .main-nav {
     gap: 14px;
     font-size: 0.74rem;
+  }
+  .brain-header .main-nav a.brain-profile-link {
+    padding-left: 14px;
   }
   .brain-return-link {
     padding-left: 14px;
@@ -140,6 +150,9 @@ const isCurrentBrainPage = (path: string) => route.path.replace(/\/$/, '') === p
   }
   .brain-header .main-nav a:after {
     bottom: -3px;
+  }
+  .brain-header .main-nav a.brain-profile-link {
+    padding-left: clamp(9px, 3vw, 22px);
   }
   .brain-header .brain-return-link {
     grid-area: back;

@@ -26,12 +26,17 @@ export async function useBrainData() {
       articleSlug: article.slug,
     })),
   )
-  const buckets = [
-    { label: 'Do 20 km', count: distances.filter((d) => d.km <= 20).length },
-    { label: '20–50 km', count: distances.filter((d) => d.km > 20 && d.km <= 50).length },
-    { label: '50–100 km', count: distances.filter((d) => d.km > 50 && d.km <= 100).length },
-    { label: 'Nad 100 km', count: distances.filter((d) => d.km > 100).length },
-  ]
+  const knownDistances = distances.filter((d) => Number.isFinite(d.km) && d.km > 0)
+  const distanceLimit = Math.max(
+    20,
+    Math.ceil((Math.max(0, ...knownDistances.map((d) => d.km)) + 0.01) / 20) * 20,
+  )
+  const buckets = Array.from({ length: distanceLimit / 2 }, (_, index) => ({
+    start: index * 2,
+    end: (index + 1) * 2,
+    count: 0,
+  }))
+  for (const distance of knownDistances) buckets[Math.floor(distance.km / 2)]!.count++
   const calendar = Object.entries(
     content.races
       .filter((r) => r.dateStatus === 'confirmed' && /^\d{4}-\d{2}-\d{2}$/.test(r.date))

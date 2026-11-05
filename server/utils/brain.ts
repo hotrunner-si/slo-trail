@@ -12,7 +12,7 @@ export function brainConfig(event: H3Event) {
     supabaseSecretKey: config.supabaseSecretKey || process.env.SUPABASE_SECRET_KEY || '',
     openaiApiKey: config.openaiApiKey || process.env.OPENAI_API_KEY || '',
     geminiApiKey: config.geminiApiKey || process.env.GEMINI_API_KEY || '',
-    geminiModel: config.geminiModel || process.env.GEMINI_MODEL || 'gemini-3.6-flash',
+    geminiModel: config.geminiModel || process.env.GEMINI_MODEL || 'gemini-3.5-flash-lite',
     brainAiModel: config.brainAiModel || process.env.BRAIN_AI_MODEL || '',
     brainEmbeddingModel: config.brainEmbeddingModel || process.env.BRAIN_EMBEDDING_MODEL || 'gemini-embedding-001',
     brainAiZeroRetention:

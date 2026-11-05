@@ -2,6 +2,7 @@
 import '~/assets/css/brain.css'
 const route = useRoute()
 const isOverview = computed(() => route.path.replace(/\/$/, '') === '/mozgan')
+const isAnalytics = computed(() => route.path.replace(/\/$/, '') === '/mozgan/analitika')
 const { signedIn, admin, saving } = await useBrainSession()
 const currentLabel = computed(() => {
   const path = route.path.replace(/\/$/, '')
@@ -22,7 +23,7 @@ const currentLabel = computed(() => {
     }"
   >
     <div class="dashboard-workspace">
-      <div v-if="!isOverview" class="brain-session-bar">
+      <div v-if="!isOverview && !isAnalytics" class="brain-session-bar">
         <NuxtLink to="/profil">{{
           signedIn ? 'Prijavljen' : 'Prijava / ustvari račun'
         }}</NuxtLink>

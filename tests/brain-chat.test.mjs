@@ -8,7 +8,8 @@ import {
 } from '../server/utils/brain-chat-policy.ts'
 import { parseBrainGrounding } from '../server/utils/brain-grounding.ts'
 import { pickBrainPrompts } from '../server/utils/brain-prompts.ts'
-import { brainChatHistory } from '../utils/brainChat.ts'
+import { brainChatHistory, brainChatRetrievalQuery } from '../utils/brainChat.ts'
+import { brainSemanticSearch } from '../server/utils/brain-semantic.ts'
 import {
   brainCatalogSources,
   brainKnowledge,
@@ -70,6 +71,7 @@ import {
   brainChatRequest,
   brainChatSourceFallback,
   brainChatTimeout,
+  brainChatQuotaMessage,
 } from '../server/utils/brain-chat-request.ts'
 
 test('chat calls share a deadline instead of restarting the hosting timeout on retries', () => {
@@ -78,6 +80,73 @@ test('chat calls share a deadline instead of restarting the hosting timeout on r
   assert.equal(brainChatTimeout(deadline, 30_000), 15_000)
   assert.equal(brainChatTimeout(deadline, 43_000), 2_000)
   assert.throws(() => brainChatTimeout(deadline, 44_500), { statusCode: 503 })
+})
+
+test('retrieval includes the preceding race and distance when the user asks a follow-up', () => {
+  const messages = [
+    { role: 'user', text: 'Ali ima Triglav Trail Run 101 km 6200 višincev?' },
+    { role: 'assistant', text: 'V zbirki je navedenih 6200 m vzpona.' },
+    { role: 'user', text: 'In koliko je dolga ta razdalja?' },
+  ]
+  const query = brainChatRetrievalQuery(messages)
+  assert.match(query, /Triglav Trail Run 101 km/)
+  assert.ok(query.endsWith(messages.at(-1).text))
+  assert.ok(query.length <= 3000)
+  assert.equal(brainChatRetrievalQuery([messages[0]]), messages[0].text)
+})
+
+test('daily provider quota is distinguished from temporary throttling', () => {
+  assert.match(
+    brainChatQuotaMessage({
+      data: {
+        error: {
+          details: [
+            { violations: [{ quotaId: 'GenerateRequestsPerDayPerProjectPerModel-FreeTier' }] },
+          ],
+        },
+      },
+    }),
+    /Dnevna kvota/,
+  )
+  assert.ok(!brainChatQuotaMessage({}).includes('Dnevna'))
+})
+
+test('vector retrieval retains all 25 neighbors in distance order without lexical reranking', async () => {
+  const previous = {
+    config: globalThis.brainConfig,
+    service: globalThis.brainService,
+    fetch: globalThis.fetch,
+  }
+  const neighbors = Array.from({ length: 25 }, (_, i) => ({
+    id: String(i),
+    title: i === 24 ? 'literal matching question' : 'Semantically related',
+    similarity: 1 - i / 100,
+  }))
+  const calls = []
+  const service = {
+    from() {
+      const q = { select: () => q, eq: () => q, not: async () => ({ count: 25, error: null }) }
+      return q
+    },
+    async rpc(name, params) {
+      calls.push({ name, params })
+      return { data: neighbors, error: null }
+    },
+  }
+  globalThis.brainConfig = () => ({ geminiApiKey: 'test-key' })
+  globalThis.brainService = () => service
+  globalThis.fetch = async () =>
+    new Response(JSON.stringify({ embedding: { values: [1, ...Array(1535).fill(0)] } }))
+  try {
+    const result = await brainSemanticSearch({}, 'literal matching question', { publicOnly: true })
+    assert.deepEqual(result, neighbors)
+    assert.equal(calls[0].name, 'brain_nearest_sources')
+    assert.equal(calls[0].params.p_public_only, true)
+  } finally {
+    globalThis.brainConfig = previous.config
+    globalThis.brainService = previous.service
+    globalThis.fetch = previous.fetch
+  }
 })
 
 test('unavailable chat shows stored evidence with citations, excluding discussions and private/unverified material', () => {
@@ -342,7 +411,7 @@ test('chat retrieves a larger official candidate pool before selecting model con
     )
     assert.equal(result.sources[0].id, 'equipment')
     assert.equal(result.sources[0].valid_until, '2026-12-31')
-    assert.ok(result.sources.length <= 12)
+    assert.ok(result.sources.length <= 25)
     assert.deepEqual(
       calls.filter((c) => c[0] === 'from').map((c) => c[1]),
       ['brain_sources', 'brain_shared_conversations'],

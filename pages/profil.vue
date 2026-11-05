@@ -409,7 +409,7 @@ onMounted(async () => {
         </div>
         <div class="account-hero-actions">
           <button :disabled="busy" @click="setView('edit')">
-            Uredi <span aria-hidden="true">↗</span></button
+            Uredi <span aria-hidden="true"><IconArrowUpRight /></span></button
           ><button class="account-quiet" :disabled="busy" @click="logout">Odjava</button>
         </div>
       </section>
@@ -482,7 +482,7 @@ onMounted(async () => {
               v-if="linkedRunner"
               :to="'/runners/' + linkedRunner"
               class="account-profile-link"
-              >Odpri profil tekača ↗</NuxtLink
+              >Odpri profil tekača <IconArrowUpRight /></NuxtLink
             >
             <button
               v-if="linkedRunner && !confirmUnlink"
@@ -500,7 +500,7 @@ onMounted(async () => {
               <button :disabled="busy" @click="confirmUnlink = false">Prekliči</button>
             </div>
             <NuxtLink v-if="!linkedRunner" to="/runners/nov" class="account-profile-link"
-              >{{ profile ? 'Odpri predlog profila tekača' : 'Ustvari profil tekača' }} ↗</NuxtLink
+              >{{ profile ? 'Odpri predlog profila tekača' : 'Ustvari profil tekača' }} <IconArrowUpRight /></NuxtLink
             >
             <button v-if="!linkedRunner" class="account-text-button" @click="linkOpen = !linkOpen">
               Povezava z obstoječim profilom tekača
@@ -768,7 +768,7 @@ onMounted(async () => {
           </section>
         </div>
         <BrainSharedConversations v-if="!recovery" />
-        <NuxtLink v-if="admin" to="/mozgan/skrbnik">Odpri skrbniški pregled ↗</NuxtLink></template
+        <NuxtLink v-if="admin" to="/mozgan/skrbnik">Odpri skrbniški pregled <IconArrowUpRight /></NuxtLink></template
       >
     </template>
   </div>

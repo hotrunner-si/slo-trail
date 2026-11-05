@@ -24,8 +24,7 @@ export async function brainSemanticSearch(
   if (error || !count) return null
   try {
     const vector = await createBrainVector(settings, query.slice(-3000), 'query')
-    const result = await client.rpc('brain_hybrid_sources', {
-      p_query: query.slice(-300),
+    const result = await client.rpc('brain_nearest_sources', {
       p_vector: JSON.stringify(vector),
       p_model: settings.identity,
       p_kind: options.kind || '',
@@ -34,7 +33,7 @@ export async function brainSemanticSearch(
       p_entity: options.entity || null,
     })
     if (result.error) throw new Error('Vector lookup unavailable')
-    return result.data as (BrainSource & { hybrid_score: number })[]
+    return result.data as (BrainSource & { distance: number })[]
   } catch {
     // No query text, keys, user data or provider responses in diagnostics.
     console.warn('[brain-search] semantic lookup unavailable; using keyword search')

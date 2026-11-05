@@ -14,7 +14,7 @@
     "content:export": "node scripts/export-content.mjs",
     "content:upload-assets": "node scripts/upload-content-assets.mjs",
     "content:verify": "node scripts/verify-content.mjs",
-    "test:brain": "node --test tests/brain-safety.test.mjs tests/brain-chat.test.mjs tests/brain-share.test.mjs",
+    "test:brain": "node --test tests/brain-safety.test.mjs tests/brain-chat.test.mjs tests/brain-share.test.mjs tests/brain-knowledge.test.mjs",
     "typecheck": "nuxt typecheck",
     "format": "prettier --write ."
   },

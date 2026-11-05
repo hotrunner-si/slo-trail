@@ -61,7 +61,9 @@ async function submit() {
       aria-haspopup="dialog"
       @click="open"
     >
-      <span aria-hidden="true">{{ sharedId ? '↗' : '◉' }}</span>
+      <span aria-hidden="true"
+        ><IconArrowUpRight v-if="sharedId" /><template v-else>◉</template></span
+      >
       {{ sharedId ? 'Deljen posnetek' : 'Zaseben pogovor' }} <span aria-hidden="true">⌄</span>
     </button>
     <dialog
@@ -106,8 +108,8 @@ async function submit() {
             novejši posnetek, najprej umakni deljenje z izbiro »Zaseben pogovor«.
           </p>
           <NuxtLink :to="`/mozgan/pogovor/${sharedId}`" target="_blank"
-            >Odpri deljeni posnetek ↗</NuxtLink
-          >
+            >Odpri deljeni posnetek <IconArrowUpRight
+          /></NuxtLink>
         </div>
         <div v-else-if="visibility === 'shared'" class="share-preview">
           <p>
@@ -142,7 +144,8 @@ async function submit() {
             <p>
               Za deljenje se prijavi. Prijava se odpre v novem zavihku, da ta pogovor ostane odprt.
             </p>
-            <a href="/profil" target="_blank" rel="noopener noreferrer">Odpri prijavo ↗</a
+            <a href="/profil" target="_blank" rel="noopener noreferrer"
+              >Odpri prijavo <IconArrowUpRight /></a
             ><button type="button" @click="refresh()">Prijavil sem se — preveri prijavo</button>
           </div>
           <p class="share-small">

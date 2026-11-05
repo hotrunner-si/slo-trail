@@ -1,9 +1,5 @@
 import { z } from 'zod'
-import {
-  brainQuestionSearchQuery,
-  rankBrainSources,
-  rankBrainHybridSources,
-} from '../../utils/brain-knowledge'
+import { brainQuestionSearchQuery, rankBrainSources } from '../../utils/brain-knowledge'
 import type { BrainSource } from '../../../types/brain'
 import { brainSemanticSearch } from '../../utils/brain-semantic'
 export default defineEventHandler(async (event) => {
@@ -39,7 +35,7 @@ export default defineEventHandler(async (event) => {
       ? { data: semantic, error: null }
       : await client.rpc('brain_search_filtered', params)
   brainCheck(error)
-  if (semantic !== null) data = rankBrainHybridSources(semantic, body.query, 60)
+  // Keep the database's cosine-distance order; these are the actual nearest 25.
   // A sentence is an AND query in websearch_to_tsquery. If it finds nothing,
   // retrieve individual meaningful terms, retaining the same authenticated RPC/filters.
   const expanded = brainQuestionSearchQuery(body.query)
@@ -65,7 +61,7 @@ export default defineEventHandler(async (event) => {
     records: data,
     relations: relations || [],
     claims: claims || [],
-    mode: semantic !== null ? 'hybrid' : 'keyword',
+    mode: semantic !== null ? 'vector' : 'keyword',
     semanticNote:
       body.semantic && body.query.trim() && semantic === null
         ? 'Pomenska storitev ni na voljo; prikazani so zadetki po besedah.'

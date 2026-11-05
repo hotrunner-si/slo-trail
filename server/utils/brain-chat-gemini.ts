@@ -16,6 +16,7 @@ import {
   brainChatUpstreamStatus,
   brainChatSourceFallback,
   brainChatTimeout,
+  brainChatQuotaMessage,
 } from './brain-chat-request'
 
 interface GeminiReply {
@@ -64,7 +65,7 @@ async function geminiRequest(event: H3Event, body: Record<string, unknown>) {
       statusCode: status === 429 ? 429 : 503,
       statusMessage:
         status === 429
-          ? 'Chat je dosegel omejitev zahtev ali porabe. Poskusi pozneje.'
+          ? brainChatQuotaMessage(error)
           : status === 400 || status === 401 || status === 403
             ? 'Chat trenutno ni na voljo. Poskusi pozneje.'
             : status === 404
@@ -196,7 +197,14 @@ export async function brainGeminiChat(
   } catch (error) {
     if ([429, 503, 504].includes(brainChatUpstreamStatus(error))) {
       const fallback = brainChatSourceFallback(sources)
-      if (fallback) return fallback
+      if (fallback)
+        return {
+          ...fallback,
+          answer:
+            brainChatUpstreamStatus(error) === 429
+              ? `${(error as { statusMessage?: string }).statusMessage || 'Ponudnik AI je dosegel omejitev porabe.'}\n\n${fallback.answer}`
+              : fallback.answer,
+        }
     }
     throw error
   }

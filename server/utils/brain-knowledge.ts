@@ -245,12 +245,15 @@ export async function brainKnowledge(
   event: H3Event,
   messages: BrainChatMessage[],
   entity: string | null,
+  retrievalQuery?: string,
 ) {
   const users = messages.filter((m) => m.role === 'user')
-  const query = users
-    .slice(-3)
-    .map((m) => m.text)
-    .join(' ')
+  const query =
+    retrievalQuery ||
+    users
+      .slice(-3)
+      .map((m) => m.text)
+      .join(' ')
   const latest = users.at(-1)?.text || ''
   let available = true
   const sources: BrainSource[] = []
@@ -327,9 +330,22 @@ export async function brainKnowledge(
   if (semantic.status === 'fulfilled' && semantic.value) sources.push(...semantic.value)
   const shared = results[2]
   if (shared.status === 'rejected') available = false
+  // Never trim or lexically rerank the nearest 25 before passing them to the model.
+  if (semantic.status === 'fulfilled' && semantic.value?.length) {
+    return {
+      sources: [
+        ...semantic.value.map((s) => ({
+          ...s,
+          url: s.url || (s.race_slug ? `/races/${s.race_slug}` : null),
+        })),
+        ...(shared.status === 'fulfilled' ? shared.value : []),
+      ],
+      available,
+    }
+  }
   const primary = [...new Map(sources.map((s) => [s.id, s])).values()]
   const discussions = shared.status === 'fulfilled' ? shared.value : []
-  const limit = discussions.length ? 9 : 12
+  const limit = discussions.length ? 22 : 25
   const ranked = rankBrainHybridSources(primary, latest, limit)
   // Preserve conversational context for follow-ups that omit the race name.
   const selected = [
@@ -338,7 +354,7 @@ export async function brainKnowledge(
     ).values(),
   ].slice(0, limit)
   return {
-    sources: [...selected, ...discussions].slice(0, 12),
+    sources: [...selected, ...discussions].slice(0, 25),
     available,
   }
 }

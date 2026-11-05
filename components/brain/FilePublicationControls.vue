@@ -70,7 +70,10 @@ async function act(action: 'publish' | 'unpublish' | 'delete') {
     <p v-if="published" class="publication-state">
       Javno objavljeno<template v-if="published.source_path !== file.path">
         · prejšnja različica datoteke</template
-      >. <NuxtLink :to="'/runners/' + published.runner_slug">Odpri profil ↗</NuxtLink>
+      >.
+      <NuxtLink :to="'/runners/' + published.runner_slug"
+        >Odpri profil <IconArrowUpRight
+      /></NuxtLink>
     </p>
     <p v-else>Zasebno · na tekaškem profilu še ni objavljeno.</p>
     <p v-if="file.kind === 'gpx' && review">

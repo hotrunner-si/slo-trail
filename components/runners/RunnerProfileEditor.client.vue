@@ -50,7 +50,7 @@ async function save() {
   <div v-if="canEdit" class="runner-owner-editor">
     <div class="runner-owner-actions">
       <button v-if="!editing" class="button runner-edit-button" @click="open">
-        Uredi profil <span aria-hidden="true">↗</span>
+        Uredi profil <span aria-hidden="true"><IconArrowUpRight /></span>
       </button>
     </div>
     <p v-if="message" role="status">{{ message }}</p>
@@ -59,8 +59,8 @@ async function save() {
       <p>Ti podatki bodo javno vidni na tekaškem profilu. Zasebnih datotek tu ne objavljamo.</p>
       <p>
         <NuxtLink to="/profil?view=edit"
-          >Sliko in objave GPX upravljaj v svojem računu ↗</NuxtLink
-        >
+          >Sliko in objave GPX upravljaj v svojem računu <IconArrowUpRight
+        /></NuxtLink>
       </p>
       <p v-if="error" role="alert">{{ error }}</p>
       <label

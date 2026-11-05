@@ -34,6 +34,18 @@ export function brainChatUpstreamStatus(error: unknown) {
   return e?.response?.status || e?.statusCode || e?.status || 0
 }
 
+export function brainChatQuotaMessage(error: unknown) {
+  const data = (
+    error as { data?: { error?: { details?: { violations?: { quotaId?: string }[] }[] } } }
+  )?.data
+  const daily = data?.error?.details?.some((detail) =>
+    detail.violations?.some((v) => /PerDay/i.test(v.quotaId || '')),
+  )
+  return daily
+    ? 'Dnevna kvota ponudnika AI za ta model je porabljena. Chat bo spet na voljo po ponastavitvi kvote.'
+    : 'Ponudnik AI je dosegel omejitev zahtev ali porabe. Poskusi pozneje.'
+}
+
 /** Retry only transient failures; never repeat rejected requests or exhausted quotas. */
 export async function brainChatRequest<T>(
   send: () => Promise<T>,

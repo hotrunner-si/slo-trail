@@ -10,10 +10,13 @@ export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig(event)
   let settings: { mailer_autoconfirm?: boolean }
   try {
-    settings = await $fetch(`${config.public.supabaseUrl}/auth/v1/settings`, {
-      headers: { apikey: config.public.supabasePublishableKey },
-      timeout: 8000,
-    })
+    settings = await $fetch<{ mailer_autoconfirm?: boolean }>(
+      `${config.public.supabaseUrl}/auth/v1/settings`,
+      {
+        headers: { apikey: config.public.supabasePublishableKey },
+        timeout: 8000,
+      },
+    )
   } catch {
     throw createError({
       statusCode: 503,

@@ -1,142 +1,247 @@
 <script setup lang="ts">
-import { trailCategory, trailHistogram, trailMonths, type TrailPoint } from '~/utils/trailAnalytics'
+import {
+  trailCategory,
+  trailDescent,
+  trailHighestPoint,
+  type TrailPoint,
+} from '~/utils/trailAnalytics'
 const props = defineProps<{ points: TrailPoint[] }>()
-const distances = computed(() =>
-  trailHistogram(props.points, [0, 10, 20, 30, 40, 50, 60, 80, 100, 120, 160], (p) => p.km),
+const loadGpx = useGpxData()
+const previews = ref<Record<string, NonNullable<TrailPoint['gpx']>>>({})
+const loading = ref(false)
+onMounted(async () => {
+  loading.value = true
+  const pending = props.points.filter(
+    (point) =>
+      point.gpx?.file && (trailDescent(point) === null || trailHighestPoint(point) === null),
+  )
+  await Promise.all(
+    Array.from({ length: Math.min(6, pending.length) }, async () => {
+      while (pending.length) {
+        const point = pending.shift()!
+        try {
+          previews.value[point.key] = await loadGpx<NonNullable<TrailPoint['gpx']>>(
+            point.gpx!.file!,
+          )
+        } catch {
+          /* Routes without available GPX stay outside rankings requiring it. */
+        }
+      }
+    }),
+  )
+  loading.value = false
+})
+const enriched = computed(() =>
+  props.points.map((point) => ({ ...point, gpx: { ...point.gpx, ...previews.value[point.key] } })),
 )
-const elevations = computed(() =>
-  trailHistogram(
-    props.points,
-    [0, 500, 1000, 1500, 2000, 3000, 4000, 6000, 8000, 10000],
-    (p) => p.elevation,
-  ),
+const mode = ref<'average' | 'terrain' | 'highest'>('average')
+const lengthFilters = ref({ average: true, terrain: false, highest: true })
+const modes = [
+  { id: 'average', label: 'Vzpon / km' },
+  { id: 'terrain', label: 'Vzpon + spust / km' },
+  { id: 'highest', label: 'Najvišja točka' },
+] as const
+const ranked = computed(() =>
+  enriched.value
+    .filter((p) => p.km > 0 && (!lengthFilters.value[mode.value] || p.km > 5))
+    .map((point) => {
+      const descent = trailDescent(point)
+      const value =
+        mode.value === 'highest'
+          ? trailHighestPoint(point)
+          : mode.value === 'terrain'
+            ? descent === null
+              ? null
+              : (point.elevation + descent) / point.km
+            : point.elevation / point.km
+      return { ...point, value }
+    })
+    .filter((p): p is typeof p & { value: number } => p.value !== null && Number.isFinite(p.value))
+    .sort((a, b) => b.value - a.value || a.key.localeCompare(b.key)),
 )
-const months = computed(() => trailMonths(props.points))
-const steepest = computed(() =>
-  props.points
-    .filter((p) => p.km >= 5)
-    .map((p) => ({ ...p, density: p.elevation / p.km }))
-    .sort((a, b) => b.density - a.density || a.key.localeCompare(b.key))
-    .slice(0, 10),
-)
-const maxDensity = computed(() => Math.max(1, ...steepest.value.map((p) => p.density)))
+const maximum = computed(() => Math.max(1, ...ranked.value.map((p) => p.value)))
 const nf = (n: number) => new Intl.NumberFormat('sl-SI', { maximumFractionDigits: 1 }).format(n)
 </script>
 <template>
-  <div class="trail-insights">
-    <BrainHistogram
-      title="Kako dolge so naše trase?"
-      :bins="distances"
-      unit="km"
-      note="Histogram dejanskih razdalj. Barvni deli stolpcev pokažejo kategorije km-effort; desna meja intervala pripada naslednjemu stolpcu."
-    />
-    <BrainHistogram
-      title="Koliko vzpona nas čaka?"
-      :bins="elevations"
-      unit="m vzpona"
-      note="Histogram skupnega vzpona. Enako dolgi trasi lahko zaradi višinskih metrov sodita v različni kategoriji."
-    />
-    <BrainHistogram
-      title="Barve trail sezone"
-      :bins="months"
-      unit="leto–mesec"
-      note="Število tras po mesecih in kategorijah. Vključeni so le dogodki s potrjenim datumom; ena tekma lahko ponuja več tras."
-    />
-    <section class="brain-panel trail-density">
-      <header class="panel-head">
-        <div>
-          <h2>Kje se vzpon najbolj zgosti?</h2>
-          <p class="density-subtitle">Deset tras z največ vzpona na kilometer</p>
-        </div>
-        <span class="data-chip">m+ / km</span>
-      </header>
-      <ol v-if="steepest.length" class="density-list">
-        <li v-for="(p, i) in steepest" :key="p.key">
-          <div class="density-label">
-            <a :href="`/races/${p.raceSlug}`"
-              ><span>{{ String(i + 1).padStart(2, '0') }}</span> {{ p.raceName }}
-              <small>{{ p.label }}</small></a
-            ><strong>{{ nf(p.density) }}</strong>
+  <section class="brain-panel trail-ranking">
+    <header class="panel-head"><h2>Trase v primerjavi</h2></header>
+    <div class="ranking-switch" role="group" aria-label="Razvrsti trase">
+      <button
+        v-for="option in modes"
+        :key="option.id"
+        type="button"
+        :aria-pressed="mode === option.id"
+        @click="mode = option.id"
+      >
+        {{ option.label }}
+      </button>
+    </div>
+    <label class="length-filter"
+      ><input v-model="lengthFilters[mode]" type="checkbox" :disabled="mode === 'average'" /> Daljše
+      od 5 km</label
+    >
+    <div
+      v-if="ranked.length"
+      class="ranking-scroll"
+      role="region"
+      aria-label="Razvrščene trase"
+      tabindex="0"
+    >
+      <ol class="ranking-list">
+        <li v-for="(point, index) in ranked" :key="point.key">
+          <a :href="`/races/${point.raceSlug}`" class="race-name"
+            ><span>{{ String(index + 1).padStart(2, '0') }}</span>
+            <div>
+              {{ point.raceName }}<small>{{ point.name || point.label }}</small>
+            </div></a
+          >
+          <div class="rank-data">
+            <div class="rank-track">
+              <span
+                :style="{
+                  width: `${(point.value / maximum) * 100}%`,
+                  background: trailCategory(point).color,
+                }"
+              />
+            </div>
+            <p>{{ nf(point.km) }} km · {{ nf(point.elevation) }} m+</p>
           </div>
-          <div class="density-track">
-            <span
-              :style="{
-                width: `${(p.density / maxDensity) * 100}%`,
-                background: trailCategory(p).color,
-              }"
-            />
-          </div>
-          <p>{{ nf(p.km) }} km · {{ nf(p.elevation) }} m+ · {{ trailCategory(p).label }}</p>
+          <strong
+            >{{ nf(point.value) }}
+            <small>{{ mode === 'highest' ? 'm n. v.' : 'm / km' }}</small></strong
+          >
         </li>
       </ol>
-      <p v-else class="empty-panel">Za primerjavo še ni dovolj podatkov.</p>
-      <p class="chart-note">
-        Vzpon ÷ razdalja, za trase dolge vsaj 5 km. To je gostota vzpona po celotni trasi, ne naklon
-        posameznega vzpona ali ocena tehnične zahtevnosti.
-      </p>
-    </section>
-  </div>
+    </div>
+    <p v-else class="empty-panel">
+      {{
+        loading
+          ? 'Nalagam višinske podatke …'
+          : 'Za to razvrstitev še ni dovolj višinskih podatkov.'
+      }}
+    </p>
+    <p class="chart-note" v-if="mode === 'average'">
+      Trase po vzponu na kilometer celotne trase. Vključene so trase, daljše od 5 km.
+    </p>
+    <p class="chart-note" v-else-if="mode === 'terrain'">
+      Ocena strmine: (vzpon + spust) ÷ razdalja. Predpostavlja enako povprečno strmino vzponov in
+      spustov. Spust je izračunan kot začetna nadmorska višina + vzpon − končna nadmorska višina;
+      pri krožni trasi je enak vzponu. Brez filtra so vključene tudi trase, krajše od 5 km, z
+      znanimi višinskimi podatki.
+    </p>
+    <p class="chart-note" v-else>
+      Trase po najvišji doseženi nadmorski višini iz podatkov GPX. Vključene so trase z znano
+      najvišjo točko.
+    </p>
+  </section>
 </template>
 <style scoped>
-.trail-insights {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-  margin-top: 18px;
-}
-.density-subtitle {
-  font-size: 11px;
-  margin: 5px 0 0;
-}
-.density-list {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0 0;
-  display: grid;
-  gap: 15px;
-}
-.density-label {
+.length-filter {
   display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  font-size: 11px;
-}
-.density-label a {
-  line-height: 1.5;
-  text-decoration: none;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  font-size: 12px;
   color: #35543b;
 }
-.density-label a > span {
-  font: 9px var(--mono);
+.length-filter input {
+  accent-color: #35543b;
+}
+.ranking-scroll {
+  max-height: 560px;
+  overflow-y: auto;
+  margin-top: 20px;
+  padding-right: 12px;
+  scrollbar-gutter: stable;
+}
+.ranking-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 20px;
+}
+.ranking-switch button {
+  padding: 9px 12px;
+  border: 1px solid #d2ddc8;
+  background: #f0f4e9;
+  color: #35543b;
+  font-size: 12px;
+  cursor: pointer;
+}
+.ranking-switch button[aria-pressed='true'] {
+  background: #35543b;
+  color: white;
+  border-color: #35543b;
+}
+.ranking-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-block: 4px;
+  display: grid;
+  gap: 18px;
+}
+.ranking-list li {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(0, 2fr) auto;
+  align-items: center;
+  gap: 22px;
+}
+.race-name {
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+  color: #35543b;
+  text-decoration: none;
+}
+.race-name > span {
+  font: 10px var(--mono);
   color: #8a9880;
-  margin-right: 6px;
+  padding-top: 3px;
 }
-.density-label small {
+.race-name small {
+  display: block;
+  font-size: 11px;
   color: #718168;
+  margin-top: 3px;
 }
-.density-label strong {
-  font: 12px var(--mono);
-  white-space: nowrap;
-}
-.density-track {
-  height: 6px;
+.rank-track {
+  height: 18px;
   background: #e9eedf;
   border-radius: 3px;
-  margin-top: 5px;
   overflow: hidden;
 }
-.density-track > span {
+.rank-track > span {
   display: block;
   height: 100%;
   border-radius: 3px;
 }
-.density-list li > p {
-  font: 9px var(--mono);
+.rank-data p {
   margin: 5px 0 0;
+  font: 10px var(--mono);
+  color: #718168;
 }
-@media (max-width: 800px) {
-  .trail-insights {
-    grid-template-columns: minmax(0, 1fr);
+.ranking-list strong {
+  min-width: 110px;
+  text-align: right;
+  font: 15px var(--mono);
+}
+.ranking-list strong small {
+  font-size: 10px;
+}
+@media (max-width: 700px) {
+  .ranking-list li {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px 12px;
+  }
+  .race-name {
+    grid-column: 1 / -1;
+  }
+  .ranking-list strong {
+    min-width: 90px;
+  }
+  .rank-track {
+    height: 16px;
   }
 }
 </style>

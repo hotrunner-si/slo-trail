@@ -7,6 +7,8 @@ import {
   trailCategory,
   trailHistogram,
   trailMonths,
+  trailDescent,
+  trailHighestPoint,
 } from '../utils/trailAnalytics.ts'
 const point = (km, elevation, extra = {}) => ({
   key: `${km}-${elevation}`,
@@ -15,6 +17,21 @@ const point = (km, elevation, extra = {}) => ({
   raceName: 'Test',
   label: 'Test',
   ...extra,
+})
+
+test('terrain estimate accounts for loop and point-to-point elevation change', () => {
+  const loop = point(10, 500, { gpx: { profile: [200, 700, 200] } })
+  assert.equal((loop.elevation + trailDescent(loop)) / loop.km, 100)
+  const open = point(15, 1500, { gpx: { profile: [200, 1700, 700] } })
+  assert.equal(trailDescent(open), 1000)
+  assert.equal((open.elevation + trailDescent(open)) / open.km, 2500 / 15)
+  assert.equal(trailHighestPoint(open), 1700)
+  assert.equal(trailDescent(point(10, 500)), null)
+  assert.equal(trailHighestPoint(point(10, 500)), null)
+  assert.equal(trailDescent(point(10, 500, { gpx: { elevationLoss: 450 } })), null)
+  assert.equal(trailDescent(point(40.6, 3100, { gpx: { elevationLoss: 5735, profile: [532, 507] } })), 3125)
+  assert.equal(trailDescent(point(10, 500, { gpx: { elevationLoss: 900, profile: [200, 700, 200] } })), 500)
+  assert.equal(trailHighestPoint(point(10, 500, { gpx: { highestPoint: 1500, profile: [200, 1400] } })), 1500)
 })
 
 test('axis milestones keep their real values through zoom and leave the viewport naturally', () => {

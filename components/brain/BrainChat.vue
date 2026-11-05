@@ -5,6 +5,8 @@ import { brainChatHistory, type BrainChatMessage } from '~/utils/brainChat'
 const { session } = await useBrainSession()
 const text = ref('')
 const busy = ref(false)
+let activeRequest: AbortController | null = null
+onBeforeUnmount(() => activeRequest?.abort())
 const error = ref('')
 const history = ref<HTMLElement | null>(null)
 const input = ref<HTMLTextAreaElement | null>(null)
@@ -48,7 +50,7 @@ async function scrollToLatest() {
   if (history.value) history.value.scrollTop = history.value.scrollHeight
 }
 async function send(retry = false) {
-  if (busy.value || !session.value?.aiAvailable) return
+  if (!session.value?.aiAvailable || (retry && busy.value)) return
   if (!retry) {
     const question = text.value.trim()
     if (!question) return
@@ -57,17 +59,24 @@ async function send(retry = false) {
     messages.value.push({ role: 'user', text: question })
     text.value = ''
   } else if (messages.value.at(-1)?.role !== 'user') return
+  // A follow-up supersedes the pending answer, retaining both questions as context.
+  activeRequest?.abort()
+  const request = new AbortController()
+  activeRequest = request
   error.value = ''
   busy.value = true
   await scrollToLatest()
   try {
     const result = await $fetch('/api/brain/chat', {
       method: 'POST',
+      signal: request.signal,
+      retry: 0,
       body: {
         messages: brainChatHistory(messages.value.map(({ role, text }) => ({ role, text }))),
         save: false,
       },
     })
+    if (activeRequest !== request || request.signal.aborted) return
     messages.value.push({
       role: 'assistant',
       text: result.answer,
@@ -77,11 +86,13 @@ async function send(retry = false) {
     })
     note.value = result.note
   } catch (e) {
-    error.value = brainError(e)
+    if (activeRequest === request && !request.signal.aborted) error.value = brainError(e)
   } finally {
-    busy.value = false
-    await scrollToLatest()
-    input.value?.focus()
+    if (activeRequest === request && !request.signal.aborted) {
+      activeRequest = null
+      busy.value = false
+      await scrollToLatest()
+    }
   }
 }
 function onKeydown(event: KeyboardEvent) {
@@ -170,7 +181,9 @@ function suggest(question: string) {
             />
           </article>
           <div v-if="busy" class="chat-thinking" role="status">
-            <BrainIcon class="chat-thinking-icon" /> Pripravljam odgovor<span aria-hidden="true"> …</span>
+            <BrainIcon class="chat-thinking-icon" /> Pripravljam odgovor<span aria-hidden="true">
+              …</span
+            >
           </div>
         </div>
       </div>
@@ -197,13 +210,12 @@ function suggest(question: string) {
               maxlength="3000"
               rows="2"
               placeholder="Vprašaj Možgana …"
-              :disabled="busy"
               aria-describedby="chat-input-hint"
               @keydown="onKeydown"
             />
             <button
               type="submit"
-              :disabled="busy || !session?.aiAvailable || !text.trim()"
+              :disabled="!session?.aiAvailable || !text.trim()"
               aria-label="Pošlji vprašanje"
             >
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -217,6 +229,10 @@ function suggest(question: string) {
               </svg>
             </button>
           </form>
+          <p v-if="busy" class="chat-pending-hint" role="status">
+            Lahko pišeš naprej. Novo sporočilo prekine čakanje in sproži odgovor na dopolnjen
+            pogovor.
+          </p>
           <div v-if="!messages.length" class="chat-suggestions" aria-label="Predloga vprašanj">
             <button
               v-for="suggestion in suggestions"
@@ -226,7 +242,7 @@ function suggest(question: string) {
               @click="suggest(suggestion.prompt)"
             >
               <span>{{ suggestion.prompt }}</span
-              ><span class="chat-suggestion-arrow" aria-hidden="true">↗</span>
+              ><span class="chat-suggestion-arrow" aria-hidden="true"><IconArrowUpRight /></span>
             </button>
           </div>
           <div class="chat-footnote">
@@ -514,6 +530,12 @@ function suggest(question: string) {
   gap: 6px 16px;
   margin-top: 14px;
 }
+.chat-pending-hint {
+  margin: 8px 0 0;
+  color: #71816a;
+  font-size: 11px;
+  line-height: 1.6;
+}
 .chat-footnote > p {
   font-size: 10px;
   line-height: 1.6;
@@ -576,7 +598,9 @@ function suggest(question: string) {
   outline-offset: 3px;
 }
 @media (max-width: 700px) {
-  .chat-conversation-actions { padding: 10px 16px 0; }
+  .chat-conversation-actions {
+    padding: 10px 16px 0;
+  }
   .chat-topbar-actions {
     gap: 12px;
   }

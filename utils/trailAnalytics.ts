@@ -7,8 +7,31 @@ export interface TrailPoint {
   raceName: string
   raceSlug?: string
   label: string
+  name?: string
   date?: string
   dateConfirmed?: boolean
+  gpx?: {
+    file?: string
+    highestPoint?: number
+    elevationLoss?: number
+    profile?: number[]
+  }
+}
+
+export function trailDescent(point: TrailPoint): number | null {
+  const profile = point.gpx?.profile
+  if (!profile || profile.length < 2) return null
+  const start = profile[0]!,
+    end = profile.at(-1)!
+  if (!Number.isFinite(start) || !Number.isFinite(end)) return null
+  const descent = point.elevation + start - end
+  return descent >= 0 ? descent : null
+}
+
+export function trailHighestPoint(point: TrailPoint): number | null {
+  if (Number.isFinite(point.gpx?.highestPoint)) return point.gpx!.highestPoint!
+  const profile = point.gpx?.profile?.filter(Number.isFinite)
+  return profile?.length ? Math.max(...profile) : null
 }
 
 /** Keep category milestones at their real coordinates; add readable round subdivisions. */

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { formatSlovenianCount, slovenianCountForms } from '~/utils/slovenianCount'
 import { trailCategories, type TrailBin } from '~/utils/trailAnalytics'
 const props = defineProps<{ title: string; note: string; bins: TrailBin[]; unit: string }>()
 const maximum = computed(() => Math.max(1, ...props.bins.map((b) => b.count)))
@@ -22,7 +23,12 @@ const ticks = [0, 0.25, 0.5, 0.75, 1]
   <section class="brain-panel trail-histogram">
     <header class="panel-head">
       <h2>{{ title }}</h2>
-      <span class="data-chip">{{ bins.reduce((sum, b) => sum + b.count, 0) }} tras</span>
+      <span class="data-chip">{{
+        formatSlovenianCount(
+          bins.reduce((sum, b) => sum + b.count, 0),
+          slovenianCountForms.route,
+        )
+      }}</span>
     </header>
     <svg
       v-if="bins.some((b) => b.count)"
@@ -59,7 +65,8 @@ const ticks = [0, 0.25, 0.5, 0.75, 1]
           stroke-width=".7"
         >
           <title>
-            {{ stack.bin.label }} {{ unit }} · {{ segment.label }}: {{ segment.count }} tras
+            {{ stack.bin.label }} {{ unit }} · {{ segment.label }}:
+            {{ formatSlovenianCount(segment.count, slovenianCountForms.route) }}
           </title>
         </rect>
         <text
