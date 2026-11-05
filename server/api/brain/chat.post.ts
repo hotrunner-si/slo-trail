@@ -4,6 +4,8 @@ import { brainKnowledge } from '../../utils/brain-knowledge'
 import { brainGeminiChat } from '../../utils/brain-chat-gemini'
 
 export default defineEventHandler(async (event): Promise<BrainChatResult> => {
+  // Leave room for response serialization before the hosting function's 60s limit.
+  event.context.brainChatDeadline = Date.now() + 45_000
   brainMutation(event)
   const { user } = await brainIdentity(event, false)
   const body = await brainBody(event, brainChatBodySchema)
@@ -23,6 +25,6 @@ export default defineEventHandler(async (event): Promise<BrainChatResult> => {
     searchSuggestionsHtml: output.searchSuggestionsHtml,
     note:
       (!knowledge.available ? 'Del trail baze trenutno ni dosegljiv. ' : '') +
-      'Pogovor se ne shranjuje samodejno. Za deljenje uporabi gumb Zaseben pogovor. Odgovore pripravlja Google Gemini; po potrebi uporabi Google Search. Deljeni posnetki niso preverjena dejstva.',
+      'Pogovor se ne shranjuje samodejno. Za deljenje uporabi gumb Zaseben pogovor. Odgovore pripravlja umetna inteligenca; po potrebi uporabi spletno iskanje. Deljeni posnetki niso preverjena dejstva.',
   }
 })

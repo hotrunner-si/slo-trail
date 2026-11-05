@@ -1,4 +1,5 @@
 import type { BrainSession, BrainAccount } from '~/types/brain'
+import { brainEmbeddingSettings } from '../../utils/brain-embeddings'
 export default defineEventHandler(async (event): Promise<BrainSession> => {
   const { client, user } = await brainIdentity(event, false)
   const config = brainConfig(event)
@@ -37,8 +38,6 @@ export default defineEventHandler(async (event): Promise<BrainSession> => {
     recovery: !!user && brainHasRecovery(event, user.id),
     account,
     aiAvailable: Boolean(config.geminiApiKey),
-    semanticAvailable: Boolean(
-      config.openaiApiKey && config.brainEmbeddingModel && config.brainAiZeroRetention,
-    ),
+    semanticAvailable: Boolean(brainEmbeddingSettings(config)),
   }
 })

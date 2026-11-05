@@ -20,7 +20,7 @@ const messages = ref<
   })[]
 >([])
 const defaultNote =
-  'Zaseben klepet ostane v tem zavihku. V bazo se shrani samo posnetek, ki ga izrecno potrdiš za deljenje. Odgovore pripravlja Google Gemini; po potrebi uporabi Google Search.'
+  'Zaseben klepet ostane v tem zavihku. V bazo se shrani samo posnetek, ki ga izrecno potrdiš za deljenje. Odgovore pripravlja umetna inteligenca; po potrebi uporabi spletno iskanje.'
 const note = ref(defaultNote)
 const modeLabels = {
   database: 'Iz trail zbirke',

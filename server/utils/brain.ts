@@ -14,7 +14,7 @@ export function brainConfig(event: H3Event) {
     geminiApiKey: config.geminiApiKey || process.env.GEMINI_API_KEY || '',
     geminiModel: config.geminiModel || process.env.GEMINI_MODEL || 'gemini-3.6-flash',
     brainAiModel: config.brainAiModel || process.env.BRAIN_AI_MODEL || '',
-    brainEmbeddingModel: config.brainEmbeddingModel || process.env.BRAIN_EMBEDDING_MODEL || '',
+    brainEmbeddingModel: config.brainEmbeddingModel || process.env.BRAIN_EMBEDDING_MODEL || 'gemini-embedding-001',
     brainAiZeroRetention:
       config.brainAiZeroRetention || process.env.BRAIN_AI_ZERO_RETENTION === 'true',
   }

@@ -85,9 +85,10 @@ Datumov, indeksov in rezultatov ta izvedba ni ponovno preverila.
 ## 1. Prijava z geslom (posodobitev 2. 11. 2026)
 
 1. Odpri [Auth → URL Configuration](https://supabase.com/dashboard/project/favatadzmmqsdocrstti/auth/url-configuration).
-2. Dodaj dovoljeni Redirect URL `http://127.0.0.1:3012/profil`.
+2. Dodaj dovoljeni Redirect URL `http://127.0.0.1:3012/mozgan/racun`.
    Če uporabljaš drugo ime ali vrata, dodaj natanko tisto različico, npr.
-   `http://localhost:3000/profil`. Pred objavo dodaj tudi ustrezni URL domene.
+   `http://localhost:3000/mozgan/racun`. Pred objavo dodaj tudi ustrezni URL domene.
+   Ta tehnična pot uporabnika preusmeri na `/profil`.
 3. Site URL naj kaže na glavno okolje, ki ga dejansko nameravaš uporabljati.
 4. V Auth → Sign In / Providers → Email omogoči prijavo po e-pošti in **izklopi Confirm email**.
    Aplikacija pred registracijo preveri `mailer_autoconfirm` in ob vključeni

@@ -2871,7 +2871,9 @@ h2 {
 }
 @media (max-width: 900px) {
   .race-map-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    border-inline: 0;
+    border-bottom: 0;
   }
   .race-map {
     min-height: 480px;
@@ -2885,7 +2887,8 @@ h2 {
     max-height: 300px;
   }
   .map-side-list.race-map-card-list {
-    width: 100%;
+    width: 100vw;
+    margin-inline: calc((100% - 100vw) / 2);
     min-width: 0;
     max-height: none;
     overflow: visible;
@@ -2905,14 +2908,14 @@ h2 {
     -webkit-overflow-scrolling: touch;
   }
   .race-map-card-track > a {
-    flex: 0 0 min(78vw, 310px);
+    flex: 0 0 min(70.2vw, 279px);
     width: auto;
-    min-height: 132px;
+    min-height: 92.4px;
     align-content: start;
-    padding: 14px;
+    padding: 9.8px 14px;
     border: 1px solid var(--line);
     border-top: 3px solid var(--accent);
-    scroll-snap-align: start;
+    scroll-snap-align: center;
   }
   .map-side-list.race-map-card-list .race-map-card-track > a.active {
     border-color: var(--ink);
@@ -4183,6 +4186,11 @@ h2 {
   }
 }
 @media (max-width: 620px) {
+  .course-map-shell {
+    border-inline: 0;
+    border-top: 0;
+    background: transparent;
+  }
   .map-detail-control > span {
     display: none;
   }
@@ -4205,12 +4213,16 @@ h2 {
   }
   .course-map-routes-list {
     order: -1;
+    border: 0;
+    background: transparent;
     display: flex;
-    width: 100%;
+    width: 100vw;
+    margin-inline: calc((100% - 100vw) / 2);
     min-width: 0;
     max-height: none;
     gap: 8px;
     padding: 12px 12px 14px;
+    padding-inline: max(12px, calc((100vw - min(70.2vw, 279px)) / 2));
     overflow-x: auto;
     overflow-y: hidden;
     overscroll-behavior-x: contain;
@@ -4219,12 +4231,12 @@ h2 {
     -webkit-overflow-scrolling: touch;
   }
   .course-map-routes-list button {
-    flex: 0 0 min(78vw, 310px);
+    flex: 0 0 min(70.2vw, 279px);
     min-height: 84px;
     padding: 12px;
     border: 1px solid var(--line);
     border-top: 3px solid var(--course-color);
-    scroll-snap-align: start;
+    scroll-snap-align: center;
   }
   .course-map-routes-list button.active {
     border-color: var(--ink);

@@ -17,7 +17,8 @@ export const gpxManifest: Record<string, Record<string, string>> = {
     "ponavljajoca-trasa": "/gpx/races/8-ur-sv-ane/8-ur-sv-ane-ponavljajoca-trasa-2.7km.gpx"
   },
   "caven-run": {
-    "caven-trail": "/gpx/races/caven-run/caven-run-caven-trail-17km.gpx",
+    "caven-trail": "/gpx/races/caven-run/caven-trail-17km.gpx",
+    "caven-trail-24km": "/gpx/races/caven-run/caven-trail-24km.gpx",
     "caven-vertikal": "/gpx/races/caven-run/caven-run-caven-vertikal-4.3km.gpx"
   },
   "go4trail": {

@@ -8,7 +8,6 @@ const currentLabel = computed(() => {
   if (path === '/mozgan') return 'Chat'
   if (path.startsWith('/mozgan/analitika')) return 'Analitika'
   if (path.startsWith('/mozgan/baza')) return 'Baza znanja'
-  if (path.startsWith('/profil')) return 'Račun'
   if (path.startsWith('/mozgan/skrbnik')) return 'Skrbništvo'
   return 'Možgan'
 })
@@ -19,7 +18,6 @@ const currentLabel = computed(() => {
     class="brain-app"
     :class="{
       'brain-admin-mode': admin,
-      'brain-admin-account': admin && route.path === '/profil',
       'brain-overview-mode': isOverview,
     }"
   >

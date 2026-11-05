@@ -109,6 +109,8 @@ export async function importPreview(inputPath, event, id, metadata = {}) {
     bounds,
   }
   const preview = { ...common, overviewRoute: coordinates(overview), profile: simpleProfile }
+  // Use a fresh asset URL for the replacement Čaven course to bypass cached old tracks.
+  const outputId = event === 'caven-run' && id === 'caven-trail' ? 'caven-trail-17km' : id
   const dir = event.startsWith('runners/')
     ? join(process.cwd(), 'public', 'gpx', event)
     : join(process.cwd(), 'public', 'gpx', 'races', event)
@@ -117,19 +119,19 @@ export async function importPreview(inputPath, event, id, metadata = {}) {
     : dir
   await Promise.all([mkdir(dir, { recursive: true }), mkdir(previewDir, { recursive: true })])
   const outputs = [
-    [join(previewDir, `${id}.json`), preview],
+    [join(previewDir, `${outputId}.json`), preview],
     [
-      join(dir, `${id}.detail.json`),
+      join(dir, `${outputId}.detail.json`),
       {
         ...common,
         route: coordinates(detail),
         detailedProfile: elevationsComplete ? profilePoints(detail) : [],
       },
     ],
-    [join(dir, `${id}.route.simple.json`), { route: coordinates(overview) }],
-    [join(dir, `${id}.route.full.json`), { route: coordinates(points) }],
-    [join(dir, `${id}.profile.simple.json`), { distanceKm, profile: simpleProfile }],
-    [join(dir, `${id}.profile.full.json`), { distanceKm, detailedProfile: profilePoints(points) }],
+    [join(dir, `${outputId}.route.simple.json`), { route: coordinates(overview) }],
+    [join(dir, `${outputId}.route.full.json`), { route: coordinates(points) }],
+    [join(dir, `${outputId}.profile.simple.json`), { distanceKm, profile: simpleProfile }],
+    [join(dir, `${outputId}.profile.full.json`), { distanceKm, detailedProfile: profilePoints(points) }],
   ]
   await Promise.all(outputs.map(([path, value]) => writeFile(path, JSON.stringify(value))))
   console.log(

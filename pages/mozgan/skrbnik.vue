@@ -49,7 +49,7 @@ async function addSource() {
   busy.value = true
   error.value = ''
   try {
-    await $fetch('/api/brain/source', {
+    const result = await $fetch('/api/brain/source', {
       method: 'POST',
       body: {
         ...source,
@@ -58,7 +58,11 @@ async function addSource() {
         until: source.until || null,
       },
     })
-    message.value = 'Vir je dodan. Nov zapis še nima pomenskega vektorja.'
+    message.value = result.indexed
+      ? 'Vir je dodan in vključen v pomensko iskanje.'
+      : source.origin === 'unverified'
+        ? 'Vir je dodan. Nepreverjeni viri niso vključeni v pomenski indeks.'
+        : 'Vir je dodan. Pomensko indeksiranje še čaka na obdelavo.'
     source.title = ''
     source.excerpt = ''
     source.url = ''

@@ -11,6 +11,12 @@ import {
 } from './brain-chat-policy'
 import { parseBrainGrounding, type BrainGroundedCandidate } from './brain-grounding'
 import { z } from 'zod'
+import {
+  brainChatRequest,
+  brainChatUpstreamStatus,
+  brainChatSourceFallback,
+  brainChatTimeout,
+} from './brain-chat-request'
 
 interface GeminiReply {
   promptFeedback?: { blockReason?: string }
@@ -22,43 +28,55 @@ async function geminiRequest(event: H3Event, body: Record<string, unknown>) {
   if (!config.geminiApiKey)
     throw createError({
       statusCode: 503,
-      statusMessage: 'Gemini ključ na strežniku še ni nastavljen.',
+      statusMessage: 'Chat še ni nastavljen. Poskusi pozneje.',
     })
   if (!/^[a-zA-Z0-9._-]+$/.test(config.geminiModel))
-    throw createError({ statusCode: 503, statusMessage: 'Preveri nastavitev modela GEMINI_MODEL.' })
+    throw createError({
+      statusCode: 503,
+      statusMessage: 'Chat trenutno ni na voljo. Poskusi pozneje.',
+    })
   let result: GeminiReply
   try {
-    result = await $fetch<GeminiReply>(
-      `https://generativelanguage.googleapis.com/v1beta/models/${config.geminiModel}:generateContent`,
-      {
-        method: 'POST',
-        headers: { 'x-goog-api-key': config.geminiApiKey },
-        timeout: 60_000,
-        retry: 0,
-        body,
+    result = await brainChatRequest(
+      () =>
+        $fetch<GeminiReply>(
+          `https://generativelanguage.googleapis.com/v1beta/models/${config.geminiModel}:generateContent`,
+          {
+            method: 'POST',
+            headers: { 'x-goog-api-key': config.geminiApiKey },
+            timeout: brainChatTimeout(event.context.brainChatDeadline || Date.now() + 20_000),
+            retry: 0,
+            body,
+          },
+        ),
+      (status, attempt) => {
+        // Diagnostics contain no prompts, responses, credentials or user identifiers.
+        console.warn('[brain-chat] upstream request failed', {
+          stage: body.tools ? 'search' : 'answer',
+          status,
+          attempt,
+        })
       },
     )
   } catch (error) {
-    const status =
-      (error as { statusCode?: number; status?: number }).statusCode ||
-      (error as { status?: number }).status
+    const status = brainChatUpstreamStatus(error)
     throw createError({
       statusCode: status === 429 ? 429 : 503,
       statusMessage:
         status === 429
-          ? 'Gemini je dosegel omejitev zahtev ali porabe. Poskusi pozneje; skrbnik naj preveri kvoto in obračun v Google AI Studio.'
+          ? 'Chat je dosegel omejitev zahtev ali porabe. Poskusi pozneje.'
           : status === 400 || status === 401 || status === 403
-            ? 'Gemini je zavrnil zahtevo. Skrbnik naj preveri ključ, dostop do modela, spletnega iskanja in obračun v Google AI Studio.'
+            ? 'Chat trenutno ni na voljo. Poskusi pozneje.'
             : status === 404
-              ? 'Izbrani Gemini model ni na voljo. Skrbnik naj preveri GEMINI_MODEL.'
-              : 'Gemini trenutno ni odgovoril. Poskusi znova.',
+              ? 'Chat trenutno ni na voljo. Poskusi pozneje.'
+              : 'Chat ni odgovoril. Poskusi znova.',
     })
   }
   const candidate = result.candidates?.[0]
   if (result.promptFeedback?.blockReason || candidate?.finishReason === 'SAFETY')
     throw createError({
       statusCode: 422,
-      statusMessage: 'Gemini na to vprašanje ne more odgovoriti. Poskusi ga zastaviti drugače.',
+      statusMessage: 'Chat na to vprašanje ne more odgovoriti. Poskusi ga zastaviti drugače.',
     })
   if (candidate?.finishReason !== 'STOP')
     throw createError({
@@ -68,7 +86,7 @@ async function geminiRequest(event: H3Event, body: Record<string, unknown>) {
   return candidate
 }
 
-export async function brainGeminiChat(
+async function brainGeminiAnswer(
   event: H3Event,
   messages: BrainChatMessage[],
   sources: BrainSource[],
@@ -164,5 +182,22 @@ export async function brainGeminiChat(
       statusCode: 503,
       statusMessage: 'Spletno iskanje ni vrnilo veljavnega odgovora. Poskusi znova.',
     })
+  }
+}
+
+export async function brainGeminiChat(
+  event: H3Event,
+  messages: BrainChatMessage[],
+  sources: BrainSource[],
+  knowledgeAvailable: boolean,
+) {
+  try {
+    return await brainGeminiAnswer(event, messages, sources, knowledgeAvailable)
+  } catch (error) {
+    if ([429, 503, 504].includes(brainChatUpstreamStatus(error))) {
+      const fallback = brainChatSourceFallback(sources)
+      if (fallback) return fallback
+    }
+    throw error
   }
 }

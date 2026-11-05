@@ -749,8 +749,9 @@ export const races: Race[] = [
     sourceName: 'Trail tek Slovenija',
     verifiedAt: '2026-09-29',
     distances: [
-      { id: 'caven-vertikal', label: '4.3K', name: 'Čaven vertikal', km: 4.3, elevation: 1074 },
-      { id: 'caven-trail', label: '17K', name: 'Čaven trail', km: 17, elevation: 1645 },
+      { id: 'caven-vertikal', label: '4.3K', name: 'Čaven vertikal', km: 4.3, elevation: 1081 },
+      { id: 'caven-trail', label: '17K', name: 'Čaven trail 17 km', km: 17, elevation: 1355 },
+      { id: 'caven-trail-24km', label: '24K', name: 'Čaven trail 24 km', km: 24, elevation: 1734 },
     ],
   },
   {
@@ -1129,7 +1130,10 @@ for (const race of races)
 for (const race of races)
   for (const distance of race.distances) {
     const rawFile = distance.id && gpxManifest[race.slug]?.[distance.id]
-    if (rawFile) distance.gpx = { file: `/gpx/races/${race.slug}/${distance.id}.json`, rawFile }
+    const previewId = race.slug === 'caven-run' && distance.id === 'caven-trail'
+      ? 'caven-trail-17km'
+      : distance.id
+    if (rawFile) distance.gpx = { file: `/gpx/races/${race.slug}/${previewId}.json`, rawFile }
   }
 races.sort((a, b) => {
   const aUndated = !/^\d{4}-\d{2}-\d{2}$/.test(a.date)

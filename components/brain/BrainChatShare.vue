@@ -154,7 +154,7 @@ async function submit() {
           {{
             sharedId
               ? 'Posnetek bomo umaknili iz skupne baze in njegova povezava ne bo več dostopna. Že prebranih kopij ali prejšnjih odgovorov drugih uporabnikov ni mogoče umakniti.'
-              : 'V našo bazo ne shranjujemo prepisa tega zasebnega pogovora. Gemini sporočila še vedno obdeluje za pripravo odgovorov.'
+              : 'V našo bazo ne shranjujemo prepisa tega zasebnega pogovora. Ponudnik umetne inteligence sporočila še vedno obdeluje za pripravo odgovorov.'
           }}
         </p>
         <p v-if="error" class="share-error" role="alert">{{ error }}</p>

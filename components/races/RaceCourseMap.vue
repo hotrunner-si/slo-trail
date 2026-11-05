@@ -56,10 +56,18 @@ const highestPoint = computed(() => {
 function selectRoute(distance: RaceDistance, index: number) {
   const id = routeId(distance, index)
   selectedId.value = selectedId.value === id ? 'all' : id
+  void centerRouteCard(id)
+}
+function selectAllRoutes() {
+  selectedId.value = 'all'
+  void centerRouteCard('all')
 }
 async function selectFromMap(id: string) {
   selectedId.value = id
   hoverProgress.value = null
+  await centerRouteCard(id, true)
+}
+async function centerRouteCard(id: string, scrollVertically = false) {
   await nextTick()
 
   const list = routesList.value
@@ -79,7 +87,7 @@ async function selectFromMap(id: string) {
         (list.clientWidth - buttonRect.width) / 2,
       behavior: 'smooth',
     })
-  } else if (list.scrollHeight > list.clientHeight + 1) {
+  } else if (scrollVertically && list.scrollHeight > list.clientHeight + 1) {
     list.scrollTo({
       top:
         list.scrollTop +
@@ -101,7 +109,7 @@ async function selectFromMap(id: string) {
           class="all-routes"
           data-route-id="all"
           :class="{ active: selectedId === 'all' }"
-          @click="selectedId = 'all'"
+          @click="selectAllRoutes"
         >
           <i class="all-routes-dot" /><span
             ><strong>Vse trase</strong

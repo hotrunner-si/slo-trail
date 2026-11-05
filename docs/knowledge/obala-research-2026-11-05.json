@@ -1,0 +1,169 @@
+{
+  "event": "Obala Ultra Trail",
+  "editionYear": 2026,
+  "verifiedAt": "2026-11-05",
+  "eventDates": { "from": "2026-11-06", "until": "2026-11-08", "raceDate": "2026-11-07" },
+  "researchMethod": "Pregled javnih uradnih spletnih strani; kratki uredniško pripravljeni povzetki podatkov uradnega organizatorja. Datum preverjanja pomeni pregled vira, ne jamstva nespremenljivosti podatka. Neskladja so izrecno označena.",
+  "sources": [
+    {
+      "title": "Obala Ultra Trail 2026 — datum in razdalje",
+      "url": "https://obalaultratrail.si/",
+      "excerpt": "Obala Ultra Trail 2026 poteka od 6. do 8. novembra v Izoli in Slovenski Istri. Na voljo so razdalje 11, 17, 35, 64 in 108 km. Uradna domača stran navaja približno 200, 450, 1000, 2000 in 4000 višinskih metrov. Njeni časovni limiti za krajše tri razdalje se razlikujejo od podrobnih strani, zato jih brez dodatne potrditve ne obravnavamo kot enotno potrjen podatek.",
+      "editionYear": 2026,
+      "verifiedAt": "2026-11-05"
+    },
+    {
+      "title": "Obala Ultra Trail 2026 — prevzem številk in briefing",
+      "url": "https://obalaultratrail.si/en/program/",
+      "excerpt": "Obala Ultra Trail 2026: prevzem številk je v petek 6. novembra med 12.00 in 21.00 v restavraciji San Simon Resort v Izoli. Za 108 km je prevzem dovoljen izključno v petek; uradni briefing 108 km je 19.45–20.00. Za ostale razdalje je prevzem še v soboto 7. novembra 6.00–11.30. Organizator dopušča spremembo programa do 24 ur pred dogodkom.",
+      "editionYear": 2026,
+      "verifiedAt": "2026-11-05"
+    },
+    {
+      "title": "Obala Ultra Trail 2026 — starti in sobotni prevozi",
+      "url": "https://obalaultratrail.si/en/program/",
+      "excerpt": "Obala Ultra Trail v soboto 7. novembra 2026: 108 km start Dekani ob 6.00, avtobus iz Izole 5.00–5.10; 64 km start Hrastovlje ob 9.00, avtobus 7.45–7.50; 35 km start San Simon ob 11.00; 17 km start pri zadružnem domu Korte ob 11.30, avtobus 10.35–10.45; 11 km start San Simon ob 12.00. Avtobusi odhajajo pri recepciji San Simon Resort. Zaključek 108 km je v nedeljo ob 7.00.",
+      "editionYear": 2026,
+      "verifiedAt": "2026-11-05"
+    },
+    {
+      "title": "Obala Trail 11 km 2026 — trasa, start in oprema",
+      "url": "https://obalaultratrail.si/razdalje/obala-trail-11-km/",
+      "excerpt": "Obala Trail 11 km: 7. november 2026 ob 12.00, start in cilj San Simon v Izoli, približno 200 m vzpona, ena okrepčevalnica. Pot vodi čez Belveder v Strunjan, mimo solin in skozi krajinski park nad Mesečevim zalivom nazaj v Izolo. Organizator navaja 80 % asfalta. Obvezni so vidna številka spredaj, lonček za večkratno uporabo, tekaški čevlji in telefon. Podrobna stran določa limit cilja 2 h 30 min in Strunjana 1 h 40 min; domača stran navaja 3 h, zato je limit neskladen. Prijavni limit 300, cenik 37/42/47/55 EUR do 31.3./30.6./14.9./15.10.2026.",
+      "editionYear": 2026,
+      "verifiedAt": "2026-11-05",
+      "distanceKm": 11,
+      "hasUncertainty": true
+    },
+    {
+      "title": "Obala Trail 17 km 2026 — trasa, start in oprema",
+      "url": "https://obalaultratrail.si/razdalje/obala-trail-17-km/",
+      "excerpt": "Obala Trail 17 km: start Korte 7. novembra 2026 ob 11.30, cilj San Simon v Izoli, približno 450 m vzpona, ena okrepčevalnica. Trasa gre čez Cetore, Malijo, Jagodje, Malo Sevo, Strunjan in Belveder; organizator navaja 83 % makadama/gozdnih poti in 17 % asfalta. Obvezni so številka, lonček, tekaški čevlji, osnovna prva pomoč, izotermična folija, energijska hrana in telefon. Podrobna stran določa Strunjan 3 h in cilj 4 h; domača stran 5 h, zato je limit neskladen. Štartnina vključuje prevoz Izola–Korte. Prijavni limit 300, cenik 50/57/64/70 EUR do 31.3./30.6./14.9./15.10.2026.",
+      "editionYear": 2026,
+      "verifiedAt": "2026-11-05",
+      "distanceKm": 17,
+      "hasUncertainty": true
+    },
+    {
+      "title": "Obala Trail 35 km 2026 — trasa in časovni limiti",
+      "url": "https://obalaultratrail.si/razdalje/obala-trail-35-km/",
+      "excerpt": "Obala Trail 35 km: start in cilj San Simon, Izola, 7. novembra 2026 ob 11.00; približno 1000 m vzpona, tri okrepčevalnice, 77 % traila in 23 % asfalta. Trasa povezuje obalo Izole, Baredi/Šared, Korte, Malijo, Jagodje, Malo Sevo, Strunjan in Belveder. Tabela postaj navaja Baredi 11 km/2:15, Malija 22 km/4:30, Strunjan 30 km/6:45; gre za objavljene časovne limite od starta. Podrobni cilj je 7 h 30 min, domača stran 8 h. Prva okrepna je v opisu Šared, v tabeli Baredi: položaj potrebuje preverjanje. Limit 500, cenik 53/60/67/75 EUR do 31.3./30.6./14.9./15.10.2026.",
+      "editionYear": 2026,
+      "verifiedAt": "2026-11-05",
+      "distanceKm": 35,
+      "hasUncertainty": true
+    },
+    {
+      "title": "Obala Trail 35 km 2026 — obvezna oprema",
+      "url": "https://obalaultratrail.si/razdalje/obala-trail-35-km/",
+      "excerpt": "Obala Trail 35 km 2026 zahteva številko spredaj, lonček, tekaške čevlje, prvo pomoč, primerna oblačila, izotermično folijo, energijsko hrano, nahrbtnik z dvema 500 ml bidonoma, piščalko, telefon in vetrovko. Čelna svetilka je obvezna pri več kot petih urah na trasi. Palice so priporočene. Opremo preverjajo tudi ob prevzemu številke.",
+      "editionYear": 2026,
+      "verifiedAt": "2026-11-05",
+      "distanceKm": 35
+    },
+    {
+      "title": "Obala Ultra Trail 64 km 2026 — start, trasa in postaje",
+      "url": "https://obalaultratrail.si/razdalje/obala-ultra-trail-64-km/",
+      "excerpt": "Obala Ultra Trail 64 km 2026 starta 7. novembra ob 9.00 v Hrastovljah, cilj San Simon Izola, približno 2000 m vzpona, limit 15 h, pet okrepčevalnic. Pot: Kubed, Boršt, dolina Dragonje, Koštabona, Puče, Šmarje, Korte, Malija, Strunjan, Belveder. Postaje in objavljeni limiti od starta: Boršt 17 km/3:45, Puče 28 km/6:30, Šmarje 40 km/9:00, Malija 51 km/11:45, Strunjan 59 km/13:45. Prijavni limit je 300. Cenik: 80/92/105/120 EUR do 31.3./30.6./14.9./15.10.2026. Vključuje avtobus Izola–Hrastovlje. Seštevek vzpona v tabeli se razlikuje od naslovne vrednosti; 2000 m je organizatorjeva približna navedba.",
+      "editionYear": 2026,
+      "verifiedAt": "2026-11-05",
+      "distanceKm": 64,
+      "hasUncertainty": true
+    },
+    {
+      "title": "Obala Ultra Trail 64 km 2026 — oprema",
+      "url": "https://obalaultratrail.si/razdalje/obala-ultra-trail-64-km/",
+      "excerpt": "Obala Ultra Trail 64 km 2026: obvezni so vidna številka, lonček, tekaški čevlji, komplet prve pomoči, primerna oblačila, izotermična folija, hrana, nahrbtnik z 2×500 ml, piščalka, telefon, vetrovka, kapa/bandana, rokavice in čelna svetilka z dodatno baterijo ali rezervno svetilko. Palice so priporočene. Temperaturne in vetrne zahteve na podrobni strani se razlikujejo od skupne strani opreme; preveriti zadnje organizatorjevo obvestilo.",
+      "editionYear": 2026,
+      "verifiedAt": "2026-11-05",
+      "distanceKm": 64,
+      "hasUncertainty": true
+    },
+    {
+      "title": "Obala Ultra Trail 108 km 2026 — start, trasa in limiti",
+      "url": "https://obalaultratrail.si/en/distances/obala-ultra-trail-108-km/",
+      "excerpt": "Obala Ultra Trail 108 km 2026: 7. november ob 6.00 iz Dekanov, cilj Izola San Simon, približno 4000 m vzpona, 25 h, devet okrepčevalnic. Trasa med drugim prečka Socerb, Slavnik, Zazid, Kubed, Boršt, Puče, Šmarje, Malijo in Strunjan. Objavljene postaje km/limit od starta: Socerb 10/2:15, Slavnik 24/5:30, Zazid 39/9:00, Kubed 49/11:30, Boršt 61/13:45, Puče 72/16:15, Šmarje 83/19:45, Malija 93/22:00, Strunjan 102/23:45. Tabela označuje tranzicijo v Kubedu. Limit prijav 300; cenik 115/130/150/170 EUR do 31.3./30.6./14.9./15.10.2026.",
+      "editionYear": 2026,
+      "verifiedAt": "2026-11-05",
+      "distanceKm": 108
+    },
+    {
+      "title": "Obala Ultra Trail 108 km 2026 — oprema",
+      "url": "https://obalaultratrail.si/en/distances/obala-ultra-trail-108-km/",
+      "excerpt": "Obala Ultra Trail 108 km 2026 zahteva številko, lonček, trail čevlje, prvo pomoč, oblačila, izotermično folijo, hrano, nahrbtnik z 2×500 ml, piščalko, telefon, vetrovko, kapo/bandano, rokavice ter čelno svetilko z rezervno baterijo ali drugo svetilko. Palice so priporočene. Zahteve za temperaturo/veter se med uradnimi stranmi razlikujejo; zadnja navodila organizatorja imajo prednost.",
+      "editionYear": 2026,
+      "verifiedAt": "2026-11-05",
+      "distanceKm": 108,
+      "hasUncertainty": true
+    },
+    {
+      "title": "Obala Ultra Trail 2026 — splošna pravila opreme in spremembe",
+      "url": "https://obalaultratrail.si/tekaci/obvezna-oprema/",
+      "excerpt": "Obala Ultra Trail zahteva nošenje obvezne opreme ves čas tekme. Organizator lahko zaradi vremena doda zahteve za vročino ali mraz in spremembe objavi pred prevzemom številk na Facebooku in Instagramu. Skupna stran za ultra opremo navaja oblačila za -5 do 20 °C in veter nad 100 km/h, medtem ko strani 64/108 km navajajo 5 do 20 °C in nad 50 km/h. Gre za neskladje uradnih virov, ne za vremensko napoved ali potrjeno spremembo pravil. Pred startom je treba preveriti zadnja organizatorjeva navodila.",
+      "editionYear": 2026,
+      "verifiedAt": "2026-11-05",
+      "hasUncertainty": true
+    },
+    {
+      "title": "Obala Ultra Trail — pravila udeležbe in odstopa",
+      "url": "https://obalaultratrail.si/tekaci/uradni-pravilnik/",
+      "excerpt": "Obala Ultra Trail: za 108, 64 in 35 km pravilnik zahteva starost nad 18 let. Za 17 km dovoljuje 15–18 let s pisnim soglasjem in spremstvom starša/skrbnika, za 11 km prepoveduje mlajše od 12 let ter zahteva soglasje in spremstvo za 12–15 let. Tekač sledi označeni trasi; GPS je le pomoč. Odstop je treba javiti organizatorju na kontrolni točki ali okrepčevalnici, izven nje samo v nuji. Zunanja pomoč je omejena na dovoljene postaje, pacing in neregistrirano spremstvo sta prepovedana. Prepovedano je odmetavanje smeti in nastop pod tujim imenom. Pritožba: pisno v 30 min po cilju, varščina 50 EUR. Stran nima izrecne letnice pravilnika.",
+      "editionYear": null,
+      "verifiedAt": "2026-11-05"
+    },
+    {
+      "title": "Obala Ultra Trail — brezplačni prevozi na starte",
+      "url": "https://obalaultratrail.si/tekaci/transport/",
+      "excerpt": "Obala Ultra Trail organizira brezplačne avtobuse iz glavnega zbirnega mesta v Izoli do startov v Dekanih za 108 km, Hrastovljah za 64 km in Kortah za 17 km. Osebni avtomobil na startu ni potreben. Natančne ure za izvedbo 2026 so objavljene ločeno v programu. Stran transporta sama nima izrecne letnice.",
+      "editionYear": null,
+      "verifiedAt": "2026-11-05"
+    },
+    {
+      "title": "Obala Ultra Trail 2026 — prijave, menjave in osebni prevzem",
+      "url": "https://obalaultratrail.si/vec-informacij/",
+      "excerpt": "Obala Ultra Trail 2026: FAQ določa konec prijav 15.10.2026 ob 23.59. Menjava tekača in razdalje sta mogoči najpozneje do 22.10.2026 oziroma prej, če je dosežen limit. Za menjave 15.9.–22.10. je navedena pristojbina 15 EUR. Ob osebnem prevzemu številke mora tekač predložiti osebni dokument s fotografijo, podpisati izjavo in opraviti pregled opreme. Drug udeleženec številke ne more prevzeti. Organizator prijavnine ob osebni odpovedi ne vrača; izbirno zavarovanje se uveljavlja pri zavarovalnici. Prenos zaradi poškodbe v naslednje leto ni omogočen. Na okrepnih ni plastičnih lončkov, zato je potreben lasten lonček ali bidon. Dovoljene podporne postaje je treba preveriti v vodniku.",
+      "editionYear": 2026,
+      "verifiedAt": "2026-11-05"
+    },
+    {
+      "title": "Obala Ultra Trail 2026 — napoved udeležbe in stanje prijav",
+      "url": "https://www.slovenia.info/sl/novinarsko-sredisce/novice/40456-obala-ultra-trail-powered-by-i-feel-slovenia-2026-bo-povezal-1-650-tekacev-iz-vec-kot-43-drzav",
+      "excerpt": "Objava Slovenske turistične organizacije z dne 3.11.2026, z navedenim virom organizatorjem IDILA TRAIL ADVENTURES, opisuje šesto izvedbo Obala Ultra Trail 6.–8. novembra 2026 kot razprodano. Napoveduje 1650 tekačev iz več kot 43 držav, pet razdalj in GPS-sledenje na najdaljših preizkušnjah. Napovedana udeležba ni število dejanskih startov ali finišerjev. Gre za sporočilo organizatorja, objavljeno pri STO, ne za rezultate tekme.",
+      "editionYear": 2026,
+      "verifiedAt": "2026-11-05",
+      "publishedAt": "2026-11-03"
+    },
+    {
+      "title": "Obala Ultra Trail — strani za rezultate in arhiv",
+      "url": "https://obalaultratrail.si/rezultati/arhiv-rezultatov-iz-prejsnjih-let/",
+      "excerpt": "Uradni arhiv Obala Ultra Trail vsebuje naslove za rezultate 2021–2025, vendar v pregledanem besedilnem prikazu niso bili dostopni dejanski rezultati ali ciljna povezava do merilca časa. Iz te strani ni mogoče potrditi zmagovalcev, časov ali števila finišerjev. Rezultate bo treba pridobiti iz konkretnega rezultatskega vira in jih vezati na leto ter razdaljo.",
+      "editionYear": null,
+      "verifiedAt": "2026-11-05"
+    }
+  ],
+  "linksToInspect": [
+    {
+      "title": "Uradni Race Guide 2026 v slovenščini",
+      "url": "https://drive.google.com/file/d/1A7AgM-ihbIRA-dwzakJFU6Dr58BUl_wf/view?usp=drive_linkk",
+      "status": "Povezava in naslov dokumenta potrjena na domači strani; vsebina PDF ni bila dosegljiva spletnemu bralniku. Ne uporabljaj kot prebran dokaz."
+    },
+    { "title": "Rezultati tekočega leta", "url": "https://obalaultratrail.si/rezultati/rezultati-tekocega-leta/", "status": "Pregledana stran brez vsebinskih rezultatov." },
+    { "title": "Live tracking 108 km", "url": "https://obalaultratrail.si/rezultati/live-tracking-pri-108-km-link/", "status": "Pregledana stran brez razvidne aktivne ciljne povezave." },
+    { "title": "GPX 11 km 2026", "url": "https://obalaultratrail.si/wp-content/uploads/2026/08/obala-ultra-trail-powered-by-i-feel-slovenia-2026-11-km.gpx", "status": "Uradna povezava; GPX vsebina ni bila analizirana." },
+    { "title": "GPX 17 km 2026", "url": "https://obalaultratrail.si/wp-content/uploads/2026/08/obala-ultra-trail-powered-by-i-feel-slovenia-2026-17-km.gpx", "status": "Uradna povezava; GPX vsebina ni bila analizirana." },
+    { "title": "GPX 35 km 2026", "url": "https://obalaultratrail.si/wp-content/uploads/2026/08/obala-ultra-trail-powered-by-i-feel-slovenia-2026-35-km.gpx", "status": "Uradna povezava; GPX vsebina ni bila analizirana." },
+    { "title": "GPX 64 km 2026", "url": "https://obalaultratrail.si/wp-content/uploads/2026/08/obala-ultra-trail-powered-by-i-feel-slovenia-2026-64-km.gpx", "status": "Uradna povezava; GPX vsebina ni bila analizirana." },
+    { "title": "GPX 108 km 2026", "url": "https://obalaultratrail.si/wp-content/uploads/2026/08/obala-ultra-trail-powered-by-i-feel-slovenia-2026-obala-ultra-trail-108-km.gpx", "status": "Uradna povezava; GPX vsebina ni bila analizirana." }
+  ],
+  "uncertainties": [
+    "Časovni limiti 11/17/35 km: domača stran 3/5/8 h, podrobne strani 2 h 30 min/4 h/7 h 30 min. Pred tekmo preveriti zadnji Race Guide in obvestila.",
+    "35 km prva okrepna: opis Šared, tabela Baredi pri 11 km. Ne določati natančne lokacije brez vodnika.",
+    "64/108 km temperaturno/vetrno območje opreme: podrobne strani 5 do 20 °C in veter >50 km/h; skupna stran -5 do 20 °C in >100 km/h. Ne razlagati kot vremensko napoved.",
+    "Kazni za manjkajočo opremo se razlikujejo: razdaljne strani takojšnja DSQ, FAQ 30–60 minut za predmet, pravilnik nejasna navedba 30 kazen in nato DSQ. Ne navajati enotne natančne kazni.",
+    "64 km tabela vzpona je manjša od naslovnih 2000 m; ITRA za 108 km navaja 108,16 km/+3848 m/-3871 m in 200 udeležencev, organizator približno 108 km/+4000 m in limit 300. Ne mešati metod izračuna ali limitov.",
+    "Uradni Race Guide 2026 je najden, a neprebran; vodnik 2025 v iskalniku ni nadomestilo za leto 2026.",
+    "FAQ ne izpostavi petkovega obveznega prevzema 108 km, program ga izrecno zahteva; za 108 km uporabiti specifično navodilo programa.",
+    "Rezultati in live tracking imajo vidne menijske strani, a bralnik ne pokaže dejanskega rezultatskega vira; rezultatov 2026 pred tekmo ne ustvarjati.",
+    "Spletne strani se lahko tik pred dogodkom spremenijo; ponovno preverjanje obvezne opreme, prevozov, trase in limitov je smiselno 6.11.2026."
+  ]
+}

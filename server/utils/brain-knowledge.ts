@@ -2,8 +2,14 @@ import type { H3Event } from 'h3'
 import type { SiteContent } from '../../types/content'
 import type { BrainSource } from '../../types/brain'
 import type { BrainChatMessage } from '../../utils/brainChat'
+import { brainSemanticSearch } from './brain-semantic.ts'
 
-const normalize = (s: string) => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase()
+const normalize = (s: string) =>
+  s
+    .normalize('NFD')
+    .replace(/\p{M}/gu, '')
+    .toLowerCase()
+    .replace(/(\d)\s*k(?:m)?\b/g, '$1km')
 const stopWords = new Set([
   'kako',
   'lahko',
@@ -24,9 +30,31 @@ const stopWords = new Set([
   'about',
 ])
 export function brainKnowledgeWords(text: string) {
-  return [...new Set(normalize(text).match(/[\p{L}]{3,}/gu) || [])]
+  return [...new Set(normalize(text).match(/[\p{L}\p{N}]{2,}/gu) || [])]
     .filter((w) => !stopWords.has(w))
+    .filter((w) => w.length >= 3 || /^\d+$/.test(w))
     .slice(-24)
+}
+
+/** Keep accents for Postgres' simple dictionary; OR terms for natural-language questions. */
+export function brainQuestionSearchQuery(text: string) {
+  const terms = [
+    ...new Set(
+      text
+        .toLowerCase()
+        .normalize('NFC')
+        .match(/[\p{L}\p{N}]{3,}/gu) || [],
+    ),
+  ]
+    .filter((word) => !stopWords.has(normalize(word)))
+    .slice(-24)
+  let query = ''
+  for (const term of terms) {
+    const next = query ? `${query} OR ${term}` : term
+    if (next.length > 300) break
+    query = next
+  }
+  return query
 }
 
 /** Explicit public fields only: no account profiles, uploaded files, summaries or pending claims. */
@@ -160,20 +188,57 @@ export function brainCatalogSources(content: SiteContent): BrainSource[] {
 
 export function rankBrainSources(sources: BrainSource[], query: string, limit = 10) {
   const words = brainKnowledgeWords(query)
+  const years = query.match(/\b(?:19|20|21)\d{2}\b/g) || []
   return sources
     .map((s) => {
       const title = normalize(s.title)
       const text = normalize(s.excerpt)
-      const score = words.reduce(
+      let score = words.reduce(
         (score, w) => score + (title.includes(w) ? 8 : 0) + (text.includes(w) ? 1 : 0),
         0,
       )
+      // An explicit edition in the question must outrank a newer verification date.
+      if (score && years.length) {
+        score += years.reduce(
+          (sum, year) => sum + (title.includes(year) || text.includes(year) ? 16 : 0),
+          0,
+        )
+      }
       return { s, score }
     })
     .filter(({ score }) => score > 0)
-    .sort((a, b) => b.score - a.score)
+    .sort(
+      (a, b) =>
+        b.score - a.score ||
+        Number(b.s.origin === 'official') - Number(a.s.origin === 'official') ||
+        (b.s.verified_at || '').localeCompare(a.s.verified_at || ''),
+    )
     .slice(0, limit)
     .map(({ s }) => s)
+}
+
+/** Fuse lexical and vector ranks without discarding semantic-only matches. */
+export function rankBrainHybridSources(sources: BrainSource[], query: string, limit = 12) {
+  const semantic = sources
+    .filter((s) => typeof s.similarity === 'number')
+    .sort((a, b) => (b.similarity || 0) - (a.similarity || 0))
+  if (!semantic.length) return rankBrainSources(sources, query, limit)
+  const lexical = rankBrainSources(sources, query, sources.length)
+  const scores = new Map<string, number>()
+  lexical.forEach((s, i) => scores.set(s.id, 1 / (20 + i + 1)))
+  semantic.forEach((s, i) => scores.set(s.id, (scores.get(s.id) || 0) + 2 / (20 + i + 1)))
+  const requestedYears: string[] = query.match(/\b(?:19|20|21)\d{2}\b/g) || []
+  if (requestedYears.length) {
+    for (const source of sources) {
+      const sourceYears = `${source.title} ${source.excerpt}`.match(/\b(?:19|20|21)\d{2}\b/g) || []
+      if (sourceYears.length && !sourceYears.some((year) => requestedYears.includes(year)))
+        scores.set(source.id, (scores.get(source.id) || 0) * 0.2)
+    }
+  }
+  return sources
+    .filter((s) => scores.has(s.id))
+    .sort((a, b) => (scores.get(b.id) || 0) - (scores.get(a.id) || 0))
+    .slice(0, limit)
 }
 
 export async function brainKnowledge(
@@ -213,7 +278,12 @@ export async function brainKnowledge(
           config: 'simple',
         })
       }
-      const { data, error } = await search.limit(8)
+      // Rank a bounded candidate pool before applying the small model-context limit.
+      // Limiting to eight unordered rows here previously hid newly imported topics.
+      const { data, error } = await search
+        .order('verified_at', { ascending: false, nullsFirst: false })
+        .order('id')
+        .limit(80)
       if (error) throw new Error('Knowledge sources unavailable')
       return (data || []).map((s) => ({ ...s, excerpt: s.excerpt.slice(0, 5000) })) as BrainSource[]
     })(),
@@ -238,6 +308,7 @@ export async function brainKnowledge(
         valid_until: null,
       })) as BrainSource[]
     })(),
+    brainSemanticSearch(event, query, { publicOnly: true, entity }),
   ])
   const catalog = results[0]
   if (catalog.status === 'fulfilled') {
@@ -252,12 +323,22 @@ export async function brainKnowledge(
   const knowledge = results[1]
   if (knowledge.status === 'fulfilled') sources.push(...knowledge.value)
   else available = false
+  const semantic = results[3]
+  if (semantic.status === 'fulfilled' && semantic.value) sources.push(...semantic.value)
   const shared = results[2]
   if (shared.status === 'rejected') available = false
   const primary = [...new Map(sources.map((s) => [s.id, s])).values()]
   const discussions = shared.status === 'fulfilled' ? shared.value : []
+  const limit = discussions.length ? 9 : 12
+  const ranked = rankBrainHybridSources(primary, latest, limit)
+  // Preserve conversational context for follow-ups that omit the race name.
+  const selected = [
+    ...new Map(
+      [...ranked, ...rankBrainHybridSources(primary, query, limit)].map((s) => [s.id, s]),
+    ).values(),
+  ].slice(0, limit)
   return {
-    sources: [...primary.slice(0, discussions.length ? 9 : 12), ...discussions].slice(0, 12),
+    sources: [...selected, ...discussions].slice(0, 12),
     available,
   }
 }

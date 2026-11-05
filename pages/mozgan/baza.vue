@@ -4,7 +4,7 @@ useSiteSeo('Baza znanja · Možgan', 'Povezani viri in izvorni podatki', { noind
 const query = ref(''),
   kind = ref(''),
   origin = ref(''),
-  semantic = ref(false),
+  semantic = ref(true),
   busy = ref(false),
   error = ref(''),
   selected = ref<any>(null)

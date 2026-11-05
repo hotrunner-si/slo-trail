@@ -34,6 +34,10 @@ if (input === '--all') {
       .replace(/[^a-z0-9]+/g, '-')
       .replace(/^-|-$/g, '')
   const aliases = {
+    'caven-run': {
+      'caven-trail-17km.gpx': 'caven-trail',
+      'caven-trail-24km.gpx': 'caven-trail-24km',
+    },
     'roznik-trail': {
       'roznik-5.8.gpx': 'trasa-krajsi-trail',
       'roznik-8.8.gpx': 'trasa-srednji-trail',
@@ -172,6 +176,9 @@ if (input === '--all') {
     const race = races.get(root.name)
     if (!race) continue
     for (const path of await files(join(raceRoot, root.name))) {
+      // The replacement 17 km track supersedes the original course.
+      if (root.name === 'caven-run' && basename(path) === 'caven-run-caven-trail-17km.gpx')
+        continue
       const filename = basename(path),
         normalized = slugify(basename(path, extname(path)))
       const systematic = [...race.distances.values()].filter(({ id, km }) => {
