@@ -38,7 +38,8 @@ const related = computed(() => {
 })
 </script>
 <template>
-  <article v-if="article" class="story-page" :class="{ 'story-page-analysis': article.trailAnalysis }">
+  <JournalAnalysisStory v-if="article?.trailAnalysis" :article="article" />
+  <article v-else-if="article" class="story-page">
     <div class="story-image"><img :src="asset(article.image)" :alt="article.title" /></div>
     <header class="story-header shell">
       <p class="eyebrow">{{ article.category }} · {{ formatDate(article.publishedAt) }}</p>
