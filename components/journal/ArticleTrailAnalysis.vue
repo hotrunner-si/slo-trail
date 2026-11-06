@@ -32,7 +32,9 @@ defineProps<{ beforeChart: string; afterChart: string; points: TrailPoint[]; hid
 .trail-analysis :deep(.profile svg) { width: 100%; }
 .trail-analysis :deep(figcaption) { font-size: 12px; color: #63735b; }
 @media (max-width: 650px) { .trail-analysis :deep(.profiles) { grid-template-columns: 1fr; } }
-.trail-analysis :deep(.profiles-distance) { grid-template-columns: 1fr; }
+.trail-analysis :deep(.profiles-distance) { grid-template-columns: 1fr; gap: 12px; }
+.trail-analysis :deep(.profile-distance) { margin: 8px 0; }
+.trail-analysis :deep(.profile-distance h3) { margin: 0 0 6px; }
 .trail-analysis :deep(.profile-chart) { overflow-x: auto; }
 .trail-analysis :deep(.profile-chart svg) { display: block; min-width: 720px; }
 .trail-analysis :deep(.profile-scale-note) { font-size: 13px; color: #63735b; }

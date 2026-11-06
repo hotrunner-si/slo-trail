@@ -34,7 +34,8 @@ const profile = computed(() => props.distance.gpx?.profile || gpx.value?.profile
     :aria-label="`Višinski profil ${distance.km} km, ${distance.elevation} metrov vzpona`"
   >
     <div class="mini-profile-meta">
-      <span>{{ effortLabel(distance) }}</span
+      <span class="mini-profile-category">{{ effortLabel(distance) }}</span>
+      <span class="mini-profile-gain">↗ {{ distance.elevation.toLocaleString('sl-SI') }} m</span
       ><strong>{{ effortKm(distance).toLocaleString('sl-SI') }} EFF</strong>
     </div>
     <p v-if="!profile.length" class="profile-unavailable">Profil ni na voljo</p>
@@ -49,3 +50,7 @@ const profile = computed(() => props.distance.gpx?.profile || gpx.value?.profile
     />
   </div>
 </template>
+
+<style scoped>
+.mini-profile-gain { display: none; }
+</style>

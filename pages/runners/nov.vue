@@ -1,7 +1,7 @@
 <script setup lang="ts">
 definePageMeta({ middleware: 'brain-account' })
 useSiteSeo('Ustvari profil tekača', 'Predlagaj svoj tekaški profil', { noindex: true })
-const { session, refresh } = await useBrainSession()
+const { session, refresh, signedIn } = await useBrainSession()
 const profile = computed(() => session.value?.account?.profile)
 const linked = computed(() => session.value?.account?.link?.runner_slug)
 if (linked.value) await navigateTo('/runners/' + linked.value, { replace: true })
@@ -54,7 +54,8 @@ async function save() {
       ><label>Kraj oziroma regija<input v-model="region" maxlength="100" /></label
       ><label>Predstavitev<textarea v-model="bio" rows="6" maxlength="1500" /></label>
       <p>Zasebna slika in GPX iz računa se ne objavijo samodejno.</p>
-      <button class="button" :disabled="busy">
+      <p v-if="!signedIn">Prijava še ni mogoča. Stran je v izdelavi.</p>
+      <button class="button" :disabled="busy || !signedIn">
         {{ busy ? 'Pošiljam …' : 'Pošlji v pregled' }}
       </button>
     </form>

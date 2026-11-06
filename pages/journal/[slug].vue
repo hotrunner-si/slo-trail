@@ -16,7 +16,6 @@ useSiteSeo(
     image: () => article.value?.image,
     imageAlt: () => article.value?.title,
     publishedAt: () => article.value?.publishedAt,
-    noindex: true,
   },
 )
 const related = computed(() => {

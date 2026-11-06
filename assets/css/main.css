@@ -2211,9 +2211,6 @@ h2 {
   }
 }
 @media (max-width: 620px) {
-  .event-list.with-profiles .event-row {
-    padding-block: 18px;
-  }
   .race-list-key {
     display: block;
   }
@@ -3179,7 +3176,6 @@ h2 {
   .event-list.with-profiles .event-row,
   .event-list.with-profiles.with-compare .event-row {
     grid-template-columns: 46px minmax(0, 1fr);
-    padding-block: 18px;
   }
   .event-list.with-profiles .event-distance {
     display: flex;
@@ -3187,17 +3183,11 @@ h2 {
     grid-row: 2;
     margin-top: 6px;
   }
-  .event-list.with-profiles .event-distance button {
-    padding: 7px 8px;
-  }
   .event-list.with-profiles .race-mini-profile {
     grid-column: 2;
     grid-row: 4;
     width: 100%;
     margin-top: 8px;
-  }
-  .event-row time {
-    align-self: start;
   }
   .event-list.with-profiles .event-main {
     min-width: 0;

@@ -1,9 +1,12 @@
 import type { SiteContent } from '../../../types/content'
 import type { KnowledgeEntry } from '../../../types/knowledge'
 import { siteKnowledgeEntries, knowledgeTopic, safeKnowledgeUrl } from '../../../utils/knowledge'
+import { publicPreviewEnabled } from '../../../utils/siteAccess'
 
 export default defineEventHandler(async (event) => {
-  const { client } = await brainIdentity(event)
+  const identity = await brainIdentity(event, !publicPreviewEnabled)
+  const publicOnly = !identity.user
+  const client = publicOnly ? brainService(event) : identity.client
   const content = await event.$fetch<SiteContent>('/api/content')
   const entries = siteKnowledgeEntries(content)
   // Range over all rows, rather than silently using PostgREST's default row cap.
@@ -16,6 +19,8 @@ export default defineEventHandler(async (event) => {
     const rows: any[] = []
     for (let offset = 0; ; offset += 500) {
       let query = filter(client.from(table).select(columns)).order(order)
+      if (publicOnly && ['brain_sources', 'brain_claims'].includes(table))
+        query = query.in('origin', ['official', 'editorial'])
       if (table === 'brain_relations') query = query.order('object_id').order('relation')
       const result = await query.range(offset, offset + 499)
       brainCheck(result.error)
@@ -23,7 +28,7 @@ export default defineEventHandler(async (event) => {
       if ((result.data?.length || 0) < 500) return rows
     }
   }
-  const [entities, sources, claims, relations] = await Promise.all([
+  const [rawEntities, sources, claims, rawRelations] = await Promise.all([
     all('brain_entities', 'id,title,kind,race_slug,runner_slug,article_slug,distance_id,year'),
     all(
       'brain_sources',
@@ -34,6 +39,10 @@ export default defineEventHandler(async (event) => {
     ),
     all('brain_relations', 'subject_id,object_id,relation', 'subject_id'),
   ])
+  const publicIds = new Set([...sources, ...claims].map(row => row.entity_id))
+  const entities = publicOnly ? rawEntities.filter(entity => publicIds.has(entity.id)) : rawEntities
+  const entityIds = new Set(entities.map(entity => entity.id))
+  const relations = publicOnly ? rawRelations.filter(row => entityIds.has(row.subject_id) && entityIds.has(row.object_id)) : rawRelations
   const entityById = new Map(entities.map((e) => [e.id, e]))
   const entityKey = (entity: any) =>
     entity?.kind === 'race' && entity.race_slug

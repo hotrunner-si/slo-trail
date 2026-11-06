@@ -55,6 +55,7 @@ const isCurrentBrainPage = (path: string) => route.path.replace(/\/$/, '') === p
             >{{ item.label }}</NuxtLink
           >
         </template>
+        <NuxtLink v-if="!isBrain" to="/profil" class="public-profile-link">Moj profil</NuxtLink>
         <NuxtLink
           v-if="!isBrain"
           :to="siteContent.site.navigationCta.to"
@@ -70,6 +71,9 @@ const isCurrentBrainPage = (path: string) => route.path.replace(/\/$/, '') === p
 </template>
 
 <style scoped>
+.main-nav a.public-profile-link { border-left: 1px solid var(--line); padding-left: 20px; }
+.main-nav a.public-profile-link::after,
+.brain-header .main-nav a.brain-profile-link::after { left: 20px; }
 .runners-dropdown {
   position: relative;
 }
@@ -150,6 +154,7 @@ const isCurrentBrainPage = (path: string) => route.path.replace(/\/$/, '') === p
   .brain-header .main-nav a.brain-profile-link {
     padding-left: 14px;
   }
+  .brain-header .main-nav a.brain-profile-link::after { left: 14px; }
   .brain-return-link {
     padding-left: 14px;
     font-size: 0.74rem;
@@ -206,6 +211,7 @@ const isCurrentBrainPage = (path: string) => route.path.replace(/\/$/, '') === p
   .brain-header .main-nav a.brain-profile-link {
     padding-left: clamp(9px, 3vw, 22px);
   }
+  .brain-header .main-nav a.brain-profile-link::after { left: clamp(9px, 3vw, 22px); }
   .brain-header .brain-return-link {
     grid-area: back;
     padding: 0;

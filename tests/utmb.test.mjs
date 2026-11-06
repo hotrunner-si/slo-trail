@@ -1,8 +1,16 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
-import { sortUtmbRunners, utmbCategories } from '../utils/utmb.ts'
+import { sortUtmbRunners, utmbCategories, utmbDisplayName } from '../utils/utmb.ts'
 import { utmbRefreshSlot } from '../utils/utmbRefresh.ts'
+
+test('duplicate name variants prefer Slovenian diacritics in either order', () => {
+  assert.equal(utmbDisplayName('Klemen ŠTULAR (Klemen STULAR)'), 'Klemen ŠTULAR')
+  assert.equal(utmbDisplayName('Tine ZIZMOND (Tine ŽIŽMOND)'), 'Tine ŽIŽMOND')
+  assert.equal(utmbDisplayName('Jernej ŽNIDARŠIČ (Jernej ZNIDARSIC)'), 'Jernej ŽNIDARŠIČ')
+  assert.equal(utmbDisplayName('Kilian JORNET'), 'Kilian JORNET')
+  assert.equal(utmbDisplayName('Janez Novak (drug tekač)'), 'Janez Novak (drug tekač)')
+})
 
 test('refresh changes only at Tuesday/Saturday 04:00 Ljubljana in winter and summer', () => {
   const cases = [

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { sortUtmbRunners, utmbCategories } from '~/utils/utmb'
+import { sortUtmbRunners, utmbCategories, utmbDisplayName } from '~/utils/utmb'
 import type { UtmbCategory, UtmbRanking, UtmbSex } from '~/utils/utmb'
 const selections = [
   { id: 'world-H', label: 'Svetovna lestvica · moški' },
@@ -212,7 +212,7 @@ const fetchedAt = computed(() =>
                 :href="`https://utmb.world/runner/${runner.uri}`"
                 target="_blank"
                 rel="noopener noreferrer"
-                >{{ runner.name }}</a
+                >{{ utmbDisplayName(runner.name) }}</a
               >
             </th>
             <td v-if="scope === 'world'">{{ runner.country }}</td>
@@ -444,6 +444,16 @@ tbody tr:hover {
   white-space: nowrap;
 }
 @media (max-width: 600px) {
+  thead th:nth-child(2),
+  tbody th[scope='row'] {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background: var(--paper, #f7f5ef);
+    border-right: 0;
+    box-shadow: none;
+  }
+  thead th:nth-child(2) { background: #ebe9e2; z-index: 3; }
   .utmb-section-heading {
     align-items: flex-start;
     flex-direction: column;

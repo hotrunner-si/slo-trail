@@ -137,3 +137,84 @@ const groups = computed(() => {
     </section>
   </div>
 </template>
+
+<style scoped>
+/* Compact list: shared by the homepage and race browser. */
+@media (max-width: 1272px) {
+  .event-list.with-profiles .event-row,
+  .event-list.with-profiles.with-compare .event-row {
+    grid-template-columns: 62px minmax(0, 1.1fr) minmax(120px, .9fr) 145px;
+    gap: 18px;
+  }
+  .event-list.with-profiles .event-row time { grid-column: 1; grid-row: 1; }
+  .event-list.with-profiles .event-main { grid-column: 2; grid-row: 1; min-width: 0; }
+  .event-list.with-profiles .event-distance {
+    display: flex;
+    grid-column: 3;
+    grid-row: 1;
+    margin-top: 0;
+  }
+  .event-list.with-profiles .race-mini-profile {
+    grid-column: 4;
+    grid-row: 1;
+    width: 100%;
+    min-width: 0;
+    margin-top: 0;
+  }
+  .event-list.with-profiles .event-gain,
+  .event-list.with-profiles .status,
+  .event-list.with-profiles .compare-button { display: none; }
+  .event-list.with-profiles :deep(.mini-profile-category) { display: none; }
+  .event-list.with-profiles :deep(.mini-profile-gain) { display: inline; color: var(--muted); }
+  .event-list.with-profiles :deep(.mini-profile-meta strong) { color: var(--profile-color); font-weight: 500; }
+}
+/* Month headings move at 900px; distances stay beside the name until 720px. */
+@media (max-width: 720px) {
+  .race-list-months {
+    display: grid;
+    grid-template-columns: 46px fit-content(48%) minmax(0, 1fr);
+    column-gap: 12px;
+  }
+  .race-list-month,
+  .race-list-month > .event-list {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+  }
+  .race-list-month > header { grid-column: 1 / -1; }
+  .event-list.with-profiles .event-row,
+  .event-list.with-profiles.with-compare .event-row {
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+    gap: 12px;
+  }
+  .event-list.with-profiles .event-distance { grid-column: 2; grid-row: 2; margin-top: 0; margin-bottom: 6px; }
+  .event-list.with-profiles .race-mini-profile { grid-column: 3; grid-row: 1 / 3; margin-top: 0; }
+}
+@media (max-width: 552px) {
+  .race-list-months { grid-template-columns: 46px minmax(0, 1fr); }
+  .event-list.with-profiles .event-row,
+  .event-list.with-profiles.with-compare .event-row {
+    padding-top: 16px;
+    row-gap: 6px;
+  }
+  .event-list.with-profiles .event-distance {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-content: center;
+    flex-wrap: nowrap;
+    min-width: 0;
+    margin-bottom: 0;
+  }
+  .event-list.with-profiles .event-distance button {
+    min-width: 0;
+    padding-inline: 8px;
+    font-size: clamp(.5rem, 2vw, .7rem);
+    white-space: nowrap;
+  }
+  .event-list.with-profiles .race-mini-profile {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+}
+</style>

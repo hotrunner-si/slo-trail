@@ -46,7 +46,7 @@ export function winnerSpeedCharts(routes, results) {
     return `<figure class="winner-speed-card"><h3>${esc(route.raceName)} · ${esc(route.label)}</h3><p class="winner-speed-distance">${esc(note)}</p><svg viewBox="0 0 300 166" role="img" aria-labelledby="speed-title-${index} speed-desc-${index}"><title id="speed-title-${index}">${esc(route.raceName+' '+route.label)}: hitrost zmagovalcev 2021–2025</title><desc id="speed-desc-${index}">${esc(rows.filter(r=>r.seconds).map(r=>`${r.year}, ${r.gender==='M'?'moški':'ženske'}: ${nf(r.speedKmh)} km/h`).join('; '))}</desc><g font-family="Arial,sans-serif" font-size="9" fill="#52654c"><text x="30" y="11">km/h</text>${grid}${bars}</g></svg></figure>`
   })
   assert.equal(seen.size, results.length, 'Every historical result must be mapped to a chart')
-  return `<section class="winner-speeds" aria-label="Hitrosti zmagovalcev po trasah"><div class="winner-speed-legend"><span><i style="background:#3b82f6"></i>Moški</span><span><i style="background:#ec4899"></i>Ženske</span></div><p class="winner-speed-note">Hitrost = razdalja izvedbe ÷ ciljni čas. Vsi diagrami imajo isto lestvico v km/h. Črtica pomeni, da čas ni potrjen; podrobnosti dosežka so ob posameznem stolpcu.</p><div class="winner-speed-grid">${cards.join('')}</div></section>`
+  return `<section class="winner-speeds" aria-label="Hitrosti zmagovalcev po trasah"><div class="winner-speed-legend"><span><i style="background:#3b82f6"></i>Moški</span><span><i style="background:#ec4899"></i>Ženske</span></div><p class="winner-speed-note">Naslednji prikazi prikazujejo spreminjanje hitrosti zmagovalcev na posameznih trasah.</p><div class="winner-speed-grid">${cards.join('')}</div></section>`
 }
 
 export const winnerSpeedCss = `

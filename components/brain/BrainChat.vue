@@ -10,10 +10,6 @@ onBeforeUnmount(() => activeRequest?.abort())
 const error = ref('')
 const history = ref<HTMLElement | null>(null)
 const input = ref<HTMLTextAreaElement | null>(null)
-const { data: suggestions, refresh: refreshSuggestions } = await useAsyncData(
-  'brain-chat-prompts',
-  () => $fetch('/api/brain/prompts'),
-)
 const messages = ref<
   (BrainChatMessage & {
     citations?: BrainSource[]
@@ -37,7 +33,6 @@ function reset() {
   text.value = ''
   error.value = ''
   note.value = defaultNote
-  void refreshSuggestions()
 }
 watch(
   () => session.value?.user?.id,
@@ -100,10 +95,6 @@ function onKeydown(event: KeyboardEvent) {
     event.preventDefault()
     void send()
   }
-}
-function suggest(question: string) {
-  text.value = question
-  input.value?.focus()
 }
 </script>
 
@@ -233,18 +224,6 @@ function suggest(question: string) {
             Lahko pišeš naprej. Novo sporočilo prekine čakanje in sproži odgovor na dopolnjen
             pogovor.
           </p>
-          <div v-if="!messages.length" class="chat-suggestions" aria-label="Predloga vprašanj">
-            <button
-              v-for="suggestion in suggestions"
-              :key="suggestion.id"
-              type="button"
-              :disabled="busy"
-              @click="suggest(suggestion.prompt)"
-            >
-              <span>{{ suggestion.prompt }}</span
-              ><span class="chat-suggestion-arrow" aria-hidden="true"><IconArrowUpRight /></span>
-            </button>
-          </div>
           <div class="chat-footnote">
             <p id="chat-input-hint">AI se lahko zmoti. Pomembne podatke preveri pri viru.</p>
             <details class="chat-privacy">

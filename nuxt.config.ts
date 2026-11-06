@@ -44,13 +44,12 @@ export default defineNuxtConfig({
   },
   modules: ['@nuxtjs/sitemap'],
   sitemap: {
+    sources: ['/api/sitemap/articles'],
     exclude: [
       '/journal/predogled',
       '/runners/nov',
       '/mozgan',
       '/mozgan/**',
-      '/journal',
-      '/journal/**',
       '/routes/velika-planina-loop',
       '/routes/stol-grebenska-linija',
       '/routes/nanos-krozna',

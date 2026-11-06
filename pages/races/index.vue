@@ -103,11 +103,7 @@ function resetSearch() {
       />
     </section>
     <section class="data-promise shell">
-      <div>
-        <p class="eyebrow">Zakaj zaupati podatkom</p>
-        <h2>{{ siteContent.races.sourceTitle }}</h2>
-      </div>
-      <div>
+      <div class="data-promise-content">
         <p>
           {{ siteContent.races.sourceDescription }}
         </p>
@@ -141,3 +137,7 @@ function resetSearch() {
     />
   </div>
 </template>
+
+<style scoped>
+.data-promise-content { grid-column: 1 / -1; }
+</style>

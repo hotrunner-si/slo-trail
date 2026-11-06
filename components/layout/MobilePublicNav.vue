@@ -81,7 +81,7 @@ onUnmounted(() => {
         >
           <circle cx="12" cy="8" r="3.5" />
           <path d="M4.5 20c.4-4.1 3.1-6.2 7.5-6.2s7.1 2.1 7.5 6.2" /></svg
-        ><span>Profil</span>
+        ><span>Moj profil</span>
       </NuxtLink>
     </nav>
   </div>

@@ -2,9 +2,13 @@ import { z } from 'zod'
 import { brainQuestionSearchQuery, rankBrainSources } from '../../utils/brain-knowledge'
 import type { BrainSource } from '../../../types/brain'
 import { brainSemanticSearch } from '../../utils/brain-semantic'
+import { publicPreviewEnabled } from '../../../utils/siteAccess'
 export default defineEventHandler(async (event) => {
   brainMutation(event)
-  const { client, user } = await brainIdentity(event)
+  const identity = await brainIdentity(event, !publicPreviewEnabled)
+  const user = identity.user
+  const publicOnly = !user
+  const client = publicOnly ? brainService(event) : identity.client
   const body = await brainBody(
     event,
     z.object({
@@ -14,13 +18,13 @@ export default defineEventHandler(async (event) => {
       origin: z.enum(['', 'official', 'editorial', 'unverified', 'community']).default(''),
     }),
   )
-  brainLimit(event, 'search:' + user!.id, 30)
+  brainLimit(event, 'search:' + (user?.id || getRequestIP(event)), 30)
   const semantic = body.semantic
     ? await brainSemanticSearch(event, body.query, {
         client,
         kind: body.kind,
         origin: body.origin,
-        publicOnly: false,
+        publicOnly,
       })
     : null
   const params = {
@@ -30,21 +34,24 @@ export default defineEventHandler(async (event) => {
     p_origin: body.origin,
     p_model: brainConfig(event).brainEmbeddingModel,
   }
+  const search = (query: string) => publicOnly
+    ? client.rpc('brain_hybrid_sources', { ...params, p_query: query, p_public_only: true })
+    : client.rpc('brain_search_filtered', { ...params, p_query: query })
   let { data, error } =
     semantic !== null
       ? { data: semantic, error: null }
-      : await client.rpc('brain_search_filtered', params)
+      : await search(body.query)
   brainCheck(error)
   // Keep the database's cosine-distance order; these are the actual nearest 25.
   // A sentence is an AND query in websearch_to_tsquery. If it finds nothing,
   // retrieve individual meaningful terms, retaining the same authenticated RPC/filters.
   const expanded = brainQuestionSearchQuery(body.query)
   if (semantic === null && !data?.length && expanded && expanded !== body.query) {
-    const fallback = await client.rpc('brain_search_filtered', { ...params, p_query: expanded })
+    const fallback = await search(expanded)
     brainCheck(fallback.error)
     data = rankBrainSources((fallback.data || []) as BrainSource[], body.query, 60)
   }
-  await brainTrack(event, 'search', true)
+  await brainTrack(event, 'search', Boolean(user))
   const ids = (data || []).map((r: { entity_id: string }) => r.entity_id)
   const { data: relations } = ids.length
     ? await client.from('brain_relations').select('*').in('subject_id', ids)
@@ -56,6 +63,7 @@ export default defineEventHandler(async (event) => {
         .select('id,entity_id,statement,year,conditions,origin')
         .in('entity_id', ids)
         .eq('status', 'active')
+        .in('origin', publicOnly ? ['official', 'editorial'] : ['official', 'editorial', 'community', 'unverified'])
     : { data: [] }
   return {
     records: data,

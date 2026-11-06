@@ -26,7 +26,6 @@ const calendars = computed(() => {
       while (cells.length % 7) cells.push(null)
       const byDay = new Map<number, Race[]>()
       for (const race of item.races) {
-        if (race.dateStatus === 'estimated') continue
         const day = parseIsoDate(race.date)!.getUTCDate()
         byDay.set(day, [...(byDay.get(day) || []), race])
       }
@@ -34,7 +33,6 @@ const calendars = computed(() => {
         ...item,
         cells,
         byDay,
-        estimated: item.races.filter((race) => race.dateStatus === 'estimated'),
         label: formatDate(`${item.year}-${String(item.month + 1).padStart(2, '0')}-01`, {
           month: 'long',
           year: 'numeric',
@@ -131,6 +129,7 @@ const racesForActiveDay = (calendar: {
                 :key="race.id"
                 :to="`/races/${race.slug}`"
                 :title="`${race.name} — ${race.location}`"
+                @click.prevent="selectDay(calendarKey(calendar), day)"
                 ><i /><b>{{ race.name }}</b></NuxtLink
               >
             </div></template
@@ -138,7 +137,11 @@ const racesForActiveDay = (calendar: {
         </div>
       </div>
       <div v-if="racesForActiveDay(calendar).length" class="calendar-agenda">
-        <h3>{{ activeDay?.day }}. {{ calendar.label }}</h3>
+        <h3>
+          {{ activeDay?.day }}. {{ calendar.label }}<template
+            v-if="racesForActiveDay(calendar).every((race) => race.dateStatus === 'estimated')"
+          > - nepotrjen datum</template>
+        </h3>
         <div class="calendar-agenda-events">
           <NuxtLink
             v-for="race in racesForActiveDay(calendar)"
@@ -147,20 +150,13 @@ const racesForActiveDay = (calendar: {
           >
             <strong>{{ race.name }}</strong>
             <span
+              v-if="race.dateStatus === 'estimated' && racesForActiveDay(calendar).some((item) => item.dateStatus !== 'estimated')"
+            >{{ activeDay?.day }}. {{ calendar.label }} - nepotrjen datum</span>
+            <span
               >{{ race.location }} ·
               {{ formatSlovenianCount(race.distances.length, slovenianCountForms.route) }}</span
             >
           </NuxtLink>
-        </div>
-      </div>
-      <div v-if="calendar.estimated.length" class="calendar-estimated">
-        <h3>Predvidoma v tem mesecu · datum še ni potrjen</h3>
-        <div>
-          <NuxtLink
-            v-for="race in calendar.estimated"
-            :key="race.id"
-            :to="`/races/${race.slug}`"
-          >{{ race.name }}</NuxtLink>
         </div>
       </div>
     </section>
@@ -174,3 +170,25 @@ const racesForActiveDay = (calendar: {
     </section>
   </div>
 </template>
+<style scoped>
+@media (min-width: 621px) {
+  .calendar-agenda {
+    display: grid;
+    gap: 10px;
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+  }
+  .calendar-agenda h3 { margin: 0; font-size: 1rem; }
+  .calendar-agenda-events { display: grid; gap: 6px; }
+  .calendar-agenda-events a {
+    display: grid;
+    gap: 3px;
+    padding: 9px 10px;
+    border: 1px solid var(--line);
+    background: var(--paper-2);
+  }
+  .calendar-agenda-events strong { font-size: .78rem; }
+  .calendar-agenda-events span { color: var(--muted); font-size: .66rem; }
+}
+</style>

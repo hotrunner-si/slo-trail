@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 import assert from 'node:assert/strict'
-// Run the two preparation scripts first. Publish only editorial text fields;
-// preserve the current image, category, profile data and other database metadata.
+// Default: publish prepared editorial text while retaining database metadata.
+// --from-preview: copy the complete private preview exactly, after final approval.
 assert.ok(process.argv.includes('--write'), 'Pass --write to update the published article')
 process.loadEnvFile('.env')
 const base = process.env.NUXT_PUBLIC_SUPABASE_URL

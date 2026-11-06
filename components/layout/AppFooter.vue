@@ -11,7 +11,7 @@ const { siteContent } = await useSiteContent()
       </div>
       <div class="footer-links">
         <NuxtLink to="/races">Tekme</NuxtLink><NuxtLink to="/runners">Tekači</NuxtLink
-        ><NuxtLink to="/runners/routes">Ture</NuxtLink><NuxtLink to="/journal">Journal</NuxtLink>
+        ><NuxtLink to="/runners/routes">Ture</NuxtLink><NuxtLink to="/journal">Dogajanje</NuxtLink>
       </div>
       <div>
         <p>Slovenija · {{ new Date().getFullYear() }}</p>

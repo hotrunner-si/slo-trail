@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const { copy, plot, races, coverage } = await useBrainData()
 const { signedIn } = await useBrainSession()
+import { publicPreviewEnabled } from '~/utils/siteAccess'
 useSiteSeo(copy.analytics.title, copy.analytics.description, { noindex: true })
 </script>
 <template>
@@ -15,7 +16,7 @@ useSiteSeo(copy.analytics.title, copy.analytics.description, { noindex: true })
         :title="copy.charts.bucketsTitle"
         :note="copy.charts.bucketsNote"
       /><BrainSeasonCalendar :races="races" /><BrainBars
-        v-if="signedIn"
+        v-if="signedIn || publicPreviewEnabled"
         :rows="coverage"
         :title="copy.analytics.coverageTitle"
         :note="copy.analytics.coverageNote"

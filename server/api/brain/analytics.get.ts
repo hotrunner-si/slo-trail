@@ -1,12 +1,17 @@
+import { publicPreviewEnabled } from '../../../utils/siteAccess'
+
 export default defineEventHandler(async (event) => {
-  const { client } = await brainIdentity(event)
+  const identity = await brainIdentity(event, !publicPreviewEnabled)
+  const client = identity.user ? identity.client : brainService(event)
   const [{ data: claims, error }, { data: sources, error: sourceError }] = await Promise.all([
     client
       .from('brain_claims')
       .select('id,year,conditions,origin')
       .eq('status', 'active')
+      .in('origin', identity.user ? ['official', 'editorial', 'community', 'unverified'] : ['official', 'editorial'])
       .limit(500),
-    client.from('brain_sources').select('id,origin,verified_at').limit(1000),
+    client.from('brain_sources').select('id,origin,verified_at')
+      .in('origin', identity.user ? ['official', 'editorial', 'community', 'unverified'] : ['official', 'editorial']).limit(1000),
   ])
   brainCheck(error)
   brainCheck(sourceError)

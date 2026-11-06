@@ -4,6 +4,7 @@ const route = useRoute()
 const isOverview = computed(() => route.path.replace(/\/$/, '') === '/mozgan')
 const isAnalytics = computed(() => route.path.replace(/\/$/, '') === '/mozgan/analitika')
 const { signedIn, admin, saving } = await useBrainSession()
+import { publicPreviewEnabled } from '~/utils/siteAccess'
 const currentLabel = computed(() => {
   const path = route.path.replace(/\/$/, '')
   if (path === '/mozgan') return 'Chat'
@@ -25,7 +26,7 @@ const currentLabel = computed(() => {
     <div class="dashboard-workspace">
       <div v-if="!isOverview && !isAnalytics" class="brain-session-bar">
         <NuxtLink to="/profil">{{
-          signedIn ? 'Prijavljen' : 'Prijava / ustvari račun'
+          publicPreviewEnabled ? 'Moj profil' : signedIn ? 'Prijavljen' : 'Prijava / ustvari račun'
         }}</NuxtLink>
         <NuxtLink v-if="admin" to="/mozgan/skrbnik">Skrbništvo</NuxtLink>
         <label v-if="signedIn"

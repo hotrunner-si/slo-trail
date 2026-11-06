@@ -29,6 +29,17 @@ export interface UtmbProfile {
   performanceIndexes: { piCategory: string; index: number | null }[]
 }
 
+export function utmbDisplayName(name: string): string {
+  const match = name.match(/^([^()]+)((?:\s*\([^()]+\))+)[\s]*$/)
+  if (!match) return name
+  const variants = [match[1]!.trim(), ...[...match[2]!.matchAll(/\(([^()]+)\)/g)].map(m => m[1]!.trim())]
+  const normalized = (value: string) => value.normalize('NFD').replace(/\p{M}/gu, '').toLocaleLowerCase('sl').replace(/\s+/g, ' ').trim()
+  if (!variants.every(value => normalized(value) === normalized(variants[0]!))) return name
+  return variants.reduce((best, candidate) =>
+    (candidate.match(/[čšž]/gi)?.length || 0) > (best.match(/[čšž]/gi)?.length || 0) ? candidate : best,
+  )
+}
+
 export function sortUtmbRunners(runners: UtmbRunner[], category: UtmbCategory) {
   return [...runners].sort(
     (a, b) =>

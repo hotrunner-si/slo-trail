@@ -4,6 +4,8 @@
 
 Trenutni uredniški dogovor: nadaljnje spremembe se pripravljajo samo v predogledu. Ukaza za objavo z `--write` ne zaganjaj do izrecne zahteve za končni prenos v objavljeni članek.
 
+Končni prenos je bil 6. 11. 2026 izrecno odobren in izveden z `node scripts/publish-autumn-trail-article.mjs --from-preview --write`. Celotni zapis v bazi je primerjan s `server/data/journal-draft.json` in je enak. Predogled in javni analitični članek uporabljata isti `JournalAnalysisStory` in `ArticleTrailAnalysis`, vključno z velikostmi pisav, izklopljenim filtrom 5 km, profili na skupni osi in diagrami hitrosti. Razlikujeta se le skrbniška oznaka predogleda in objavna kategorija/datum. Namestitev nove kode na Netlify ni bila izvedena.
+
 Besedilo, naslov in podnaslov urejaj v **`article.md`**. To je izvorni uredniški dokument. `clanek.md` je samodejno ustvarjen izvoz z vstavljenimi tabelami in se ob naslednji izdelavi prepiše. `article-view.json`, `published-article.json` in `preview.html` so prav tako izpeljane datoteke.
 
 Za prenos sprememb na objavljeni članek iz korena projekta zaženi po vrsti:

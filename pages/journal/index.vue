@@ -7,7 +7,7 @@ const { data: draft } = await useAsyncData('journal-draft-summary', () =>
   admin.value ? request('/api/journal/draft', { query: { summary: '1' } }) : Promise.resolve(null),
   { watch: [admin] },
 )
-useSiteSeo('Članki', siteContent.journal.description, { noindex: true })
+useSiteSeo('Članki', siteContent.journal.description)
 const categories = siteContent.journal.categories
 const active = ref('Vse')
 useUrlControls({ category: { value: active, options: categories } })
