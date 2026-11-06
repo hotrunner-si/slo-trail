@@ -10,7 +10,7 @@ export const articles: Article[] = [
     subtitle:
       'Najboljših deset žensk na Kranjska Gora 25K in najboljših deset moških na Sky Trail 50K.',
     description:
-      'Rezultati Julian Alps Trail Run by UTMB 2026: najboljših deset žensk na 25 km in moških na 50 km ter izjava Klare Velepec.',
+      'Rezultati Julian Alps Trail Run by UTMB 2026: najboljših deset žensk na 25 km in moških na 50 km ter izjavi Klare Velepec in Tomaža Oblaka.',
     category: 'Rezultati',
     publishedAt: '2026-09-25',
     image: '/images/julian-alps-2026/julian-alps-sunset.webp',
@@ -75,8 +75,6 @@ export const articles: Article[] = [
         ],
       },
     ],
-    editorialNote:
-      'Izjavo Klare Velepec je posredovala za objavo. Izjava Tomaža Oblaka je izmišljena demo predloga in ni njegova resnična izjava.',
     quotes: [
       {
         attribution: 'Klara Velepec',
@@ -89,7 +87,7 @@ export const articles: Article[] = [
         ].join('\n\n'),
       },
       {
-        attribution: 'Tomaž Oblak — izmišljena demo-izjava',
+        attribution: 'Tomaž Oblak',
         text: [
           'To je bila letos nekako glavna tekma sezone, na katero so treningi kljub manjšim vmesnim poškodbam potekali gladko.',
           'Na štartu sem držal svoj tempo do Valvasorja, čeprav sem bil v nekoliko previsoki coni srčnega utripa, ki se je kasneje stabilizirala. Vedel sem, da bom imel na koncu več moči, če začnem pametno. Tudi strme klance sem prehodil, kar sicer ni v moji navadi.',
@@ -242,8 +240,6 @@ export const articles: Article[] = [
         ],
       },
     ],
-    editorialNote:
-      'Izjavi Klare Velepec in Klemna Španringa sta bili posredovani za objavo. Izjava Tomaža Oblaka pa je izmišljena demo predloga.',
     quotes: [
       {
         attribution: 'Klemen Španring',
@@ -262,10 +258,6 @@ export const articles: Article[] = [
           'Verjamem, da bi ob močnejši konkurenci lahko tekla še hitreje, saj v zadnjem delu proge nisem dala čisto vsega od sebe, saj za mano ni bilo nobene tekmovalke, naslednji dan pa me je čakala še ena tekma. ',
           'Kljub temu mi rezultat veliko pomeni, ker potrjuje mojo dobro pripravljenost in je trenutno drugi najboljši slovenski čas. Po letošnjem rezultatu se mi tudi slovenski rekord ne zdi več tako oddaljen kot nekoč. Potihoma pa si želim tudi nekoč poseči po rekordu Andree Mayr, ki znaša 12.36min. To je za zdaj še oddaljen cilj, a prav takšni cilji me motivirajo, da še naprej napredujem in premikam svoje meje.',
         ].join('\n\n'),
-      },
-      {
-        attribution: 'Tomaž Oblak — izmišljena demo-izjava',
-        text: 'Tako kratka proga te prisili, da začneš zbrano in hitro poiščeš pravi ritem. Med vzponom sem se trudil razporediti moči, čeprav je bilo najtežje ostati miren v strmejšem delu. V cilju sem bil utrujen, hkrati pa vesel, da sem tek opravil brez večjih težav. Deveto mesto in čas 12:38 sta lep rezultat, s katerim sem zadovoljen. Zdaj imam še nekaj idej, kaj lahko pri naslednjem poskusu naredim bolje.',
       },
       {
         attribution: 'Nejc Uršič',
