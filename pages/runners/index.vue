@@ -16,6 +16,7 @@ useSiteSeo(siteContent.runners.title, siteContent.runners.description)
 </script>
 <template>
   <div class="page shell runners-page">
+    <RunnerNavigation />
     <header class="page-header">
       <p class="eyebrow">Skupnost</p>
       <h1>{{ siteContent.runners.title }}</h1>

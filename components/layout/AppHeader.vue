@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { runnerNavigation } from '~/utils/runnerNavigation'
 const { siteContent } = await useSiteContent()
 const route = useRoute()
 const isBrain = computed(() => route.path === '/mozgan' || route.path.startsWith('/mozgan/'))
@@ -8,14 +9,24 @@ const brainNav = [
   { label: 'Analitika', to: '/mozgan/analitika' },
   { label: 'Moj profil', to: '/profil' },
 ]
-const nav = computed(() => (isBrain.value ? brainNav : siteContent.site.navigation))
+const nav = computed(() =>
+  isBrain.value
+    ? brainNav
+    : siteContent.site.navigation.filter(
+        (item) => item.to !== '/routes' && item.to !== '/runners/routes',
+      ),
+)
 const isCurrentBrainPage = (path: string) => route.path.replace(/\/$/, '') === path
 </script>
 
 <template>
   <header class="site-header" :class="{ 'brain-header': isBrain }">
     <div class="shell header-inner">
-      <NuxtLink :to="isBrain ? '/mozgan' : '/'" class="wordmark" :aria-label="isBrain ? 'Trail Možgan, klepet' : 'Trail Slovenija, domov'">
+      <NuxtLink
+        :to="isBrain ? '/mozgan' : '/'"
+        class="wordmark"
+        :aria-label="isBrain ? 'Trail Možgan, klepet' : 'Trail Slovenija, domov'"
+      >
         <span class="wordmark-mark">{{ siteContent.site.shortName }}</span
         ><span>{{ isBrain ? 'Trail Možgan' : siteContent.site.name }}</span>
       </NuxtLink>
@@ -24,17 +35,26 @@ const isCurrentBrainPage = (path: string) => route.path.replace(/\/$/, '') === p
         class="main-nav"
         :aria-label="isBrain ? 'Navigacija Možgana' : 'Glavna navigacija'"
       >
-        <NuxtLink
-          v-for="item in nav"
-          :key="item.to"
-          :to="item.to"
-          :class="{
-            'brain-link-current': isBrain && isCurrentBrainPage(item.to),
-            'brain-profile-link': isBrain && item.to === '/profil',
-          }"
-          :aria-current="isBrain && isCurrentBrainPage(item.to) ? 'page' : undefined"
-          >{{ item.label }}</NuxtLink
-        >
+        <template v-for="item in nav" :key="item.to">
+          <div v-if="!isBrain && item.to === '/runners'" class="runners-dropdown">
+            <NuxtLink to="/runners">{{ item.label }}</NuxtLink>
+            <div class="runners-dropdown-menu">
+              <NuxtLink v-for="child in runnerNavigation" :key="child.to" :to="child.to">{{
+                child.label
+              }}</NuxtLink>
+            </div>
+          </div>
+          <NuxtLink
+            v-else
+            :to="item.to"
+            :class="{
+              'brain-link-current': isBrain && isCurrentBrainPage(item.to),
+              'brain-profile-link': isBrain && item.to === '/profil',
+            }"
+            :aria-current="isBrain && isCurrentBrainPage(item.to) ? 'page' : undefined"
+            >{{ item.label }}</NuxtLink
+          >
+        </template>
         <NuxtLink
           v-if="!isBrain"
           :to="siteContent.site.navigationCta.to"
@@ -50,6 +70,30 @@ const isCurrentBrainPage = (path: string) => route.path.replace(/\/$/, '') === p
 </template>
 
 <style scoped>
+.runners-dropdown {
+  position: relative;
+}
+.runners-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -18px;
+  padding: 18px;
+  min-width: 190px;
+  background: var(--paper, #f7f5ef);
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 24px #0000000c;
+  z-index: 100;
+}
+.runners-dropdown:hover .runners-dropdown-menu,
+.runners-dropdown:focus-within .runners-dropdown-menu {
+  display: grid;
+  gap: 18px;
+}
+.runners-dropdown-menu a {
+  white-space: nowrap;
+  font-size: 0.82rem;
+}
 .brain-header .header-inner {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto auto;
@@ -112,9 +156,17 @@ const isCurrentBrainPage = (path: string) => route.path.replace(/\/$/, '') === p
   }
 }
 @media (max-width: 1100px) {
-  .brain-header .header-inner { height: 64px; }
-  .brain-header .wordmark { gap: 8px; font-size: 0.9rem; }
-  .brain-header .wordmark-mark { width: 28px; height: 28px; }
+  .brain-header .header-inner {
+    height: 64px;
+  }
+  .brain-header .wordmark {
+    gap: 8px;
+    font-size: 0.9rem;
+  }
+  .brain-header .wordmark-mark {
+    width: 28px;
+    height: 28px;
+  }
 }
 @media (max-width: 720px) {
   .brain-header .header-inner {

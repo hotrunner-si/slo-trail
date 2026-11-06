@@ -38,19 +38,19 @@ const related = computed(() => {
 })
 </script>
 <template>
-  <article v-if="article" class="story-page">
+  <article v-if="article" class="story-page" :class="{ 'story-page-analysis': article.trailAnalysis }">
+    <div class="story-image"><img :src="asset(article.image)" :alt="article.title" /></div>
     <header class="story-header shell">
       <p class="eyebrow">{{ article.category }} · {{ formatDate(article.publishedAt) }}</p>
       <h1>{{ article.title }}</h1>
       <p>{{ article.subtitle }}</p>
     </header>
-    <div class="story-image"><img :src="asset(article.image)" :alt="article.title" /></div>
     <div
       class="story-layout shell"
-      :class="{ 'story-layout-with-media': article.sideImages?.length }"
+      :class="{ 'story-layout-with-media': article.sideImages?.length && !article.trailAnalysis }"
     >
       <aside
-        v-if="article.sideImages?.length"
+        v-if="article.sideImages?.length && !article.trailAnalysis"
         class="story-media-column"
         aria-label="Fotografije s tekme"
       >
@@ -64,7 +64,15 @@ const related = computed(() => {
         </figure>
       </aside>
       <div class="story-body">
-        <p v-for="paragraph in article.body" :key="paragraph">{{ paragraph }}</p>
+        <ArticleTrailAnalysis
+          v-if="article.trailAnalysis"
+          :before-chart="article.trailAnalysis.beforeChart"
+          :after-chart="article.trailAnalysis.afterChart"
+          :points="article.trailAnalysis.points"
+        />
+        <template v-else>
+          <p v-for="paragraph in article.body" :key="paragraph">{{ paragraph }}</p>
+        </template>
         <aside v-if="article.editorialNote" class="article-editorial-note">
           <strong>Uredniška opomba</strong>
           <p>{{ article.editorialNote }}</p>
@@ -143,3 +151,8 @@ const related = computed(() => {
     </section>
   </article>
 </template>
+
+<style scoped>
+.story-page-analysis .story-layout { display: block; }
+.story-page-analysis .story-body { max-width: none; }
+</style>

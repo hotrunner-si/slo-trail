@@ -1,6 +1,8 @@
 import type { Article } from '~/types'
+import autumnArticle from '~/docs/articles/jesenski-trojcek-2026/published-article.json'
 
 export const articles: Article[] = [
+  autumnArticle as Article,
   {
     id: 'a1',
     slug: 'julian-alps-trail-run-2026-rezultati',

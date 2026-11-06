@@ -1,0 +1,14 @@
+
+.winner-speed-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.winner-speed-card{margin:0;height:252px;min-width:0;padding:12px;border:1px solid #d7dfce;border-radius:10px;background:#fbfcf8;display:flex;flex-direction:column;box-sizing:border-box;overflow:hidden}
+.winner-speed-card h3{font:600 14px/1.3 Arial,sans-serif;margin:0 0 5px;min-height:36px}
+.winner-speeds .winner-speed-card .winner-speed-distance{font:11px/1.35 Arial,sans-serif;margin:0 0 7px;color:#718168;min-height:30px}
+.winner-speed-card svg{display:block;width:100%;min-height:0;flex:1}
+.winner-speed-card .speed-value{font-size:8px}
+.winner-speed-legend{display:flex;gap:20px;font:12px Arial,sans-serif;margin:20px 0 8px}
+.winner-speed-legend span{display:flex;align-items:center;gap:7px}
+.winner-speed-legend i{display:inline-block;width:10px;height:10px;border-radius:2px}
+.winner-speeds p.winner-speed-note{font:12px/1.5 Arial,sans-serif;color:#63735b;margin:8px 0 20px}
+@media(max-width:1099px){.winner-speed-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:799px){.winner-speed-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:419px){.winner-speed-grid{grid-template-columns:minmax(0,1fr)}}

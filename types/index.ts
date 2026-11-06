@@ -118,6 +118,11 @@ export interface Article {
   image: string
   sideImages?: { src: string; alt: string; sourceUrl: string; caption: string }[]
   body: string[]
+  trailAnalysis?: {
+    beforeChart: string
+    afterChart: string
+    points: import('../utils/trailAnalytics').TrailPoint[]
+  }
   results?: {
     heading: string
     participantLabel: 'Tekač' | 'Tekačica'

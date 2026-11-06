@@ -1716,7 +1716,6 @@ p {
     flex-direction: column;
   }
   .story-page .story-image {
-    order: -1;
     height: clamp(230px, 62vw, 350px);
   }
   .story-page .story-header {

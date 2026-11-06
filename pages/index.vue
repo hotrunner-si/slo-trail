@@ -37,6 +37,8 @@ const latestResultLists = computed(() =>
   })),
 )
 const featuredTourDate = useState('home-featured-tour-date', () => todayIsoDate())
+// Keep the weekly tour available for a future return to the homepage.
+const showWeeklyTour = false
 const featuredTour = computed(() => getWeeklyRunnerTour(featuredTourDate.value))
 let featuredTourTimer: number | undefined
 
@@ -67,7 +69,7 @@ const upcomingRaces = computed(() => {
         <nav class="hero-lead" aria-label="Razišči Trail Slovenija">
           <NuxtLink to="/runners">Tekači.</NuxtLink>
           <NuxtLink to="/races">Tekme.</NuxtLink>
-          <NuxtLink to="/routes">Ture.</NuxtLink>
+          <NuxtLink to="/runners/routes">Ture.</NuxtLink>
           <NuxtLink :to="{ path: '/journal', query: { category: 'Rezultati' } }"
             >Rezultati.</NuxtLink
           >
@@ -101,7 +103,7 @@ const upcomingRaces = computed(() => {
 
     <section v-if="latestArticle" class="section shell home-feature-article">
       <div>
-        <p class="eyebrow">Članek · {{ latestArticle.category }}</p>
+        <p class="eyebrow">Članek</p>
         <h2>{{ latestArticle.title }}</h2>
         <p>{{ latestArticle.subtitle }}</p>
         <NuxtLink :to="`/journal/${latestArticle.slug}`" class="button primary"
@@ -114,7 +116,7 @@ const upcomingRaces = computed(() => {
     <section class="section ink-section">
       <div class="shell">
         <SectionHead
-          eyebrow="Sveži rezultati"
+          eyebrow="Zadnji rezultati"
           title="Časi in uvrstitve"
           link-label="Vsi rezultati"
           to="/journal?category=Rezultati"
@@ -158,7 +160,7 @@ const upcomingRaces = computed(() => {
 
     <section class="section shell">
       <SectionHead
-        eyebrow="Ljudje na poteh"
+        eyebrow="Ljudje"
         title="Slovenski trail tekači"
         link-label="Vsi tekači"
         to="/runners"
@@ -173,7 +175,7 @@ const upcomingRaces = computed(() => {
       </div>
     </section>
 
-    <section v-if="featuredTour" class="section route-week">
+    <section v-if="showWeeklyTour && featuredTour" class="section route-week">
       <div class="shell route-week-grid">
         <div class="route-photo">
           <img

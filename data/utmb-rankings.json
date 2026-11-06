@@ -1,0 +1,5960 @@
+{
+  "world-H-general": {
+    "scope": "world",
+    "sex": "H",
+    "category": "general",
+    "fetchedAt": "2026-11-06T09:56:15.890Z",
+    "source": "https://utmb.world/utmb-index",
+    "runners": [
+      {
+        "id": 4595248,
+        "name": "Philemon KIRIAGO",
+        "country": "KE",
+        "uri": "4595248.philemon.kiriago",
+        "indices": {
+          "general": 982,
+          "20k": 969,
+          "50k": 966,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4595246,
+        "name": "Patrick KIPNGENO",
+        "country": "KE",
+        "uri": "4595246.patrick.kipngeno",
+        "indices": {
+          "general": 976,
+          "20k": 969,
+          "50k": 962,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1409387,
+        "name": "Ben DHIMAN",
+        "country": "US",
+        "uri": "1409387.ben.dhiman",
+        "indices": {
+          "general": 965,
+          "20k": null,
+          "50k": null,
+          "100k": 948,
+          "100m": 969
+        }
+      },
+      {
+        "id": 2161523,
+        "name": "Elhousine ELAZZAOUI",
+        "country": "MA",
+        "uri": "2161523.elhousine.elazzaoui",
+        "indices": {
+          "general": 964,
+          "20k": 964,
+          "50k": 941,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6397608,
+        "name": "Michael Selelo SAOLI",
+        "country": "KE",
+        "uri": "6397608.michaelselelo.saoli",
+        "indices": {
+          "general": 963,
+          "20k": 951,
+          "50k": 946,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 485740,
+        "name": "Jim WALMSLEY",
+        "country": "US",
+        "uri": "485740.jim.walmsley",
+        "indices": {
+          "general": 959,
+          "20k": null,
+          "50k": 909,
+          "100k": 951,
+          "100m": 953
+        }
+      },
+      {
+        "id": 4040794,
+        "name": "Frédéric TRANCHAND",
+        "country": "FR",
+        "uri": "4040794.frederic.tranchand",
+        "indices": {
+          "general": 957,
+          "20k": 907,
+          "50k": 959,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 335600,
+        "name": "Cristian MINOGGIO",
+        "country": "IT",
+        "uri": "335600.cristian.minoggio",
+        "indices": {
+          "general": 953,
+          "20k": 844,
+          "50k": 917,
+          "100k": 952,
+          "100m": null
+        }
+      },
+      {
+        "id": 6365238,
+        "name": "Omaya ATUYA RICHARD",
+        "country": "KE",
+        "uri": "6365238.omaya.atuyarichard",
+        "indices": {
+          "general": 953,
+          "20k": 949,
+          "50k": 929,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1410311,
+        "name": "Tom EVANS",
+        "country": "GB",
+        "uri": "1410311.tom.evans",
+        "indices": {
+          "general": 952,
+          "20k": 809,
+          "50k": 868,
+          "100k": 892,
+          "100m": 952
+        }
+      },
+      {
+        "id": 687094,
+        "name": "Remi BONNET",
+        "country": "CH",
+        "uri": "687094.remi.bonnet",
+        "indices": {
+          "general": 951,
+          "20k": 919,
+          "50k": 949,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 673108,
+        "name": "Francesco PUPPI",
+        "country": "IT",
+        "uri": "673108.francesco.puppi",
+        "indices": {
+          "general": 950,
+          "20k": 825,
+          "50k": 927,
+          "100k": 944,
+          "100m": 927
+        }
+      },
+      {
+        "id": 2574519,
+        "name": "Caleb OLSON",
+        "country": "US",
+        "uri": "2574519.caleb.olson",
+        "indices": {
+          "general": 950,
+          "20k": 791,
+          "50k": 793,
+          "100k": null,
+          "100m": 950
+        }
+      },
+      {
+        "id": 2704,
+        "name": "Kilian JORNET BURGADA",
+        "country": "ES",
+        "uri": "2704.kilian.jornetburgada",
+        "indices": {
+          "general": 947,
+          "20k": 792,
+          "50k": 940,
+          "100k": null,
+          "100m": 935
+        }
+      },
+      {
+        "id": 1870825,
+        "name": "Louison COIFFET",
+        "country": "FR",
+        "uri": "1870825.louison.coiffet",
+        "indices": {
+          "general": 947,
+          "20k": null,
+          "50k": 853,
+          "100k": 950,
+          "100m": null
+        }
+      },
+      {
+        "id": 6431884,
+        "name": "Paul MACHOKA",
+        "country": "KE",
+        "uri": "6431884.paul.machoka",
+        "indices": {
+          "general": 947,
+          "20k": 940,
+          "50k": 931,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1008473,
+        "name": "Hannes NAMBERGER",
+        "country": "DE",
+        "uri": "1008473.hannes.namberger",
+        "indices": {
+          "general": 944,
+          "20k": 818,
+          "50k": 830,
+          "100k": 873,
+          "100m": 945
+        }
+      },
+      {
+        "id": 3992535,
+        "name": "Daniel PATTIS",
+        "country": "IT",
+        "uri": "3992535.daniel.pattis",
+        "indices": {
+          "general": 943,
+          "20k": 923,
+          "50k": 941,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1539587,
+        "name": "David SINCLAIR",
+        "country": "US",
+        "uri": "1539587.david.sinclair",
+        "indices": {
+          "general": 941,
+          "20k": 849,
+          "50k": 918,
+          "100k": 941,
+          "100m": null
+        }
+      },
+      {
+        "id": 1250019,
+        "name": "Baptiste CHASSAGNE",
+        "country": "FR",
+        "uri": "1250019.baptiste.chassagne",
+        "indices": {
+          "general": 940,
+          "20k": 832,
+          "50k": 848,
+          "100k": 911,
+          "100m": 942
+        }
+      },
+      {
+        "id": 2646511,
+        "name": "Miguel ARSENIO",
+        "country": "PT",
+        "uri": "2646511.miguel.arsenio",
+        "indices": {
+          "general": 940,
+          "20k": 840,
+          "50k": 876,
+          "100k": 940,
+          "100m": 896
+        }
+      },
+      {
+        "id": 864009,
+        "name": "Vincent BOUILLARD",
+        "country": "FR",
+        "uri": "864009.vincent.bouillard",
+        "indices": {
+          "general": 939,
+          "20k": 790,
+          "50k": null,
+          "100k": 874,
+          "100m": 939
+        }
+      },
+      {
+        "id": 1807325,
+        "name": "Benjamin ROUBIOL",
+        "country": "FR",
+        "uri": "1807325.benjamin.roubiol",
+        "indices": {
+          "general": 939,
+          "20k": 866,
+          "50k": 890,
+          "100k": 941,
+          "100m": null
+        }
+      },
+      {
+        "id": 4548888,
+        "name": "Daniel JONES",
+        "country": "NZ",
+        "uri": "4548888.daniel.jones",
+        "indices": {
+          "general": 939,
+          "20k": 800,
+          "50k": 896,
+          "100k": 933,
+          "100m": 918
+        }
+      },
+      {
+        "id": 3751057,
+        "name": "William BOFFELLI",
+        "country": "IT",
+        "uri": "3751057.william.boffelli",
+        "indices": {
+          "general": 938,
+          "20k": 864,
+          "50k": 941,
+          "100k": null,
+          "100m": null
+        }
+      }
+    ]
+  },
+  "world-H-20k": {
+    "scope": "world",
+    "sex": "H",
+    "category": "20k",
+    "fetchedAt": "2026-11-06T09:56:16.168Z",
+    "source": "https://utmb.world/utmb-index",
+    "runners": [
+      {
+        "id": 4595246,
+        "name": "Patrick KIPNGENO",
+        "country": "KE",
+        "uri": "4595246.patrick.kipngeno",
+        "indices": {
+          "general": 976,
+          "20k": 969,
+          "50k": 962,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4595248,
+        "name": "Philemon KIRIAGO",
+        "country": "KE",
+        "uri": "4595248.philemon.kiriago",
+        "indices": {
+          "general": 982,
+          "20k": 969,
+          "50k": 966,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2161523,
+        "name": "Elhousine ELAZZAOUI",
+        "country": "MA",
+        "uri": "2161523.elhousine.elazzaoui",
+        "indices": {
+          "general": 964,
+          "20k": 964,
+          "50k": 941,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6397608,
+        "name": "Michael Selelo SAOLI",
+        "country": "KE",
+        "uri": "6397608.michaelselelo.saoli",
+        "indices": {
+          "general": 963,
+          "20k": 951,
+          "50k": 946,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6365238,
+        "name": "Omaya ATUYA RICHARD",
+        "country": "KE",
+        "uri": "6365238.omaya.atuyarichard",
+        "indices": {
+          "general": 953,
+          "20k": 949,
+          "50k": 929,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6431884,
+        "name": "Paul MACHOKA",
+        "country": "KE",
+        "uri": "6431884.paul.machoka",
+        "indices": {
+          "general": 947,
+          "20k": 940,
+          "50k": 931,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6412486,
+        "name": "Ephantus Mwangi NJERI",
+        "country": "KE",
+        "uri": "6412486.ephantusmwangi.njeri",
+        "indices": {
+          "general": 931,
+          "20k": 934,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 9091836,
+        "name": "Elijah Kamau KARIUKI",
+        "country": "KE",
+        "uri": "9091836.elijahkamau.kariuki",
+        "indices": {
+          "general": 927,
+          "20k": 930,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4523654,
+        "name": "Martin NILSSON",
+        "country": "SE",
+        "uri": "4523654.martin.nilsson",
+        "indices": {
+          "general": 930,
+          "20k": 927,
+          "50k": 924,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3371567,
+        "name": "Jan TORRELLA OLLER",
+        "country": "ES",
+        "uri": "3371567.jan.torrellaoller",
+        "indices": {
+          "general": 925,
+          "20k": 926,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4647312,
+        "name": "Lukas EHRLE",
+        "country": "DE",
+        "uri": "4647312.lukas.ehrle",
+        "indices": {
+          "general": 928,
+          "20k": 926,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 586957,
+        "name": "Taylor STACK",
+        "country": "US",
+        "uri": "586957.taylor.stack",
+        "indices": {
+          "general": 926,
+          "20k": 924,
+          "50k": 895,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3992535,
+        "name": "Daniel PATTIS",
+        "country": "IT",
+        "uri": "3992535.daniel.pattis",
+        "indices": {
+          "general": 943,
+          "20k": 923,
+          "50k": 941,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 714354,
+        "name": "Roberto DELORENZI",
+        "country": "CH",
+        "uri": "714354.roberto.delorenzi",
+        "indices": {
+          "general": 931,
+          "20k": 922,
+          "50k": 918,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2396329,
+        "name": "Joey HADORN",
+        "country": "CH",
+        "uri": "2396329.joey.hadorn",
+        "indices": {
+          "general": 925,
+          "20k": 922,
+          "50k": 829,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 743685,
+        "name": "Cesare MAESTRI",
+        "country": "",
+        "uri": "743685.cesare.maestri",
+        "indices": {
+          "general": 922,
+          "20k": 921,
+          "50k": 845,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 687094,
+        "name": "Remi BONNET",
+        "country": "CH",
+        "uri": "687094.remi.bonnet",
+        "indices": {
+          "general": 951,
+          "20k": 919,
+          "50k": 949,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1577763,
+        "name": "Dominik ROLLI",
+        "country": "CH",
+        "uri": "1577763.dominik.rolli",
+        "indices": {
+          "general": 928,
+          "20k": 916,
+          "50k": 901,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6365240,
+        "name": "Josphat KIPROTICH",
+        "country": "KE",
+        "uri": "6365240.josphat.kiprotich",
+        "indices": {
+          "general": 929,
+          "20k": 916,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3079753,
+        "name": "Andrea ROSTAN",
+        "country": "IT",
+        "uri": "3079753.andrea.rostan",
+        "indices": {
+          "general": 915,
+          "20k": 914,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5039349,
+        "name": "Christian ALLEN",
+        "country": "US",
+        "uri": "5039349.christian.allen",
+        "indices": {
+          "general": 933,
+          "20k": 911,
+          "50k": 935,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 8473345,
+        "name": "Brayan RODRÍGUEZ FLORES",
+        "country": "MX",
+        "uri": "8473345.brayan.rodriguezflores",
+        "indices": {
+          "general": 925,
+          "20k": 910,
+          "50k": 925,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 767836,
+        "name": "Benjamin POLIN",
+        "country": "FR",
+        "uri": "767836.benjamin.polin",
+        "indices": {
+          "general": 905,
+          "20k": 909,
+          "50k": 859,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6980069,
+        "name": "Nashon KIPLIMO",
+        "country": "KE",
+        "uri": "6980069.nashon.kiplimo",
+        "indices": {
+          "general": 938,
+          "20k": 909,
+          "50k": 940,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2330407,
+        "name": "Manuel INNERHOFER",
+        "country": "AT",
+        "uri": "2330407.manuel.innerhofer",
+        "indices": {
+          "general": 908,
+          "20k": 908,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      }
+    ]
+  },
+  "world-H-50k": {
+    "scope": "world",
+    "sex": "H",
+    "category": "50k",
+    "fetchedAt": "2026-11-06T09:56:16.393Z",
+    "source": "https://utmb.world/utmb-index",
+    "runners": [
+      {
+        "id": 4595248,
+        "name": "Philemon KIRIAGO",
+        "country": "KE",
+        "uri": "4595248.philemon.kiriago",
+        "indices": {
+          "general": 982,
+          "20k": 969,
+          "50k": 966,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4595246,
+        "name": "Patrick KIPNGENO",
+        "country": "KE",
+        "uri": "4595246.patrick.kipngeno",
+        "indices": {
+          "general": 976,
+          "20k": 969,
+          "50k": 962,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4040794,
+        "name": "Frédéric TRANCHAND",
+        "country": "FR",
+        "uri": "4040794.frederic.tranchand",
+        "indices": {
+          "general": 957,
+          "20k": 907,
+          "50k": 959,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 687094,
+        "name": "Remi BONNET",
+        "country": "CH",
+        "uri": "687094.remi.bonnet",
+        "indices": {
+          "general": 951,
+          "20k": 919,
+          "50k": 949,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6397608,
+        "name": "Michael Selelo SAOLI",
+        "country": "KE",
+        "uri": "6397608.michaelselelo.saoli",
+        "indices": {
+          "general": 963,
+          "20k": 951,
+          "50k": 946,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3751057,
+        "name": "William BOFFELLI",
+        "country": "IT",
+        "uri": "3751057.william.boffelli",
+        "indices": {
+          "general": 938,
+          "20k": 864,
+          "50k": 941,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2161523,
+        "name": "Elhousine ELAZZAOUI",
+        "country": "MA",
+        "uri": "2161523.elhousine.elazzaoui",
+        "indices": {
+          "general": 964,
+          "20k": 964,
+          "50k": 941,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3992535,
+        "name": "Daniel PATTIS",
+        "country": "IT",
+        "uri": "3992535.daniel.pattis",
+        "indices": {
+          "general": 943,
+          "20k": 923,
+          "50k": 941,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2704,
+        "name": "Kilian JORNET BURGADA",
+        "country": "ES",
+        "uri": "2704.kilian.jornetburgada",
+        "indices": {
+          "general": 947,
+          "20k": 792,
+          "50k": 940,
+          "100k": null,
+          "100m": 935
+        }
+      },
+      {
+        "id": 6980069,
+        "name": "Nashon KIPLIMO",
+        "country": "KE",
+        "uri": "6980069.nashon.kiplimo",
+        "indices": {
+          "general": 938,
+          "20k": 909,
+          "50k": 940,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 124391,
+        "name": "Manuel MERILLAS",
+        "country": "ES",
+        "uri": "124391.manuel.merillas",
+        "indices": {
+          "general": 937,
+          "20k": 869,
+          "50k": 938,
+          "100k": 855,
+          "100m": null
+        }
+      },
+      {
+        "id": 2240721,
+        "name": "Jacob ADKIN",
+        "country": "GB",
+        "uri": "2240721.jacob.adkin",
+        "indices": {
+          "general": 934,
+          "20k": 879,
+          "50k": 937,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6652452,
+        "name": "Timothy KIBETT",
+        "country": "KE",
+        "uri": "6652452.timothy.kibett",
+        "indices": {
+          "general": 936,
+          "20k": 908,
+          "50k": 936,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5039349,
+        "name": "Christian ALLEN",
+        "country": "US",
+        "uri": "5039349.christian.allen",
+        "indices": {
+          "general": 933,
+          "20k": 911,
+          "50k": 935,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1580159,
+        "name": "Sylvain CACHARD",
+        "country": "FR",
+        "uri": "1580159.sylvain.cachard",
+        "indices": {
+          "general": 935,
+          "20k": 883,
+          "50k": 933,
+          "100k": 878,
+          "100m": null
+        }
+      },
+      {
+        "id": 4678592,
+        "name": "Miguel BENITEZ",
+        "country": "ES",
+        "uri": "4678592.miguel.benitez",
+        "indices": {
+          "general": 927,
+          "20k": 842,
+          "50k": 931,
+          "100k": 825,
+          "100m": null
+        }
+      },
+      {
+        "id": 6431884,
+        "name": "Paul MACHOKA",
+        "country": "KE",
+        "uri": "6431884.paul.machoka",
+        "indices": {
+          "general": 947,
+          "20k": 940,
+          "50k": 931,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4585524,
+        "name": "Jonathan Camilo CASTILLO",
+        "country": "CO",
+        "uri": "4585524.jonathancamilo.castillo",
+        "indices": {
+          "general": 927,
+          "20k": 882,
+          "50k": 930,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6365238,
+        "name": "Omaya ATUYA RICHARD",
+        "country": "KE",
+        "uri": "6365238.omaya.atuyarichard",
+        "indices": {
+          "general": 953,
+          "20k": 949,
+          "50k": 929,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1854761,
+        "name": "Alain SANTAMARIA BLANCO",
+        "country": "ES",
+        "uri": "1854761.alain.santamariablanco",
+        "indices": {
+          "general": 934,
+          "20k": 905,
+          "50k": 929,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 673108,
+        "name": "Francesco PUPPI",
+        "country": "IT",
+        "uri": "673108.francesco.puppi",
+        "indices": {
+          "general": 950,
+          "20k": 825,
+          "50k": 927,
+          "100k": 944,
+          "100m": 927
+        }
+      },
+      {
+        "id": 8473345,
+        "name": "Brayan RODRÍGUEZ FLORES",
+        "country": "MX",
+        "uri": "8473345.brayan.rodriguezflores",
+        "indices": {
+          "general": 925,
+          "20k": 910,
+          "50k": 925,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4523654,
+        "name": "Martin NILSSON",
+        "country": "SE",
+        "uri": "4523654.martin.nilsson",
+        "indices": {
+          "general": 930,
+          "20k": 927,
+          "50k": 924,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1065223,
+        "name": "Petter SERRES ENGDAHL",
+        "country": "SE",
+        "uri": "1065223.petter.serresengdahl",
+        "indices": {
+          "general": 937,
+          "20k": 894,
+          "50k": 921,
+          "100k": 920,
+          "100m": null
+        }
+      },
+      {
+        "id": 3079761,
+        "name": "Luca DEL PERO",
+        "country": "IT",
+        "uri": "3079761.luca.delpero",
+        "indices": {
+          "general": 924,
+          "20k": 895,
+          "50k": 921,
+          "100k": null,
+          "100m": null
+        }
+      }
+    ]
+  },
+  "world-H-100k": {
+    "scope": "world",
+    "sex": "H",
+    "category": "100k",
+    "fetchedAt": "2026-11-06T09:56:16.659Z",
+    "source": "https://utmb.world/utmb-index",
+    "runners": [
+      {
+        "id": 335600,
+        "name": "Cristian MINOGGIO",
+        "country": "IT",
+        "uri": "335600.cristian.minoggio",
+        "indices": {
+          "general": 953,
+          "20k": 844,
+          "50k": 917,
+          "100k": 952,
+          "100m": null
+        }
+      },
+      {
+        "id": 485740,
+        "name": "Jim WALMSLEY",
+        "country": "US",
+        "uri": "485740.jim.walmsley",
+        "indices": {
+          "general": 959,
+          "20k": null,
+          "50k": 909,
+          "100k": 951,
+          "100m": 953
+        }
+      },
+      {
+        "id": 1870825,
+        "name": "Louison COIFFET",
+        "country": "FR",
+        "uri": "1870825.louison.coiffet",
+        "indices": {
+          "general": 947,
+          "20k": null,
+          "50k": 853,
+          "100k": 950,
+          "100m": null
+        }
+      },
+      {
+        "id": 1409387,
+        "name": "Ben DHIMAN",
+        "country": "US",
+        "uri": "1409387.ben.dhiman",
+        "indices": {
+          "general": 965,
+          "20k": null,
+          "50k": null,
+          "100k": 948,
+          "100m": 969
+        }
+      },
+      {
+        "id": 673108,
+        "name": "Francesco PUPPI",
+        "country": "IT",
+        "uri": "673108.francesco.puppi",
+        "indices": {
+          "general": 950,
+          "20k": 825,
+          "50k": 927,
+          "100k": 944,
+          "100m": 927
+        }
+      },
+      {
+        "id": 1539587,
+        "name": "David SINCLAIR",
+        "country": "US",
+        "uri": "1539587.david.sinclair",
+        "indices": {
+          "general": 941,
+          "20k": 849,
+          "50k": 918,
+          "100k": 941,
+          "100m": null
+        }
+      },
+      {
+        "id": 1807325,
+        "name": "Benjamin ROUBIOL",
+        "country": "FR",
+        "uri": "1807325.benjamin.roubiol",
+        "indices": {
+          "general": 939,
+          "20k": 866,
+          "50k": 890,
+          "100k": 941,
+          "100m": null
+        }
+      },
+      {
+        "id": 2646511,
+        "name": "Miguel ARSENIO",
+        "country": "PT",
+        "uri": "2646511.miguel.arsenio",
+        "indices": {
+          "general": 940,
+          "20k": 840,
+          "50k": 876,
+          "100k": 940,
+          "100m": 896
+        }
+      },
+      {
+        "id": 5883300,
+        "name": "Hans TROYER",
+        "country": "US",
+        "uri": "5883300.hans.troyer",
+        "indices": {
+          "general": 930,
+          "20k": null,
+          "50k": 892,
+          "100k": 933,
+          "100m": 829
+        }
+      },
+      {
+        "id": 4548888,
+        "name": "Daniel JONES",
+        "country": "NZ",
+        "uri": "4548888.daniel.jones",
+        "indices": {
+          "general": 939,
+          "20k": 800,
+          "50k": 896,
+          "100k": 933,
+          "100m": 918
+        }
+      },
+      {
+        "id": 2989453,
+        "name": "Guangfu MENG",
+        "country": "CN",
+        "uri": "2989453.guangfu.meng",
+        "indices": {
+          "general": 935,
+          "20k": 843,
+          "50k": 901,
+          "100k": 931,
+          "100m": 907
+        }
+      },
+      {
+        "id": 2109803,
+        "name": "Andrzej WITEK",
+        "country": "PL",
+        "uri": "2109803.andrzej.witek",
+        "indices": {
+          "general": 929,
+          "20k": null,
+          "50k": 901,
+          "100k": 927,
+          "100m": null
+        }
+      },
+      {
+        "id": 3981672,
+        "name": "Clement GENOT",
+        "country": "FR",
+        "uri": "3981672.clement.genot",
+        "indices": {
+          "general": 922,
+          "20k": null,
+          "50k": 821,
+          "100k": 923,
+          "100m": null
+        }
+      },
+      {
+        "id": 1140055,
+        "name": "Hayden HAWKS",
+        "country": "US",
+        "uri": "1140055.hayden.hawks",
+        "indices": {
+          "general": 935,
+          "20k": null,
+          "50k": 881,
+          "100k": 921,
+          "100m": 913
+        }
+      },
+      {
+        "id": 4154759,
+        "name": "Guidu QIN",
+        "country": "CN",
+        "uri": "4154759.guidu.qin",
+        "indices": {
+          "general": 921,
+          "20k": 756,
+          "50k": 805,
+          "100k": 921,
+          "100m": null
+        }
+      },
+      {
+        "id": 1065223,
+        "name": "Petter SERRES ENGDAHL",
+        "country": "SE",
+        "uri": "1065223.petter.serresengdahl",
+        "indices": {
+          "general": 937,
+          "20k": 894,
+          "50k": 921,
+          "100k": 920,
+          "100m": null
+        }
+      },
+      {
+        "id": 239451,
+        "name": "Seth RUHLING",
+        "country": "US",
+        "uri": "239451.seth.ruhling",
+        "indices": {
+          "general": 919,
+          "20k": null,
+          "50k": 887,
+          "100k": 916,
+          "100m": 891
+        }
+      },
+      {
+        "id": 3572577,
+        "name": "Adam PETERMAN",
+        "country": "US",
+        "uri": "3572577.adam.peterman",
+        "indices": {
+          "general": 929,
+          "20k": null,
+          "50k": 895,
+          "100k": 916,
+          "100m": 891
+        }
+      },
+      {
+        "id": 117642,
+        "name": "Nadir MAGUET",
+        "country": "IT",
+        "uri": "117642.nadir.maguet",
+        "indices": {
+          "general": 931,
+          "20k": 896,
+          "50k": 908,
+          "100k": 915,
+          "100m": null
+        }
+      },
+      {
+        "id": 1238361,
+        "name": "Peter FRANO",
+        "country": "SK",
+        "uri": "1238361.peter.frano",
+        "indices": {
+          "general": 919,
+          "20k": 856,
+          "50k": 852,
+          "100k": 915,
+          "100m": 868
+        }
+      },
+      {
+        "id": 330467,
+        "name": "Damien HUMBERT",
+        "country": "FR",
+        "uri": "330467.damien.humbert",
+        "indices": {
+          "general": 910,
+          "20k": 813,
+          "50k": 871,
+          "100k": 914,
+          "100m": null
+        }
+      },
+      {
+        "id": 1030827,
+        "name": "Drew HOLMEN",
+        "country": "US",
+        "uri": "1030827.drew.holmen",
+        "indices": {
+          "general": 918,
+          "20k": null,
+          "50k": 838,
+          "100k": 914,
+          "100m": 867
+        }
+      },
+      {
+        "id": 3270727,
+        "name": "Will MURRAY",
+        "country": "US",
+        "uri": "3270727.will.murray",
+        "indices": {
+          "general": 916,
+          "20k": null,
+          "50k": 767,
+          "100k": 914,
+          "100m": 903
+        }
+      },
+      {
+        "id": 1108647,
+        "name": "Anthony COSTALES",
+        "country": "US",
+        "uri": "1108647.anthony.costales",
+        "indices": {
+          "general": 911,
+          "20k": null,
+          "50k": 848,
+          "100k": 913,
+          "100m": 741
+        }
+      },
+      {
+        "id": 2098477,
+        "name": "Paul CORNUT CHAUVINC",
+        "country": "FR",
+        "uri": "2098477.paul.cornutchauvinc",
+        "indices": {
+          "general": 911,
+          "20k": 801,
+          "50k": 755,
+          "100k": 913,
+          "100m": 899
+        }
+      }
+    ]
+  },
+  "world-H-100m": {
+    "scope": "world",
+    "sex": "H",
+    "category": "100m",
+    "fetchedAt": "2026-11-06T09:56:16.977Z",
+    "source": "https://utmb.world/utmb-index",
+    "runners": [
+      {
+        "id": 1409387,
+        "name": "Ben DHIMAN",
+        "country": "US",
+        "uri": "1409387.ben.dhiman",
+        "indices": {
+          "general": 965,
+          "20k": null,
+          "50k": null,
+          "100k": 948,
+          "100m": 969
+        }
+      },
+      {
+        "id": 485740,
+        "name": "Jim WALMSLEY",
+        "country": "US",
+        "uri": "485740.jim.walmsley",
+        "indices": {
+          "general": 959,
+          "20k": null,
+          "50k": 909,
+          "100k": 951,
+          "100m": 953
+        }
+      },
+      {
+        "id": 1410311,
+        "name": "Tom EVANS",
+        "country": "GB",
+        "uri": "1410311.tom.evans",
+        "indices": {
+          "general": 952,
+          "20k": 809,
+          "50k": 868,
+          "100k": 892,
+          "100m": 952
+        }
+      },
+      {
+        "id": 2574519,
+        "name": "Caleb OLSON",
+        "country": "US",
+        "uri": "2574519.caleb.olson",
+        "indices": {
+          "general": 950,
+          "20k": 791,
+          "50k": 793,
+          "100k": null,
+          "100m": 950
+        }
+      },
+      {
+        "id": 1008473,
+        "name": "Hannes NAMBERGER",
+        "country": "DE",
+        "uri": "1008473.hannes.namberger",
+        "indices": {
+          "general": 944,
+          "20k": 818,
+          "50k": 830,
+          "100k": 873,
+          "100m": 945
+        }
+      },
+      {
+        "id": 1250019,
+        "name": "Baptiste CHASSAGNE",
+        "country": "FR",
+        "uri": "1250019.baptiste.chassagne",
+        "indices": {
+          "general": 940,
+          "20k": 832,
+          "50k": 848,
+          "100k": 911,
+          "100m": 942
+        }
+      },
+      {
+        "id": 864009,
+        "name": "Vincent BOUILLARD",
+        "country": "FR",
+        "uri": "864009.vincent.bouillard",
+        "indices": {
+          "general": 939,
+          "20k": 790,
+          "50k": null,
+          "100k": 874,
+          "100m": 939
+        }
+      },
+      {
+        "id": 3861931,
+        "name": "Chris MYERS",
+        "country": "US",
+        "uri": "3861931.chris.myers",
+        "indices": {
+          "general": 937,
+          "20k": null,
+          "50k": 846,
+          "100k": 881,
+          "100m": 937
+        }
+      },
+      {
+        "id": 2704,
+        "name": "Kilian JORNET BURGADA",
+        "country": "ES",
+        "uri": "2704.kilian.jornetburgada",
+        "indices": {
+          "general": 947,
+          "20k": 792,
+          "50k": 940,
+          "100k": null,
+          "100m": 935
+        }
+      },
+      {
+        "id": 3586861,
+        "name": "Virgile MORISET",
+        "country": "FR",
+        "uri": "3586861.virgile.moriset",
+        "indices": {
+          "general": 928,
+          "20k": null,
+          "50k": 806,
+          "100k": 879,
+          "100m": 930
+        }
+      },
+      {
+        "id": 7829,
+        "name": "Ludovic POMMERET",
+        "country": "FR",
+        "uri": "7829.ludovic.pommeret",
+        "indices": {
+          "general": 925,
+          "20k": 433,
+          "50k": 775,
+          "100k": 839,
+          "100m": 927
+        }
+      },
+      {
+        "id": 673108,
+        "name": "Francesco PUPPI",
+        "country": "IT",
+        "uri": "673108.francesco.puppi",
+        "indices": {
+          "general": 950,
+          "20k": 825,
+          "50k": 927,
+          "100k": 944,
+          "100m": 927
+        }
+      },
+      {
+        "id": 243895,
+        "name": "Joaquin LOPEZ",
+        "country": "EC",
+        "uri": "243895.joaquin.lopez",
+        "indices": {
+          "general": 925,
+          "20k": null,
+          "50k": 803,
+          "100k": 872,
+          "100m": 926
+        }
+      },
+      {
+        "id": 11045,
+        "name": "Aurelien DUNAND PALLAZ",
+        "country": "FR",
+        "uri": "11045.aurelien.dunandpallaz",
+        "indices": {
+          "general": 921,
+          "20k": null,
+          "50k": 837,
+          "100k": 835,
+          "100m": 925
+        }
+      },
+      {
+        "id": 824943,
+        "name": "Ryan MONTGOMERY",
+        "country": "US",
+        "uri": "824943.ryan.montgomery",
+        "indices": {
+          "general": 922,
+          "20k": null,
+          "50k": 811,
+          "100k": 851,
+          "100m": 925
+        }
+      },
+      {
+        "id": 483224,
+        "name": "Jeff MOGAVERO",
+        "country": "US",
+        "uri": "483224.jeff.mogavero",
+        "indices": {
+          "general": 925,
+          "20k": 710,
+          "50k": 868,
+          "100k": 887,
+          "100m": 923
+        }
+      },
+      {
+        "id": 527631,
+        "name": "Jonathan ALBON",
+        "country": "GB",
+        "uri": "527631.jonathan.albon",
+        "indices": {
+          "general": 932,
+          "20k": 846,
+          "50k": 887,
+          "100k": 896,
+          "100m": 923
+        }
+      },
+      {
+        "id": 666238,
+        "name": "Andreas REITERER",
+        "country": "IT",
+        "uri": "666238.andreas.reiterer",
+        "indices": {
+          "general": 930,
+          "20k": 821,
+          "50k": 871,
+          "100k": 908,
+          "100m": 921
+        }
+      },
+      {
+        "id": 3061013,
+        "name": "Huohua ZHANG",
+        "country": "CN",
+        "uri": "3061013.huohua.zhang",
+        "indices": {
+          "general": 922,
+          "20k": 833,
+          "50k": 833,
+          "100k": 899,
+          "100m": 920
+        }
+      },
+      {
+        "id": 1682129,
+        "name": "Josh WADE",
+        "country": "GB",
+        "uri": "1682129.josh.wade",
+        "indices": {
+          "general": 918,
+          "20k": null,
+          "50k": 756,
+          "100k": 865,
+          "100m": 919
+        }
+      },
+      {
+        "id": 1610635,
+        "name": "Hugo DECK",
+        "country": "FR",
+        "uri": "1610635.hugo.deck",
+        "indices": {
+          "general": 917,
+          "20k": 829,
+          "50k": 859,
+          "100k": 901,
+          "100m": 919
+        }
+      },
+      {
+        "id": 4548888,
+        "name": "Daniel JONES",
+        "country": "NZ",
+        "uri": "4548888.daniel.jones",
+        "indices": {
+          "general": 939,
+          "20k": 800,
+          "50k": 896,
+          "100k": 933,
+          "100m": 918
+        }
+      },
+      {
+        "id": 4241914,
+        "name": "Louis CALAIS",
+        "country": "FR",
+        "uri": "4241914.louis.calais",
+        "indices": {
+          "general": 913,
+          "20k": null,
+          "50k": 754,
+          "100k": 800,
+          "100m": 917
+        }
+      },
+      {
+        "id": 4270859,
+        "name": "Nicolas THOMAS",
+        "country": "BE",
+        "uri": "4270859.nicolas.thomas",
+        "indices": {
+          "general": 913,
+          "20k": null,
+          "50k": 815,
+          "100k": null,
+          "100m": 917
+        }
+      },
+      {
+        "id": 885081,
+        "name": "Tobias GEISER",
+        "country": "IT",
+        "uri": "885081.tobias.geiser",
+        "indices": {
+          "general": 912,
+          "20k": null,
+          "50k": 820,
+          "100k": 870,
+          "100m": 914
+        }
+      }
+    ]
+  },
+  "world-F-general": {
+    "scope": "world",
+    "sex": "F",
+    "category": "general",
+    "fetchedAt": "2026-11-06T09:56:17.349Z",
+    "source": "https://utmb.world/utmb-index",
+    "runners": [
+      {
+        "id": 1719133,
+        "name": "Tove ALEXANDERSSON",
+        "country": "SE",
+        "uri": "1719133.tove.alexandersson",
+        "indices": {
+          "general": 862,
+          "20k": 830,
+          "50k": 861,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 671487,
+        "name": "Katie SCHIDE",
+        "country": "US",
+        "uri": "671487.katie.schide",
+        "indices": {
+          "general": 860,
+          "20k": null,
+          "50k": 777,
+          "100k": 853,
+          "100m": 836
+        }
+      },
+      {
+        "id": 30959,
+        "name": "Courtney DAUWALTER",
+        "country": "US",
+        "uri": "30959.courtney.dauwalter",
+        "indices": {
+          "general": 854,
+          "20k": null,
+          "50k": null,
+          "100k": 762,
+          "100m": 854
+        }
+      },
+      {
+        "id": 4220907,
+        "name": "Jennifer LICHTER",
+        "country": "US",
+        "uri": "4220907.jennifer.lichter",
+        "indices": {
+          "general": 849,
+          "20k": null,
+          "50k": 776,
+          "100k": 850,
+          "100m": 830
+        }
+      },
+      {
+        "id": 4233035,
+        "name": "Anne FLOWER",
+        "country": "US",
+        "uri": "4233035.anne.flower",
+        "indices": {
+          "general": 847,
+          "20k": null,
+          "50k": 746,
+          "100k": 849,
+          "100m": 749
+        }
+      },
+      {
+        "id": 1163671,
+        "name": "Miao YAO",
+        "country": "CN",
+        "uri": "1163671.miao.yao",
+        "indices": {
+          "general": 831,
+          "20k": 738,
+          "50k": 818,
+          "100k": 800,
+          "100m": 819
+        }
+      },
+      {
+        "id": 4377488,
+        "name": "Tara DOWER",
+        "country": "US",
+        "uri": "4377488.tara.dower",
+        "indices": {
+          "general": 828,
+          "20k": null,
+          "50k": 743,
+          "100k": 825,
+          "100m": 812
+        }
+      },
+      {
+        "id": 739258,
+        "name": "Riley BRADY",
+        "country": "US",
+        "uri": "739258.riley.brady",
+        "indices": {
+          "general": 826,
+          "20k": 733,
+          "50k": 639,
+          "100k": 823,
+          "100m": 819
+        }
+      },
+      {
+        "id": 3254927,
+        "name": "Madalina FLOREA",
+        "country": "RO",
+        "uri": "3254927.madalina.florea",
+        "indices": {
+          "general": 825,
+          "20k": 819,
+          "50k": 804,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 234329,
+        "name": "Rachel ENTREKIN",
+        "country": "US",
+        "uri": "234329.rachel.entrekin",
+        "indices": {
+          "general": 822,
+          "20k": null,
+          "50k": 706,
+          "100k": null,
+          "100m": 824
+        }
+      },
+      {
+        "id": 989977,
+        "name": "Fuzhao XIANG",
+        "country": "CN",
+        "uri": "989977.fuzhao.xiang",
+        "indices": {
+          "general": 822,
+          "20k": 656,
+          "50k": 737,
+          "100k": 798,
+          "100m": 809
+        }
+      },
+      {
+        "id": 362813,
+        "name": "Ruth CROFT",
+        "country": "NZ",
+        "uri": "362813.ruth.croft",
+        "indices": {
+          "general": 820,
+          "20k": null,
+          "50k": 772,
+          "100k": 799,
+          "100m": 808
+        }
+      },
+      {
+        "id": 3337007,
+        "name": "Judith WYDER",
+        "country": "CH",
+        "uri": "3337007.judith.wyder",
+        "indices": {
+          "general": 818,
+          "20k": null,
+          "50k": 818,
+          "100k": 757,
+          "100m": null
+        }
+      },
+      {
+        "id": 8725960,
+        "name": "Ruth Mwihaki GITONGA",
+        "country": "KE",
+        "uri": "8725960.ruthmwihaki.gitonga",
+        "indices": {
+          "general": 816,
+          "20k": 816,
+          "50k": 783,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 656571,
+        "name": "Yngvild KASPERSEN",
+        "country": "NO",
+        "uri": "656571.yngvild.kaspersen",
+        "indices": {
+          "general": 815,
+          "20k": 685,
+          "50k": 727,
+          "100k": 818,
+          "100m": 788
+        }
+      },
+      {
+        "id": 20158,
+        "name": "Maude MATHYS",
+        "country": "CH",
+        "uri": "20158.maude.mathys",
+        "indices": {
+          "general": 814,
+          "20k": 761,
+          "50k": 815,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1053595,
+        "name": "Blandine L HIRONDEL",
+        "country": "FR",
+        "uri": "1053595.blandine.lhirondel",
+        "indices": {
+          "general": 814,
+          "20k": 716,
+          "50k": 765,
+          "100k": 798,
+          "100m": 808
+        }
+      },
+      {
+        "id": 1103333,
+        "name": "Lingjie CHI",
+        "country": "CN",
+        "uri": "1103333.lingjie.chi",
+        "indices": {
+          "general": 813,
+          "20k": 710,
+          "50k": 675,
+          "100k": 812,
+          "100m": 739
+        }
+      },
+      {
+        "id": 1777509,
+        "name": "Caitriona JENNINGS",
+        "country": "IE",
+        "uri": "1777509.caitriona.jennings",
+        "indices": {
+          "general": 813,
+          "20k": null,
+          "50k": 620,
+          "100k": null,
+          "100m": 813
+        }
+      },
+      {
+        "id": 4327422,
+        "name": "Sunmaya BUDHA",
+        "country": "NP",
+        "uri": "4327422.sunmaya.budha",
+        "indices": {
+          "general": 813,
+          "20k": 672,
+          "50k": 746,
+          "100k": 803,
+          "100m": 802
+        }
+      },
+      {
+        "id": 6046216,
+        "name": "Nina ENGELHARD",
+        "country": "DE",
+        "uri": "6046216.nina.engelhard",
+        "indices": {
+          "general": 813,
+          "20k": 812,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2248863,
+        "name": "Lauren GREGORY",
+        "country": "US",
+        "uri": "2248863.lauren.gregory",
+        "indices": {
+          "general": 811,
+          "20k": 798,
+          "50k": 803,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 951229,
+        "name": "Caitlin FIELDER",
+        "country": "NZ",
+        "uri": "951229.caitlin.fielder",
+        "indices": {
+          "general": 811,
+          "20k": 708,
+          "50k": 767,
+          "100k": 801,
+          "100m": 806
+        }
+      },
+      {
+        "id": 643784,
+        "name": "Marianne HOGAN",
+        "country": "CA",
+        "uri": "643784.marianne.hogan",
+        "indices": {
+          "general": 810,
+          "20k": 553,
+          "50k": 684,
+          "100k": 757,
+          "100m": 812
+        }
+      },
+      {
+        "id": 5452996,
+        "name": "Naomi LANG",
+        "country": "GB",
+        "uri": "5452996.naomi.lang",
+        "indices": {
+          "general": 810,
+          "20k": 782,
+          "50k": 810,
+          "100k": null,
+          "100m": null
+        }
+      }
+    ]
+  },
+  "world-F-20k": {
+    "scope": "world",
+    "sex": "F",
+    "category": "20k",
+    "fetchedAt": "2026-11-06T09:56:17.783Z",
+    "source": "https://utmb.world/utmb-index",
+    "runners": [
+      {
+        "id": 1719133,
+        "name": "Tove ALEXANDERSSON",
+        "country": "SE",
+        "uri": "1719133.tove.alexandersson",
+        "indices": {
+          "general": 862,
+          "20k": 830,
+          "50k": 861,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3254927,
+        "name": "Madalina FLOREA",
+        "country": "RO",
+        "uri": "3254927.madalina.florea",
+        "indices": {
+          "general": 825,
+          "20k": 819,
+          "50k": 804,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 8725960,
+        "name": "Ruth Mwihaki GITONGA",
+        "country": "KE",
+        "uri": "8725960.ruthmwihaki.gitonga",
+        "indices": {
+          "general": 816,
+          "20k": 816,
+          "50k": 783,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6046216,
+        "name": "Nina ENGELHARD",
+        "country": "DE",
+        "uri": "6046216.nina.engelhard",
+        "indices": {
+          "general": 813,
+          "20k": 812,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5452978,
+        "name": "Joyce Muthoni NJERU",
+        "country": "KE",
+        "uri": "5452978.joycemuthoni.njeru",
+        "indices": {
+          "general": 804,
+          "20k": 803,
+          "50k": 763,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2248863,
+        "name": "Lauren GREGORY",
+        "country": "US",
+        "uri": "2248863.lauren.gregory",
+        "indices": {
+          "general": 811,
+          "20k": 798,
+          "50k": 803,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3453027,
+        "name": "Scout ADKIN",
+        "country": "GB",
+        "uri": "3453027.scout.adkin",
+        "indices": {
+          "general": 800,
+          "20k": 798,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6365252,
+        "name": "Gloria CHEBET",
+        "country": "KE",
+        "uri": "6365252.gloria.chebet",
+        "indices": {
+          "general": 798,
+          "20k": 798,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6046224,
+        "name": "Hanna GRÖBER",
+        "country": "DE",
+        "uri": "6046224.hanna.grober",
+        "indices": {
+          "general": 790,
+          "20k": 793,
+          "50k": 775,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4271095,
+        "name": "Tabor SCHOLL-HEMMING",
+        "country": "US",
+        "uri": "4271095.tabor.schollhemming",
+        "indices": {
+          "general": 785,
+          "20k": 788,
+          "50k": 754,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5452984,
+        "name": "Oria LIACI",
+        "country": "CH",
+        "uri": "5452984.oria.liaci",
+        "indices": {
+          "general": 798,
+          "20k": 786,
+          "50k": 791,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7305118,
+        "name": "Miriam CHEPKIRUI",
+        "country": "KE",
+        "uri": "7305118.miriam.chepkirui",
+        "indices": {
+          "general": 784,
+          "20k": 786,
+          "50k": 774,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5452982,
+        "name": "Philaries-Jeruto KISANG",
+        "country": "KE",
+        "uri": "5452982.philariesjeruto.kisang",
+        "indices": {
+          "general": 787,
+          "20k": 785,
+          "50k": 736,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6432862,
+        "name": "Nelie CLEMENT",
+        "country": "FR",
+        "uri": "6432862.nelie.clement",
+        "indices": {
+          "general": 783,
+          "20k": 784,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6488394,
+        "name": "Joyline CHEPNGENO",
+        "country": "KE",
+        "uri": "6488394.joyline.chepngeno",
+        "indices": {
+          "general": 806,
+          "20k": 784,
+          "50k": 802,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7229232,
+        "name": "Valentine Jepkoech RUTTO",
+        "country": "KE",
+        "uri": "7229232.valentinejepkoech.rutto",
+        "indices": {
+          "general": 786,
+          "20k": 784,
+          "50k": 744,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4186355,
+        "name": "Nienke BRINKMAN",
+        "country": "NL",
+        "uri": "4186355.nienke.brinkman",
+        "indices": {
+          "general": 789,
+          "20k": 782,
+          "50k": 788,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5452996,
+        "name": "Naomi LANG",
+        "country": "GB",
+        "uri": "5452996.naomi.lang",
+        "indices": {
+          "general": 810,
+          "20k": 782,
+          "50k": 810,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7305112,
+        "name": "Jeruto KISANG PHILARIES",
+        "country": "KE",
+        "uri": "7305112.jeruto.kisangphilaries",
+        "indices": {
+          "general": 785,
+          "20k": 782,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7650014,
+        "name": "Emma ERIKSSON",
+        "country": "SE",
+        "uri": "7650014.emma.eriksson",
+        "indices": {
+          "general": 792,
+          "20k": 781,
+          "50k": 772,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3992581,
+        "name": "Arianna DENTIS",
+        "country": "IT",
+        "uri": "3992581.arianna.dentis",
+        "indices": {
+          "general": 777,
+          "20k": 780,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1652483,
+        "name": "Andrea KOLBEINSDÓTTIR",
+        "country": "IS",
+        "uri": "1652483.andrea.kolbeinsdottir",
+        "indices": {
+          "general": 781,
+          "20k": 779,
+          "50k": 774,
+          "100k": 730,
+          "100m": null
+        }
+      },
+      {
+        "id": 5516220,
+        "name": "Anna GIBSON",
+        "country": "US",
+        "uri": "5516220.anna.gibson",
+        "indices": {
+          "general": 791,
+          "20k": 779,
+          "50k": 788,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 8515140,
+        "name": "Malin AGERVIG KRISTIANSSON",
+        "country": "SE",
+        "uri": "8515140.malin.agervigkristiansson",
+        "indices": {
+          "general": 778,
+          "20k": 779,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6049380,
+        "name": "Tiphaine BAZILE",
+        "country": "FR",
+        "uri": "6049380.tiphaine.bazile",
+        "indices": {
+          "general": 774,
+          "20k": 777,
+          "50k": 664,
+          "100k": null,
+          "100m": null
+        }
+      }
+    ]
+  },
+  "world-F-50k": {
+    "scope": "world",
+    "sex": "F",
+    "category": "50k",
+    "fetchedAt": "2026-11-06T09:56:18.062Z",
+    "source": "https://utmb.world/utmb-index",
+    "runners": [
+      {
+        "id": 1719133,
+        "name": "Tove ALEXANDERSSON",
+        "country": "SE",
+        "uri": "1719133.tove.alexandersson",
+        "indices": {
+          "general": 862,
+          "20k": 830,
+          "50k": 861,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1163671,
+        "name": "Miao YAO",
+        "country": "CN",
+        "uri": "1163671.miao.yao",
+        "indices": {
+          "general": 831,
+          "20k": 738,
+          "50k": 818,
+          "100k": 800,
+          "100m": 819
+        }
+      },
+      {
+        "id": 3337007,
+        "name": "Judith WYDER",
+        "country": "CH",
+        "uri": "3337007.judith.wyder",
+        "indices": {
+          "general": 818,
+          "20k": null,
+          "50k": 818,
+          "100k": 757,
+          "100m": null
+        }
+      },
+      {
+        "id": 20158,
+        "name": "Maude MATHYS",
+        "country": "CH",
+        "uri": "20158.maude.mathys",
+        "indices": {
+          "general": 814,
+          "20k": 761,
+          "50k": 815,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5452996,
+        "name": "Naomi LANG",
+        "country": "GB",
+        "uri": "5452996.naomi.lang",
+        "indices": {
+          "general": 810,
+          "20k": 782,
+          "50k": 810,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4016633,
+        "name": "Sara ALONSO",
+        "country": "ES",
+        "uri": "4016633.sara.alonso",
+        "indices": {
+          "general": 807,
+          "20k": 771,
+          "50k": 808,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3254927,
+        "name": "Madalina FLOREA",
+        "country": "RO",
+        "uri": "3254927.madalina.florea",
+        "indices": {
+          "general": 825,
+          "20k": 819,
+          "50k": 804,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2248863,
+        "name": "Lauren GREGORY",
+        "country": "US",
+        "uri": "2248863.lauren.gregory",
+        "indices": {
+          "general": 811,
+          "20k": 798,
+          "50k": 803,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4671760,
+        "name": "Ida Amelie ROBSAHM",
+        "country": "NO",
+        "uri": "4671760.idaamelie.robsahm",
+        "indices": {
+          "general": 800,
+          "20k": 715,
+          "50k": 802,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6488394,
+        "name": "Joyline CHEPNGENO",
+        "country": "KE",
+        "uri": "6488394.joyline.chepngeno",
+        "indices": {
+          "general": 806,
+          "20k": 784,
+          "50k": 802,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6980075,
+        "name": "Caroline KIMUTAI",
+        "country": "KE",
+        "uri": "6980075.caroline.kimutai",
+        "indices": {
+          "general": 801,
+          "20k": 776,
+          "50k": 802,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4330844,
+        "name": "Laura HOTTENROTT",
+        "country": "DE",
+        "uri": "4330844.laura.hottenrott",
+        "indices": {
+          "general": 799,
+          "20k": 749,
+          "50k": 797,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 9178006,
+        "name": "Morven GOODRUM",
+        "country": "GB",
+        "uri": "9178006.morven.goodrum",
+        "indices": {
+          "general": 793,
+          "20k": null,
+          "50k": 796,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1793771,
+        "name": "Rosa LARA FELIU",
+        "country": "ES",
+        "uri": "1793771.rosa.larafeliu",
+        "indices": {
+          "general": 798,
+          "20k": 758,
+          "50k": 793,
+          "100k": 757,
+          "100m": null
+        }
+      },
+      {
+        "id": 4005177,
+        "name": "Fabiola CONTI",
+        "country": "IT",
+        "uri": "4005177.fabiola.conti",
+        "indices": {
+          "general": 793,
+          "20k": 728,
+          "50k": 791,
+          "100k": 772,
+          "100m": 734
+        }
+      },
+      {
+        "id": 5452984,
+        "name": "Oria LIACI",
+        "country": "CH",
+        "uri": "5452984.oria.liaci",
+        "indices": {
+          "general": 798,
+          "20k": 786,
+          "50k": 791,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4186355,
+        "name": "Nienke BRINKMAN",
+        "country": "NL",
+        "uri": "4186355.nienke.brinkman",
+        "indices": {
+          "general": 789,
+          "20k": 782,
+          "50k": 788,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4592334,
+        "name": "Malen OSA ANSA",
+        "country": "ES",
+        "uri": "4592334.malen.osaansa",
+        "indices": {
+          "general": 789,
+          "20k": 759,
+          "50k": 788,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5516220,
+        "name": "Anna GIBSON",
+        "country": "US",
+        "uri": "5516220.anna.gibson",
+        "indices": {
+          "general": 791,
+          "20k": 779,
+          "50k": 788,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7330350,
+        "name": "Makena MORLEY",
+        "country": "US",
+        "uri": "7330350.makena.morley",
+        "indices": {
+          "general": 785,
+          "20k": 753,
+          "50k": 786,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 517867,
+        "name": "Clementine GEOFFRAY",
+        "country": "FR",
+        "uri": "517867.clementine.geoffray",
+        "indices": {
+          "general": 791,
+          "20k": 702,
+          "50k": 785,
+          "100k": 756,
+          "100m": null
+        }
+      },
+      {
+        "id": 8725960,
+        "name": "Ruth Mwihaki GITONGA",
+        "country": "KE",
+        "uri": "8725960.ruthmwihaki.gitonga",
+        "indices": {
+          "general": 816,
+          "20k": 816,
+          "50k": 783,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7297962,
+        "name": "María Teresa LA CHICA LHOEST",
+        "country": "ES",
+        "uri": "7297962.mariateresa.lachicalhoest",
+        "indices": {
+          "general": 779,
+          "20k": null,
+          "50k": 782,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1413011,
+        "name": "Rosanna BUCHAUER",
+        "country": "DE",
+        "uri": "1413011.rosanna.buchauer",
+        "indices": {
+          "general": 802,
+          "20k": 677,
+          "50k": 780,
+          "100k": 789,
+          "100m": null
+        }
+      },
+      {
+        "id": 3449957,
+        "name": "Ikram RHARSALLA",
+        "country": "ES",
+        "uri": "3449957.ikram.rharsalla",
+        "indices": {
+          "general": 781,
+          "20k": 732,
+          "50k": 780,
+          "100k": null,
+          "100m": null
+        }
+      }
+    ]
+  },
+  "world-F-100k": {
+    "scope": "world",
+    "sex": "F",
+    "category": "100k",
+    "fetchedAt": "2026-11-06T09:56:18.336Z",
+    "source": "https://utmb.world/utmb-index",
+    "runners": [
+      {
+        "id": 671487,
+        "name": "Katie SCHIDE",
+        "country": "US",
+        "uri": "671487.katie.schide",
+        "indices": {
+          "general": 860,
+          "20k": null,
+          "50k": 777,
+          "100k": 853,
+          "100m": 836
+        }
+      },
+      {
+        "id": 4220907,
+        "name": "Jennifer LICHTER",
+        "country": "US",
+        "uri": "4220907.jennifer.lichter",
+        "indices": {
+          "general": 849,
+          "20k": null,
+          "50k": 776,
+          "100k": 850,
+          "100m": 830
+        }
+      },
+      {
+        "id": 4233035,
+        "name": "Anne FLOWER",
+        "country": "US",
+        "uri": "4233035.anne.flower",
+        "indices": {
+          "general": 847,
+          "20k": null,
+          "50k": 746,
+          "100k": 849,
+          "100m": 749
+        }
+      },
+      {
+        "id": 4377488,
+        "name": "Tara DOWER",
+        "country": "US",
+        "uri": "4377488.tara.dower",
+        "indices": {
+          "general": 828,
+          "20k": null,
+          "50k": 743,
+          "100k": 825,
+          "100m": 812
+        }
+      },
+      {
+        "id": 739258,
+        "name": "Riley BRADY",
+        "country": "US",
+        "uri": "739258.riley.brady",
+        "indices": {
+          "general": 826,
+          "20k": 733,
+          "50k": 639,
+          "100k": 823,
+          "100m": 819
+        }
+      },
+      {
+        "id": 656571,
+        "name": "Yngvild KASPERSEN",
+        "country": "NO",
+        "uri": "656571.yngvild.kaspersen",
+        "indices": {
+          "general": 815,
+          "20k": 685,
+          "50k": 727,
+          "100k": 818,
+          "100m": 788
+        }
+      },
+      {
+        "id": 1103333,
+        "name": "Lingjie CHI",
+        "country": "CN",
+        "uri": "1103333.lingjie.chi",
+        "indices": {
+          "general": 813,
+          "20k": 710,
+          "50k": 675,
+          "100k": 812,
+          "100m": 739
+        }
+      },
+      {
+        "id": 2011593,
+        "name": "Toni MCCANN",
+        "country": "ZA",
+        "uri": "2011593.toni.mccann",
+        "indices": {
+          "general": 809,
+          "20k": 749,
+          "50k": 761,
+          "100k": 812,
+          "100m": null
+        }
+      },
+      {
+        "id": 4327422,
+        "name": "Sunmaya BUDHA",
+        "country": "NP",
+        "uri": "4327422.sunmaya.budha",
+        "indices": {
+          "general": 813,
+          "20k": 672,
+          "50k": 746,
+          "100k": 803,
+          "100m": 802
+        }
+      },
+      {
+        "id": 2229091,
+        "name": "Sylvia NORDSKAR",
+        "country": "NO",
+        "uri": "2229091.sylvia.nordskar",
+        "indices": {
+          "general": 803,
+          "20k": null,
+          "50k": 775,
+          "100k": 802,
+          "100m": null
+        }
+      },
+      {
+        "id": 5347840,
+        "name": "Martyna MLYNARCZYK",
+        "country": "PL",
+        "uri": "5347840.martyna.mlynarczyk",
+        "indices": {
+          "general": 803,
+          "20k": 723,
+          "50k": 751,
+          "100k": 802,
+          "100m": null
+        }
+      },
+      {
+        "id": 4623152,
+        "name": "Molly SEIDEL",
+        "country": "US",
+        "uri": "4623152.molly.seidel",
+        "indices": {
+          "general": 802,
+          "20k": null,
+          "50k": 709,
+          "100k": 801,
+          "100m": 524
+        }
+      },
+      {
+        "id": 951229,
+        "name": "Caitlin FIELDER",
+        "country": "NZ",
+        "uri": "951229.caitlin.fielder",
+        "indices": {
+          "general": 811,
+          "20k": 708,
+          "50k": 767,
+          "100k": 801,
+          "100m": 806
+        }
+      },
+      {
+        "id": 3162541,
+        "name": "Anna TARASOVA",
+        "country": "",
+        "uri": "3162541.anna.tarasova",
+        "indices": {
+          "general": 802,
+          "20k": null,
+          "50k": 744,
+          "100k": 801,
+          "100m": null
+        }
+      },
+      {
+        "id": 1163671,
+        "name": "Miao YAO",
+        "country": "CN",
+        "uri": "1163671.miao.yao",
+        "indices": {
+          "general": 831,
+          "20k": 738,
+          "50k": 818,
+          "100k": 800,
+          "100m": 819
+        }
+      },
+      {
+        "id": 4103397,
+        "name": "Lotti BRINKS",
+        "country": "DE",
+        "uri": "4103397.lotti.brinks",
+        "indices": {
+          "general": 807,
+          "20k": null,
+          "50k": 719,
+          "100k": 800,
+          "100m": 800
+        }
+      },
+      {
+        "id": 362813,
+        "name": "Ruth CROFT",
+        "country": "NZ",
+        "uri": "362813.ruth.croft",
+        "indices": {
+          "general": 820,
+          "20k": null,
+          "50k": 772,
+          "100k": 799,
+          "100m": 808
+        }
+      },
+      {
+        "id": 980211,
+        "name": "Abby HALL",
+        "country": "US",
+        "uri": "980211.abby.hall",
+        "indices": {
+          "general": 808,
+          "20k": null,
+          "50k": 702,
+          "100k": 799,
+          "100m": 806
+        }
+      },
+      {
+        "id": 1053595,
+        "name": "Blandine L HIRONDEL",
+        "country": "FR",
+        "uri": "1053595.blandine.lhirondel",
+        "indices": {
+          "general": 814,
+          "20k": 716,
+          "50k": 765,
+          "100k": 798,
+          "100m": 808
+        }
+      },
+      {
+        "id": 989977,
+        "name": "Fuzhao XIANG",
+        "country": "CN",
+        "uri": "989977.fuzhao.xiang",
+        "indices": {
+          "general": 822,
+          "20k": 656,
+          "50k": 737,
+          "100k": 798,
+          "100m": 809
+        }
+      },
+      {
+        "id": 1244521,
+        "name": "Eszter CSILLAG",
+        "country": "HU",
+        "uri": "1244521.eszter.csillag",
+        "indices": {
+          "general": 795,
+          "20k": 663,
+          "50k": 711,
+          "100k": 792,
+          "100m": 788
+        }
+      },
+      {
+        "id": 1575819,
+        "name": "Honoka AKIYAMA",
+        "country": "JP",
+        "uri": "1575819.honoka.akiyama",
+        "indices": {
+          "general": 793,
+          "20k": null,
+          "50k": null,
+          "100k": 792,
+          "100m": 757
+        }
+      },
+      {
+        "id": 1413011,
+        "name": "Rosanna BUCHAUER",
+        "country": "DE",
+        "uri": "1413011.rosanna.buchauer",
+        "indices": {
+          "general": 802,
+          "20k": 677,
+          "50k": 780,
+          "100k": 789,
+          "100m": null
+        }
+      },
+      {
+        "id": 4081167,
+        "name": "Shea AQUILANO",
+        "country": "US",
+        "uri": "4081167.shea.aquilano",
+        "indices": {
+          "general": 788,
+          "20k": null,
+          "50k": 749,
+          "100k": 789,
+          "100m": 635
+        }
+      },
+      {
+        "id": 3787097,
+        "name": "Sylvie ABEL",
+        "country": "US",
+        "uri": "3787097.sylvie.abel",
+        "indices": {
+          "general": 784,
+          "20k": 624,
+          "50k": 654,
+          "100k": 787,
+          "100m": null
+        }
+      }
+    ]
+  },
+  "world-F-100m": {
+    "scope": "world",
+    "sex": "F",
+    "category": "100m",
+    "fetchedAt": "2026-11-06T09:56:18.551Z",
+    "source": "https://utmb.world/utmb-index",
+    "runners": [
+      {
+        "id": 30959,
+        "name": "Courtney DAUWALTER",
+        "country": "US",
+        "uri": "30959.courtney.dauwalter",
+        "indices": {
+          "general": 854,
+          "20k": null,
+          "50k": null,
+          "100k": 762,
+          "100m": 854
+        }
+      },
+      {
+        "id": 671487,
+        "name": "Katie SCHIDE",
+        "country": "US",
+        "uri": "671487.katie.schide",
+        "indices": {
+          "general": 860,
+          "20k": null,
+          "50k": 777,
+          "100k": 853,
+          "100m": 836
+        }
+      },
+      {
+        "id": 4220907,
+        "name": "Jennifer LICHTER",
+        "country": "US",
+        "uri": "4220907.jennifer.lichter",
+        "indices": {
+          "general": 849,
+          "20k": null,
+          "50k": 776,
+          "100k": 850,
+          "100m": 830
+        }
+      },
+      {
+        "id": 234329,
+        "name": "Rachel ENTREKIN",
+        "country": "US",
+        "uri": "234329.rachel.entrekin",
+        "indices": {
+          "general": 822,
+          "20k": null,
+          "50k": 706,
+          "100k": null,
+          "100m": 827
+        }
+      },
+      {
+        "id": 739258,
+        "name": "Riley BRADY",
+        "country": "US",
+        "uri": "739258.riley.brady",
+        "indices": {
+          "general": 826,
+          "20k": 733,
+          "50k": 639,
+          "100k": 823,
+          "100m": 819
+        }
+      },
+      {
+        "id": 1163671,
+        "name": "Miao YAO",
+        "country": "CN",
+        "uri": "1163671.miao.yao",
+        "indices": {
+          "general": 831,
+          "20k": 738,
+          "50k": 818,
+          "100k": 800,
+          "100m": 819
+        }
+      },
+      {
+        "id": 1777509,
+        "name": "Caitriona JENNINGS",
+        "country": "IE",
+        "uri": "1777509.caitriona.jennings",
+        "indices": {
+          "general": 813,
+          "20k": null,
+          "50k": 620,
+          "100k": null,
+          "100m": 813
+        }
+      },
+      {
+        "id": 643784,
+        "name": "Marianne HOGAN",
+        "country": "CA",
+        "uri": "643784.marianne.hogan",
+        "indices": {
+          "general": 810,
+          "20k": 553,
+          "50k": 684,
+          "100k": 757,
+          "100m": 812
+        }
+      },
+      {
+        "id": 4377488,
+        "name": "Tara DOWER",
+        "country": "US",
+        "uri": "4377488.tara.dower",
+        "indices": {
+          "general": 828,
+          "20k": null,
+          "50k": 743,
+          "100k": 825,
+          "100m": 812
+        }
+      },
+      {
+        "id": 989977,
+        "name": "Fuzhao XIANG",
+        "country": "CN",
+        "uri": "989977.fuzhao.xiang",
+        "indices": {
+          "general": 822,
+          "20k": 656,
+          "50k": 737,
+          "100k": 798,
+          "100m": 809
+        }
+      },
+      {
+        "id": 362813,
+        "name": "Ruth CROFT",
+        "country": "NZ",
+        "uri": "362813.ruth.croft",
+        "indices": {
+          "general": 820,
+          "20k": null,
+          "50k": 772,
+          "100k": 799,
+          "100m": 808
+        }
+      },
+      {
+        "id": 1053595,
+        "name": "Blandine L HIRONDEL",
+        "country": "FR",
+        "uri": "1053595.blandine.lhirondel",
+        "indices": {
+          "general": 814,
+          "20k": 716,
+          "50k": 765,
+          "100k": 798,
+          "100m": 808
+        }
+      },
+      {
+        "id": 951229,
+        "name": "Caitlin FIELDER",
+        "country": "NZ",
+        "uri": "951229.caitlin.fielder",
+        "indices": {
+          "general": 811,
+          "20k": 708,
+          "50k": 767,
+          "100k": 801,
+          "100m": 806
+        }
+      },
+      {
+        "id": 980211,
+        "name": "Abby HALL",
+        "country": "US",
+        "uri": "980211.abby.hall",
+        "indices": {
+          "general": 808,
+          "20k": null,
+          "50k": 702,
+          "100k": 799,
+          "100m": 806
+        }
+      },
+      {
+        "id": 211181,
+        "name": "Lucy BARTHOLOMEW",
+        "country": "AU",
+        "uri": "211181.lucy.bartholomew",
+        "indices": {
+          "general": 799,
+          "20k": 696,
+          "50k": 726,
+          "100k": 786,
+          "100m": 802
+        }
+      },
+      {
+        "id": 4327422,
+        "name": "Sunmaya BUDHA",
+        "country": "NP",
+        "uri": "4327422.sunmaya.budha",
+        "indices": {
+          "general": 813,
+          "20k": 672,
+          "50k": 746,
+          "100k": 803,
+          "100m": 802
+        }
+      },
+      {
+        "id": 4103397,
+        "name": "Lotti BRINKS",
+        "country": "DE",
+        "uri": "4103397.lotti.brinks",
+        "indices": {
+          "general": 807,
+          "20k": null,
+          "50k": 719,
+          "100k": 800,
+          "100m": 800
+        }
+      },
+      {
+        "id": 1929711,
+        "name": "Emily SCHMITZ",
+        "country": "US",
+        "uri": "1929711.emily.schmitz",
+        "indices": {
+          "general": 791,
+          "20k": 684,
+          "50k": 704,
+          "100k": 708,
+          "100m": 794
+        }
+      },
+      {
+        "id": 1070695,
+        "name": "Antonina IUSHINA",
+        "country": "RU",
+        "uri": "1070695.antonina.iushina",
+        "indices": {
+          "general": 792,
+          "20k": null,
+          "50k": 676,
+          "100k": 740,
+          "100m": 793
+        }
+      },
+      {
+        "id": 5013722,
+        "name": "Julie HAMULECKI",
+        "country": "CA",
+        "uri": "5013722.julie.hamulecki",
+        "indices": {
+          "general": 793,
+          "20k": null,
+          "50k": null,
+          "100k": null,
+          "100m": 792
+        }
+      },
+      {
+        "id": 1365935,
+        "name": "Paulina KRAWCZAK",
+        "country": "PL",
+        "uri": "1365935.paulina.krawczak",
+        "indices": {
+          "general": 789,
+          "20k": 605,
+          "50k": 657,
+          "100k": 737,
+          "100m": 790
+        }
+      },
+      {
+        "id": 656571,
+        "name": "Yngvild KASPERSEN",
+        "country": "NO",
+        "uri": "656571.yngvild.kaspersen",
+        "indices": {
+          "general": 815,
+          "20k": 685,
+          "50k": 727,
+          "100k": 818,
+          "100m": 788
+        }
+      },
+      {
+        "id": 691388,
+        "name": "Ida NILSSON",
+        "country": "SE",
+        "uri": "691388.ida.nilsson",
+        "indices": {
+          "general": 796,
+          "20k": 681,
+          "50k": 739,
+          "100k": 778,
+          "100m": 788
+        }
+      },
+      {
+        "id": 1244521,
+        "name": "Eszter CSILLAG",
+        "country": "HU",
+        "uri": "1244521.eszter.csillag",
+        "indices": {
+          "general": 795,
+          "20k": 663,
+          "50k": 711,
+          "100k": 792,
+          "100m": 788
+        }
+      },
+      {
+        "id": 360942,
+        "name": "Martina VALMASSOI",
+        "country": "IT",
+        "uri": "360942.martina.valmassoi",
+        "indices": {
+          "general": 781,
+          "20k": null,
+          "50k": 722,
+          "100k": 752,
+          "100m": 784
+        }
+      }
+    ]
+  },
+  "slovenia-H-general": {
+    "scope": "slovenia",
+    "sex": "H",
+    "category": "general",
+    "fetchedAt": "2026-11-06T09:56:19.680Z",
+    "source": "https://utmb.world/utmb-index",
+    "runners": [
+      {
+        "id": 3991453,
+        "name": "Zan ZEPIC",
+        "country": "SI",
+        "uri": "3991453.zan.zepic",
+        "indices": {
+          "general": 862,
+          "20k": 769,
+          "50k": 821,
+          "100k": 861,
+          "100m": null
+        }
+      },
+      {
+        "id": 2586019,
+        "name": "Klemen ŠPANRING (Klemen SPANRING)",
+        "country": "SI",
+        "uri": "2586019.klemen.spanring",
+        "indices": {
+          "general": 852,
+          "20k": 849,
+          "50k": 818,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 972239,
+        "name": "Luka KOVACIC",
+        "country": "SI",
+        "uri": "972239.luka.kovacic",
+        "indices": {
+          "general": 841,
+          "20k": 830,
+          "50k": 831,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4292188,
+        "name": "Aleš FRLIC",
+        "country": "SI",
+        "uri": "4292188.ales.frlic",
+        "indices": {
+          "general": 831,
+          "20k": null,
+          "50k": 748,
+          "100k": 797,
+          "100m": 829
+        }
+      },
+      {
+        "id": 4173503,
+        "name": "Jon LIHTENEGER VIDMAJER",
+        "country": "SI",
+        "uri": "4173503.jon.lihtenegervidmajer",
+        "indices": {
+          "general": 824,
+          "20k": null,
+          "50k": null,
+          "100k": 824,
+          "100m": null
+        }
+      },
+      {
+        "id": 3456933,
+        "name": "Aleš SVETINA",
+        "country": "SI",
+        "uri": "3456933.ales.svetina",
+        "indices": {
+          "general": 823,
+          "20k": null,
+          "50k": 758,
+          "100k": 783,
+          "100m": null
+        }
+      },
+      {
+        "id": 6553930,
+        "name": "Tine ZIZMOND (Tine ŽIŽMOND)",
+        "country": "SI",
+        "uri": "6553930.tine.zizmond",
+        "indices": {
+          "general": 821,
+          "20k": 809,
+          "50k": 802,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 56806,
+        "name": "Ivan HRASTOVEC",
+        "country": "SI",
+        "uri": "56806.ivan.hrastovec",
+        "indices": {
+          "general": 820,
+          "20k": null,
+          "50k": 764,
+          "100k": 791,
+          "100m": 822
+        }
+      },
+      {
+        "id": 2565289,
+        "name": "Janez KLANCNIK",
+        "country": "SI",
+        "uri": "2565289.janez.klancnik",
+        "indices": {
+          "general": 815,
+          "20k": 766,
+          "50k": 797,
+          "100k": 805,
+          "100m": 610
+        }
+      },
+      {
+        "id": 7446212,
+        "name": "Tadej SERDINŠEK",
+        "country": "SI",
+        "uri": "7446212.tadej.serdinsek",
+        "indices": {
+          "general": 809,
+          "20k": 810,
+          "50k": 757,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 898203,
+        "name": "Marko TRATNIK",
+        "country": "SI",
+        "uri": "898203.marko.tratnik",
+        "indices": {
+          "general": 801,
+          "20k": 800,
+          "50k": 782,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2586599,
+        "name": "Urban JEREB",
+        "country": "SI",
+        "uri": "2586599.urban.jereb",
+        "indices": {
+          "general": 799,
+          "20k": null,
+          "50k": 798,
+          "100k": 533,
+          "100m": null
+        }
+      },
+      {
+        "id": 4245047,
+        "name": "Jaka OBLAK",
+        "country": "SI",
+        "uri": "4245047.jaka.oblak",
+        "indices": {
+          "general": 797,
+          "20k": null,
+          "50k": 799,
+          "100k": 735,
+          "100m": null
+        }
+      },
+      {
+        "id": 1371865,
+        "name": "Anze SOBOCAN",
+        "country": "SI",
+        "uri": "1371865.anze.sobocan",
+        "indices": {
+          "general": 796,
+          "20k": 732,
+          "50k": 698,
+          "100k": 764,
+          "100m": 787
+        }
+      },
+      {
+        "id": 6850534,
+        "name": "Luka MESAREC",
+        "country": "SI",
+        "uri": "6850534.luka.mesarec",
+        "indices": {
+          "general": 793,
+          "20k": 783,
+          "50k": 783,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1629977,
+        "name": "Matic CACULOVIC",
+        "country": "SI",
+        "uri": "1629977.matic.caculovic",
+        "indices": {
+          "general": 784,
+          "20k": 635,
+          "50k": 759,
+          "100k": 786,
+          "100m": null
+        }
+      },
+      {
+        "id": 4162413,
+        "name": "Vili ČRV (Vili CRV)",
+        "country": "SI",
+        "uri": "4162413.vili.crv",
+        "indices": {
+          "general": 784,
+          "20k": 787,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4272687,
+        "name": "Jure OREHEK",
+        "country": "SI",
+        "uri": "4272687.jure.orehek",
+        "indices": {
+          "general": 784,
+          "20k": 743,
+          "50k": 780,
+          "100k": 754,
+          "100m": null
+        }
+      },
+      {
+        "id": 6358218,
+        "name": "Klemen ŠTULAR (Klemen STULAR)",
+        "country": "SI",
+        "uri": "6358218.klemen.stular",
+        "indices": {
+          "general": 780,
+          "20k": 776,
+          "50k": 760,
+          "100k": 740,
+          "100m": null
+        }
+      },
+      {
+        "id": 8504588,
+        "name": "Klemen VILHAR",
+        "country": "SI",
+        "uri": "8504588.klemen.vilhar",
+        "indices": {
+          "general": 778,
+          "20k": 780,
+          "50k": 689,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5908759,
+        "name": "Matej NIDORFER",
+        "country": "SI",
+        "uri": "5908759.matej.nidorfer",
+        "indices": {
+          "general": 776,
+          "20k": 699,
+          "50k": 739,
+          "100k": 757,
+          "100m": 768
+        }
+      },
+      {
+        "id": 6485727,
+        "name": "Tadej VEHOVEC",
+        "country": "SI",
+        "uri": "6485727.tadej.vehovec",
+        "indices": {
+          "general": 776,
+          "20k": 779,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3991452,
+        "name": "Matej LETOJNE",
+        "country": "SI",
+        "uri": "3991452.matej.letojne",
+        "indices": {
+          "general": 775,
+          "20k": 777,
+          "50k": 749,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4198217,
+        "name": "Andrej NASTRAN",
+        "country": "SI",
+        "uri": "4198217.andrej.nastran",
+        "indices": {
+          "general": 775,
+          "20k": 710,
+          "50k": 730,
+          "100k": 749,
+          "100m": 773
+        }
+      },
+      {
+        "id": 5158710,
+        "name": "Tomaž OBLAK",
+        "country": "SI",
+        "uri": "5158710.tomaz.oblak",
+        "indices": {
+          "general": 775,
+          "20k": 767,
+          "50k": 764,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 8018796,
+        "name": "Jaka BOSTNER",
+        "country": "SI",
+        "uri": "8018796.jaka.bostner",
+        "indices": {
+          "general": 774,
+          "20k": 776,
+          "50k": 746,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7490280,
+        "name": "Pritržnik MAJ",
+        "country": "SI",
+        "uri": "7490280.pritrznik.maj",
+        "indices": {
+          "general": 770,
+          "20k": 767,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5250074,
+        "name": "Erik MAVSER",
+        "country": "SI",
+        "uri": "5250074.erik.mavser",
+        "indices": {
+          "general": 769,
+          "20k": 550,
+          "50k": 772,
+          "100k": 647,
+          "100m": 671
+        }
+      },
+      {
+        "id": 438465,
+        "name": "Tilen POTOCNIK",
+        "country": "SI",
+        "uri": "438465.tilen.potocnik",
+        "indices": {
+          "general": 768,
+          "20k": null,
+          "50k": 742,
+          "100k": 747,
+          "100m": 755
+        }
+      },
+      {
+        "id": 3065103,
+        "name": "Matjaž TRKMAN",
+        "country": "SI",
+        "uri": "3065103.matjaz.trkman",
+        "indices": {
+          "general": 768,
+          "20k": 771,
+          "50k": 704,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6850440,
+        "name": "Marko ČRETNIK (Marko CRETNIK)",
+        "country": "SI",
+        "uri": "6850440.marko.cretnik",
+        "indices": {
+          "general": 766,
+          "20k": 765,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 830534,
+        "name": "Miran CVET",
+        "country": "SI",
+        "uri": "830534.miran.cvet",
+        "indices": {
+          "general": 764,
+          "20k": 762,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3065101,
+        "name": "Jernej ŽNIDARŠIČ (Jernej ZNIDARSIC)",
+        "country": "SI",
+        "uri": "3065101.jernej.znidarsic",
+        "indices": {
+          "general": 762,
+          "20k": 742,
+          "50k": 753,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2587221,
+        "name": "Dino GRBIĆ",
+        "country": "SI",
+        "uri": "2587221.dino.grbic",
+        "indices": {
+          "general": 761,
+          "20k": 764,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3991451,
+        "name": "Luka TAVCAR",
+        "country": "SI",
+        "uri": "3991451.luka.tavcar",
+        "indices": {
+          "general": 761,
+          "20k": 685,
+          "50k": 762,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7446244,
+        "name": "Matic CUDERMAN",
+        "country": "SI",
+        "uri": "7446244.matic.cuderman",
+        "indices": {
+          "general": 760,
+          "20k": 548,
+          "50k": 710,
+          "100k": 763,
+          "100m": null
+        }
+      },
+      {
+        "id": 2586047,
+        "name": "Nejc URŠIČ",
+        "country": "SI",
+        "uri": "2586047.nejc.ursic",
+        "indices": {
+          "general": 758,
+          "20k": 757,
+          "50k": 638,
+          "100k": 604,
+          "100m": null
+        }
+      },
+      {
+        "id": 2968527,
+        "name": "Tomaž KENDA",
+        "country": "SI",
+        "uri": "2968527.tomaz.kenda",
+        "indices": {
+          "general": 755,
+          "20k": 757,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4557226,
+        "name": "Frenk KONEČNIK",
+        "country": "SI",
+        "uri": "4557226.frenk.konecnik",
+        "indices": {
+          "general": 752,
+          "20k": 723,
+          "50k": 744,
+          "100k": 691,
+          "100m": null
+        }
+      },
+      {
+        "id": 6701448,
+        "name": "Samo VIRANT",
+        "country": "SI",
+        "uri": "6701448.samo.virant",
+        "indices": {
+          "general": 749,
+          "20k": 752,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 132076,
+        "name": "Sebastjan ZARNIK",
+        "country": "SI",
+        "uri": "132076.sebastjan.zarnik",
+        "indices": {
+          "general": 748,
+          "20k": 747,
+          "50k": 707,
+          "100k": 634,
+          "100m": null
+        }
+      },
+      {
+        "id": 4173481,
+        "name": "Domen KOSTELEC",
+        "country": "SI",
+        "uri": "4173481.domen.kostelec",
+        "indices": {
+          "general": 745,
+          "20k": 692,
+          "50k": 743,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2586151,
+        "name": "Rok PUHAR",
+        "country": "SI",
+        "uri": "2586151.rok.puhar",
+        "indices": {
+          "general": 744,
+          "20k": 747,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4456712,
+        "name": "Primož PORENTA",
+        "country": "SI",
+        "uri": "4456712.primoz.porenta",
+        "indices": {
+          "general": 744,
+          "20k": 743,
+          "50k": 683,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6358220,
+        "name": "Patrik LUSINA",
+        "country": "SI",
+        "uri": "6358220.patrik.lusina",
+        "indices": {
+          "general": 743,
+          "20k": 709,
+          "50k": 733,
+          "100k": 745,
+          "100m": 639
+        }
+      },
+      {
+        "id": 4245251,
+        "name": "Benjamin CRV",
+        "country": "SI",
+        "uri": "4245251.benjamin.crv",
+        "indices": {
+          "general": 742,
+          "20k": 743,
+          "50k": 717,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5320717,
+        "name": "Borut SKARJA (Borut ŠKARJA)",
+        "country": "SI",
+        "uri": "5320717.borut.skarja",
+        "indices": {
+          "general": 742,
+          "20k": null,
+          "50k": 739,
+          "100k": 715,
+          "100m": 655
+        }
+      },
+      {
+        "id": 6489982,
+        "name": "Bine FLAJNIK",
+        "country": "SI",
+        "uri": "6489982.bine.flajnik",
+        "indices": {
+          "general": 741,
+          "20k": 742,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 302210,
+        "name": "Jan BOŽIČ",
+        "country": "SI",
+        "uri": "302210.jan.bozic",
+        "indices": {
+          "general": 740,
+          "20k": null,
+          "50k": 707,
+          "100k": 738,
+          "100m": null
+        }
+      },
+      {
+        "id": 4245174,
+        "name": "Uroš ROZMAN",
+        "country": "SI",
+        "uri": "4245174.uros.rozman",
+        "indices": {
+          "general": 740,
+          "20k": 738,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4197504,
+        "name": "Rok ŠTEHARNIK (Rok STEHARNIK)",
+        "country": "SI",
+        "uri": "4197504.rok.steharnik",
+        "indices": {
+          "general": 737,
+          "20k": 652,
+          "50k": 701,
+          "100k": 739,
+          "100m": null
+        }
+      },
+      {
+        "id": 2225249,
+        "name": "Jošt LAPAJNE",
+        "country": "SI",
+        "uri": "2225249.jost.lapajne",
+        "indices": {
+          "general": 735,
+          "20k": 724,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1852289,
+        "name": "Velibor JOVANOVIĆ",
+        "country": "SI",
+        "uri": "1852289.velibor.jovanovic",
+        "indices": {
+          "general": 732,
+          "20k": null,
+          "50k": 727,
+          "100k": 661,
+          "100m": 708
+        }
+      },
+      {
+        "id": 6286811,
+        "name": "Matic FRANKEN",
+        "country": "SI",
+        "uri": "6286811.matic.franken",
+        "indices": {
+          "general": 731,
+          "20k": 734,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7346884,
+        "name": "Jošt LAPANJA",
+        "country": "SI",
+        "uri": "7346884.jost.lapanja",
+        "indices": {
+          "general": 731,
+          "20k": 729,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3486759,
+        "name": "Boris SUSELJ",
+        "country": "SI",
+        "uri": "3486759.boris.suselj",
+        "indices": {
+          "general": 730,
+          "20k": null,
+          "50k": null,
+          "100k": 732,
+          "100m": null
+        }
+      },
+      {
+        "id": 4197519,
+        "name": "Tadej SKITEK",
+        "country": "SI",
+        "uri": "4197519.tadej.skitek",
+        "indices": {
+          "general": 730,
+          "20k": 732,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4951338,
+        "name": "Jakob KRALJ",
+        "country": "SI",
+        "uri": "4951338.jakob.kralj",
+        "indices": {
+          "general": 730,
+          "20k": 733,
+          "50k": 682,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4713512,
+        "name": "Anže MOSNIK",
+        "country": "SI",
+        "uri": "4713512.anze.mosnik",
+        "indices": {
+          "general": 729,
+          "20k": 732,
+          "50k": 648,
+          "100k": 636,
+          "100m": null
+        }
+      },
+      {
+        "id": 2969473,
+        "name": "Erjavsek BOSTJAN",
+        "country": "SI",
+        "uri": "2969473.erjavsek.bostjan",
+        "indices": {
+          "general": 728,
+          "20k": null,
+          "50k": 689,
+          "100k": null,
+          "100m": 702
+        }
+      },
+      {
+        "id": 929135,
+        "name": "Gasper BREGAR",
+        "country": "SI",
+        "uri": "929135.gasper.bregar",
+        "indices": {
+          "general": 727,
+          "20k": 725,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3065099,
+        "name": "Rok ZLODEJ",
+        "country": "SI",
+        "uri": "3065099.rok.zlodej",
+        "indices": {
+          "general": 726,
+          "20k": null,
+          "50k": 578,
+          "100k": 729,
+          "100m": 670
+        }
+      },
+      {
+        "id": 4292980,
+        "name": "Jure KURINCIC",
+        "country": "SI",
+        "uri": "4292980.jure.kurincic",
+        "indices": {
+          "general": 725,
+          "20k": 726,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2586075,
+        "name": "Simon SIMONCIC",
+        "country": "SI",
+        "uri": "2586075.simon.simoncic",
+        "indices": {
+          "general": 724,
+          "20k": 727,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 301419,
+        "name": "Anze SENK",
+        "country": "SI",
+        "uri": "301419.anze.senk",
+        "indices": {
+          "general": 723,
+          "20k": 724,
+          "50k": 683,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5830350,
+        "name": "Klemen JANČIČ",
+        "country": "SI",
+        "uri": "5830350.klemen.jancic",
+        "indices": {
+          "general": 722,
+          "20k": 724,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 8504590,
+        "name": "Luka LJUBIČ",
+        "country": "SI",
+        "uri": "8504590.luka.ljubic",
+        "indices": {
+          "general": 722,
+          "20k": 724,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7337162,
+        "name": "Ivan NOVAK",
+        "country": "SI",
+        "uri": "7337162.ivan.novak",
+        "indices": {
+          "general": 715,
+          "20k": 713,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3991484,
+        "name": "Tim SENIČAR",
+        "country": "SI",
+        "uri": "3991484.tim.senicar",
+        "indices": {
+          "general": 714,
+          "20k": 711,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6490938,
+        "name": "Timotej MRZELJ",
+        "country": "SI",
+        "uri": "6490938.timotej.mrzelj",
+        "indices": {
+          "general": 713,
+          "20k": null,
+          "50k": 712,
+          "100k": 623,
+          "100m": 680
+        }
+      },
+      {
+        "id": 5704426,
+        "name": "Domen IVANC",
+        "country": "SI",
+        "uri": "5704426.domen.ivanc",
+        "indices": {
+          "general": 712,
+          "20k": 644,
+          "50k": 714,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2586017,
+        "name": "Mark RAKOVEC",
+        "country": "SI",
+        "uri": "2586017.mark.rakovec",
+        "indices": {
+          "general": 711,
+          "20k": null,
+          "50k": 671,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5471418,
+        "name": "Denis KONČAR",
+        "country": "SI",
+        "uri": "5471418.denis.koncar",
+        "indices": {
+          "general": 711,
+          "20k": 714,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5472876,
+        "name": "Gregor HVALA",
+        "country": "SI",
+        "uri": "5472876.gregor.hvala",
+        "indices": {
+          "general": 711,
+          "20k": 709,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 542560,
+        "name": "Tomaž DOLAR",
+        "country": "SI",
+        "uri": "542560.tomaz.dolar",
+        "indices": {
+          "general": 710,
+          "20k": 689,
+          "50k": 707,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 626424,
+        "name": "Uroš KOŽAR",
+        "country": "SI",
+        "uri": "626424.uros.kozar",
+        "indices": {
+          "general": 707,
+          "20k": null,
+          "50k": 670,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7369702,
+        "name": "Timon BRGLEZ",
+        "country": "SI",
+        "uri": "7369702.timon.brglez",
+        "indices": {
+          "general": 706,
+          "20k": 709,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2587307,
+        "name": "Lenart OBLAK",
+        "country": "SI",
+        "uri": "2587307.lenart.oblak",
+        "indices": {
+          "general": 705,
+          "20k": null,
+          "50k": 702,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 8454284,
+        "name": "Aleš LINDIČ",
+        "country": "SI",
+        "uri": "8454284.ales.lindic",
+        "indices": {
+          "general": 705,
+          "20k": 707,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4272686,
+        "name": "David TRATNIK",
+        "country": "SI",
+        "uri": "4272686.david.tratnik",
+        "indices": {
+          "general": 704,
+          "20k": 700,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7933438,
+        "name": "Velibor JOVANOVIC",
+        "country": "SI",
+        "uri": "7933438.velibor.jovanovic",
+        "indices": {
+          "general": 704,
+          "20k": null,
+          "50k": 679,
+          "100k": 707,
+          "100m": null
+        }
+      },
+      {
+        "id": 6304939,
+        "name": "Jure LAUKO",
+        "country": "SI",
+        "uri": "6304939.jure.lauko",
+        "indices": {
+          "general": 702,
+          "20k": 704,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6490006,
+        "name": "Vili KOMEL",
+        "country": "SI",
+        "uri": "6490006.vili.komel",
+        "indices": {
+          "general": 702,
+          "20k": 688,
+          "50k": 698,
+          "100k": 655,
+          "100m": null
+        }
+      },
+      {
+        "id": 6919868,
+        "name": "Boštjan VIDMAR",
+        "country": "SI",
+        "uri": "6919868.bostjan.vidmar",
+        "indices": {
+          "general": 702,
+          "20k": null,
+          "50k": 700,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7215916,
+        "name": "Jernej KRKOC",
+        "country": "SI",
+        "uri": "7215916.jernej.krkoc",
+        "indices": {
+          "general": 702,
+          "20k": 700,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 898207,
+        "name": "Matej KOLENC",
+        "country": "SI",
+        "uri": "898207.matej.kolenc",
+        "indices": {
+          "general": 701,
+          "20k": 659,
+          "50k": 687,
+          "100k": 696,
+          "100m": null
+        }
+      },
+      {
+        "id": 4456552,
+        "name": "Jaka DRAGOŠ",
+        "country": "SI",
+        "uri": "4456552.jaka.dragos",
+        "indices": {
+          "general": 700,
+          "20k": 698,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 666413,
+        "name": "Marko ABRAM",
+        "country": "SI",
+        "uri": "666413.marko.abram",
+        "indices": {
+          "general": 699,
+          "20k": 677,
+          "50k": null,
+          "100k": null,
+          "100m": 626
+        }
+      },
+      {
+        "id": 4245432,
+        "name": "Žiga TAVČAR (Ziga TAVCAR)",
+        "country": "SI",
+        "uri": "4245432.ziga.tavcar",
+        "indices": {
+          "general": 699,
+          "20k": 692,
+          "50k": 681,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 898253,
+        "name": "Janez ZEN",
+        "country": "SI",
+        "uri": "898253.janez.zen",
+        "indices": {
+          "general": 698,
+          "20k": 696,
+          "50k": 604,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 302120,
+        "name": "Ales DEBELJAK",
+        "country": "SI",
+        "uri": "302120.ales.debeljak",
+        "indices": {
+          "general": 697,
+          "20k": null,
+          "50k": 697,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 936477,
+        "name": "Gašper PERŠE",
+        "country": "SI",
+        "uri": "936477.gasper.perse",
+        "indices": {
+          "general": 697,
+          "20k": 638,
+          "50k": 647,
+          "100k": 696,
+          "100m": 696
+        }
+      },
+      {
+        "id": 1513771,
+        "name": "Blaž TEHOVNIK",
+        "country": "SI",
+        "uri": "1513771.blaz.tehovnik",
+        "indices": {
+          "general": 696,
+          "20k": 696,
+          "50k": 685,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4557220,
+        "name": "Matej SUŠNIK",
+        "country": "SI",
+        "uri": "4557220.matej.susnik",
+        "indices": {
+          "general": 696,
+          "20k": null,
+          "50k": 695,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5158582,
+        "name": "Jan BATAGELJ",
+        "country": "SI",
+        "uri": "5158582.jan.batagelj",
+        "indices": {
+          "general": 696,
+          "20k": null,
+          "50k": null,
+          "100k": 694,
+          "100m": 686
+        }
+      },
+      {
+        "id": 6030965,
+        "name": "Gašper BERTONCELJ",
+        "country": "SI",
+        "uri": "6030965.gasper.bertoncelj",
+        "indices": {
+          "general": 696,
+          "20k": 693,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 8243687,
+        "name": "Ziga PODGORSEK",
+        "country": "SI",
+        "uri": "8243687.ziga.podgorsek",
+        "indices": {
+          "general": 696,
+          "20k": 697,
+          "50k": null,
+          "100k": 622,
+          "100m": null
+        }
+      },
+      {
+        "id": 4197541,
+        "name": "Janez SEDELJŠAK",
+        "country": "SI",
+        "uri": "4197541.janez.sedeljsak",
+        "indices": {
+          "general": 695,
+          "20k": 693,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 9236446,
+        "name": "Urban HAFNER",
+        "country": "SI",
+        "uri": "9236446.urban.hafner",
+        "indices": {
+          "general": 695,
+          "20k": 697,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5175903,
+        "name": "Martin DOMENIS",
+        "country": "SI",
+        "uri": "5175903.martin.domenis",
+        "indices": {
+          "general": 694,
+          "20k": 473,
+          "50k": 694,
+          "100k": 652,
+          "100m": null
+        }
+      }
+    ]
+  },
+  "slovenia-F-general": {
+    "scope": "slovenia",
+    "sex": "F",
+    "category": "general",
+    "fetchedAt": "2026-11-06T09:56:20.954Z",
+    "source": "https://utmb.world/utmb-index",
+    "runners": [
+      {
+        "id": 929147,
+        "name": "Lucija KRKOC",
+        "country": "SI",
+        "uri": "929147.lucija.krkoc",
+        "indices": {
+          "general": 759,
+          "20k": 758,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2050519,
+        "name": "Martina KLANCNIK POTRC",
+        "country": "SI",
+        "uri": "2050519.martina.klancnikpotrc",
+        "indices": {
+          "general": 726,
+          "20k": 669,
+          "50k": 691,
+          "100k": 718,
+          "100m": 714
+        }
+      },
+      {
+        "id": 7337166,
+        "name": "Klara VELEPEC",
+        "country": "SI",
+        "uri": "7337166.klara.velepec",
+        "indices": {
+          "general": 721,
+          "20k": 724,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 493571,
+        "name": "Ana CUFER",
+        "country": "SI",
+        "uri": "493571.ana.cufer",
+        "indices": {
+          "general": 689,
+          "20k": 692,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2586069,
+        "name": "Nuša MALI",
+        "country": "SI",
+        "uri": "2586069.nusa.mali",
+        "indices": {
+          "general": 687,
+          "20k": 687,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5158744,
+        "name": "Tina SATEJ",
+        "country": "SI",
+        "uri": "5158744.tina.satej",
+        "indices": {
+          "general": 678,
+          "20k": 572,
+          "50k": 606,
+          "100k": 672,
+          "100m": 666
+        }
+      },
+      {
+        "id": 4409474,
+        "name": "Aja KOZINC",
+        "country": "SI",
+        "uri": "4409474.aja.kozinc",
+        "indices": {
+          "general": 669,
+          "20k": 639,
+          "50k": 642,
+          "100k": 662,
+          "100m": null
+        }
+      },
+      {
+        "id": 4543683,
+        "name": "Dominika ZUPANCIC VALANT",
+        "country": "SI",
+        "uri": "4543683.dominika.zupancicvalant",
+        "indices": {
+          "general": 668,
+          "20k": 669,
+          "50k": 637,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2586057,
+        "name": "Špela GONZA (SPELA GONZA)",
+        "country": "SI",
+        "uri": "2586057.spela.gonza",
+        "indices": {
+          "general": 665,
+          "20k": null,
+          "50k": 654,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7054686,
+        "name": "Vika KOBAN",
+        "country": "SI",
+        "uri": "7054686.vika.koban",
+        "indices": {
+          "general": 663,
+          "20k": 580,
+          "50k": 664,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7938205,
+        "name": "Manca MLEKUZ",
+        "country": "SI",
+        "uri": "7938205.manca.mlekuz",
+        "indices": {
+          "general": 660,
+          "20k": 663,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 702768,
+        "name": "Barbara ZMRZLIKAR",
+        "country": "SI",
+        "uri": "702768.barbara.zmrzlikar",
+        "indices": {
+          "general": 656,
+          "20k": null,
+          "50k": 651,
+          "100k": null,
+          "100m": 627
+        }
+      },
+      {
+        "id": 5302664,
+        "name": "Meta HROVAT",
+        "country": "SI",
+        "uri": "5302664.meta.hrovat",
+        "indices": {
+          "general": 655,
+          "20k": 626,
+          "50k": 641,
+          "100k": 653,
+          "100m": null
+        }
+      },
+      {
+        "id": 2346797,
+        "name": "Tajda KNAFELJ",
+        "country": "SI",
+        "uri": "2346797.tajda.knafelj",
+        "indices": {
+          "general": 652,
+          "20k": 580,
+          "50k": 620,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4198246,
+        "name": "Nina GUBANC",
+        "country": "SI",
+        "uri": "4198246.nina.gubanc",
+        "indices": {
+          "general": 644,
+          "20k": 642,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4038789,
+        "name": "Katarina PISOTEK",
+        "country": "SI",
+        "uri": "4038789.katarina.pisotek",
+        "indices": {
+          "general": 642,
+          "20k": 634,
+          "50k": 613,
+          "100k": 632,
+          "100m": null
+        }
+      },
+      {
+        "id": 6490872,
+        "name": "Nina SUŠNIK VREČIČ",
+        "country": "SI",
+        "uri": "6490872.nina.susnikvrecic",
+        "indices": {
+          "general": 634,
+          "20k": null,
+          "50k": 635,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3456949,
+        "name": "Rebeka PETROVČIČ",
+        "country": "SI",
+        "uri": "3456949.rebeka.petrovcic",
+        "indices": {
+          "general": 626,
+          "20k": 611,
+          "50k": 626,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5471976,
+        "name": "Marusa CIJAN BRKIC",
+        "country": "SI",
+        "uri": "5471976.marusa.cijanbrkic",
+        "indices": {
+          "general": 626,
+          "20k": 628,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6919714,
+        "name": "Neja BOZIC CORALIC",
+        "country": "SI",
+        "uri": "6919714.neja.boziccoralic",
+        "indices": {
+          "general": 626,
+          "20k": 629,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 8238304,
+        "name": "Klara SPEH (Klara ŠPEH)",
+        "country": "SI",
+        "uri": "8238304.klara.speh",
+        "indices": {
+          "general": 624,
+          "20k": 627,
+          "50k": null,
+          "100k": 588,
+          "100m": null
+        }
+      },
+      {
+        "id": 4245284,
+        "name": "Nastja MIHELČIČ",
+        "country": "SI",
+        "uri": "4245284.nastja.mihelcic",
+        "indices": {
+          "general": 621,
+          "20k": 623,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 8964576,
+        "name": "Ilvana Fleurine MARKOVIC",
+        "country": "SI",
+        "uri": "8964576.ilvanafleurine.markovic",
+        "indices": {
+          "general": 619,
+          "20k": 621,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1852291,
+        "name": "Katja KEGL VENCELJ",
+        "country": "SI",
+        "uri": "1852291.katja.keglvencelj",
+        "indices": {
+          "general": 618,
+          "20k": null,
+          "50k": 597,
+          "100k": 588,
+          "100m": null
+        }
+      },
+      {
+        "id": 6850540,
+        "name": "Martina BRGLEZ",
+        "country": "SI",
+        "uri": "6850540.martina.brglez",
+        "indices": {
+          "general": 618,
+          "20k": 549,
+          "50k": 458,
+          "100k": 620,
+          "100m": null
+        }
+      },
+      {
+        "id": 2586101,
+        "name": "Ana Meta DOLINAR",
+        "country": "SI",
+        "uri": "2586101.anameta.dolinar",
+        "indices": {
+          "general": 617,
+          "20k": 619,
+          "50k": 550,
+          "100k": 576,
+          "100m": null
+        }
+      },
+      {
+        "id": 936533,
+        "name": "Vesna DOLENC",
+        "country": "SI",
+        "uri": "936533.vesna.dolenc",
+        "indices": {
+          "general": 615,
+          "20k": null,
+          "50k": 613,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1945751,
+        "name": "Eva URBANC",
+        "country": "SI",
+        "uri": "1945751.eva.urbanc",
+        "indices": {
+          "general": 615,
+          "20k": null,
+          "50k": 595,
+          "100k": 616,
+          "100m": 572
+        }
+      },
+      {
+        "id": 666446,
+        "name": "Anja ZIMA",
+        "country": "SI",
+        "uri": "666446.anja.zima",
+        "indices": {
+          "general": 612,
+          "20k": 547,
+          "50k": 605,
+          "100k": 605,
+          "100m": null
+        }
+      },
+      {
+        "id": 4245065,
+        "name": "Tjaša SELIŠKAR",
+        "country": "SI",
+        "uri": "4245065.tjasa.seliskar",
+        "indices": {
+          "general": 612,
+          "20k": 515,
+          "50k": 556,
+          "100k": 605,
+          "100m": 609
+        }
+      },
+      {
+        "id": 3457031,
+        "name": "Deja JAKOPIČ",
+        "country": "SI",
+        "uri": "3457031.deja.jakopic",
+        "indices": {
+          "general": 611,
+          "20k": 613,
+          "50k": 570,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4272771,
+        "name": "Maja LAZNIK",
+        "country": "SI",
+        "uri": "4272771.maja.laznik",
+        "indices": {
+          "general": 608,
+          "20k": 587,
+          "50k": 603,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4272659,
+        "name": "Marija ŠEME (Marija SEME)",
+        "country": "SI",
+        "uri": "4272659.marija.seme",
+        "indices": {
+          "general": 607,
+          "20k": null,
+          "50k": 529,
+          "100k": 606,
+          "100m": null
+        }
+      },
+      {
+        "id": 7337096,
+        "name": "Rosanda DOVNIK",
+        "country": "SI",
+        "uri": "7337096.rosanda.dovnik",
+        "indices": {
+          "general": 607,
+          "20k": 608,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3482731,
+        "name": "Urska AHAC",
+        "country": "SI",
+        "uri": "3482731.urska.ahac",
+        "indices": {
+          "general": 605,
+          "20k": 608,
+          "50k": 515,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4678840,
+        "name": "Laura PRIMEC",
+        "country": "SI",
+        "uri": "4678840.laura.primec",
+        "indices": {
+          "general": 605,
+          "20k": 549,
+          "50k": 553,
+          "100k": 606,
+          "100m": null
+        }
+      },
+      {
+        "id": 8018836,
+        "name": "Nika JANČIČ",
+        "country": "SI",
+        "uri": "8018836.nika.jancic",
+        "indices": {
+          "general": 602,
+          "20k": 603,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6919836,
+        "name": "Katja JOHAN",
+        "country": "SI",
+        "uri": "6919836.katja.johan",
+        "indices": {
+          "general": 602,
+          "20k": 596,
+          "50k": 598,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3456995,
+        "name": "Jerneja KOŽAR",
+        "country": "SI",
+        "uri": "3456995.jerneja.kozar",
+        "indices": {
+          "general": 601,
+          "20k": 602,
+          "50k": 579,
+          "100k": 565,
+          "100m": null
+        }
+      },
+      {
+        "id": 1513775,
+        "name": "Karmen KLANČNIK POBEŽIN",
+        "country": "SI",
+        "uri": "1513775.karmen.klancnikpobezin",
+        "indices": {
+          "general": 599,
+          "20k": 597,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2128887,
+        "name": "Ana ŠTEFE (Ana STEFE)",
+        "country": "SI",
+        "uri": "2128887.ana.stefe",
+        "indices": {
+          "general": 599,
+          "20k": 602,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4038790,
+        "name": "Jana VOUK",
+        "country": "SI",
+        "uri": "4038790.jana.vouk",
+        "indices": {
+          "general": 599,
+          "20k": 598,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4830450,
+        "name": "Irena PIŠEK",
+        "country": "SI",
+        "uri": "4830450.irena.pisek",
+        "indices": {
+          "general": 599,
+          "20k": 578,
+          "50k": 598,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7845849,
+        "name": "Manca LAMPRET",
+        "country": "SI",
+        "uri": "7845849.manca.lampret",
+        "indices": {
+          "general": 598,
+          "20k": 600,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7980084,
+        "name": "Martina RANČIGAJ ŽABKAR",
+        "country": "SI",
+        "uri": "7980084.martina.rancigajzabkar",
+        "indices": {
+          "general": 598,
+          "20k": 600,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4245250,
+        "name": "Tinkara ROBEK",
+        "country": "SI",
+        "uri": "4245250.tinkara.robek",
+        "indices": {
+          "general": 597,
+          "20k": 591,
+          "50k": 594,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2050781,
+        "name": "Urška ŠIPEC (Urska SIPEC)",
+        "country": "SI",
+        "uri": "2050781.urska.sipec",
+        "indices": {
+          "general": 596,
+          "20k": 576,
+          "50k": 596,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6358222,
+        "name": "Meta MEGLIČ",
+        "country": "SI",
+        "uri": "6358222.meta.meglic",
+        "indices": {
+          "general": 596,
+          "20k": null,
+          "50k": 599,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6358226,
+        "name": "Katarina BEKE",
+        "country": "SI",
+        "uri": "6358226.katarina.beke",
+        "indices": {
+          "general": 596,
+          "20k": 562,
+          "50k": 594,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4197512,
+        "name": "Anja DEZELAK",
+        "country": "SI",
+        "uri": "4197512.anja.dezelak",
+        "indices": {
+          "general": 595,
+          "20k": 538,
+          "50k": 594,
+          "100k": 556,
+          "100m": null
+        }
+      },
+      {
+        "id": 6490858,
+        "name": "Darja PECKO",
+        "country": "SI",
+        "uri": "6490858.darja.pecko",
+        "indices": {
+          "general": 595,
+          "20k": 593,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4245069,
+        "name": "Nina ČAPELNIK (Nina CAPELNIK)",
+        "country": "SI",
+        "uri": "4245069.nina.capelnik",
+        "indices": {
+          "general": 592,
+          "20k": null,
+          "50k": 569,
+          "100k": 592,
+          "100m": null
+        }
+      },
+      {
+        "id": 7551825,
+        "name": "Zala Daša HORVAT",
+        "country": "SI",
+        "uri": "7551825.zaladasa.horvat",
+        "indices": {
+          "general": 592,
+          "20k": 447,
+          "50k": 593,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7611860,
+        "name": "Sara PUNČEC",
+        "country": "SI",
+        "uri": "7611860.sara.puncec",
+        "indices": {
+          "general": 591,
+          "20k": 589,
+          "50k": 561,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 858921,
+        "name": "Marija ŠEKORANJA (Marija SEKORANJA)",
+        "country": "SI",
+        "uri": "858921.marija.sekoranja",
+        "indices": {
+          "general": 590,
+          "20k": null,
+          "50k": 593,
+          "100k": 541,
+          "100m": null
+        }
+      },
+      {
+        "id": 5451955,
+        "name": "Vlora BEDETI",
+        "country": "SI",
+        "uri": "5451955.vlora.bedeti",
+        "indices": {
+          "general": 588,
+          "20k": 568,
+          "50k": 589,
+          "100k": 399,
+          "100m": 558
+        }
+      },
+      {
+        "id": 7533720,
+        "name": "Sara MASNIK",
+        "country": "SI",
+        "uri": "7533720.sara.masnik",
+        "indices": {
+          "general": 588,
+          "20k": 586,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2618025,
+        "name": "Ana FLASKER",
+        "country": "SI",
+        "uri": "2618025.ana.flasker",
+        "indices": {
+          "general": 587,
+          "20k": 577,
+          "50k": null,
+          "100k": 584,
+          "100m": 549
+        }
+      },
+      {
+        "id": 302174,
+        "name": "Titina SORSAK",
+        "country": "SI",
+        "uri": "302174.titina.sorsak",
+        "indices": {
+          "general": 586,
+          "20k": 584,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4198222,
+        "name": "Lena LUPSA",
+        "country": "SI",
+        "uri": "4198222.lena.lupsa",
+        "indices": {
+          "general": 586,
+          "20k": 555,
+          "50k": 585,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4292905,
+        "name": "Sabrina PUCKO",
+        "country": "SI",
+        "uri": "4292905.sabrina.pucko",
+        "indices": {
+          "general": 585,
+          "20k": 584,
+          "50k": 570,
+          "100k": 554,
+          "100m": null
+        }
+      },
+      {
+        "id": 4745098,
+        "name": "Nataša ŠUŠTERIČ (Natasa SUSTERIC)",
+        "country": "SI",
+        "uri": "4745098.natasa.susteric",
+        "indices": {
+          "general": 585,
+          "20k": 576,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7337102,
+        "name": "Živa ŠTEFE (Ziva STEFE)",
+        "country": "SI",
+        "uri": "7337102.ziva.stefe",
+        "indices": {
+          "general": 585,
+          "20k": 587,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1286909,
+        "name": "Sasa TORKAR",
+        "country": "SI",
+        "uri": "1286909.sasa.torkar",
+        "indices": {
+          "general": 583,
+          "20k": 582,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6553942,
+        "name": "Maruša KOPRIVNIK",
+        "country": "SI",
+        "uri": "6553942.marusa.koprivnik",
+        "indices": {
+          "general": 582,
+          "20k": null,
+          "50k": 571,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7533730,
+        "name": "Anja GREGOREC",
+        "country": "SI",
+        "uri": "7533730.anja.gregorec",
+        "indices": {
+          "general": 581,
+          "20k": 583,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6130925,
+        "name": "Ana BERTONCELJ",
+        "country": "SI",
+        "uri": "6130925.ana.bertoncelj",
+        "indices": {
+          "general": 579,
+          "20k": 581,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 5472458,
+        "name": "Maruša KRISTOF",
+        "country": "SI",
+        "uri": "5472458.marusa.kristof",
+        "indices": {
+          "general": 578,
+          "20k": 494,
+          "50k": 397,
+          "100k": 578,
+          "100m": null
+        }
+      },
+      {
+        "id": 56572,
+        "name": "Natasa ROBNIK",
+        "country": "SI",
+        "uri": "56572.natasa.robnik",
+        "indices": {
+          "general": 577,
+          "20k": null,
+          "50k": 576,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4456734,
+        "name": "Katja TROP",
+        "country": "SI",
+        "uri": "4456734.katja.trop",
+        "indices": {
+          "general": 576,
+          "20k": 544,
+          "50k": 575,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 302126,
+        "name": "Jana BRATINA",
+        "country": "SI",
+        "uri": "302126.jana.bratina",
+        "indices": {
+          "general": 575,
+          "20k": null,
+          "50k": 577,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4148618,
+        "name": "Kristina KUCAR",
+        "country": "SI",
+        "uri": "4148618.kristina.kucar",
+        "indices": {
+          "general": 575,
+          "20k": null,
+          "50k": 574,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6088916,
+        "name": "Simona OPALK PIRNOVAR",
+        "country": "SI",
+        "uri": "6088916.simona.opalkpirnovar",
+        "indices": {
+          "general": 575,
+          "20k": 447,
+          "50k": 572,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1513887,
+        "name": "Špela SAJOVIC (Spela SAJOVIC)",
+        "country": "SI",
+        "uri": "1513887.spela.sajovic",
+        "indices": {
+          "general": 574,
+          "20k": 574,
+          "50k": 540,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4272691,
+        "name": "Špela BOKAL (Spela BOKAL)",
+        "country": "SI",
+        "uri": "4272691.spela.bokal",
+        "indices": {
+          "general": 574,
+          "20k": null,
+          "50k": 575,
+          "100k": 546,
+          "100m": null
+        }
+      },
+      {
+        "id": 4488352,
+        "name": "Kim AMERŠEK",
+        "country": "SI",
+        "uri": "4488352.kim.amersek",
+        "indices": {
+          "general": 573,
+          "20k": 575,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 3991462,
+        "name": "Greta POLAK",
+        "country": "SI",
+        "uri": "3991462.greta.polak",
+        "indices": {
+          "general": 572,
+          "20k": 575,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6454936,
+        "name": "Špela JERKIC (Spela JERKIC)",
+        "country": "SI",
+        "uri": "6454936.spela.jerkic",
+        "indices": {
+          "general": 570,
+          "20k": null,
+          "50k": 539,
+          "100k": 571,
+          "100m": null
+        }
+      },
+      {
+        "id": 6907937,
+        "name": "Nea ERZEN",
+        "country": "SI",
+        "uri": "6907937.nea.erzen",
+        "indices": {
+          "general": 570,
+          "20k": 573,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7611872,
+        "name": "Nika KOTNIK",
+        "country": "SI",
+        "uri": "7611872.nika.kotnik",
+        "indices": {
+          "general": 570,
+          "20k": 474,
+          "50k": 571,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 9020580,
+        "name": "Majda PAVLIN",
+        "country": "SI",
+        "uri": "9020580.majda.pavlin",
+        "indices": {
+          "general": 568,
+          "20k": 571,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6408550,
+        "name": "Tajda TORNIČ",
+        "country": "SI",
+        "uri": "6408550.tajda.tornic",
+        "indices": {
+          "general": 567,
+          "20k": 566,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2565551,
+        "name": "Polona UMEK",
+        "country": "SI",
+        "uri": "2565551.polona.umek",
+        "indices": {
+          "general": 566,
+          "20k": 567,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7533722,
+        "name": "Katja JUHART",
+        "country": "SI",
+        "uri": "7533722.katja.juhart",
+        "indices": {
+          "general": 566,
+          "20k": 564,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 8506512,
+        "name": "Maja ŠKRLJ (Maja SKRLJ)",
+        "country": "SI",
+        "uri": "8506512.maja.skrlj",
+        "indices": {
+          "general": 566,
+          "20k": 567,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 9020582,
+        "name": "Neja BERVAR",
+        "country": "SI",
+        "uri": "9020582.neja.bervar",
+        "indices": {
+          "general": 566,
+          "20k": 569,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 8137279,
+        "name": "Eva SLAPNIK",
+        "country": "SI",
+        "uri": "8137279.eva.slapnik",
+        "indices": {
+          "general": 565,
+          "20k": 565,
+          "50k": 543,
+          "100k": 540,
+          "100m": null
+        }
+      },
+      {
+        "id": 8674886,
+        "name": "Katjuša ŽUMER (Katjusa ZUMER)",
+        "country": "SI",
+        "uri": "8674886.katjusa.zumer",
+        "indices": {
+          "general": 565,
+          "20k": null,
+          "50k": 567,
+          "100k": 499,
+          "100m": null
+        }
+      },
+      {
+        "id": 8833436,
+        "name": "Anita ŠIRCELJ (Anita SIRCELJ)",
+        "country": "SI",
+        "uri": "8833436.anita.sircelj",
+        "indices": {
+          "general": 563,
+          "20k": 565,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 4197544,
+        "name": "Katja PUŠNIK",
+        "country": "SI",
+        "uri": "4197544.katja.pusnik",
+        "indices": {
+          "general": 561,
+          "20k": null,
+          "50k": 531,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7535465,
+        "name": "Hana KRENKER",
+        "country": "SI",
+        "uri": "7535465.hana.krenker",
+        "indices": {
+          "general": 561,
+          "20k": 561,
+          "50k": 547,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7369718,
+        "name": "Anita ŠIRCELJ CUNK (Anita SIRCELJ CUNK)",
+        "country": "SI",
+        "uri": "7369718.anita.sirceljcunk",
+        "indices": {
+          "general": 560,
+          "20k": 558,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 1371879,
+        "name": "Dunja SELAN",
+        "country": "SI",
+        "uri": "1371879.dunja.selan",
+        "indices": {
+          "general": 558,
+          "20k": 542,
+          "50k": 543,
+          "100k": 553,
+          "100m": null
+        }
+      },
+      {
+        "id": 4512908,
+        "name": "Katarina GORSIN",
+        "country": "SI",
+        "uri": "4512908.katarina.gorsin",
+        "indices": {
+          "general": 558,
+          "20k": 561,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6431291,
+        "name": "Saša BUČAN",
+        "country": "SI",
+        "uri": "6431291.sasa.bucan",
+        "indices": {
+          "general": 558,
+          "20k": 557,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 6202869,
+        "name": "Juta PAVLIČ",
+        "country": "SI",
+        "uri": "6202869.juta.pavlic",
+        "indices": {
+          "general": 557,
+          "20k": null,
+          "50k": 556,
+          "100k": 499,
+          "100m": null
+        }
+      },
+      {
+        "id": 7533754,
+        "name": "Anita HOHNEC",
+        "country": "SI",
+        "uri": "7533754.anita.hohnec",
+        "indices": {
+          "general": 557,
+          "20k": 556,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 9021112,
+        "name": "Dora PUŠAVEC",
+        "country": "SI",
+        "uri": "9021112.dora.pusavec",
+        "indices": {
+          "general": 557,
+          "20k": 559,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 2050547,
+        "name": "Sara STOPAR",
+        "country": "SI",
+        "uri": "2050547.sara.stopar",
+        "indices": {
+          "general": 555,
+          "20k": 554,
+          "50k": 508,
+          "100k": null,
+          "100m": null
+        }
+      },
+      {
+        "id": 7337082,
+        "name": "Katarina PRIMOŽIČ",
+        "country": "SI",
+        "uri": "7337082.katarina.primozic",
+        "indices": {
+          "general": 555,
+          "20k": 553,
+          "50k": null,
+          "100k": null,
+          "100m": null
+        }
+      }
+    ]
+  }
+}

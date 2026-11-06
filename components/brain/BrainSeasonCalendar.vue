@@ -18,10 +18,39 @@ const names = [
 ]
 const selected = ref<number | null>(null)
 const hovered = ref<number | null>(null)
-const active = computed(() => hovered.value ?? selected.value)
+const active = computed(() => selected.value ?? hovered.value)
 function selectMonth(index: number) {
   selected.value = index
   hovered.value = null
+}
+const shortMonths = [
+  'jan',
+  'feb',
+  'mar',
+  'apr',
+  'maj',
+  'jun',
+  'jul',
+  'avg',
+  'sep',
+  'okt',
+  'nov',
+  'dec',
+]
+function eventDate(race: Race) {
+  const format = (date: string) => {
+    const [year, month, day] = date.split('-')
+    return `${day}. ${shortMonths[Number(month) - 1]}. ${year}`
+  }
+  let label = format(race.date)
+  if (race.dateEnd && race.dateEnd !== race.date) {
+    const start =
+      race.date.slice(0, 7) === race.dateEnd.slice(0, 7)
+        ? `${race.date.slice(8, 10)}.`
+        : format(race.date)
+    label = `${start} - ${format(race.dateEnd)}`
+  }
+  return race.dateStatus === 'confirmed' ? label : `${label} (predviden datum)`
 }
 const months = computed(() =>
   names.map((name, index) => ({
@@ -33,7 +62,7 @@ const months = computed(() =>
           /^\d{4}-\d{2}/.test(race.date) &&
           Number(race.date.slice(5, 7)) === index + 1,
       )
-      .sort((a, b) => a.name.localeCompare(b.name, 'sl')),
+      .sort((a, b) => a.date.localeCompare(b.date) || a.name.localeCompare(b.name, 'sl')),
   })),
 )
 </script>
@@ -66,13 +95,14 @@ const months = computed(() =>
       <ul v-if="months[active]!.events.length">
         <li v-for="race in months[active]!.events" :key="race.slug">
           <NuxtLink :to="`/races/${race.slug}`">{{ race.name }}</NuxtLink>
+          <span class="event-date">{{ eventDate(race) }}</span>
         </li>
       </ul>
       <p v-else>V tem mesecu še ni dogodkov.</p>
     </div>
     <p class="chart-note">
       Vsak dogodek šteje enkrat, ne glede na leto. Vključeni so tudi okvirni termini. Mesec pokaže
-      dogodke ob prehodu z miško ali kliku.
+      dogodke ob prehodu z miško; s klikom seznam ostane odprt za izbiro tekme.
     </p>
   </section>
 </template>
@@ -121,6 +151,12 @@ const months = computed(() =>
 }
 .events a {
   color: #35543b;
+}
+.event-date {
+  display: block;
+  margin-top: 3px;
+  color: #596653;
+  font-size: 12px;
 }
 @media (max-width: 450px) {
   .months span {

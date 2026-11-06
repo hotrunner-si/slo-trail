@@ -323,7 +323,7 @@ export function siteKnowledgeEntries(content: SiteContent): KnowledgeEntry[] {
             home: '/',
             races: '/races',
             runners: '/runners',
-            routes: '/routes',
+            routes: '/runners/routes',
             journal: '/journal',
           }[key],
         },

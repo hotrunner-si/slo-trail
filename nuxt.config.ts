@@ -45,6 +45,7 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/sitemap'],
   sitemap: {
     exclude: [
+      '/journal/predogled',
       '/runners/nov',
       '/mozgan',
       '/mozgan/**',

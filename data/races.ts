@@ -805,9 +805,9 @@ export const races: Race[] = [
     sourceName: 'Trail tek Slovenija',
     verifiedAt: '2026-09-29',
     distances: [
-      { id: 'go-trim', label: '13K', name: 'GO Trim', km: 13, elevation: 640 },
-      { id: 'go-3v', label: '28K', name: 'GO 3V', km: 28, elevation: 1700 },
-      { id: 'go-ultra', label: '64K', name: 'GO Ultra', km: 64, elevation: 3060 },
+      { id: 'go-trim', label: '13K', name: 'GO Trim', km: 13.13, elevation: 814 },
+      { id: 'go-3v', label: '28K', name: 'GO 3V', km: 28.02, elevation: 1626 },
+      { id: 'go-ultra', label: '64K', name: 'GO Ultra', km: 63.73, elevation: 2900 },
     ],
   },
   {
@@ -828,7 +828,7 @@ export const races: Race[] = [
     distances: [
       { id: 'duma', label: '9.9K', name: 'Duma', km: 9.9, elevation: 152 },
       { id: 'velikobukovska', label: '18.2K', name: 'Velikobukovska', km: 18.2, elevation: 298 },
-      { id: 'republikanka', label: '31.1K', name: 'Republikanka', km: 31.1, elevation: 546 },
+      { id: 'republikanka', label: '31.1K', name: 'Republikanka', km: 31.12, elevation: 546 },
     ],
   },
   {

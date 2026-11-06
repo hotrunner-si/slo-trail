@@ -5,7 +5,7 @@ import {
   trailHighestPoint,
   type TrailPoint,
 } from '~/utils/trailAnalytics'
-const props = defineProps<{ points: TrailPoint[] }>()
+const props = defineProps<{ points: TrailPoint[]; hideLengthFilter?: boolean }>()
 const loadGpx = useGpxData()
 const previews = ref<Record<string, NonNullable<TrailPoint['gpx']>>>({})
 const loading = ref(false)
@@ -76,7 +76,7 @@ const nf = (n: number) => new Intl.NumberFormat('sl-SI', { maximumFractionDigits
         {{ option.label }}
       </button>
     </div>
-    <label class="length-filter"
+    <label v-if="!hideLengthFilter" class="length-filter"
       ><input v-model="lengthFilters[mode]" type="checkbox" :disabled="mode === 'average'" /> Daljše
       od 5 km</label
     >
@@ -107,7 +107,7 @@ const nf = (n: number) => new Intl.NumberFormat('sl-SI', { maximumFractionDigits
             <p>{{ nf(point.km) }} km · {{ nf(point.elevation) }} m+</p>
           </div>
           <strong
-            >{{ nf(point.value) }}
+            >{{ nf(mode === 'highest' ? Math.round(point.value) : point.value) }}
             <small>{{ mode === 'highest' ? 'm n. v.' : 'm / km' }}</small></strong
           >
         </li>
@@ -120,16 +120,13 @@ const nf = (n: number) => new Intl.NumberFormat('sl-SI', { maximumFractionDigits
           : 'Za to razvrstitev še ni dovolj višinskih podatkov.'
       }}
     </p>
-    <p class="chart-note" v-if="mode === 'average'">
-      Trase po vzponu na kilometer celotne trase. Vključene so trase, daljše od 5 km.
-    </p>
-    <p class="chart-note" v-else-if="mode === 'terrain'">
+    <p class="chart-note" v-if="mode === 'terrain'">
       Ocena strmine: (vzpon + spust) ÷ razdalja. Predpostavlja enako povprečno strmino vzponov in
       spustov. Spust je izračunan kot začetna nadmorska višina + vzpon − končna nadmorska višina;
       pri krožni trasi je enak vzponu. Brez filtra so vključene tudi trase, krajše od 5 km, z
       znanimi višinskimi podatki.
     </p>
-    <p class="chart-note" v-else>
+    <p class="chart-note" v-else-if="mode === 'highest'">
       Trase po najvišji doseženi nadmorski višini iz podatkov GPX. Vključene so trase z znano
       najvišjo točko.
     </p>
@@ -230,18 +227,39 @@ const nf = (n: number) => new Intl.NumberFormat('sl-SI', { maximumFractionDigits
   font-size: 10px;
 }
 @media (max-width: 700px) {
+  .ranking-switch {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1.2fr);
+    gap: 4px;
+  }
+  .ranking-switch button {
+    min-width: 0;
+    padding: 10px 3px;
+    font-size: 10px;
+    line-height: 1.3;
+    white-space: nowrap;
+  }
   .ranking-list li {
     grid-template-columns: minmax(0, 1fr) auto;
-    gap: 8px 12px;
+    align-items: start;
+    gap: 10px 12px;
   }
-  .race-name {
+  .ranking-list .race-name {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+  }
+  .ranking-list > li > strong {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+    white-space: nowrap;
+  }
+  .ranking-list .rank-data {
     grid-column: 1 / -1;
+    grid-row: 2;
+    min-width: 0;
   }
-  .ranking-list strong {
-    min-width: 90px;
-  }
-  .rank-track {
-    height: 16px;
-  }
+  .rank-track { height: 16px; }
 }
 </style>

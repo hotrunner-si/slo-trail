@@ -1,5 +1,12 @@
 <script setup lang="ts">
 const { articles, siteContent } = await useSiteContent()
+const { admin } = await useBrainSession()
+if (import.meta.server && admin.value) useResponseHeader('Cache-Control').value = 'private, no-store'
+const request = useRequestFetch()
+const { data: draft } = await useAsyncData('journal-draft-summary', () =>
+  admin.value ? request('/api/journal/draft', { query: { summary: '1' } }) : Promise.resolve(null),
+  { watch: [admin] },
+)
 useSiteSeo('Članki', siteContent.journal.description, { noindex: true })
 const categories = siteContent.journal.categories
 const active = ref('Vse')
@@ -31,12 +38,17 @@ const visible = computed(() =>
     </div>
     <div class="article-grid journal-grid">
       <ArticleCard
+        v-if="admin && draft && (active === 'Vse' || active === draft.category)"
+        :article="draft"
+        draft
+      />
+      <ArticleCard
         v-for="(article, index) in visible"
         :key="article.id"
         :article="article"
         :featured="index === 0 && active === 'Vse'"
       />
     </div>
-    <p v-if="!visible.length" class="empty-state">V tej kategoriji še ni člankov.</p>
+    <p v-if="!visible.length && !(admin && draft && (active === 'Vse' || active === draft.category))" class="empty-state">V tej kategoriji še ni člankov.</p>
   </div>
 </template>
