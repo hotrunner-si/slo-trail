@@ -1,0 +1,966 @@
+{
+  "key": "4481a69aaeefccb1dabe56524fd3b848",
+  "contests": {
+    "1": "Continental 10km",
+    "2": "Adidas Terrex 15km",
+    "3": "Triglav 25km",
+    "4": "I Feel Slovenia 50 km",
+    "5": "Oshee MTB Maraton",
+    "6": "MTB Maraton - E-bikes",
+    "7": "Nissan X-Trail 35 km"
+  },
+  "splits": [
+    {
+      "ID": 1,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 6,
+      "Name": "Odsek",
+      "Label": "Vzpon na grad",
+      "SplitType": 9,
+      "Contest": 1,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 25,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 30,
+      "Name": "Odsek",
+      "Label": "Vzpon na grad",
+      "SplitType": 9,
+      "Contest": 2,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 31,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 36,
+      "Name": "Odsek",
+      "Label": "Vzpon na grad",
+      "SplitType": 9,
+      "Contest": 3,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 37,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 42,
+      "Name": "Odsek",
+      "Label": "Vzpon na grad",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 51,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 56,
+      "Name": "Odsek",
+      "Label": "Vzpon na grad",
+      "SplitType": 9,
+      "Contest": 7,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 2,
+      "Name": "Odsekstart",
+      "Label": "Vzpon štart",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 26,
+      "Name": "Odsekstart",
+      "Label": "Vzpon štart (4,5km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 32,
+      "Name": "Odsekstart",
+      "Label": "Vzpon štart (14,2km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 38,
+      "Name": "Odsekstart",
+      "Label": "CP pod gradom  (44km)",
+      "SplitType": 2,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 44,
+      "Name": "Tolminka_rezultat",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 1,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 52,
+      "Name": "Odsekstart",
+      "Label": "Vzpon štart (22,8km)",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 27,
+      "Name": "Odsekcilj",
+      "Label": "Vzpon cilj (6,3km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 33,
+      "Name": "Odsekcilj",
+      "Label": "Vzpon cilj (16km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 46,
+      "Name": "Tolminka_rezultat",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 2,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 53,
+      "Name": "Odsekcilj",
+      "Label": "Vzpon cilj (24,5km)",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 47,
+      "Name": "Tolminka_rezultat",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 3,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 43,
+      "Name": "Tolminkastart",
+      "Label": "Tolminka štart",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 49,
+      "Name": "Tolminkastart",
+      "Label": "Tolminka štart",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 50,
+      "Name": "OdsekTolminka",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 54,
+      "Name": "Tolminkastart",
+      "Label": "Štart Tolminka",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 57,
+      "Name": "OdsekTolminka",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 7,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 5,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 41,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 45,
+      "Name": "Tolminkastart",
+      "Label": "Tolminka štart",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 48,
+      "Name": "Tolminkastart",
+      "Label": "Tolminka štart",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 55,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 29,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 35,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 58,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 60,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 59,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 11
+    },
+    {
+      "ID": 61,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 11
+    }
+  ],
+  "eventname": "Soča Outdoor Festival 2023",
+  "TimerLogo": "",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44845,
+  "server": "my1.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "details",
+      "Lists": [
+        {
+          "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Live results - ALL",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 5,
+          "ID": "50A994"
+        },
+        {
+          "Name": "1. Soca 2022|Odsek_vzpon na grad",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "Redbull section Grad kozji rog",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 5,
+          "ID": "38B3A0"
+        },
+        {
+          "Name": "1. Soca 2022|Odsek_Tolminka",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "Prečenje Tolminke",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "ID": "3C575F"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+          "Mode": "hidden",
+          "Contest": "1",
+          "ShowAs": "Live results",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "282BFA"
+        },
+        {
+          "Name": "Result Lists 2023|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 10,
+          "ID": "DA69A7"
+        },
+        {
+          "Name": "Result Lists 2023|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 5,
+          "ID": "75E851"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+          "Mode": "hidden",
+          "Contest": "2",
+          "ShowAs": "Live results",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "D9E237"
+        },
+        {
+          "Name": "Result Lists 2023|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 10,
+          "ID": "BC4DDA"
+        },
+        {
+          "Name": "Result Lists 2023|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 5,
+          "ID": "067BC5"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+          "Mode": "hidden",
+          "Contest": "3",
+          "ShowAs": "Live results",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "1F89F8"
+        },
+        {
+          "Name": "Result Lists 2023|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 10,
+          "ID": "6A22F3"
+        },
+        {
+          "Name": "Result Lists 2023|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 5,
+          "ID": "0F1FC7"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+          "Mode": "hidden",
+          "Contest": "4",
+          "ShowAs": "Live results",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "9550C1"
+        },
+        {
+          "Name": "Result Lists 2023|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 10,
+          "ID": "16241C"
+        },
+        {
+          "Name": "Result Lists 2023|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 5,
+          "ID": "47B873"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+          "Mode": "hidden",
+          "Contest": "7",
+          "ShowAs": "Live results",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "A3DFD4"
+        },
+        {
+          "Name": "Result Lists 2023|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "7",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "403302"
+        },
+        {
+          "Name": "Result Lists 2023|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "7",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "E843E4"
+        },
+        {
+          "Name": "1. Soca 2022|Rezultati_absolutno_SPEAKER",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Prihodi v cilj",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "B8E81A"
+        },
+        {
+          "Name": "Participants|Startna lista_abc-live",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "START LIST",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "B9FB5C"
+        },
+        {
+          "Name": "1. Soca 2022|Rezultati_absolutno_SPEAKER",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Speaker",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "B8E81A"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Live_MTB",
+          "Mode": "hidden",
+          "Contest": "5",
+          "ShowAs": "Live MTB",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "7AF949"
+        },
+        {
+          "Name": "Result Lists 2023|Rezultati / Results OVERALL_MTB_",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "E4F34F"
+        },
+        {
+          "Name": "Result Lists 2023|Rezultati / Results AGE GROUPS / KATEGORIJE_MTB",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "F2F51B"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Live_MTB",
+          "Mode": "hidden",
+          "Contest": "6",
+          "ShowAs": "Live e-MTB",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "29B9D1"
+        },
+        {
+          "Name": "Result Lists 2023|Rezultati / Results OVERALL_MTB_",
+          "Mode": "",
+          "Contest": "6",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "9863BE"
+        },
+        {
+          "Name": "1. Soca 2022|Rezultati_absolutno_SPEAKER_MTB",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Speaker MTB",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "DF69CC"
+        }
+      ],
+      "LeaderboardHideCount": false,
+      "ShowCommentIcon": true
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details",
+    "Lists": [
+      {
+        "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Live results - ALL",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 5,
+        "Details": "details",
+        "ID": "50A994"
+      },
+      {
+        "Name": "1. Soca 2022|Odsek_vzpon na grad",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "Redbull section Grad kozji rog",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 5,
+        "Details": "details",
+        "ID": "38B3A0"
+      },
+      {
+        "Name": "1. Soca 2022|Odsek_Tolminka",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "Prečenje Tolminke",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details",
+        "ID": "3C575F"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+        "Mode": "hidden",
+        "Contest": "1",
+        "ShowAs": "Live results",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "282BFA"
+      },
+      {
+        "Name": "Result Lists 2023|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "DA69A7"
+      },
+      {
+        "Name": "Result Lists 2023|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 5,
+        "Details": "details",
+        "ID": "75E851"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+        "Mode": "hidden",
+        "Contest": "2",
+        "ShowAs": "Live results",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "D9E237"
+      },
+      {
+        "Name": "Result Lists 2023|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "BC4DDA"
+      },
+      {
+        "Name": "Result Lists 2023|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 5,
+        "Details": "details",
+        "ID": "067BC5"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+        "Mode": "hidden",
+        "Contest": "3",
+        "ShowAs": "Live results",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "1F89F8"
+      },
+      {
+        "Name": "Result Lists 2023|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "6A22F3"
+      },
+      {
+        "Name": "Result Lists 2023|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 5,
+        "Details": "details",
+        "ID": "0F1FC7"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+        "Mode": "hidden",
+        "Contest": "4",
+        "ShowAs": "Live results",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "9550C1"
+      },
+      {
+        "Name": "Result Lists 2023|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "16241C"
+      },
+      {
+        "Name": "Result Lists 2023|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 5,
+        "Details": "details",
+        "ID": "47B873"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+        "Mode": "hidden",
+        "Contest": "7",
+        "ShowAs": "Live results",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "A3DFD4"
+      },
+      {
+        "Name": "Result Lists 2023|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "7",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "403302"
+      },
+      {
+        "Name": "Result Lists 2023|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "7",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "E843E4"
+      },
+      {
+        "Name": "1. Soca 2022|Rezultati_absolutno_SPEAKER",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Prihodi v cilj",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "B8E81A"
+      },
+      {
+        "Name": "Participants|Startna lista_abc-live",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "START LIST",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "B9FB5C"
+      },
+      {
+        "Name": "1. Soca 2022|Rezultati_absolutno_SPEAKER",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Speaker",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "B8E81A"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Live_MTB",
+        "Mode": "hidden",
+        "Contest": "5",
+        "ShowAs": "Live MTB",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "7AF949"
+      },
+      {
+        "Name": "Result Lists 2023|Rezultati / Results OVERALL_MTB_",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "E4F34F"
+      },
+      {
+        "Name": "Result Lists 2023|Rezultati / Results AGE GROUPS / KATEGORIJE_MTB",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "F2F51B"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Live_MTB",
+        "Mode": "hidden",
+        "Contest": "6",
+        "ShowAs": "Live e-MTB",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "29B9D1"
+      },
+      {
+        "Name": "Result Lists 2023|Rezultati / Results OVERALL_MTB_",
+        "Mode": "",
+        "Contest": "6",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "9863BE"
+      },
+      {
+        "Name": "1. Soca 2022|Rezultati_absolutno_SPEAKER_MTB",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Speaker MTB",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "DF69CC"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

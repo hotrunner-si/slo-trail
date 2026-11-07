@@ -1,0 +1,1081 @@
+{
+  "key": "425ec4688233fb12a897e1b6652eb7c7",
+  "contests": {
+    "1": "10 km Ford Fox Trail",
+    "2": "15 km SPORT VISION Lynx Trail",
+    "3": "30 km - Salomon Wolf Trail",
+    "4": "60 km - I FEEL SLOVENIA Bear Trail",
+    "5": "10 km Ford Fox Trail - pari",
+    "6": "15 km SPORT VISION Lynx Trail - pari",
+    "7": "30 km  Salomon Wolf Trail - pari",
+    "8": "60 km Bear Trail I FEEL SLOVENIA - pari",
+    "9": "5 km TRIGLAV Bambi Trail",
+    "10": "5 km TRIGLAV  Bambi Trail - skupine",
+    "11": "Selectbox Vertical Fridrihštajn",
+    "12": "ODJAVA"
+  },
+  "splits": [
+    {
+      "ID": 25,
+      "Name": "START",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 30,
+      "Name": "START",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 61,
+      "Name": "START",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 67,
+      "Name": "START",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 72,
+      "Name": "START",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 8,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 78,
+      "Name": "START",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 9,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 81,
+      "Name": "START",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 84,
+      "Name": "START",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 12,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 93,
+      "Name": "Startvertikal",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 11,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 31,
+      "Name": "Check1_4km",
+      "Label": "Žaga Rog 4 km",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 68,
+      "Name": "Check1_4km",
+      "Label": "Žaga Rog 4 km",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 94,
+      "Name": "CILJvertikal",
+      "Label": "Finish",
+      "SplitType": 0,
+      "Contest": 11,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 32,
+      "Name": "Check2_19km",
+      "Label": "Lovski vrh 19 km",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 35,
+      "Name": "Check_20km",
+      "Label": "Luža 20 km",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 69,
+      "Name": "Check2_19km",
+      "Label": "Lovski vrh 19 km",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 73,
+      "Name": "Check_20km",
+      "Label": "Koča Luža 20 km",
+      "SplitType": 0,
+      "Contest": 8,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 26,
+      "Name": "Check1_33km",
+      "Label": "Žaga Rog 33,5km",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 59,
+      "Name": "Spotter",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 62,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 70,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 74,
+      "Name": "Check1_30km",
+      "Label": "Žaga Rog 33,5km",
+      "SplitType": 0,
+      "Contest": 8,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 79,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 9,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 82,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 85,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 12,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 6,
+      "Name": "START",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 64,
+      "Name": "START",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 87,
+      "Name": "START",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 27,
+      "Name": "Check2_49km",
+      "Label": "Lovski vrh 49 km",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 34,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 63,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 71,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 75,
+      "Name": "Check2_49km",
+      "Label": "Lovski vrh 49 km",
+      "SplitType": 0,
+      "Contest": 8,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 80,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 9,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 83,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 86,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 12,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 60,
+      "Name": "Spotter",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 76,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 8,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 29,
+      "Name": "CILJ",
+      "Label": "Cilj",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 77,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 8,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 58,
+      "Name": "Spotter",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 65,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 88,
+      "Name": "Spotter",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 8,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 66,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 89,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "Kočevsko outdoor festival 2025",
+  "TimerLogo": "logo_napis-z-www_BEL_200_crop.jpg",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44586,
+  "server": "my4.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "details0",
+      "Lists": [
+        {
+          "Name": "A2: STARTNE LISTE KOF|Startna lista_online_print prijavnica",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "Seznam prijavljenih | Participants list",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "9C21AF"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "Live rezultati - 60km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "1D14B6"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Rezultati_ABSOLUTNO",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "Rezultati - absolutno",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "0407F9"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Rezultati_KATEGORIJE",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "Rezultati - kategorije",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "F9672F"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+          "Mode": "",
+          "Contest": "8",
+          "ShowAs": "Live rezultati - 60km - pari",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "042F00"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Rezultati_tek dvojic",
+          "Mode": "",
+          "Contest": "8",
+          "ShowAs": "60km - pari",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "DE95A7"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "Live rezultati - 30km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "0FEB96"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Rezultati_ABSOLUTNO",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "Rezultati - absolutno",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "DF7FB4"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Rezultati_KATEGORIJE",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "Rezultati - kategorije",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "DAB687"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+          "Mode": "",
+          "Contest": "7",
+          "ShowAs": "Live rezultati - 30km - pari",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "737646"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Rezultati_tek dvojic",
+          "Mode": "",
+          "Contest": "7",
+          "ShowAs": "30km - pari",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "38CAEA"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "Live rezultati - 15km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "61B76F"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Rezultati_ABSOLUTNO",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "Rezultati - absolutno",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "6EE852"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Rezultati_KATEGORIJE",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "Rezultati - kategorije",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "101F48"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+          "Mode": "",
+          "Contest": "6",
+          "ShowAs": "Live rezultati - 15km - pari",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "B2867D"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Rezultati_tek dvojic",
+          "Mode": "",
+          "Contest": "6",
+          "ShowAs": "15km - pari",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "17A449"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Live rezultati - 10km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "539AFE"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Rezultati_ABSOLUTNO",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Rezultati - absolutno",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "6878C2"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Rezultati_KATEGORIJE",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Rezultati - kategorije",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "350E6D"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "Live rezultati - 10km - pari",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "609A36"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Rezultati_tek dvojic",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "10km - pari",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "C23D9A"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Rezultati_Spotter",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Prihodi v cilj",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "6940C3"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+          "Mode": "hidden",
+          "Contest": "9",
+          "ShowAs": "Live rezultati",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "64111F"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+          "Mode": "hidden",
+          "Contest": "9",
+          "ShowAs": "Live rezultati",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "64111F"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Rezultati_ABSOLUTNO",
+          "Mode": "",
+          "Contest": "9",
+          "ShowAs": "Rezultati - absolutno",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "6A0058"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Rezultati_KATEGORIJE",
+          "Mode": "",
+          "Contest": "9",
+          "ShowAs": "Rezultati - kategorije",
+          "Format": "VP",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "840032"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Rezultati_tek skupin 5km",
+          "Mode": "",
+          "Contest": "10",
+          "ShowAs": "5 km - skupine",
+          "Format": "VP",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "DE61A1"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Rezultati_ABSOLUTNO",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "8A35E4"
+        },
+        {
+          "Name": "A1:Kocevsko Outdoor|Rezultati_ABSOLUTNO",
+          "Mode": "",
+          "Contest": "11",
+          "ShowAs": "Rezultati absolutno",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "A79A62"
+        }
+      ],
+      "LeaderboardHideCount": false,
+      "ShowCommentIcon": true
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details0",
+    "Lists": [
+      {
+        "Name": "A2: STARTNE LISTE KOF|Startna lista_online_print prijavnica",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "Seznam prijavljenih | Participants list",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "9C21AF"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "Live rezultati - 60km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "1D14B6"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Rezultati_ABSOLUTNO",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "Rezultati - absolutno",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "0407F9"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Rezultati_KATEGORIJE",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "Rezultati - kategorije",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "F9672F"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+        "Mode": "",
+        "Contest": "8",
+        "ShowAs": "Live rezultati - 60km - pari",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "042F00"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Rezultati_tek dvojic",
+        "Mode": "",
+        "Contest": "8",
+        "ShowAs": "60km - pari",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "DE95A7"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "Live rezultati - 30km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "0FEB96"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Rezultati_ABSOLUTNO",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "Rezultati - absolutno",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "DF7FB4"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Rezultati_KATEGORIJE",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "Rezultati - kategorije",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "DAB687"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+        "Mode": "",
+        "Contest": "7",
+        "ShowAs": "Live rezultati - 30km - pari",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "737646"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Rezultati_tek dvojic",
+        "Mode": "",
+        "Contest": "7",
+        "ShowAs": "30km - pari",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "38CAEA"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "Live rezultati - 15km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "61B76F"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Rezultati_ABSOLUTNO",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "Rezultati - absolutno",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "6EE852"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Rezultati_KATEGORIJE",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "Rezultati - kategorije",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "101F48"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+        "Mode": "",
+        "Contest": "6",
+        "ShowAs": "Live rezultati - 15km - pari",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "B2867D"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Rezultati_tek dvojic",
+        "Mode": "",
+        "Contest": "6",
+        "ShowAs": "15km - pari",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "17A449"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Live rezultati - 10km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "539AFE"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Rezultati_ABSOLUTNO",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Rezultati - absolutno",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "6878C2"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Rezultati_KATEGORIJE",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Rezultati - kategorije",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "350E6D"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "Live rezultati - 10km - pari",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "609A36"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Rezultati_tek dvojic",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "10km - pari",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "C23D9A"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Rezultati_Spotter",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Prihodi v cilj",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "6940C3"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+        "Mode": "hidden",
+        "Contest": "9",
+        "ShowAs": "Live rezultati",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "64111F"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Live_KOF_ALL",
+        "Mode": "hidden",
+        "Contest": "9",
+        "ShowAs": "Live rezultati",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "64111F"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Rezultati_ABSOLUTNO",
+        "Mode": "",
+        "Contest": "9",
+        "ShowAs": "Rezultati - absolutno",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "6A0058"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Rezultati_KATEGORIJE",
+        "Mode": "",
+        "Contest": "9",
+        "ShowAs": "Rezultati - kategorije",
+        "Format": "VP",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "840032"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Rezultati_tek skupin 5km",
+        "Mode": "",
+        "Contest": "10",
+        "ShowAs": "5 km - skupine",
+        "Format": "VP",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "DE61A1"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Rezultati_ABSOLUTNO",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details0",
+        "ID": "8A35E4"
+      },
+      {
+        "Name": "A1:Kocevsko Outdoor|Rezultati_ABSOLUTNO",
+        "Mode": "",
+        "Contest": "11",
+        "ShowAs": "Rezultati absolutno",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "A79A62"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

@@ -1,0 +1,208 @@
+{
+  "key": "de17d7869a3a9c3cdc9397ea41315238",
+  "contests": {
+    "1": "Pozoj za tekače 17 km",
+    "2": "Pozoj za pohodnike 17 km",
+    "5": "ODJAVA"
+  },
+  "splits": [
+    {
+      "ID": 1,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 6,
+      "Name": "VmesnatočkaLubela",
+      "Label": "Lubela 6,0 km",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 2,
+      "Name": "VmesnatočkaVodemla",
+      "Label": "Vodemla 10,4 km",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 3,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 4,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 5,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "Velenje trail 2022",
+  "TimerLogo": "logo_cel_beli.jpg",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44970,
+  "server": "my1.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "details0",
+      "Lists": [
+        {
+          "Name": "A: Rudnica Trail|Startna lista_glavni teki_PRINT",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Štartna lista",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "2D0633"
+        },
+        {
+          "Name": "Result Lists|Rezultati_Trail",
+          "Mode": "hidden",
+          "Contest": "1",
+          "ShowAs": "Rezultati 13 km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "C8175D"
+        },
+        {
+          "Name": "1.1 Splits |Prihodi_Velenje",
+          "Mode": "hidden",
+          "Contest": "1",
+          "ShowAs": "Prihodi v cilj",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "9A93A7"
+        },
+        {
+          "Name": "1.1 Splits |Live_OBALA_ALL",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Live results",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "D4762E"
+        },
+        {
+          "Name": "Result Lists|Rezultati_Trail",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Rezultati",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "C8175D"
+        }
+      ],
+      "LeaderboardHideCount": false,
+      "ShowCommentIcon": false
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details0",
+    "Lists": [
+      {
+        "Name": "A: Rudnica Trail|Startna lista_glavni teki_PRINT",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Štartna lista",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "2D0633"
+      },
+      {
+        "Name": "Result Lists|Rezultati_Trail",
+        "Mode": "hidden",
+        "Contest": "1",
+        "ShowAs": "Rezultati 13 km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "C8175D"
+      },
+      {
+        "Name": "1.1 Splits |Prihodi_Velenje",
+        "Mode": "hidden",
+        "Contest": "1",
+        "ShowAs": "Prihodi v cilj",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "9A93A7"
+      },
+      {
+        "Name": "1.1 Splits |Live_OBALA_ALL",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Live results",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "D4762E"
+      },
+      {
+        "Name": "Result Lists|Rezultati_Trail",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Rezultati",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "C8175D"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

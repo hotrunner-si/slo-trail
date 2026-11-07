@@ -1,0 +1,344 @@
+{
+  "key": "1a729a868bdb1a1a2a10d1e89f8d910f",
+  "contests": {
+    "1": "Duma 10 km",
+    "2": "Velikobukovska  18 km",
+    "3": "Republikanka  30 km",
+    "7": "Nočni tek Metlika (8 km) + Gas na Gače (13km) + Lahinja Trail 10 km",
+    "8": "Nočni tek Metlika (4 km in 8 km) + Lahinja Trail 18 km",
+    "9": "Nočni tek Metlika (4 km in 8 km) + Lahinja Trail 30 km",
+    "11": "Odjava"
+  },
+  "splits": [
+    {
+      "ID": 1,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 14,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 18,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 13,
+      "Name": "CP1",
+      "Label": "CP1",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 15,
+      "Name": "CP1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 19,
+      "Name": "CP1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 2,
+      "Name": "Cilj",
+      "Label": "Cilj",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 17,
+      "Name": "Cilj",
+      "Label": "Cilj",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 20,
+      "Name": "CP2",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 21,
+      "Name": "cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "Lahinja Trail 2026",
+  "TimerLogo": "logo_cel_beli.jpg",
+  "TimerURL": "www.protime.si",
+  "EventOver": false,
+  "Time": 45177,
+  "server": "my2.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": true,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "Subtype": "boxes",
+      "StandardDetails": "",
+      "LeaderboardHideCount": false,
+      "InfoText": "",
+      "Lists": [
+        {
+          "Name": "1.1 Splits |Live",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "LIVE",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "E67108"
+        },
+        {
+          "Name": "1.1 Splits |Prihodi_speaker",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "PRIHODI V CILJ",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "C8C68E"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Absolutno 10 km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "3F68B8"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Kategorije 10 km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "FFF086"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "Absolutno 18 km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "AC6EAA"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "Kategorije 18 km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "87567D"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "Absolutno 30 km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "35450A"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "Kategorije 30 km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "52A30A"
+        },
+        {
+          "Name": "2.Belokrajnski pokal|Results Overall_pokal",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "Belokranjski pokal",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "E1E8A3"
+        }
+      ]
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "",
+    "Lists": [
+      {
+        "Name": "1.1 Splits |Live",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "LIVE",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "E67108"
+      },
+      {
+        "Name": "1.1 Splits |Prihodi_speaker",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "PRIHODI V CILJ",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "C8C68E"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Absolutno 10 km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "3F68B8"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Kategorije 10 km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "FFF086"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "Absolutno 18 km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "AC6EAA"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "Kategorije 18 km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "87567D"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "Absolutno 30 km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "35450A"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "Kategorije 30 km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "52A30A"
+      },
+      {
+        "Name": "2.Belokrajnski pokal|Results Overall_pokal",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "Belokranjski pokal",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "E1E8A3"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

@@ -1,0 +1,215 @@
+{
+  "key": "c6aa0b92693a5a56115ac1a50afa8c25",
+  "contests": {
+    "1": "Trail na 9,9 km",
+    "2": "Trail na 18,2 km",
+    "6": "Odjava"
+  },
+  "splits": [
+    {
+      "ID": 14,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 1,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 15,
+      "Name": "belcjivrh",
+      "Label": "Belčji vrh",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 13,
+      "Name": "belcjivrh",
+      "Label": "Belčji vrh",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 16,
+      "Name": "hrastvinica",
+      "Label": "Hrast pri Vinici",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 2,
+      "Name": "Cilj",
+      "Label": "Cilj",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 17,
+      "Name": "Cilj",
+      "Label": "Cilj",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "Lahinja Trail 2024",
+  "TimerLogo": "logo_cel_beli.jpg",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 45177,
+  "server": "my3.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "",
+      "Lists": [
+        {
+          "Name": "1.1 Splits |Live",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "LIVE",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "E67108"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Absolutno 10 km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "3F68B8"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Kategorije 10 km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "FFF086"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "Absolutno 18 km",
+          "Format": "VP",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "AC6EAA"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "Kategorije 18 km",
+          "Format": "VP",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "87567D"
+        }
+      ],
+      "LeaderboardHideCount": false
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "",
+    "Lists": [
+      {
+        "Name": "1.1 Splits |Live",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "LIVE",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "E67108"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Absolutno 10 km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "3F68B8"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Kategorije 10 km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "FFF086"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "Absolutno 18 km",
+        "Format": "VP",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "AC6EAA"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "Kategorije 18 km",
+        "Format": "VP",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "87567D"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

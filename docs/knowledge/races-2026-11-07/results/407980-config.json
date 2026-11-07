@@ -1,0 +1,979 @@
+{
+  "key": "93ccc81b10fcdf50e1dd2d96b28266cd",
+  "contests": {
+    "1": "Continental 10km",
+    "2": "Adidas Terrex 15km",
+    "3": "La Primafit 25km",
+    "4": "I Feel Slovenia 50 km",
+    "5": "Ford 35 km",
+    "6": "Soča 5 km",
+    "7": "Triglav VERTIKAL Run",
+    "20": "Pohod",
+    "21": "PARAFESTIVAL"
+  },
+  "splits": [
+    {
+      "ID": 31,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 37,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 51,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 55,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 59,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 108,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 21,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 58,
+      "Name": "Tolminka_rezultat",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 6,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 76,
+      "Name": "Tolminka_rezultat",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 2,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 82,
+      "Name": "Tolminka_rezultat",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 1,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 47,
+      "Name": "Tolminka_rezultat",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 3,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 54,
+      "Name": "Tolminka_rezultat",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 50,
+      "Name": "Tolminka_rezultat",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 71,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 77,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 72,
+      "Name": "Tolminska",
+      "Label": "Tolminska korita (8,6km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 78,
+      "Name": "Tolminska",
+      "Label": "Tolminska korita (6km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 56,
+      "Name": "Tolminkastart",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 60,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 73,
+      "Name": "Žabče",
+      "Label": "Žabče (10,3km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 79,
+      "Name": "Žabče",
+      "Label": "Žabče (8km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 99,
+      "Name": "PlaninaKuhinja",
+      "Label": "Planina Kuhinja (18km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 102,
+      "Name": "Volče",
+      "Label": "Volče (16km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 104,
+      "Name": "Volče",
+      "Label": "Volče (16km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 57,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 110,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 21,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 66,
+      "Name": "Mengore",
+      "Label": "Mengore (19km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 68,
+      "Name": "Mengore",
+      "Label": "Mengore (19km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 74,
+      "Name": "Tolminkastart",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 80,
+      "Name": "Tolminkastart",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 48,
+      "Name": "Tolminkastart",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 67,
+      "Name": "MostnaSoči",
+      "Label": "Most na Soči (23km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 75,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 81,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 35,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 52,
+      "Name": "Tolminkastart",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 62,
+      "Name": "Gabrje",
+      "Label": "Gabrje (27km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 53,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 63,
+      "Name": "Volče",
+      "Label": "Volče (36km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 64,
+      "Name": "MostnaSoči",
+      "Label": "Most na Soči(44km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 49,
+      "Name": "Tolminkastart",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 41,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "Soča Outdoor Festival 2026",
+  "TimerLogo": "",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44587,
+  "server": "my3.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": true,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "Subtype": "boxes",
+      "StandardDetails": "details0",
+      "LeaderboardHideCount": false,
+      "ShowCommentIcon": true,
+      "InfoText": "",
+      "Lists": [
+        {
+          "Name": "B1: Participants|Startna lista_abc-live",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Start list - all distances",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "B561E0"
+        },
+        {
+          "Name": "A1: Result Lists|0 Prihodi_CILJ",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Arrivals in finish",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "AD49ED"
+        },
+        {
+          "Name": "A1: Result Lists|0 Live_ALL",
+          "Mode": "hidden",
+          "Contest": "5",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "E018EB"
+        },
+        {
+          "Name": "A1: Result Lists|1a ABSOLUTNO",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "Overall results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "Details": "",
+          "ID": "0BF712"
+        },
+        {
+          "Name": "A1: Result Lists|2a KATEGORIJE",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "Age group results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "Details": "",
+          "ID": "7CB212"
+        },
+        {
+          "Name": "A1: Result Lists|0 Live_ALL",
+          "Mode": "hidden",
+          "Contest": "3",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "B3F127"
+        },
+        {
+          "Name": "A1: Result Lists|1a ABSOLUTNO",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "Overall results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "Details": "",
+          "ID": "3FB79C"
+        },
+        {
+          "Name": "A1: Result Lists|2a KATEGORIJE",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "Age group results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "Details": "",
+          "ID": "6409D5"
+        },
+        {
+          "Name": "A1: Result Lists|0 Live_ALL",
+          "Mode": "hidden",
+          "Contest": "2",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "F75731"
+        },
+        {
+          "Name": "A1: Result Lists|1a ABSOLUTNO",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "Overall results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "Details": "",
+          "ID": "813071"
+        },
+        {
+          "Name": "A1: Result Lists|2a KATEGORIJE",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "Age group results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "Details": "",
+          "ID": "8E930B"
+        },
+        {
+          "Name": "A1: Result Lists|0 Live_ALL",
+          "Mode": "hidden",
+          "Contest": "1",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "EAA78A"
+        },
+        {
+          "Name": "A1: Result Lists|1a ABSOLUTNO",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Overall results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "Details": "",
+          "ID": "E1C07F"
+        },
+        {
+          "Name": "A1: Result Lists|2a KATEGORIJE",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Age group results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "Details": "",
+          "ID": "8CB99C"
+        },
+        {
+          "Name": "A1: Result Lists|4a segment TOLMINKA",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Tolminka section",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "Details": "",
+          "ID": "8CCA9B"
+        },
+        {
+          "Name": "A1: Result Lists|0 Live_ALL",
+          "Mode": "hidden",
+          "Contest": "6",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "F3B809"
+        },
+        {
+          "Name": "A1: Result Lists|1a ABSOLUTNO",
+          "Mode": "",
+          "Contest": "6",
+          "ShowAs": "Overall results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "Details": "",
+          "ID": "28061B"
+        },
+        {
+          "Name": "A1: Result Lists|2a KATEGORIJE",
+          "Mode": "",
+          "Contest": "6",
+          "ShowAs": "Age group results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "Details": "",
+          "ID": "8C9405"
+        },
+        {
+          "Name": "A1: Result Lists|1a ABSOLUTNO",
+          "Mode": "",
+          "Contest": "7",
+          "ShowAs": "Overall results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "Details": "",
+          "ID": "F007D7"
+        },
+        {
+          "Name": "A1: Result Lists|5d kombinacija 35km",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "Combo 35 km (vertikal + trail run)",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "Details": "",
+          "ID": "81CA68"
+        },
+        {
+          "Name": "A1: Result Lists|5c kombinacija 25km",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "Combo 25 km (vertikal + trail run)",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "Details": "",
+          "ID": "38CB00"
+        },
+        {
+          "Name": "A1: Result Lists|5b kombinacija 15km",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "Combo 15 km (vertikal + trail run)",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "Details": "",
+          "ID": "6F5499"
+        },
+        {
+          "Name": "A1: Result Lists|5a kombinacija 10km",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "Combo 10 km (vertikal + trail run)",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "Details": "",
+          "ID": "C7840C"
+        },
+        {
+          "Name": "A1: Result Lists|6a KM po klubih",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "Clubs with most KM",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "Details": "",
+          "ID": "8CE644"
+        },
+        {
+          "Name": "A1: Result Lists|1a ABSOLUTNO",
+          "Mode": "",
+          "Contest": "21",
+          "ShowAs": "Overall results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "7B162F"
+        }
+      ]
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details0",
+    "Lists": [
+      {
+        "Name": "B1: Participants|Startna lista_abc-live",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Start list - all distances",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "B561E0"
+      },
+      {
+        "Name": "A1: Result Lists|0 Prihodi_CILJ",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Arrivals in finish",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "AD49ED"
+      },
+      {
+        "Name": "A1: Result Lists|0 Live_ALL",
+        "Mode": "hidden",
+        "Contest": "5",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "E018EB"
+      },
+      {
+        "Name": "A1: Result Lists|1a ABSOLUTNO",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "Overall results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "0BF712"
+      },
+      {
+        "Name": "A1: Result Lists|2a KATEGORIJE",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "Age group results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details0",
+        "ID": "7CB212"
+      },
+      {
+        "Name": "A1: Result Lists|0 Live_ALL",
+        "Mode": "hidden",
+        "Contest": "3",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "B3F127"
+      },
+      {
+        "Name": "A1: Result Lists|1a ABSOLUTNO",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "Overall results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "3FB79C"
+      },
+      {
+        "Name": "A1: Result Lists|2a KATEGORIJE",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "Age group results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details0",
+        "ID": "6409D5"
+      },
+      {
+        "Name": "A1: Result Lists|0 Live_ALL",
+        "Mode": "hidden",
+        "Contest": "2",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "F75731"
+      },
+      {
+        "Name": "A1: Result Lists|1a ABSOLUTNO",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "Overall results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "813071"
+      },
+      {
+        "Name": "A1: Result Lists|2a KATEGORIJE",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "Age group results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details0",
+        "ID": "8E930B"
+      },
+      {
+        "Name": "A1: Result Lists|0 Live_ALL",
+        "Mode": "hidden",
+        "Contest": "1",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "EAA78A"
+      },
+      {
+        "Name": "A1: Result Lists|1a ABSOLUTNO",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Overall results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "E1C07F"
+      },
+      {
+        "Name": "A1: Result Lists|2a KATEGORIJE",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Age group results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details0",
+        "ID": "8CB99C"
+      },
+      {
+        "Name": "A1: Result Lists|4a segment TOLMINKA",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Tolminka section",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "8CCA9B"
+      },
+      {
+        "Name": "A1: Result Lists|0 Live_ALL",
+        "Mode": "hidden",
+        "Contest": "6",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "F3B809"
+      },
+      {
+        "Name": "A1: Result Lists|1a ABSOLUTNO",
+        "Mode": "",
+        "Contest": "6",
+        "ShowAs": "Overall results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "28061B"
+      },
+      {
+        "Name": "A1: Result Lists|2a KATEGORIJE",
+        "Mode": "",
+        "Contest": "6",
+        "ShowAs": "Age group results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details0",
+        "ID": "8C9405"
+      },
+      {
+        "Name": "A1: Result Lists|1a ABSOLUTNO",
+        "Mode": "",
+        "Contest": "7",
+        "ShowAs": "Overall results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "F007D7"
+      },
+      {
+        "Name": "A1: Result Lists|5d kombinacija 35km",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "Combo 35 km (vertikal + trail run)",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details0",
+        "ID": "81CA68"
+      },
+      {
+        "Name": "A1: Result Lists|5c kombinacija 25km",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "Combo 25 km (vertikal + trail run)",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details0",
+        "ID": "38CB00"
+      },
+      {
+        "Name": "A1: Result Lists|5b kombinacija 15km",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "Combo 15 km (vertikal + trail run)",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details0",
+        "ID": "6F5499"
+      },
+      {
+        "Name": "A1: Result Lists|5a kombinacija 10km",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "Combo 10 km (vertikal + trail run)",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details0",
+        "ID": "C7840C"
+      },
+      {
+        "Name": "A1: Result Lists|6a KM po klubih",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "Clubs with most KM",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details0",
+        "ID": "8CE644"
+      },
+      {
+        "Name": "A1: Result Lists|1a ABSOLUTNO",
+        "Mode": "",
+        "Contest": "21",
+        "ShowAs": "Overall results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "7B162F"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

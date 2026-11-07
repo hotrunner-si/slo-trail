@@ -1,0 +1,461 @@
+{
+  "key": "322843cad57aaa51425f3a200e67386a",
+  "contests": {
+    "1": "BUKEV 34 km",
+    "2": "JELKA 14 km",
+    "10": "ODJAVA"
+  },
+  "splits": [
+    {
+      "ID": 4,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 0,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 13,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 23,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 51,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 5,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 0,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 14,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 52,
+      "Name": "Jezerc",
+      "Label": "Jezerc (10km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 6,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 0,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 15,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 49,
+      "Name": "Jelka",
+      "Label": "Jelka(7km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 53,
+      "Name": "Jezerskivrh",
+      "Label": "Jezerski vrh(23km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 59,
+      "Name": "Mulejevvrh",
+      "Label": "Mulejev vrh(30km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 61,
+      "Name": "Spotter",
+      "Label": "Prihod",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 26,
+      "Name": "CILJ",
+      "Label": "CILJ",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 60,
+      "Name": "Spotter",
+      "Label": "Prihod",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 56,
+      "Name": "CILJ",
+      "Label": "CILJ",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "2. Slovenski gozdarski trail 2026",
+  "TimerLogo": "Protime_logo_napisi_DARK2.png",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44592,
+  "server": "my4.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": true,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "Subtype": "boxes",
+      "StandardDetails": "details0",
+      "LeaderboardHideCount": false,
+      "ShowCommentIcon": false,
+      "InfoText": "",
+      "Lists": [
+        {
+          "Name": "1. Result Lists |Rezultati absolutno",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "E5C74D"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "981ADD"
+        },
+        {
+          "Name": "1.1 Splits |Live_G4T_jelka",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "Live 14km",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "Details": "",
+          "ID": "C629AD"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "AC6EAA"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "87567D"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno_gozdarji",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "M/Ž - gozdarji",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "Details": "",
+          "ID": "940A27"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije_gozdarji",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "AG - gozdarji",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "Details": "",
+          "ID": "5FF2F2"
+        },
+        {
+          "Name": "1.1 Splits |Live_G4T_bukev",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "LIVE 34km",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "Details": "",
+          "ID": "513B9D"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "3F68B8"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "FFF086"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno_gozdarji",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "M/Ž - gozdarji",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "Details": "",
+          "ID": "7C5493"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije_gozdarji",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "AG - gozdarji",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "Details": "",
+          "ID": "95B063"
+        }
+      ]
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details0",
+    "Lists": [
+      {
+        "Name": "1. Result Lists |Rezultati absolutno",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "E5C74D"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "981ADD"
+      },
+      {
+        "Name": "1.1 Splits |Live_G4T_jelka",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "Live 14km",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "C629AD"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "AC6EAA"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "87567D"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno_gozdarji",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "M/Ž - gozdarji",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "940A27"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije_gozdarji",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "AG - gozdarji",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "5FF2F2"
+      },
+      {
+        "Name": "1.1 Splits |Live_G4T_bukev",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "LIVE 34km",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "513B9D"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "3F68B8"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "FFF086"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno_gozdarji",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "M/Ž - gozdarji",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "7C5493"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije_gozdarji",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "AG - gozdarji",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "95B063"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

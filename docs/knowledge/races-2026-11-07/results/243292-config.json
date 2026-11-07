@@ -1,0 +1,1168 @@
+{
+  "key": "3573eab91a4a009b4e973c926b32904a",
+  "contests": {
+    "1": "15  - ASTERIX",
+    "2": "30 - LEGIONAR",
+    "3": "60 - GLADIATOR",
+    "4": "100 - CENTURION",
+    "5": "170 - EMPEROR",
+    "6": "9  - OBELIX Hike&Wine - NETEKMOVALNI",
+    "7": "CASTRA CITY RUN",
+    "8": "Dečki in deklice 2017",
+    "9": "Dečki in deklice 2016",
+    "10": "Dečki in deklice 2015",
+    "11": "Dečki in deklice 2014",
+    "12": "Dečki in deklice 2013",
+    "13": "Dečki in deklice 2012",
+    "14": "Dečki in deklice 2011",
+    "15": "Dečki in deklice 2010",
+    "16": "Dečki in deklice 2008 in 2009"
+  },
+  "splits": [
+    {
+      "ID": 82,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 302,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 313,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 329,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 8,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 374,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 9,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 376,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 378,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 11,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 380,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 12,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 382,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 13,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 384,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 14,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 386,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 15,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 388,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 16,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 226,
+      "Name": "Vipavskikriž",
+      "Label": "Vipavski križ (4,6km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 179,
+      "Name": "Dolenje",
+      "Label": "Dolenje (9,4km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 295,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 298,
+      "Name": "Spotter",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 303,
+      "Name": "Lože",
+      "Label": "Lože (11,3km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 314,
+      "Name": "Lože",
+      "Label": "Lože (11,3km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 326,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 296,
+      "Name": "spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 299,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 333,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 8,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 375,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 9,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 377,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 379,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 11,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 381,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 12,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 383,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 13,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 385,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 14,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 387,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 15,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 389,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 16,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 297,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 304,
+      "Name": "Podnanos",
+      "Label": "Podnanos (21,9km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 315,
+      "Name": "Podnanos",
+      "Label": "Podnanos (21,9km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 328,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 305,
+      "Name": "Nanos",
+      "Label": "Nanos (31,4km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 316,
+      "Name": "Nanos",
+      "Label": "Nanos (31,4km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 306,
+      "Name": "Vipava",
+      "Label": "Vipava (45,8km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 317,
+      "Name": "Vipava",
+      "Label": "Vipava (45,8km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 310,
+      "Name": "Otlica",
+      "Label": "Otlica (59,1km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 318,
+      "Name": "Otlica",
+      "Label": "Otlica (59,1km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 311,
+      "Name": "Malagora",
+      "Label": "Mala gora (69km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 319,
+      "Name": "Malagora",
+      "Label": "Mala gora (69km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 312,
+      "Name": "Batuje",
+      "Label": "Batuje (85,3km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 320,
+      "Name": "Renče",
+      "Label": "Renče (122,5km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 390,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 391,
+      "Name": "Podrtagora",
+      "Label": "Podrta gora (7,1km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 392,
+      "Name": "Otlica",
+      "Label": "Otlica (12,8km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 393,
+      "Name": "Malagora",
+      "Label": "Mala gora (22,8km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 394,
+      "Name": "Lokavec",
+      "Label": "Lokavec (28km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 395,
+      "Name": "Spotter",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 396,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 139,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 187,
+      "Name": "Lože",
+      "Label": "Lože (11,3km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 230,
+      "Name": "Podnanos",
+      "Label": "Podnanos (21,9km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 231,
+      "Name": "Nanos",
+      "Label": "Nanos (31,4km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 232,
+      "Name": "Vipava",
+      "Label": "Vipava (45,8km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 301,
+      "Name": "Plaz",
+      "Label": "Plaz (51,4km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 233,
+      "Name": "Spotter",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 181,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 307,
+      "Name": "Spotter",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 325,
+      "Name": "Branik",
+      "Label": "Branik (151,3km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 309,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 322,
+      "Name": "Spotter",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 324,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "ULTRA TRAIL VIPAVA 2023",
+  "TimerLogo": "logo_cel_beli.jpg",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44844,
+  "server": "my4.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "2020-01-01T00:00:00+01:00",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "details",
+      "Lists": [
+        {
+          "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+          "Mode": "hidden",
+          "Contest": "5",
+          "ShowAs": "Live  results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "74CE6E"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "{EN:Results - overall|SI:Rezultati - absolutno}",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "2C9EA3"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "{EN:Results - age groups|SI:Rezultati - kategorije}",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "6DE927"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+          "Mode": "hidden",
+          "Contest": "4",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "9550C1"
+        },
+        {
+          "Name": "Participants|Startna lista_Online",
+          "Mode": "hidden",
+          "Contest": "4",
+          "ShowAs": "Start list - Centurion 100",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "C8057B"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "{EN:Results - overall|SI:Rezultati - absolutno}",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "56B6F8"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "{EN:Results - age groups|SI:Rezultati - kategorije}",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "6B6793"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+          "Mode": "hidden",
+          "Contest": "3",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "1F89F8"
+        },
+        {
+          "Name": "Participants|Startna lista_Online",
+          "Mode": "hidden",
+          "Contest": "3",
+          "ShowAs": "Start list - Gladiator",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "25C212"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "{EN:Results - overall|SI:Rezultati - absolutno}",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "4FE7D7"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "{EN:Results - age groups|SI:Rezultati - kategorije}",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "A1C886"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+          "Mode": "hidden",
+          "Contest": "2",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "D9E237"
+        },
+        {
+          "Name": "Participants|Startna lista_Online",
+          "Mode": "hidden",
+          "Contest": "2",
+          "ShowAs": "Start list - Legionar 30",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "4166BA"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "{EN:Results - overall|SI:Rezultati - absolutno}",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "5BF882"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "{EN:Results - age groups|SI:Rezultati - kategorije}",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "7349EC"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+          "Mode": "hidden",
+          "Contest": "1",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "282BFA"
+        },
+        {
+          "Name": "Participants|Startna lista_Online",
+          "Mode": "hidden",
+          "Contest": "1",
+          "ShowAs": "Start list - Asterix 15",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "7931FE"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "{EN:Results - overall|SI:Rezultati - absolutno}",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "D607A4"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "{EN:Results - age groups|SI:Rezultati - kategorije}",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "3172DA"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Live results - all",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "50A994"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Prihodi",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Spotter check",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "8EE8D8"
+        },
+        {
+          "Name": "Participants|Startna lista_Online",
+          "Mode": "hidden",
+          "Contest": "5",
+          "ShowAs": "Start list - Emperor 170",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "6DAB4B"
+        },
+        {
+          "Name": "Participants|Startna lista_Online",
+          "Mode": "hidden",
+          "Contest": "6",
+          "ShowAs": "Start list - Obelix 9",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "3ABC94"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati absolutno_otroci",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Otroški teki",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "0B2D52"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati absolutno_Cityrun",
+          "Mode": "",
+          "Contest": "7",
+          "ShowAs": "{EN:Castra city run - overall|SI:Castra city run - absolutno}",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 5,
+          "ID": "515254"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati kategorije_City",
+          "Mode": "",
+          "Contest": "7",
+          "ShowAs": "{EN:Castra city run - age groups|SI:Castra city run - kategorije}",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "E9F9BE"
+        }
+      ],
+      "LeaderboardHideCount": false,
+      "ShowCommentIcon": true
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details",
+    "Lists": [
+      {
+        "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+        "Mode": "hidden",
+        "Contest": "5",
+        "ShowAs": "Live  results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "74CE6E"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "{EN:Results - overall|SI:Rezultati - absolutno}",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "2C9EA3"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "{EN:Results - age groups|SI:Rezultati - kategorije}",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "6DE927"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+        "Mode": "hidden",
+        "Contest": "4",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "9550C1"
+      },
+      {
+        "Name": "Participants|Startna lista_Online",
+        "Mode": "hidden",
+        "Contest": "4",
+        "ShowAs": "Start list - Centurion 100",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "C8057B"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "{EN:Results - overall|SI:Rezultati - absolutno}",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "56B6F8"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "{EN:Results - age groups|SI:Rezultati - kategorije}",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "6B6793"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+        "Mode": "hidden",
+        "Contest": "3",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "1F89F8"
+      },
+      {
+        "Name": "Participants|Startna lista_Online",
+        "Mode": "hidden",
+        "Contest": "3",
+        "ShowAs": "Start list - Gladiator",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "25C212"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "{EN:Results - overall|SI:Rezultati - absolutno}",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "4FE7D7"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "{EN:Results - age groups|SI:Rezultati - kategorije}",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "A1C886"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+        "Mode": "hidden",
+        "Contest": "2",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "D9E237"
+      },
+      {
+        "Name": "Participants|Startna lista_Online",
+        "Mode": "hidden",
+        "Contest": "2",
+        "ShowAs": "Start list - Legionar 30",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "4166BA"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "{EN:Results - overall|SI:Rezultati - absolutno}",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "5BF882"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "{EN:Results - age groups|SI:Rezultati - kategorije}",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "7349EC"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+        "Mode": "hidden",
+        "Contest": "1",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "282BFA"
+      },
+      {
+        "Name": "Participants|Startna lista_Online",
+        "Mode": "hidden",
+        "Contest": "1",
+        "ShowAs": "Start list - Asterix 15",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "7931FE"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "{EN:Results - overall|SI:Rezultati - absolutno}",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "D607A4"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "{EN:Results - age groups|SI:Rezultati - kategorije}",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "3172DA"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Live results - all",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "50A994"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Prihodi",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Spotter check",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "8EE8D8"
+      },
+      {
+        "Name": "Participants|Startna lista_Online",
+        "Mode": "hidden",
+        "Contest": "5",
+        "ShowAs": "Start list - Emperor 170",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "6DAB4B"
+      },
+      {
+        "Name": "Participants|Startna lista_Online",
+        "Mode": "hidden",
+        "Contest": "6",
+        "ShowAs": "Start list - Obelix 9",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "3ABC94"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati absolutno_otroci",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Otroški teki",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "0B2D52"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati absolutno_Cityrun",
+        "Mode": "",
+        "Contest": "7",
+        "ShowAs": "{EN:Castra city run - overall|SI:Castra city run - absolutno}",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details",
+        "ID": "515254"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati kategorije_City",
+        "Mode": "",
+        "Contest": "7",
+        "ShowAs": "{EN:Castra city run - age groups|SI:Castra city run - kategorije}",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "E9F9BE"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

@@ -1,0 +1,333 @@
+{
+  "checkedAt": "2026-11-07T13:43:20.602Z",
+  "newRecords": 784,
+  "pendingEmbeddings": 0,
+  "coverage": [
+    {
+      "slug": "6-ur-spanovega-vrha",
+      "name": "6 ur Španovega vrha",
+      "verified": 6,
+      "newRecords": 6
+    },
+    {
+      "slug": "7-ur-slivnice",
+      "name": "7 ur Slivnice",
+      "verified": 5,
+      "newRecords": 5
+    },
+    {
+      "slug": "8-ur-sv-ane",
+      "name": "8 ur Sv. Ane",
+      "verified": 6,
+      "newRecords": 6
+    },
+    {
+      "slug": "caven-run",
+      "name": "Čaven run",
+      "verified": 6,
+      "newRecords": 6
+    },
+    {
+      "slug": "go4trail",
+      "name": "GO4Trail",
+      "verified": 24,
+      "newRecords": 0
+    },
+    {
+      "slug": "haloze-trail",
+      "name": "Haloze trail",
+      "verified": 9,
+      "newRecords": 9
+    },
+    {
+      "slug": "hg-trail-idrija",
+      "name": "HG Trail Idrija",
+      "verified": 8,
+      "newRecords": 8
+    },
+    {
+      "slug": "hrastnik-trail",
+      "name": "Hrastnik trail",
+      "verified": 6,
+      "newRecords": 6
+    },
+    {
+      "slug": "julian-alps-trail-run-by-utmb",
+      "name": "Julian Alps Trail Run by UTMB",
+      "verified": 100,
+      "newRecords": 100
+    },
+    {
+      "slug": "k24-ultra-trail",
+      "name": "K24 Ultra trail",
+      "verified": 34,
+      "newRecords": 34
+    },
+    {
+      "slug": "kbk-trail",
+      "name": "KBK trail",
+      "verified": 6,
+      "newRecords": 6
+    },
+    {
+      "slug": "knap-trail",
+      "name": "Knap Trail",
+      "verified": 25,
+      "newRecords": 25
+    },
+    {
+      "slug": "kocevsko-outdoor-festival",
+      "name": "Kočevsko Outdoor Festival",
+      "verified": 52,
+      "newRecords": 52
+    },
+    {
+      "slug": "kras-trail",
+      "name": "Kras Trail",
+      "verified": 7,
+      "newRecords": 7
+    },
+    {
+      "slug": "kriska-gora-trail",
+      "name": "Kriška gora Trail",
+      "verified": 21,
+      "newRecords": 21
+    },
+    {
+      "slug": "lahinja-trail",
+      "name": "Lahinja Trail",
+      "verified": 13,
+      "newRecords": 6
+    },
+    {
+      "slug": "loncarija-tece",
+      "name": "Lončarija teče",
+      "verified": 25,
+      "newRecords": 25
+    },
+    {
+      "slug": "lotmerski-trail-tek",
+      "name": "Lotmerški trail tek",
+      "verified": 5,
+      "newRecords": 5
+    },
+    {
+      "slug": "obala-ultra-trail",
+      "name": "Obala Ultra trail",
+      "verified": 67,
+      "newRecords": 40
+    },
+    {
+      "slug": "podbrdo-trail-running-festival",
+      "name": "Podbrdo Trail Running Festival",
+      "verified": 48,
+      "newRecords": 48
+    },
+    {
+      "slug": "pol-sihta-na-farbanco",
+      "name": "Pol šihta na Farbanco",
+      "verified": 6,
+      "newRecords": 6
+    },
+    {
+      "slug": "ponikva4trail",
+      "name": "Ponikva4trail",
+      "verified": 6,
+      "newRecords": 6
+    },
+    {
+      "slug": "postojnski-tek",
+      "name": "Postojnski tek",
+      "verified": 5,
+      "newRecords": 5
+    },
+    {
+      "slug": "ribnica-trail",
+      "name": "Ribnica trail",
+      "verified": 30,
+      "newRecords": 30
+    },
+    {
+      "slug": "roznik-trail",
+      "name": "Rožnik trail",
+      "verified": 5,
+      "newRecords": 5
+    },
+    {
+      "slug": "savinjski-k6-trail",
+      "name": "Savinjski K6 Trail",
+      "verified": 5,
+      "newRecords": 5
+    },
+    {
+      "slug": "slovenski-gozdarski-trail",
+      "name": "Slovenski gozdarski trail",
+      "verified": 13,
+      "newRecords": 13
+    },
+    {
+      "slug": "smarjeski-tek",
+      "name": "Šmarješki tek",
+      "verified": 13,
+      "newRecords": 13
+    },
+    {
+      "slug": "sneznik-trails",
+      "name": "Snežnik trails",
+      "verified": 9,
+      "newRecords": 9
+    },
+    {
+      "slug": "soca-outdoor-festival",
+      "name": "Soča Outdoor Festival",
+      "verified": 107,
+      "newRecords": 106
+    },
+    {
+      "slug": "tek-na-smarno-goro",
+      "name": "Tek na Šmarno goro",
+      "verified": 9,
+      "newRecords": 9
+    },
+    {
+      "slug": "trail-po-kraskih-klancih",
+      "name": "Trail po kraških klancih",
+      "verified": 5,
+      "newRecords": 5
+    },
+    {
+      "slug": "trail-tek-zelene-doline",
+      "name": "Trail tek Zelene doline",
+      "verified": 5,
+      "newRecords": 5
+    },
+    {
+      "slug": "trail-velika-planina",
+      "name": "Trail Velika Planina",
+      "verified": 5,
+      "newRecords": 5
+    },
+    {
+      "slug": "triglav-trail-run",
+      "name": "Triglav Trail Run",
+      "verified": 45,
+      "newRecords": 45
+    },
+    {
+      "slug": "ultra-trail-vipava-valley",
+      "name": "Ultra Trail Vipava Valley",
+      "verified": 77,
+      "newRecords": 77
+    },
+    {
+      "slug": "velenje-trail",
+      "name": "Velenje trail",
+      "verified": 14,
+      "newRecords": 14
+    },
+    {
+      "slug": "zaplana-trail",
+      "name": "Zaplana Trail",
+      "verified": 5,
+      "newRecords": 5
+    },
+    {
+      "slug": "zimski-trail-tek-bohinj",
+      "name": "Zimski trail tek Bohinj",
+      "verified": 6,
+      "newRecords": 6
+    }
+  ],
+  "searches": [
+    {
+      "query": "Katera obvezna oprema je na Knap Trail 2027?",
+      "top5": [
+        {
+          "title": "Knap Trail 2027 – obvezna zimska oprema",
+          "race": "knap-trail",
+          "similarity": 0.835014323593893
+        },
+        {
+          "title": "Knap Trail 2027 – čelna svetilka",
+          "race": "knap-trail",
+          "similarity": 0.814206876064167
+        },
+        {
+          "title": "Knap Trail 2027 – tranzicijska vreča",
+          "race": "knap-trail",
+          "similarity": 0.764022602795219
+        },
+        {
+          "title": "Knap Trail 2027 – urnik in vzponi",
+          "race": "knap-trail",
+          "similarity": 0.761681630511199
+        },
+        {
+          "title": "Knap Trail 2027 – prevzem",
+          "race": "knap-trail",
+          "similarity": 0.760266596118599
+        }
+      ]
+    },
+    {
+      "query": "Soča Outdoor Festival odpoved 2020 zaradi koronavirusa",
+      "top5": [
+        {
+          "title": "Soča Outdoor Festival 2020 – odpoved",
+          "race": "soca-outdoor-festival",
+          "similarity": 0.781922827534929
+        },
+        {
+          "title": "Soča Outdoor Festival 2021 – omejena izvedba",
+          "race": "soca-outdoor-festival",
+          "similarity": 0.688997667372089
+        },
+        {
+          "title": "Soča Outdoor Festival",
+          "race": "soca-outdoor-festival",
+          "similarity": 0.686516206652893
+        },
+        {
+          "title": "Soča Outdoor Festival 2026 – odpoved 50 km",
+          "race": "soca-outdoor-festival",
+          "similarity": 0.686113636858085
+        },
+        {
+          "title": "Soča Outdoor Festival – brez kozarčkov od 2019",
+          "race": "soca-outdoor-festival",
+          "similarity": 0.679122250027792
+        }
+      ]
+    },
+    {
+      "query": "Julian Alps 2024 25 km rezultati moški",
+      "top5": [
+        {
+          "title": "Julian Alps Trail Run by UTMB 2024 – 25km JAT KRANJSKA GORA – top 10 moški",
+          "race": "julian-alps-trail-run-by-utmb",
+          "similarity": 0.788513922349042
+        },
+        {
+          "title": "Julian Alps Trail Run by UTMB 2025 – 25km JAT KRANJSKA GORA – top 10 moški",
+          "race": "julian-alps-trail-run-by-utmb",
+          "similarity": 0.769223593748327
+        },
+        {
+          "title": "Julian Alps Trail Run by UTMB 2023 – 25km KRANJSKA GORA TRAIL – top 10 moški",
+          "race": "julian-alps-trail-run-by-utmb",
+          "similarity": 0.766715021933917
+        },
+        {
+          "title": "Julian Alps Trail Run by UTMB 2026 – 25km JAT KRANJSKA GORA TRAIL – top 10 moški",
+          "race": "julian-alps-trail-run-by-utmb",
+          "similarity": 0.759273835355687
+        },
+        {
+          "title": "Julian Alps Trail Run by UTMB 2024 – 80km JAT LAKE BLED – top 10 moški",
+          "race": "julian-alps-trail-run-by-utmb",
+          "similarity": 0.755404443193013
+        }
+      ]
+    }
+  ]
+}

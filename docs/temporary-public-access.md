@@ -1,6 +1,6 @@
 # Začasni javni dostop
 
-`utils/siteAccess.ts` vsebuje `publicPreviewEnabled = true`.
+`utils/siteAccess.ts` trenutno vsebuje `publicPreviewEnabled = false`: prijava in zaščita dostopa sta obnovljeni. Spodaj je opisan izključen začasni način.
 
 V tem načinu navadne strani ne zahtevajo prijave. `/profil` prikazuje »Prijava še ni mogoča. Stran je v izdelavi.« Obstoječa implementacija računa je ohranjena v `components/profile/ProfileAccount.vue`.
 

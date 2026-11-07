@@ -54,13 +54,12 @@ useHead({
         <RunnerPortrait :image="runner.image" :name="runner.name" />
       </div>
       <div>
-        <RunnerProfileEditor :runner="runner" @saved="runnerSaved" />
         <p class="eyebrow">
-          {{ runner.location }}<template v-if="runner.club"> · {{ runner.club }}</template>
+          {{ runner.location }}<template v-if="runner.club">{{ runner.location ? ' · ' : '' }}{{ runner.club }}</template>
         </p>
         <h1>{{ runner.name }}</h1>
-        <p class="runner-intro">{{ runner.bio }}</p>
-        <p class="runner-description">{{ runner.longDescription }}</p>
+        <p v-if="runner.bio" class="runner-intro">{{ runner.bio }}</p>
+        <p v-if="runner.longDescription" class="runner-description">{{ runner.longDescription }}</p>
         <p v-if="runner.favouriteDistance" class="runner-favourite-distance">
           Najljubša razdalja: {{ runner.favouriteDistance }}
         </p>

@@ -1,0 +1,5504 @@
+{
+  "records": 484,
+  "preview": [
+    {
+      "event": "Ultra Trail Vipava Valley 2025",
+      "route": "160 - EMPEROR powered by Al!VE",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Mathias Deutschbauer",
+        "time": "17:45:40"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2025",
+      "route": "160 - EMPEROR powered by Al!VE",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Emma Stuart",
+        "time": "20:44:18"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2025",
+      "route": "100 - CENTURION SCARPA",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jan Božič",
+        "time": "13:11:13"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2025",
+      "route": "100 - CENTURION SCARPA",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Marija Šeme",
+        "time": "15:49:46"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2025",
+      "route": "60 - GLADIATOR KOLEKTOR",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Philipp Ausserhofer",
+        "time": "5:15:32"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2025",
+      "route": "60 - GLADIATOR KOLEKTOR",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Karolina Jelinkova",
+        "time": "6:16:25"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2025",
+      "route": "30 - LEGIONAR MLINOTEST",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Peter Frano",
+        "time": "2:41:55"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2025",
+      "route": "30 - LEGIONAR MLINOTEST",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Lucija Krkoč",
+        "time": "3:09:34"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2025",
+      "route": "15  - ASTERIX ERDINGER",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Sindi Trpin",
+        "time": "1:09:19"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2025",
+      "route": "15  - ASTERIX ERDINGER",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Lena Lupša",
+        "time": "1:20:47"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2024",
+      "route": "160 - EMPEROR",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Aleš Frlic",
+        "time": "19:06:52"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2024",
+      "route": "160 - EMPEROR",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Esther Fellhofer",
+        "time": "23:15:04"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2024",
+      "route": "100 - CENTURION",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Helio Fumo",
+        "time": "11:24:54"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2024",
+      "route": "100 - CENTURION",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Martina Klančnik Potrč",
+        "time": "13:21:09"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2024",
+      "route": "60 - GLADIATOR",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Marko Tratnik",
+        "time": "5:25:56"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2024",
+      "route": "60 - GLADIATOR",
+      "sex": "ženske",
+      "count": 11,
+      "winner": {
+        "rank": 1,
+        "name": "Petra Tratnik",
+        "time": "5:44:12"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2024",
+      "route": "30 - LEGIONAR",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Alex Baldaccini",
+        "time": "2:55:28"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2024",
+      "route": "30 - LEGIONAR",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Virág Weiler",
+        "time": "3:33:08"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2024",
+      "route": "15  - ASTERIX",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Vili Črv",
+        "time": "0:57:46"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2024",
+      "route": "15  - ASTERIX",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Maruša Cijan Brkič",
+        "time": "1:09:09"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2024",
+      "route": "CASTRA CITY RUN",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Vladislav Litvinchuk",
+        "time": "0:43:45"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2024",
+      "route": "CASTRA CITY RUN",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Julija Brus",
+        "time": "0:46:45"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2024",
+      "route": "100 - CENTURION",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Helio Fumo",
+        "time": "11:24:54"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2024",
+      "route": "100 - CENTURION",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Martina Klančnik Potrč",
+        "time": "13:21:09"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2026",
+      "route": "10 km - CASTRA CITY RUN FORD",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Tine Lavrenčič",
+        "time": "0:39:37"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2026",
+      "route": "10 km - CASTRA CITY RUN FORD",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Kristina Vanceta",
+        "time": "0:51:48"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2026",
+      "route": "15 km  - ASTERIX LA PRIMAFIT",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Aleš Svetina",
+        "time": "0:58:40"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2026",
+      "route": "15 km  - ASTERIX LA PRIMAFIT",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Ana Čufer",
+        "time": "1:03:04"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2026",
+      "route": "30 km - LEGIONAR MLINOTEST",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Lorenzo Beltrami",
+        "time": "2:32:57"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2026",
+      "route": "30 km - LEGIONAR MLINOTEST",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Lucija Krkoč",
+        "time": "2:53:24"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2026",
+      "route": "110 km - CENTURION SCARPA",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Janez Klančnik",
+        "time": "11:52:55"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2026",
+      "route": "110 km - CENTURION SCARPA",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Tina Šatej",
+        "time": "14:16:24"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2026",
+      "route": "160 km - EMPEROR PELICON",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Ivan Hrastovec",
+        "time": "18:13:01"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2026",
+      "route": "160 km - EMPEROR PELICON",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Paula Vrdoljak",
+        "time": "23:07:59"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2024",
+      "route": "Gorski Maraton 4 Občin 40+ km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Lapajne, Jošt",
+        "time": "4:28:36"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2024",
+      "route": "Gorski Maraton 4 Občin 40+ km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Laznik, Maja",
+        "time": "5:26:43"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2024",
+      "route": "Graparski Trail 20+ km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Strnad, Simon",
+        "time": "2:39:01"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2024",
+      "route": "Graparski Trail 20+ km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Hrovat, Meta",
+        "time": "3:02:13"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2024",
+      "route": "Rapallo Trail 10+ km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Vižintin, Žiga",
+        "time": "0:57:56"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2024",
+      "route": "Rapallo Trail 10+ km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Krkoč, Lucija",
+        "time": "0:47:38"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2024",
+      "route": "Ultra-Trail Pušeljc 100+ km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Škarja, Borut",
+        "time": "14:40:02"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2024",
+      "route": "Ultra-Trail Pušeljc 100+ km",
+      "sex": "ženske",
+      "count": 7,
+      "winner": {
+        "rank": 1,
+        "name": "Knafelj, Tajda",
+        "time": "16:05:31"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2024",
+      "route": "Ultra-Trail Pušeljc 70+ km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Hrastovec, Ivan",
+        "time": "7:49:43"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2024",
+      "route": "Ultra-Trail Pušeljc 70+ km",
+      "sex": "ženske",
+      "count": 8,
+      "winner": {
+        "rank": 1,
+        "name": "Jedrejčič, Giulia",
+        "time": "10:11:53"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2026",
+      "route": "Ultra-Trail Pušeljc 100+ km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Nastran, Andrej",
+        "time": "14:08:58"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2026",
+      "route": "Ultra-Trail Pušeljc 100+ km",
+      "sex": "ženske",
+      "count": 7,
+      "winner": {
+        "rank": 1,
+        "name": "Seliskar, Tjasa",
+        "time": "18:03:27"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2026",
+      "route": "Ultra-Trail Pušeljc 70+ km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Kolenc, Matej",
+        "time": "8:49:56"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2026",
+      "route": "Ultra-Trail Pušeljc 70+ km",
+      "sex": "ženske",
+      "count": 8,
+      "winner": {
+        "rank": 1,
+        "name": "Šatej, Tina",
+        "time": "9:30:46"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2026",
+      "route": "Gorski Maraton 4 Občin 40+ km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Tavčar, Luka",
+        "time": "4:38:19"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2026",
+      "route": "Gorski Maraton 4 Občin 40+ km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Meglič, Meta",
+        "time": "5:55:03"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2026",
+      "route": "Graparski Trail 20+ km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Oblak, Tomaž",
+        "time": "2:26:37"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2026",
+      "route": "Graparski Trail 20+ km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Mihelčič, Nastja",
+        "time": "2:56:13"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2026",
+      "route": "Rapallo Trail 10+ km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Klanjšček, Klemen",
+        "time": "0:55:06"
+      }
+    },
+    {
+      "event": "Podbrdo Trail Running Festival 2026",
+      "route": "Rapallo Trail 10+ km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Smonkar, Jerneja",
+        "time": "1:07:44"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2026",
+      "route": "K24 Ultra Trail 100 km Powered by HOKA",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jon Lihteneger Vidmajer",
+        "time": "11:47:31"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2026",
+      "route": "K24 Ultra Trail 100 km Powered by HOKA",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Martina Klančnik Potrč",
+        "time": "14:03:33"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2026",
+      "route": "K24 Ultra trail 50 km Powered by Compressport",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Žan Žepič",
+        "time": "04:27:01"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2026",
+      "route": "K24 Ultra trail 50 km Powered by Compressport",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Vika Koban",
+        "time": "05:26:37"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2026",
+      "route": "K24 Ultra Trail 24 km Powered by Incrediwear",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Tomaž Oblak",
+        "time": "01:55:16"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2026",
+      "route": "K24 Ultra Trail 24 km Powered by Incrediwear",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Rosanda Dovnik",
+        "time": "02:25:02"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2026",
+      "route": "K24 Ultra Trail 10 km Powered by Center fizioterapije Šepul",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Tadej Vehovec",
+        "time": "47:48"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2026",
+      "route": "K24 Ultra Trail 10 km Powered by Center fizioterapije Šepul",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Maruša Cijan Brkič",
+        "time": "1:03:23"
+      }
+    },
+    {
+      "event": "Podbrdo trail 2025",
+      "route": "Ultra-Trail Pušeljc 100+ km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Frlic, Aleš",
+        "time": "12:58:17"
+      }
+    },
+    {
+      "event": "Podbrdo trail 2025",
+      "route": "Ultra-Trail Pušeljc 100+ km",
+      "sex": "ženske",
+      "count": 4,
+      "winner": {
+        "rank": 1,
+        "name": "Klančnik Potrč, Martina",
+        "time": "15:11:42"
+      }
+    },
+    {
+      "event": "Podbrdo trail 2025",
+      "route": "Ultra-Trail Pušeljc 70+ km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Oblak, Jaka",
+        "time": "7:43:18"
+      }
+    },
+    {
+      "event": "Podbrdo trail 2025",
+      "route": "Ultra-Trail Pušeljc 70+ km",
+      "sex": "ženske",
+      "count": 6,
+      "winner": {
+        "rank": 1,
+        "name": "Hribernik, Nežka",
+        "time": "11:00:51"
+      }
+    },
+    {
+      "event": "Podbrdo trail 2025",
+      "route": "Gorski Maraton 4 Občin 40+ km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Žižmond, Tine",
+        "time": "4:13:10"
+      }
+    },
+    {
+      "event": "Podbrdo trail 2025",
+      "route": "Gorski Maraton 4 Občin 40+ km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jolič, Barbara",
+        "time": "5:09:56"
+      }
+    },
+    {
+      "event": "Podbrdo trail 2025",
+      "route": "Graparski Trail 20+ km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Konečnik, Frenk",
+        "time": "2:22:18"
+      }
+    },
+    {
+      "event": "Podbrdo trail 2025",
+      "route": "Graparski Trail 20+ km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Muha, Teja",
+        "time": "3:08:58"
+      }
+    },
+    {
+      "event": "Podbrdo trail 2025",
+      "route": "Rapallo Trail 10+ km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Bregar, Gašper",
+        "time": "0:43:37"
+      }
+    },
+    {
+      "event": "Podbrdo trail 2025",
+      "route": "Rapallo Trail 10+ km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Mrkusic, Mattea",
+        "time": "1:08:32"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2024",
+      "route": "K24 Ultra Trail 100 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jon Lihteneger Vidmajer",
+        "time": "11:35:12"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2024",
+      "route": "K24 Ultra Trail 100 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Aja Kozinc",
+        "time": "13:56:50"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2024",
+      "route": "K24 Ultra trail 50 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Žan Žepič",
+        "time": "4:29:39"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2024",
+      "route": "K24 Ultra trail 50 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Martina Klančnik Potrč",
+        "time": "5:35:45"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2024",
+      "route": "K24 Ultra Trail 24 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Johan Goubau",
+        "time": "2:03:34"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2024",
+      "route": "K24 Ultra Trail 24 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Rebeka Petrovčič",
+        "time": "2:27:23"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2025",
+      "route": "K24 Ultra Trail 100 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jon Lihteneger Vidmajer",
+        "time": "11:24:13"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2025",
+      "route": "K24 Ultra Trail 100 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Martina Klančnik Potrč",
+        "time": "13:01:39"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2025",
+      "route": "K24 Ultra trail 50 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Urban Jereb",
+        "time": "4:32:31"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2025",
+      "route": "K24 Ultra trail 50 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Anna Kratki",
+        "time": "5:54:59"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2025",
+      "route": "K24 Ultra Trail 24 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Dimitri Chapelle",
+        "time": "1:55:30"
+      }
+    },
+    {
+      "event": "K24 Ultra Trail 2025",
+      "route": "K24 Ultra Trail 24 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Klara Velepec",
+        "time": "2:18:47"
+      }
+    },
+    {
+      "event": "KOČEVSKO OUTDOOR FESTIVAL 2026",
+      "route": "60 km - I FEEL SLOVENIA Bear Trail (59,4km / +1961m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Erik MAVSER",
+        "time": "5:35:02"
+      }
+    },
+    {
+      "event": "KOČEVSKO OUTDOOR FESTIVAL 2026",
+      "route": "60 km - I FEEL SLOVENIA Bear Trail (59,4km / +1961m)",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Sara MIŠMAŠ",
+        "time": "7:59:38"
+      }
+    },
+    {
+      "event": "KOČEVSKO OUTDOOR FESTIVAL 2026",
+      "route": "30 km - Salomon Wolf Trail (29,2km/ +1016m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Sandor SZABO",
+        "time": "2:28:45"
+      }
+    },
+    {
+      "event": "KOČEVSKO OUTDOOR FESTIVAL 2026",
+      "route": "30 km - Salomon Wolf Trail (29,2km/ +1016m)",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Aja KOZINC",
+        "time": "3:12:33"
+      }
+    },
+    {
+      "event": "KOČEVSKO OUTDOOR FESTIVAL 2026",
+      "route": "15 km SPORT VISION Lynx Trail (14,1km / +411m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Samo VIRANT",
+        "time": "1:02:06"
+      }
+    },
+    {
+      "event": "KOČEVSKO OUTDOOR FESTIVAL 2026",
+      "route": "15 km SPORT VISION Lynx Trail (14,1km / +411m)",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Kitti POSZTOS",
+        "time": "1:06:42"
+      }
+    },
+    {
+      "event": "KOČEVSKO OUTDOOR FESTIVAL 2026",
+      "route": "10 km KinVital Fox Trail (14,1km / +411m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jan KRIZ",
+        "time": "0:43:09"
+      }
+    },
+    {
+      "event": "KOČEVSKO OUTDOOR FESTIVAL 2026",
+      "route": "10 km KinVital Fox Trail (14,1km / +411m)",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Ingrid KUNSTELJ",
+        "time": "1:00:03"
+      }
+    },
+    {
+      "event": "KOČEVSKO OUTDOOR FESTIVAL 2026",
+      "route": "5 km SAVA Bambi Trail (5km / +70m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Juš LEVIČNIK",
+        "time": "0:29:10"
+      }
+    },
+    {
+      "event": "KOČEVSKO OUTDOOR FESTIVAL 2026",
+      "route": "5 km SAVA Bambi Trail (5km / +70m)",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Nika DUBROVIĆ",
+        "time": "0:36:01"
+      }
+    },
+    {
+      "event": "KOČEVSKO OUTDOOR FESTIVAL 2026",
+      "route": "LA PRIMAFIT Vertikal Fridrihštajn (2,6km / +475m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jan KRIŽ",
+        "time": "0:22:03"
+      }
+    },
+    {
+      "event": "KOČEVSKO OUTDOOR FESTIVAL 2026",
+      "route": "LA PRIMAFIT Vertikal Fridrihštajn (2,6km / +475m)",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Jerneja KOŽAR",
+        "time": "0:28:36"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2024",
+      "route": "60 km - I FEEL SLOVENIA Bear Trail (59,4km / +1961m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Nejc BLATNIK",
+        "time": "5:54:27"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2024",
+      "route": "60 km - I FEEL SLOVENIA Bear Trail (59,4km / +1961m)",
+      "sex": "ženske",
+      "count": 9,
+      "winner": {
+        "rank": 1,
+        "name": "Cornelia OSWALD",
+        "time": "6:49:43"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2024",
+      "route": "30 km - Salomon Golden Trail National Series SLO/CRO/HUN (29,2km/ +1016m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Sandor SZABO",
+        "time": "2:24:17"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2024",
+      "route": "30 km - Salomon Golden Trail National Series SLO/CRO/HUN (29,2km/ +1016m)",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Špela GONZA",
+        "time": "2:53:36"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2024",
+      "route": "15 km Lynx trail (14,1km / +411m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Matija LISEC",
+        "time": "1:01:34"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2024",
+      "route": "15 km Lynx trail (14,1km / +411m)",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Barbara JOLIČ",
+        "time": "1:07:43"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2024",
+      "route": "10 km FORD Fox Trail (9,8km / +117m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Filippo PAGAVINO",
+        "time": "0:46:44"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2024",
+      "route": "10 km FORD Fox Trail (9,8km / +117m)",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Ingrid KUNSTELJ",
+        "time": "1:00:47"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2024",
+      "route": "5 km APRES OUTDOOR Bambi Trail (5km / +70m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Sandor GRONAI",
+        "time": "0:28:42"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2024",
+      "route": "5 km APRES OUTDOOR Bambi Trail (5km / +70m)",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Maria Isabel HOYOS LAPAJNE",
+        "time": "0:34:14"
+      }
+    },
+    {
+      "event": "Knap trail 2025",
+      "route": "T ́ DOUGA 51 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Aleš Svetina",
+        "time": "4:32:15"
+      }
+    },
+    {
+      "event": "Knap trail 2025",
+      "route": "T ́ DOUGA 51 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Barbara Jolič",
+        "time": "5:17:49"
+      }
+    },
+    {
+      "event": "Knap trail 2025",
+      "route": "T ́ SREDNA 30 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Janez Klančnik",
+        "time": "2:35:13"
+      }
+    },
+    {
+      "event": "Knap trail 2025",
+      "route": "T ́ SREDNA 30 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Franziska Althaus",
+        "time": "2:39:32"
+      }
+    },
+    {
+      "event": "Knap trail 2025",
+      "route": "T ́ KRATKA 16 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Tim Seničar",
+        "time": "1:22:34"
+      }
+    },
+    {
+      "event": "Knap trail 2025",
+      "route": "T ́ KRATKA 16 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Neja Božič Ćoralić",
+        "time": "1:47:18"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2025",
+      "route": "60 km - I FEEL SLOVENIA Bear Trail (59,4km / +1961m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jure OREHEK",
+        "time": "5:44:48"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2025",
+      "route": "60 km - I FEEL SLOVENIA Bear Trail (59,4km / +1961m)",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Vika KOBAN",
+        "time": "7:06:56"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2025",
+      "route": "30 km - Salomon Wolf Trail (29,2km/ +1016m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Žan ŽEPIČ",
+        "time": "2:31:39"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2025",
+      "route": "30 km - Salomon Wolf Trail (29,2km/ +1016m)",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Lucija KRKOČ",
+        "time": "2:41:31"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2025",
+      "route": "15 km SPORT VISION Lynx Trail (14,1km / +411m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Benjamin ČRV",
+        "time": "1:03:55"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2025",
+      "route": "15 km SPORT VISION Lynx Trail (14,1km / +411m)",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Nuša MALI",
+        "time": "1:09:25"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2025",
+      "route": "10 km Ford Fox Trail (14,1km / +411m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Peter VIDMAR",
+        "time": "0:47:20"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2025",
+      "route": "10 km Ford Fox Trail (14,1km / +411m)",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Elena HAUSCHILD",
+        "time": "0:52:00"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2025",
+      "route": "5 km TRIGLAV Bambi Trail (5km / +70m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Anže KEJŽAR",
+        "time": "0:27:34"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2025",
+      "route": "5 km TRIGLAV Bambi Trail (5km / +70m)",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Maria I. HOYOS LAPAJNE",
+        "time": "0:31:43"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2025",
+      "route": "Selectbox Vertical Fridrihštajn (9,8km / +117m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Stanko JANŽEKOVIČ",
+        "time": "0:20:14"
+      }
+    },
+    {
+      "event": "Kočevsko outdoor festival 2025",
+      "route": "Selectbox Vertical Fridrihštajn (9,8km / +117m)",
+      "sex": "ženske",
+      "count": 4,
+      "winner": {
+        "rank": 1,
+        "name": "Jerneja KOŽAR",
+        "time": "0:28:58"
+      }
+    },
+    {
+      "event": "Knap Trail 2026",
+      "route": "T ́ DOUGA 50 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Ivan Hrastovec",
+        "time": "5:36:42"
+      }
+    },
+    {
+      "event": "Knap Trail 2026",
+      "route": "T ́ DOUGA 50 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Rebeka Petrovčič",
+        "time": "6:27:28"
+      }
+    },
+    {
+      "event": "Knap Trail 2026",
+      "route": "T ́ SREDNA 30 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Klemen Štular",
+        "time": "2:46:14"
+      }
+    },
+    {
+      "event": "Knap Trail 2026",
+      "route": "T ́ SREDNA 30 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Lucija Krkoč",
+        "time": "3:00:35"
+      }
+    },
+    {
+      "event": "Knap Trail 2026",
+      "route": "T ́ KRATKA 16 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Klemen Jančič",
+        "time": "1:38:00"
+      }
+    },
+    {
+      "event": "Knap Trail 2026",
+      "route": "T ́ KRATKA 16 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Klara Špeh",
+        "time": "1:50:49"
+      }
+    },
+    {
+      "event": "4. Kriška gora trail 2025",
+      "route": "GAMS trail 11 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Gašper Bregar",
+        "time": "1:13:29"
+      }
+    },
+    {
+      "event": "4. Kriška gora trail 2025",
+      "route": "GAMS trail 11 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Karmen Klančnik Pobežin",
+        "time": "1:29:09"
+      }
+    },
+    {
+      "event": "4. Kriška gora trail 2025",
+      "route": "MUFLON trail 21 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Luka Kovačič",
+        "time": "2:20:43"
+      }
+    },
+    {
+      "event": "4. Kriška gora trail 2025",
+      "route": "MUFLON trail 21 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Klara Velepec",
+        "time": "2:57:31"
+      }
+    },
+    {
+      "event": "4. Kriška gora trail 2025",
+      "route": "KOŠUTA trail 50km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Ivan Hrastovec",
+        "time": "4:57:21"
+      }
+    },
+    {
+      "event": "4. Kriška gora trail 2025",
+      "route": "KOŠUTA trail 50km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Meta Hrovat",
+        "time": "5:55:26"
+      }
+    },
+    {
+      "event": "5. Kriška gora Trail 2026",
+      "route": "KOŠUTA trail 50 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jaka Oblak",
+        "time": "4:54:26"
+      }
+    },
+    {
+      "event": "5. Kriška gora Trail 2026",
+      "route": "KOŠUTA trail 50 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Vika Koban",
+        "time": "6:28:21"
+      }
+    },
+    {
+      "event": "5. Kriška gora Trail 2026",
+      "route": "MUFLON trail 20 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jaka Bostner",
+        "time": "2:29:36"
+      }
+    },
+    {
+      "event": "5. Kriška gora Trail 2026",
+      "route": "MUFLON trail 20 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Dominika Zupančič Valant",
+        "time": "2:50:04"
+      }
+    },
+    {
+      "event": "5. Kriška gora Trail 2026",
+      "route": "GAMS trail 10 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Blaž Tehovnik",
+        "time": "1:19:09"
+      }
+    },
+    {
+      "event": "5. Kriška gora Trail 2026",
+      "route": "GAMS trail 10 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Živa Štefe",
+        "time": "1:34:01"
+      }
+    },
+    {
+      "event": "5. Kriška gora Trail 2026",
+      "route": "Vertikala 4 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Luka Kovačič",
+        "time": "34:25"
+      }
+    },
+    {
+      "event": "5. Kriška gora Trail 2026",
+      "route": "Vertikala 4 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Klara Velepec",
+        "time": "41:03"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2026",
+      "route": "Ford 35 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Luka Mesarec",
+        "time": "2:53:46"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2026",
+      "route": "Ford 35 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Natalia Gaik",
+        "time": "3:18:01"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2026",
+      "route": "La Primafit 25km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Matjaž Trkman",
+        "time": "2:23:31"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2026",
+      "route": "La Primafit 25km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Neja Božič Ćoralić",
+        "time": "2:56:04"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2026",
+      "route": "Adidas Terrex 15km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Krunoslav Kovaček",
+        "time": "1:11:16"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2026",
+      "route": "Adidas Terrex 15km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Noémi Vancsó",
+        "time": "1:14:58"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2026",
+      "route": "Continental 10km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Danijel Peček",
+        "time": "50:32"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2026",
+      "route": "Continental 10km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Edita Gashi",
+        "time": "1:04:16"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2026",
+      "route": "Soča 5 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Urban Novak",
+        "time": "19:56"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2026",
+      "route": "Soča 5 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Marta Haus",
+        "time": "26:08"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2026",
+      "route": "Triglav VERTIKAL Run",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Luka Kovačič",
+        "time": "9:18"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2026",
+      "route": "Triglav VERTIKAL Run",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Rebecca Moik",
+        "time": "12:40"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2024",
+      "route": "Abba nutrition 5 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Luka Manfreda",
+        "time": "0:19:39"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2024",
+      "route": "Abba nutrition 5 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Julija Brus",
+        "time": "0:20:37"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2024",
+      "route": "Continental 10km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Gergő Simák",
+        "time": "1:02:08"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2024",
+      "route": "Continental 10km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Anja Mandeljc",
+        "time": "1:00:59"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2024",
+      "route": "Adidas Terrex 15km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Miha Ličef",
+        "time": "1:04:09"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2024",
+      "route": "Adidas Terrex 15km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Tajda Tornič",
+        "time": "1:21:04"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2024",
+      "route": "Triglav 25km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Nejc Uršič",
+        "time": "2:19:23"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2024",
+      "route": "Triglav 25km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Nina Gubanc",
+        "time": "2:33:06"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2024",
+      "route": "Ford 35 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Uroš Kožar",
+        "time": "3:07:15"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2024",
+      "route": "Ford 35 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Katarina Pišotek",
+        "time": "3:28:04"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2024",
+      "route": "I Feel Slovenia 50 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Klemen Štular",
+        "time": "5:20:00"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2024",
+      "route": "I Feel Slovenia 50 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Nora Juhasz",
+        "time": "5:50:23"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2024",
+      "route": "Oshee VERTIKAL Run",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Luka Tavčar",
+        "time": "0:48:07"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2024",
+      "route": "Oshee VERTIKAL Run",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Agata Majewska",
+        "time": "0:56:03"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2025",
+      "route": "Hempika 5 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Urban Novak",
+        "time": "0:17:24"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2025",
+      "route": "Hempika 5 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Cerys Wright",
+        "time": "0:19:35"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2025",
+      "route": "Continental 10km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Josef Babák",
+        "time": "0:51:06"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2025",
+      "route": "Continental 10km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Anja Mandeljc",
+        "time": "0:56:41"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2025",
+      "route": "Adidas Terrex 15km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Vili Črv",
+        "time": "0:57:33"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2025",
+      "route": "Adidas Terrex 15km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Maruša Cijan Brkič",
+        "time": "1:12:19"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2025",
+      "route": "Soča 25km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Nejc Uršič",
+        "time": "2:20:25"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2025",
+      "route": "Soča 25km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Sara Masnik",
+        "time": "2:59:06"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2025",
+      "route": "Ford 35 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jure Orehek",
+        "time": "2:55:09"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2025",
+      "route": "Ford 35 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Kitti Posztos",
+        "time": "3:07:47"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2025",
+      "route": "I Feel Slovenia 50 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Dimitri Chapelle",
+        "time": "5:00:09"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2025",
+      "route": "I Feel Slovenia 50 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Monika Kusendová",
+        "time": "6:12:34"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2025",
+      "route": "Triglav VERTIKAL Run",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Stanko Janžekovič",
+        "time": "0:44:53"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2025",
+      "route": "Triglav VERTIKAL Run",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Annika Meuser",
+        "time": "1:02:08"
+      }
+    },
+    {
+      "event": "OBALA Ultra Trail 2024 powered by I FEEL SLOVENIA",
+      "route": "Obala Ultra trail 108 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jon Lihteneger Vidmajer",
+        "time": "10:32:08"
+      }
+    },
+    {
+      "event": "OBALA Ultra Trail 2024 powered by I FEEL SLOVENIA",
+      "route": "Obala Ultra trail 108 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Martina Klancnik Potrc",
+        "time": "12:13:08"
+      }
+    },
+    {
+      "event": "OBALA Ultra Trail 2024 powered by I FEEL SLOVENIA",
+      "route": "Obala Ultra trail 65 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Dimitri Chapelle",
+        "time": "5:43:11"
+      }
+    },
+    {
+      "event": "OBALA Ultra Trail 2024 powered by I FEEL SLOVENIA",
+      "route": "Obala Ultra trail 65 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Anna Leśniak",
+        "time": "7:17:16"
+      }
+    },
+    {
+      "event": "OBALA Ultra Trail 2024 powered by I FEEL SLOVENIA",
+      "route": "Obala trail 35 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jure Orehek",
+        "time": "2:37:27"
+      }
+    },
+    {
+      "event": "OBALA Ultra Trail 2024 powered by I FEEL SLOVENIA",
+      "route": "Obala trail 35 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Cornelia Oswald",
+        "time": "3:09:48"
+      }
+    },
+    {
+      "event": "OBALA Ultra Trail 2024 powered by I FEEL SLOVENIA",
+      "route": "Borotalco trail 18 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Peter Kastelic",
+        "time": "1:22:06"
+      }
+    },
+    {
+      "event": "OBALA Ultra Trail 2024 powered by I FEEL SLOVENIA",
+      "route": "Borotalco trail 18 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Maruša Cijan Brkič",
+        "time": "1:31:20"
+      }
+    },
+    {
+      "event": "OBALA Ultra Trail 2024 powered by I FEEL SLOVENIA",
+      "route": "Rio Mare 12 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Janez Žen",
+        "time": "0:52:24"
+      }
+    },
+    {
+      "event": "OBALA Ultra Trail 2024 powered by I FEEL SLOVENIA",
+      "route": "Rio Mare 12 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Ana Čufer",
+        "time": "0:53:47"
+      }
+    },
+    {
+      "event": "JULIAN ALPS TRAIL RUN BY UTMB 2026",
+      "route": "10km JAT FUNNY TRAIL NEXT GEN",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Nicolò Stori",
+        "time": "52:07"
+      }
+    },
+    {
+      "event": "JULIAN ALPS TRAIL RUN BY UTMB 2026",
+      "route": "10km JAT FUNNY TRAIL NEXT GEN",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Julija Brus",
+        "time": "55:52"
+      }
+    },
+    {
+      "event": "JULIAN ALPS TRAIL RUN BY UTMB 2026",
+      "route": "10km JAT FUNNY TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Brendan Forrester",
+        "time": "43:06"
+      }
+    },
+    {
+      "event": "JULIAN ALPS TRAIL RUN BY UTMB 2026",
+      "route": "10km JAT FUNNY TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Katja Kosmatin Bajić",
+        "time": "55:50"
+      }
+    },
+    {
+      "event": "JULIAN ALPS TRAIL RUN BY UTMB 2026",
+      "route": "15km JAT INTERSPORT SPEED TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Samuel Demetz",
+        "time": "1:09:17"
+      }
+    },
+    {
+      "event": "JULIAN ALPS TRAIL RUN BY UTMB 2026",
+      "route": "15km JAT INTERSPORT SPEED TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Manca Mlekuž",
+        "time": "1:23:03"
+      }
+    },
+    {
+      "event": "JULIAN ALPS TRAIL RUN BY UTMB 2026",
+      "route": "25km JAT KRANJSKA GORA TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Vili Črv",
+        "time": "1:49:00"
+      }
+    },
+    {
+      "event": "JULIAN ALPS TRAIL RUN BY UTMB 2026",
+      "route": "25km JAT KRANJSKA GORA TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Klara Velepec",
+        "time": "2:00:36"
+      }
+    },
+    {
+      "event": "JULIAN ALPS TRAIL RUN BY UTMB 2026",
+      "route": "50km JAT SKY TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Dominik Hohenleitner",
+        "time": "4:38:05"
+      }
+    },
+    {
+      "event": "JULIAN ALPS TRAIL RUN BY UTMB 2026",
+      "route": "50km JAT SKY TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Greta García Morán",
+        "time": "5:21:20"
+      }
+    },
+    {
+      "event": "JULIAN ALPS TRAIL RUN BY UTMB 2026",
+      "route": "80km JAT LAKE BLED",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Marcel Fabian",
+        "time": "7:29:01"
+      }
+    },
+    {
+      "event": "JULIAN ALPS TRAIL RUN BY UTMB 2026",
+      "route": "80km JAT LAKE BLED",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Sara Rebekka Faro Linde",
+        "time": "8:40:16"
+      }
+    },
+    {
+      "event": "JULIAN ALPS TRAIL RUN BY UTMB 2026",
+      "route": "120km I FEEL SLOVENIA  JAT ULTRA TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Mathias Deutschbauer",
+        "time": "13:03:05"
+      }
+    },
+    {
+      "event": "JULIAN ALPS TRAIL RUN BY UTMB 2026",
+      "route": "120km I FEEL SLOVENIA  JAT ULTRA TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Hélène Dassy",
+        "time": "15:37:10"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2024",
+      "route": "10km JAT TRAIL ABBA NUTRITION",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Tadej Vehovec",
+        "time": "44:35"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2024",
+      "route": "10km JAT TRAIL ABBA NUTRITION",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Julija Brus",
+        "time": "53:44"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2024",
+      "route": "15km JAT  INTERSPORT SPEED TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Dusan Krstic",
+        "time": "1:14:01"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2024",
+      "route": "15km JAT  INTERSPORT SPEED TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Aleksandra Jędrzejewska",
+        "time": "1:19:53"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2024",
+      "route": "25km JAT KRANJSKA GORA",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Patrik Akos Juhasz",
+        "time": "1:48:33"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2024",
+      "route": "25km JAT KRANJSKA GORA",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Franziska Althaus",
+        "time": "2:00:10"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2024",
+      "route": "50km JAT SKY TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Francesco Puppi",
+        "time": "4:31:15"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2024",
+      "route": "50km JAT SKY TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Eliska Sieglova",
+        "time": "6:23:21"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2024",
+      "route": "80km JAT LAKE BLED",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Zan Zepic",
+        "time": "7:05:33"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2024",
+      "route": "80km JAT LAKE BLED",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Agate Armane",
+        "time": "8:28:51"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2024",
+      "route": "120km I FEEL SLOVENIA JAT ULTRA TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Aleš Svetina",
+        "time": "12:43:54"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2024",
+      "route": "120km I FEEL SLOVENIA JAT ULTRA TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Paulina Krawczak",
+        "time": "14:09:23"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2025 powered by I Feel Slovenia",
+      "route": "Obala Ultra trail 108 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Patrik Milata",
+        "time": "9:24:42"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2025 powered by I Feel Slovenia",
+      "route": "Obala Ultra trail 108 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Martina Klančnik Potrč",
+        "time": "11:47:07"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2025 powered by I Feel Slovenia",
+      "route": "Obala Ultra trail 64 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Žan Žepič",
+        "time": "5:09:24"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2025 powered by I Feel Slovenia",
+      "route": "Obala Ultra trail 64 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Agnieszka Tatarek-Konik",
+        "time": "6:35:44"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2025 powered by I Feel Slovenia",
+      "route": "Obala trail 35 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Primož Porenta",
+        "time": "2:41:42"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2025 powered by I Feel Slovenia",
+      "route": "Obala trail 35 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Nika Jančič",
+        "time": "3:11:21"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2025 powered by I Feel Slovenia",
+      "route": "Obala trail 17 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Elis Filipič",
+        "time": "1:12:16"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2025 powered by I Feel Slovenia",
+      "route": "Obala trail 17 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Maruša Cijan Brkič",
+        "time": "1:16:27"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2025 powered by I Feel Slovenia",
+      "route": "Obala trail 11 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jernej Demšar",
+        "time": "0:43:47"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2025 powered by I Feel Slovenia",
+      "route": "Obala trail 11 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Julija Brus",
+        "time": "0:46:26"
+      }
+    },
+    {
+      "event": "Haloze Trail 2026",
+      "route": "Srednja 16 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Emil Idoski",
+        "time": "1:11:57"
+      }
+    },
+    {
+      "event": "Haloze Trail 2026",
+      "route": "Srednja 16 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Deja Jakopič",
+        "time": "1:24:30"
+      }
+    },
+    {
+      "event": "Haloze Trail 2026",
+      "route": "Dolga 27 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Erik Mavser",
+        "time": "2:09:30"
+      }
+    },
+    {
+      "event": "Haloze Trail 2026",
+      "route": "Dolga 27 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Klara Velepec",
+        "time": "2:16:55"
+      }
+    },
+    {
+      "event": "Ribnica Trail 2026",
+      "route": "Ribež`n 40 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Sara Punčec",
+        "time": "5:12:56"
+      }
+    },
+    {
+      "event": "Ribnica Trail 2026",
+      "route": "Ribež`n 40 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Erik Mavser",
+        "time": "3:49:41"
+      }
+    },
+    {
+      "event": "Ribnica Trail 2026",
+      "route": "Čebular`ca 25 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Kitti Posztos",
+        "time": "2:18:10"
+      }
+    },
+    {
+      "event": "Ribnica Trail 2026",
+      "route": "Čebular`ca 25 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Sandor Szabo",
+        "time": "1:56:14"
+      }
+    },
+    {
+      "event": "Ribnica Trail 2026",
+      "route": "Kuhavn`ca 12 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Klara Arko",
+        "time": "1:17:59"
+      }
+    },
+    {
+      "event": "Ribnica Trail 2026",
+      "route": "Kuhavn`ca 12 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Jure Kordiš",
+        "time": "1:10:03"
+      }
+    },
+    {
+      "event": "Ribnca Trail 2024",
+      "route": "Kuhavn`ca 12 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Maruša Cijan Brkič",
+        "time": "01:17:03"
+      }
+    },
+    {
+      "event": "Ribnca Trail 2024",
+      "route": "Kuhavn`ca 12 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Tadej Vehovec",
+        "time": "01:04:39"
+      }
+    },
+    {
+      "event": "Ribnca Trail 2024",
+      "route": "Čebular`ca 25 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Posztos Kitti",
+        "time": "02:06:35"
+      }
+    },
+    {
+      "event": "Ribnca Trail 2024",
+      "route": "Čebular`ca 25 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Josip Meštrić",
+        "time": "01:46:03"
+      }
+    },
+    {
+      "event": "Ribnca Trail 2024",
+      "route": "Ribež`n 40 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Katja Trop",
+        "time": "04:48:40"
+      }
+    },
+    {
+      "event": "Ribnca Trail 2024",
+      "route": "Ribež`n 40 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Jure Orehek",
+        "time": "03:32:51"
+      }
+    },
+    {
+      "event": "Ribnca Trail 2025",
+      "route": "Kuhavn`ca 12 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Maruša Cijan Brkič",
+        "time": "01:10:26"
+      }
+    },
+    {
+      "event": "Ribnca Trail 2025",
+      "route": "Kuhavn`ca 12 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Tadej Vehovec",
+        "time": "00:59:31"
+      }
+    },
+    {
+      "event": "Ribnca Trail 2025",
+      "route": "Čebular`ca 25 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Luciia Krkoč",
+        "time": "02:02:25"
+      }
+    },
+    {
+      "event": "Ribnca Trail 2025",
+      "route": "Čebular`ca 25 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Klemen Štular",
+        "time": "01:55:34"
+      }
+    },
+    {
+      "event": "Ribnca Trail 2025",
+      "route": "Ribež`n 40 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Vika Koban",
+        "time": "04:33:36"
+      }
+    },
+    {
+      "event": "Ribnca Trail 2025",
+      "route": "Ribež`n 40 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Boštjan Vidmar",
+        "time": "03:46:50"
+      }
+    },
+    {
+      "event": "Slovenski gozdarski trail 2026",
+      "route": "JELKA 14 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "David Šircelj",
+        "time": "1:05:39"
+      }
+    },
+    {
+      "event": "Slovenski gozdarski trail 2026",
+      "route": "JELKA 14 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Karin Rutar",
+        "time": "1:23:23"
+      }
+    },
+    {
+      "event": "Slovenski gozdarski trail 2026",
+      "route": "BUKEV 34 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Marko Tratnik",
+        "time": "2:33:21"
+      }
+    },
+    {
+      "event": "Slovenski gozdarski trail 2026",
+      "route": "BUKEV 34 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Tina Simončič",
+        "time": "4:34:39"
+      }
+    },
+    {
+      "event": "1. Slovenski gozdarski trail 2025",
+      "route": "JELKA 12 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Gašper Bevc",
+        "time": "1:08:00"
+      }
+    },
+    {
+      "event": "1. Slovenski gozdarski trail 2025",
+      "route": "JELKA 12 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Polona Hafner",
+        "time": "1:28:41"
+      }
+    },
+    {
+      "event": "1. Slovenski gozdarski trail 2025",
+      "route": "BUKEV 34 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Marko Tratnik",
+        "time": "2:38:39"
+      }
+    },
+    {
+      "event": "1. Slovenski gozdarski trail 2025",
+      "route": "BUKEV 34 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Karin Rutar",
+        "time": "4:38:44"
+      }
+    },
+    {
+      "event": "Lončarija teče 2026",
+      "route": "Potičnica (Trail 24km)",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Matej Letojne",
+        "time": "1:51:45"
+      }
+    },
+    {
+      "event": "Lončarija teče 2026",
+      "route": "Potičnica (Trail 24km)",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Rebeka Petrovčič",
+        "time": "2:19:23"
+      }
+    },
+    {
+      "event": "Lončarija teče 2026",
+      "route": "Lončar (10 km)",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Aleš Lindič",
+        "time": "33:06"
+      }
+    },
+    {
+      "event": "Lončarija teče 2026",
+      "route": "Lončar (10 km)",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Diana Daniela Peterlin",
+        "time": "43:19"
+      }
+    },
+    {
+      "event": "Velenje Trail 2025",
+      "route": "Mastodont (36km)",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Borut Škarja",
+        "time": "3:38:45"
+      }
+    },
+    {
+      "event": "Velenje Trail 2025",
+      "route": "Mastodont (36km)",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Vika Koban",
+        "time": "4:37:05"
+      }
+    },
+    {
+      "event": "Velenje Trail 2025",
+      "route": "Pozoj (18km)",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Marko Čretnik",
+        "time": "1:31:13"
+      }
+    },
+    {
+      "event": "Velenje Trail 2025",
+      "route": "Pozoj (18km)",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Nastja Mihelčič",
+        "time": "1:46:50"
+      }
+    },
+    {
+      "event": "Velenje trail 2024",
+      "route": "Mastodont (36km)",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Frenk Konecnik",
+        "time": "3:41:24"
+      }
+    },
+    {
+      "event": "Velenje trail 2024",
+      "route": "Mastodont (36km)",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Aja Kozinc",
+        "time": "4:26:50"
+      }
+    },
+    {
+      "event": "Velenje trail 2024",
+      "route": "Pozoj (18km)",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Marko Čretnik",
+        "time": "1:25:53"
+      }
+    },
+    {
+      "event": "Velenje trail 2024",
+      "route": "Pozoj (18km)",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Franziska Althaus",
+        "time": "1:33:20"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2026",
+      "route": "Triglav Trail Run - 101 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "PARIS Thomas",
+        "time": "16:18:43"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2026",
+      "route": "Triglav Lakes Race - 44 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "ŠTULAR Klemen",
+        "time": "4:28:17"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2026",
+      "route": "Triglav Lakes Race - 44 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "KOBAN Vika",
+        "time": "5:26:05"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2026",
+      "route": "Vrata Valley Race - 26 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "SCHÄLLER Lisa",
+        "time": "2:30:15"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2026",
+      "route": "Slovenian Alpine Museum Race- 14 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "NOVAK Aljoša",
+        "time": "59:08"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2026",
+      "route": "Slovenian Alpine Museum Race- 14 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "JURECZKO Monika",
+        "time": "1:28:36"
+      }
+    },
+    {
+      "event": "Lončarija teče 2024",
+      "route": "Potičnica (Trail 24km)",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Tomaž Zamedič",
+        "time": "2:06:26"
+      }
+    },
+    {
+      "event": "Lončarija teče 2024",
+      "route": "Potičnica (Trail 24km)",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Klavdija Korelec",
+        "time": "2:34:28"
+      }
+    },
+    {
+      "event": "Lončarija teče 2024",
+      "route": "22. Lončar (10 km)",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Jakob Medved",
+        "time": "31:16"
+      }
+    },
+    {
+      "event": "Lončarija teče 2024",
+      "route": "22. Lončar (10 km)",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Barbara Glažar",
+        "time": "41:12"
+      }
+    },
+    {
+      "event": "Lončarija teče 2025",
+      "route": "Potičnica (Trail 24km)",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Sašo Henigman",
+        "time": "1:52:19"
+      }
+    },
+    {
+      "event": "Lončarija teče 2025",
+      "route": "Potičnica (Trail 24km)",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Brina Štupica",
+        "time": "2:30:10"
+      }
+    },
+    {
+      "event": "Lončarija teče 2025",
+      "route": "Lončar (10 km)",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Matej Kralj",
+        "time": "31:32"
+      }
+    },
+    {
+      "event": "Lončarija teče 2025",
+      "route": "Lončar (10 km)",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Kim Ameršek",
+        "time": "36:51"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2024",
+      "route": "Triglav Trail Race - 78 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "VANCRAEYNEST Fedrik",
+        "time": "11:07:06"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2024",
+      "route": "Triglav Trail Race - 78 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "LOSONC Timea",
+        "time": "12:56:22"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2024",
+      "route": "Triglav Lakes Race - 44 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "KURINČIČ Jure",
+        "time": "4:57:30"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2024",
+      "route": "Triglav Lakes Race - 44 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "KLANČNIK POTRČ Martina",
+        "time": "5:32:15"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2024",
+      "route": "Vrata Valley Race - 26 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "MODRIJAN Ožbej",
+        "time": "2:38:43"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2024",
+      "route": "Vrata Valley Race - 26 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "WILLIAMS Phillipa",
+        "time": "2:43:02"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2024",
+      "route": "Slovenian Alpine Museum Run - 12 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "KEJŽAR Klemen",
+        "time": "55:22"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2024",
+      "route": "Slovenian Alpine Museum Run - 12 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "CIJAN BRKIČ Maruša",
+        "time": "59:42"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2025",
+      "route": "Triglav Trail Race - 78 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "RODDA Sam",
+        "time": "7:49:22"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2025",
+      "route": "Triglav Trail Race - 78 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "TOPOROWICZ Agata",
+        "time": "9:37:40"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2025",
+      "route": "Triglav Lakes Race - 44 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "ŠTULAR Klemen",
+        "time": "4:42:51"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2025",
+      "route": "Triglav Lakes Race - 44 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "BOKAL Špela",
+        "time": "5:30:07"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2025",
+      "route": "Vrata Valley Race - 26 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "PODGORNIK Miha",
+        "time": "2:17:48"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2025",
+      "route": "Vrata Valley Race - 26 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "VALANT Nataša",
+        "time": "2:57:13"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2025",
+      "route": "Slovenian Alpine Museum Run - 12 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "AZPIROZ Gorka",
+        "time": "55:11"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2025",
+      "route": "Slovenian Alpine Museum Run - 12 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "BIRÓ Bianka",
+        "time": "1:03:18"
+      }
+    },
+    {
+      "event": "Julian Alps Trail by UTMB 2022",
+      "route": "10km FUNNY TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Nejc Bešter",
+        "time": "0:52:03"
+      }
+    },
+    {
+      "event": "Julian Alps Trail by UTMB 2022",
+      "route": "10km FUNNY TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Maruša Cijan Brkič",
+        "time": "0:51:40"
+      }
+    },
+    {
+      "event": "Julian Alps Trail by UTMB 2022",
+      "route": "15km Adidas Terrex SPEED TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Vili Črv",
+        "time": "1:10:06"
+      }
+    },
+    {
+      "event": "Julian Alps Trail by UTMB 2022",
+      "route": "15km Adidas Terrex SPEED TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Aleksandra Bazułka",
+        "time": "1:23:53"
+      }
+    },
+    {
+      "event": "Julian Alps Trail by UTMB 2022",
+      "route": "30km Intersport SKY RACE",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Žan Žepič",
+        "time": "03:00:31"
+      }
+    },
+    {
+      "event": "Julian Alps Trail by UTMB 2022",
+      "route": "30km Intersport SKY RACE",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Caterina Stenta",
+        "time": "03:53:45"
+      }
+    },
+    {
+      "event": "Julian Alps Trail by UTMB 2022",
+      "route": "60km SKY TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jiří Petr",
+        "time": "05:40:57"
+      }
+    },
+    {
+      "event": "Julian Alps Trail by UTMB 2022",
+      "route": "60km SKY TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Anna Jansen",
+        "time": "06:51:53"
+      }
+    },
+    {
+      "event": "Julian Alps Trail by UTMB 2022",
+      "route": "100km ULTRA SKY TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jan Božič",
+        "time": "12:08:14"
+      }
+    },
+    {
+      "event": "Julian Alps Trail by UTMB 2022",
+      "route": "100km ULTRA SKY TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Nina Frelih",
+        "time": "14:39:25"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2021",
+      "route": "160 - EMPEROR",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Roman Ficek",
+        "time": "20:00:24"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2021",
+      "route": "160 - EMPEROR",
+      "sex": "ženske",
+      "count": 5,
+      "winner": {
+        "rank": 1,
+        "name": "Timea Losonc",
+        "time": "28:21:48"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2021",
+      "route": "100 - CENTURION",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jon Lihteneger Vidmajer",
+        "time": "13:05:47"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2021",
+      "route": "100 - CENTURION",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Alenka Pavc",
+        "time": "16:22:17"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2021",
+      "route": "50 - GLADIATOR",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Marko Tratnik",
+        "time": "04:34:01"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2021",
+      "route": "50 - GLADIATOR",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Petra Tratnik",
+        "time": "04:56:57"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2021",
+      "route": "30 - LEGIONAR AL!VE GTS",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Julien Delaris",
+        "time": "02:23:23"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2021",
+      "route": "30 - LEGIONAR AL!VE GTS",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Ana Čufer",
+        "time": "02:47:10"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2021",
+      "route": "13  - ASTERIX",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Nejc Uršič",
+        "time": "00:53:39"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2021",
+      "route": "13  - ASTERIX",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Lucija Krkoč",
+        "time": "00:54:05"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2025",
+      "route": "10km JAT FUNNY TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Tomaž Oblak",
+        "time": "43:44"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2025",
+      "route": "10km JAT FUNNY TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Maruša Cijan Brkič",
+        "time": "51:09"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2025",
+      "route": "15km JAT  INTERSPORT SPEED TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Adrian Branescu",
+        "time": "1:14:19"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2025",
+      "route": "15km JAT  INTERSPORT SPEED TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Julia Rath",
+        "time": "1:27:30"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2025",
+      "route": "25km JAT KRANJSKA GORA",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Wendelin Mörtendorfer",
+        "time": "1:45:16"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2025",
+      "route": "25km JAT KRANJSKA GORA",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Lucija Krkoc",
+        "time": "2:01:42"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2025",
+      "route": "50km JAT SKY TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Dawid Malina",
+        "time": "4:45:21"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2025",
+      "route": "50km JAT SKY TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Natalina Neuenschwander",
+        "time": "5:48:02"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2025",
+      "route": "80km JAT LAKE BLED",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Karol Sioła",
+        "time": "8:32:56"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2025",
+      "route": "80km JAT LAKE BLED",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Juli Brüning",
+        "time": "10:08:52"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2025",
+      "route": "120km I FEEL SLOVENIA JAT ULTRA TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Robert Hajnal",
+        "time": "13:57:49"
+      }
+    },
+    {
+      "event": "Julian Alps Trail Run by UTMB 2025",
+      "route": "120km I FEEL SLOVENIA JAT ULTRA TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Miria Meinheit",
+        "time": "17:16:46"
+      }
+    },
+    {
+      "event": "ULTRA TRAIL VIPAVA 2023",
+      "route": "170 - EMPEROR",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Anže Sobočan",
+        "time": "22:32:27"
+      }
+    },
+    {
+      "event": "ULTRA TRAIL VIPAVA 2023",
+      "route": "170 - EMPEROR",
+      "sex": "ženske",
+      "count": 9,
+      "winner": {
+        "rank": 1,
+        "name": "Esther Fellhofer",
+        "time": "24:33:21"
+      }
+    },
+    {
+      "event": "ULTRA TRAIL VIPAVA 2023",
+      "route": "100 - CENTURION",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Matej Pečnik",
+        "time": "12:57:21"
+      }
+    },
+    {
+      "event": "ULTRA TRAIL VIPAVA 2023",
+      "route": "100 - CENTURION",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Eva Urbanc",
+        "time": "15:04:16"
+      }
+    },
+    {
+      "event": "ULTRA TRAIL VIPAVA 2023",
+      "route": "60 - GLADIATOR",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Janez Klančnik",
+        "time": "5:19:47"
+      }
+    },
+    {
+      "event": "ULTRA TRAIL VIPAVA 2023",
+      "route": "60 - GLADIATOR",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Petra Tratnik",
+        "time": "5:58:41"
+      }
+    },
+    {
+      "event": "ULTRA TRAIL VIPAVA 2023",
+      "route": "30 - LEGIONAR",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Matej Letojne",
+        "time": "2:50:21"
+      }
+    },
+    {
+      "event": "ULTRA TRAIL VIPAVA 2023",
+      "route": "30 - LEGIONAR",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Lucija Krkoč",
+        "time": "3:10:47"
+      }
+    },
+    {
+      "event": "ULTRA TRAIL VIPAVA 2023",
+      "route": "15  - ASTERIX",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Vili Črv",
+        "time": "0:54:40"
+      }
+    },
+    {
+      "event": "ULTRA TRAIL VIPAVA 2023",
+      "route": "15  - ASTERIX",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Maruša Cijan Brkič",
+        "time": "1:10:20"
+      }
+    },
+    {
+      "event": "ULTRA TRAIL VIPAVA 2023",
+      "route": "CASTRA CITY RUN",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jernej Šemrov",
+        "time": "0:45:45"
+      }
+    },
+    {
+      "event": "ULTRA TRAIL VIPAVA 2023",
+      "route": "CASTRA CITY RUN",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Maruša Cijan Brkič",
+        "time": "0:52:04"
+      }
+    },
+    {
+      "event": "Soča Outdoor Festival 2021",
+      "route": "Continental 10km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Dino Grbić",
+        "time": "0:48:18"
+      }
+    },
+    {
+      "event": "Soča Outdoor Festival 2021",
+      "route": "Continental 10km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Gaja Leban Jež",
+        "time": "0:59:25"
+      }
+    },
+    {
+      "event": "Soča Outdoor Festival 2021",
+      "route": "Adidas Terrex 15km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Gašper Bregar",
+        "time": "0:57:56"
+      }
+    },
+    {
+      "event": "Soča Outdoor Festival 2021",
+      "route": "Adidas Terrex 15km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Dominika Ahačič",
+        "time": "1:16:25"
+      }
+    },
+    {
+      "event": "Soča Outdoor Festival 2021",
+      "route": "Pure 25km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Luka Tavčar",
+        "time": "1:51:44"
+      }
+    },
+    {
+      "event": "Soča Outdoor Festival 2021",
+      "route": "Pure 25km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Eneja Osterman",
+        "time": "2:18:46"
+      }
+    },
+    {
+      "event": "Soča Outdoor Festival 2021",
+      "route": "Dukat Fit 45km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Janez Klančnik",
+        "time": "3:51:53"
+      }
+    },
+    {
+      "event": "Soča Outdoor Festival 2021",
+      "route": "Dukat Fit 45km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Martina Potrč",
+        "time": "4:44:42"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2022",
+      "route": "Continental 10km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Filippo Pagavino",
+        "time": "0:50:06"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2022",
+      "route": "Continental 10km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Ana Kopčavar",
+        "time": "0:57:29"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2022",
+      "route": "Adidas Terrex 15km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Denis Štenkler",
+        "time": "1:05:45"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2022",
+      "route": "Adidas Terrex 15km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Katja Hočevar",
+        "time": "1:21:07"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2022",
+      "route": "Bite Me 25km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Bojan Grbić",
+        "time": "1:53:30"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2022",
+      "route": "Bite Me 25km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Dominika Ahačič",
+        "time": "2:14:17"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2022",
+      "route": "I Feel Slovenia 45km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jiri Petr",
+        "time": "3:31:53"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2022",
+      "route": "I Feel Slovenia 45km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Zsofia Vincze",
+        "time": "4:33:59"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2022",
+      "route": "MTB Maraton",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jaka Starman",
+        "time": "1:48:16"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2022",
+      "route": "MTB Maraton",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Andreja Mlinarič",
+        "time": "2:32:00"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2022",
+      "route": "MTB Maraton - E-bikes",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Gregor Novak",
+        "time": "1:43:05"
+      }
+    },
+    {
+      "event": "Soča outdoor festival 2022",
+      "route": "MTB Maraton - E-bikes",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Barbara Horvat",
+        "time": "1:41:46"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2023",
+      "route": "Continental 10km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Dino Grbić",
+        "time": "0:55:06"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2023",
+      "route": "Continental 10km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Marusa Cijan Brkic",
+        "time": "1:06:15"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2023",
+      "route": "Adidas Terrex 15km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Luka Kovačič",
+        "time": "1:02:39"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2023",
+      "route": "Adidas Terrex 15km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Simona Checcucci",
+        "time": "1:18:47"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2023",
+      "route": "Triglav 25km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Janez Klančnik",
+        "time": "1:54:02"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2023",
+      "route": "Triglav 25km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Agata Majewska",
+        "time": "2:20:56"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2023",
+      "route": "I Feel Slovenia 50 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Dimitri Chapelle",
+        "time": "4:53:49"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2023",
+      "route": "I Feel Slovenia 50 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Anna Szocs",
+        "time": "5:34:28"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2023",
+      "route": "Nissan X-Trail 35 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Gašper Perše",
+        "time": "3:19:41"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2023",
+      "route": "Nissan X-Trail 35 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Ana Čufer",
+        "time": "3:17:16"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2023",
+      "route": "Oshee MTB Maraton",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Luka Tavčar",
+        "time": "1:45:28"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2023",
+      "route": "Oshee MTB Maraton",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Patrizia Romanello",
+        "time": "2:13:57"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2023",
+      "route": "MTB Maraton - E-bikes",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Nikolaj Mikuž",
+        "time": "1:34:04"
+      }
+    },
+    {
+      "event": "Soča Outdoor festival 2023",
+      "route": "MTB Maraton - E-bikes",
+      "sex": "ženske",
+      "count": 5,
+      "winner": {
+        "rank": 1,
+        "name": "Leja Košir",
+        "time": "1:40:43"
+      }
+    },
+    {
+      "event": "Lahinja Trail 2025",
+      "route": "Duma 10 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Gregor Laj",
+        "time": "36:27"
+      }
+    },
+    {
+      "event": "Lahinja Trail 2025",
+      "route": "Duma 10 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Zdenka Pungračič Raković",
+        "time": "53:41"
+      }
+    },
+    {
+      "event": "Lahinja Trail 2025",
+      "route": "Velikobukovska  18 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Danijel Topolovec",
+        "time": "1:12:44,0"
+      }
+    },
+    {
+      "event": "Lahinja Trail 2025",
+      "route": "Velikobukovska  18 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Tina Sajko",
+        "time": "1:24:03,0"
+      }
+    },
+    {
+      "event": "Lahinja Trail 2025",
+      "route": "Republikanka  30 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Primož Jagodic",
+        "time": "2:28:27,0"
+      }
+    },
+    {
+      "event": "Lahinja Trail 2025",
+      "route": "Republikanka  30 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Anja Javornik",
+        "time": "3:13:54,0"
+      }
+    },
+    {
+      "event": "29. Šmarješki tek 2025",
+      "route": "Trail tek \"Radulja\" (28 km)",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Jure Orehek",
+        "time": "2:10:13"
+      }
+    },
+    {
+      "event": "29. Šmarješki tek 2025",
+      "route": "Trail tek \"Radulja\" (28 km)",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Nataša Šušterič",
+        "time": "2:40:30"
+      }
+    },
+    {
+      "event": "29. Šmarješki tek 2025",
+      "route": "Trail tek \"Toplica\" (19 km)",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Antonio Đurčević",
+        "time": "1:27:21"
+      }
+    },
+    {
+      "event": "29. Šmarješki tek 2025",
+      "route": "Trail tek \"Toplica\" (19 km)",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Sara Masnik",
+        "time": "1:46:46"
+      }
+    },
+    {
+      "event": "29. Šmarješki tek 2025",
+      "route": "Trail tek \"Prinovec\" (8 km)",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Miha Povšič",
+        "time": "0:28:58"
+      }
+    },
+    {
+      "event": "29. Šmarješki tek 2025",
+      "route": "Trail tek \"Prinovec\" (8 km)",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Sanja Grgić",
+        "time": "0:36:22"
+      }
+    },
+    {
+      "event": "29. Šmarješki tek 2025",
+      "route": "Rekreativni tek na 2 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Faris Hodžić",
+        "time": "0:08:02"
+      }
+    },
+    {
+      "event": "29. Šmarješki tek 2025",
+      "route": "Rekreativni tek na 2 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Emina Veladžić",
+        "time": "0:09:10"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2022",
+      "route": "170 - EMPEROR",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Anže Sobočan",
+        "time": "22:13:13"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2022",
+      "route": "170 - EMPEROR",
+      "sex": "ženske",
+      "count": 5,
+      "winner": {
+        "rank": 1,
+        "name": "Martina Dvorakova",
+        "time": "26:13:03"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2022",
+      "route": "100 - CENTURION",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jan Božič",
+        "time": "12:18:48"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2022",
+      "route": "100 - CENTURION",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Nina Frelih",
+        "time": "14:44:43"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2022",
+      "route": "50 - GLADIATOR",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Marko Tratnik",
+        "time": "4:40:04"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2022",
+      "route": "50 - GLADIATOR",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Petra Tratnik",
+        "time": "5:03:37"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2022",
+      "route": "30 - LEGIONAR",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Žan Žepič",
+        "time": "2:19:23"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2022",
+      "route": "30 - LEGIONAR",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Špela Gonza",
+        "time": "2:45:30"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2022",
+      "route": "13  - ASTERIX",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Uroš Avguštinčič",
+        "time": "0:48:55"
+      }
+    },
+    {
+      "event": "Ultra Trail Vipava Valley 2022",
+      "route": "13  - ASTERIX",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Kristina Vanceta",
+        "time": "1:02:33"
+      }
+    },
+    {
+      "event": "Kočevsko Outdoor Festival 2023",
+      "route": "60 km - Bear Trail I FEEL SLOVENIA (59,4km / +1961m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "MARJAN ZUPANČIČ",
+        "time": "6:11:20"
+      }
+    },
+    {
+      "event": "Kočevsko Outdoor Festival 2023",
+      "route": "60 km - Bear Trail I FEEL SLOVENIA (59,4km / +1961m)",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "EVA URBANC",
+        "time": "7:26:22"
+      }
+    },
+    {
+      "event": "Kočevsko Outdoor Festival 2023",
+      "route": "30 km - Salomon Golden Trail National Series SLO/CRO/HUN (29,2km/ +1016m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "URBAN JEREB",
+        "time": "2:22:24"
+      }
+    },
+    {
+      "event": "Kočevsko Outdoor Festival 2023",
+      "route": "30 km - Salomon Golden Trail National Series SLO/CRO/HUN (29,2km/ +1016m)",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "KATARINA PIŠOTEK",
+        "time": "2:58:13"
+      }
+    },
+    {
+      "event": "Kočevsko Outdoor Festival 2023",
+      "route": "15 km Be Active (14,1km / +411m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "VILI ČRV",
+        "time": "0:58:33"
+      }
+    },
+    {
+      "event": "Kočevsko Outdoor Festival 2023",
+      "route": "15 km Be Active (14,1km / +411m)",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "KIM AMERŠEK",
+        "time": "1:15:19"
+      }
+    },
+    {
+      "event": "Kočevsko Outdoor Festival 2023",
+      "route": "10 km Vzajemna Fox Trail (9,8km / +117m)",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "FILIPPO PAGAVINO",
+        "time": "0:45:18"
+      }
+    },
+    {
+      "event": "Kočevsko Outdoor Festival 2023",
+      "route": "10 km Vzajemna Fox Trail (9,8km / +117m)",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "URŠKA LAMOVEC",
+        "time": "0:55:05"
+      }
+    },
+    {
+      "event": "I Feel Slovenia Julian Alps Trail Run by UTMB 2023",
+      "route": "10km FUNNY TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Aleksander Bayer",
+        "time": "51:08"
+      }
+    },
+    {
+      "event": "I Feel Slovenia Julian Alps Trail Run by UTMB 2023",
+      "route": "10km FUNNY TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Maruša Cijan Brkič",
+        "time": "51:13"
+      }
+    },
+    {
+      "event": "I Feel Slovenia Julian Alps Trail Run by UTMB 2023",
+      "route": "15km SPEED TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Tobias Plattner",
+        "time": "1:17:34"
+      }
+    },
+    {
+      "event": "I Feel Slovenia Julian Alps Trail Run by UTMB 2023",
+      "route": "15km SPEED TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Sabina Lavrič",
+        "time": "1:33:23"
+      }
+    },
+    {
+      "event": "I Feel Slovenia Julian Alps Trail Run by UTMB 2023",
+      "route": "25km KRANJSKA GORA TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Szabo Sandor",
+        "time": "1:50:54"
+      }
+    },
+    {
+      "event": "I Feel Slovenia Julian Alps Trail Run by UTMB 2023",
+      "route": "25km KRANJSKA GORA TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Marguerite Richart",
+        "time": "2:16:33"
+      }
+    },
+    {
+      "event": "I Feel Slovenia Julian Alps Trail Run by UTMB 2023",
+      "route": "60km SKY TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Tobias Geiser",
+        "time": "6:06:28"
+      }
+    },
+    {
+      "event": "I Feel Slovenia Julian Alps Trail Run by UTMB 2023",
+      "route": "60km SKY TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Sabine Wurmsam",
+        "time": "7:37:14"
+      }
+    },
+    {
+      "event": "I Feel Slovenia Julian Alps Trail Run by UTMB 2023",
+      "route": "100km ULTRA SKY TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Aleksander Badowski",
+        "time": "11:25:20"
+      }
+    },
+    {
+      "event": "I Feel Slovenia Julian Alps Trail Run by UTMB 2023",
+      "route": "100km ULTRA SKY TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Juliane Rössler",
+        "time": "13:19:40"
+      }
+    },
+    {
+      "event": "I Feel Slovenia Julian Alps Trail Run by UTMB 2023",
+      "route": "170km I Feel Slovenia ULTRA TRAIL JULIAN ALPS",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Ivan Hrastovec",
+        "time": "22:38:45"
+      }
+    },
+    {
+      "event": "I Feel Slovenia Julian Alps Trail Run by UTMB 2023",
+      "route": "170km I Feel Slovenia ULTRA TRAIL JULIAN ALPS",
+      "sex": "ženske",
+      "count": 9,
+      "winner": {
+        "rank": 1,
+        "name": "Fiona Pascall",
+        "time": "24:39:11"
+      }
+    },
+    {
+      "event": "Julian Alps Trail 2021",
+      "route": "10km FUNNY TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Uroš Rozman",
+        "time": "00:42:45"
+      }
+    },
+    {
+      "event": "Julian Alps Trail 2021",
+      "route": "10km FUNNY TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Hannah Bennett",
+        "time": "00:59:58"
+      }
+    },
+    {
+      "event": "Julian Alps Trail 2021",
+      "route": "15km Adidas Terrex SPEED TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Vili Črv",
+        "time": "01:10:34"
+      }
+    },
+    {
+      "event": "Julian Alps Trail 2021",
+      "route": "15km Adidas Terrex SPEED TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Špela Gonza",
+        "time": "01:20:04"
+      }
+    },
+    {
+      "event": "Julian Alps Trail 2021",
+      "route": "30km Intersport SKY RACE",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Gasper Bregar",
+        "time": "03:09:55"
+      }
+    },
+    {
+      "event": "Julian Alps Trail 2021",
+      "route": "30km Intersport SKY RACE",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Barbara Trunkelj",
+        "time": "03:45:44"
+      }
+    },
+    {
+      "event": "Julian Alps Trail 2021",
+      "route": "60km Bite Me SKY TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Janez Klančnik",
+        "time": "06:26:41"
+      }
+    },
+    {
+      "event": "Julian Alps Trail 2021",
+      "route": "60km Bite Me SKY TRAIL",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Martina Potrč",
+        "time": "07:34:24"
+      }
+    },
+    {
+      "event": "Julian Alps Trail 2021",
+      "route": "100km ULTRA SKY TRAIL",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Matic Čačulovič",
+        "time": "13:27:08"
+      }
+    },
+    {
+      "event": "Julian Alps Trail 2021",
+      "route": "100km ULTRA SKY TRAIL",
+      "sex": "ženske",
+      "count": 5,
+      "winner": {
+        "rank": 1,
+        "name": "Sarah Mangler",
+        "time": "17:53:15"
+      }
+    },
+    {
+      "event": "Julian Alps Trail 2021",
+      "route": "170km ULTRA TRAIL JULIAN ALPS",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Ivan Hrastovec",
+        "time": "24:38:11"
+      }
+    },
+    {
+      "event": "Julian Alps Trail 2021",
+      "route": "170km ULTRA TRAIL JULIAN ALPS",
+      "sex": "ženske",
+      "count": 2,
+      "winner": {
+        "rank": 1,
+        "name": "Cornelia Oswald",
+        "time": "31:55:28"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2023",
+      "route": "Obala Ultra trail 108km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jon Lihteneger Vidmajer",
+        "time": "10:38:37"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2023",
+      "route": "Obala Ultra trail 108km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Martina Klančnik Potrč",
+        "time": "12:25:29"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2023",
+      "route": "Obala Ultra trail 65km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Aleš Svetina",
+        "time": "5:34:28"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2023",
+      "route": "Obala Ultra trail 65km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Cornelia Oswald",
+        "time": "6:58:18"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2023",
+      "route": "Obala trail 35km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Primoz Porenta",
+        "time": "2:40:39"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2023",
+      "route": "Obala trail 35km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Špela Gonza",
+        "time": "3:12:23"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2023",
+      "route": "Borotalco trail 18 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Primož Piškur",
+        "time": "1:17:40"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2023",
+      "route": "Borotalco trail 18 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Maruša Cijan Brkič",
+        "time": "1:26:33"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2023",
+      "route": "Rio Mare 12 km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Gašper Bregar",
+        "time": "0:52:04"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2023",
+      "route": "Rio Mare 12 km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Lucija Krkoč",
+        "time": "0:54:24"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2022",
+      "route": "Philips GO Ultra Trail 100km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Marjan Zupančič",
+        "time": "10:39:21"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2022",
+      "route": "Philips GO Ultra Trail 100km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Cornelia Oswald",
+        "time": "11:41:16"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2022",
+      "route": "OGIS Ultra Trail 65km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Martin Halasz",
+        "time": "5:32:57"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2022",
+      "route": "OGIS Ultra Trail 65km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Nicol Guidolin",
+        "time": "6:48:48"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2022",
+      "route": "Obala Trail 35km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Jure Orehek",
+        "time": "2:48:48"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2022",
+      "route": "Obala Trail 35km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Irena Pišek",
+        "time": "3:16:19"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2022",
+      "route": "Borotalco Trail 18km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Brian Kamstra",
+        "time": "1:13:55"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2022",
+      "route": "Borotalco Trail 18km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Ksenija Grm",
+        "time": "1:36:12"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2022",
+      "route": "Rio Mare Trail 11km",
+      "sex": "moški",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Gašper Bregar",
+        "time": "0:43:35"
+      }
+    },
+    {
+      "event": "Obala Ultra trail 2022",
+      "route": "Rio Mare Trail 11km",
+      "sex": "ženske",
+      "count": 10,
+      "winner": {
+        "rank": 1,
+        "name": "Lucija Krkoč",
+        "time": "0:49:12"
+      }
+    },
+    {
+      "event": "Ribn`ca trail 2023",
+      "route": "Kuhavn`ca 12 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Maruša Cijan Brkič",
+        "time": "01:14:16"
+      }
+    },
+    {
+      "event": "Ribn`ca trail 2023",
+      "route": "Kuhavn`ca 12 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Aleš Udovič",
+        "time": "01:04:15"
+      }
+    },
+    {
+      "event": "Ribn`ca trail 2023",
+      "route": "Čebular`ca 25 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Aja Kozinc",
+        "time": "02:28:00"
+      }
+    },
+    {
+      "event": "Ribn`ca trail 2023",
+      "route": "Čebular`ca 25 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Marko Tratnik",
+        "time": "01:56:52"
+      }
+    },
+    {
+      "event": "Ribn`ca trail 2023",
+      "route": "Ribež`n 40 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Alenka Pavc",
+        "time": "04:44:56"
+      }
+    },
+    {
+      "event": "Ribn`ca trail 2023",
+      "route": "Ribež`n 40 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Jure Orehek",
+        "time": "03:38:43"
+      }
+    },
+    {
+      "event": "Lončarija teče 2023",
+      "route": "21. Lončar (9,8 km)",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Jure Lapajne",
+        "time": "0:32:18"
+      }
+    },
+    {
+      "event": "Lončarija teče 2023",
+      "route": "21. Lončar (9,8 km)",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Kim Ameršek",
+        "time": "0:38:26"
+      }
+    },
+    {
+      "event": "Lončarija teče 2023",
+      "route": "Potičnica (Trail 24km)",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Matej Letojne",
+        "time": "1:48:05"
+      }
+    },
+    {
+      "event": "Lončarija teče 2023",
+      "route": "Potičnica (Trail 24km)",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Klavdija Korelec",
+        "time": "2:23:11"
+      }
+    },
+    {
+      "event": "Lončarija teče 2022",
+      "route": "20. Lončar (9,1 km)",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Tadej Osvald",
+        "time": "0:31:03,1"
+      }
+    },
+    {
+      "event": "Lončarija teče 2022",
+      "route": "20. Lončar (9,1 km)",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Vesna Šuštaršič",
+        "time": "0:37:36,9"
+      }
+    },
+    {
+      "event": "Lončarija teče 2022",
+      "route": "Potičnica (Trail 24km)",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Aleš Žontar",
+        "time": "2:00:34.4"
+      }
+    },
+    {
+      "event": "Lončarija teče 2022",
+      "route": "Potičnica (Trail 24km)",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "Andreja Godec",
+        "time": "2:31:25.5"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2023 by I Feel Slovenia",
+      "route": "Slovenian Alpine Museum Run - 12 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "VALVERDE Lancelot",
+        "time": "53:36"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2023 by I Feel Slovenia",
+      "route": "Slovenian Alpine Museum Run - 12 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "MIHELČIČ Nastja",
+        "time": "1:04:22"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2023 by I Feel Slovenia",
+      "route": "Triglav Lakes Race - 44 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "MÖRTENDORFER Wendelin",
+        "time": "4:29:44"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2023 by I Feel Slovenia",
+      "route": "Triglav Lakes Race - 44 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "PÉREZ SANCHO Sara",
+        "time": "6:03:52"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2023 by I Feel Slovenia",
+      "route": "Vrata Valley Race - 26 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "CIA Francisco Javier",
+        "time": "2:49:54"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2023 by I Feel Slovenia",
+      "route": "Vrata Valley Race - 26 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "SCHÄLLER Lisa",
+        "time": "2:50:02"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2023 by I Feel Slovenia",
+      "route": "Triglav Trail Race - 78 km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "ZUPANČIČ Marjan",
+        "time": "11:29:49"
+      }
+    },
+    {
+      "event": "Triglav Trail Run 2023 by I Feel Slovenia",
+      "route": "Triglav Trail Race - 78 km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "ŠATEJ Tina",
+        "time": "12:17:34"
+      }
+    },
+    {
+      "event": "Triglav Trail 2022",
+      "route": "Triglav Trail Race - 87,5km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "ZUPANČIČ Marjan",
+        "time": "12:45:14"
+      }
+    },
+    {
+      "event": "Triglav Trail 2022",
+      "route": "Triglav Trail Race - 87,5km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "BELLUŠOVÁ Martina",
+        "time": "15:27:02"
+      }
+    },
+    {
+      "event": "Triglav Trail 2022",
+      "route": "Triglav Lakes Race - 44km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "DOLAR Tomaž",
+        "time": "04:35:15"
+      }
+    },
+    {
+      "event": "Triglav Trail 2022",
+      "route": "Triglav Lakes Race - 44km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "TRUNKELJ Barbara",
+        "time": "05:05:13"
+      }
+    },
+    {
+      "event": "Triglav Trail 2022",
+      "route": "Vrata Valley Race - 26km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "GANDINI Andrea",
+        "time": "02:25:27"
+      }
+    },
+    {
+      "event": "Triglav Trail 2022",
+      "route": "Vrata Valley Race - 26km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "STENTA Caterina",
+        "time": "02:36:15"
+      }
+    },
+    {
+      "event": "Triglav Trail 2022",
+      "route": "Slovenian Alpine Museum Run - 10km",
+      "sex": "moški",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "BREITBARTH Eric",
+        "time": "0:43:33"
+      }
+    },
+    {
+      "event": "Triglav Trail 2022",
+      "route": "Slovenian Alpine Museum Run - 10km",
+      "sex": "ženske",
+      "count": 3,
+      "winner": {
+        "rank": 1,
+        "name": "BANDT Janine",
+        "time": "0:54:57"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": 336408,
+      "list": "0B2D52",
+      "reason": "No unambiguous name/rank/final-time fields"
+    },
+    {
+      "id": 394601,
+      "list": "5453F5",
+      "reason": "No unambiguous name/rank/final-time fields"
+    },
+    {
+      "id": 394601,
+      "list": "0B2D52",
+      "reason": "No unambiguous name/rank/final-time fields"
+    },
+    {
+      "id": 317297,
+      "list": "6BDEA6",
+      "path": "Obala Ultra trail 64 km / Člani 20 do 39 let (DP)",
+      "reason": "No unambiguous gender grouping"
+    },
+    {
+      "id": 317297,
+      "list": "6BDEA6",
+      "path": "Obala Ultra trail 64 km / Članice 20 do 39 let (DP)",
+      "reason": "No unambiguous gender grouping"
+    },
+    {
+      "id": 374386,
+      "list": "325299",
+      "path": "Družinski trail (10km)",
+      "reason": "No unambiguous gender grouping"
+    },
+    {
+      "id": 319024,
+      "list": "325299",
+      "path": "Družinski trail (10km)",
+      "reason": "No unambiguous gender grouping"
+    },
+    {
+      "id": 417314,
+      "list": "B4CE0B",
+      "path": "Vrata Valley Race - 26 km / Moški",
+      "reason": "Unexplained gap or inconsistent tie in top ranks"
+    },
+    {
+      "id": 373789,
+      "list": "1855B4",
+      "reason": "No unambiguous name/rank/final-time fields"
+    },
+    {
+      "id": 356904,
+      "list": "8794D7",
+      "path": "Slovenian Alpine Museum Run - 12 km / ",
+      "reason": "No unambiguous gender grouping"
+    },
+    {
+      "id": 273563,
+      "list": "0AB226",
+      "reason": "No unambiguous name/rank/final-time fields"
+    },
+    {
+      "id": 322557,
+      "list": "0AB226",
+      "reason": "No unambiguous name/rank/final-time fields"
+    },
+    {
+      "id": 360474,
+      "list": "873C59",
+      "path": "80km JAT LAKE BLED / ",
+      "reason": "No unambiguous gender grouping"
+    },
+    {
+      "id": 360474,
+      "list": "2F8354",
+      "path": "120km I FEEL SLOVENIA JAT ULTRA TRAIL / ",
+      "reason": "No unambiguous gender grouping"
+    },
+    {
+      "id": 327630,
+      "list": "E1E8A3",
+      "reason": "No unambiguous name/rank/final-time fields"
+    },
+    {
+      "id": 259029,
+      "list": "D21C13",
+      "path": "100km ULTRA SKY TRAIL",
+      "reason": "No unambiguous gender grouping"
+    },
+    {
+      "id": 259029,
+      "list": "D21C13",
+      "path": "10km FUNNY TRAIL",
+      "reason": "No unambiguous gender grouping"
+    },
+    {
+      "id": 259029,
+      "list": "D21C13",
+      "path": "15km SPEED TRAIL",
+      "reason": "No unambiguous gender grouping"
+    },
+    {
+      "id": 259029,
+      "list": "D21C13",
+      "path": "170km I Feel Slovenia ULTRA TRAIL JULIAN ALPS",
+      "reason": "No unambiguous gender grouping"
+    },
+    {
+      "id": 259029,
+      "list": "D21C13",
+      "path": "25km KRANJSKA GORA TRAIL",
+      "reason": "No unambiguous gender grouping"
+    },
+    {
+      "id": 259029,
+      "list": "D21C13",
+      "path": "60km SKY TRAIL",
+      "reason": "No unambiguous gender grouping"
+    },
+    {
+      "id": 235299,
+      "list": "B7839F",
+      "path": "Obala Ultra trail 65km / Člani",
+      "reason": "No unambiguous gender grouping"
+    },
+    {
+      "id": 235299,
+      "list": "B7839F",
+      "path": "Obala Ultra trail 65km / Članice",
+      "reason": "No unambiguous gender grouping"
+    },
+    {
+      "id": 147402,
+      "list": "2688CC",
+      "reason": "No unambiguous name/rank/final-time fields"
+    },
+    {
+      "id": 147402,
+      "list": "9758E3",
+      "reason": "No unambiguous name/rank/final-time fields"
+    },
+    {
+      "id": 147402,
+      "list": "68701F",
+      "reason": "No unambiguous name/rank/final-time fields"
+    },
+    {
+      "id": 230951,
+      "list": "0AB226",
+      "reason": "No unambiguous name/rank/final-time fields"
+    }
+  ]
+}

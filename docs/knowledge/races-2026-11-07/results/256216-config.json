@@ -1,0 +1,757 @@
+{
+  "key": "d7e07efa46e193dc5c04a1db45d0d512",
+  "contests": {
+    "1": "Ultra-Trail Pušeljc 100+ km",
+    "2": "Ultra-Trail Pušeljc 70+ km",
+    "3": "{EN:GM4O 40+ km|SI:Gorski Maraton 4 Občin 40+ km}",
+    "4": "Graparski Trail 20+ km",
+    "5": "Rapallo Trail 10+ km",
+    "7": "Mini U19 - 4,7 km",
+    "8": "Mini U16 - 1,7 km",
+    "9": "Mini U14 - 1,2 km",
+    "10": "Mini U12 - 0,5 km",
+    "11": "Palačinka - 300 m",
+    "99": "Skupaj"
+  },
+  "splits": [
+    {
+      "ID": 1,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 14,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 24,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 99,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 104,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 110,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 120,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 9,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 122,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 3,
+      "Name": "Črnaprst",
+      "Label": "Črna prst (13,3km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 25,
+      "Name": "SpeakerHudajužna",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 99,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 2,
+      "Name": "Hudajužna",
+      "Label": "Huda južna (26,5km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 26,
+      "Name": "Hudajužna",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 99,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 103,
+      "Name": "Črnaprst",
+      "Label": "Črna prst (14km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 105,
+      "Name": "Črnaprst",
+      "Label": "Črna prst (14km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 111,
+      "Name": "Zalodnikar",
+      "Label": "",
+      "SplitType": 2,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 27,
+      "Name": "Porezen",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 99,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 4,
+      "Name": "Porezen",
+      "Label": "Porezen (32km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 28,
+      "Name": "Črnivrh",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 99,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 5,
+      "Name": "Črnivrh",
+      "Label": "Črni vrh (43,km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 29,
+      "Name": "Kopačnica",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 99,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 6,
+      "Name": "Kopačnica",
+      "Label": "Kopačnica (50km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 30,
+      "Name": "MartinjVrh",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 99,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 31,
+      "Name": "Železniki",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 99,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 101,
+      "Name": "Blegoš",
+      "Label": "Bleguš (58km)",
+      "SplitType": 2,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 7,
+      "Name": "MartinjVrh",
+      "Label": "Martinj Vrh (63km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 32,
+      "Name": "Ratitovec",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 99,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 8,
+      "Name": "Železniki",
+      "Label": "Železniki (75km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 33,
+      "Name": "Soriškaplanina",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 99,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 9,
+      "Name": "Ratitovec",
+      "Label": "Ratitovec (85km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 34,
+      "Name": "Kovce",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 99,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 16,
+      "Name": "Hudajužna",
+      "Label": "Huda južna (26,5km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 35,
+      "Name": "SpeakerPodbrdo",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 99,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 89,
+      "Name": "DajnarskaPlanina",
+      "Label": "Dajnarska Planina (88,5km)",
+      "SplitType": 2,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 10,
+      "Name": "Soriškaplanina",
+      "Label": "Soriška planina (93km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 17,
+      "Name": "Porezen",
+      "Label": "Porezen (32km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 36,
+      "Name": "Finish",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 99,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 11,
+      "Name": "Kovce",
+      "Label": "Kovce (97km)",
+      "SplitType": 2,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 108,
+      "Name": "Bača",
+      "Label": "Bača (19,8km)",
+      "SplitType": 2,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 109,
+      "Name": "Robar",
+      "Label": "",
+      "SplitType": 2,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 112,
+      "Name": "Robar",
+      "Label": "",
+      "SplitType": 2,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 12,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 13,
+      "Name": "Finish",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 90,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 91,
+      "Name": "Porezen",
+      "Label": "Porezen (9,5km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 92,
+      "Name": "Črnivrh",
+      "Label": "Črnivrh (20,5km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 102,
+      "Name": "Blegoš",
+      "Label": "Blegoš (24,5km)",
+      "SplitType": 2,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 93,
+      "Name": "MartinjVrh",
+      "Label": "Martinj Vrh (30km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 94,
+      "Name": "Železniki",
+      "Label": "Železniki (41,3km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 95,
+      "Name": "Ratitovec",
+      "Label": "Ratitovec (51,9km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 96,
+      "Name": "DajnarskaPlanina",
+      "Label": "Dajnarska Planina (55,1km)",
+      "SplitType": 2,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 97,
+      "Name": "Soriškaplanina",
+      "Label": "Soriška planina (60km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 98,
+      "Name": "Kovce",
+      "Label": "Kovce (62,7km)",
+      "SplitType": 2,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 99,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 100,
+      "Name": "Finish",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 18,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 106,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 113,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 19,
+      "Name": "Finish",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 107,
+      "Name": "Finish",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 114,
+      "Name": "Finish",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 121,
+      "Name": "Finish",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 9,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 123,
+      "Name": "Finish",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 115,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 118,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 8,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 117,
+      "Name": "Finish",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 119,
+      "Name": "Finish",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 8,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "PTRF 2024",
+  "TimerLogo": "",
+  "TimerURL": "",
+  "EventOver": true,
+  "Time": 44583,
+  "server": "my1.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "2024-06-01T10:00:00+02:00",
+    "ActiveUntil": "2100-09-30T23:59:59+02:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "details0",
+      "Lists": [
+        {
+          "Name": "1.1 Protime|Live",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Live 100+",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "3D559A"
+        },
+        {
+          "Name": "1.1 Protime|Live",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "Live 70+",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "E3761B"
+        },
+        {
+          "Name": "1.1 Protime|Live",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "Live 40+",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "B04AD9"
+        },
+        {
+          "Name": "1.1 Protime|Live",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "Live 20+",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "C404E8"
+        },
+        {
+          "Name": "1.1 Protime|Live",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "Live 10+",
+          "Format": "VP",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "EE36AF"
+        },
+        {
+          "Name": "1. Result Lists PTRF 2024|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "{EN:Final Results Absolute|SI:Končni rezultati absolutno}",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "C30B54"
+        },
+        {
+          "Name": "1. Result Lists PTRF 2024|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "{EN:Final Results Category|SI:Končni rezultati kategorije}",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "5DEF27"
+        },
+        {
+          "Name": "1.1 Protime|Prihodi",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "Arrivals",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "8099E3"
+        }
+      ],
+      "LeaderboardHideCount": false,
+      "ShowCommentIcon": false
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details0",
+    "Lists": [
+      {
+        "Name": "1.1 Protime|Live",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Live 100+",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "3D559A"
+      },
+      {
+        "Name": "1.1 Protime|Live",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "Live 70+",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "E3761B"
+      },
+      {
+        "Name": "1.1 Protime|Live",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "Live 40+",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "B04AD9"
+      },
+      {
+        "Name": "1.1 Protime|Live",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "Live 20+",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details0",
+        "ID": "C404E8"
+      },
+      {
+        "Name": "1.1 Protime|Live",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "Live 10+",
+        "Format": "VP",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details0",
+        "ID": "EE36AF"
+      },
+      {
+        "Name": "1. Result Lists PTRF 2024|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "{EN:Final Results Absolute|SI:Končni rezultati absolutno}",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "C30B54"
+      },
+      {
+        "Name": "1. Result Lists PTRF 2024|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "{EN:Final Results Category|SI:Končni rezultati kategorije}",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "5DEF27"
+      },
+      {
+        "Name": "1.1 Protime|Prihodi",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "Arrivals",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "8099E3"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

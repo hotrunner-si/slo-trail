@@ -1,0 +1,1213 @@
+{
+  "key": "9cbd46e6e77d2717f9e3e8575ef02467",
+  "contests": {
+    "1": "Continental 10km",
+    "2": "Adidas Terrex 15km",
+    "3": "Soča 25km",
+    "4": "I Feel Slovenia 50 km",
+    "5": "Ford 35 km",
+    "6": "Hempika 5 km",
+    "7": "Triglav VERTIKAL Run",
+    "8": "Nordijska hoja 5 km",
+    "9": "Nordijska hoja 10 km",
+    "15": "PARAFESTIVAL",
+    "20": "Pohod"
+  },
+  "splits": [
+    {
+      "ID": 31,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 37,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 51,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 55,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 59,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 58,
+      "Name": "Tolminka_rezultat",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 6,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 76,
+      "Name": "Tolminka_rezultat",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 2,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 82,
+      "Name": "Tolminka_rezultat",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 1,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 87,
+      "Name": "Tolminka_rezultat",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 20,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 93,
+      "Name": "Tolminka_rezultat",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 15,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 47,
+      "Name": "Tolminka_rezultat",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 3,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 54,
+      "Name": "Tolminka_rezultat",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 50,
+      "Name": "Tolminka_rezultat",
+      "Label": "Odsek Tolminka",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 56,
+      "Name": "Tolminkastart",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 71,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 77,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 88,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 20,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 94,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 15,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 72,
+      "Name": "Tomin",
+      "Label": "Tomin (7,4km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 78,
+      "Name": "Tomin",
+      "Label": "Tomin (4,9km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 89,
+      "Name": "Tomin",
+      "Label": "Tomin (4,9km)",
+      "SplitType": 0,
+      "Contest": 20,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 95,
+      "Name": "Tomin",
+      "Label": "Tomin (4,9km)",
+      "SplitType": 0,
+      "Contest": 15,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 57,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 61,
+      "Name": "vmesnilovska",
+      "Label": "Lovska koča (3,7km)",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 62,
+      "Name": "Gabrje",
+      "Label": "Gabrje (25km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 66,
+      "Name": "Mengore",
+      "Label": "Mengore (16km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 68,
+      "Name": "Mengore",
+      "Label": "Mengore (16km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 73,
+      "Name": "Žabče",
+      "Label": "Žabče (10,3km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 79,
+      "Name": "Žabče",
+      "Label": "Žabče (7,9km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 90,
+      "Name": "Žabče",
+      "Label": "Žabče (7,9km)",
+      "SplitType": 0,
+      "Contest": 20,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 96,
+      "Name": "Žabče",
+      "Label": "Žabče (7,9km)",
+      "SplitType": 0,
+      "Contest": 15,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 48,
+      "Name": "Tolminkastart",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 60,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 63,
+      "Name": "Volče",
+      "Label": "Volče (33km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 67,
+      "Name": "MostnaSoči",
+      "Label": "Most na Soči(21,8km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 74,
+      "Name": "Tolminkastart",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 80,
+      "Name": "Tolminkastart",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 91,
+      "Name": "Tolminkastart",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 20,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 97,
+      "Name": "Tolminkastart",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 15,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 35,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 52,
+      "Name": "Tolminkastart",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 75,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 81,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 92,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 20,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 98,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 15,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 53,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 83,
+      "Name": "start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 8,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 85,
+      "Name": "start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 9,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 64,
+      "Name": "MostnaSoči",
+      "Label": "Most na Soči(42km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 84,
+      "Name": "cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 8,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 86,
+      "Name": "cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 9,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 49,
+      "Name": "Tolminkastart",
+      "Label": "Spotter",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 41,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "Soča Outdoor Festival 2025",
+  "TimerLogo": "",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44588,
+  "server": "my1.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "details0",
+      "Lists": [
+        {
+          "Name": "A1 Splits|Live_ALL",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Live results - ALL",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "A9B569"
+        },
+        {
+          "Name": "A2: Result Lists|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "6",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "F32F2E"
+        },
+        {
+          "Name": "A2: Result Lists|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "6",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "ID": "11DE82"
+        },
+        {
+          "Name": "A1 Splits|Live_ALL",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "097994"
+        },
+        {
+          "Name": "A2: Result Lists|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 10,
+          "ID": "A24A42"
+        },
+        {
+          "Name": "A2: Result Lists|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 5,
+          "ID": "FB895B"
+        },
+        {
+          "Name": "A. Soca|Odsek_Tolminka",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Odsek Tolminka / Tolminka section",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "ID": "997693"
+        },
+        {
+          "Name": "A1 Splits|Live_ALL",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "CDAF42"
+        },
+        {
+          "Name": "A2: Result Lists|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 10,
+          "ID": "B4BDDF"
+        },
+        {
+          "Name": "A2: Result Lists|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 5,
+          "ID": "F59E24"
+        },
+        {
+          "Name": "A1 Splits|Live_ALL",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "F5DA15"
+        },
+        {
+          "Name": "A2: Result Lists|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 10,
+          "ID": "ED1C19"
+        },
+        {
+          "Name": "A2: Result Lists|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 5,
+          "ID": "1558B6"
+        },
+        {
+          "Name": "A1 Splits|Live_ALL",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "4989C8"
+        },
+        {
+          "Name": "A2: Result Lists|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "C2F118"
+        },
+        {
+          "Name": "A2: Result Lists|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "ID": "DA5E21"
+        },
+        {
+          "Name": "A1 Splits|Live_ALL",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "2EAEF1"
+        },
+        {
+          "Name": "A2: Result Lists|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "0A756A"
+        },
+        {
+          "Name": "A2: Result Lists|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "455AC4"
+        },
+        {
+          "Name": "A2: Result Lists|Rezultati / Results OVERALL_VERTICAL",
+          "Mode": "",
+          "Contest": "7",
+          "ShowAs": "Rezultati / Results OVERALL",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "388121"
+        },
+        {
+          "Name": "A1 Splits|Live_ALL_Vertikal",
+          "Mode": "hidden",
+          "Contest": "7",
+          "ShowAs": "Vertikal - LIVE",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "D30B24"
+        },
+        {
+          "Name": "A. Soca|Rezultati_absolutno_SPEAKER",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Prihodi v cilj",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "679392"
+        },
+        {
+          "Name": "A. Soca|Rezultati_KOMBINACIJA15km",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Kombinacija VERTIKAL + 15km",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "B148C3"
+        },
+        {
+          "Name": "A. Soca|Rezultati_KOMBINACIJA25km",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Kombinacija VERTIKAL + 25km",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "E81FA8"
+        },
+        {
+          "Name": "A. Soca|Rezultati_KOMBINACIJA35km",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Kombinacija VERTIKAL + 35km",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "2B5F19"
+        },
+        {
+          "Name": "B1: Participants|Startna lista_abc-live",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "START LIST",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "B561E0"
+        },
+        {
+          "Name": "A. Soca|Rezultati_absolutno_SPEAKER",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Speaker",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "679392"
+        },
+        {
+          "Name": "A. Soca|Rezultati_absolutno_SPEAKER_vertikal",
+          "Mode": "hidden",
+          "Contest": "7",
+          "ShowAs": "Speaker",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "CD1761"
+        },
+        {
+          "Name": "B1: Participants|Startna lista_abc-live",
+          "Mode": "hidden",
+          "Contest": "7",
+          "ShowAs": "",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "F8E1D6"
+        },
+        {
+          "Name": "A. Soca|Rezultati_absolutno_SPEAKER",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "PRIHODI",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "679392"
+        },
+        {
+          "Name": "A2: Result Lists|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "8",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "54C4F9"
+        },
+        {
+          "Name": "A2: Result Lists|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "9",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "B9712B"
+        }
+      ],
+      "LeaderboardHideCount": false,
+      "ShowCommentIcon": false
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details0",
+    "Lists": [
+      {
+        "Name": "A1 Splits|Live_ALL",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Live results - ALL",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "A9B569"
+      },
+      {
+        "Name": "A2: Result Lists|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "6",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "F32F2E"
+      },
+      {
+        "Name": "A2: Result Lists|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "6",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "11DE82"
+      },
+      {
+        "Name": "A1 Splits|Live_ALL",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "097994"
+      },
+      {
+        "Name": "A2: Result Lists|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "A24A42"
+      },
+      {
+        "Name": "A2: Result Lists|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "FB895B"
+      },
+      {
+        "Name": "A. Soca|Odsek_Tolminka",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Odsek Tolminka / Tolminka section",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "997693"
+      },
+      {
+        "Name": "A1 Splits|Live_ALL",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "CDAF42"
+      },
+      {
+        "Name": "A2: Result Lists|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "B4BDDF"
+      },
+      {
+        "Name": "A2: Result Lists|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "F59E24"
+      },
+      {
+        "Name": "A1 Splits|Live_ALL",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "F5DA15"
+      },
+      {
+        "Name": "A2: Result Lists|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "ED1C19"
+      },
+      {
+        "Name": "A2: Result Lists|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "1558B6"
+      },
+      {
+        "Name": "A1 Splits|Live_ALL",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "4989C8"
+      },
+      {
+        "Name": "A2: Result Lists|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "C2F118"
+      },
+      {
+        "Name": "A2: Result Lists|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "DA5E21"
+      },
+      {
+        "Name": "A1 Splits|Live_ALL",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "2EAEF1"
+      },
+      {
+        "Name": "A2: Result Lists|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "0A756A"
+      },
+      {
+        "Name": "A2: Result Lists|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "455AC4"
+      },
+      {
+        "Name": "A2: Result Lists|Rezultati / Results OVERALL_VERTICAL",
+        "Mode": "",
+        "Contest": "7",
+        "ShowAs": "Rezultati / Results OVERALL",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "388121"
+      },
+      {
+        "Name": "A1 Splits|Live_ALL_Vertikal",
+        "Mode": "hidden",
+        "Contest": "7",
+        "ShowAs": "Vertikal - LIVE",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "D30B24"
+      },
+      {
+        "Name": "A. Soca|Rezultati_absolutno_SPEAKER",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Prihodi v cilj",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "679392"
+      },
+      {
+        "Name": "A. Soca|Rezultati_KOMBINACIJA15km",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Kombinacija VERTIKAL + 15km",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "B148C3"
+      },
+      {
+        "Name": "A. Soca|Rezultati_KOMBINACIJA25km",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Kombinacija VERTIKAL + 25km",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "E81FA8"
+      },
+      {
+        "Name": "A. Soca|Rezultati_KOMBINACIJA35km",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Kombinacija VERTIKAL + 35km",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "2B5F19"
+      },
+      {
+        "Name": "B1: Participants|Startna lista_abc-live",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "START LIST",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "B561E0"
+      },
+      {
+        "Name": "A. Soca|Rezultati_absolutno_SPEAKER",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Speaker",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "679392"
+      },
+      {
+        "Name": "A. Soca|Rezultati_absolutno_SPEAKER_vertikal",
+        "Mode": "hidden",
+        "Contest": "7",
+        "ShowAs": "Speaker",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "CD1761"
+      },
+      {
+        "Name": "B1: Participants|Startna lista_abc-live",
+        "Mode": "hidden",
+        "Contest": "7",
+        "ShowAs": "",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "F8E1D6"
+      },
+      {
+        "Name": "A. Soca|Rezultati_absolutno_SPEAKER",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "PRIHODI",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "679392"
+      },
+      {
+        "Name": "A2: Result Lists|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "8",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "54C4F9"
+      },
+      {
+        "Name": "A2: Result Lists|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "9",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "B9712B"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

@@ -1,0 +1,318 @@
+{
+  "key": "8504032c291cb044f1d0c44792f901b2",
+  "contests": {
+    "1": "Dolga 27 km",
+    "2": "Srednja 16 km",
+    "3": "Kratka 5 km",
+    "10": "ODJAVA"
+  },
+  "splits": [
+    {
+      "ID": 4,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 0,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 7,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 13,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 23,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 51,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 5,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 0,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 14,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 52,
+      "Name": "Sv.Bolfenk",
+      "Label": "Sv.Bolfenk~20km",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 6,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 0,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 15,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 9,
+      "Name": "CILJ",
+      "Label": "CILJ",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 26,
+      "Name": "CILJ",
+      "Label": "CILJ",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 56,
+      "Name": "CILJ",
+      "Label": "CILJ",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "Haloze Trail 2026",
+  "TimerLogo": "logo_napis z www_crop.jpg",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44591,
+  "server": "my3.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": true,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "Subtype": "boxes",
+      "StandardDetails": "details0",
+      "LeaderboardHideCount": false,
+      "ShowCommentIcon": true,
+      "InfoText": "",
+      "Lists": [
+        {
+          "Name": "1. Result Lists |Rezultati absolutno",
+          "Mode": "hidden",
+          "Contest": "3",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "35450A"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "hidden",
+          "Contest": "3",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "52A30A"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "AC6EAA"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "hidden",
+          "Contest": "2",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "87567D"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "3F68B8"
+        },
+        {
+          "Name": "1. Result Lists |Live_HalozeTrail",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "LIVE",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "D3C219"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "hidden",
+          "Contest": "1",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "",
+          "ID": "FFF086"
+        }
+      ]
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details0",
+    "Lists": [
+      {
+        "Name": "1. Result Lists |Rezultati absolutno",
+        "Mode": "hidden",
+        "Contest": "3",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "35450A"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "hidden",
+        "Contest": "3",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "52A30A"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "AC6EAA"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "hidden",
+        "Contest": "2",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "87567D"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "3F68B8"
+      },
+      {
+        "Name": "1. Result Lists |Live_HalozeTrail",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "LIVE",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "D3C219"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "hidden",
+        "Contest": "1",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "FFF086"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

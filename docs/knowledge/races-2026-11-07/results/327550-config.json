@@ -1,0 +1,359 @@
+{
+  "key": "960e32753ad84ca1c550bd0fcfae6e45",
+  "contests": {
+    "1": "GOultra 64 km",
+    "2": "GO3V 28 km",
+    "3": "GOTRIM 10 km",
+    "10": "ODJAVA"
+  },
+  "splits": [
+    {
+      "ID": 4,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 0,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 7,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 13,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 23,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 51,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 5,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 0,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 14,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 19,
+      "Name": "Sabotin",
+      "Label": "Sabotin (5km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 48,
+      "Name": "Preskivrh",
+      "Label": "Preški vrh (13km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 52,
+      "Name": "Preskivrh",
+      "Label": "Preški vrh(13km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 6,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 0,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 15,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 49,
+      "Name": "Sabotin",
+      "Label": "Sabotin (24km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 53,
+      "Name": "Bate",
+      "Label": "Bate (30km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 59,
+      "Name": "Prelesje",
+      "Label": "Prelesje (48km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 54,
+      "Name": "Sabotin",
+      "Label": "Sabotin (59km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 9,
+      "Name": "CILJ",
+      "Label": "CILJ",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 26,
+      "Name": "CILJ",
+      "Label": "CILJ",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 56,
+      "Name": "CILJ",
+      "Label": "CILJ",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "GO4TRAIL Tek treh vrhov 2025",
+  "TimerLogo": "logo_napis z www_crop.jpg",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 45177,
+  "server": "my3.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "details",
+      "Lists": [
+        {
+          "Name": "1. Result Lists |Rezultati absolutno",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "35450A"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "52A30A"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "AC6EAA"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "87567D"
+        },
+        {
+          "Name": "1.1 Splits |Live_G4T",
+          "Mode": "hidden",
+          "Contest": "1",
+          "ShowAs": "LIVE",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "3100A5"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "3F68B8"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "FFF086"
+        }
+      ],
+      "LeaderboardHideCount": false,
+      "ShowCommentIcon": false
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details",
+    "Lists": [
+      {
+        "Name": "1. Result Lists |Rezultati absolutno",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "35450A"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "52A30A"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "AC6EAA"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "87567D"
+      },
+      {
+        "Name": "1.1 Splits |Live_G4T",
+        "Mode": "hidden",
+        "Contest": "1",
+        "ShowAs": "LIVE",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "3100A5"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "3F68B8"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "FFF086"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

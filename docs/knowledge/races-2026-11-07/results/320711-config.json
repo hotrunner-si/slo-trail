@@ -1,0 +1,654 @@
+{
+  "key": "990e68c26877651f7663fe6f69ff1865",
+  "contests": {
+    "1": "Trail tek \"Radulja\" (28 km)",
+    "2": "Trail tek \"Toplica\" (19 km)",
+    "3": "Trail tek \"Prinovec\" (8 km)",
+    "4": "Rekreativni tek na 2 km",
+    "5": "OŠ tek na 900 m (2010- 2009)",
+    "6": "OŠ tek na 900 m  (2012 - 2011)",
+    "7": "OŠ Tek na 600 m (2014 - 2013)",
+    "8": "OŠ tek na 600 m (2016 - 2015)",
+    "9": "OŠ tek na 300m (2018- 2017)",
+    "10": "Pohod (19 km)",
+    "15": "ODJAVA"
+  },
+  "splits": [
+    {
+      "ID": 1,
+      "Name": "Start",
+      "Label": "Štart",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 4,
+      "Name": "Start",
+      "Label": "Štart",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 7,
+      "Name": "Start",
+      "Label": "Štart",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 35,
+      "Name": "Start",
+      "Label": "Štart",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 40,
+      "Name": "Start",
+      "Label": "Štart",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 5,
+      "Name": "Spotter1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 8,
+      "Name": "Spotter1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 38,
+      "Name": "14km",
+      "Label": "14 km",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 39,
+      "Name": "14km",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 41,
+      "Name": "14km",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 2,
+      "Name": "Spotter1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 6,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 9,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 36,
+      "Name": "Spotter1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 42,
+      "Name": "Spotter1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 3,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 19,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 8,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 22,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 9,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 26,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 29,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 32,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 37,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 43,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 20,
+      "Name": "Krog1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 8,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 27,
+      "Name": "Krog1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 30,
+      "Name": "Krog1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 33,
+      "Name": "Krog1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 21,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 8,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 23,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 9,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 28,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 31,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 34,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "29. Šmarješki tek",
+  "TimerLogo": "logo_napis z www_crop.jpg",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 45177,
+  "server": "my4.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "details0",
+      "Lists": [
+        {
+          "Name": "Result Lists|prihodi v cilj",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "LIVE PRIHODI",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "16F7D2"
+        },
+        {
+          "Name": "A: 25. Šmarješki tek|Startna lista_glavni teki",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "STARTNA LISTA",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "82546D"
+        },
+        {
+          "Name": "Brijuni half|Live_SPlits_Live_2023",
+          "Mode": "hidden",
+          "Contest": "1",
+          "ShowAs": "REZULTATI V ŽIVO",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "9EDFE8"
+        },
+        {
+          "Name": "Result Lists|Rezultati_ABSOLUTNO",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "ABSOLUTNO",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "2688CC"
+        },
+        {
+          "Name": "Result Lists|Rezultati_KATEGORIJE",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "KATEGORIJE",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "6C90FE"
+        },
+        {
+          "Name": "Brijuni half|Live_SPlits_Live_2023",
+          "Mode": "hidden",
+          "Contest": "2",
+          "ShowAs": "REZULTATI V ŽIVO",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "17ABF9"
+        },
+        {
+          "Name": "Result Lists|Rezultati_ABSOLUTNO",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "ABSOLUTNO",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "9758E3"
+        },
+        {
+          "Name": "Result Lists|Rezultati_KATEGORIJE",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "KATEGORIJE",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "00404D"
+        },
+        {
+          "Name": "Brijuni half|Live_SPlits_Live_2023",
+          "Mode": "hidden",
+          "Contest": "3",
+          "ShowAs": "REZULTATI V ŽIVO",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "E8387E"
+        },
+        {
+          "Name": "Result Lists|Rezultati_ABSOLUTNO",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "ABSOLUTNO",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "68701F"
+        },
+        {
+          "Name": "Result Lists|Rezultati_KATEGORIJE",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "KATEGORIJE",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "395B26"
+        },
+        {
+          "Name": "Brijuni half|Live_SPlits_Live_2023",
+          "Mode": "hidden",
+          "Contest": "4",
+          "ShowAs": "REZULTATI V ŽIVO",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "254D98"
+        },
+        {
+          "Name": "Result Lists|Rezultati_ABSOLUTNO",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "ABSOLUTNO",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "EBE4AD"
+        },
+        {
+          "Name": "Result Lists|Rezultati_ABSOLUTNOotroci",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "REZULTATI - OTROŠKI TEKI",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "423AD8"
+        },
+        {
+          "Name": "Result Lists|Rezultati_ABSOLUTNO",
+          "Mode": "",
+          "Contest": "10",
+          "ShowAs": "REZULTATI",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "69EE29"
+        }
+      ],
+      "LeaderboardHideCount": false,
+      "ShowCommentIcon": false
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details0",
+    "Lists": [
+      {
+        "Name": "Result Lists|prihodi v cilj",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "LIVE PRIHODI",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "16F7D2"
+      },
+      {
+        "Name": "A: 25. Šmarješki tek|Startna lista_glavni teki",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "STARTNA LISTA",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "82546D"
+      },
+      {
+        "Name": "Brijuni half|Live_SPlits_Live_2023",
+        "Mode": "hidden",
+        "Contest": "1",
+        "ShowAs": "REZULTATI V ŽIVO",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "9EDFE8"
+      },
+      {
+        "Name": "Result Lists|Rezultati_ABSOLUTNO",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "ABSOLUTNO",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "2688CC"
+      },
+      {
+        "Name": "Result Lists|Rezultati_KATEGORIJE",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "KATEGORIJE",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "6C90FE"
+      },
+      {
+        "Name": "Brijuni half|Live_SPlits_Live_2023",
+        "Mode": "hidden",
+        "Contest": "2",
+        "ShowAs": "REZULTATI V ŽIVO",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "17ABF9"
+      },
+      {
+        "Name": "Result Lists|Rezultati_ABSOLUTNO",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "ABSOLUTNO",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "9758E3"
+      },
+      {
+        "Name": "Result Lists|Rezultati_KATEGORIJE",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "KATEGORIJE",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "00404D"
+      },
+      {
+        "Name": "Brijuni half|Live_SPlits_Live_2023",
+        "Mode": "hidden",
+        "Contest": "3",
+        "ShowAs": "REZULTATI V ŽIVO",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "E8387E"
+      },
+      {
+        "Name": "Result Lists|Rezultati_ABSOLUTNO",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "ABSOLUTNO",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "68701F"
+      },
+      {
+        "Name": "Result Lists|Rezultati_KATEGORIJE",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "KATEGORIJE",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "395B26"
+      },
+      {
+        "Name": "Brijuni half|Live_SPlits_Live_2023",
+        "Mode": "hidden",
+        "Contest": "4",
+        "ShowAs": "REZULTATI V ŽIVO",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "254D98"
+      },
+      {
+        "Name": "Result Lists|Rezultati_ABSOLUTNO",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "ABSOLUTNO",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "EBE4AD"
+      },
+      {
+        "Name": "Result Lists|Rezultati_ABSOLUTNOotroci",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "REZULTATI - OTROŠKI TEKI",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "423AD8"
+      },
+      {
+        "Name": "Result Lists|Rezultati_ABSOLUTNO",
+        "Mode": "",
+        "Contest": "10",
+        "ShowAs": "REZULTATI",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "69EE29"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

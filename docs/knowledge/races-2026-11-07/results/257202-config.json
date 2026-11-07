@@ -1,0 +1,264 @@
+{
+  "key": "fd8965ec1d4c682c663effd12b925db5",
+  "contests": {
+    "1": "Triglav Trail Race - 78 km",
+    "2": "Triglav Lakes Race - 44 km",
+    "3": "Vrata Valley Race - 26 km",
+    "4": "Slovenian Alpine Museum Run - 12 km",
+    "5": "Odjava-ne teče"
+  },
+  "splits": [
+    {
+      "ID": 10,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 1,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 11,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 3,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 8,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 6,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 4,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 9,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 7,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 5,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "Triglav Trail Run 2023 by I Feel Slovenia",
+  "TimerLogo": "logo_cel_beli.jpg",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44971,
+  "server": "my1.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "",
+      "Lists": [
+        {
+          "Name": "Triglav Trail 2021|Rezultati_ABSOLUTNO Triglav trail Race_selector",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "RESULTS - REZULTATI",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "EA8239"
+        },
+        {
+          "Name": "Triglav Trail 2021|Rezultati_ABSOLUTNO Triglav trail Race_selector",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "RESULTS - REZULTATI",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "BFB263"
+        },
+        {
+          "Name": "Triglav Trail 2021|Rezultati_ABSOLUTNO Triglav trail Race_selector",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "RESULTS - REZULTATI",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "648B96"
+        },
+        {
+          "Name": "Triglav Trail 2021|Rezultati_ABSOLUTNO Triglav trail Race_selector",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "RESULTS - REZULTATI",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "EF71A6"
+        },
+        {
+          "Name": "Triglav Trail 2021|Rezultati_ABSOLUTNO_present",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Finish Line",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "A367EB"
+        },
+        {
+          "Name": "Triglav Trail 2021|Live_results",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "Results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "8DB32F"
+        }
+      ],
+      "LeaderboardHideCount": false
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "",
+    "Lists": [
+      {
+        "Name": "Triglav Trail 2021|Rezultati_ABSOLUTNO Triglav trail Race_selector",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "RESULTS - REZULTATI",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "EA8239"
+      },
+      {
+        "Name": "Triglav Trail 2021|Rezultati_ABSOLUTNO Triglav trail Race_selector",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "RESULTS - REZULTATI",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "BFB263"
+      },
+      {
+        "Name": "Triglav Trail 2021|Rezultati_ABSOLUTNO Triglav trail Race_selector",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "RESULTS - REZULTATI",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "648B96"
+      },
+      {
+        "Name": "Triglav Trail 2021|Rezultati_ABSOLUTNO Triglav trail Race_selector",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "RESULTS - REZULTATI",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "EF71A6"
+      },
+      {
+        "Name": "Triglav Trail 2021|Rezultati_ABSOLUTNO_present",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Finish Line",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "A367EB"
+      },
+      {
+        "Name": "Triglav Trail 2021|Live_results",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "Results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "8DB32F"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

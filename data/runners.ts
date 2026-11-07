@@ -46,23 +46,18 @@ export const runners: Runner[] = [
     utmbUrl: 'https://utmb.world/runner/7337166.klara.velepec',
     stravaUrl: 'https://www.strava.com/athletes/71603196',
   },
-  /*
   {
     id: 'u4',
     slug: 'tomaz-oblak',
     name: 'Tomaž Oblak',
-    location: 'Slovenija',
+    location: '',
     club: 'KGT Papež',
-    bio: 'Gorski tekač.',
-    longDescription: 'prazen opis',
+    bio: '',
+    longDescription: '',
     quote: '',
     image: '/images/runners/tomaz-oblak/utmb-profile.jpg',
     favouriteRouteSlugs: [],
-    utmbIndex: 765,
-    utmbUrl: 'https://utmb.world/runner/5158710.tomaz.oblak',
-    stravaUrl: 'https://www.strava.com/athletes/31299645',
   },
-  */
 ]
 
 export const getRunner = (slug: string) => runners.find((runner) => runner.slug === slug)

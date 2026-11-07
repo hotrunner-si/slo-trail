@@ -1,0 +1,477 @@
+{
+  "key": "4404bc808f1f59e5fd8b676018c30cfa",
+  "contests": {
+    "1": "Mastodont (36km)",
+    "2": "Pozoj (18km)",
+    "3": "Pozoj - pohodniki (18 km)",
+    "4": "Družinski trail (10km)",
+    "10": "ODJAVA"
+  },
+  "splits": [
+    {
+      "ID": 68,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 13,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 51,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 4,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 0,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 5,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 0,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 14,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 52,
+      "Name": "Vel.grad",
+      "Label": "Vel. grad (4,3km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 6,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 0,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 15,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 59,
+      "Name": "VinskaGora",
+      "Label": "Vinska gora (13km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 54,
+      "Name": "KmetijaJurko",
+      "Label": "Kmetija Jurko (20km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 83,
+      "Name": "Šenbric",
+      "Label": "Šenbric cerkev(6,3km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 60,
+      "Name": "Šenbricgozd",
+      "Label": "Šenbric gozd(29,3km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 73,
+      "Name": "Šenbricgozd",
+      "Label": "Šenbric gozd(7,7km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 74,
+      "Name": "Škale",
+      "Label": "Ld Škale (11,8km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 84,
+      "Name": "Šenbriccerkev",
+      "Label": "Šenbric cerkev(31km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 78,
+      "Name": "Spotter",
+      "Label": "Prihod",
+      "SplitType": 2,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 67,
+      "Name": "Spotter",
+      "Label": "Prihod",
+      "SplitType": 2,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 79,
+      "Name": "CILJ",
+      "Label": "Finish",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 56,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 85,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 87,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 89,
+      "Name": "Grad",
+      "Label": "Grad (4,2km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 90,
+      "Name": "Šenbric",
+      "Label": "Šenbric",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 92,
+      "Name": "spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 91,
+      "Name": "spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 86,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 88,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "Velenje trail 2024",
+  "TimerLogo": "Protime_Logo_2000px_črn-1024x278.png",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44593,
+  "server": "my1.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "details",
+      "Lists": [
+        {
+          "Name": "0. Obala trail|Startna lista_glavni teki",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "START LIST",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "C5F80E"
+        },
+        {
+          "Name": "1.1 Splits |Live_Obala 2023",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "LIVE RESULTS",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "5DB5E2"
+        },
+        {
+          "Name": "1.1 Splits |Prihodi_spiker",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Prihodi v cilj",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "7D6C3B"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Rezultati absolutno",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "3F68B8"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Rezultati kategorije",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "FFF086"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "Rezultati absolutno",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "AC6EAA"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "Rezultati kategorije",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "87567D"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "Rezultati",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "35450A"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno_družine",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "Rezultati",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "325299"
+        }
+      ],
+      "LeaderboardHideCount": false
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details",
+    "Lists": [
+      {
+        "Name": "0. Obala trail|Startna lista_glavni teki",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "START LIST",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "C5F80E"
+      },
+      {
+        "Name": "1.1 Splits |Live_Obala 2023",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "LIVE RESULTS",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "5DB5E2"
+      },
+      {
+        "Name": "1.1 Splits |Prihodi_spiker",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Prihodi v cilj",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "7D6C3B"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Rezultati absolutno",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "3F68B8"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Rezultati kategorije",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "FFF086"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "Rezultati absolutno",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "AC6EAA"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "Rezultati kategorije",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "87567D"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "Rezultati",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "35450A"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno_družine",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "Rezultati",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "325299"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

@@ -1,0 +1,1157 @@
+{
+  "key": "fcebaa1162110a548d155a1363d4733e",
+  "contests": {
+    "1": "13  - ASTERIX",
+    "2": "30 - LEGIONAR AL!VE GTS",
+    "3": "50 - GLADIATOR",
+    "4": "100 - CENTURION",
+    "5": "160 - EMPEROR"
+  },
+  "splits": [
+    {
+      "ID": 82,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 139,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 142,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 253,
+      "Name": "StartPodnanos",
+      "Label": "Start - Podnanos (6,5km)",
+      "SplitType": 9,
+      "Contest": 2,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 254,
+      "Name": "StartNanos",
+      "Label": "Start -Nanos (17,5km)",
+      "SplitType": 9,
+      "Contest": 2,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 255,
+      "Name": "StartAbram",
+      "Label": "Start - Abram (24,5km)",
+      "SplitType": 9,
+      "Contest": 2,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 256,
+      "Name": "PodnanosNanos",
+      "Label": "Podnanos - Nanos",
+      "SplitType": 9,
+      "Contest": 2,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 257,
+      "Name": "NanosAbram",
+      "Label": "Nanos - Abram",
+      "SplitType": 9,
+      "Contest": 2,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 247,
+      "Name": "StartVitovlje",
+      "Label": "Start - Vitovlje (41,3km)",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 64,
+      "Name": "Start_Vitovlje",
+      "Label": "Start - VItovlje (41,3km)",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 248,
+      "Name": "StartRenče",
+      "Label": "Start - Renče (83km)",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 65,
+      "Name": "Start_Preserje",
+      "Label": "Start -preserje (55km)",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 249,
+      "Name": "StartPreserje",
+      "Label": "Start - Preserje (115km)",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 182,
+      "Name": "Start_Lože",
+      "Label": "Start - Lože (69km)",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 250,
+      "Name": "StartLože",
+      "Label": "Start - Lože (129km)",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 183,
+      "Name": "Start_Sv.Socerb",
+      "Label": "Start - Sv. Socerb (76km)",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 251,
+      "Name": "StartSv.Socerb",
+      "Label": "Start - Sv. Socerb (136km)",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 258,
+      "Name": "StartPodnanos",
+      "Label": "Start - Podnanos (140km)",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 259,
+      "Name": "StartNanost",
+      "Label": "Start - Nanos (149km)",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 260,
+      "Name": "StartAbram",
+      "Label": "Start - Abram (156km)",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 293,
+      "Name": "Start_vitovlje",
+      "Label": "Start - Vitovlje",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 261,
+      "Name": "Vitovlje_Renče",
+      "Label": "Vitovlje - Renče",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 262,
+      "Name": "Renče_Preserje",
+      "Label": "Renče - Preserje",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 263,
+      "Name": "Preserje_Lože",
+      "Label": "Preserje - Lože",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 264,
+      "Name": "Lože_Sv.Socerb",
+      "Label": "Lože - Sv. Socerb",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 265,
+      "Name": "Sv.Socerb_Podnanos",
+      "Label": "Sv. Socerb - Podnanos",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 266,
+      "Name": "Podnanos_Nanos",
+      "Label": "Podnanos - Nanos",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 267,
+      "Name": "Nanos_Abram",
+      "Label": "Nanos - Abram",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 269,
+      "Name": "Start_Podnanos",
+      "Label": "Start - Podnanos (80km)",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 270,
+      "Name": "Start_Nanos",
+      "Label": "Start - Nanos (89km)",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 292,
+      "Name": "Abram_spotter",
+      "Label": "Abram - Spotter",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 271,
+      "Name": "Start_Abram",
+      "Label": "Start - Abram (96km)",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 294,
+      "Name": "Nanos_CILJ",
+      "Label": "Nanos - Vipava (Cilj)",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 272,
+      "Name": "VitovljePreserje",
+      "Label": "Vitovlje - Preserje",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 291,
+      "Name": "SpotterVIpava",
+      "Label": "Spotter - Vipava (Cilj)",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 273,
+      "Name": "PreserjeLože",
+      "Label": "Preserje -Lože",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 274,
+      "Name": "LožeSv.Socerb",
+      "Label": "Lože - Sv. Socerb",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 275,
+      "Name": "Sv.SocerbPodnanos",
+      "Label": "Sv. Socerb - Podnanos",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 276,
+      "Name": "PodnanosNanos",
+      "Label": "Podnanos - Nanos",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 277,
+      "Name": "NanosAbram",
+      "Label": "Nanos - Abram",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 226,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 179,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 219,
+      "Name": "Podnanos",
+      "Label": "Podnanos 6,5km",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 187,
+      "Name": "Lože",
+      "Label": "Lože 15km",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 227,
+      "Name": "Nanos",
+      "Label": "Nanos 17,5km",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 278,
+      "Name": "AbramCilj",
+      "Label": "Abram - Vipava (Cilj)",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 188,
+      "Name": "Sv.Socerb",
+      "Label": "Sv. Socerb 22 km",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 228,
+      "Name": "Abram",
+      "Label": "Abram 24,5km",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 279,
+      "Name": "Start_Lože",
+      "Label": "Start - Lože (15km)",
+      "SplitType": 9,
+      "Contest": 3,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 229,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 230,
+      "Name": "Podnanos",
+      "Label": "Podnanos 26km",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 184,
+      "Name": "START",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 237,
+      "Name": "START",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 62,
+      "Name": "Vitovlje",
+      "Label": "Vitovlje 41,3km",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 238,
+      "Name": "Vitovlje",
+      "Label": "Vitovlje (41,3km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 138,
+      "Name": "Preserje",
+      "Label": "Preserje 55km",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 252,
+      "Name": "Renče",
+      "Label": "Renče (83km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 145,
+      "Name": "Lože",
+      "Label": "Lože 69km",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 239,
+      "Name": "Preserje",
+      "Label": "Preserje (115km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 146,
+      "Name": "Sv.Socerb",
+      "Label": "Sv.Socerb 76km",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 240,
+      "Name": "Lože",
+      "Label": "Lože (129km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 234,
+      "Name": "Podnanos",
+      "Label": "Podnanos 80km",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 241,
+      "Name": "Sv.Socerb",
+      "Label": "Sv.Socerb (136km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 196,
+      "Name": "Nanos",
+      "Label": "Nanos 89km",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 242,
+      "Name": "Podnanos",
+      "Label": "Podnanos (140km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 280,
+      "Name": "Start_Sv.Socerb",
+      "Label": "Start - Sv. Socerb (22km)",
+      "SplitType": 9,
+      "Contest": 3,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 180,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 231,
+      "Name": "Nanos",
+      "Label": "Nanos 35km",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 235,
+      "Name": "Abram",
+      "Label": "Abram 96km",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 243,
+      "Name": "Nanos",
+      "Label": "Nanos (149km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 281,
+      "Name": "Start_Podnanos",
+      "Label": "Start - Podnanos (26km)",
+      "SplitType": 9,
+      "Contest": 3,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 232,
+      "Name": "Abram",
+      "Label": "Abram 42km",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 236,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 244,
+      "Name": "Abram",
+      "Label": "Abram (156km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 282,
+      "Name": "Start_Nanos",
+      "Label": "Start - Nanos (35km)",
+      "SplitType": 9,
+      "Contest": 3,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 233,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 147,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 245,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 283,
+      "Name": "Start_Abram",
+      "Label": "Start - Abram (42km)",
+      "SplitType": 9,
+      "Contest": 3,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 181,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 246,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 284,
+      "Name": "LožeSv.Socerb",
+      "Label": "Lože - Sv. Socerb",
+      "SplitType": 9,
+      "Contest": 3,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 285,
+      "Name": "Sv.SocerbPodnanos",
+      "Label": "Sv. Socerb - Podnanos",
+      "SplitType": 9,
+      "Contest": 3,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 286,
+      "Name": "PodnanosNanos",
+      "Label": "Podnanos - Nanos",
+      "SplitType": 9,
+      "Contest": 3,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 287,
+      "Name": "NanosAbram",
+      "Label": "Nanos - Abram",
+      "SplitType": 9,
+      "Contest": 3,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 288,
+      "Name": "AbramVIpava",
+      "Label": "Abram - Vipava (Cilj)",
+      "SplitType": 9,
+      "Contest": 3,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 289,
+      "Name": "AbramVipava",
+      "Label": "Abram - Vipava (Cilj)",
+      "SplitType": 9,
+      "Contest": 2,
+      "TypeOfSport": 0
+    }
+  ],
+  "eventname": "ULTRA TRAIL VIPAVA 2021",
+  "TimerLogo": "logo_cel_beli.jpg",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44842,
+  "server": "my1.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "2020-01-01T00:00:00+01:00",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "details",
+      "Lists": [
+        {
+          "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "Live  results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "74CE6E"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "2C9EA3"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "6DE927"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "9550C1"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "56B6F8"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "6B6793"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "1F89F8"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "4FE7D7"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "A1C886"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "D9E237"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "5BF882"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "7349EC"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "282BFA"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "D607A4"
+        },
+        {
+          "Name": "1. Result Lists UTVV|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "3172DA"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "Live results - all",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "50A994"
+        },
+        {
+          "Name": "1.1 Splits UTVV|Prihodi",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "Spotter check",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "8EE8D8"
+        },
+        {
+          "Name": "Participants|Startna lista_Online",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Start list",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "099269"
+        }
+      ],
+      "LeaderboardHideCount": false,
+      "ShowCommentIcon": true
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details",
+    "Lists": [
+      {
+        "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "Live  results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "74CE6E"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "2C9EA3"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "6DE927"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "9550C1"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "56B6F8"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "6B6793"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "1F89F8"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "4FE7D7"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "A1C886"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "D9E237"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "5BF882"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "7349EC"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "282BFA"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "D607A4"
+      },
+      {
+        "Name": "1. Result Lists UTVV|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "3172DA"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Live_UTVV_ALL",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "Live results - all",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "50A994"
+      },
+      {
+        "Name": "1.1 Splits UTVV|Prihodi",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "Spotter check",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "8EE8D8"
+      },
+      {
+        "Name": "Participants|Startna lista_Online",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Start list",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "099269"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

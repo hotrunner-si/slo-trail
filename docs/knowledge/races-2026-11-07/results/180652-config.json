@@ -1,0 +1,1035 @@
+{
+  "key": "c20f6f68386b3b1dfe05d4218b7d124c",
+  "contests": {
+    "1": "10km FUNNY TRAIL",
+    "2": "15km Adidas Terrex SPEED TRAIL",
+    "3": "30km Intersport SKY RACE",
+    "4": "60km Bite Me SKY TRAIL",
+    "5": "100km ULTRA SKY TRAIL",
+    "6": "170km ULTRA TRAIL JULIAN ALPS"
+  },
+  "splits": [
+    {
+      "ID": 82,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 139,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 142,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 200,
+      "Name": "0do10km",
+      "Label": "Start-Koseč",
+      "SplitType": 9,
+      "Contest": 6,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 201,
+      "Name": "10do16km",
+      "Label": "Vrsno-planina Kuhinja",
+      "SplitType": 9,
+      "Contest": 6,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 202,
+      "Name": "16do32km",
+      "Label": "pl. Kuhinja - Žabče",
+      "SplitType": 9,
+      "Contest": 6,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 203,
+      "Name": "32do44km",
+      "Label": "Žabče - Knežke Ravne",
+      "SplitType": 9,
+      "Contest": 6,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 143,
+      "Name": "0do14km",
+      "Label": "",
+      "SplitType": 9,
+      "Contest": 3,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 204,
+      "Name": "44do50km",
+      "Label": "Knežke Ravne - Stržišče",
+      "SplitType": 9,
+      "Contest": 6,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 144,
+      "Name": "14do24km",
+      "Label": "",
+      "SplitType": 9,
+      "Contest": 3,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 205,
+      "Name": "50do70km",
+      "Label": "Stržišče - Soriška pl.",
+      "SplitType": 9,
+      "Contest": 6,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 215,
+      "Name": "24docilj",
+      "Label": "",
+      "SplitType": 9,
+      "Contest": 3,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 63,
+      "Name": "0do15km",
+      "Label": "Start - Prešernova koča",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 64,
+      "Name": "15do25km",
+      "Label": "Preš - Golica",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 65,
+      "Name": "25do40km",
+      "Label": "GOlica -Dovje",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 182,
+      "Name": "40kmdo52km",
+      "Label": "Dovje - Martuljek",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 183,
+      "Name": "52kmdoCilj",
+      "Label": "Martuljek -Cilj",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 206,
+      "Name": "70do79km",
+      "Label": "Soriška pl. Ratitovec",
+      "SplitType": 9,
+      "Contest": 6,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 224,
+      "Name": "0do18",
+      "Label": "Start - Kupljenik",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 207,
+      "Name": "79do112km",
+      "Label": "Ratitovec - Bled",
+      "SplitType": 9,
+      "Contest": 6,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 199,
+      "Name": "18do37km",
+      "Label": "Kupljenik - Žirovnica",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 208,
+      "Name": "112do126km",
+      "Label": "Bled- Žirovnica",
+      "SplitType": 9,
+      "Contest": 6,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 186,
+      "Name": "START",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 191,
+      "Name": "37do42km",
+      "Label": "Žirovnica - Valv. dom",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 209,
+      "Name": "126do130km",
+      "Label": "Žirovnica - Valvas. dom",
+      "SplitType": 9,
+      "Contest": 6,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 1,
+      "Name": "Koseč7km",
+      "Label": "Koseč(7km)",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 225,
+      "Name": "42do57",
+      "Label": "Valv. dom - Preš. koča",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 210,
+      "Name": "130do133km",
+      "Label": "Valv. dom - Preš. koča",
+      "SplitType": 9,
+      "Contest": 6,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 192,
+      "Name": "57do71km",
+      "Label": "Peš. koča - Golica",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 211,
+      "Name": "133do143km",
+      "Label": "Preš. koča - Golica",
+      "SplitType": 9,
+      "Contest": 6,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 170,
+      "Name": "pl.Kuhinja16km",
+      "Label": "pl. Kuhinja(16km)",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 193,
+      "Name": "71do83km",
+      "Label": "Golica - Dovlje",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 212,
+      "Name": "143do158km",
+      "Label": "Golica - Dovje",
+      "SplitType": 9,
+      "Contest": 6,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 171,
+      "Name": "Žabče32km",
+      "Label": "{EN:Žabče(32km)|SI:Žabče(32km)}",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 194,
+      "Name": "83do94km",
+      "Label": "Dovje - Martuljek",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 213,
+      "Name": "158do168km",
+      "Label": "Dovje - Martuljek",
+      "SplitType": 9,
+      "Contest": 6,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 172,
+      "Name": "KnežkeRavne44km",
+      "Label": "{EN:Knežke Ravne (44km)|SI:Knežke Ravne (44km)}",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 195,
+      "Name": "94doCilj",
+      "Label": "Martuljek - Cilj",
+      "SplitType": 9,
+      "Contest": 5,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 214,
+      "Name": "168do175",
+      "Label": "Martuljek - Cilj",
+      "SplitType": 9,
+      "Contest": 6,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 173,
+      "Name": "Stržišče56km",
+      "Label": "{EN:Stržišče(56km)|SI:Stržišče(50km)}",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 220,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 175,
+      "Name": "SoriškaPl.70km",
+      "Label": "{EN:Soriška Pl. (70km)|SI:Sorišla Pl. (70km)}",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 176,
+      "Name": "Ratitovec79km",
+      "Label": "Ratitovec(79km)",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 221,
+      "Name": "Kupljenik",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 222,
+      "Name": "Žirovnica",
+      "Label": "Žirovnica (37)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 223,
+      "Name": "Valvasorjevdom",
+      "Label": "Valv. dom (42km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 149,
+      "Name": "Preš.koča",
+      "Label": "Preš. koča(57km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 150,
+      "Name": "Golica",
+      "Label": "Golica(71km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 217,
+      "Name": "Rovtarica91km",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 162,
+      "Name": "Bled112km",
+      "Label": "Kupljenk(101km)",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 163,
+      "Name": "Žirovnica126km",
+      "Label": "Žirovnica(121km)",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 178,
+      "Name": "Valv.dom130km",
+      "Label": "Valv. dom(126km)",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 164,
+      "Name": "Preš.koča130km",
+      "Label": "Preš. koča(133km)",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 165,
+      "Name": "Golica143km",
+      "Label": "{EN:Golica(143km)|SI:Golica(143km)}",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 166,
+      "Name": "Dovje158km",
+      "Label": "{EN:Dovje(158km)|SI:Dovje(158km)}",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 179,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 167,
+      "Name": "Martuljek168",
+      "Label": "Martuljek(168)",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 219,
+      "Name": "Martuljek",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 169,
+      "Name": "CILJ",
+      "Label": "FINISH",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 180,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 187,
+      "Name": "Dovje14kmP",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 188,
+      "Name": "Martuljek24km",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 181,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 184,
+      "Name": "START",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 62,
+      "Name": "Preš.koča15km",
+      "Label": "Preš. koča(15km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 138,
+      "Name": "Golica25km",
+      "Label": "Golica(25km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 145,
+      "Name": "Dovje40km",
+      "Label": "Dovje(40km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 146,
+      "Name": "Martuljek50km",
+      "Label": "Martuljek(50km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 196,
+      "Name": "Valvasorjevdom",
+      "Label": "Valv. dom(53km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 147,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 151,
+      "Name": "Dovje",
+      "Label": "Dovje(83km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 152,
+      "Name": "Martuljek",
+      "Label": "Martuljek(94km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 153,
+      "Name": "CILJ",
+      "Label": "FINISH",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "JULIAN ALPS TRAIL RUN 2021",
+  "TimerLogo": "logo_cel_beli.jpg",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44969,
+  "server": "my3.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "2020-01-01T00:00:00+01:00",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "details0",
+      "Lists": [
+        {
+          "Name": "Participants|Startna lista_Online_Lastname",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Start list",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "AA0B4D"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "10km Overall",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "C67F98"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "10km AG",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "60AB23"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "15km Overall",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "ID": "523263"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "15km AG",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "40121C"
+        },
+        {
+          "Name": "1.1 Splits Julian alps|Live30KM",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "details1",
+          "ID": "45368F"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "30km Overall",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "Details": "details1",
+          "ID": "EBB172"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "30km AG",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "Details": "details1",
+          "ID": "1F921C"
+        },
+        {
+          "Name": "1.1 Splits Julian alps|Live60KM",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "Live results + tracking",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "details2",
+          "ID": "1F806B"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "60km Overall",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "Details": "details2",
+          "ID": "DA5EE8"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "60km AG",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "Details": "details2",
+          "ID": "5645B4"
+        },
+        {
+          "Name": "1.1 Splits Julian alps|Live100KM",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "Live results + tracking",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "details3",
+          "ID": "7BEECB"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "100km Overall",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "Details": "details3",
+          "ID": "873C59"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "100km AG",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "Details": "details3",
+          "ID": "973BA4"
+        },
+        {
+          "Name": "1.1 Splits Julian alps|Live170KM",
+          "Mode": "",
+          "Contest": "6",
+          "ShowAs": "Live results + tracking",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "Details": "details4",
+          "ID": "9228DA"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "6",
+          "ShowAs": "170km Overall",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "Details": "details4",
+          "ID": "2F8354"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "6",
+          "ShowAs": "170km AG",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "Details": "details4",
+          "ID": "3A181E"
+        }
+      ],
+      "LeaderboardHideCount": false,
+      "ShowCommentIcon": true
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details0",
+    "Lists": [
+      {
+        "Name": "Participants|Startna lista_Online_Lastname",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Start list",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "AA0B4D"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "10km Overall",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "C67F98"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "10km AG",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details0",
+        "ID": "60AB23"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "15km Overall",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "523263"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "15km AG",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details0",
+        "ID": "40121C"
+      },
+      {
+        "Name": "1.1 Splits Julian alps|Live30KM",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details1",
+        "ID": "45368F"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "30km Overall",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details1",
+        "ID": "EBB172"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "30km AG",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details1",
+        "ID": "1F921C"
+      },
+      {
+        "Name": "1.1 Splits Julian alps|Live60KM",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "Live results + tracking",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details2",
+        "ID": "1F806B"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "60km Overall",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details2",
+        "ID": "DA5EE8"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "60km AG",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details2",
+        "ID": "5645B4"
+      },
+      {
+        "Name": "1.1 Splits Julian alps|Live100KM",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "Live results + tracking",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details3",
+        "ID": "7BEECB"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "100km Overall",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details3",
+        "ID": "873C59"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "100km AG",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details3",
+        "ID": "973BA4"
+      },
+      {
+        "Name": "1.1 Splits Julian alps|Live170KM",
+        "Mode": "",
+        "Contest": "6",
+        "ShowAs": "Live results + tracking",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details4",
+        "ID": "9228DA"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "6",
+        "ShowAs": "170km Overall",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details4",
+        "ID": "2F8354"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "6",
+        "ShowAs": "170km AG",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details4",
+        "ID": "3A181E"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

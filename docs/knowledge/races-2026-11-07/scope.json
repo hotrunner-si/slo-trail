@@ -1,0 +1,9 @@
+{
+  "S": ["soca-outdoor-festival", "obala-ultra-trail", "julian-alps-trail-run-by-utmb", "ultra-trail-vipava-valley"],
+  "A": ["kocevsko-outdoor-festival", "kriska-gora-trail", "podbrdo-trail-running-festival", "knap-trail", "k24-ultra-trail"],
+  "minimumUsefulFacts": 5,
+  "resultsFromYear": 2020,
+  "largeRaceTop": 10,
+  "otherRaceTop": 3,
+  "note": "Research priority chosen by the user on 2026-11-07; not an independently measured popularity ranking."
+}

@@ -1,0 +1,584 @@
+{
+  "key": "2171ac80c80f9519168aab2f7bc03bb9",
+  "contests": {
+    "1": "Continental 10km",
+    "2": "Adidas Terrex 15km",
+    "3": "Bite Me 25km",
+    "4": "I Feel Slovenia 45km",
+    "5": "MTB Maraton",
+    "6": "MTB Maraton - E-bikes"
+  },
+  "splits": [
+    {
+      "ID": 1,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 6,
+      "Name": "Odsek",
+      "Label": "Vzpon na grad",
+      "SplitType": 9,
+      "Contest": 1,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 25,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 30,
+      "Name": "Odsek",
+      "Label": "Vzpon na grad",
+      "SplitType": 9,
+      "Contest": 2,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 31,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 36,
+      "Name": "Odsek",
+      "Label": "Vzpon na grad",
+      "SplitType": 9,
+      "Contest": 3,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 37,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 42,
+      "Name": "Odsek",
+      "Label": "Vzpon na grad",
+      "SplitType": 9,
+      "Contest": 4,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 2,
+      "Name": "Odsekstart",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 26,
+      "Name": "Odsekstart",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 32,
+      "Name": "Odsekstart",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 38,
+      "Name": "Odsekstart",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 3,
+      "Name": "Odsekcilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 27,
+      "Name": "Odsekcilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 33,
+      "Name": "Odsekcilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 39,
+      "Name": "Odsekcilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 4,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 5,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 29,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 35,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 41,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "Soča Outdoor Festival 2022",
+  "TimerLogo": "",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44844,
+  "server": "my3.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "details0",
+      "Lists": [
+        {
+          "Name": "1. Soca 2022|Live",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "D596F5"
+        },
+        {
+          "Name": "1. Soca 2022|Odsek",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "Redbull section",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 5,
+          "ID": "D920D6"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 10,
+          "ID": "BA8136"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 5,
+          "ID": "958ED3"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 10,
+          "ID": "735301"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 5,
+          "ID": "C7B336"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 10,
+          "ID": "D53DFB"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 5,
+          "ID": "2CA99E"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 10,
+          "ID": "289FB7"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 5,
+          "ID": "9DB5A3"
+        },
+        {
+          "Name": "1. Soca 2022|Rezultati_absolutno_SPEAKER",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Prihodi v cilj",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "B8E81A"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results_overall_LiVE",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 10,
+          "ID": "769DD1"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results OVERALL_mtb",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "28F21D"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 0,
+          "ID": "B5EF9B"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results OVERALL_mtb",
+          "Mode": "",
+          "Contest": "6",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "88067D"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results_overall_LiVE",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "",
+          "Format": "VP",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "769DD1"
+        }
+      ],
+      "LeaderboardHideCount": false,
+      "ShowCommentIcon": true
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details0",
+    "Lists": [
+      {
+        "Name": "1. Soca 2022|Live",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "D596F5"
+      },
+      {
+        "Name": "1. Soca 2022|Odsek",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "Redbull section",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "D920D6"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "BA8136"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "958ED3"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "735301"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "C7B336"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "D53DFB"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "2CA99E"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "289FB7"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "9DB5A3"
+      },
+      {
+        "Name": "1. Soca 2022|Rezultati_absolutno_SPEAKER",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Prihodi v cilj",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "B8E81A"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results_overall_LiVE",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "769DD1"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results OVERALL_mtb",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "28F21D"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "B5EF9B"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results OVERALL_mtb",
+        "Mode": "",
+        "Contest": "6",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "88067D"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results_overall_LiVE",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "",
+        "Format": "VP",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details0",
+        "ID": "769DD1"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

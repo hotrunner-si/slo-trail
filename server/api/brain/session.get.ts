@@ -30,8 +30,8 @@ export default defineEventHandler(async (event): Promise<BrainSession> => {
           email: user.email,
           createdAt: user.created_at,
           pendingEmail: user.new_email || null,
-          displayName: brainAccountName.safeParse(user.user_metadata?.display_name).success
-            ? String(user.user_metadata.display_name).trim()
+          displayName: brainAccountName.safeParse((user.user_metadata?.display_name || user.user_metadata?.full_name)).success
+            ? String(user.user_metadata.display_name || user.user_metadata.full_name).trim()
             : '',
         }
       : null,

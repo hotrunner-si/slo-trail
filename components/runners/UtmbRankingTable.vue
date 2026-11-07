@@ -2,13 +2,25 @@
 import { sortUtmbRunners, utmbCategories, utmbDisplayName } from '~/utils/utmb'
 import type { UtmbCategory, UtmbRanking, UtmbSex } from '~/utils/utmb'
 const selections = [
-  { id: 'world-H', label: 'Svetovna lestvica · moški' },
-  { id: 'world-F', label: 'Svetovna lestvica · ženske' },
-  { id: 'slovenia-H', label: 'Slovenska lestvica · moški' },
-  { id: 'slovenia-F', label: 'Slovenska lestvica · ženske' },
   { id: 'slovenia-mixed', label: 'Slovenska lestvica · mešana' },
+  { id: 'slovenia-F', label: 'Slovenska lestvica · ženske' },
+  { id: 'slovenia-H', label: 'Slovenska lestvica · moški' },
+  { id: 'world-F', label: 'Svetovna lestvica · ženske' },
+  { id: 'world-H', label: 'Svetovna lestvica · moški' },
 ]
-const selection = ref('world-H')
+const route = useRoute()
+const router = useRouter()
+const selection = computed({
+  get: () => {
+    const ranking = route.query.ranking
+    return typeof ranking === 'string' && selections.some((item) => item.id === ranking)
+      ? ranking
+      : 'slovenia-mixed'
+  },
+  set: (ranking: string) => {
+    void router.push({ query: { ...route.query, ranking }, hash: route.hash })
+  },
+})
 const pickerOpen = ref(false)
 const picker = ref<HTMLElement | null>(null)
 const pickerButton = ref<HTMLButtonElement | null>(null)
@@ -58,7 +70,17 @@ onUnmounted(() => {
 const scope = computed(() => (selection.value.startsWith('world-') ? 'world' : 'slovenia'))
 const mixed = computed(() => selection.value === 'slovenia-mixed')
 const female = computed(() => selection.value.endsWith('-F'))
-const category = ref<UtmbCategory>('general')
+const category = computed<UtmbCategory>({
+  get: () => {
+    const value = route.query.category
+    return typeof value === 'string' && utmbCategories.includes(value as UtmbCategory)
+      ? (value as UtmbCategory)
+      : 'general'
+  },
+  set: (category) => {
+    void router.push({ query: { ...route.query, category }, hash: route.hash })
+  },
+})
 const labels: Record<UtmbCategory, string> = {
   general: 'General UTMB',
   '20k': '20K',
@@ -453,7 +475,10 @@ tbody tr:hover {
     border-right: 0;
     box-shadow: none;
   }
-  thead th:nth-child(2) { background: #ebe9e2; z-index: 3; }
+  thead th:nth-child(2) {
+    background: #ebe9e2;
+    z-index: 3;
+  }
   .utmb-section-heading {
     align-items: flex-start;
     flex-direction: column;

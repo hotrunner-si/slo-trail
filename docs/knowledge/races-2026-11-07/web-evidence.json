@@ -1,0 +1,22 @@
+[
+  {
+    "key": "web-caven-current-2026",
+    "slug": "caven-run",
+    "url": "https://www.caven.run/en/",
+    "finalUrl": "https://www.caven.run/en/",
+    "ok": true,
+    "checkedAt": "2026-11-07",
+    "checkedVia": "web search result followed by official page text; direct fetch returns HTTP 403",
+    "notes": "Current official English page: event postponed from 24 October to 21 November 2026 after mountain rescue consultation because of rain, snow and bora. Trail 17 km/+1355 m, 09:30, 6h. Čaven24 24 km/+1734 m, 09:00, 8h. Vertical 4.3 km/+1081 m, 11:00. Personal cup/bottle and phone required. Start Lokavec. Vertical finishes at Koča Antona Bavčerja. Bag transport included. Shuttle 7 EUR."
+  },
+  {
+    "key": "web-haloze-regulations-2026",
+    "slug": "haloze-trail",
+    "url": "https://protime.si/wp-content/uploads/2025/12/Razpis-Haloze-Trail-2026.pdf",
+    "finalUrl": "https://protime.si/wp-content/uploads/2025/12/Razpis-Haloze-Trail-2026.pdf",
+    "ok": true,
+    "checkedAt": "2026-11-07",
+    "checkedVia": "web search text extraction of organizer regulations hosted by official timer",
+    "notes": "22 August 2026. 5 km/+150 m starts 09:15; 16 km/+500 m and 27 km/+1100 m start 09:00. Both longer courses have 4:30 limit. Start sports park Majšperk, finish before KPC Majšperk. 5km passes Monsberg ruins. 16km passes Ptujska Gora and Dravinja. 27km climbs Janški vrh and Bolfenk. Organizer ŠD Ptujska Gora."
+  }
+]

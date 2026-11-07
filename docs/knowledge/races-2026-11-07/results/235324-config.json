@@ -1,0 +1,490 @@
+{
+  "key": "be866653f4cadfdee35ea90ef13f9d6b",
+  "contests": {
+    "1": "21. Lončar (9,8 km)",
+    "2": "Konjiček (2km)",
+    "3": "Žvrgolček I 300m (2015 in mlajši)",
+    "4": "Žvrgolček II 600m (2011 do 2014)",
+    "5": "Žvrgolček III 2km (2008 do 2010)",
+    "6": "Potičnica (Trail 24km)",
+    "7": "Odjava"
+  },
+  "splits": [
+    {
+      "ID": 14,
+      "Name": "Krog1",
+      "Label": "Krog1",
+      "SplitType": 9,
+      "Contest": 1,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 1,
+      "Name": "Start1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 15,
+      "Name": "Krog2",
+      "Label": "Krog2",
+      "SplitType": 9,
+      "Contest": 1,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 2,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 3,
+      "Name": "Start1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 4,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 5,
+      "Name": "Start1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 6,
+      "Name": "CiljSPLIT",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 9,
+      "Name": "Start1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 10,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 7,
+      "Name": "Start1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 8,
+      "Name": "CiljSPLIT",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 11,
+      "Name": "Start1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 12,
+      "Name": "Obrat",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 13,
+      "Name": "Cilj",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "Lončarija teče 2023",
+  "TimerLogo": "logo_cel_beli.jpg",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44970,
+  "server": "my3.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "details",
+      "Lists": [
+        {
+          "Name": "Result Lists|Rezultati_ABSOLUTNO_9,8km",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Absolutno",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "AE8B10"
+        },
+        {
+          "Name": "Result Lists|Rezultati_KATEGORIJE",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Kategorije",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "6C90FE"
+        },
+        {
+          "Name": "Result Lists|Rezultati_TROJKE_ženske",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Tek trojk - ženske",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "7C85EB"
+        },
+        {
+          "Name": "Result Lists|Rezultati_TROJKEmoški",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Tek trojk - moški",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "7FDBF8"
+        },
+        {
+          "Name": "Result Lists|Rezultati_ABSOLUTNO",
+          "Mode": "",
+          "Contest": "6",
+          "ShowAs": "Absolutno",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "932F90"
+        },
+        {
+          "Name": "Result Lists|Rezultati_KATEGORIJE",
+          "Mode": "",
+          "Contest": "6",
+          "ShowAs": "{EN:Kategorije|SI:Kategorije}",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "1ABD2B"
+        },
+        {
+          "Name": "Result Lists|Rezultati_ABSOLUTNO",
+          "Mode": "hidden",
+          "Contest": "2",
+          "ShowAs": "Absolutno",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "9758E3"
+        },
+        {
+          "Name": "Result Lists|Rezultati_KATEGORIJE",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "Kategorije",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "00404D"
+        },
+        {
+          "Name": "Result Lists|Rezultati_ABSOLUTNO",
+          "Mode": "hidden",
+          "Contest": "3",
+          "ShowAs": "Absolutno",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "68701F"
+        },
+        {
+          "Name": "Result Lists|Rezultati_KATEGORIJE",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "Kategorije",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "395B26"
+        },
+        {
+          "Name": "Result Lists|Rezultati_ABSOLUTNO",
+          "Mode": "hidden",
+          "Contest": "4",
+          "ShowAs": "Absolutno",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "EBE4AD"
+        },
+        {
+          "Name": "Result Lists|Rezultati_KATEGORIJE",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "Kategorije",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "269D8A"
+        },
+        {
+          "Name": "Result Lists|Rezultati_ABSOLUTNO",
+          "Mode": "hidden",
+          "Contest": "5",
+          "ShowAs": "{EN:Absolutno|SI:Absolutno}",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "070D9B"
+        },
+        {
+          "Name": "Result Lists|Rezultati_KATEGORIJE",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "Kategorije",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "5898A6"
+        }
+      ],
+      "LeaderboardHideCount": false
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details",
+    "Lists": [
+      {
+        "Name": "Result Lists|Rezultati_ABSOLUTNO_9,8km",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Absolutno",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "AE8B10"
+      },
+      {
+        "Name": "Result Lists|Rezultati_KATEGORIJE",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Kategorije",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "6C90FE"
+      },
+      {
+        "Name": "Result Lists|Rezultati_TROJKE_ženske",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Tek trojk - ženske",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "7C85EB"
+      },
+      {
+        "Name": "Result Lists|Rezultati_TROJKEmoški",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Tek trojk - moški",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "7FDBF8"
+      },
+      {
+        "Name": "Result Lists|Rezultati_ABSOLUTNO",
+        "Mode": "",
+        "Contest": "6",
+        "ShowAs": "Absolutno",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "932F90"
+      },
+      {
+        "Name": "Result Lists|Rezultati_KATEGORIJE",
+        "Mode": "",
+        "Contest": "6",
+        "ShowAs": "{EN:Kategorije|SI:Kategorije}",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "1ABD2B"
+      },
+      {
+        "Name": "Result Lists|Rezultati_ABSOLUTNO",
+        "Mode": "hidden",
+        "Contest": "2",
+        "ShowAs": "Absolutno",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "9758E3"
+      },
+      {
+        "Name": "Result Lists|Rezultati_KATEGORIJE",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "Kategorije",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "00404D"
+      },
+      {
+        "Name": "Result Lists|Rezultati_ABSOLUTNO",
+        "Mode": "hidden",
+        "Contest": "3",
+        "ShowAs": "Absolutno",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "68701F"
+      },
+      {
+        "Name": "Result Lists|Rezultati_KATEGORIJE",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "Kategorije",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "395B26"
+      },
+      {
+        "Name": "Result Lists|Rezultati_ABSOLUTNO",
+        "Mode": "hidden",
+        "Contest": "4",
+        "ShowAs": "Absolutno",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "EBE4AD"
+      },
+      {
+        "Name": "Result Lists|Rezultati_KATEGORIJE",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "Kategorije",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "269D8A"
+      },
+      {
+        "Name": "Result Lists|Rezultati_ABSOLUTNO",
+        "Mode": "hidden",
+        "Contest": "5",
+        "ShowAs": "{EN:Absolutno|SI:Absolutno}",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "070D9B"
+      },
+      {
+        "Name": "Result Lists|Rezultati_KATEGORIJE",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "Kategorije",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "5898A6"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

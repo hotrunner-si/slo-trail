@@ -4,7 +4,18 @@ import { processAccountImage } from '../../utils/image-processing'
 
 export default defineEventHandler(async (event) => {
   brainMutation(event)
-  const { user } = await brainIdentity(event)
+  const { client, user } = await brainIdentity(event)
+  const link = await client
+    .from('brain_runner_links')
+    .select('runner_slug')
+    .eq('user_id', user!.id)
+    .maybeSingle()
+  brainCheck(link.error)
+  if (!link.data)
+    throw createError({
+      statusCode: 403,
+      statusMessage: 'Datoteke lahko nalagaš po povezavi računa s tekačem.',
+    })
   brainLimit(event, 'upload:' + user!.id, 8)
   const length = Number(getHeader(event, 'content-length') || 0)
   if (!length || length > 5 * 1024 * 1024 + 16000)

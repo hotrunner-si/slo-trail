@@ -1,0 +1,122 @@
+{
+  "key": "ec36496cc69422b66ee792cfda2e5acf",
+  "contests": {
+    "1": "Vzpon na Sv. Ano",
+    "4": "ODJAVA"
+  },
+  "splits": [
+    {
+      "ID": 5,
+      "Name": "vzpon_1",
+      "Label": "",
+      "SplitType": 9,
+      "Contest": 1,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 1,
+      "Name": "start1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 254
+    },
+    {
+      "ID": 6,
+      "Name": "spust_1",
+      "Label": "",
+      "SplitType": 9,
+      "Contest": 1,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 2,
+      "Name": "finish1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 7,
+      "Name": "vzpon_2",
+      "Label": "",
+      "SplitType": 9,
+      "Contest": 1,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 3,
+      "Name": "start2",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 4,
+      "Name": "finish2",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "8 ur Sv. Ane 2023",
+  "TimerLogo": "logo_napis-z-www_BEL_crop.jpg",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44971,
+  "server": "my4.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "",
+      "Lists": [
+        {
+          "Name": "A:Vzpon na Sv.Ano|Rezultati_vzponSv.Ana_spol+",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Rezultati v živo",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "0AB226"
+        }
+      ],
+      "LeaderboardHideCount": false
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "",
+    "Lists": [
+      {
+        "Name": "A:Vzpon na Sv.Ano|Rezultati_vzponSv.Ana_spol+",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Rezultati v živo",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "0AB226"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

@@ -1,3 +1,24 @@
+.account-first-login {
+  width: min(480px, calc(100% - 32px));
+  max-height: calc(100dvh - 48px);
+  overflow-y: auto;
+  margin: auto;
+  padding: 28px;
+  border: 1px solid #d9d5ca;
+  border-radius: 16px;
+  background: #fffdf5;
+  color: #252b25;
+}
+.account-first-login::backdrop {
+  background: rgb(0 0 0 / 45%);
+}
+.account-first-login > p { margin-block: 16px; }
+.account-google-login {
+  display: grid;
+  gap: 12px;
+  margin-block: 20px;
+  text-align: center;
+}
 .brain-app .brain-account-screen {
   max-width: 1120px;
   margin: 0 auto;
@@ -264,6 +285,19 @@
   gap: 20px;
   align-items: start;
 }
+.account-settings-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+.account-settings-column > .brain-panel {
+  margin: 0;
+  width: 100%;
+}
+.account-settings-grid.account-settings-recovery {
+  grid-template-columns: 1fr;
+}
 .brain-app .account-settings-grid .brain-auth-panel {
   max-width: none;
 }
@@ -300,6 +334,9 @@
   .account-settings-grid {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+  .account-settings-grid {
+    gap: 20px;
   }
   .account-tabs {
     gap: 22px;

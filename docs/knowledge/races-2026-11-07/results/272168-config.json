@@ -1,0 +1,798 @@
+{
+  "key": "e4a6bd668506b77eab1bfc6d1c20c27d",
+  "contests": {
+    "1": "Obala Ultra trail 108 km",
+    "2": "Obala Ultra trail 65 km",
+    "3": "Obala trail 35 km",
+    "4": "Borotalco trail 18 km",
+    "5": "Rio Mare 12 km",
+    "10": "ODJAVA"
+  },
+  "splits": [
+    {
+      "ID": 4,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 0,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 7,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 10,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 13,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 20,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 51,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 68,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 5,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 0,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 14,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 19,
+      "Name": "Baredi",
+      "Label": "Baredi (11km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 52,
+      "Name": "Socerb",
+      "Label": "Socerb (10km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 6,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 0,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 15,
+      "Name": "CILJ",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 10,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 44,
+      "Name": "Strunjan",
+      "Label": "Strunjan (5,4km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 46,
+      "Name": "Cetore",
+      "Label": "Cetore (20km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 47,
+      "Name": "Strunjan",
+      "Label": "Strunjan (27,4km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 59,
+      "Name": "Slavnik",
+      "Label": "Slavnik (24km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 82,
+      "Name": "Spotter",
+      "Label": "Prihod",
+      "SplitType": 2,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 84,
+      "Name": "Cetore",
+      "Label": "Cetore (3,5km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 22,
+      "Name": "CILJ",
+      "Label": "Finish",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 45,
+      "Name": "Strunjan",
+      "Label": "Strunjan (10,4km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 54,
+      "Name": "Zazid",
+      "Label": "Zazid (39km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 55,
+      "Name": "Kubed",
+      "Label": "Kubed  (49km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 80,
+      "Name": "Spotter",
+      "Label": "Prihod",
+      "SplitType": 2,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 81,
+      "Name": "Spotter",
+      "Label": "Prihod",
+      "SplitType": 2,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 9,
+      "Name": "CILJ",
+      "Label": "Finish",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 12,
+      "Name": "CILJ",
+      "Label": "Finish",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 60,
+      "Name": "Boršt",
+      "Label": "Boršt (61km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 83,
+      "Name": "Kubed",
+      "Label": "Kubed (4,5km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 65,
+      "Name": "Puče",
+      "Label": "Puče (72km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 73,
+      "Name": "Boršt",
+      "Label": "Boršt (17km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 61,
+      "Name": "Šmarje",
+      "Label": "Šmarje (83km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 74,
+      "Name": "Puče",
+      "Label": "Puče (28km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 62,
+      "Name": "Cetore",
+      "Label": "Cetore (93km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 75,
+      "Name": "Šmarje",
+      "Label": "Šmarje (40km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 66,
+      "Name": "Strunjan",
+      "Label": "Strunjan (100km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 76,
+      "Name": "Cetore",
+      "Label": "Cetore (50km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 67,
+      "Name": "Spotter",
+      "Label": "Prihod",
+      "SplitType": 2,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 77,
+      "Name": "Strunjan",
+      "Label": "Strunjan (57,4km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 56,
+      "Name": "CILJ",
+      "Label": "Finish",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 78,
+      "Name": "Spotter",
+      "Label": "Prihod",
+      "SplitType": 2,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 79,
+      "Name": "CILJ",
+      "Label": "Finish",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "OBALA Ultra Trail 2024 powered by I FEEL SLOVENIA",
+  "TimerLogo": "Protime_Logo_2000px_črn-1024x278.png",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44590,
+  "server": "my2.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "details0",
+      "Lists": [
+        {
+          "Name": "1.1 Splits |Live_Obala 2023",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "LIVE RESULTS",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "5DB5E2"
+        },
+        {
+          "Name": "1.1 Splits |Prihodi_spiker",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Prihodi v cilj IZOLA",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "7D6C3B"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "Rezultati absolutno",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "E5C74D"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "Rezultati kategorije",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "ID": "981ADD"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno_YT_87km",
+          "Mode": "hidden",
+          "Contest": "5",
+          "ShowAs": "ABSOLUTNO 87 km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "8C4330"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "hidden",
+          "Contest": "5",
+          "ShowAs": "KATEGORIJE 87 km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "921FF2"
+        },
+        {
+          "Name": "1.1 Splits |Live_OBALA_ALL_rezerva",
+          "Mode": "hidden",
+          "Contest": "4",
+          "ShowAs": "LIVE RESULTS",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "F73FB0"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno_YT_63km",
+          "Mode": "hidden",
+          "Contest": "4",
+          "ShowAs": "ABSOLUTNO 63 km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "C65A0B"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "hidden",
+          "Contest": "4",
+          "ShowAs": "KATEGORIJE 63 km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "10C2CE"
+        },
+        {
+          "Name": "1.1 Splits |Live_OBALA_ALL_rezerva",
+          "Mode": "hidden",
+          "Contest": "1",
+          "ShowAs": "LIVE RESULTS",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "97C9ED"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno_YT_33km",
+          "Mode": "hidden",
+          "Contest": "1",
+          "ShowAs": "ABSOLUTNO 33km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "55A02B"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "hidden",
+          "Contest": "1",
+          "ShowAs": "KATEGORIJE 33 km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "FFF086"
+        },
+        {
+          "Name": "1.1 Splits |Live_OBALA_ALL_rezerva",
+          "Mode": "hidden",
+          "Contest": "2",
+          "ShowAs": "LIVE RESULTS",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "C89B49"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno_YT_18km",
+          "Mode": "hidden",
+          "Contest": "2",
+          "ShowAs": "ABSOLUTNO 18 km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "8505B8"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati kategorije",
+          "Mode": "hidden",
+          "Contest": "2",
+          "ShowAs": "KATEGORIJE 18 km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "87567D"
+        },
+        {
+          "Name": "1.1 Splits |Live_OBALA_ALL_rezerva",
+          "Mode": "hidden",
+          "Contest": "3",
+          "ShowAs": "LIVE RESULTS",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "CA3744"
+        },
+        {
+          "Name": "1. Result Lists |Rezultati absolutno_YT_11km",
+          "Mode": "hidden",
+          "Contest": "3",
+          "ShowAs": "ABSOLUTNO 11 km",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "819772"
+        },
+        {
+          "Name": "C. državno in pokal 2023|Rezultati absolutno_PokalnoP",
+          "Mode": "hidden",
+          "Contest": "2",
+          "ShowAs": "Pokalna tekma v dolgem trailu",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "A21C18"
+        }
+      ],
+      "LeaderboardHideCount": false,
+      "ShowCommentIcon": true
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details0",
+    "Lists": [
+      {
+        "Name": "1.1 Splits |Live_Obala 2023",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "LIVE RESULTS",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "5DB5E2"
+      },
+      {
+        "Name": "1.1 Splits |Prihodi_spiker",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Prihodi v cilj IZOLA",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "7D6C3B"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "Rezultati absolutno",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details0",
+        "ID": "E5C74D"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "Rezultati kategorije",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details0",
+        "ID": "981ADD"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno_YT_87km",
+        "Mode": "hidden",
+        "Contest": "5",
+        "ShowAs": "ABSOLUTNO 87 km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "8C4330"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "hidden",
+        "Contest": "5",
+        "ShowAs": "KATEGORIJE 87 km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "921FF2"
+      },
+      {
+        "Name": "1.1 Splits |Live_OBALA_ALL_rezerva",
+        "Mode": "hidden",
+        "Contest": "4",
+        "ShowAs": "LIVE RESULTS",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "F73FB0"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno_YT_63km",
+        "Mode": "hidden",
+        "Contest": "4",
+        "ShowAs": "ABSOLUTNO 63 km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "C65A0B"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "hidden",
+        "Contest": "4",
+        "ShowAs": "KATEGORIJE 63 km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "10C2CE"
+      },
+      {
+        "Name": "1.1 Splits |Live_OBALA_ALL_rezerva",
+        "Mode": "hidden",
+        "Contest": "1",
+        "ShowAs": "LIVE RESULTS",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "97C9ED"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno_YT_33km",
+        "Mode": "hidden",
+        "Contest": "1",
+        "ShowAs": "ABSOLUTNO 33km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "55A02B"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "hidden",
+        "Contest": "1",
+        "ShowAs": "KATEGORIJE 33 km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "FFF086"
+      },
+      {
+        "Name": "1.1 Splits |Live_OBALA_ALL_rezerva",
+        "Mode": "hidden",
+        "Contest": "2",
+        "ShowAs": "LIVE RESULTS",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "C89B49"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno_YT_18km",
+        "Mode": "hidden",
+        "Contest": "2",
+        "ShowAs": "ABSOLUTNO 18 km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "8505B8"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati kategorije",
+        "Mode": "hidden",
+        "Contest": "2",
+        "ShowAs": "KATEGORIJE 18 km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "87567D"
+      },
+      {
+        "Name": "1.1 Splits |Live_OBALA_ALL_rezerva",
+        "Mode": "hidden",
+        "Contest": "3",
+        "ShowAs": "LIVE RESULTS",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "CA3744"
+      },
+      {
+        "Name": "1. Result Lists |Rezultati absolutno_YT_11km",
+        "Mode": "hidden",
+        "Contest": "3",
+        "ShowAs": "ABSOLUTNO 11 km",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "819772"
+      },
+      {
+        "Name": "C. državno in pokal 2023|Rezultati absolutno_PokalnoP",
+        "Mode": "hidden",
+        "Contest": "2",
+        "ShowAs": "Pokalna tekma v dolgem trailu",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details0",
+        "ID": "A21C18"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

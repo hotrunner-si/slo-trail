@@ -8,8 +8,40 @@ import klemenMonteRosa from '~/data/gpx/klemen-spanring/monte-rosa-skymarathon.j
 import klemenPohorskiKerlc from '~/data/gpx/klemen-spanring/pohorski-kerlc.json'
 import klemenUtvv from '~/data/gpx/klemen-spanring/utvv.json'
 import type { RunnerGpxRoute } from '~/types/gpx'
+import tomazOcc from '~/data/gpx/tomaz-oblak/occ-2025.json'
+import tomazJatr from '~/data/gpx/tomaz-oblak/jatr-54k-2026.json'
+import tomazTriglav from '~/data/gpx/tomaz-oblak/triglav-zdruzeno.json'
 
 export const runnerGpxRoutes: Record<string, RunnerGpxRoute[]> = {
+  'tomaz-oblak': [
+    {
+      id: 'occ-2025',
+      title: 'OCC 2025',
+      location: '',
+      description: '',
+      distanceKm: tomazOcc.distanceKm,
+      elevationGain: tomazOcc.elevationGain,
+      preview: tomazOcc,
+    },
+    {
+      id: 'jatr-54k-2026',
+      title: 'Julian Alps Trail Run 54 km 2026',
+      location: '',
+      description: '',
+      distanceKm: tomazJatr.distanceKm,
+      elevationGain: tomazJatr.elevationGain,
+      preview: tomazJatr,
+    },
+    {
+      id: 'triglav-zdruzeno',
+      title: 'Triglav – združena tura',
+      location: '',
+      description: '',
+      distanceKm: tomazTriglav.distanceKm,
+      elevationGain: tomazTriglav.elevationGain,
+      preview: tomazTriglav,
+    },
+  ],
   'nejc-ursic': [
     {
       id: 'julian-alps-trail-run',

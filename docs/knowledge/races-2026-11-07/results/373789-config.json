@@ -1,0 +1,168 @@
+{
+  "key": "a8c5da7dfdb4a4e2059fa31e25205c3f",
+  "contests": {
+    "1": "Vzpon na Sv. Ano",
+    "4": "ODJAVA"
+  },
+  "splits": [
+    {
+      "ID": 1,
+      "Name": "start1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 254
+    },
+    {
+      "ID": 2,
+      "Name": "finish1",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 3,
+      "Name": "start2",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 4,
+      "Name": "finish2",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "8 ur Sv. Ane 2026",
+  "TimerLogo": "logo_napis-z-www_BEL_crop.jpg",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44597,
+  "server": "my3.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "",
+      "Lists": [
+        {
+          "Name": "A:Vzpon na Sv.Ano|Rezultati_vzponSv.Ana_spol+_BRUTO",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Rezultati absolutno",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "1855B4"
+        },
+        {
+          "Name": "A:Vzpon na Sv.Ano|Results_Live_PRESENT_last",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Zadnji prihodi na vrh",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "035006"
+        },
+        {
+          "Name": "A:Vzpon na Sv.Ano|Results_Live_min vpzon",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Najhitrejši vzpon",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 5,
+          "ID": "41DB8C"
+        },
+        {
+          "Name": "A:Vzpon na Sv.Ano|Results_Live_min spust",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Najhitrejši spust",
+          "Format": "V",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 5,
+          "ID": "2A06B0"
+        }
+      ],
+      "LeaderboardHideCount": true,
+      "ShowCommentIcon": false
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "",
+    "Lists": [
+      {
+        "Name": "A:Vzpon na Sv.Ano|Rezultati_vzponSv.Ana_spol+_BRUTO",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Rezultati absolutno",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "1855B4"
+      },
+      {
+        "Name": "A:Vzpon na Sv.Ano|Results_Live_PRESENT_last",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Zadnji prihodi na vrh",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "_participant",
+        "ID": "035006"
+      },
+      {
+        "Name": "A:Vzpon na Sv.Ano|Results_Live_min vpzon",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Najhitrejši vzpon",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "_participant",
+        "ID": "41DB8C"
+      },
+      {
+        "Name": "A:Vzpon na Sv.Ano|Results_Live_min spust",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Najhitrejši spust",
+        "Format": "V",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "_participant",
+        "ID": "2A06B0"
+      }
+    ],
+    "LeaderboardHideCount": true
+  },
+  "ContestColors": null
+}

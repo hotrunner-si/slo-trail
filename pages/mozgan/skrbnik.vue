@@ -4,7 +4,9 @@ useSiteSeo('Odobritve · Možgan', 'Zaščiten pregled', { noindex: true })
 const { admin, session } = await useBrainSession()
 const route = useRoute()
 const tab = computed(() =>
-  ['editorial', 'routes'].includes(String(route.query.tab)) ? String(route.query.tab) : 'reviews',
+  ['editorial', 'routes', 'links'].includes(String(route.query.tab))
+    ? String(route.query.tab)
+    : 'reviews',
 )
 const showAllProfiles = ref(false)
 if (!admin.value)
@@ -119,11 +121,13 @@ function points(id: string) {
     <header>
       <h2>
         {{
-          tab === 'editorial'
-            ? 'Uredniške nastavitve'
-            : tab === 'routes'
-              ? 'Pregled tras'
-              : 'Profili in povezave'
+          tab === 'links'
+            ? 'Prošnje za povezave'
+            : tab === 'editorial'
+              ? 'Uredniške nastavitve'
+              : tab === 'routes'
+                ? 'Pregled tras'
+                : 'Profili in povezave'
         }}
       </h2>
       <p>
@@ -132,6 +136,9 @@ function points(id: string) {
       </p>
     </header>
     <nav class="admin-review-tabs" aria-label="Skrbniški pregledi">
+      <NuxtLink to="/mozgan/skrbnik?tab=links" :aria-current="tab === 'links' ? 'page' : undefined"
+        >Prošnje za povezave</NuxtLink
+      >
       <NuxtLink to="/profil">← Moj račun</NuxtLink>
       <NuxtLink
         to="/mozgan/skrbnik?tab=reviews"
@@ -184,8 +191,8 @@ function points(id: string) {
         </div>
       </article>
     </section>
-    <section v-if="tab === 'reviews'" class="brain-panel">
-      <h3>Zahtevki za povezavo z obstoječim profilom</h3>
+    <section v-if="tab === 'reviews' || tab === 'links'" class="brain-panel">
+      <h3>Prošnje za povezave</h3>
       <p v-if="!data?.links?.length">Ni zahtev.</p>
       <article v-for="l in data?.links" :key="l.id" class="brain-summary">
         <h4>{{ l.runner_slug }}</h4>

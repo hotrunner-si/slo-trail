@@ -1,0 +1,274 @@
+{
+  "key": "63bbdada600437bda72459833c1dc601",
+  "contests": {
+    "1": "Continental 10km",
+    "2": "Adidas Terrex 15km",
+    "3": "Pure 25km",
+    "4": "Dukat Fit 45km"
+  },
+  "splits": [],
+  "eventname": "Soča Outdoor Festival 2021",
+  "TimerLogo": "",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44844,
+  "server": "my3.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "1900-01-01T00:00:00+00:19",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "details",
+      "Lists": [
+        {
+          "Name": "Result Lists 2021|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 10,
+          "ID": "BA8136"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 5,
+          "ID": "958ED3"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 10,
+          "ID": "735301"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 5,
+          "ID": "C7B336"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 10,
+          "ID": "D53DFB"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 5,
+          "ID": "2CA99E"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results OVERALL",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 10,
+          "ID": "289FB7"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results AGE GROUPS / KATEGORIJE",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 5,
+          "ID": "9DB5A3"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati / Results_overall_LiVE",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 10,
+          "ID": "769DD1"
+        },
+        {
+          "Name": "Result Lists 2021|Rezultati_absolutno_SPEAKER",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Prihodi v cilj",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 0,
+          "Leader": 10,
+          "ID": "1E06DE"
+        }
+      ],
+      "LeaderboardHideCount": false
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details",
+    "Lists": [
+      {
+        "Name": "Result Lists 2021|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "BA8136"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 5,
+        "Details": "details",
+        "ID": "958ED3"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "735301"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 5,
+        "Details": "details",
+        "ID": "C7B336"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "D53DFB"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 5,
+        "Details": "details",
+        "ID": "2CA99E"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results OVERALL",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "289FB7"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results AGE GROUPS / KATEGORIJE",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 5,
+        "Details": "details",
+        "ID": "9DB5A3"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati / Results_overall_LiVE",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "769DD1"
+      },
+      {
+        "Name": "Result Lists 2021|Rezultati_absolutno_SPEAKER",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Prihodi v cilj",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 0,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "1E06DE"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}

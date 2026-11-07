@@ -13,6 +13,18 @@ const { data, error } = await useAsyncData('brain-admin-summary', () =>
       Števila čakajočih zahtev trenutno ni mogoče prikazati. Preglede lahko odpreš spodaj.
     </p>
     <div class="account-admin-cards">
+      <NuxtLink to="/mozgan/skrbnik?tab=links"
+        ><strong>Prošnje za povezave <IconArrowUpRight /></strong
+        ><span>{{ data?.links ?? '—' }} prošenj čaka na pregled</span></NuxtLink
+      >
+      <NuxtLink to="/skrbnik/tekaci?nov=1"
+        ><strong>Ustvari nov profil tekača <IconArrowUpRight /></strong
+        ><span>Podatki tekača, GPX datoteke in slika</span></NuxtLink
+      >
+      <NuxtLink to="/skrbnik/tekaci"
+        ><strong>Urejanje profilov tekačev <IconArrowUpRight /></strong
+        ><span>Vsi tekači, njihove ture in povezave z računi</span></NuxtLink
+      >
       <NuxtLink to="/mozgan/skrbnik?tab=reviews"
         ><strong
           >Profili in povezave <span aria-hidden="true"><IconArrowUpRight /></span></strong

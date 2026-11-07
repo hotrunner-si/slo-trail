@@ -51,9 +51,12 @@ for (const row of rows) {
       )
       break
     } catch (error) {
-      if (attempt >= 4 || ![0, 408, 429, 500, 502, 503, 504].includes(error.statusCode || 0))
+      if (attempt >= 6 || ![0, 408, 429, 500, 502, 503, 504].includes(error.statusCode || 0))
         throw error
-      await new Promise((resolve) => setTimeout(resolve, 1000 * attempt))
+      // Minute quotas need a real cooldown; a 1–3 second retry storm cannot recover.
+      const delay = error.statusCode === 429 ? Math.min(60000, 15000 * attempt) : 1000 * attempt
+      console.log(JSON.stringify({ retrying: true, status: error.statusCode || 0, delayMs: delay }))
+      await new Promise((resolve) => setTimeout(resolve, delay))
     }
   }
   const updated = must(
@@ -68,5 +71,6 @@ for (const row of rows) {
   processed += updated.length
   if (processed % 15 === 0)
     console.log(JSON.stringify({ processed, pending: rows.length - processed }))
+  await new Promise((resolve) => setTimeout(resolve, 1100))
 }
 console.log(JSON.stringify({ processed, completed: true }))

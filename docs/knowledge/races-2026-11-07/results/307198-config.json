@@ -1,0 +1,939 @@
+{
+  "key": "3ea24b45d58601ed515501bb15a41aa5",
+  "contests": {
+    "1": "10km JAT TRAIL ABBA NUTRITION",
+    "2": "15km JAT  INTERSPORT SPEED TRAIL",
+    "3": "25km JAT KRANJSKA GORA",
+    "4": "50km JAT SKY TRAIL",
+    "5": "80km JAT LAKE BLED",
+    "6": "120km I FEEL SLOVENIA JAT ULTRA TRAIL",
+    "7": "ODJAVA"
+  },
+  "splits": [
+    {
+      "ID": 82,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 139,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 142,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 265,
+      "Name": "Start",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 266,
+      "Name": "Startgreben",
+      "Label": "Start - Tofov greben (6km)",
+      "SplitType": 9,
+      "Contest": 7,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 267,
+      "Name": "GrebenCilj",
+      "Label": "Tofov greben - CILJ",
+      "SplitType": 9,
+      "Contest": 7,
+      "TypeOfSport": 0
+    },
+    {
+      "ID": 186,
+      "Name": "START",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 1,
+      "Name": "Talež",
+      "Label": "Talež (11,5km)",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 170,
+      "Name": "Kupljenik",
+      "Label": "Kupljenik (20,5km)",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 171,
+      "Name": "BohinjskaBela",
+      "Label": "{EN:Bohinjska B. (27km)|SI:Bohinjska B. (27km)}",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 173,
+      "Name": "Podhom",
+      "Label": "{EN:Podhom (45km)|SI:Podhom (45km)}",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 163,
+      "Name": "Žirovnica",
+      "Label": "Žirovnica(55km)",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 276,
+      "Name": "Valvazor",
+      "Label": "Valvazor (68km)",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 165,
+      "Name": "Golica",
+      "Label": "{EN:Golica (87km)|SI:Golica (87km)}",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 268,
+      "Name": "Tofovgreben",
+      "Label": "Tofov greben (6km)",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 166,
+      "Name": "Dovje",
+      "Label": "{EN:Dovje (102,5km)|SI:Dovje (102,5km)}",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 269,
+      "Name": "Spotter",
+      "Label": "",
+      "SplitType": 2,
+      "Contest": 7,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 274,
+      "Name": "Tofovgreben",
+      "Label": "Tofov greben (6km)",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 167,
+      "Name": "GozdMartuljek",
+      "Label": "Gozd Martuljek (113km)",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 228,
+      "Name": "Gozdmartuljek",
+      "Label": "Gozd Martuljek (9,9km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 256,
+      "Name": "Spotter",
+      "Label": "Arrival",
+      "SplitType": 2,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 270,
+      "Name": "CILJ",
+      "Label": "FINISH",
+      "SplitType": 0,
+      "Contest": 7,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 275,
+      "Name": "Tofovgreben",
+      "Label": "Tofov greben (6,6km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 271,
+      "Name": "Spotter",
+      "Label": "Arrival",
+      "SplitType": 2,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 179,
+      "Name": "CILJ",
+      "Label": "FINISH",
+      "SplitType": 0,
+      "Contest": 1,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 187,
+      "Name": "Podkoren",
+      "Label": "Podkoren (21,6km)",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 169,
+      "Name": "CILJ",
+      "Label": "FINISH",
+      "SplitType": 0,
+      "Contest": 6,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 264,
+      "Name": "GozdMartuljek",
+      "Label": "Martuljek (9,6km)",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 184,
+      "Name": "START",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 236,
+      "Name": "Valvazor",
+      "Label": "Valvazor (6km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 253,
+      "Name": "Golica",
+      "Label": "Golica (20km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 237,
+      "Name": "Dovje",
+      "Label": "Dovje (35,5km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 257,
+      "Name": "Spotter",
+      "Label": "Arrival",
+      "SplitType": 2,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 258,
+      "Name": "Spotter",
+      "Label": "Arrival",
+      "SplitType": 2,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 180,
+      "Name": "CILJ",
+      "Label": "FINISH",
+      "SplitType": 0,
+      "Contest": 2,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 181,
+      "Name": "CILJ",
+      "Label": "FINISH",
+      "SplitType": 0,
+      "Contest": 3,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 220,
+      "Name": "START",
+      "Label": "",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 255
+    },
+    {
+      "ID": 263,
+      "Name": "GozdMartuljek",
+      "Label": "Martuljek (46km)",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 255,
+      "Name": "Spotter",
+      "Label": "Arrival",
+      "SplitType": 2,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 239,
+      "Name": "CILJ",
+      "Label": "FINISH",
+      "SplitType": 0,
+      "Contest": 4,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 221,
+      "Name": "Podhom",
+      "Label": "Podhom(4km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 151,
+      "Name": "Žirovnica",
+      "Label": "Žirovnica (14km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 277,
+      "Name": "Valvazor",
+      "Label": "Valvazor (28,5km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 241,
+      "Name": "Golica",
+      "Label": "Golica (46km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 243,
+      "Name": "Dovje",
+      "Label": "Dovje (61,5km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 244,
+      "Name": "GozdMartuljek",
+      "Label": "Gozd Martuljek (72km)",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 259,
+      "Name": "Spotter",
+      "Label": "Arrival",
+      "SplitType": 2,
+      "Contest": 5,
+      "TypeOfSport": 100
+    },
+    {
+      "ID": 153,
+      "Name": "CILJ",
+      "Label": "FINISH",
+      "SplitType": 0,
+      "Contest": 5,
+      "TypeOfSport": 100
+    }
+  ],
+  "eventname": "Julian Alps Trail Run by UTMB 2024",
+  "TimerLogo": "logo_cel_beli.jpg",
+  "TimerURL": "www.protime.si",
+  "EventOver": true,
+  "Time": 44590,
+  "server": "my3.raceresult.com",
+  "BrandColorDark": "",
+  "Tab": {
+    "Label": "",
+    "URLName": "results",
+    "Enabled": true,
+    "ShowInMenu": false,
+    "ShowInMenu2": "always",
+    "ActiveFrom": "2020-01-01T00:00:00+01:00",
+    "ActiveUntil": "2100-12-31T23:59:59+01:00",
+    "Type": "lists",
+    "Config": {
+      "InfoText": "",
+      "Subtype": "boxes",
+      "StandardDetails": "details",
+      "Lists": [
+        {
+          "Name": "Participants|Startna lista_Online",
+          "Mode": "",
+          "Contest": "0",
+          "ShowAs": "Start list",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "099269"
+        },
+        {
+          "Name": "1.1 Splits Julian alps|Live_JAT_ALL_2023",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Live results + tracking",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "B5A642"
+        },
+        {
+          "Name": "1.1 Splits Julian alps|Live_JAT_ALL_2023_base",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "Live results",
+          "Format": "VP",
+          "Live": 0,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "940830"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "10km Overall",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 10,
+          "ID": "C67F98"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "1",
+          "ShowAs": "10km AG",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "60AB23"
+        },
+        {
+          "Name": "1.1 Splits Julian alps|Live_JAT_ALL_2023_base",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "Live results",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "F50E5A"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "15km Overall",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "ID": "523263"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "2",
+          "ShowAs": "15km AG",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "40121C"
+        },
+        {
+          "Name": "1.1 Splits Julian alps|Live_JAT_ALL_2023_base",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "BAFB7D"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "25km Overall",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "ID": "EBB172"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "3",
+          "ShowAs": "25km AG",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "1F921C"
+        },
+        {
+          "Name": "1.1 Splits Julian alps|Live_JAT_ALL_2023_base",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "Live results",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "A486D5"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "50km Overall",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "ID": "DA5EE8"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "4",
+          "ShowAs": "50km AG",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "5645B4"
+        },
+        {
+          "Name": "1.1 Splits Julian alps|Live_JAT_ALL_2023_80km",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "Live results + tracking",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "5210BD"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "80km Overall",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "ID": "873C59"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "5",
+          "ShowAs": "80km AG",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "973BA4"
+        },
+        {
+          "Name": "1.1 Splits Julian alps|Live_JAT_ALL_2023",
+          "Mode": "",
+          "Contest": "6",
+          "ShowAs": "Live results + tracking",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "319AC3"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+          "Mode": "",
+          "Contest": "6",
+          "ShowAs": "120km - Overall",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 5,
+          "ID": "2F8354"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+          "Mode": "",
+          "Contest": "6",
+          "ShowAs": "120km - AG",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 3,
+          "ID": "3A181E"
+        },
+        {
+          "Name": "1.1 Splits Julian alps|Prihodi_JAT2023",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "Speaker - prihodi",
+          "Format": "V",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 100,
+          "ID": "22537F"
+        },
+        {
+          "Name": "1. Result Lists Julian Alps|Rezultati absolutno_DNF",
+          "Mode": "hidden",
+          "Contest": "0",
+          "ShowAs": "DNF list",
+          "Format": "VP",
+          "Live": 1,
+          "Sortable": 1,
+          "Leader": 0,
+          "ID": "D21C13"
+        }
+      ],
+      "LeaderboardHideCount": false,
+      "ShowCommentIcon": true
+    }
+  },
+  "TabConfig": {
+    "InfoText": "",
+    "Subtype": "boxes",
+    "StandardDetails": "details",
+    "Lists": [
+      {
+        "Name": "Participants|Startna lista_Online",
+        "Mode": "",
+        "Contest": "0",
+        "ShowAs": "Start list",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "099269"
+      },
+      {
+        "Name": "1.1 Splits Julian alps|Live_JAT_ALL_2023",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Live results + tracking",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "B5A642"
+      },
+      {
+        "Name": "1.1 Splits Julian alps|Live_JAT_ALL_2023_base",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "Live results",
+        "Format": "VP",
+        "Live": 0,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "940830"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "10km Overall",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 10,
+        "Details": "details",
+        "ID": "C67F98"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "1",
+        "ShowAs": "10km AG",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "60AB23"
+      },
+      {
+        "Name": "1.1 Splits Julian alps|Live_JAT_ALL_2023_base",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "Live results",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "F50E5A"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "15km Overall",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details",
+        "ID": "523263"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "2",
+        "ShowAs": "15km AG",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "40121C"
+      },
+      {
+        "Name": "1.1 Splits Julian alps|Live_JAT_ALL_2023_base",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "BAFB7D"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "25km Overall",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details",
+        "ID": "EBB172"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "3",
+        "ShowAs": "25km AG",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "1F921C"
+      },
+      {
+        "Name": "1.1 Splits Julian alps|Live_JAT_ALL_2023_base",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "Live results",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "A486D5"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "50km Overall",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details",
+        "ID": "DA5EE8"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "4",
+        "ShowAs": "50km AG",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "5645B4"
+      },
+      {
+        "Name": "1.1 Splits Julian alps|Live_JAT_ALL_2023_80km",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "Live results + tracking",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "5210BD"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "80km Overall",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details",
+        "ID": "873C59"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "5",
+        "ShowAs": "80km AG",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "973BA4"
+      },
+      {
+        "Name": "1.1 Splits Julian alps|Live_JAT_ALL_2023",
+        "Mode": "",
+        "Contest": "6",
+        "ShowAs": "Live results + tracking",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "319AC3"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati absolutno",
+        "Mode": "",
+        "Contest": "6",
+        "ShowAs": "120km - Overall",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 5,
+        "Details": "details",
+        "ID": "2F8354"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati kategorije",
+        "Mode": "",
+        "Contest": "6",
+        "ShowAs": "120km - AG",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 3,
+        "Details": "details",
+        "ID": "3A181E"
+      },
+      {
+        "Name": "1.1 Splits Julian alps|Prihodi_JAT2023",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "Speaker - prihodi",
+        "Format": "V",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 100,
+        "Details": "details",
+        "ID": "22537F"
+      },
+      {
+        "Name": "1. Result Lists Julian Alps|Rezultati absolutno_DNF",
+        "Mode": "hidden",
+        "Contest": "0",
+        "ShowAs": "DNF list",
+        "Format": "VP",
+        "Live": 1,
+        "Sortable": 1,
+        "Leader": 0,
+        "Details": "details",
+        "ID": "D21C13"
+      }
+    ],
+    "LeaderboardHideCount": false
+  },
+  "ContestColors": null
+}
